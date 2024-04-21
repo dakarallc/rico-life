@@ -1,27 +1,19 @@
-# name: deploy to remote
-
 on:
   push:
     branches:
-      - main
-
+      - master 
+name: Build and Deploy
 jobs:
-  deploy:
-
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v1
-
-      - name: ssh key generate
-        run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key
+      - uses: actions/checkout@master
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: rsync deploy
-        run: rsync -auzrv --delete ./ $SSH_USER@$SSH_HOST:$DEPLOY_PATH --exclude ".git/" --exclude ".github/"  -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${SSH_PORT}"
-        env:
-          SSH_USER: ${{ secrets.SSH_USER }}
-          SSH_HOST: ${{ secrets.SSH_HOST }}
-          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
-          SSH_PORT: ${{ secrets.SSH_PORT }}
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          LOCAL_DIR: "./"
+          REMOTE_DIR: "/ietochi-kuki.com/public_html/wp-content/themes/ietochi/"
