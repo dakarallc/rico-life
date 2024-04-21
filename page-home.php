@@ -22,12 +22,13 @@ fv
 EVENT
 ================================================================================================ -->
   <?php
-  $perPage = 1;
+  $perPage = -1;
   $args = array(
     'posts_per_page' => $perPage,
     'post_type' => 'post',
     'category_name' => 'event',
-    'post_status' => 'publish'
+    'post_status' => 'publish',
+    'category__not_in' => array(get_category_by_slug('end')->term_id)
   );
   
   $the_query = new WP_Query($args);
@@ -36,13 +37,13 @@ EVENT
       <div class="inner event__inner">
         <div class="event__box">
           <div class="event__left">
-            <h2 class="event__ttl  event__ttl-pc ttl ttl--right ">新着<br>イベント</h2><!-- /event__ttl -->
-            <h2 class="event__ttl  event__ttl-sp ttl ttl--right ">新着イベント</h2><!-- /event__ttl -->
+            <h2 class="event__ttl  event__ttl-pc ttl ttl--right ">開催中の<br>イベント</h2><!-- /event__ttl -->
+            <h2 class="event__ttl  event__ttl-sp ttl ttl--right ">開催中のイベント</h2><!-- /event__ttl -->
             <!-- ★pc 用ボタン表示 -->
             <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="event__btn topLink show--pc">view more</a><!-- /event__btn -->
           </div><!-- /event__left -->
-          <div class="event__right">
-            <ul class="event__list">
+          <div class="event__right swiper eventSwiper">
+            <ul class="event__list swiper-wrapper">
               <?php while ($the_query->have_posts()) : $the_query->the_post(); 
               $eventPic = get_field('event-pic');
               $img_url1 = $eventPic;
@@ -52,7 +53,7 @@ EVENT
               $address = get_field('address'); //住所
               $reserve = get_field('reserve'); //予約方法
               ?>
-                <li class="event__item">
+                <li class="event__item swiper-slide">
                   <a href="<?php echo esc_url(get_permalink()); ?>">
                     <div class="event__info">
                       <div class=""><img width="300" data-js-ofi src="<?php echo $eventPic; ?>" alt="<?php echo trimString(get_the_title(), 50);  ?>"></div><!-- /caseItem__img1 -->
@@ -66,6 +67,7 @@ EVENT
                 </li><!-- /event__item -->
               <?php endwhile; ?>
             </ul><!-- /event__list -->
+            <div class="swiper-pagination swiper-pagination-black"></div>
             <!-- ★sp 用ボタン表示 -->
             <a href="<?php echo esc_url(get_permalink()); ?>" class="event__btn topLink show--sp">view more</a><!-- /event__btn -->
           </div><!-- /event__right -->
@@ -94,7 +96,7 @@ EVENT
 
 
 <!-- ===============================================================================================
-case swipper設定はfotter.phpに記載
+case swipper設定はfooter.phpに記載
 ================================================================================================ -->
 
 <section class="tcase">

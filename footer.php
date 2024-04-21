@@ -70,6 +70,22 @@ footer
       }
     });
 
+    var swiper = new Swiper(".eventSwiper", {
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+      },
+      speed: 300,
+      pagination: {
+        el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+      },
+      loop: true,
+      centeredSlides : true,
+      slidesPerView: 1,
+    });
+
   </script>
 <?php wp_footer(); ?>
 </body>
