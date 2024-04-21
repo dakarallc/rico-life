@@ -1,0 +1,76 @@
+/* ==========================================================================
+  toggle
+  ========================================================================== */
+
+.toggle {
+
+  cursor: pointer;
+  position: relative;
+  height: 30px;
+  width: 42px;
+  z-index: 3;
+  top: -3px;
+  transition: 0.3s;
+  display: none;
+
+  @include sp() {
+    display: block;
+  }
+
+  &.active {
+    top: -4px;
+
+    .toggle__txt {
+      display: none;
+    }
+  }
+
+  span {
+    -webkit-transition: 0.35s ease-in-out;
+    border-bottom: solid 2px #009480;
+    display: block;
+    left: 8px;
+    position: absolute;
+    transition: 0.35s ease-in-out;
+    width: 24px;
+
+    &:nth-child(1) {
+      top: 7px;
+    }
+
+    &:nth-child(2) {
+      top: 16px;
+    }
+
+    &:nth-child(3) {
+      top: 25px;
+    }
+  }
+
+  &.active span {
+    &:nth-child(1) {
+      -webkit-transform: rotate(-45deg);
+      left: 8px;
+      top: 18px;
+      transform: rotate(-45deg);
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      -webkit-transform: rotate(45deg);
+      top: 18px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__txt {
+    bottom: -7px;
+    color: #009480;
+    font-size: 1rem;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    margin-left: 1px;
+  }
+}

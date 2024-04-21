@@ -1,0 +1,238 @@
+/* ==========================================================================
+  filter
+  ========================================================================== */
+
+
+.filter {
+  padding: 94px 0;
+  background: #F3F3F3;
+  position: relative;
+
+  @include sp() {
+    padding: 44px 0;
+    background: transparent radial-gradient(closest-side at 50% 50%, #FFFFFF 0%, #EFEFEF 100%) 0% 0% no-repeat;
+  }
+
+  &__inner {
+    max-width: calc(963px + 5% * 2);
+
+    @include sp() {
+      padding: 0 10px;
+    }
+  }
+
+  &__ttl {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 41px;
+
+    @include sp() {
+      margin-bottom: 21px;
+    }
+
+    ._upper {
+      display: block;
+      font-size: 2rem;
+      letter-spacing: .2em;
+      margin-bottom: -14px;
+
+      @include sp() {
+        font-size: 1.4rem;
+        margin-bottom: -5px;
+      }
+    }
+
+    ._below {
+      font-size: 5rem;
+      letter-spacing: .2em;
+
+      @include sp() {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  &__txt {
+    font-size: 1.6rem;
+    text-align: left;
+    max-width: 752px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include sp() {
+      font-size: 1rem;
+    }
+  }
+
+  .virus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 22px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+
+
+      &.active {
+        .virus__img {
+          animation-name: showItem;
+          animation-timing-function: ease-out;
+          animation-iteration-count: 1;
+          animation-direction: normal;
+          animation-fill-mode: forwards;
+          animation-duration: .25s;
+          // animation-delay: .25s;
+        }
+      }
+
+      &:nth-of-type(1) {
+        .virus__img {
+          img {
+            @include sp() {
+              width: 80px;
+            }
+
+            @media (max-width: 365px) {
+              width: 56px;
+            }
+          }
+        }
+
+        &.active {
+          .virus__img {
+            animation-delay: .15s;
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        .virus__img {
+          img {
+            @include sp() {
+              width: 39px;
+            }
+
+            @media (max-width: 365px) {
+              width: 28px;
+            }
+          }
+        }
+
+        &.active {
+          .virus__img {
+            animation-delay: .3s;
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        .virus__img {
+          img {
+            @include sp() {
+              width: 30px;
+            }
+
+            @media (max-width: 365px) {
+              width: 21px;
+            }
+          }
+        }
+
+        &.active {
+          .virus__img {
+            animation-delay: .45s;
+          }
+        }
+      }
+
+      &:nth-of-type(4) {
+        .virus__img {
+          img {
+            @include sp() {
+              width: 20px;
+            }
+
+            @media (max-width: 365px) {
+              width: 14px;
+            }
+          }
+        }
+
+        &.active {
+          .virus__img {
+            animation-delay: .6s;
+          }
+        }
+      }
+
+      &:nth-of-type(5) {
+        .virus__img {
+          img {
+            @include sp() {
+              width: 10px;
+            }
+
+            @media (max-width: 365px) {
+              width: 7px;
+            }
+          }
+        }
+
+        &.active {
+          .virus__img {
+            animation-delay: .75s;
+          }
+        }
+      }
+
+    }
+
+    &__txt {
+
+      text-align: center;
+
+      @include pc() {
+        letter-spacing: 0.2em;
+      }
+
+      &--accent {
+        color: #FF0000;
+        font-weight: bold;
+      }
+
+      ._upper {
+        display: block;
+        font-size: 1.7rem;
+        margin-bottom: -10px;
+        line-height: 1.5;
+
+        @include sp() {
+          font-size: 1rem;
+        }
+      }
+
+      ._below {
+        font-size: 1.8rem;
+
+        @include sp() {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__img {
+      margin-bottom: 11px;
+      transform: scale(0);
+
+      img {
+        width: auto;
+      }
+    }
+  }
+}

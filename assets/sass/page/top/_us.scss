@@ -1,0 +1,152 @@
+/* ==========================================================================
+  us
+  ========================================================================== */
+
+.us {
+  position: relative;
+  margin-top: 80px;
+
+  padding-bottom: 74px;
+
+  @media (max-width: 599px) {
+    padding-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  &::before {
+    background: url(../img/top/us-bg.jpg) no-repeat top center/cover;
+    content: "";
+    height: 66%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 59%;
+
+    @media (max-width: 1400px) {
+      background: url(../img/top/us-bg.jpg) no-repeat top right/cover;
+    }
+
+    @media (max-width: 599px) {
+      width: 100%;
+      top: 79px;
+      height: 300px;
+    }
+
+    @media (max-width: 500px) {
+      height: 152px;
+    }
+
+  }
+
+  &__inner {
+    @media (max-width: 599px) {
+      padding: 0 10px;
+    }
+  }
+
+  &__box {
+    background: #FFFFFF;
+    box-shadow: 3px 3px 3px rgba(139, 139, 139, 0.2);
+    width: 100%;
+    max-width: 654px;
+    padding: 50px 0 34px;
+
+
+    @include sp() {
+      padding: 30px 5%;
+      position: relative;
+      left: -14%;
+    }
+
+    @media (max-width: 599px) {
+      margin-bottom: 25px;
+      margin-top: 370px;
+      padding: 16px 12px;
+      left: 0;
+    }
+
+    @media (max-width: 500px) {
+      margin-top: 201px;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+
+    @include pc() {
+      padding: 60px 0 0;
+    }
+  }
+
+  &__ttl {
+    margin-bottom: 30px;
+
+    @media (max-width: 599px) {
+      margin-bottom: 30px;
+      line-height: .9;
+
+      &::before {
+        height: 113%;
+      }
+    }
+  }
+
+  &__txt {
+    line-height: 2;
+    letter-spacing: 0.2em;
+
+    margin-bottom: 40px;
+
+    @include sp(){
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 599px) {
+      line-height: 1.3;
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+
+
+    &.show--adjustTab {
+
+      @media (min-width: 600px) {
+        display: flex!important;
+      }
+      @media (max-width: 599px) {
+        display: none!important;
+      }
+    }
+
+    &.show--adjustSp {
+      @media (min-width: 600px) {
+        display: none!important;
+      }
+      @media (max-width: 599px) {
+        display: flex!important;
+      }
+    }
+
+    @media (max-width: 599px) {
+      margin: 0 auto;
+      left: 0;
+    }
+  }
+
+
+
+  &__subTtl {
+    color: #009480;
+    font-weight: bold;
+    @include furuta();
+    margin-bottom: 6px;
+    letter-spacing: 0.08em;
+    font-size: 2.4rem;
+
+    @media (max-width: 599px) {
+      font-size: 1.6rem;
+    }
+  }
+}

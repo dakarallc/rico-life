@@ -1,0 +1,66 @@
+/* ==========================================================================
+  co2
+  ========================================================================== */
+
+.co2{
+  background: #F0F7FD;
+  padding: 97px 0 78px;
+
+  @include sp(){
+    padding: 44px 0 40px;
+  }
+
+
+  &__inner{
+    @include sp(){
+      max-width: 750px!important;
+    }
+    .qaArea__btn{
+     margin: 20px auto 0;
+    }
+  }
+
+  .format__ttl{
+    color: #012346;
+    margin-bottom: 50px;
+  }
+
+  img{
+    @include sp(){
+      width: 550px;
+    }
+  }
+
+  &__img{
+    @include pc(){
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @include sp(){
+      text-align: center;
+      overflow-x: scroll;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__subImg{
+    margin:  90px auto 0;
+    width: 80%;
+    max-width: 730px;
+
+    @include sp(){
+      text-align: center;
+      margin: 60px auto 0;
+      width: 100%;
+      img{
+        width: 500px;
+      }
+    }
+  }
+  .scroll-hint-icon-wrap{
+    @include sp(){
+      top: -26%!important;
+    }
+  }
+}

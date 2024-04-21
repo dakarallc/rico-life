@@ -1,0 +1,100 @@
+/* ==========================================================================
+  interview
+  ========================================================================== */
+
+.interview {
+  padding-bottom: 190px;
+
+  @include sp() {
+    padding-bottom: 80px;
+  }
+
+  .kv {
+    @include sp() {
+      margin-bottom: 150px;
+    }
+  }
+
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 48px;
+
+      @include sp() {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__subTtl {
+    @include furuta();
+    font-weight: bold;
+    font-size: 3.6rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 23px;
+    color: #009480;
+
+    @include sp() {
+      font-size: 2.6rem;
+      padding-left: 20px;
+    }
+
+    &::before {
+      content: "";
+      width: 4px;
+      height: 100%;
+      background: #009480;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      @include sp() {
+        width: 3px;
+      }
+    }
+  }
+
+
+  &__txt {
+    letter-spacing: 0.2em;
+    line-height: 1.9;
+  }
+
+  &__imgs {
+    display: flex;
+    margin: 30px 0;
+
+    @include sp() {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img {
+    @include pc() {
+      width: calc(50% - 10px / 2);
+
+      &:not(:nth-child(2n)) {
+        margin-right: 10px;
+      }
+    }
+
+    @include sp() {
+
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.interview__txt+.interview__txt {
+  margin-top: 36px;
+
+  @include sp() {
+    margin-top: 30px;
+  }
+}

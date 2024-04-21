@@ -1,0 +1,94 @@
+/* ==========================================================================
+  subsidy
+  ========================================================================== */
+
+  .subsidy{
+    padding: 40px 0 80px;
+    background: #f0f7fd;
+
+    @include sp(){
+      padding: 40px 0 50px;
+    }
+    &__inner{
+      max-width: calc(1300px + 5% * 2);
+
+      @include sp(){
+        max-width: initial!important;
+      }
+    }
+    &__tbl{
+      font-size: 1.4rem;
+      line-height: 1.5;
+      border: 1px solid #141414;
+      border-collapse: collapse;
+      width: 100%;
+
+
+      @include sp(){
+        width: 800px;
+        font-size: 1.3rem;
+      }
+
+      th,td{
+        padding: 6px;
+        vertical-align: middle;
+        border: 1px solid #141414;
+
+        &.nowrap{
+          white-space: nowrap;
+        }
+
+      }
+      td{
+        &:first-child{
+          width: 80px;
+
+          @include sp(){
+            width: 50px;
+          }
+        }
+        background: #fff;
+
+        &.red{
+          color: red;
+        }
+
+        &.blue{
+          color: blue;
+        }
+
+        a{
+          color: #4b6990;
+          text-decoration: underline;
+          &:hover{
+            opacity: .7;
+          }
+        }
+        a[href*="tel:"] {
+          color: #141414;
+          text-decoration: none;
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+
+      th{
+        background: #012346;
+        color: #fff;
+        white-space: nowrap;
+      
+      }
+    }
+
+    ._defaultHide2{
+      display: none;
+    }
+
+    .spec__btn{
+      max-width: 500px;
+    margin: 30px auto;
+    height: 60px;
+    }
+  }
+

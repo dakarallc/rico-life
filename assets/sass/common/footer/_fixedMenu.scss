@@ -1,0 +1,237 @@
+/* ==========================================================================
+  fixedMenu
+  ========================================================================== */
+
+.fixedMenu {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  z-index: 997;
+
+  @media (min-width: 601px) {
+    position: fixed !important;
+  }
+
+  .showAjust {
+    &--pc {
+      @media (max-width: 600px) {
+        display: none !important;
+      }
+    }
+
+    &--sp {
+      @media (min-width: 601px) {
+        display: none !important;
+      }
+    }
+  }
+
+
+  @media (min-width: 601px) {
+    width: 80px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    // align-items: flex-end;
+  }
+
+
+  &.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  img {
+    @media (min-width: 601px) {
+      width: auto;
+    }
+  }
+
+  &__item {
+
+
+    @media (min-width: 601px) {
+      &:not(:last-child) {
+        border-bottom: 1px solid #fff;
+      }
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      line-height: 1.2;
+      justify-content: center;
+    }
+
+    &--cordless {
+      @media (min-width: 601px) {
+        img {
+          width: 53px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        width: 20%;
+      }
+
+      a {
+        background: #F8F8F8;
+        height: 170px;
+
+        @media (max-width: 600px) {
+          border: 1px solid #003274;
+          width: 100%;
+          min-height: 50px;
+          height: 100%;
+        }
+
+        p {
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: #012346;
+          transition: .2s;
+
+          @media (max-width: 600px) {
+            font-size: 1rem;
+          }
+
+          @media (max-width: 355px) {
+            line-height: 1.1;
+          }
+        }
+
+        img {
+          @media (max-width: 600px) {
+            width: 12px;
+          }
+        }
+
+        &:hover {
+
+          // opacity: .8;
+          p {
+            color: lighten(#012346, 30%);
+          }
+        }
+      }
+
+
+    }
+
+    &--top {
+      @media (max-width: 600px) {
+        width: 20%;
+      }
+
+      a {
+        height: 90px;
+        background: #012346;
+        color: #fff;
+        font-size: 1.5rem;
+
+        @media (max-width: 600px) {
+          width: 100%;
+          min-height: 50px;
+          font-size: 1rem;
+          height: 100%;
+        }
+
+        &:hover {
+          background: lighten(#012346, 8%);
+        }
+
+        img {
+          @media (max-width: 600px) {
+            width: 12px;
+          }
+        }
+
+        p {
+          margin-top: 5px;
+        }
+      }
+
+
+    }
+
+    @media (min-width: 601px) {
+      &--buy {
+        a {
+          height: 90px;
+          background: #F26149;
+          color: #fff;
+          font-size: 1.8rem;
+
+          &:hover {
+            background: lighten(#F26149, 8%);
+          }
+
+          p {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 600px) {
+      &--buy {
+        width: calc(100% - 40%);
+        order: -1;
+        background: #F26149;
+        position: relative;
+
+        &::before {
+          content: "";
+          background: url(../img/common/triangle2.svg) no-repeat center center/24px 14px;
+          width: 24px;
+          height: 14px;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+
+        a {
+          height: 100%;
+        }
+
+        .buyWrap {
+          align-items: center;
+          display: flex;
+
+          img {
+            width: 18px;
+            margin-right: 5%;
+          }
+        }
+
+        span {
+          color: #fff;
+          font-weight: bold;
+          font-size: 1.6rem;
+          white-space: nowrap;
+          letter-spacing: 0.15em;
+        }
+
+        .pop {
+          left: 50%;
+          max-width: 229px;
+          position: absolute;
+          top: -12px;
+          transform: translateX(-50%);
+          width: 80%;
+        }
+      }
+    }
+  }
+}

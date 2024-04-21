@@ -1,0 +1,64 @@
+/* ==========================================================================
+  restaurant
+  ========================================================================== */
+
+.restaurant {
+  background: url(../img/belleair/restaurant-bg.png) no-repeat center center/cover;
+  padding: 91px 0 92px;
+
+  @include sp() {
+    padding: 41px 0 21px;
+    background: url(../img/belleair/restaurant-bg-sp.png) no-repeat center center/cover;
+  }
+
+  &__inner {
+    // position: relative;
+    // z-index: 1;
+    display: flex;
+    align-items: center;
+
+    @include sp() {
+      flex-wrap: wrap;
+    }
+  }
+
+  .format {
+    color: #fff;
+
+    @include pc() {
+      flex: 1 1 0%;
+    }
+
+    &__ttl {
+      &::before {
+        background: #fff;
+      }
+    }
+
+    &__subTtl {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  &__img {
+    @include pc() {
+      margin-left: 3%;
+      width: 37%;
+
+      img {
+        max-width: 260px;
+      }
+    }
+
+    @include sp() {
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+
+      img {
+        width: 60px;
+      }
+    }
+  }
+}

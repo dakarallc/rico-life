@@ -1,0 +1,70 @@
+/* ==========================================================================
+  banner
+  ========================================================================== */
+
+.banner {
+  background: #F4F6F8;
+  padding: 104px 0 168px;
+
+  @include sp() {
+    padding: 44px 0;
+  }
+
+  a {
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__note {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 5px;
+    line-height: 1.5;
+
+    @include sp() {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    @include sp() {
+      margin-bottom: 20px;
+    }
+
+    @include pc() {
+      width: calc(50% - 5% / 2);
+
+      &:not(:nth-child(2n)) {
+        margin-right: 5%;
+      }
+    }
+  }
+}
+
+.purchase {
+  padding: 100px 0;
+  background: #F4F6F8;
+
+  .banner__purchase {
+    display: block;
+    max-width: 755px;
+    width: 100%;
+    margin: 0 auto;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  @include sp() {
+    padding: 50px 0;
+  }
+}

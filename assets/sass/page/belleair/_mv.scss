@@ -1,0 +1,281 @@
+/* ==========================================================================
+  mv
+  ========================================================================== */
+
+.belleair .mv,
+.cordless .mv {
+  margin-top: 65px;
+
+  @include sp() {
+    margin-top: 60px;
+
+    &__inner {
+      max-width: 540px !important;
+    }
+  }
+
+  &__up {
+    background: transparent linear-gradient(360deg, #DBDBDB 0%, #FFFFFF00 32%, #FFFFFF00 88%, #FCFCFC 100%) 0% 0% no-repeat;
+    padding: 130px 0 87px;
+
+    @include sp() {
+      padding: 65px 0 71px;
+    }
+  }
+
+  &__down {
+    background: #012346;
+    border: 1px solid #707070;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -32px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #CBCBCB;
+      width: 2px;
+      height: 43px;
+
+      @include sp() {
+        display: none;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 1451px) {
+      padding-left: 11%;
+    }
+
+    @media (max-width: 1450px) {
+      padding-left: 4%;
+    }
+
+    @media (max-width: 360px) {
+      padding-left: 0;
+    }
+  }
+
+  &__inner {
+    &--wide {
+      max-width: calc(1440px + 5% * 2);
+    }
+  }
+
+  &__img {
+    width: 228px;
+    position: relative;
+    left: -2%;
+
+    @include sp() {
+      width: 58px;
+      left: 0;
+    }
+  }
+
+  &__ttl {
+    color: #141414;
+    @include hiragino();
+    text-align: center;
+    letter-spacing: .25em;
+    position: relative;
+    top: -23px;
+
+    @include sp() {
+      letter-spacing: 0;
+      top: 8px;
+    }
+
+    ._upper {
+      display: block;
+      font-size: 5rem;
+      margin-bottom: 16px;
+
+      @media (max-width: 1450px) {
+        font-size: 4rem;
+
+        margin-bottom: 6px;
+      }
+
+
+      @media (max-width: 1180px) {
+        font-size: 3.5rem;
+      }
+
+      @media (max-width: 1100px) {
+        font-size: 3rem;
+      }
+
+      @include sp() {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 355px) {
+        font-size: 1.2rem;
+      }
+
+    }
+
+    ._below {
+      font-size: 6.5rem;
+
+      @media (max-width: 1450px) {
+        font-size: 5.2rem;
+      }
+
+      @media (max-width: 1180px) {
+        font-size: 4.5rem;
+      }
+
+      @media (max-width: 1100px) {
+        font-size: 4rem;
+      }
+
+      @include sp() {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 355px) {
+        font-size: 1.6rem;
+      }
+
+
+
+      ._sm {
+        font-size: 5.6rem;
+
+        @media (max-width: 1450px) {
+          font-size: 4.6rem;
+        }
+
+        @media (max-width: 1180px) {
+          font-size: 4rem;
+        }
+
+        @media (max-width: 1100px) {
+          font-size: 3.6rem;
+        }
+
+        @include sp() {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  &__catch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+
+    @include sp() {
+      padding: 24px 0 16px;
+    }
+  }
+
+  &__subTtl {
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      background: url(../img/belleair/support.svg) center center/393px 116px;
+      content: "";
+      height: 116px;
+      left: -17%;
+      position: absolute;
+      top: -45px;
+      width: 393px;
+      z-index: -1;
+
+      @include sp() {
+        background: url(../img/belleair/support.svg) center center/calc(393px * .3) calc(116px * .3);
+        width: calc(393px * .3);
+        height: calc(116px * .3);
+        left: -10px;
+        top: -25px;
+      }
+    }
+
+    ._upper {
+      letter-spacing: .3em;
+      font-size: 3.2rem;
+      color: #fff;
+      display: block;
+      margin-bottom: -10px;
+
+      @include sp() {
+        // font-size: 1rem;
+        font-size: 1.6rem;
+        margin-bottom: -3px;
+      }
+
+      @media (max-width: 355px) {
+        font-size: 1.4rem;
+      }
+
+      ._em {
+        font-size: 4.8rem;
+        letter-spacing: .35em;
+
+        @include sp() {
+          font-size: 1.4rem;
+          // font-size: 1rem;
+        }
+
+        @media (max-width: 355px) {
+          font-size: 1.2rem;
+        }
+
+      }
+    }
+
+    ._below {
+      color: #F0EC6E;
+      position: relative;
+      font-size: 6.4rem;
+      letter-spacing: .3em;
+
+      @include sp() {
+        letter-spacing: .2em;
+        font-size: 3rem;
+      }
+
+
+      @include sp() {
+        font-size: 2.5rem;
+      }
+
+      &::before {
+        background: #F0EC6E;
+        bottom: -5px;
+        content: "";
+        height: 8px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+
+        @include sp() {
+          height: 2px;
+          bottom: -1px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,362 @@
+/* ==========================================================================
+  contact
+  ========================================================================== */
+
+.contact-page {
+  background: #F4F6F8;
+}
+
+.contact {
+  padding-bottom: 140px;
+
+  @include sp() {
+    padding-bottom: 80px;
+  }
+
+  &__ttl {
+    color: #009480;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin-bottom: 37px;
+    text-align: center;
+
+    @include sp() {
+      margin-bottom: 20px;
+      font-size: 2.6rem;
+    }
+  }
+
+  &__desc {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+
+    @include sp() {
+      font-size: 1.8rem;
+      line-height: 1.5;
+    }
+  }
+
+  &__list {
+    margin-bottom: 90px;
+
+    @include sp() {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__item {
+    padding: 40px 3%;
+    display: flex;
+    align-items: center;
+
+    @include sp() {
+      padding: 30px 3%;
+    }
+
+    &--flexStart {
+      align-items: flex-start;
+    }
+
+    @include sp() {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    border-bottom: 1px solid #707070;
+  }
+
+  &__label {
+    @include pc() {
+      margin-right: 10%;
+      // width: 22%;
+      width: 24%;
+      min-width: 204px;
+    }
+
+    @include sp() {
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: bold;
+
+    @include sp() {
+      justify-content: flex-start;
+    }
+
+    &--required {
+      &::after {
+        content: "必須";
+        background: #FE4E4E;
+        width: 40px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        line-height: 1;
+        font-size: 1.2rem;
+
+        @include sp() {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  &__contents {
+    flex: 1 1 0%;
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      height: 46px;
+      padding: 10px 4%;
+      width: 87%;
+      border: 1px solid #707070;
+      background: #fff;
+
+      @include sp() {
+        width: 100%;
+        padding: 6px 4%;
+      }
+
+      &::placeholder {
+        color: #ACACAC;
+      }
+    }
+
+    textarea {
+      height: 246px;
+
+      @include sp() {
+        height: 200px;
+      }
+    }
+  }
+
+  &__txt {
+    &._zip {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .mwform-zip-field {
+        display: flex;
+        align-items: center;
+      }
+      //プラグイン上書き
+      input {
+        width: 100px!important;
+        margin: 0 10px;
+        width: 100px;
+
+        @include sp(){
+          width: 80px!important;
+        }
+
+        @media (max-width: 355px) {
+          width: 70px!important;
+        }
+      }
+    }
+
+    &._tel{
+      input {
+        width: 100px!important;
+          @include sp() {
+          width: 80px!important;
+          margin-bottom: 5px;
+        }
+        @media (max-width: 355px) {
+          width: 70px!important;
+        }
+      }
+    }
+  }
+
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]+span {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0.2em 0;
+    padding: 0 0 0 30px;
+    position: relative;
+
+    @include sp() {
+      margin-bottom: 16px;
+    }
+  }
+
+  input[type="radio"]+span::before {
+    -webkit-transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+  }
+
+  input[type="radio"]+span::after {
+    -webkit-transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.32);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    content: "";
+    height: 12px;
+    left: 6px;
+    opacity: 0;
+    padding: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+    width: 12px;
+  }
+
+  input[type="radio"]:checked+span::after {
+    opacity: 1;
+  }
+
+
+  &__submit {
+    width: 100%;
+    max-width: 268px;
+    height: 50px;
+    background: #F26149;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    border: 1px solid #F26149;
+    margin: 0 auto;
+
+    @include sp() {}
+
+    &:hover {
+      background: #fff;
+
+      input[type="submit"] {
+        color: #F26149;
+      }
+
+      &::before {
+        color: #F26149;
+      }
+    }
+
+    &::before {
+      content: "＞";
+      position: absolute;
+      font-size: 1rem;
+      color: #fff;
+      top: 50%;
+      right: 4px;
+      transform: translateY(-50%);
+    }
+
+    transition: .2s;
+
+    input[type="submit"] {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      transition: .2s;
+      font-family: inherit;
+      letter-spacing: .4em;
+      font-size: 1.6rem;
+
+    }
+  }
+
+  .privacy {
+    &__ttl {
+      @include furuta();
+      color: #009480;
+      font-size: 3.9rem;
+      font-weight: bold;
+      padding-left: 30px;
+      position: relative;
+      margin-bottom: 30px;
+
+      @include sp() {
+        font-size: 2.6rem;
+        padding-left: 20px;
+      }
+
+      &::before {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background: #009480;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+
+        @include sp() {
+          width: 3px;
+        }
+      }
+    }
+
+    &__box {
+      background: #F2F2F2;
+      border: 1px solid #707070;
+      font-size: 1.7rem;
+      height: 282px;
+      letter-spacing: .1em;
+      overflow-y: scroll;
+      padding: 5px 3%;
+      width: 100%;
+      margin-bottom: 40px;
+
+      @include sp() {
+        padding: 20px;
+        font-size: 1.4rem;
+        line-height: 2;
+        height: 200px;
+      }
+    }
+  }
+
+  .mw_wp_form .horizontal-item+.horizontal-item {
+    margin-left: 0 !important;
+  }
+
+  .mw_wp_form .error{
+    color: #fe4e4e;
+    margin-top: 3px;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    @include sp(){
+      font-size: 1.4rem;
+    }
+  }
+
+}

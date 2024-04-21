@@ -1,0 +1,48 @@
+/* ==========================================================================
+  table
+  ========================================================================== */
+
+.table {
+  text-align: center;
+  background: #F4F6F8;
+  padding: 95px 0;
+
+  @include sp() {
+    padding: 40px 0 50px;
+  }
+
+  &__ttl {
+    color: #141414;
+    font-size: 4.1rem;
+    font-weight: bold;
+    letter-spacing: .2em;
+    margin-bottom: 10px;
+
+    @include sp() {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__subTtl {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 0.25em;
+
+    @include sp() {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  &__txt {
+    font-size: 1.6rem;
+
+    @include sp() {
+      font-size: 1.4rem;
+    }
+  }
+}

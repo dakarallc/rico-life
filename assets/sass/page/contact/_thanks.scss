@@ -1,0 +1,58 @@
+/* ==========================================================================
+  thanks (404も同様コード使用)
+  ========================================================================== */
+
+.thanks,
+.notFound {
+  padding-bottom: 233px;
+
+  @include sp() {
+    padding-bottom: 80px;
+  }
+
+  &__ttl {
+    color: #009480;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin-bottom: 25px;
+    text-align: center;
+
+    @include sp() {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__txt {
+    letter-spacing: .2em;
+    line-height: 1.6;
+  }
+
+  &__btn {
+    align-items: center;
+    background: #009480;
+    border: 1px solid #009480;
+    color: #fff;
+    display: flex;
+    font-weight: bold;
+    @include furuta();
+    height: 40px;
+    justify-content: center;
+    margin: 40px auto 0;
+    max-width: 352px;
+    width: 100%;
+
+    &:hover {
+      color: #009480;
+      background: #fff;
+    }
+  }
+}
+
+.thanks__txt+.thanks__txt {
+  margin-top: 25px;
+}
+
+.notFound {
+  text-align: center;
+}

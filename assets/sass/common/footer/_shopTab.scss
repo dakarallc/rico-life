@@ -1,0 +1,326 @@
+/* ==========================================================================
+  shopTab
+  ========================================================================== */
+
+  .shopTab {
+    background: transparent linear-gradient(180deg, #003274 0%, #6296FF 100%) 0% 0% no-repeat;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+    padding: 155px 0 86px;
+    position: relative;
+
+    @include sp() {
+      padding: 60px 0 70px;
+    }
+
+    &__inner {
+      max-width: calc(1038px + 5% * 2);
+    }
+
+    &__ttl {
+      color: #fff;
+      position: relative;
+      margin-bottom: 35px;
+
+      @include sp() {
+        margin-bottom: 20px;
+      }
+      p{
+       font-size: 16px;
+       a{
+        text-decoration: underline;
+       }
+      }
+
+      &::before {
+        background: #fff;
+        top: 0;
+        transform: none;
+
+        @include pc() {
+          height: calc(100% + 109px);
+        }
+      }
+    }
+
+    .tab {
+      padding-left: 3%;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+
+
+      @include pc() {
+        &:after {
+          position: relative;
+          left: 2%;
+          bottom: 0;
+          content: '';
+          width: 100%;
+          height: 1px;
+          background: #fff;
+          display: block;
+          order: -1;
+        }
+      }
+
+      &__ttl {
+        display: none;
+      }
+
+      &__label {
+        font-weight: bold;
+        white-space: nowrap;
+        flex-direction: column;
+        text-align: center;
+        width: 211px;
+        height: 78px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: -1;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        outline: 1px solid#fff;
+        line-height: 1.4;
+        position: relative;
+        background: #C9E0FF;
+
+        img{
+          width: auto;
+
+          @include sp(){
+            width: 80px;
+          }
+
+          @media (max-width: 355px) {
+            width: 60px;
+          }
+
+        }
+
+        &[for="yahoo"]{
+          img{
+              @include sp() {
+              width: 94px;
+              }
+
+              @media (max-width: 355px) {
+                width: 80px;
+              }
+          }
+        }
+
+        @include sp() {
+          flex: 1;
+          font-size: 1.6rem;
+          max-width: 172px;
+          height: 58px;
+
+        }
+
+
+      }
+
+      &__label:not(:last-of-type) {
+        @include pc() {
+          margin-right: 8px;
+        }
+      }
+
+      &__contents {
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &__switch:checked+.tab__label {
+        background: #FFFFFF;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -16px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 16px 20px 0 20px;
+          z-index: 2;
+          border-color: #fff transparent transparent transparent;
+        }
+      }
+
+      &__switch {
+        display: none;
+      }
+
+      &__switch:checked+.tab__label+.tab__contents {
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+        transition: .8s opacity;
+
+        @include pc() {
+          padding: 85px 8% 0 5%;
+        }
+
+        @include sp() {
+          padding-top: 30px;
+        }
+
+      }
+    }
+
+    &__list{
+      display: flex;
+      justify-content: space-between;
+
+      @include sp(){
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+    }
+
+    &__item{
+      transition: .2s;
+
+      @include sp(){
+        margin: 0 auto;
+        &:not(:last-child){
+          margin-bottom: 30px;
+        }
+        a{
+          display: flex;
+        }
+      }
+
+      @include sp(){
+        width: 85%;
+      }
+
+      @media (max-width: 355px) {
+       width: 95%;
+      }
+      &--new{
+        @include pc(){
+          position: relative;
+          &::before{
+            content: "NEW";
+            @include furuta();
+            font-weight: bold;
+            font-size: 1.8rem;
+            background: #FF9300;
+            border-radius: 50%;
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            top: -44px;
+            left: -60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+          }
+        }
+
+        @include sp(){
+          .shopTab__subTtl{
+            text-align: left;
+            &::before{
+              content: "NEW";
+              @include furuta();
+              font-weight: bold;
+              font-size: 1rem;
+              background: #FF9300;
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              margin-bottom: 20px;
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      &:hover{
+        opacity: .6;
+      }
+    }
+
+    &__subTtl{
+      font-size: 2rem;
+      @include furuta();
+      color: #fff;
+      line-height: 1.2;
+      margin-top: 10px;
+
+      @include pc(){
+
+      text-align: center;
+      }
+
+      @include sp(){
+        text-align: left;
+        font-size: 1.6rem;
+        flex: 1 1 0%;
+
+        span{
+          padding-left: 16px;
+        }
+      }
+
+      &._adjust{
+        @include pc(){
+          margin-top: -19px;
+        }
+      }
+    }
+
+    &__remarks{
+     font-size: 1.5rem;
+     @include furuta();
+     color: #fff;
+     line-height: 1.2;
+     margin-top: 10px;
+     text-align: center;
+    }
+
+
+
+    &__img {
+
+      @include sp() {
+        margin-right: 22%;
+        width: 20%;
+
+        img {
+          @include pc(){
+            margin-bottom: 20px;
+            width: auto;
+          }
+        }
+
+        &._adjust{
+          width: 40%;
+          margin-right: 2%;
+        }
+      }
+
+    }
+
+  }
+
+  //ie対応
+  @media all and (-ms-high-contrast: none) {
+    .shopTab .tab__switch:checked+.tab__label+.tab__contents{
+      transition: none;
+    }
+  }

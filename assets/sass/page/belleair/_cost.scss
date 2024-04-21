@@ -1,0 +1,178 @@
+/* ==========================================================================
+  cost
+  ========================================================================== */
+
+.cost {
+  background: url(../img/belleair/cost-bg.png) no-repeat center center/cover;
+  padding: 180px 0 85px;
+  position: relative;
+
+  @include sp() {
+    padding: 66px 0 50px;
+    background: #fff;
+  }
+
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4.5vw 50vw 0 50vw;
+    border-color: #F4F6F8 transparent transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include sp() {
+      border-width: 6.5vw 50vw 0 50vw;
+    }
+  }
+
+
+  .format {
+    flex: 1 1 0%;
+
+    &__subTtl {
+      border-bottom: 1px solid #141414;
+    }
+
+    &__txt {
+      color: #141414;
+    }
+  }
+
+  &__table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+    margin-top: 27px;
+    max-width: 681px;
+
+
+
+    th:first-child {
+      width: 110px;
+
+      @include sp() {
+        width: 70px;
+      }
+    }
+
+    th,
+    td {
+      padding: 7px 2px;
+    }
+
+    tr {
+      &:not(:last-child) {
+        border-bottom: 1px solid #D1D1D1;
+      }
+    }
+
+    th {
+      font-size: 1.9rem;
+
+      @include sp() {
+        font-size: 1.2rem;
+      }
+    }
+
+    td {
+      font-size: 2.3rem;
+
+      @include sp() {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 355px) {
+        font-size: 1.2rem;
+      }
+
+
+      ._plus {
+        position: relative;
+
+        &::after {
+          content: "+";
+          font-size: 2.2rem;
+          position: absolute;
+          right: -33px;
+          top: 50%;
+          transform: translateY(-50%);
+
+          @include sp() {
+            font-size: 1.6rem;
+            right: -18px;
+          }
+        }
+      }
+
+      ._equal {
+        position: relative;
+
+        &::after {
+          content: "＝";
+          font-size: 2.2rem;
+          position: absolute;
+          left: -35px;
+          top: 50%;
+          transform: translateY(-50%);
+
+          @include sp() {
+            font-size: 1.6rem;
+            left: -19px;
+          }
+        }
+      }
+    }
+
+    ._ttl {
+      font-size: 1.8rem;
+
+      @include sp() {
+        font-size: 1.6rem;
+      }
+    }
+
+    ._belleair {
+      font-weight: bold;
+      font-size: 2.4rem;
+      color: #4B6990;
+
+      @include sp() {
+        font-size: 1.8rem;
+      }
+
+      ._plus,
+      ._equal {
+        &::after {
+          font-weight: bold;
+          color: #4B6990;
+        }
+      }
+
+      ._plus {
+        &::after {
+          right: -30px;
+
+          @include sp() {
+            right: -17px;
+          }
+        }
+      }
+
+      ._equal {
+        &::after {
+          left: -32px;
+
+          @include sp() {
+            left: -19px;
+          }
+        }
+      }
+    }
+
+  }
+}

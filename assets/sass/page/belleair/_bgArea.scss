@@ -1,0 +1,14 @@
+/* ==========================================================================
+  bgArea
+  ========================================================================== */
+
+.bgArea {
+  background: url(../img/belleair/bed-bg.jpg) no-repeat center left/cover;
+  width: 100%;
+  height: 715px;
+
+  @include sp() {
+    height: 235px;
+
+  }
+}

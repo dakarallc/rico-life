@@ -1,0 +1,50 @@
+/* ==========================================================================
+  slim
+  ========================================================================== */
+
+.slim {
+  padding: 76px 0 18px;
+
+  @include sp() {
+    padding: 44px 0 40px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+
+    @include sp() {
+      flex-wrap: wrap;
+    }
+  }
+
+  .format {
+
+
+    @include pc() {
+      padding-top: 20px;
+      flex: 1 1 0%;
+    }
+
+    @include sp() {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__img {
+    @include pc() {
+      margin-left: 4%;
+      width: 49%;
+    }
+
+    @include sp() {
+      text-align: center;
+      width: 100%;
+
+      img {
+        width: 75%;
+      }
+    }
+  }
+}

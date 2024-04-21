@@ -1,0 +1,31 @@
+@mixin roboto() {
+  font-family: 'Roboto', sans-serif;
+}
+
+// メディアクエリ
+// スマホ
+@mixin sp {
+  @media (max-width: #{$w-breakpoint}px) {
+    @content;
+  }
+}
+
+// PC
+@mixin pc {
+  @media (min-width: #{$w-breakpoint + 1}px) {
+    @content;
+  }
+}
+
+
+@mixin meiryo() {
+  font-family: 'メイリオ', 'Meiryo', sans-serif;
+}
+
+@mixin furuta() {
+  font-family: 'Furuta', sans-serif;
+}
+
+@mixin hiragino() {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}

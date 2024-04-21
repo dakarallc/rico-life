@@ -1,0 +1,156 @@
+/* ==========================================================================
+  spec
+  ========================================================================== */
+
+.spec {
+  background: #F4F6F8;
+  padding-bottom: 100px;
+  @include sp(){
+    padding-bottom: 70px;
+  }
+
+  .format__ttl {
+    color: #012346;
+    margin-bottom: 25px;
+
+    &::before {
+      background: #012346;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    // align-items: flex-end;
+    align-items: flex-start;
+  }
+
+  &__img {
+    margin-left: 3%;
+    width: 24%;
+    position: relative;
+    top: 270px;
+  }
+
+  &__contents {
+    flex: 1 1 0%;
+  }
+
+  &__list {
+    dl {
+      display: flex;
+      align-items: flex-start;
+      font-size: 2rem;
+      padding: 12px 4%;
+      border-bottom: 1px solid #393939;
+
+      @include sp() {
+        font-size: 1.5rem;
+      }
+
+      dt {
+        font-weight: bold;
+        width: 29%;
+        margin-right: 3%;
+
+        @include sp() {
+          width: 35%;
+        }
+      }
+
+      dd {
+        flex: 1 1 0%;
+      }
+    }
+  }
+
+  ._defaultHide {
+    display: none;
+  }
+
+  &__btn {
+    width: 100%;
+    cursor: pointer;
+    background: #012346;
+    height: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    @include furuta();
+    margin-top: 10px;
+    position: relative;
+    transition: .2s;
+
+    @include sp() {
+      height: 60px;
+    }
+
+    &:hover {
+      background: lighten(#012346, 5%);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include sp() {
+      right: 10%;
+    }
+
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 22px;
+      height: 2px;
+      background-color: #fff;
+      transition: .1s;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+
+      @include sp() {
+        width: 14px;
+      }
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 22px;
+      height: 2px;
+      background-color: #fff;
+      transition: .1s;
+
+      @include sp() {
+        width: 14px;
+      }
+    }
+
+    &.active {
+      &::before {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+      }
+
+      &::after {
+        background-color: transparent;
+      }
+    }
+  }
+}

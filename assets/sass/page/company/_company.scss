@@ -1,0 +1,133 @@
+/* ==========================================================================
+  company
+  ========================================================================== */
+
+.company {
+
+  .about {
+    letter-spacing: .2em;
+    margin: 0 calc(50% - 50vw);
+    padding: 4px calc(50vw - 50%) 112px;
+    position: relative;
+    width: 100vw;
+
+    @include sp() {
+      margin: 140px calc(50% - 50vw) 0;
+      padding: 4px calc(50vw - 50%) 70px;
+    }
+
+    &::before {
+      content: "";
+      background: url(../img/company/company2.jpg) no-repeat top left/1920px 750px;
+      width: 1920px;
+      height: 750px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      object-fit: cover;
+      z-index: -1;
+
+
+    }
+
+    @include sp() {
+      line-height: 1.7;
+    }
+
+
+    .kv__ttl {
+      margin-bottom: 20px;
+    }
+
+    &__txt {
+      margin-bottom: 35px;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 37px;
+      }
+
+
+    }
+
+    &__ttl {
+      font-weight: 400;
+    }
+  }
+}
+
+.summary {
+  background: #FEFFFF;
+  margin: 0 calc(50% - 50vw);
+  padding: 94px calc(50vw - 50% + 8px) 194px;
+  position: relative;
+  width: 100vw;
+
+  @include sp() {
+    padding-bottom: 80px;
+  }
+
+  &__ttl {
+    @include furuta();
+    color: #009480;
+    font-size: 3.9rem;
+    font-weight: bold;
+    padding-left: 30px;
+    position: relative;
+
+    @include sp() {
+      font-size: 2.6rem;
+      padding-left: 20px;
+    }
+
+    &::before {
+      content: "";
+      width: 4px;
+      height: 100%;
+      background: #009480;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      @include sp() {
+        width: 3px;
+      }
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid #0D0D0D;
+    display: flex;
+    padding: 39px 3%;
+    line-height: 1.4;
+    letter-spacing: 0;
+    align-items: center;
+
+    @include sp() {
+      flex-wrap: wrap;
+      padding: 20px 0;
+    }
+
+    dt {
+      width: 25%;
+      font-weight: bold;
+
+      @include sp() {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+
+    dd {
+      @include pc() {
+        flex: 1 1 0%;
+      }
+
+      @include sp() {
+        width: 100%;
+      }
+    }
+  }
+}

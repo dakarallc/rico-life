@@ -1,0 +1,78 @@
+/* ==========================================================================
+  shop
+  ========================================================================== */
+
+.shop {
+  position: relative;
+  padding-top: 100px;
+  margin-top: -100px;
+
+  @include sp(){
+    padding-top: 70px;
+    margin-top: -70px;
+  }
+  
+  &__contents{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    background: #E8F2FA;
+    padding: 100px 0;
+
+    @include sp() {
+      padding: 44px 0;
+    }
+  }
+
+
+
+
+  .format__ttl {
+    color: #003274;
+
+    @include sp() {
+      margin-bottom: 30px;
+    }
+
+    &::before {
+      background: #003274;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include sp() {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+
+    @include sp() {
+      width: 100%;
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-bottom: 35px;
+      }
+    }
+
+    img {
+      @include pc() {
+        width: auto;
+      }
+
+      @include sp() {
+        width: 60%;
+      }
+    }
+
+
+    a {
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}

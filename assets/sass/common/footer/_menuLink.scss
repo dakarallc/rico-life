@@ -1,0 +1,80 @@
+/* ==========================================================================
+  menuLink
+  ========================================================================== */
+
+.menuLink {
+  display: flex;
+
+  @include sp() {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 25%;
+    position: relative;
+    transition: .2s;
+
+    @include sp() {
+      width: 100%;
+    }
+
+    &::before {
+      content: "";
+      background: rgba(255, 255, 255, .4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: .2s;
+    }
+
+    a {
+      width: 100%;
+      height: 235px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      position: relative;
+      z-index: 1;
+      color: #009480;
+      @media (max-width: 1250px) {
+        font-size: 3rem;
+      }
+
+      @include sp() {
+        font-size: 2rem;
+        height: 150px;
+      }
+
+
+
+
+    }
+
+    &--company {
+      background: url(../img/common/menu1.jpg) no-repeat center center/cover;
+    }
+
+    &--contact {
+      background: url(../img/common/menu2.jpg) no-repeat center center/cover;
+    }
+
+    &--agency {
+      background: url(../img/common/menu3.jpg) no-repeat center center/cover;
+    }
+
+    &--news {
+      background: url(../img/common/menu4.jpg) no-repeat center center/cover;
+    }
+
+    &:hover {
+      &::before {
+        background: rgba(255, 255, 255, .5);
+      }
+    }
+
+
+  }
+}

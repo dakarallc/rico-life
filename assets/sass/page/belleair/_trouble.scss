@@ -1,0 +1,111 @@
+/* ==========================================================================
+  trouble
+  ========================================================================== */
+
+.trouble {
+  background: url(../img/belleair/trouble-bg.png) no-repeat center center/cover;
+  padding: 86px 0 50px;
+  text-align: center;
+
+  @include sp() {
+    background: url(../img/belleair/trouble-bg-sp.png) no-repeat top center/cover;
+    padding: 48px 0;
+  }
+
+  &__ttl {
+    color: #2F496A;
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 27px;
+
+    @include sp() {
+      font-size: 2.2rem;
+    }
+
+    @media (max-width: 355px) {
+      font-size: 1.8rem;
+    }
+
+    ._em {
+      font-size: 4.5rem;
+
+      @include sp() {
+        font-size: 2.9rem;
+      }
+    }
+
+    ._ttlWrap {
+      display: flex;
+      align-items: center;
+      // line-height: 1;
+
+      &::before {
+        content: "";
+        background: url(../img/belleair/question-deco-left.svg) center center/ 83px 91px;
+        width: 83px;
+        height: 91px;
+
+        @include sp() {
+          background: url(../img/belleair/question-deco-left.svg) center center/ calc(83px * .4) calc(91px * .4);
+          width: calc(83px * .4);
+          height: calc(91px * .4);
+        }
+
+        @media (max-width: 355px) {
+          background: url(../img/belleair/question-deco-left.svg) center center/ calc(83px * .3) calc(91px * .3);
+          width: calc(83px * .3);
+          height: calc(91px * .3);
+        }
+      }
+
+      &::after {
+        content: "";
+        background: url(../img/belleair/question-deco-right.svg) center center/ 83px 91px;
+        width: 83px;
+        height: 91px;
+
+        @include sp() {
+          background: url(../img/belleair/question-deco-right.svg) center center/ calc(83px * .4) calc(91px * .4);
+          width: calc(83px * .4);
+          height: calc(91px * .4);
+        }
+
+        @media (max-width: 355px) {
+          background: url(../img/belleair/question-deco-right.svg) center center/ calc(83px * .3) calc(91px * .3);
+          width: calc(83px * .3);
+          height: calc(91px * .3);
+        }
+      }
+    }
+  }
+
+
+  &__img {
+    width: 100%;
+    max-width: 895px;
+    margin: 0 auto;
+    position: relative;
+
+    @include pc() {
+      left: -4%;
+    }
+
+    @include sp() {
+      left: 2%;
+      max-width: 302px;
+    }
+
+  }
+
+  &__img2 {
+    width: 100%;
+    max-width: 571px;
+    margin: 38px auto 0;
+
+    @include sp() {
+      max-width: 400px;
+      margin: 2px auto 0;
+    }
+  }
+}
