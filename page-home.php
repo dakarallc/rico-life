@@ -84,10 +84,10 @@ EVENT
   <!--  -->
   <div class="banner banner70">
     <div class="inner">
-      <a class="tochi present-pc" href="https://ietochi-kuki.com/1162/" target="_blank">
+      <a class="tochi present-pc" href="https://ietochi-kuki.com/1331/" target="_blank">
           <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/70th.png" alt="">
       </a>
-      <a class="tochi present-sp" href="https://ietochi-kuki.com/1162/" target="_blank">
+      <a class="tochi present-sp" href="https://ietochi-kuki.com/1331/" target="_blank">
           <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/70thSp.png" alt="">
       </a>
     </div>
