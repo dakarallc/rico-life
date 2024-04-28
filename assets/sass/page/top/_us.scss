@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   us
   ========================================================================== */
@@ -14,7 +15,7 @@
   }
 
   &::before {
-    background: url(../img/top/us-bg.jpg) no-repeat top center/cover;
+    background: url(../img/top/us-bg.png) no-repeat top center/cover;
     content: "";
     height: 66%;
     position: absolute;
@@ -23,7 +24,7 @@
     width: 59%;
 
     @media (max-width: 1400px) {
-      background: url(../img/top/us-bg.jpg) no-repeat top right/cover;
+      background: url(../img/top/us-bg.png) no-repeat top right/cover;
     }
 
     @media (max-width: 599px) {
@@ -52,7 +53,7 @@
     padding: 50px 0 34px;
 
 
-    @include sp() {
+    @include mixin.sp() {
       padding: 30px 5%;
       position: relative;
       left: -14%;
@@ -73,7 +74,7 @@
   &__wrap {
     position: relative;
 
-    @include pc() {
+    @include mixin.pc() {
       padding: 60px 0 0;
     }
   }
@@ -97,7 +98,7 @@
 
     margin-bottom: 40px;
 
-    @include sp(){
+    @include mixin.sp(){
       margin-bottom: 20px;
     }
 
@@ -138,9 +139,9 @@
 
 
   &__subTtl {
-    color: #009480;
+    color: #d90200;
     font-weight: bold;
-    @include furuta();
+    @include mixin.furuta();
     margin-bottom: 6px;
     letter-spacing: 0.08em;
     font-size: 2.4rem;

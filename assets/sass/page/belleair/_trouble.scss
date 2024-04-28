@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   trouble
   ========================================================================== */
@@ -7,7 +8,7 @@
   padding: 86px 0 50px;
   text-align: center;
 
-  @include sp() {
+  @include mixin.sp() {
     background: url(../img/belleair/trouble-bg-sp.png) no-repeat top center/cover;
     padding: 48px 0;
   }
@@ -19,7 +20,7 @@
     font-weight: bold;
     margin-bottom: 27px;
 
-    @include sp() {
+    @include mixin.sp() {
       font-size: 2.2rem;
     }
 
@@ -30,7 +31,7 @@
     ._em {
       font-size: 4.5rem;
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 2.9rem;
       }
     }
@@ -46,7 +47,7 @@
         width: 83px;
         height: 91px;
 
-        @include sp() {
+        @include mixin.sp() {
           background: url(../img/belleair/question-deco-left.svg) center center/ calc(83px * .4) calc(91px * .4);
           width: calc(83px * .4);
           height: calc(91px * .4);
@@ -65,7 +66,7 @@
         width: 83px;
         height: 91px;
 
-        @include sp() {
+        @include mixin.sp() {
           background: url(../img/belleair/question-deco-right.svg) center center/ calc(83px * .4) calc(91px * .4);
           width: calc(83px * .4);
           height: calc(91px * .4);
@@ -87,11 +88,11 @@
     margin: 0 auto;
     position: relative;
 
-    @include pc() {
+    @include mixin.pc() {
       left: -4%;
     }
 
-    @include sp() {
+    @include mixin.sp() {
       left: 2%;
       max-width: 302px;
     }
@@ -103,7 +104,7 @@
     max-width: 571px;
     margin: 38px auto 0;
 
-    @include sp() {
+    @include mixin.sp() {
       max-width: 400px;
       margin: 2px auto 0;
     }

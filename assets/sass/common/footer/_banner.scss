@@ -1,54 +1,103 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   banner
   ========================================================================== */
-
-.banner {
-  background: #F4F6F8;
-  padding: 104px 0 168px;
-
-  @include sp() {
-    padding: 44px 0;
+  .banner70 {
+    padding: 60px 0 20px !important;
   }
-
-  a {
-    &:hover {
-      opacity: .7;
+  
+  .banner {
+    background: #F4F6F8;
+    padding: 104px 0 168px;
+  }
+  @media (max-width: 999px) {
+    .banner .present-pc {
+      display: none;
     }
   }
-
-  &__note {
+  .banner .present-pc img {
+    margin-bottom: 50px;
+  }
+  @media (min-width: 1000px) {
+    .banner .present-sp {
+      display: none;
+    }
+  }
+  .banner .present-sp img {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 999px) {
+    .banner {
+      padding: 44px 0;
+    }
+  }
+  .banner .tochi img {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 999px) {
+    .banner .tochi img {
+      margin-bottom: 20px;
+    }
+  }
+  .banner a:hover {
+    opacity: 0.7;
+  }
+  .banner__note {
     font-size: 1.6rem;
-    text-align: center;
-    margin-top: 5px;
     line-height: 1.5;
-
-    @include sp() {
+    margin-top: 5px;
+    text-align: center;
+  }
+  @media (max-width: 999px) {
+    .banner__note {
       font-size: 1.4rem;
     }
   }
-
-  &__list {
+  .banner__list {
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
   }
-
-  &__item {
+  .banner__item {
     margin-bottom: 30px;
-
-    @include sp() {
+  }
+  @media (max-width: 999px) {
+    .banner__item {
       margin-bottom: 20px;
     }
-
-    @include pc() {
+  }
+  @media (min-width: 1000px) {
+    .banner__item {
       width: calc(50% - 5% / 2);
-
-      &:not(:nth-child(2n)) {
-        margin-right: 5%;
-      }
+    }
+    .banner__item:not(:nth-child(2n)) {
+      margin-right: 5%;
     }
   }
-}
-
+  
+  .purchase {
+    background: #F4F6F8;
+    padding: 100px 0;
+  }
+  .purchase .banner__purchase {
+    display: block;
+    margin: 0 auto;
+    max-width: 755px;
+    width: 100%;
+  }
+  .purchase .banner__purchase:hover {
+    opacity: 0.7;
+  }
+  @media (max-width: 999px) {
+    .purchase {
+      padding: 50px 0;
+    }
+  }
+  
 .purchase {
   padding: 100px 0;
   background: #F4F6F8;
@@ -64,7 +113,36 @@
     }
   }
 
-  @include sp() {
+  @include mixin.sp() {
     padding: 50px 0;
   }
+}
+
+@media screen and (min-width: 500px) {
+  .floating {
+    display: none;
+  }
+}
+.floating {
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.floating__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.floating__inner .tell {
+  width: 50%;
+}
+.floating__inner .req-con {
+  width: 25%;
+}
+.floating__inner img {
+  height: 60px;
 }

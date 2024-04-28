@@ -1,7 +1,4 @@
-/* ==========================================================================
-  component
-  ========================================================================== */
-
+@use './mixin';
 
 /* ==========================================================================
   inner
@@ -12,7 +9,7 @@
   padding: 0 5%;
   max-width: calc(988px + 5% * 2);
 
-  @include sp() {
+  @include mixin.sp() {
     max-width: 500px !important;
     padding: 0 16px;
   }
@@ -23,12 +20,12 @@
   ========================================================================== */
 .ttl {
   font-weight: bold;
-  @include furuta();
-  color: #009480;
+  @include mixin.furuta();
+  color: #d90200;
   font-size: 6rem;
   position: relative;
 
-  @include sp() {
+  @include mixin.sp() {
     font-size: 3rem;
     line-height: 1.2;
   }
@@ -42,7 +39,7 @@
     content: "";
     width: 4px;
     height: 100%;
-    background: #009480;
+    background: #d90200;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -51,12 +48,12 @@
   &--left {
     padding-left: 20px;
 
-    @include pc() {
+    @include mixin.pc() {
       line-height: 1.6;
       letter-spacing: .04em;
     }
 
-    @include sp() {
+    @include mixin.sp() {
       padding-left: 13px;
     }
 
@@ -66,7 +63,7 @@
   }
 
   &--right {
-    @include sp() {
+    @include mixin.sp() {
       padding-left: 7px;
 
       &::before {
@@ -74,7 +71,7 @@
       }
     }
 
-    @include pc() {
+    @include mixin.pc() {
       &::before {
         right: 0;
       }
@@ -88,11 +85,11 @@
   ========================================================================== */
 .topLink {
   transition: .2s;
-  @include furuta();
-  background: #009480;
+  @include mixin.furuta();
+  background: #d90200;
   color: #fff;
   font-weight: bold;
-  border: 1px solid #009480;
+  border: 1px solid #d90200;
   height: 40px;
   padding: 0 20px;
   position: relative;
@@ -104,7 +101,7 @@
 
 
 
-  @include sp() {
+  @include mixin.sp() {
     width: 200px;
     height: 30px;
     font-size: 1.2rem;
@@ -124,24 +121,24 @@
 
   &:hover {
     background: #fff;
-    color: #009480;
+    color: #d90200;
 
     &::before {
-      background: #009480;
+      background: #d90200;
     }
   }
 
   &--reverse {
     background: #fff;
-    color: #009480;
+    color: #d90200;
     border: none;
 
     &::before {
-      background: #009480;
+      background: #d90200;
     }
 
     &:hover {
-      background: #009480;
+      background: #d90200;
       color: #fff;
 
       &::before {
@@ -165,9 +162,9 @@
     position: relative;
     padding-left: 30px;
     letter-spacing: .06em;
-    @include furuta();
+    @include mixin.furuta();
 
-    @include sp() {
+    @include mixin.sp() {
       font-size: 3rem;
       padding-left: 12px;
       margin-bottom: 18px;
@@ -184,7 +181,7 @@
       height: 100%;
       background: #012346;
 
-      @include sp() {
+      @include mixin.sp() {
         height: 90%;
       }
     }
@@ -201,7 +198,7 @@
     letter-spacing: .1em;
     color: #012346;
 
-    @include sp() {
+    @include mixin.sp() {
       font-size: 1.6rem;
       padding-bottom: 7px;
       margin-bottom: 8px;
@@ -210,9 +207,9 @@
     ._em {
       font-size: 3rem;
       font-weight: bold;
-      @include furuta();
+      @include mixin.furuta();
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 2rem;
       }
     }
@@ -221,7 +218,7 @@
   &__txt {
     letter-spacing: 0.2em;
 
-    @include pc() {
+    @include mixin.pc() {
       line-height: 1.8;
     }
   }
@@ -237,7 +234,7 @@
   width: 100%;
   margin-bottom: 103px;
 
-  @include sp() {
+  @include mixin.sp() {
     min-height: 300px;
   }
 
@@ -251,7 +248,7 @@
     margin-right: -47%;
     z-index: -1;
 
-    @include pc() {
+    @include mixin.pc() {
       top: 0;
     }
 
@@ -260,7 +257,7 @@
       width: 65%;
     }
 
-    @include sp() {
+    @include mixin.sp() {
       bottom: -80px;
       content: "";
       height: 70%;
@@ -285,11 +282,11 @@
     margin-right: -47%;
     z-index: 0;
 
-    @include pc() {
+    @include mixin.pc() {
       top: 0;
     }
 
-    @include sp() {
+    @include mixin.sp() {
       bottom: -80px;
       content: "";
       height: 70%;
@@ -302,8 +299,8 @@
   }
 
   &__ttl {
-    @include furuta();
-    color: #009480;
+    @include mixin.furuta();
+    color: #d90200;
     font-size: 6rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -317,14 +314,14 @@
       content: "";
       width: 4px;
       height: 100%;
-      background: #009480;
+      background: #d90200;
       position: absolute;
       top: 50%;
       left: 0;
       transform: translateY(-50%);
     }
 
-    @include sp() {
+    @include mixin.sp() {
       font-size: 3rem;
       padding-left: 20px;
 
@@ -341,7 +338,7 @@
     position: relative;
     z-index: 1;
 
-    @include sp() {
+    @include mixin.sp() {
       line-height: 1.7;
     }
   }
@@ -355,24 +352,7 @@
   }
 }
 
-.company {
-  .kv {
-    &::before {
-      background: url(../img/company/company1.jpg) no-repeat center center/cover;
 
-      @media (max-width: 1500px) {
-        background: url(../img/company/company1.jpg) no-repeat center right/cover;
-      }
-
-    }
-
-    &::after {
-      @include pc() {
-        display: none;
-      }
-    }
-  }
-}
 
 
 
@@ -409,10 +389,10 @@
 }
 
 .page-numbers {
-  border: 1px solid #009480;
+  border: 1px solid #d90200;
   border-radius: 2px;
   background: #fff;
-  color: #009480;
+  color: #d90200;
   height: 50px;
   line-height: 48px;
   min-width: 50px;
@@ -420,7 +400,7 @@
   font-size: 1.6rem;
   font-weight: 400;
 
-  @include sp() {
+  @include mixin.sp() {
     width: 32px;
     height: 32px;
     line-height: 30px;
@@ -467,15 +447,15 @@
   &.prev,
   &.next {
     &:hover {
-      background: #009480;
-      border: 1px solid #009480;
+      background: #d90200;
+      border: 1px solid #d90200;
       color: #fff;
     }
   }
 
   &.current {
-    background: #009480;
-    border: 1px solid #009480;
+    background: #d90200;
+    border: 1px solid #d90200;
     color: #fff;
 
     //currentのみhoverで色そのまま
@@ -485,8 +465,8 @@
   }
 
   &:hover {
-    background: #009480;
-    border: 1px solid #009480;
+    background: #d90200;
+    border: 1px solid #d90200;
     color: #fff;
   }
 

@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   subsidy
   ========================================================================== */
@@ -6,13 +7,13 @@
     padding: 40px 0 80px;
     background: #f0f7fd;
 
-    @include sp(){
+    @include mixin.sp(){
       padding: 40px 0 50px;
     }
     &__inner{
       max-width: calc(1300px + 5% * 2);
 
-      @include sp(){
+      @include mixin.sp(){
         max-width: initial!important;
       }
     }
@@ -24,7 +25,7 @@
       width: 100%;
 
 
-      @include sp(){
+      @include mixin.sp(){
         width: 800px;
         font-size: 1.3rem;
       }
@@ -43,7 +44,7 @@
         &:first-child{
           width: 80px;
 
-          @include sp(){
+          @include mixin.sp(){
             width: 50px;
           }
         }
@@ -91,4 +92,3 @@
     height: 60px;
     }
   }
-
