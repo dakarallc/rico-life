@@ -4,10 +4,10 @@
   inner
   ========================================================================== */
 .inner {
-  width: 100%;
   margin: 0 auto;
-  padding: 0 5%;
   max-width: calc(988px + 5% * 2);
+  padding: 0 5%;
+  width: 100%;
 
   @include mixin.sp() {
     max-width: 500px !important;
