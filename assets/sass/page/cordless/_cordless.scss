@@ -1,4 +1,3 @@
-@use '../../foundation/mixin';
 /* ==========================================================================
   cordless(基本はbelleairページのcss上書き)
   ========================================================================== */
@@ -7,7 +6,7 @@
     &__subTtl::before {
       background: url(../img/cordless/support.svg) center center/393px 116px;
 
-      @include mixin.pc() {
+      @include pc() {
         top: -75px;
         left: -16%;
       }
@@ -20,14 +19,14 @@
         left: -7%;
       }
 
-      @include mixin.sp() {
+      @include sp() {
         background: url(../img/cordless/support.svg) center center/calc(393px * .3) calc(116px * .3);
       }
 
     }
 
     &__wrap {
-      @include mixin.pc() {
+      @include pc() {
         padding-left: 9%;
       }
     }
@@ -37,7 +36,7 @@
         font-size: 5rem;
         color: #fff;
 
-        @include mixin.sp() {
+        @include sp() {
           font-size: 2rem;
         }
 
@@ -60,7 +59,7 @@
           transform: translateX(-50%);
           width: 100%;
 
-          @include mixin.sp() {
+          @include sp() {
             bottom: -1px;
             height: 2px;
           }
@@ -78,7 +77,7 @@
     }
 
     &__catch {
-      @include mixin.pc() {
+      @include pc() {
         padding: 80px 0 28px;
       }
     }
@@ -105,7 +104,7 @@
           font-size: 2.7rem;
         }
 
-        @include mixin.sp() {
+        @include sp() {
           font-size: 2rem;
         }
 
@@ -138,7 +137,7 @@
           font-size: 3.4rem;
         }
 
-        @include mixin.sp() {
+        @include sp() {
           font-size: 2.5rem;
         }
 
@@ -170,7 +169,7 @@
           font-size: 2.8rem;
         }
 
-        @include mixin.sp() {
+        @include sp() {
           font-size: 1.6rem;
         }
       }
@@ -180,11 +179,11 @@
 
 
   .trouble {
-    @include mixin.pc() {
+    @include pc() {
       background: url(../img/cordless/trouble-bg.png) no-repeat center center/cover;
     }
 
-    @include mixin.sp() {
+    @include sp() {
       background: url(../img/cordless/trouble-bg-sp.png) no-repeat top center/cover;
     }
 
@@ -193,7 +192,7 @@
     &__ttl ._ttlWrap::before {
       background: url(../img/cordless/question-deco-left.svg) center center/83px 91px;
 
-      @include mixin.sp() {
+      @include sp() {
         background: url(../img/cordless/question-deco-left.svg) center center/ calc(83px * .4) calc(91px * .4);
         width: calc(83px * .4);
         height: calc(91px * .4);
@@ -209,7 +208,7 @@
     &__ttl ._ttlWrap::after {
       background: url(../img/cordless/question-deco-right.svg) center center/83px 91px;
 
-      @include mixin.sp() {
+      @include sp() {
         background: url(../img/cordless/question-deco-right.svg) center center/ calc(83px * .4) calc(91px * .4);
         width: calc(83px * .4);
         height: calc(91px * .4);
@@ -223,7 +222,7 @@
     }
 
     &__img {
-      @include mixin.pc() {
+      @include pc() {
         max-width: 955px;
       }
     }
@@ -232,7 +231,7 @@
   .case {
     padding: 92px 0;
 
-    @include mixin.sp() {
+    @include sp() {
       padding: 55px 0;
     }
 
@@ -250,7 +249,7 @@
       &__ttl {}
 
       &__subTtl {
-        @include mixin.furuta();
+        @include furuta();
         color: #141414;
         border-bottom: 1px solid #6275a8;
         padding-bottom: 0;
@@ -306,7 +305,7 @@
       font-size: 2rem;
       letter-spacing: .2em;
 
-      @include mixin.sp() {
+      @include sp() {
         font-size: 1.6rem;
       }
 
@@ -319,7 +318,7 @@
         transition: .2s;
         right: 0;
 
-        @include mixin.sp() {
+        @include sp() {
           background: url(../img/common/arrow.svg) no-repeat center center/calc(58px * .8) calc(19px * .8);
           width: calc(58px * .8);
           height: calc(19px * .8);
@@ -332,7 +331,7 @@
         &::after {
           right: -20px;
 
-          @include mixin.sp() {
+          @include sp() {
             right: -15px;
           }
         }
@@ -344,7 +343,7 @@
     background: #F4F6F8;
     padding: 97px 0;
 
-    @include mixin.sp() {
+    @include sp() {
       padding: 40px 0 50px;
     }
 
@@ -359,7 +358,7 @@
         display: block;
         margin-bottom: -20px;
 
-        @include mixin.sp() {
+        @include sp() {
           font-size: 1.4rem;
           margin-bottom: -5px;
         }
@@ -369,7 +368,7 @@
         font-size: 5rem;
         letter-spacing: .2em;
 
-        @include mixin.sp() {
+        @include sp() {
           font-size: 2.8rem;
         }
 
@@ -377,7 +376,7 @@
           color: #FF7F00;
           font-size: 7rem;
 
-          @include mixin.sp() {
+          @include sp() {
             font-size: 3.6rem;
           }
         }
@@ -388,16 +387,16 @@
     &__list {
       display: flex;
 
-      @include mixin.pc() {
+      @include pc() {
         justify-content: space-between;
         align-items: center;
       }
 
-      @include mixin.sp() {
+      @include sp() {
         flex-wrap: wrap;
       }
 
-      @include mixin.pc() {
+      @include pc() {
         img {
           width: auto;
         }
@@ -405,7 +404,7 @@
     }
 
     &__item {
-      @include mixin.sp() {
+      @include sp() {
         width: 100%;
         text-align: center;
 
@@ -425,7 +424,7 @@
     background: transparent radial-gradient(closest-side at 50% 50%, #FFFFFF 0%, #EFEFEF 100%) 0% 0% no-repeat;
     padding: 98px 0;
 
-    @include mixin.sp() {
+    @include sp() {
       padding: 40px 0 45px;
     }
 
@@ -443,7 +442,7 @@
         letter-spacing: .2em;
         margin-bottom: -11px;
 
-        @include mixin.sp() {
+        @include sp() {
           font-size: 1.4rem;
           margin-bottom: -5px;
         }
@@ -453,7 +452,7 @@
         font-size: 5rem;
         letter-spacing: .2em;
 
-        @include mixin.sp() {
+        @include sp() {
           font-size: 2.8rem;
         }
       }
@@ -466,7 +465,7 @@
       text-align: center;
       margin-bottom: 40px;
 
-      @include mixin.sp() {
+      @include sp() {
         font-size: 1.6rem;
       }
     }

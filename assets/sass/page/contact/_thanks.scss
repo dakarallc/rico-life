@@ -1,4 +1,3 @@
-@use '../../foundation/mixin';
 /* ==========================================================================
   thanks (404も同様コード使用)
   ========================================================================== */
@@ -7,19 +6,19 @@
 .notFound {
   padding-bottom: 233px;
 
-  @include mixin.sp() {
+  @include sp() {
     padding-bottom: 80px;
   }
 
   &__ttl {
-    color: #d90200;
+    color: #009480;
     font-size: 3rem;
     font-weight: bold;
     letter-spacing: 0;
     margin-bottom: 25px;
     text-align: center;
 
-    @include mixin.sp() {
+    @include sp() {
       font-size: 2.6rem;
     }
   }
@@ -31,12 +30,12 @@
 
   &__btn {
     align-items: center;
-    background: #d90200;
-    border: 1px solid #d90200;
+    background: #009480;
+    border: 1px solid #009480;
     color: #fff;
     display: flex;
     font-weight: bold;
-    @include mixin.furuta();
+    @include furuta();
     height: 40px;
     justify-content: center;
     margin: 40px auto 0;
@@ -44,7 +43,7 @@
     width: 100%;
 
     &:hover {
-      color: #d90200;
+      color: #009480;
       background: #fff;
     }
   }

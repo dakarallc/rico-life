@@ -1,15 +1,14 @@
-@use '../../foundation/mixin';
 /* ==========================================================================
   breadcrumb
   ========================================================================== */
 
 .breadcrumb {
-  color: #d90200;
+  color: #009480;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
   padding: 8px 10px 90px 79px;
 
-  @include mixin.sp() {
+  @include sp() {
     padding: 20px 16px 30px;
   }
 
@@ -24,7 +23,7 @@
   }
 
   &__contents {
-    @include mixin.sp() {
+    @include sp() {
       overflow-x: scroll;
       white-space: nowrap;
       padding-bottom: 10px;
