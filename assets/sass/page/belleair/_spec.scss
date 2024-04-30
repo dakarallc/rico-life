@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   spec
   ========================================================================== */
@@ -5,7 +6,7 @@
 .spec {
   background: #F4F6F8;
   padding-bottom: 100px;
-  @include sp(){
+  @include mixin.sp(){
     padding-bottom: 70px;
   }
 
@@ -43,7 +44,7 @@
       padding: 12px 4%;
       border-bottom: 1px solid #393939;
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 1.5rem;
       }
 
@@ -52,7 +53,7 @@
         width: 29%;
         margin-right: 3%;
 
-        @include sp() {
+        @include mixin.sp() {
           width: 35%;
         }
       }
@@ -77,12 +78,12 @@
     align-items: center;
     color: #fff;
     font-weight: bold;
-    @include furuta();
+    @include mixin.furuta();
     margin-top: 10px;
     position: relative;
     transition: .2s;
 
-    @include sp() {
+    @include mixin.sp() {
       height: 60px;
     }
 
@@ -97,7 +98,7 @@
     top: 50%;
     transform: translateY(-50%);
 
-    @include sp() {
+    @include mixin.sp() {
       right: 10%;
     }
 
@@ -118,7 +119,7 @@
       transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
 
-      @include sp() {
+      @include mixin.sp() {
         width: 14px;
       }
     }
@@ -137,7 +138,7 @@
       background-color: #fff;
       transition: .1s;
 
-      @include sp() {
+      @include mixin.sp() {
         width: 14px;
       }
     }

@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   news
   ========================================================================== */
@@ -8,7 +9,7 @@
   .news {
     padding: 20px 2% 200px;
 
-    @include sp() {
+    @include mixin.sp() {
       padding-bottom: 80px;
     }
 
@@ -44,7 +45,7 @@
         opacity: 1;
 
         .news__subTtl {
-          color: #009480;
+          color: #d90200;
 
         }
       }
@@ -54,7 +55,7 @@
       font-size: 2.2rem;
       margin-right: 5%;
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 1.2rem;
       }
     }
@@ -62,7 +63,7 @@
     &__info {
       width: 32%;
 
-      @include sp() {
+      @include mixin.sp() {
         width: 100%;
         margin-bottom: 14px;
       }

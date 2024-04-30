@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   toTop
   ========================================================================== */
@@ -5,7 +6,7 @@
 .toTop {
   width: 110px;
   height: 97px;
-  background: #009480;
+  background: #d90200;
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
@@ -22,7 +23,7 @@
   z-index: 9990;
 
 
-  @include sp() {
+  @include mixin.sp() {
     width: calc(110px * .5);
     height: calc(97px * .5);
     font-size: 1.2rem;
@@ -30,13 +31,13 @@
   }
 
   &:hover {
-    background: lighten(#009480, 8%);
+    background: lighten(#d90200, 8%);
   }
 
   img {
     width: 24px;
 
-    @include sp() {
+    @include mixin.sp() {
       width: 12px;
     }
   }
@@ -44,7 +45,7 @@
   p {
     margin-top: 5px;
 
-    @include sp() {
+    @include mixin.sp() {
       margin-top: 2px;
     }
   }

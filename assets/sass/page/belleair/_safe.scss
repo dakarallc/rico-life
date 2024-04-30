@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   safe
   ========================================================================== */
@@ -6,7 +7,7 @@
   background: #F4F6F8;
   padding: 97px 0 78px;
 
-  @include sp() {
+  @include mixin.sp() {
     padding: 44px 0 40px;
   }
 
@@ -49,7 +50,7 @@
       height: 40px;
       margin-right: 17px;
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 1.6rem;
         width: 58px;
         height: 30px;

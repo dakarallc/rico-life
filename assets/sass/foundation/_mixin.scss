@@ -1,3 +1,5 @@
+@use './variable';
+
 @mixin roboto() {
   font-family: 'Roboto', sans-serif;
 }
@@ -5,14 +7,14 @@
 // メディアクエリ
 // スマホ
 @mixin sp {
-  @media (max-width: #{$w-breakpoint}px) {
+  @media (max-width: #{variable.$w-breakpoint}px) {
     @content;
   }
 }
 
 // PC
 @mixin pc {
-  @media (min-width: #{$w-breakpoint + 1}px) {
+  @media (min-width: #{variable.$w-breakpoint + 1}px) {
     @content;
   }
 }

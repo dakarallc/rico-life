@@ -1,13 +1,14 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   video
   ========================================================================== */
 
 .videoArea {
-  @include pc() {
+  @include mixin.pc() {
     padding: 98px 0 87px;
   }
 
-  @include sp() {
+  @include mixin.sp() {
     padding: 48px 0 30px;
   }
 
@@ -35,7 +36,7 @@
   }
 
   .inner {
-    @include sp() {
+    @include mixin.sp() {
       padding: 0;
     }
   }

@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   shopTab
   ========================================================================== */
@@ -8,7 +9,7 @@
     padding: 155px 0 86px;
     position: relative;
 
-    @include sp() {
+    @include mixin.sp() {
       padding: 60px 0 70px;
     }
 
@@ -21,7 +22,7 @@
       position: relative;
       margin-bottom: 35px;
 
-      @include sp() {
+      @include mixin.sp() {
         margin-bottom: 20px;
       }
       p{
@@ -36,7 +37,7 @@
         top: 0;
         transform: none;
 
-        @include pc() {
+        @include mixin.pc() {
           height: calc(100% + 109px);
         }
       }
@@ -49,7 +50,7 @@
       position: relative;
 
 
-      @include pc() {
+      @include mixin.pc() {
         &:after {
           position: relative;
           left: 2%;
@@ -89,7 +90,7 @@
         img{
           width: auto;
 
-          @include sp(){
+          @include mixin.sp(){
             width: 80px;
           }
 
@@ -101,7 +102,7 @@
 
         &[for="yahoo"]{
           img{
-              @include sp() {
+              @include mixin.sp() {
               width: 94px;
               }
 
@@ -111,7 +112,7 @@
           }
         }
 
-        @include sp() {
+        @include mixin.sp() {
           flex: 1;
           font-size: 1.6rem;
           max-width: 172px;
@@ -123,7 +124,7 @@
       }
 
       &__label:not(:last-of-type) {
-        @include pc() {
+        @include mixin.pc() {
           margin-right: 8px;
         }
       }
@@ -163,11 +164,11 @@
         visibility: visible;
         transition: .8s opacity;
 
-        @include pc() {
+        @include mixin.pc() {
           padding: 85px 8% 0 5%;
         }
 
-        @include sp() {
+        @include mixin.sp() {
           padding-top: 30px;
         }
 
@@ -178,7 +179,7 @@
       display: flex;
       justify-content: space-between;
 
-      @include sp(){
+      @include mixin.sp(){
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
@@ -188,7 +189,7 @@
     &__item{
       transition: .2s;
 
-      @include sp(){
+      @include mixin.sp(){
         margin: 0 auto;
         &:not(:last-child){
           margin-bottom: 30px;
@@ -198,7 +199,7 @@
         }
       }
 
-      @include sp(){
+      @include mixin.sp(){
         width: 85%;
       }
 
@@ -206,11 +207,11 @@
        width: 95%;
       }
       &--new{
-        @include pc(){
+        @include mixin.pc(){
           position: relative;
           &::before{
             content: "NEW";
-            @include furuta();
+            @include mixin.furuta();
             font-weight: bold;
             font-size: 1.8rem;
             background: #FF9300;
@@ -227,12 +228,12 @@
           }
         }
 
-        @include sp(){
+        @include mixin.sp(){
           .shopTab__subTtl{
             text-align: left;
             &::before{
               content: "NEW";
-              @include furuta();
+              @include mixin.furuta();
               font-weight: bold;
               font-size: 1rem;
               background: #FF9300;
@@ -257,17 +258,17 @@
 
     &__subTtl{
       font-size: 2rem;
-      @include furuta();
+      @include mixin.furuta();
       color: #fff;
       line-height: 1.2;
       margin-top: 10px;
 
-      @include pc(){
+      @include mixin.pc(){
 
       text-align: center;
       }
 
-      @include sp(){
+      @include mixin.sp(){
         text-align: left;
         font-size: 1.6rem;
         flex: 1 1 0%;
@@ -278,7 +279,7 @@
       }
 
       &._adjust{
-        @include pc(){
+        @include mixin.pc(){
           margin-top: -19px;
         }
       }
@@ -286,7 +287,7 @@
 
     &__remarks{
      font-size: 1.5rem;
-     @include furuta();
+     @include mixin.furuta();
      color: #fff;
      line-height: 1.2;
      margin-top: 10px;
@@ -297,12 +298,12 @@
 
     &__img {
 
-      @include sp() {
+      @include mixin.sp() {
         margin-right: 22%;
         width: 20%;
 
         img {
-          @include pc(){
+          @include mixin.pc(){
             margin-bottom: 20px;
             width: auto;
           }
