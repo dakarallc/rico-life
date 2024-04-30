@@ -1,14 +1,13 @@
-@use '../../foundation/mixin';
 /* ==========================================================================
   product
   ========================================================================== */
 
 .product {
-  background: transparent linear-gradient(180deg, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
+  background: transparent linear-gradient(180deg, #009480 0%, #006694 100%) 0% 0% no-repeat;
   padding: 187px 0 106px;
   position: relative;
 
-  @include mixin.sp() {
+  @include sp() {
     padding: 93px 0 107px;
   }
 
@@ -24,13 +23,13 @@
     transform: translateX(-50%);
     width: 0;
 
-    @include mixin.sp() {
+    @include sp() {
       border-width: 12.5vw 50vw 0 50vw;
     }
   }
 
   &__inner {
-    @include mixin.sp() {
+    @include sp() {
       max-width: 750px !important;
     }
   }
@@ -40,7 +39,7 @@
     position: relative;
     margin-bottom: 30px;
 
-    @include mixin.sp() {
+    @include sp() {
       margin-bottom: 20px;
     }
 
@@ -49,7 +48,7 @@
       top: 0;
       transform: none;
 
-      @include mixin.pc() {
+      @include pc() {
         height: calc(100% + 109px);
       }
     }
@@ -68,11 +67,11 @@
       position: absolute;
       right: 0;
 
-      @include mixin.pc() {
+      @include pc() {
         top: 15px;
       }
 
-      @include mixin.sp() {
+      @include sp() {
         bottom: -66px;
         left: 50%;
         transform: translateX(-50%);
@@ -82,7 +81,7 @@
       }
     }
 
-    @include mixin.pc() {
+    @include pc() {
       &:after {
         position: relative;
         left: 2%;
@@ -118,7 +117,7 @@
       border: 1px solid #fff;
       line-height: 1.4;
       position: relative;
-      background: #d90200;
+      background: #006694;
       color: #Fff;
 
 
@@ -136,16 +135,16 @@
       //   border-width: 17px 22px 0 22px;
       //   z-index: 1;
 
-      //   @include mixin.pc() {
+      //   @include pc() {
       //     bottom: -18px;
       //   }
 
-      //   @include mixin.sp() {
+      //   @include sp() {
       //     bottom: -17px;
       //   }
       // }
 
-      @include mixin.sp() {
+      @include sp() {
         flex: 1;
         font-size: 1.3rem;
         max-width: 172px;
@@ -164,7 +163,7 @@
     }
 
     &__label:not(:last-of-type) {
-      @include mixin.pc() {
+      @include pc() {
         margin-right: 20px;
       }
     }
@@ -178,7 +177,7 @@
 
     &__switch:checked+.tab__label {
       background: #fff;
-      color: #d90200;
+      color: #009480;
 
       &::before {
         content: "";
@@ -200,11 +199,11 @@
       display: block;
       transition: .5s opacity;
 
-      @include mixin.pc() {
+      @include pc() {
         padding: 55px 0 0;
       }
 
-      @include mixin.sp() {
+      @include sp() {
         padding-top: 30px;
       }
 
@@ -217,7 +216,7 @@
     &__img {
       margin-bottom: 60px;
 
-      @include mixin.sp() {
+      @include sp() {
         text-align: center;
         overflow-x: scroll;
         margin-right: -20px;
@@ -238,17 +237,17 @@
 
       & +.tab__contents{
         .scroll-hint-icon-wrap{
-          @include mixin.sp(){
+          @include sp(){
             top: -26%!important;
           }
         }
         img{
-          @include mixin.sp(){
+          @include sp(){
             width: 600px;
           }
         }
         .topLink{
-          @include mixin.sp(){
+          @include sp(){
             width: 240px;
           }
         }
@@ -257,7 +256,7 @@
           width: 80%;
           max-width: 730px;
 
-          @include mixin.sp(){
+          @include sp(){
             margin: 60px auto 0;
             width: 100%;
             img{
@@ -278,7 +277,7 @@
     max-width: 352px;
     width: 100%;
 
-    @include mixin.sp() {
+    @include sp() {
       align-items: center;
     }
   }
@@ -287,13 +286,13 @@
     &:not(:last-child) {
       margin-bottom: 20px;
 
-      @include mixin.sp() {
+      @include sp() {
         margin-bottom: 10px;
       }
     }
 
     .topLink {
-      @include mixin.pc() {
+      @include pc() {
         width: 100%;
       }
     }

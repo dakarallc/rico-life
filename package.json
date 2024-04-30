@@ -1,7 +1,33 @@
 {
   "name": "cocolococo",
   "version": "1.0.0",
+  "description": "",
   "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^9.6.4",
+    "browser-sync": "^2.26.7",
+    "css-declaration-sorter": "^4.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-ejs": "^4.1.2",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-stylelint": "^10.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "postcss-reporter": "^6.0.1",
+    "stylelint-config-standard": "^19.0.0"
+  },
+  "devDependencies": {
+    "gulp-replace": "^1.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,19 +38,5 @@
     "last 2 versions",
     "iOS 8.1",
     "Android 4.0"
-  ],
-  "description": "",
-  "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "css-declaration-sorter": "^7.2.0",
-    "gulp": "^5.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-notify": "^4.0.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^10.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sass-glob": "^1.1.0",
-    "sass": "^1.75.0"
-  }
+  ]
 }

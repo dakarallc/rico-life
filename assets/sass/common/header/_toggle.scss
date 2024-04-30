@@ -1,4 +1,3 @@
-@use '../../foundation/mixin';
 /* ==========================================================================
   toggle
   ========================================================================== */
@@ -14,7 +13,7 @@
   transition: 0.3s;
   display: none;
 
-  @include mixin.sp() {
+  @include sp() {
     display: block;
   }
 
@@ -28,7 +27,7 @@
 
   span {
     -webkit-transition: 0.35s ease-in-out;
-    border-bottom: solid 2px #d90200;
+    border-bottom: solid 2px #009480;
     display: block;
     left: 8px;
     position: absolute;
@@ -66,7 +65,7 @@
 
   &__txt {
     bottom: -7px;
-    color: #d90200;
+    color: #009480;
     font-size: 1rem;
     left: 50%;
     position: absolute;
