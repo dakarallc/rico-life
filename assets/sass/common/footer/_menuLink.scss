@@ -1,4 +1,3 @@
-@use '../../foundation/mixin';
 /* ==========================================================================
   menuLink
   ========================================================================== */
@@ -6,7 +5,7 @@
 .menuLink {
   display: flex;
 
-  @include mixin.sp() {
+  @include sp() {
     flex-wrap: wrap;
   }
 
@@ -15,7 +14,7 @@
     position: relative;
     transition: .2s;
 
-    @include mixin.sp() {
+    @include sp() {
       width: 100%;
     }
 
@@ -39,12 +38,12 @@
       font-size: 3rem;
       position: relative;
       z-index: 1;
-      color: #d90200;
+      color: #009480;
       @media (max-width: 1250px) {
         font-size: 3rem;
       }
 
-      @include mixin.sp() {
+      @include sp() {
         font-size: 2rem;
         height: 150px;
       }

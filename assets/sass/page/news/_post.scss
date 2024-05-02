@@ -1,4 +1,3 @@
-@use '../../foundation/mixin';
 /* ==========================================================================
   post
   ========================================================================== */
@@ -6,13 +5,13 @@
 .post {
   padding-bottom: 120px;
 
-  @include mixin.sp() {
+  @include sp() {
     padding-bottom: 80px;
   }
 
   &__ttl {
-    @include mixin.furuta();
-    color: #d90200;
+    @include furuta();
+    color: #009480;
     font-size: 3.3rem;
     font-weight: bold;
     padding-left: 30px;
@@ -20,7 +19,7 @@
     letter-spacing: .02em;
     margin-bottom: 10px;
 
-    @include mixin.sp() {
+    @include sp() {
       font-size: 2.2rem;
       padding-left: 20px;
       margin-bottom: 15px;
@@ -30,13 +29,13 @@
       content: "";
       width: 4px;
       height: 100%;
-      background: #d90200;
+      background: #009480;
       position: absolute;
       top: 50%;
       left: 0;
       transform: translateY(-50%);
 
-      @include mixin.sp() {
+      @include sp() {
         width: 3px;
       }
     }
@@ -48,7 +47,7 @@
     margin-bottom: 20px;
     display: block;
 
-    @include mixin.sp() {
+    @include sp() {
       font-size: 1.4rem;
     }
 
@@ -58,7 +57,7 @@
   //   padding-bottom: 100px;
   //   line-height: 2.4;
 
-  //   @include mixin.sp() {
+  //   @include sp() {
   //     padding-bottom: 60px;
   //     line-height: 2.2;
   //   }
@@ -67,7 +66,7 @@
   //   p+p {
   //     margin-top: 30px;
 
-  //     @include mixin.sp() {
+  //     @include sp() {
   //       margin-top: 20px;
   //     }
   //   }
@@ -75,7 +74,7 @@
   &__contents {
     margin-bottom: 46px;
 
-    @include mixin.sp() {
+    @include sp() {
       margin-bottom: 40px;
     }
 
@@ -86,13 +85,13 @@
       margin-top: 20px;
       margin-bottom: 20px;
 
-      @include mixin.sp() {
+      @include sp() {
         margin-top: 15px;
         margin-bottom: 15px;
       }
 
       a {
-        color: #d90200;
+        color: #009480;
         text-decoration: underline;
 
         &:hover {
@@ -159,7 +158,7 @@
     h1 {
       
       font-size: 2.8rem;
-      @include mixin.sp() {
+      @include sp() {
         font-size: 2.2rem;
       }
     }
@@ -167,7 +166,7 @@
     h2 {
       font-size: 2.6rem;
 
-      @include mixin.sp() {
+      @include sp() {
         font-size: 2rem;
       }
     }
@@ -175,7 +174,7 @@
     h3 {
       font-size: 2.4rem;
 
-      @include mixin.sp() {
+      @include sp() {
         font-size: 1.8rem;
       }
     }
@@ -188,7 +187,7 @@
       font-size: 2.2rem;
       margin-bottom: 12px;
 
-      @include mixin.sp(){
+      @include sp(){
         font-size: 1.7rem;
       }
     }
@@ -213,17 +212,17 @@
     width: 100%;
     font-weight: bold;
     height: 40px;
-    background: #d90200;
-    border: 1px solid #d90200;
+    background: #009480;
+    border: 1px solid #009480;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-    @include mixin.furuta();
+    @include furuta();
     margin: 0 auto;
 
     &:hover {
-      color: #d90200;
+      color: #009480;
       background: #fff;
     }
   }

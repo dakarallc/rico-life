@@ -1,4 +1,3 @@
-@use '../../foundation/mixin';
 /* ==========================================================================
   caseItem
   ========================================================================== */
@@ -6,7 +5,7 @@
 .caseItem {
   padding-bottom: 199px;
 
-  @include mixin.sp() {
+  @include sp() {
     padding-bottom: 80px;
   }
 
@@ -14,7 +13,7 @@
     margin-bottom: 4px;
     letter-spacing: .04em;
 
-    @include mixin.sp() {
+    @include sp() {
       margin-bottom: 8px;
     }
   }
@@ -24,7 +23,7 @@
     font-size: 2.4rem;
     margin-bottom: 27px;
 
-    @include mixin.sp() {
+    @include sp() {
       font-size: 2rem;
       line-height: 1.5;
     }
@@ -50,19 +49,19 @@
     display: flex;
     margin-bottom: 90px;
 
-    @include mixin.sp() {
+    @include sp() {
       flex-wrap: wrap;
       margin-bottom: 60px;
     }
   }
 
   &__img1 {
-    @include mixin.pc() {
+    @include pc() {
       margin-right: 1.5%;
       width: 44%;
     }
 
-    @include mixin.sp() {
+    @include sp() {
       width: 100%;
       margin-bottom: 20px;
     }
@@ -90,11 +89,11 @@
   }
 
   &__mainContents {
-    @include mixin.pc() {
+    @include pc() {
       flex: 1 1 0%;
     }
 
-    @include mixin.sp() {
+    @include sp() {
       width: 100%;
     }
   }
@@ -117,10 +116,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: transparent linear-gradient(180deg, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
+        background: transparent linear-gradient(180deg, #009480 0%, #006694 100%) 0% 0% no-repeat;
         border: 1px solid #707070;
 
-        @include mixin.sp() {
+        @include sp() {
           height: 40px;
           justify-content: center;
           margin-right: 6%;
@@ -138,7 +137,7 @@
     line-height: 1.9;
     letter-spacing: .2em;
 
-    @include mixin.sp() {
+    @include sp() {
       margin-bottom: 30px;
     }
   }
@@ -147,30 +146,30 @@
     margin-bottom: 95px;
     display: flex;
 
-    @include mixin.sp() {
+    @include sp() {
       flex-wrap: wrap;
       margin-bottom: 65px;
     }
   }
 
   &__contents {
-    @include mixin.pc() {
+    @include pc() {
       flex: 1 1 0%;
       margin-left: 20px;
     }
 
-    @include mixin.sp() {
+    @include sp() {
       width: 100%;
     }
   }
 
   &__info {
-    @include mixin.pc() {
+    @include pc() {
       margin-left: 2%;
       width: 21%;
     }
 
-    @include mixin.sp() {
+    @include sp() {
       width: 100%;
     }
   }
@@ -184,7 +183,7 @@
       display: block;
       padding-top: 100%;
 
-      @include mixin.sp(){
+      @include sp(){
         padding-top: 80%;
       }
     }
@@ -201,7 +200,7 @@
       top: 0;
       width: 100%;
 
-      @include mixin.sp(){
+      @include sp(){
         object-position: top center;
       }
     }
@@ -219,7 +218,7 @@
       width: 56%;
     }
 
-    @include mixin.sp() {
+    @include sp() {
       width: 100%;
     }
 
@@ -230,7 +229,7 @@
       display: block;
       padding-top: 100%;
 
-      @include mixin.sp() {
+      @include sp() {
         padding-top: 70%;
       }
     }
@@ -264,12 +263,12 @@
     max-width: 352px;
     width: 100%;
 
-    @include mixin.sp() {
+    @include sp() {
       margin: 50px auto 0;
     }
 
     &:hover {
-      color: #d90200;
+      color: #009480;
       background: #fff;
     }
   }

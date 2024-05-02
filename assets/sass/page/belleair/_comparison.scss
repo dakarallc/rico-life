@@ -1,4 +1,3 @@
-@use '../../foundation/mixin';
 /* ==========================================================================
   comparison
   ========================================================================== */
@@ -9,7 +8,7 @@
   text-align: center;
   color: #fff;
 
-  @include mixin.sp() {
+  @include sp() {
     padding: 44px 0 41px;
   }
 
@@ -23,7 +22,7 @@
       margin-bottom: -10px;
       letter-spacing: .34em;
 
-      @include mixin.sp() {
+      @include sp() {
         font-size: 1.4rem;
         margin-bottom: -5px;
       }
@@ -33,7 +32,7 @@
       font-size: 5rem;
       letter-spacing: .2em;
 
-      @include mixin.sp() {
+      @include sp() {
         font-size: 2.8rem;
       }
     }
@@ -64,7 +63,7 @@
       img {
         width: 88px;
 
-        @include mixin.sp() {
+        @include sp() {
           width: 58px;
         }
       }
@@ -81,7 +80,7 @@
       &:first-of-type {
         font-weight: bold;
 
-        @include mixin.sp() {
+        @include sp() {
           font-size: 1.5rem;
         }
       }
@@ -90,7 +89,7 @@
     th {
       font-size: 2.2rem;
 
-      @include mixin.sp() {
+      @include sp() {
         font-size: 1.4rem;
         line-height: 1.3;
       }
@@ -104,7 +103,7 @@
       &:first-child {
         width: 220px;
 
-        @include mixin.sp() {
+        @include sp() {
           width: 100px;
         }
 
@@ -117,7 +116,7 @@
     td {
       font-size: 3rem;
 
-      @include mixin.sp() {
+      @include sp() {
         font-size: 1.4rem;
       }
     }
@@ -127,7 +126,7 @@
       padding: 24px 2px;
       line-height: 1;
 
-      @include mixin.sp() {
+      @include sp() {
         line-height: 1.3;
         padding: 12px 2px;
       }
@@ -142,14 +141,14 @@
         img {
           width: 40px;
 
-          @include mixin.sp() {
+          @include sp() {
             width: 20px;
           }
         }
 
         font-size: 4rem;
 
-        @include mixin.sp() {
+        @include sp() {
           font-size: 1.8rem;
         }
       }
