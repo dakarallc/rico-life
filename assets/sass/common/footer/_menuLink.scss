@@ -38,8 +38,9 @@
       align-items: center;
       font-size: 3rem;
       position: relative;
+      font-weight: bold;
       z-index: 1;
-      color: #d90200;
+      color: #333;
       @media (max-width: 1250px) {
         font-size: 3rem;
       }
@@ -55,15 +56,15 @@
     }
 
     &--company {
-      background: url(../img/common/menu1.jpg) no-repeat center center/cover;
+      background: url(../img/common/menu1.jpeg) no-repeat center center/cover;
     }
 
     &--contact {
       background: url(../img/common/menu2.jpg) no-repeat center center/cover;
     }
 
-    &--agency {
-      background: url(../img/common/menu3.jpg) no-repeat center center/cover;
+    &--case {
+      background: url(../img/common/menu3.jpeg) no-repeat center center/cover;
     }
 
     &--news {

@@ -473,8 +473,8 @@ h5 {
   ========================================================================== */
 .inner {
   margin: 0 auto;
-  max-width: calc(988px + 5% * 2);
-  padding: 0;
+  max-width: calc(988px + 10%);
+  padding: 0 5%;
   width: 100%;
 }
 @media (max-width: 999px) {
@@ -1995,8 +1995,9 @@ contact
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #d90200;
+  color: #333;
   font-size: 3rem;
+  font-weight: bold;
   position: relative;
   z-index: 1;
 }
@@ -2012,13 +2013,13 @@ contact
   }
 }
 .menuLink__item--company {
-  background: url(../img/common/menu1.jpg) no-repeat center center/cover;
+  background: url(../img/common/menu1.jpeg) no-repeat center center/cover;
 }
 .menuLink__item--contact {
   background: url(../img/common/menu2.jpg) no-repeat center center/cover;
 }
-.menuLink__item--agency {
-  background: url(../img/common/menu3.jpg) no-repeat center center/cover;
+.menuLink__item--case {
+  background: url(../img/common/menu3.jpeg) no-repeat center center/cover;
 }
 .menuLink__item--news {
   background: url(../img/common/menu4.jpg) no-repeat center center/cover;
