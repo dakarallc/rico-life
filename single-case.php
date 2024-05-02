@@ -35,19 +35,31 @@ $title6 = get_field('title6');
 $text6 = get_field('text6');
 
 $img_id7 = get_field('pic7');
-$img_url7 = wp_get_attachment_image_src($img_id7, 'large')[0];
-$title7 = get_field('title7');
-$text7 = get_field('text7');
+if ($img_id7) {
+    $img_url7 = wp_get_attachment_image_src($img_id7, 'large')[0];
+    $title7 = get_field('title7');
+    $text7 = get_field('text7');
+}
 
 $img_id8 = get_field('pic8');
-$img_url8 = wp_get_attachment_image_src($img_id8, 'large')[0];
-$img_id9 = get_field('pic9');
-$img_url9 = wp_get_attachment_image_src($img_id9, 'large')[0];
-$img_id10 = get_field('pic10');
-$img_url10 = wp_get_attachment_image_src($img_id10, 'large')[0];
-$img_id11 = get_field('pic11');
-$img_url11 = wp_get_attachment_image_src($img_id11, 'large')[0];
+if ($img_id8) {
+  $img_url8 = wp_get_attachment_image_src($img_id8, 'large')[0];
+}
 
+$img_id9 = get_field('pic9');
+if ($img_id9) {
+  $img_url9 = wp_get_attachment_image_src($img_id9, 'large')[0];
+}
+
+$img_id10 = get_field('pic10');
+if ($img_id10) {
+  $img_url10 = wp_get_attachment_image_src($img_id10, 'large')[0];
+}
+
+$img_id11 = get_field('pic11');
+if ($img_id11) {
+  $img_url11 = wp_get_attachment_image_src($img_id11, 'large')[0];
+}
 ?>
 
 <div class="page case-page">
@@ -132,7 +144,7 @@ caseItem
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
       <?php endif; ?>
-      
+
       <?php if (!empty($img_url6)): ?>
       <div class="caseItem__box wow fadeInUp">
         <div class="caseItem__img3">
