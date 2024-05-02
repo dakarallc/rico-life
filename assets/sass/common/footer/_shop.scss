@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   shop
   ========================================================================== */
@@ -7,7 +8,7 @@
   padding-top: 100px;
   margin-top: -100px;
 
-  @include sp(){
+  @include mixin.sp(){
     padding-top: 70px;
     margin-top: -70px;
   }
@@ -17,7 +18,7 @@
     background: #E8F2FA;
     padding: 100px 0;
 
-    @include sp() {
+    @include mixin.sp() {
       padding: 44px 0;
     }
   }
@@ -28,7 +29,7 @@
   .format__ttl {
     color: #003274;
 
-    @include sp() {
+    @include mixin.sp() {
       margin-bottom: 30px;
     }
 
@@ -42,14 +43,14 @@
     align-items: center;
     justify-content: space-between;
 
-    @include sp() {
+    @include mixin.sp() {
       flex-wrap: wrap;
     }
   }
 
   &__item {
 
-    @include sp() {
+    @include mixin.sp() {
       width: 100%;
       text-align: center;
 
@@ -59,11 +60,11 @@
     }
 
     img {
-      @include pc() {
+      @include mixin.pc() {
         width: auto;
       }
 
-      @include sp() {
+      @include mixin.sp() {
         width: 60%;
       }
     }

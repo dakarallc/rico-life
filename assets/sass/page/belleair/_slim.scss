@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   slim
   ========================================================================== */
@@ -5,7 +6,7 @@
 .slim {
   padding: 76px 0 18px;
 
-  @include sp() {
+  @include mixin.sp() {
     padding: 44px 0 40px;
   }
 
@@ -13,7 +14,7 @@
     display: flex;
     align-items: flex-start;
 
-    @include sp() {
+    @include mixin.sp() {
       flex-wrap: wrap;
     }
   }
@@ -21,24 +22,24 @@
   .format {
 
 
-    @include pc() {
+    @include mixin.pc() {
       padding-top: 20px;
       flex: 1 1 0%;
     }
 
-    @include sp() {
+    @include mixin.sp() {
       width: 100%;
       margin-bottom: 20px;
     }
   }
 
   &__img {
-    @include pc() {
+    @include mixin.pc() {
       margin-left: 4%;
       width: 49%;
     }
 
-    @include sp() {
+    @include mixin.sp() {
       text-align: center;
       width: 100%;
 

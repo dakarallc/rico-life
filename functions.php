@@ -58,16 +58,11 @@ function my_script_init() {
   $theme_url = get_template_directory_uri();
 
   wp_enqueue_style('animate', $theme_url . '/assets/css/vendor/animate.css', array(), '1.0.21', 'all');
-  wp_enqueue_style('styles', $theme_url . '/assets/css/styles.min.css', array(), '1.0.28', 'all');
+  wp_enqueue_style('styles', $theme_url . '/assets/css/styles.css', array(), '1.0.28', 'all');
   wp_enqueue_script('ofi', $theme_url . '/assets/js/vendor/ofi.min.js', array('jquery'), '1.0.0', true);
   wp_enqueue_script('wow', $theme_url . '/assets/js/vendor/wow.min.js', array('jquery'), '1.0.0', true);
   wp_enqueue_script('cmn', $theme_url . '/assets/js/common.js', array('jquery'), '1.0.4', true);
 
-  if(is_page('ba-300')) {
-      wp_enqueue_style('lightbox', $theme_url . '/assets/css/vendor/lightbox.css', array(), '1.0.21', 'all');
-      wp_enqueue_script('lightbox', $theme_url . '/assets/js/vendor/lightbox.js', array('jquery'), '1.0.0', true);
-      wp_enqueue_script('belleair', $theme_url . '/assets/js/belleair.js', array('jquery'), '1.0.4', true);
-  }
 
   if(is_home() || is_front_page() || is_page('ba-300')) {
       wp_enqueue_style('scroll-hint', $theme_url . '/assets/css/vendor/scroll-hint.css', array(), '1.0.21', 'all');

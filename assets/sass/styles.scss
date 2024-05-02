@@ -3,27 +3,67 @@
 /* ==========================================================================
   Foundation
   ========================================================================== */
-  @import "./foundation/_reset.scss";
-  @import "./foundation/_variable.scss";
-  @import "./foundation/_mixin.scss";
-  @import "./foundation/_base.scss";
-  @import "./foundation/_keyframe.scss";
-  @import "./foundation/_component.scss";
+@use "./foundation/reset";
+// @use "./foundation/variable";
+// @use "./foundation/mixin";
+@use "./foundation/base";
+@use "./foundation/keyframe";
+@use "./foundation/component";
 
 /* ==========================================================================
   common
   ========================================================================== */
 
-  @import "common/**";
+@use "common/footer/banner";
+@use "common/footer/fixedMenu";
+@use "common/footer/footer";
+@use "common/footer/menuLink";
+@use "common/footer/shop";
+@use "common/footer/shopTab";
+@use "common/footer/totop";
 
-  /* ==========================================================================
-  parts
-  ========================================================================== */
+@use "common/header/breadcrumb";
+@use "common/header/header";
+@use "common/header/pageHead";
+@use "common/header/toggle";
 
-  @import "parts/**";
-  
-  /* ==========================================================================
-  page
-  ========================================================================== */
+// /* ==========================================================================
+//   parts
+//   ========================================================================== */
 
-  @import "page/**";
+@use "page/agency/agency";
+
+
+@use "page/about/about";
+
+@use "page/hiraya/hiraya";
+
+@use "page/case/caseItem";
+@use "page/case/caseList";
+
+@use "page/company/company";
+
+@use "page/contact/contact";
+@use "page/contact/privacy";
+@use "page/contact/thanks";
+
+@use "page/interview/interview";
+
+@use "page/news/news"  as newsPage;
+@use "page/news/post";
+
+@use "page/single/single";
+
+@use "page/top/contents";
+@use "page/top/event";
+@use "page/top/fv";
+@use "page/top/news" as topNews;
+@use "page/top/product";
+@use "page/top/us";
+
+
+// /* ==========================================================================
+//   page
+//   ========================================================================== */
+
+// @use "page/*";

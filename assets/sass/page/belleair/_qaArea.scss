@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   qaArea
   ========================================================================== */
@@ -6,7 +7,7 @@
   background: #F4F6F8;
   padding: 93px 0;
 
-  @include sp() {
+  @include mixin.sp() {
     padding: 44px 0 70px;
   }
 
@@ -39,7 +40,7 @@
       top: 0;
       left: 0;
 
-      @include sp() {
+      @include mixin.sp() {
         border-width: 60px 60px 0 0;
       }
     }
@@ -53,7 +54,7 @@
       position: absolute;
       top: -2px;
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 2rem;
         top: 2px;
         left: 9px;
@@ -69,7 +70,7 @@
     cursor: pointer;
     padding-bottom: 45px;
 
-    @include sp() {
+    @include mixin.sp() {
       padding-bottom: 30px;
     }
   }
@@ -90,7 +91,7 @@
       position: absolute;
       top: 14px;
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 2rem;
         left: -9%;
       }
@@ -104,7 +105,7 @@
     right: 6%;
     top: 55px;
 
-    @include sp() {
+    @include mixin.sp() {
       right: 7%;
     }
 
@@ -125,7 +126,7 @@
       transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
 
-      @include sp() {
+      @include mixin.sp() {
         width: 14px;
       }
     }
@@ -144,7 +145,7 @@
       background-color: #172350;
       transition: .1s;
 
-      @include sp() {
+      @include mixin.sp() {
         width: 14px;
       }
     }
@@ -166,7 +167,7 @@
     align-items: center;
     margin-top: 34px;
 
-    @include sp() {
+    @include mixin.sp() {
       flex-direction: column;
     }
   }
@@ -182,17 +183,17 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    @include furuta();
+    @include mixin.furuta();
     position: relative;
     border: 1px solid #012346;
 
-    @include pc() {
+    @include mixin.pc() {
       &:not(:last-child) {
         // margin-right: 3%;
       }
     }
 
-    @include sp() {
+    @include mixin.sp() {
       margin-bottom: 20px;
     }
 

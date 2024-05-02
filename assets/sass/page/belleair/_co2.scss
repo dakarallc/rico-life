@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   co2
   ========================================================================== */
@@ -6,13 +7,13 @@
   background: #F0F7FD;
   padding: 97px 0 78px;
 
-  @include sp(){
+  @include mixin.sp(){
     padding: 44px 0 40px;
   }
 
 
   &__inner{
-    @include sp(){
+    @include mixin.sp(){
       max-width: 750px!important;
     }
     .qaArea__btn{
@@ -26,18 +27,18 @@
   }
 
   img{
-    @include sp(){
+    @include mixin.sp(){
       width: 550px;
     }
   }
 
   &__img{
-    @include pc(){
+    @include mixin.pc(){
       width: 80%;
       margin-right: auto;
       margin-left: auto;
     }
-    @include sp(){
+    @include mixin.sp(){
       text-align: center;
       overflow-x: scroll;
       padding-bottom: 20px;
@@ -49,7 +50,7 @@
     width: 80%;
     max-width: 730px;
 
-    @include sp(){
+    @include mixin.sp(){
       text-align: center;
       margin: 60px auto 0;
       width: 100%;
@@ -59,7 +60,7 @@
     }
   }
   .scroll-hint-icon-wrap{
-    @include sp(){
+    @include mixin.sp(){
       top: -26%!important;
     }
   }

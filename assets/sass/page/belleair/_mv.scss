@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   mv
   ========================================================================== */
@@ -6,7 +7,7 @@
 .cordless .mv {
   margin-top: 65px;
 
-  @include sp() {
+  @include mixin.sp() {
     margin-top: 60px;
 
     &__inner {
@@ -18,7 +19,7 @@
     background: transparent linear-gradient(360deg, #DBDBDB 0%, #FFFFFF00 32%, #FFFFFF00 88%, #FCFCFC 100%) 0% 0% no-repeat;
     padding: 130px 0 87px;
 
-    @include sp() {
+    @include mixin.sp() {
       padding: 65px 0 71px;
     }
   }
@@ -38,7 +39,7 @@
       width: 2px;
       height: 43px;
 
-      @include sp() {
+      @include mixin.sp() {
         display: none;
       }
     }
@@ -73,7 +74,7 @@
     position: relative;
     left: -2%;
 
-    @include sp() {
+    @include mixin.sp() {
       width: 58px;
       left: 0;
     }
@@ -81,13 +82,13 @@
 
   &__ttl {
     color: #141414;
-    @include hiragino();
+    @include mixin.hiragino();
     text-align: center;
     letter-spacing: .25em;
     position: relative;
     top: -23px;
 
-    @include sp() {
+    @include mixin.sp() {
       letter-spacing: 0;
       top: 8px;
     }
@@ -112,7 +113,7 @@
         font-size: 3rem;
       }
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 2rem;
       }
 
@@ -141,7 +142,7 @@
         font-size: 4rem;
       }
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 2.5rem;
       }
 
@@ -170,7 +171,7 @@
           font-size: 3.6rem;
         }
 
-        @include sp() {
+        @include mixin.sp() {
           font-size: 1.6rem;
         }
       }
@@ -183,7 +184,7 @@
     align-items: center;
     padding: 40px 0;
 
-    @include sp() {
+    @include mixin.sp() {
       padding: 24px 0 16px;
     }
   }
@@ -203,7 +204,7 @@
       width: 393px;
       z-index: -1;
 
-      @include sp() {
+      @include mixin.sp() {
         background: url(../img/belleair/support.svg) center center/calc(393px * .3) calc(116px * .3);
         width: calc(393px * .3);
         height: calc(116px * .3);
@@ -219,7 +220,7 @@
       display: block;
       margin-bottom: -10px;
 
-      @include sp() {
+      @include mixin.sp() {
         // font-size: 1rem;
         font-size: 1.6rem;
         margin-bottom: -3px;
@@ -233,7 +234,7 @@
         font-size: 4.8rem;
         letter-spacing: .35em;
 
-        @include sp() {
+        @include mixin.sp() {
           font-size: 1.4rem;
           // font-size: 1rem;
         }
@@ -251,13 +252,13 @@
       font-size: 6.4rem;
       letter-spacing: .3em;
 
-      @include sp() {
+      @include mixin.sp() {
         letter-spacing: .2em;
         font-size: 3rem;
       }
 
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 2.5rem;
       }
 
@@ -271,7 +272,7 @@
         transform: translateX(-50%);
         width: 100%;
 
-        @include sp() {
+        @include mixin.sp() {
           height: 2px;
           bottom: -1px;
         }

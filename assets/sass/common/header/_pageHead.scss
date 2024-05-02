@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   pageHead
   ========================================================================== */
@@ -6,7 +7,7 @@
   height: 400px;
   width: 100%;
 
-  @include sp() {
+  @include mixin.sp() {
     height: 230px;
   }
 
@@ -20,7 +21,7 @@
 
     position: relative;
 
-    @include sp() {
+    @include mixin.sp() {
       max-width: 400px;
       width: 85%;
     }
@@ -38,7 +39,7 @@
     padding-left: 79px;
     margin-top: 95px;
 
-    @include sp() {
+    @include mixin.sp() {
       margin-top: 65px;
       padding-left: 20px;
     }
@@ -53,7 +54,7 @@
       margin-bottom: -3px;
       line-height: 1.3;
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 3.2rem;
         line-height: 1.3;
         margin-bottom: 1px;
@@ -65,7 +66,7 @@
       font-size: 2rem;
       color: #87A380;
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 1.8rem;
       }
     }
@@ -115,7 +116,7 @@
 
     &__ttl{
       ._upper{
-        @include sp(){
+        @include mixin.sp(){
           font-size: 2.7rem;
         }
       }
