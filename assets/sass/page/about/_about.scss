@@ -1,4 +1,4 @@
-
+@use '../../foundation/mixin';
 // レスポンシブ関数
 $pc1: 1380px; // PC
 $pc2: 1379px; // PC
@@ -33,26 +33,33 @@ $sp: 639px;  // スマホ
   }
 }
 
+.title h2{
+	color: #fff;
+	background-color: #0d0f3b;
+	margin-bottom: 40px;
+}
+
 /* ==========================================================================
   mv
   ========================================================================== */
-  .about .main {
-    width: 100%;
-  }
-  .about .main img {
-    -o-object-fit: cover;
-    -o-object-position: center;
-    object-fit: cover;
-    object-position: center;
-    padding-top: 80px;
-    padding-top: 80px;
-    width: 100%;
-  }
-  .about .breadcrumb {
-    text-align: left;
-  }
+	.about .main {
+		width: 100%;
+	}
 
-  
+	.about .main img {
+		-o-object-fit: cover;
+		-o-object-position: center;
+		object-fit: cover;
+		object-position: center;
+		padding-top: 80px;
+		padding-top: 80px;
+		width: 100%;
+	}
+
+	.about .breadcrumb {
+		text-align: left;
+	}
+
 /* ==========================================================================
   about-ttl
   ========================================================================== */
@@ -108,6 +115,13 @@ $sp: 639px;  // スマホ
   /* ==========================================================================
   about-massage
   ========================================================================== */
+.about-massage {
+	margin-bottom: 100px;
+
+	@media (max-width: 999px) {
+		margin-bottom: 60px;
+	}	
+}
 .about-massage__inner {
   padding-top: 40px;
 }
@@ -388,13 +402,11 @@ point3
   padding: 44px 0;
 }
 .point3__inner {
-  -webkit-box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.8);
-  background-color: #0d0f3b;
-  box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.8);
   padding: 44px 0;
 }
 .point3__inner--title h2 {
   color: #fff;
+  background-color: #0d0f3b;
 }
 .point3__inner--content {
   padding: 0 40px;
@@ -407,8 +419,8 @@ point3
   text-decoration: none;
 }
 .point3__inner--content a .box {
-  background-color: #fff;
-  border: 1px solid #fff;
+//   background-color: #fff;
+//   border: 1px solid #fff;
   cursor: pointer;
   margin: 20px 0;
   padding: 20px;
@@ -420,17 +432,19 @@ point3
   transition: 0.2s linear;
 }
 .point3__inner--content a .box h3 {
-  font-family: "Furuta", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  position: relative;
+	padding-top: 20px;
+	font-family: "Furuta", sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
 }
-.point3__inner--content a .box img {
-  width: 30px;
-}
+
 .point3__inner--content a .box p {
-  color: #111111;
-  font-size: 16px;
+	color: #111111;
+	font-size: 16px;
+	position: relative;
+	z-index: 1;
 }
 
 @media (min-width: 640px) and (max-width: 959px) {
@@ -443,6 +457,35 @@ point3
     padding: 0 6px;
   }
 }
+
+.parts{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 999px) {
+		display: block;
+		max-width: 300px;
+		margin: 0 auto 20px;
+	}
+
+	.box{
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		@media (max-width: 999px) {
+			margin-bottom: 60px !important;
+		}
+
+		.bgImage{
+			position: absolute;
+			left: 0;
+			top: 0;
+			
+		}
+	}
+}
+
 /* ==========================================================================
   about-massage
   ========================================================================== */
@@ -557,7 +600,7 @@ point3
   }
   
   .planIn {
-    margin: 0 auto;
+    margin: 40px auto;
     max-width: calc(988px + 5% * 2);
     padding: 0;
   }
@@ -1102,9 +1145,7 @@ point3
   width: 100%;
 }
 .low-price__inner--contents .content__inner {
-  -webkit-box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.8);
   background-color: #0d0f3b;
-  box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.8);
   height: 60%;
   padding: 0 0 30px;
   text-align: center;
@@ -1193,6 +1234,12 @@ point3
   margin-bottom: 20px;
   width: 100%;
 }
+.zeh-under-text{
+	color: #111111;
+    font-family: "Furuta", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
 
 
 /* ==========================================================================
@@ -1204,3 +1251,99 @@ point3
   .voice__inner--content p {
     text-align: left;
   }
+
+/* ==========================================================================
+about 詳細
+========================================================================== */
+.about-detail{
+	counter-reset: number 0; /* 名前は任意、0でリセット。*/
+	.about-detail-content{
+		padding: 40px 0;
+		text-align: left;
+		position: relative;
+		@include mixin.sp() {
+			padding: 40px 20px;
+		}
+		&::after { // 縦線を追加
+			content: "";
+			position: absolute;
+			left: -30px; // タイトルの左に配置
+			top: 45px;
+			bottom: -40px; // 下にもっと伸ばす
+			width: 1px; // 線の太さ
+			background-color: #a9a9a9; // 線の色
+			z-index: -1;
+			@include mixin.sp() {
+				left: 0; // タイトルの左に配置
+			}
+		}
+
+		.about-detail-title {
+			color: #FF7F00;
+			font-family: "Furuta", sans-serif;
+			font-size: 4rem;
+			font-weight: bold;
+			position: relative;
+			margin-bottom: 20px;
+			text-align: left;
+			
+			&::before { // 数字を追加
+				counter-increment: number 1; /* counter-resetの名前を指定、+1づつ増やす。*/
+				content: counter(number) "."; 
+				position: absolute;
+				left: -44px; // 数字の位置調整
+				top: 0; // 中央に配置
+				color: #FF7F00;
+				font-family: "Furuta", sans-serif;
+				font-size: 4rem;
+				font-weight: bold;
+				background-color: #fff;
+				z-index: 1;
+			}
+			@include mixin.sp() {
+				font-size: 3rem;
+				&::before { // 数字を追加
+					font-size: 3rem;
+					left: -30px; // 数字の位置調整
+				}
+			}
+		}
+
+		.pc-flex{
+			display: flex;
+			justify-content: flex-start;
+			@include mixin.sp() {
+				display: block;
+			}
+			img{
+				object-fit: cover;
+				object-position: center;
+				max-width: 400px;
+			}
+			.about-detail-message{
+				margin-left: 20px;
+				@include mixin.sp() {
+					margin-left: 0;
+				}
+				.select-title{
+					p{
+						font-size: 3.2rem;
+						font-weight: bold;
+					}
+				}
+				.step7{
+					counter-reset: count 0;
+					p{
+						color: #FF7F00;
+					};
+					li{
+						&:before {
+							counter-increment: count 1;
+							content: counter(count) ". ";
+						}
+					}
+				}
+			}
+		}
+	}
+}

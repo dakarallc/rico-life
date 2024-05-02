@@ -3254,6 +3254,12 @@ contact
   text-align: center;
 }
 
+.title h2 {
+  background-color: #0d0f3b;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
 /* ==========================================================================
   mv
   ========================================================================== */
@@ -3332,6 +3338,15 @@ contact
 /* ==========================================================================
 about-massage
 ========================================================================== */
+.about-massage {
+  margin-bottom: 100px;
+}
+@media (max-width: 999px) {
+  .about-massage {
+    margin-bottom: 60px;
+  }
+}
+
 .about-massage__inner {
   padding-top: 40px;
 }
@@ -3636,13 +3651,11 @@ point3
 }
 
 .point3__inner {
-  -webkit-box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.8);
-  background-color: #0d0f3b;
-  box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.8);
   padding: 44px 0;
 }
 
 .point3__inner--title h2 {
+  background-color: #0d0f3b;
   color: #fff;
 }
 
@@ -3660,8 +3673,6 @@ point3
 }
 
 .point3__inner--content a .box {
-  background-color: #fff;
-  border: 1px solid #fff;
   cursor: pointer;
   margin: 20px 0;
   padding: 20px;
@@ -3678,16 +3689,16 @@ point3
   font-family: "Furuta", sans-serif;
   font-size: 2rem;
   font-weight: bold;
+  padding-top: 20px;
   position: relative;
-}
-
-.point3__inner--content a .box img {
-  width: 30px;
+  z-index: 1;
 }
 
 .point3__inner--content a .box p {
   color: #111111;
   font-size: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 640px) and (max-width: 959px) {
@@ -3700,6 +3711,40 @@ point3
     padding: 0 6px;
   }
 }
+.parts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 999px) {
+  .parts {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 300px;
+  }
+}
+.parts .box {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 999px) {
+  .parts .box {
+    margin-bottom: 60px !important;
+  }
+}
+.parts .box .bgImage {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
 /* ==========================================================================
   about-massage
   ========================================================================== */
@@ -3821,7 +3866,7 @@ point3
 }
 
 .planIn {
-  margin: 0 auto;
+  margin: 40px auto;
   max-width: calc(988px + 10%);
   padding: 0;
 }
@@ -4371,9 +4416,7 @@ low-price
 }
 
 .low-price__inner--contents .content__inner {
-  -webkit-box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.8);
   background-color: #0d0f3b;
-  box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.8);
   height: 60%;
   padding: 0 0 30px;
   text-align: center;
@@ -4472,6 +4515,13 @@ zeh
   width: 100%;
 }
 
+.zeh-under-text {
+  color: #111111;
+  font-family: "Furuta", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 /* ==========================================================================
   voice
   ========================================================================== */
@@ -4481,6 +4531,113 @@ zeh
 
 .voice__inner--content p {
   text-align: left;
+}
+
+/* ==========================================================================
+about 詳細
+========================================================================== */
+.about-detail {
+  counter-reset: number 0; /* 名前は任意、0でリセット。*/
+}
+.about-detail .about-detail-content {
+  padding: 40px 0;
+  position: relative;
+  text-align: left;
+}
+@media (max-width: 999px) {
+  .about-detail .about-detail-content {
+    padding: 40px 20px;
+  }
+}
+.about-detail .about-detail-content::after {
+  background-color: #a9a9a9;
+  bottom: -40px;
+  content: "";
+  left: -30px;
+  position: absolute;
+  top: 45px;
+  width: 1px;
+  z-index: -1;
+}
+@media (max-width: 999px) {
+  .about-detail .about-detail-content::after {
+    left: 0;
+  }
+}
+.about-detail .about-detail-content .about-detail-title {
+  color: #FF7F00;
+  font-family: "Furuta", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: left;
+}
+.about-detail .about-detail-content .about-detail-title::before {
+  background-color: #fff;
+  color: #FF7F00;
+  content: counter(number) ".";
+  counter-increment: number 1; /* counter-resetの名前を指定、+1づつ増やす。*/
+  font-family: "Furuta", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  left: -44px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+@media (max-width: 999px) {
+  .about-detail .about-detail-content .about-detail-title {
+    font-size: 3rem;
+  }
+  .about-detail .about-detail-content .about-detail-title::before {
+    font-size: 3rem;
+    left: -30px;
+  }
+}
+.about-detail .about-detail-content .pc-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+@media (max-width: 999px) {
+  .about-detail .about-detail-content .pc-flex {
+    display: block;
+  }
+}
+.about-detail .about-detail-content .pc-flex img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  max-width: 400px;
+  object-position: center;
+}
+.about-detail .about-detail-content .pc-flex .about-detail-message {
+  margin-left: 20px;
+}
+@media (max-width: 999px) {
+  .about-detail .about-detail-content .pc-flex .about-detail-message {
+    margin-left: 0;
+  }
+}
+.about-detail .about-detail-content .pc-flex .about-detail-message .select-title p {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.about-detail .about-detail-content .pc-flex .about-detail-message .step7 {
+  counter-reset: count 0;
+}
+.about-detail .about-detail-content .pc-flex .about-detail-message .step7 p {
+  color: #FF7F00;
+}
+.about-detail .about-detail-content .pc-flex .about-detail-message .step7 li:before {
+  content: counter(count) ". ";
+  counter-increment: count 1;
 }
 
 .hiraya-kv {
