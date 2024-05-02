@@ -120,6 +120,8 @@ caseItem
           <p class="caseItem__desc"><?php echo $text4; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
+
+      <?php if (!empty($img_url5)): ?>
       <div class="caseItem__box wow fadeInUp">
         <div class="caseItem__img3">
           <img data-js-ofi src="<?php echo $img_url5; ?>" alt="<?php echo $name  ?>">
@@ -129,6 +131,9 @@ caseItem
           <p class="caseItem__desc"><?php echo $text5; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
+      <?php endif; ?>
+      
+      <?php if (!empty($img_url6)): ?>
       <div class="caseItem__box wow fadeInUp">
         <div class="caseItem__img3">
           <img data-js-ofi src="<?php echo $img_url6; ?>" alt="<?php echo $name  ?>">
@@ -138,6 +143,9 @@ caseItem
           <p class="caseItem__desc"><?php echo $text6; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
+      <?php endif; ?>
+
+      <?php if (!empty($img_url7)): ?>
       <div class="caseItem__box wow fadeInUp">
         <div class="caseItem__img3">
           <img data-js-ofi src="<?php echo $img_url7; ?>" alt="<?php echo $name  ?>">
@@ -147,6 +155,7 @@ caseItem
           <p class="caseItem__desc"><?php echo $text7; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
+      <?php endif; ?>
 
       <div class="caseItem__gallery wow fadeInUp">
       <?php if(empty($img_url8)):?>
