@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   stay
   ========================================================================== */
@@ -6,7 +7,7 @@
   background: url(../img/belleair/stay-bg.png) no-repeat center right/cover;
   padding: 100px 0 299px;
 
-  @include sp() {
+  @include mixin.sp() {
     padding: 44px 0 152px;
     background: url(../img/belleair/stay-bg-sp.png) no-repeat center right/cover;
   }

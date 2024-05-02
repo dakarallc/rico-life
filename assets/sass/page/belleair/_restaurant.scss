@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   restaurant
   ========================================================================== */
@@ -6,7 +7,7 @@
   background: url(../img/belleair/restaurant-bg.png) no-repeat center center/cover;
   padding: 91px 0 92px;
 
-  @include sp() {
+  @include mixin.sp() {
     padding: 41px 0 21px;
     background: url(../img/belleair/restaurant-bg-sp.png) no-repeat center center/cover;
   }
@@ -17,7 +18,7 @@
     display: flex;
     align-items: center;
 
-    @include sp() {
+    @include mixin.sp() {
       flex-wrap: wrap;
     }
   }
@@ -25,7 +26,7 @@
   .format {
     color: #fff;
 
-    @include pc() {
+    @include mixin.pc() {
       flex: 1 1 0%;
     }
 
@@ -42,7 +43,7 @@
   }
 
   &__img {
-    @include pc() {
+    @include mixin.pc() {
       margin-left: 3%;
       width: 37%;
 
@@ -51,7 +52,7 @@
       }
     }
 
-    @include sp() {
+    @include mixin.sp() {
       margin-top: 20px;
       width: 100%;
       text-align: center;

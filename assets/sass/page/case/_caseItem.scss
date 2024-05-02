@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   caseItem
   ========================================================================== */
@@ -5,7 +6,7 @@
 .caseItem {
   padding-bottom: 199px;
 
-  @include sp() {
+  @include mixin.sp() {
     padding-bottom: 80px;
   }
 
@@ -13,7 +14,7 @@
     margin-bottom: 4px;
     letter-spacing: .04em;
 
-    @include sp() {
+    @include mixin.sp() {
       margin-bottom: 8px;
     }
   }
@@ -23,7 +24,7 @@
     font-size: 2.4rem;
     margin-bottom: 27px;
 
-    @include sp() {
+    @include mixin.sp() {
       font-size: 2rem;
       line-height: 1.5;
     }
@@ -49,19 +50,19 @@
     display: flex;
     margin-bottom: 90px;
 
-    @include sp() {
+    @include mixin.sp() {
       flex-wrap: wrap;
       margin-bottom: 60px;
     }
   }
 
   &__img1 {
-    @include pc() {
+    @include mixin.pc() {
       margin-right: 1.5%;
       width: 44%;
     }
 
-    @include sp() {
+    @include mixin.sp() {
       width: 100%;
       margin-bottom: 20px;
     }
@@ -89,11 +90,11 @@
   }
 
   &__mainContents {
-    @include pc() {
+    @include mixin.pc() {
       flex: 1 1 0%;
     }
 
-    @include sp() {
+    @include mixin.sp() {
       width: 100%;
     }
   }
@@ -116,10 +117,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: transparent linear-gradient(180deg, #009480 0%, #006694 100%) 0% 0% no-repeat;
+        background: transparent linear-gradient(180deg, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
         border: 1px solid #707070;
 
-        @include sp() {
+        @include mixin.sp() {
           height: 40px;
           justify-content: center;
           margin-right: 6%;
@@ -137,7 +138,7 @@
     line-height: 1.9;
     letter-spacing: .2em;
 
-    @include sp() {
+    @include mixin.sp() {
       margin-bottom: 30px;
     }
   }
@@ -146,30 +147,30 @@
     margin-bottom: 95px;
     display: flex;
 
-    @include sp() {
+    @include mixin.sp() {
       flex-wrap: wrap;
       margin-bottom: 65px;
     }
   }
 
   &__contents {
-    @include pc() {
+    @include mixin.pc() {
       flex: 1 1 0%;
       margin-left: 20px;
     }
 
-    @include sp() {
+    @include mixin.sp() {
       width: 100%;
     }
   }
 
   &__info {
-    @include pc() {
+    @include mixin.pc() {
       margin-left: 2%;
       width: 21%;
     }
 
-    @include sp() {
+    @include mixin.sp() {
       width: 100%;
     }
   }
@@ -183,7 +184,7 @@
       display: block;
       padding-top: 100%;
 
-      @include sp(){
+      @include mixin.sp(){
         padding-top: 80%;
       }
     }
@@ -200,7 +201,7 @@
       top: 0;
       width: 100%;
 
-      @include sp(){
+      @include mixin.sp(){
         object-position: top center;
       }
     }
@@ -218,7 +219,7 @@
       width: 56%;
     }
 
-    @include sp() {
+    @include mixin.sp() {
       width: 100%;
     }
 
@@ -229,7 +230,7 @@
       display: block;
       padding-top: 100%;
 
-      @include sp() {
+      @include mixin.sp() {
         padding-top: 70%;
       }
     }
@@ -263,12 +264,12 @@
     max-width: 352px;
     width: 100%;
 
-    @include sp() {
+    @include mixin.sp() {
       margin: 50px auto 0;
     }
 
     &:hover {
-      color: #009480;
+      color: #d90200;
       background: #fff;
     }
   }

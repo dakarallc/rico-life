@@ -1,3 +1,4 @@
+@use '../../foundation/mixin';
 /* ==========================================================================
   filter
   ========================================================================== */
@@ -8,7 +9,7 @@
   background: #F3F3F3;
   position: relative;
 
-  @include sp() {
+  @include mixin.sp() {
     padding: 44px 0;
     background: transparent radial-gradient(closest-side at 50% 50%, #FFFFFF 0%, #EFEFEF 100%) 0% 0% no-repeat;
   }
@@ -16,7 +17,7 @@
   &__inner {
     max-width: calc(963px + 5% * 2);
 
-    @include sp() {
+    @include mixin.sp() {
       padding: 0 10px;
     }
   }
@@ -26,7 +27,7 @@
     text-align: center;
     margin-bottom: 41px;
 
-    @include sp() {
+    @include mixin.sp() {
       margin-bottom: 21px;
     }
 
@@ -36,7 +37,7 @@
       letter-spacing: .2em;
       margin-bottom: -14px;
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 1.4rem;
         margin-bottom: -5px;
       }
@@ -46,7 +47,7 @@
       font-size: 5rem;
       letter-spacing: .2em;
 
-      @include sp() {
+      @include mixin.sp() {
         font-size: 2.8rem;
       }
     }
@@ -59,7 +60,7 @@
     width: 100%;
     margin: 0 auto;
 
-    @include sp() {
+    @include mixin.sp() {
       font-size: 1rem;
     }
   }
@@ -94,7 +95,7 @@
       &:nth-of-type(1) {
         .virus__img {
           img {
-            @include sp() {
+            @include mixin.sp() {
               width: 80px;
             }
 
@@ -114,7 +115,7 @@
       &:nth-of-type(2) {
         .virus__img {
           img {
-            @include sp() {
+            @include mixin.sp() {
               width: 39px;
             }
 
@@ -134,7 +135,7 @@
       &:nth-of-type(3) {
         .virus__img {
           img {
-            @include sp() {
+            @include mixin.sp() {
               width: 30px;
             }
 
@@ -154,7 +155,7 @@
       &:nth-of-type(4) {
         .virus__img {
           img {
-            @include sp() {
+            @include mixin.sp() {
               width: 20px;
             }
 
@@ -174,7 +175,7 @@
       &:nth-of-type(5) {
         .virus__img {
           img {
-            @include sp() {
+            @include mixin.sp() {
               width: 10px;
             }
 
@@ -197,7 +198,7 @@
 
       text-align: center;
 
-      @include pc() {
+      @include mixin.pc() {
         letter-spacing: 0.2em;
       }
 
@@ -212,7 +213,7 @@
         margin-bottom: -10px;
         line-height: 1.5;
 
-        @include sp() {
+        @include mixin.sp() {
           font-size: 1rem;
         }
       }
@@ -220,7 +221,7 @@
       ._below {
         font-size: 1.8rem;
 
-        @include sp() {
+        @include mixin.sp() {
           font-size: 1rem;
         }
       }

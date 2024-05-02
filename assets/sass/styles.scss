@@ -3,22 +3,33 @@
 /* ==========================================================================
   Foundation
   ========================================================================== */
-  @import "./foundation/_reset.scss";
-  @import "./foundation/_variable.scss";
-  @import "./foundation/_mixin.scss";
-  @import "./foundation/_base.scss";
-  @import "./foundation/_keyframe.scss";
-  @import "./foundation/_component.scss";
+@use "./foundation/reset";
+// @use "./foundation/variable";
+// @use "./foundation/mixin";
+@use "./foundation/base";
+@use "./foundation/keyframe";
+@use "./foundation/component";
 
 /* ==========================================================================
   common
   ========================================================================== */
 
-  @import "common/**";
+@use "common/footer/banner";
+@use "common/footer/fixedMenu";
+@use "common/footer/footer";
+@use "common/footer/menuLink";
+@use "common/footer/shop";
+@use "common/footer/shopTab";
+@use "common/footer/totop";
 
-  /* ==========================================================================
-  parts
-  ========================================================================== */
+@use "common/header/breadcrumb";
+@use "common/header/header";
+@use "common/header/pageHead";
+@use "common/header/toggle";
+
+// /* ==========================================================================
+//   parts
+//   ========================================================================== */
 
 @use "page/agency/agency";
 
@@ -55,4 +66,4 @@
 //   page
 //   ========================================================================== */
 
-  @import "page/**";
+// @use "page/*";
