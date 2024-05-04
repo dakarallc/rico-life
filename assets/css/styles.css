@@ -8333,7 +8333,12 @@ zeh
 
 .event-message {
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 360px;
+}
+@media (max-width: 999px) {
+  .event-message {
+    max-width: 300px;
+  }
 }
 
 /* ==========================================================================

@@ -302,8 +302,8 @@ if ( in_category('event') ) :
       <!-- 土地探し -->
       <section class="searchLand">
         <h2 class="searchLand__ttl  wow fadeInUp">土地探しもお任せ！</h2><!-- /homeMade__ttl -->
-        <p>創業７０年を迎えるカクダイグループでは<br>
-          宅建士が在籍する不動産部があるため<br>
+        <p>創業７０年を迎えるカクダイグループでは<br class="show--sp">
+          宅建士が在籍する不動産部があるため<br class="show--sp">
           土地と建物をワンストップでご提案可能！</p>
         <div class="searchLand__img">
           <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/searchLand.png"  alt="住宅ローン" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/searchLand.png" class=" lazyloaded">
