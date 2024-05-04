@@ -32,7 +32,7 @@ pageHead
       <?php else: ?>
         <span class="_upper">お知らせ</span><!-- /_upper -->
         <span class="_below">INFORMATION</span><!-- /_below -->
-      <?php endif; ?>
+        <?php endif; ?>
     </h1><!-- /pageHead__ttl -->
   </div><!-- /pageHead__contents -->
 </div><!-- /pageHead -->
@@ -69,8 +69,21 @@ if ( in_category('event') ) :
             </div><!-- /caseItem__list -->
           </div><!-- /caseItem__mainContents -->
         </div><!-- /caseItem__main -->
+       
         <div style="text-align: center">
           <?php the_content(); ?>
+        </div>
+        <div>
+          <div class="event-message">
+            <p>安心の耐震等級"3相当"の住宅！<br />
+              売電収入で助かる太陽光発電！<br />
+              火の手から守る省令準耐火性能！<br />
+              夏も冬も部屋を守る断熱性能！
+            </p>
+          </div>
+
+          <p style="text-align: center">「いえとち」だからできるローコスト高性能住宅の<br />
+          秘密は見学会で！</p>
         </div>
       </div><!-- /post__contents -->
 
