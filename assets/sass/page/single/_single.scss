@@ -752,10 +752,15 @@
     margin: 20px 0;
   }
   .event-message{
-    max-width: 360px;
+    margin-top: 30px;
+    max-width: 600px;
     margin: 0 auto;
+    text-align: center;
     @include mixin.sp() {
       max-width: 300px;
+    }
+    h3{
+      margin-top: 20px;
     }
   }
 
