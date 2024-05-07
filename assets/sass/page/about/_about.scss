@@ -1286,6 +1286,10 @@ about 詳細
 			position: relative;
 			margin-bottom: 20px;
 			text-align: left;
+
+			@include mixin.sp() {
+				font-size: 2rem !important;
+			}
 			
 			&::before { // 数字を追加
 				counter-increment: number 1; /* counter-resetの名前を指定、+1づつ増やす。*/
@@ -1299,6 +1303,10 @@ about 詳細
 				font-weight: bold;
 				background-color: #fff;
 				z-index: 1;
+
+				@include mixin.sp() {
+					font-size: 2rem !important;
+				}
 			}
 			@include mixin.sp() {
 				font-size: 3rem;
@@ -1314,6 +1322,12 @@ about 詳細
 			justify-content: flex-start;
 			@include mixin.sp() {
 				display: block;
+			}
+			.leftImg{
+				aspect-ratio: 16 / 10.814;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
 			}
 			img{
 				object-fit: cover;

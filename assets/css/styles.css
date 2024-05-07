@@ -4573,6 +4573,11 @@ about 詳細
   position: relative;
   text-align: left;
 }
+@media (max-width: 999px) {
+  .about-detail .about-detail-content .about-detail-title {
+    font-size: 2rem !important;
+  }
+}
 .about-detail .about-detail-content .about-detail-title::before {
   background-color: #fff;
   color: #FF7F00;
@@ -4585,6 +4590,11 @@ about 詳細
   position: absolute;
   top: 0;
   z-index: 1;
+}
+@media (max-width: 999px) {
+  .about-detail .about-detail-content .about-detail-title::before {
+    font-size: 2rem !important;
+  }
 }
 @media (max-width: 999px) {
   .about-detail .about-detail-content .about-detail-title {
@@ -4609,6 +4619,13 @@ about 詳細
   .about-detail .about-detail-content .pc-flex {
     display: block;
   }
+}
+.about-detail .about-detail-content .pc-flex .leftImg {
+  aspect-ratio: 16/10.814;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .about-detail .about-detail-content .pc-flex img {
   -o-object-fit: cover;

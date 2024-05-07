@@ -10,10 +10,18 @@ Template Name: いえとち本舗とは
 mv
 ================================================================================================ -->
 	<main class="main">
-		<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/kv-about.jpg" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/kv-about.jpg" class=" ls-is-cached lazyloaded">
-		<noscript>
-		<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/kv-about.jpg" alt="いえとち本舗の平屋" data-eio="l">
-		</noscript>
+		<div class="show--pc">
+			<img  src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-pc.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-pc.png" class=" ls-is-cached lazyloaded">
+			<noscript>
+				<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-pc.png" alt="いえとち本舗の平屋" data-eio="l">
+			</noscript>
+		</div>
+		<div class="show--sp">
+			<img  src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-sp.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-sp.png" class=" ls-is-cached lazyloaded">
+			<noscript>
+				<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-sp.png" alt="いえとち本舗の平屋" data-eio="l">
+			</noscript>
+		</div>
 	</main>
 	<?php if (function_exists('bcn_display')) : ?>
 		<div class="breadcrumb">
@@ -121,7 +129,7 @@ zeh
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">低価格×高品質を実現</h3>
 				<div class="pc-flex">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-1.png" alt="">
+					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail1.png" alt="">
 					<div class="about-detail-message">
 						<p>土地や建物が大きな家は住宅ローンも大きくなります。そしてローンだけでなく今後は光熱費の上昇で固定費がどんどん高くなります。そのため、無理なく持てる家を建てることが大事です。いえとち本舗では、注文住宅を規格化し合理化することで高水準な仕様のまま、コストダウンを実現しております。さらに、太陽光発電が標準装備でエネルギーコスト節約という付加価値つき住宅です。単に安いのではなく、お客様が安心して快適に暮らせるような仕様になっております。</p>
 					</div>
@@ -131,7 +139,7 @@ zeh
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">太陽光で家が稼いでくれる</h3>
 				<div class="pc-flex">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-1.png" alt="">
+					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail2.png" alt="">
 					<div class="about-detail-message">
 						<p>太陽光パネル付きの家が稼いでくれる。いえとち本舗のイエテラスは、太陽光が標準搭載です。近年、電気代が高騰しておりますが、まだまだ上がることが予想されております。その電気を家が蓄え、売電してくれることで毎月の電気代が0円になるだけでなく、搭載量によっては住宅ローンの負担軽減も可能です。さらに、自然エネルギーを利用した太陽光発電はCO2を排出することがないため、環境にとてもやさしいです。日々の生活が充実したものになります。</p>
 					</div>
@@ -141,7 +149,7 @@ zeh
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">豊富なデザインと間取り</h3>
 				<div class="pc-flex">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-1.png" alt="">
+					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail3.png" alt="">
 					<div class="about-detail-message">
 						<div class="select-title">
 							<p>169,280通りの選択肢</p>
@@ -172,7 +180,7 @@ zeh
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">災害に強く耐久性◎</h3>
 				<div class="pc-flex">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-1.png" alt="">
+					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail4.png" alt="">
 					<div class="about-detail-message">
 						<p>日本は地震大国です。何十年も暮らすマイホームだからこそ地震に強い耐震性と耐久性が大切です。『いえとち本舗』は基礎工事から内装工事に至るまで耐久性とエコロジーを取り入れ、レベルの高い性能を実現しています。凹凸のないハコ型にすることで、地震に対して構造部分の強さを保つだけでなく、建物価格を低く抑えることができます。また規格化した物件だからこそ、一定の品質を保ちます。</p>
 					</div>
@@ -182,7 +190,7 @@ zeh
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">土地探しもお任せ！</h3>
 				<div class="pc-flex">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-1.png" alt="">
+					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail5.png" alt="">
 					<div class="about-detail-message">
 						<p>マイホームを建てる時には土地探しも重要になります。現地見学をして周辺の環境を確かめたり、物件を含めた全体予算をしっかりと算出したりと、面倒なことがたくさんあります。いえとち本舗は、「家」も「土地」もセットでご提案いたしますのでご安心ください。地元密着で70年の情報力と提案力でサポートいたします。</p>
 					</div>
