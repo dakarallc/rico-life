@@ -35,19 +35,31 @@ $title6 = get_field('title6');
 $text6 = get_field('text6');
 
 $img_id7 = get_field('pic7');
-$img_url7 = wp_get_attachment_image_src($img_id7, 'large')[0];
-$title7 = get_field('title7');
-$text7 = get_field('text7');
+if ($img_id7) {
+    $img_url7 = wp_get_attachment_image_src($img_id7, 'large')[0];
+    $title7 = get_field('title7');
+    $text7 = get_field('text7');
+}
 
 $img_id8 = get_field('pic8');
-$img_url8 = wp_get_attachment_image_src($img_id8, 'large')[0];
-$img_id9 = get_field('pic9');
-$img_url9 = wp_get_attachment_image_src($img_id9, 'large')[0];
-$img_id10 = get_field('pic10');
-$img_url10 = wp_get_attachment_image_src($img_id10, 'large')[0];
-$img_id11 = get_field('pic11');
-$img_url11 = wp_get_attachment_image_src($img_id11, 'large')[0];
+if ($img_id8) {
+  $img_url8 = wp_get_attachment_image_src($img_id8, 'large')[0];
+}
 
+$img_id9 = get_field('pic9');
+if ($img_id9) {
+  $img_url9 = wp_get_attachment_image_src($img_id9, 'large')[0];
+}
+
+$img_id10 = get_field('pic10');
+if ($img_id10) {
+  $img_url10 = wp_get_attachment_image_src($img_id10, 'large')[0];
+}
+
+$img_id11 = get_field('pic11');
+if ($img_id11) {
+  $img_url11 = wp_get_attachment_image_src($img_id11, 'large')[0];
+}
 ?>
 
 <div class="page case-page">
@@ -120,6 +132,8 @@ caseItem
           <p class="caseItem__desc"><?php echo $text4; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
+
+      <?php if (!empty($img_url5)): ?>
       <div class="caseItem__box wow fadeInUp">
         <div class="caseItem__img3">
           <img data-js-ofi src="<?php echo $img_url5; ?>" alt="<?php echo $name  ?>">
@@ -129,6 +143,9 @@ caseItem
           <p class="caseItem__desc"><?php echo $text5; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
+      <?php endif; ?>
+
+      <?php if (!empty($img_url6)): ?>
       <div class="caseItem__box wow fadeInUp">
         <div class="caseItem__img3">
           <img data-js-ofi src="<?php echo $img_url6; ?>" alt="<?php echo $name  ?>">
@@ -138,6 +155,9 @@ caseItem
           <p class="caseItem__desc"><?php echo $text6; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
+      <?php endif; ?>
+
+      <?php if (!empty($img_url7)): ?>
       <div class="caseItem__box wow fadeInUp">
         <div class="caseItem__img3">
           <img data-js-ofi src="<?php echo $img_url7; ?>" alt="<?php echo $name  ?>">
@@ -147,6 +167,7 @@ caseItem
           <p class="caseItem__desc"><?php echo $text7; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
+      <?php endif; ?>
 
       <div class="caseItem__gallery wow fadeInUp">
       <?php if(empty($img_url8)):?>

@@ -1,3 +1,12 @@
 {
-  "liveSassCompile.settings.generateMap": false
+  "liveSassCompile.settings.generateMap": false,
+  "editor.detectIndentation": false, // インデントの初期指定を解除
+	"editor.insertSpaces": false, // スペースのインデント挿入をしないように
+	"editor.tabSize": 4,
+	"files.eol": "\n", // 改行コードを\n指定
+	"phpcs.executablePath": "/Users/kurudrive/.composer/vendor/squizlabs/php_codesniffer/bin/phpcs",
+	"phpcbf.executablePath": "/Users/kurudrive/.composer/vendor/squizlabs/php_codesniffer/bin/phpcbf",
+	"phpcs.standard": "WordPress",
+	"phpcbf.standard": "WordPress",
+	"phpcbf.onsave": true,
 }
