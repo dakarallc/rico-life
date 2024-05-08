@@ -32,7 +32,7 @@ pageHead
       <?php else: ?>
         <span class="_upper">お知らせ</span><!-- /_upper -->
         <span class="_below">INFORMATION</span><!-- /_below -->
-      <?php endif; ?>
+        <?php endif; ?>
     </h1><!-- /pageHead__ttl -->
   </div><!-- /pageHead__contents -->
 </div><!-- /pageHead -->
@@ -69,8 +69,41 @@ if ( in_category('event') ) :
             </div><!-- /caseItem__list -->
           </div><!-- /caseItem__mainContents -->
         </div><!-- /caseItem__main -->
+       
         <div style="text-align: center">
           <?php the_content(); ?>
+        </div>
+        
+        <div class="event-message">
+          <div>安心の耐震等級"3相当"の住宅！<br class="show-pc"/>
+            売電収入で助かる太陽光発電！<br />
+            火の手から守る省令準耐火性能！<br />
+            ーーーーーーーーーーーーーーーーーーーーー<br />
+
+            家賃＋光熱費をアパートより安くすることができます！！<br />
+            安く快適に暮らし、老後までのローン破綻防止をご提案できます！<br />
+
+            <h4>ほんとにそんな安くなるの？</h4>
+            「いえとち」だからできる<br class="show-pc"/>ローコスト高性能住宅の秘密は見学会で！<br />
+
+            ーーーーーーーーーーーーーーーーーーーーー<br />
+
+            新商品のテスラ蓄電池とN型太陽光パネルで<br />
+            電気もガスもエネルギー代をほとんど払わない家をご提案できます！<br />
+
+            ーーーーーーーーーーーーーーーーーーーーー<br />
+
+            <h3>✨⭐️標準搭載⭐️✨</h3>
+            ◎安心の耐震等級”3相当”の住宅！<br />
+            ◎エネルギーをほとんど払わない<br />
+            蓄電池、太陽光発電！<br />
+            ◎火の手から守る省令準耐火性能！<br />
+            ◎夏も冬も部屋を守るZEH基準の断熱性能！<br />
+
+            <h3>💫⭐️ご来場特典⭐️💫</h3>
+            JCB券<br />
+            最大7,000円分プレゼント！！<br />
+          </div>
         </div>
       </div><!-- /post__contents -->
 
@@ -289,8 +322,8 @@ if ( in_category('event') ) :
       <!-- 土地探し -->
       <section class="searchLand">
         <h2 class="searchLand__ttl  wow fadeInUp">土地探しもお任せ！</h2><!-- /homeMade__ttl -->
-        <p>創業７０年を迎えるカクダイグループでは<br>
-          宅建士が在籍する不動産部があるため<br>
+        <p>創業７０年を迎えるカクダイグループでは<br class="show--sp">
+          宅建士が在籍する不動産部があるため<br class="show--sp">
           土地と建物をワンストップでご提案可能！</p>
         <div class="searchLand__img">
           <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/searchLand.png"  alt="住宅ローン" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/searchLand.png" class=" lazyloaded">

@@ -8844,6 +8844,21 @@ event
   margin: 20px 0;
 }
 
+.event-message {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 600px;
+  text-align: center;
+}
+@media (max-width: 999px) {
+  .event-message {
+    max-width: 300px;
+  }
+}
+.event-message h3 {
+  margin-top: 20px;
+}
+
 /* ==========================================================================
 plan
 ========================================================================== */
