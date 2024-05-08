@@ -38,10 +38,10 @@ about-massage
 	<div class="about-massage__inner inner">
 		<div class="about-massage__inner--title">
 			<h3>
-			<span class="massage1">住みたい場所</span>をみつけること<br>
-			<span class="massage2">高品質な家</span>を選ぶこと<br>
-			<span class="massage3">経済的なメリット</span>をつくること<br>
-			<span>地域密着70年企業だからできる<br/>ご提案をさせていただきます。</span>
+				<span class="massage1">住みたい場所</span>をみつけること<br>
+				<span class="massage2">高品質な家</span>を選ぶこと<br>
+				<span class="massage3">経済的なメリット</span>をつくること<br>
+				<span>地域密着70年企業だからできる<br/>ご提案をさせていただきます。</span>
 			</h3>
 		</div>   
 
@@ -54,7 +54,7 @@ about-massage
 
 		<div class="about-massage__inner--title">
 			<h3>
-				<span>大きくて高い、無理をした住まいはいらない。<br/>
+				<span>大きくて高い<br class="show--sp"/>無理をした住まいはいらない。<br/>
 				そんなご家族のご要望に応え<br/>豊かな暮らしを<br/>いえとち本舗がお届けいたします。</span>
 			</h3>
 		</div>
@@ -67,7 +67,7 @@ point3
 ================================================================================================ -->
 	<section class="point3">
 		<div class="title">
-			<h2 class="about-ttl">いえとち本舗は<br/>低価格×高品質×ZEHの家</h2>
+			<h2 class="about-ttl"><span>いえとち本舗は</span><br/>低価格×高品質×ZEHの家</h2>
 		</div>
 		<div class="point3__inner inner">
 			<div class="point3__inner--content section__inner--content">
@@ -131,7 +131,7 @@ zeh
 				<div class="pc-flex">
 					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail1.png" alt="">
 					<div class="about-detail-message">
-						<p>土地や建物が大きな家は住宅ローンも大きくなります。そしてローンだけでなく今後は光熱費の上昇で固定費がどんどん高くなります。そのため、無理なく持てる家を建てることが大事です。いえとち本舗では、注文住宅を規格化し合理化することで高水準な仕様のまま、コストダウンを実現しております。さらに、太陽光発電が標準装備でエネルギーコスト節約という付加価値つき住宅です。単に安いのではなく、お客様が安心して快適に暮らせるような仕様になっております。</p>
+						<p>土地や建物が大きな家は住宅ローンも大きくなります。<br class="show--pc"/>そしてローンだけでなく今後は光熱費の上昇で固定費がどんどん高くなります。そのため、無理なく持てる家を建てることが大事です。<br class="show--sp"/>いえとち本舗では、注文住宅を規格化し合理化することで高水準な仕様のまま、コストダウンを実現しております。さらに、太陽光発電が標準装備でエネルギーコスト節約という付加価値つき住宅です。<br class="show--sp"/>単に安いのではなく、お客様が安心して快適に暮らせるような仕様になっております。</p>
 					</div>
 				</div>
 			</div>
@@ -141,7 +141,7 @@ zeh
 				<div class="pc-flex">
 					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail2.png" alt="">
 					<div class="about-detail-message">
-						<p>太陽光パネル付きの家が稼いでくれる。いえとち本舗のイエテラスは、太陽光が標準搭載です。近年、電気代が高騰しておりますが、まだまだ上がることが予想されております。その電気を家が蓄え、売電してくれることで毎月の電気代が0円になるだけでなく、搭載量によっては住宅ローンの負担軽減も可能です。さらに、自然エネルギーを利用した太陽光発電はCO2を排出することがないため、環境にとてもやさしいです。日々の生活が充実したものになります。</p>
+						<p>太陽光パネル付きの家が稼いでくれる。<br>いえとち本舗のイエテラスは、太陽光が標準搭載です。近年、電気代が高騰しておりますが、まだまだ上がることが予想されております。<br class="show--sp"/>その電気を家が蓄え、売電してくれることで毎月の電気代が0円になるだけでなく、搭載量によっては住宅ローンの負担軽減も可能です。さらに、自然エネルギーを利用した太陽光発電はCO2を排出することがないため、環境にとてもやさしいです。<br class="show--sp"/>日々の生活が充実したものになります。</p>
 					</div>
 				</div>
 			</div>
@@ -154,12 +154,14 @@ zeh
 						<div class="select-title">
 							<p>169,280通りの選択肢</p>
 						</div>
+
 						<div class="choises__inner--content section__inner--content">
 							<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/choices.png" alt="選択肢" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/choices.png" class=" ls-is-cached lazyloaded">
-						<noscript>
-							<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/choices.png" alt="選択肢" data-eio="l">
-						</noscript>
-						<p>規格化したから、決められたものから少しの変更しかできないと思われるかと思いますが、それぞれ豊富な種類からカスタマイズすることが可能です。自分たちだけのオシャ</p>
+							<noscript>
+								<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/choices.png" alt="選択肢" data-eio="l">
+							</noscript>
+						</div>
+						<p>規格化したから、決められたものから少しの変更しかできないと思われるかと思いますが、それぞれ豊富な種類からカスタマイズすることが可能です。<br class="show--sp"/>自分たちだけのオシャレなマイホームが完成します。</p>
 
 						<div class="select-title step7">
 							<p>いえとち本舗の選び方7ステップ</p>
@@ -203,8 +205,8 @@ plan
 ========================================================================================== -->
 	<section class="section" id="plan">
 		<div class="point3__inner--title">
-			<h2 class="about-ttl">169,280通りの選択肢<br/>
-			坪数×間取り×デザインの豊富なプラン</h2>
+			<h2 class="about-ttl"><span>169,280通りの選択肢</span><br/>
+			坪数×間取り×デザインの<br class="show--sp"/>豊富なプラン</h2>
 		</div>
 
 		<div class="plan planIn">
@@ -475,15 +477,132 @@ low-price
           <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="お客様との打ち合わせ" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/voice.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/images/voice.png" alt="お客様との打ち合わせ" data-eio="l"></noscript>
         </div>
         <div class="uk-width-1-2@s">
-          <p>1番の決め手は地元密着で長く営業しているからです。<br>
+          <p>1番の決め手は地元密着で長く営業しているからです。
           このあたりに住んでいる人(埼玉県久喜市周辺)にも評判がよく、地元の会社なら建てた後のメンテナンスなどにも迅速に対応してくれるだろうと考えていました。<br>
-          最初に「こんな外観と間取りで家を建てたい」と話したところ、すぐに「このくらいの建築費でできる」と回答してくれました。コストパフォーマンスが良く質も高いので、かなり早い段階で夫婦2人の意見が一致しました。また太陽光発電は勧められて採用しましたが、光熱費が思った以上の節約になっています。            </p>
+          最初に「こんな外観と間取りで家を建てたい」と話したところ、すぐに「このくらいの建築費でできる」と回答してくれました。コストパフォーマンスが良く質も高いので、かなり早い段階で夫婦2人の意見が一致しました。また太陽光発電は勧められて採用しましたが、光熱費が思った以上の節約になっています。</p>
         </div>
       </div>
     </div>
   </section>
 
+<!-- ===============================================================================================
+EVENT
+================================================================================================ -->
+<?php
+  $perPage = -1;
+  $args = array(
+    'posts_per_page' => $perPage,
+    'post_type' => 'post',
+    'category_name' => 'event',
+    'post_status' => 'publish',
+    'category__not_in' => array(get_category_by_slug('end')->term_id)
+  );
+  $the_query = new WP_Query($args);
+  if ($the_query->have_posts()) : ?>
+    <section class="event">
+      <div class="inner event__inner">
+        <div class="event__box">
+          <div class="event__left">
+            <h2 class="event__ttl  event__ttl-pc ttl ttl--right ">開催中の<br>イベント</h2><!-- /event__ttl -->
+            <h2 class="event__ttl  event__ttl-sp ttl ttl--right ">開催中のイベント</h2><!-- /event__ttl -->
+            <!-- ★pc 用ボタン表示 -->
+            <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="event__btn topLink show--pc">view more</a><!-- /event__btn -->
+          </div><!-- /event__left -->
+          <div class="event__right swiper eventSwiper">
+            <ul class="event__list swiper-wrapper">
+              <?php while ($the_query->have_posts()) : $the_query->the_post(); 
+              $eventPic = get_field('event-pic');
+              $img_url1 = $eventPic;
+              $comment = get_field('comment'); //コメント
+              $schedule = get_field('schedule'); //日時
+              $time = get_field('time'); //開催時間
+              $address = get_field('address'); //住所
+              $reserve = get_field('reserve'); //予約方法
+              ?>
+                <li class="event__item swiper-slide">
+                  <a href="<?php echo esc_url(get_permalink()); ?>">
+                    <div class="event__info">
+                      <div class=""><img width="300" data-js-ofi src="<?php echo $eventPic; ?>" alt="<?php echo trimString(get_the_title(), 50);  ?>"></div><!-- /caseItem__img1 -->
+                    </div><!-- /event__info -->
+                    <div>
+                      <h3 class="event__subTtl"><?php echo trimString(get_the_title(), 50); ?></h3><!-- /event__subTtl -->
+                      <p class="event__schedule">日程:<?php echo $schedule ; ?></p>
+                      <p class="event__comment"><?php echo $comment ; ?></p>
+                    </div>
+                  </a>
+                </li><!-- /event__item -->
+              <?php endwhile; ?>
+            </ul><!-- /event__list -->
+            <div class="swiper-pagination swiper-pagination-black"></div>
+            <!-- ★sp 用ボタン表示 -->
+            <a href="<?php echo esc_url(get_permalink()); ?>" class="event__btn topLink show--sp">view more</a><!-- /event__btn -->
+          </div><!-- /event__right -->
+        </div><!-- /event__box -->
+      </div><!-- /inner event__inner -->
+    </section><!-- /event -->
+  <?php endif;
+  wp_reset_postdata(); ?>
 
-</div><!-- /page belleair -->
+  <!-- ===============================================================================================
+施工事例 swipper設定はfooter.phpに記載
+================================================================================================ -->
+
+<section class="tcase">
+  <div class="tcase__inner">
+    <?php
+      $perPage = 10;
+      $paged = get_query_var('paged');
+      $args = array(
+        'posts_per_page' => $perPage,
+        'post_type' => 'case',
+        'paged' => $paged,
+        // 'orderby' => 'meta_value',
+        'orderby' => array( 'meta_value' => 'DESC', 'date' => 'DESC' ),
+        'meta_key' => 'case-isHot'//カスタムフィールドの値を基準に並べ替え
+      );
+      $my_query = new WP_Query($args);
+      if ($my_query->have_posts()) : 
+    ?>
+      
+    <div class="swiper mySwiper">
+      <!-- swipper設定 -->
+      
+      <!-- <div class=""> -->
+        <ul class="swiper-wrapper">
+          <?php while ($my_query->have_posts()) : $my_query->the_post();
+          $name = get_the_title(); //名称
+          $cat = get_field('case-cat')->name; //カテゴリ名称
+          //画像
+          $img_id1 = get_field('pic1');
+          $img_url1 = wp_get_attachment_image_src($img_id1, 'large')[0];
+          $industry = get_field('case-industry'); //業種
+          $catch = get_field('case-catch');//きゃっち
+          $hot = get_field('case-isHot'); //HOT
+          ?>
+            <li class="swiper-slide">
+              <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
+                <div class="caseList__img"><img width="300" data-js-ofi src="<?php echo $img_url1; ?>" alt="<?php echo $name ?>"></div>
+                <!-- /caseList__img -->
+                <div class="caseList__body">
+                  <h3 class="caseList__subTtl">
+                    <span class="_below"><?php echo $name ?></span><!-- /_below -->
+                  </h3><!-- /caseList__subTtl -->
+                  <p class="caseList__desc"><?php echo trimString($catch, 30); ?></p>
+                  <!-- /caseList__desc -->
+                </div><!-- /caseList__body -->
+              </a>
+            </li><!-- /caseList__item -->
+            <?php endwhile; ?>
+          </ul><!-- /caseList__list -->
+          <div class="swiper-pagination swiper-pagination-black"></div>
+        <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
+      <!-- </div> -->
+    </div>
+  </div>
+</section>
+
+
+</div>
 
 <?php get_footer(); ?>
