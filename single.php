@@ -64,7 +64,7 @@ if ( in_category('event') ) :
               </dl>
               <dl>
                 <dt>住所</dt>
-                <dd><?php echo $address; ?><br><span>※個人宅のためご予約頂いた方のみお伝えしています。</span></dd>
+                <dd><?php echo $address; ?></dd>
               </dl>
             </div><!-- /caseItem__list -->
           </div><!-- /caseItem__mainContents -->
