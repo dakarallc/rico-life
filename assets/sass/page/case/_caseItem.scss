@@ -4,330 +4,324 @@
   ========================================================================== */
 
 .caseItem {
-  padding-bottom: 199px;
+	padding-bottom: 199px;
+	height: auto;
 
-  @include mixin.sp() {
-    padding-bottom: 80px;
-  }
+	@include mixin.sp() {
+		padding-bottom: 80px;
+	}
 
-  &__ttl {
-    margin-bottom: 4px;
-    letter-spacing: .04em;
+	&__ttl {
+		margin-bottom: 4px;
+		letter-spacing: .04em;
 
-    @include mixin.sp() {
-      margin-bottom: 8px;
-    }
-  }
+		@include mixin.sp() {
+		margin-bottom: 8px;
+		}
+	}
 
-  &__txt {
-    font-weight: bold;
-    font-size: 2.4rem;
-    margin-bottom: 27px;
+	&__txt {
+		font-weight: bold;
+		font-size: 2.4rem;
+		margin-bottom: 27px;
 
-    @include mixin.sp() {
-      font-size: 2rem;
-      line-height: 1.5;
-    }
-  }
+		@include mixin.sp() {
+		font-size: 2rem;
+		line-height: 1.5;
+		}
+	}
 
-  &__subTtl {
-    @include mixin.furuta();
-    color: #D90200;
-    font-family: "Furuta", sans-serif;
-    font-size: 2.9rem;
-    font-size: 3.9rem;
-    margin-bottom: 27px;
-    font-weight: bold;
-    position: relative;
-    @include mixin.sp() {
-      font-size: 2.6rem;
-      padding-left: 20px;
-    }
-  }
+	&__subTtl {
+		@include mixin.furuta();
+		color: #D90200;
+		font-family: "Furuta", sans-serif;
+		font-size: 2.9rem;
+		margin-bottom: 27px;
+		font-weight: bold;
+		position: relative;
+		@include mixin.sp() {
+			font-size: 2.6rem;
+			margin: 10px 0;
+		}
+	}
 
 
-  &__main {
-    display: flex;
-    margin-bottom: 90px;
+	&__main {
+		display: flex;
+		margin-bottom: 90px;
 
-    @include mixin.sp() {
-      flex-wrap: wrap;
-      margin-bottom: 60px;
-    }
-  }
+		@include mixin.sp() {
+		flex-wrap: wrap;
+		margin-bottom: 60px;
+		}
+	}
 
-  &__img1 {
-    @include mixin.pc() {
-      margin-right: 1.5%;
-      width: 44%;
-    }
+	&__img1 {
+		@include mixin.pc() {
+		margin-right: 1.5%;
+		width: 44%;
+		}
 
-    @include mixin.sp() {
-      width: 100%;
-      margin-bottom: 20px;
-    }
+		@include mixin.sp() {
+		width: 100%;
+		margin-bottom: 20px;
+		}
 
-    position: relative;
+		position: relative;
 
-    &::before {
-      content: "";
-      display: block;
-      padding-top: 82%;
-    }
+		&::before {
+		content: "";
+		display: block;
+		padding-top: 82%;
+		}
 
-    img {
-      bottom: 0;
-      font-family: "object-fit:cover,object-position: center center";
-      height: 100%;
-      left: 0;
-      object-fit: cover;
-      object-position: center center;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-    }
-  }
+		img {
+		bottom: 0;
+		font-family: "object-fit:cover,object-position: center center";
+		height: 100%;
+		left: 0;
+		object-fit: cover;
+		object-position: center center;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+		}
+	}
 
-  &__mainContents {
-    @include mixin.pc() {
-      flex: 1 1 0%;
-    }
+	&__mainContents {
+		@include mixin.pc() {
+		flex: 1 1 0%;
+		}
 
-    @include mixin.sp() {
-      width: 100%;
-    }
-  }
+		@include mixin.sp() {
+		width: 100%;
+		}
+	}
 
-  &__list {
-    dl {
-      &:not(:last-child) {
-        margin-bottom: 20px;
-      }
+	&__list {
+		dl {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
 
-      display: flex;
-      align-items: center;
-      letter-spacing: .2em;
+			display: flex;
+			align-items: center;
+			letter-spacing: .2em;
 
-      dt {
-        color: #fff;
-        margin-right: 8%;
-        width: 154px;
-        height: 48px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: transparent linear-gradient(180deg, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
-        border: 1px solid #707070;
+			dt {
+				color: #fff;
+				margin-right: 8%;
+				width: 154px;
+				height: 48px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: transparent linear-gradient(180deg, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
+				border: 1px solid #707070;
 
-        @include mixin.sp() {
-          height: 40px;
-          justify-content: center;
-          margin-right: 6%;
-          width: 100px;
-        }
-      }
+				@include mixin.sp() {
+				height: 40px;
+				justify-content: center;
+				margin-right: 6%;
+				width: 100px;
+				}
+			}
 
-      dd {
-        flex: 1 1 0%;
-      }
-    }
-  }
+			dd {
+				flex: 1 1 0%;
+			}
+		}
+	}
 
-  &__desc {
-    line-height: 1.9;
-    letter-spacing: .2em;
+	&__desc {
+		line-height: 1.9;
+		letter-spacing: .2em;
 
-    @include mixin.sp() {
-      margin-bottom: 30px;
-    }
-  }
+		@include mixin.sp() {
+			margin-bottom: 30px;
+		}
+	}
 
-  &__box {
-    margin-bottom: 95px;
-    display: flex;
+	&__box {
+		margin-bottom: 95px;
+		display: flex;
 
-    @include mixin.sp() {
-      flex-wrap: wrap;
-      margin-bottom: 65px;
-    }
-  }
+		@include mixin.sp() {
+			flex-wrap: wrap;
+			margin-bottom: 65px;
+		}
+	}
 
-  &__contents {
-    @include mixin.pc() {
-      flex: 1 1 0%;
-      margin-left: 20px;
-    }
+	&__contents {
+		@include mixin.pc() {
+			flex: 1 1 0%;
+			margin-left: 20px;
+		}
 
-    @include mixin.sp() {
-      width: 100%;
-    }
-  }
+		@include mixin.sp() {
+			width: 100%;
+		}
+	}
 
-  &__info {
-    @include mixin.pc() {
-      margin-left: 2%;
-      width: 21%;
-    }
+	&__info {
+		@include mixin.pc() {
+			margin-left: 2%;
+			width: 21%;
+		}
 
-    @include mixin.sp() {
-      width: 100%;
-    }
-  }
+		@include mixin.sp() {
+			width: 100%;
+		}
+	}
 
-  &__img2 {
-    position: relative;
-    width: 100%;
+	&__img2 {
+		position: relative;
+		width: 100%;
 
-    &::before {
-      content: "";
-      display: block;
-      padding-top: 100%;
+		&::before {
+			content: "";
+			display: block;
 
-      @include mixin.sp(){
-        padding-top: 80%;
-      }
-    }
+			@include mixin.sp(){
+				padding-top: 80%;
+			}
+		}
 
-    img {
-      bottom: 0;
-      font-family: "object-fit:cover,object-position: center center";
-      height: 100%;
-      left: 0;
-      object-fit: cover;
-      object-position: center center;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
+		img {
+			bottom: 0;
+			font-family: "object-fit:cover,object-position: center center";
+			left: 0;
+			object-fit: cover;
+			object-position: center center;
+			width: 100%;
+			height: 100%;
+			@include mixin.sp(){
+				object-position: top center;
+			}
+		}
+	}
 
-      @include mixin.sp(){
-        object-position: top center;
-      }
-    }
-  }
+	&__name {
+		display: block;
+		text-align: center;
+		margin-top: 11px;
+		letter-spacing: .2em;
+	}
 
-  &__name {
-    display: block;
-    text-align: center;
-    margin-top: 11px;
-    letter-spacing: .2em;
-  }
+	&__img3 {
+		height: auto;
 
-  &__img3 {
-    @include mixin.pc() {
-      width: 56%;
-    }
+		@include mixin.pc() {
+		width: 56%;
+		}
 
-    @include mixin.sp() {
-      width: 100%;
-    }
+		@include mixin.sp() {
+		width: 100%;
+		}
 
-    position: relative;
+		position: relative;
 
-    &::before {
-      content: "";
-      display: block;
-      padding-top: 100%;
+		&::before {
+			content: "";
+			display: block;
+			height: auto;
+		}
 
-      @include mixin.sp() {
-        padding-top: 70%;
-      }
-    }
+		img {
+			bottom: 0;
+			font-family: "object-fit:cover,object-position: center center";
+			left: 0;
+			object-fit: cover;
+			object-position: center center;
+			width: 100%;
+			height: auto;
+		}
+	}
 
-    img {
-      bottom: 0;
-      font-family: "object-fit:cover,object-position: center center";
-      height: 100%;
-      left: 0;
-      object-fit: cover;
-      object-position: center center;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-    }
-  }
+	
+	&__btn {
+		align-items: center;
+		background: #D90200;
+		border: 1px solid #D90200;
+		color: #fff;
+		display: flex;
+		font-family: "Furuta", sans-serif;
+		font-weight: bold;
+		height: 40px;
+		justify-content: center;
+		margin: 54px auto 0;
+		max-width: 352px;
+		width: 100%;
 
-  
-  &__btn {
-    align-items: center;
-    background: #D90200;
-    border: 1px solid #D90200;
-    color: #fff;
-    display: flex;
-    font-family: "Furuta", sans-serif;
-    font-weight: bold;
-    height: 40px;
-    justify-content: center;
-    margin: 54px auto 0;
-    max-width: 352px;
-    width: 100%;
+		@include mixin.sp() {
+			margin: 50px auto 0;
+		}
 
-    @include mixin.sp() {
-      margin: 50px auto 0;
-    }
-
-    &:hover {
-      color: #d90200;
-      background: #fff;
-    }
-  }
+		&:hover {
+			color: #d90200;
+			background: #fff;
+		}
+	}
 
 }
 
 .caseItem__gallery {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 10px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 10px;
 }
 @media (max-width: 999px) {
-  .caseItem__gallery {
-    -ms-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-bottom: 65px;
-    margin-bottom: 10px;
-  }
+	.caseItem__gallery {
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-bottom: 65px;
+		margin-bottom: 10px;
+	}
 }
 .caseItem__gallery--img3 {
-  position: relative;
+	position: relative;
 }
+
 @media (min-width: 1000px) {
-  .caseItem__gallery--img3 {
-    margin: 0 5px;
-    width: 50%;
-  }
+	.caseItem__gallery--img3 {
+		margin: 0 5px;
+		width: 50%;
+	}
 }
+
 @media (max-width: 999px) {
-  .caseItem__gallery--img3 {
-    margin-bottom: 10px;
-    width: 100%;
-  }
+	.caseItem__gallery--img3 {
+		margin-bottom: 10px;
+		width: 100%;
+	}
 }
+
 .caseItem__gallery--img3::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
+	content: "";
+	display: block;
+	padding-top: 100%;
 }
 @media (max-width: 999px) {
-  .caseItem__gallery--img3::before {
-    padding-top: 100%;
-  }
+	.caseItem__gallery--img3::before {
+		padding-top: 100%;
+	}
 }
+
 .caseItem__gallery--img3 img {
-  -o-object-fit: cover;
-  -o-object-position: center center;
-  bottom: 0;
-  font-family: "object-fit:cover,object-position: center center";
-  height: 100%;
-  left: 0;
-  object-fit: cover;
-  object-position: center center;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
+	-o-object-fit: cover;
+	-o-object-position: center center;
+	bottom: 0;
+	font-family: "object-fit:cover,object-position: center center";
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	object-position: center center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
 }

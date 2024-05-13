@@ -6254,6 +6254,7 @@ event
   caseItem
   ========================================================================== */
 .caseItem {
+  height: auto;
   padding-bottom: 199px;
 }
 @media (max-width: 999px) {
@@ -6286,7 +6287,6 @@ event
   font-family: "Furuta", sans-serif;
   font-family: "Furuta", sans-serif;
   font-size: 2.9rem;
-  font-size: 3.9rem;
   font-weight: bold;
   margin-bottom: 27px;
   position: relative;
@@ -6294,7 +6294,7 @@ event
 @media (max-width: 999px) {
   .caseItem__subTtl {
     font-size: 2.6rem;
-    padding-left: 20px;
+    margin: 10px 0;
   }
 }
 .caseItem__main {
@@ -6468,7 +6468,6 @@ event
 .caseItem__img2::before {
   content: "";
   display: block;
-  padding-top: 100%;
 }
 @media (max-width: 999px) {
   .caseItem__img2::before {
@@ -6478,15 +6477,12 @@ event
 .caseItem__img2 img {
   bottom: 0;
   font-family: "object-fit:cover,object-position: center center";
-  height: 100%;
   left: 0;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center center;
+  height: 100%;
   object-position: center center;
-  position: absolute;
-  right: 0;
-  top: 0;
   width: 100%;
 }
 @media (max-width: 999px) {
@@ -6502,6 +6498,7 @@ event
   text-align: center;
 }
 .caseItem__img3 {
+  height: auto;
   position: relative;
 }
 @media (min-width: 1000px) {
@@ -6517,25 +6514,17 @@ event
 .caseItem__img3::before {
   content: "";
   display: block;
-  padding-top: 100%;
-}
-@media (max-width: 999px) {
-  .caseItem__img3::before {
-    padding-top: 70%;
-  }
+  height: auto;
 }
 .caseItem__img3 img {
   bottom: 0;
   font-family: "object-fit:cover,object-position: center center";
-  height: 100%;
   left: 0;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center center;
+  height: auto;
   object-position: center center;
-  position: absolute;
-  right: 0;
-  top: 0;
   width: 100%;
 }
 .caseItem__btn {
