@@ -2,6 +2,7 @@
 /* ==========================================================================
   fv
   ========================================================================== */
+  
   .fv {
     margin-top: 98px;
     position: relative;
@@ -750,19 +751,42 @@
     font-size: 1.6rem;
     line-height: 33px;
     margin: 20px 0;
-  }
-  .event-message{
-    margin-top: 30px;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    @include mixin.sp() {
-      max-width: 300px;
-    }
-    h3{
-      margin-top: 20px;
-    }
-  }
+	}
+
+	.event-message{
+		margin-top: 30px;
+		max-width: 600px;
+		margin: 0 auto;
+		text-align: center;
+		font-weight: bold;
+		@include mixin.sp() {
+			max-width: 300px;
+		}
+		.blue{
+			color: #1138A3 !important;
+			font-size: 2.5rem;
+		}
+		.red{
+			color: #FF0000 !important;
+			font-size: 2.5rem;
+		}
+		.yellow{
+			color: #EDC20B !important;
+			font-size: 2.5rem;
+		}
+		.orange{
+			color: #FF5A03 !important;
+			font-size: 2.5rem;
+		}
+		.marugo{
+			font-family: "heisei-maru-gothic-std", sans-serif !important;
+			font-weight: bold !important;
+			font-style: normal !important;
+		}
+		h3{
+		margin-top: 20px;
+		}
+	}
 
   /* ==========================================================================
   plan

@@ -8834,6 +8834,7 @@ event
 }
 
 .event-message {
+  font-weight: bold;
   margin: 0 auto;
   margin-top: 30px;
   max-width: 600px;
@@ -8843,6 +8844,27 @@ event
   .event-message {
     max-width: 300px;
   }
+}
+.event-message .blue {
+  color: #1138A3 !important;
+  font-size: 2.5rem;
+}
+.event-message .red {
+  color: #FF0000 !important;
+  font-size: 2.5rem;
+}
+.event-message .yellow {
+  color: #EDC20B !important;
+  font-size: 2.5rem;
+}
+.event-message .orange {
+  color: #FF5A03 !important;
+  font-size: 2.5rem;
+}
+.event-message .marugo {
+  font-family: "heisei-maru-gothic-std", sans-serif !important;
+  font-style: normal !important;
+  font-weight: bold !important;
 }
 .event-message h3 {
   margin-top: 20px;
