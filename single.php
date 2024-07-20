@@ -66,7 +66,9 @@ if ( in_category('event') ) :
                 <dt>住所</dt>
                 <dd><?php echo $address; ?></dd>
               </dl>
-			 
+			  <?php if ( in_category('actual-house-tours') ) : ?>
+			  <p>※写真はイメージです<br>※実際に住むお家の為、ご希望の日程に添えない場合がございます。</p>
+			  <?php endif; ?>
             </div><!-- /caseItem__list -->
           </div><!-- /caseItem__mainContents -->
         </div><!-- /caseItem__main -->
