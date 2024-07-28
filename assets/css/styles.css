@@ -4566,6 +4566,17 @@ zeh
 }
 
 /* ==========================================================================
+  3points
+  ========================================================================== */
+.points3 .points3__title {
+  margin-bottom: 40px;
+}
+.points3 img {
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+/* ==========================================================================
 about 詳細
 ========================================================================== */
 .about-detail {
@@ -10852,9 +10863,9 @@ us
 }
 .lp .event {
   text-align: left;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
   align-items: flex-start;
   display: -webkit-box;
   display: -webkit-flex;
@@ -10872,12 +10883,12 @@ us
   max-width: calc(1228px + 10%);
 }
 .lp .event__box {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   -webkit-box-align: center;
-  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.161);
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   background: #F8F8F8;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.161);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.161);
   display: -webkit-box;
   display: -webkit-flex;
@@ -10896,8 +10907,8 @@ us
 }
 @media (max-width: 999px) {
   .lp .event__box {
-    -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 0;
     margin-top: 0px;
@@ -10923,9 +10934,9 @@ us
 }
 @media (min-width: 1000px) {
   .lp .event__right {
-    -ms-flex: 1 1 0%;
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 0%;
+    -ms-flex: 1 1 0%;
     flex: 1 1 0%;
   }
 }
@@ -10959,31 +10970,6 @@ us
   position: relative;
   transition: 0.2s;
 }
-.lp .event__item a {
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: start;
-  align-items: flex-start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 15px;
-  padding-right: 40px;
-}
-@media (max-width: 1300px) {
-  .lp .event__item a {
-    -ms-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 999px) {
-  .lp .event__item a {
-    padding-bottom: 1px;
-    padding-right: 0;
-  }
-}
 .lp .event__item:hover {
   opacity: 0.7;
 }
@@ -10996,16 +10982,15 @@ us
   margin-bottom: 10px;
 }
 .lp .event__item::before {
-  -webkit-transform: translateY(-50%);
-  -webkit-transition: 0.2s;
   background: url(../img/common/news-arrow.svg) no-repeat center center/30px 10px;
   content: "";
   height: 30px;
-  margin-top: -3px;
   position: absolute;
   right: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   width: 30px;
 }
@@ -11015,10 +11000,35 @@ us
     margin-top: 8px;
   }
 }
+.lp .event__item a {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+  padding-right: 40px;
+}
+@media (max-width: 1300px) {
+  .lp .event__item a {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 999px) {
+  .lp .event__item a {
+    padding-bottom: 1px;
+    padding-right: 0;
+  }
+}
 .lp .event__info {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11050,9 +11060,9 @@ us
 }
 @media (min-width: 1000px) {
   .lp .event__subTtl {
-    -ms-flex: 1 1 0%;
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 0%;
+    -ms-flex: 1 1 0%;
     flex: 1 1 0%;
     position: relative;
     top: 7px;
@@ -11102,14 +11112,13 @@ us
   }
 }
 .lp .event__cat::before {
-  -webkit-transform: translateY(-50%);
   background: #707070;
   content: "";
   height: 60%;
   left: 0;
-  line-height: 1;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 1px;
 }
