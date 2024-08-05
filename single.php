@@ -17,9 +17,14 @@ pageHead
 ================================================================================================ -->
 <?php if ( in_category('event') ) : ?>
   <div class="pageHeadEvent">
+  	<?php if ( in_category('field-trip') ) : ?>
     <h1 class="pageHeadEvent__ttl">
       <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/eventHeader.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/eventHeader.svg" class=" ls-is-cached lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/eventHeader.svg" alt="完成入居前見学会" data-eio="l"></noscript>
     </h1><!-- /pageHead__ttl -->
+	<?php else: ?>
+        <span class="_upper">イベント</span><!-- /_upper -->
+        <span class="_below">INFORMATION</span><!-- /_below -->
+        <?php endif; ?>
   </div><!-- /pageHead -->
 <?php else : ?>
 <div class="pageHead">
