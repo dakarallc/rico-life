@@ -125,6 +125,34 @@ if ( in_category('event') ) :
             <h3 class="yellow marugo">💫⭐️ご来場特典⭐️💫</h3>
 			<span class="orange marugo">JCB券</span><br />
             <span class="orange marugo">最大7,000円分</span>プレゼント！！<br />
+			<div class="cashBack">
+				<div class="bgRed">【カクダイホームの70周年特別企画】</div>
+				
+				下記条件で最大7,000円分キャンペーン<br>
+				①WEB予約から来場<br>
+				<span class="orange marugo">2,000円分</span><br />
+
+				②来場アンケート記入<br>
+				<span class="orange marugo">2,000円分</span><br />
+
+				③Google口コミ記入<br>
+				<span class="orange marugo">3,000円分</span><br />
+				<br>
+				【対象者条件】<br>
+
+				下記に該当するお客様1組様につき<br>
+				1回の進呈とさせていただきます。<br>
+
+				１）マイホームをご検討中の方。<br>
+
+				２）はじめて、いえとち本舗 久喜店のイベントに参加された方。<br>
+
+				※ご来場プレゼントは1回限りとなります。<br>
+
+				※その他、不正行為と弊社がみなした場合、プレゼント提供をお断りする場合がございます。<br>
+
+				※プレゼントの進呈数は限りがあり、なくなり次第終了となります。<br><br>現場見学会、ローン相談、土地探し、プラン相談<br>どんなご相談でも来場特典プレゼント！！<br>詳しくわこちらより、来場予約お待ちしております。
+			</div>
           </div>
         </div>
       </div><!-- /post__contents -->

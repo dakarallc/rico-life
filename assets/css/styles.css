@@ -8877,6 +8877,17 @@ event
   font-style: normal !important;
   font-weight: bold !important;
 }
+.event-message .bgRed {
+  background-color: #FF0000 !important;
+  color: #fff !important;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+.event-message .cashBack {
+  font-weight: normal !important;
+}
 .event-message h3 {
   margin-top: 20px;
 }
