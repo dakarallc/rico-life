@@ -16,16 +16,18 @@ $reserve = get_field('reserve'); //予約方法
 pageHead
 ================================================================================================ -->
 <?php if ( in_category('event') ) : ?>
-  <div class="pageHeadEvent">
-  	<?php if ( in_category('field-trip') ) : ?>
+	<?php if ( in_category('field-trip') ) : ?>
+  <div	class="pageHeadEvent">
     <h1 class="pageHeadEvent__ttl">
       <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/eventHeader.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/eventHeader.svg" class=" ls-is-cached lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/eventHeader.svg" alt="完成入居前見学会" data-eio="l"></noscript>
     </h1><!-- /pageHead__ttl -->
-	<?php else: ?>
-        <span class="_upper">イベント</span><!-- /_upper -->
-        <span class="_below">INFORMATION</span><!-- /_below -->
-        <?php endif; ?>
   </div><!-- /pageHead -->
+	<?php else: ?>
+		<div	class="pageHeadEvent event">
+			<h1 class="pageHeadEvent__ttl">
+			
+		</div><!-- /pageHead -->
+	<?php endif; ?>
 <?php else : ?>
 <div class="pageHead">
   <div class="pageHead__contents">
@@ -71,15 +73,15 @@ if ( in_category('event') ) :
                 <dt>住所</dt>
                 <dd><?php echo $address; ?></dd>
               </dl>
-			  <?php if ( in_category('actual-house-tours') ) : ?>
-			  <p>※写真はイメージです<br>※実際に住むお家の為、ご希望の日程に添えない場合がございます。</p>
-			  <?php endif; ?>
+			<?php if ( in_category('actual-house-tours') ) : ?>
+			<p>※写真はイメージです<br>※実際に住むお家の為、ご希望の日程に添えない場合がございます。</p>
+			<?php endif; ?>
             </div><!-- /caseItem__list -->
           </div><!-- /caseItem__mainContents -->
         </div><!-- /caseItem__main -->
-       
+			
         <div style="text-align: center">
-         
+				
         </div>
         
         <div class="event-message">

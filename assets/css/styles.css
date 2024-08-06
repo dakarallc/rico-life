@@ -8111,6 +8111,15 @@ event
   position: relative;
   width: 100%;
 }
+.pageHeadEvent.event {
+  background: none;
+  height: 108px;
+}
+@media (max-width: 999px) {
+  .pageHeadEvent.event {
+    height: 0;
+  }
+}
 
 .pageHeadEvent__ttl {
   -webkit-transform: translateY(-50%) translateX(-50%);

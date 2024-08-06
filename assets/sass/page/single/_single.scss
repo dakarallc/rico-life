@@ -80,6 +80,13 @@
   height: 600px;
   position: relative;
   width: 100%;
+	&.event{
+		background: none;
+		height: 108px;
+		@media (max-width: 999px) {
+			height: 0;
+		}
+	}
 }
 .pageHeadEvent__ttl {
   -webkit-transform: translateY(-50%) translateX(-50%);
