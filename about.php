@@ -608,29 +608,30 @@ EVENT
 <section class="points3 section">
   <div class=" inner">
     <div class="points3__title">
-		<h2 class="about-ttl">いえとち本舗をもっと</br>知れる3つの強み・特徴</h2>
+			<h2 class="about-ttl">いえとち本舗をもっと</br>知れる3つの強み・特徴</h2>
     </div>
-    <div>
-		<!-- <a href=""> -->
-			<img src=<?php echo do_shortcode('[theme_url]'); ?>/images/card-low-price.png" alt="低価格×高品質" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-low-price.png" class="lazyload">
-			<noscript>
-			  <img src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-low-price.png" alt="低価格×高品質" data-eio="l">
-			</noscript>
-		<!-- </a> -->
 
-		<a href="<?php echo do_shortcode('[home_url]'); ?>about/zeh//">
-			<img src=<?php echo do_shortcode('[theme_url]'); ?>/images/card-zeh.png" alt="ZEH対応" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-zeh.png" class="lazyload">
+    <div>
+			<a href="<?php echo do_shortcode('[home_url]'); ?>about/low-price/">
+				<img src=<?php echo do_shortcode('[theme_url]'); ?>/images/card-low-price.png" alt="低価格×高品質" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-low-price.png" class="lazyload">
+				<noscript>
+					<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-low-price.png" alt="低価格×高品質" data-eio="l">
+				</noscript>
+			</a>
+
+			<a href="<?php echo do_shortcode('[home_url]'); ?>about/zeh/">
+				<img src=<?php echo do_shortcode('[theme_url]'); ?>/images/card-zeh.png" alt="ZEH対応" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-zeh.png" class="lazyload">
+				<noscript>
+					<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-zeh.png" alt="ZEH対応" data-eio="l">
+				</noscript>
+			</a>
+			
+				
+			<img src=<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" alt="お客様への取り組み" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" class="lazyload">
 			<noscript>
-			  <img src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-zeh.png" alt="ZEH対応" data-eio="l">
+				<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" alt="お客様への取り組み" data-eio="l">
 			</noscript>
-		</a>
-        <img src=<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" alt="お客様への取り組み" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" class="lazyload">
-        <noscript>
-          <img src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" alt="お客様への取り組み" data-eio="l">
-        </noscript>
-      </div>
-      
-    </div>
+		</div>
   </div>
 </section>
 
