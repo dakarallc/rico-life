@@ -626,11 +626,12 @@ EVENT
 				</noscript>
 			</a>
 			
-				
-			<img src=<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" alt="お客様への取り組み" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" class="lazyload">
-			<noscript>
-				<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" alt="お客様への取り組み" data-eio="l">
-			</noscript>
+			<a href="<?php echo do_shortcode('[home_url]'); ?>about/customers/">
+				<img src=<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" alt="お客様への取り組み" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" class="lazyload">
+				<noscript>
+					<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" alt="お客様への取り組み" data-eio="l">
+				</noscript>
+			</a>
 		</div>
   </div>
 </section>
