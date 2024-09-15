@@ -6273,23 +6273,57 @@ event
     padding-bottom: 80px;
   }
 }
+.caseItem img {
+  border-radius: 6px;
+}
+.caseItem .sectionTitle {
+  color: #D90200;
+  font-family: "Furuta", sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+.caseItem .sectionTitle::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  background: #D90200;
+  border-radius: 6PX;
+  height: 100%;
+  transform: translateY(-50%);
+  width: 6px;
+}
 .caseItem__ttl {
+  color: #D90200;
+  font-family: "Furuta", sans-serif;
+  font-size: 3.3rem;
+  font-weight: bold;
+  font-weight: bold;
   letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   margin-bottom: 4px;
+  margin-bottom: 10px;
+  position: relative;
 }
 @media (max-width: 999px) {
   .caseItem__ttl {
+    font-size: 3rem;
     margin-bottom: 8px;
   }
 }
 .caseItem__txt {
-  font-size: 2.4rem;
-  font-weight: bold;
+  font-size: 2rem;
   margin-bottom: 27px;
 }
 @media (max-width: 999px) {
   .caseItem__txt {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.5;
   }
 }
@@ -6297,14 +6331,14 @@ event
   color: #D90200;
   font-family: "Furuta", sans-serif;
   font-family: "Furuta", sans-serif;
-  font-size: 2.9rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  margin-bottom: 27px;
+  margin-bottom: 10px;
   position: relative;
 }
 @media (max-width: 999px) {
   .caseItem__subTtl {
-    font-size: 2.6rem;
+    font-size: 2rem;
     margin: 10px 0;
   }
 }
@@ -6379,6 +6413,7 @@ event
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 20px;
   letter-spacing: 0.2em;
 }
 .caseItem__list dl:not(:last-child) {
@@ -6390,9 +6425,8 @@ event
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 48px;
-  margin-right: 8%;
-  width: 154px;
+  height: 40px;
+  width: 130px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -6404,16 +6438,13 @@ event
   background: transparent -webkit-gradient(linear, left top, left bottom, from(#d90200), to(#d90200)) 0% 0% no-repeat;
   background: transparent -webkit-linear-gradient(top, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
   background: transparent linear-gradient(180deg, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
-  border: 1px solid #707070;
+  border-radius: 6px;
+  font-size: 2rem;
 }
 @media (max-width: 999px) {
   .caseItem__list dl dt {
-    height: 40px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-right: 6%;
+    font-size: 1.6rem;
+    height: 30px;
     width: 100px;
   }
 }

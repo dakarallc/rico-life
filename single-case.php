@@ -60,6 +60,13 @@ $img_id11 = get_field('pic11');
 if ($img_id11) {
   $img_url11 = wp_get_attachment_image_src($img_id11, 'large')[0];
 }
+
+$madori_img_id1 = get_field('madori1');
+if ($madori_img_id1) {
+	$madori_img_url1 = wp_get_attachment_image_src($madori_img_id1, 'large')[0];
+	$madori_title1 = get_field('madori_title1');
+	$madori_text1 = get_field('madori_text1');
+}
 ?>
 
 <div class="page case-page">
@@ -82,7 +89,7 @@ caseItem
 ================================================================================================ -->
   <section class="caseItem">
     <div class="inner caseItem__inner">
-      <h2 class="caseItem__ttl kv__ttl wow fadeInUp"><?php echo $name ?></h2><!-- /caseItem__ttl -->
+      <h2 class="caseItem__ttl wow fadeInUp"><?php echo $name ?></h2><!-- /caseItem__ttl -->
       <p class="caseItem__txt wow fadeInUp"><?php echo $catch; ?></p><!-- /caseItem__txt -->
 
       <div class="caseItem__main wow fadeInUp">
@@ -105,12 +112,28 @@ caseItem
         </div><!-- /caseItem__mainContents -->
       </div><!-- /caseItem__main -->
 
+			
+			<?php if (!empty($madori_img_id1)): ?>
+				<h2 class="sectionTitle">間取り図</h2>
+				<div class="caseItem__box wow fadeInUp">
+					<div class="caseItem__img3">
+						<img data-js-ofi src="<?php echo $madori_img_url1; ?>" alt="<?php echo $name  ?>">
+					</div><!-- /caseItem__img3 -->
+					<div class="caseItem__contents">
+					<h3 class="caseItem__subTtl wow fadeInUp"><?php echo $madori_title1; ?></h3><!-- /caseItem__subTtl -->
+						<p class="caseItem__desc"><?php echo $madori_text1; ?></p><!-- /caseItem__desc -->
+					</div><!-- /caseItem__contents -->
+				</div><!-- /caseItem__box -->
+			<?php endif; ?>
+
+
+			<h2 class="sectionTitle">内観・外観画像</h2>
       <div class="caseItem__box wow fadeInUp">
         <div class="caseItem__img3">
           <img data-js-ofi src="<?php echo $img_url2; ?>" alt="<?php echo $name  ?>">
         </div><!-- /caseItem__img3 -->
         <div class="caseItem__contents">
-        <h4 class="caseItem__subTtl wow fadeInUp"><?php echo $title2; ?></h4><!-- /caseItem__subTtl -->
+        <h3 class="caseItem__subTtl wow fadeInUp"><?php echo $title2; ?></h3><!-- /caseItem__subTtl -->
           <p class="caseItem__desc"><?php echo $text2; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
@@ -119,7 +142,7 @@ caseItem
           <img data-js-ofi src="<?php echo $img_url3; ?>" alt="<?php echo $name  ?>">
         </div><!-- /caseItem__img3 -->
         <div class="caseItem__contents">
-        <h4 class="caseItem__subTtl wow fadeInUp"><?php echo $title3; ?></h4><!-- /caseItem__subTtl -->
+        <h3 class="caseItem__subTtl wow fadeInUp"><?php echo $title3; ?></h3><!-- /caseItem__subTtl -->
           <p class="caseItem__desc"><?php echo $text3; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
@@ -128,7 +151,7 @@ caseItem
           <img data-js-ofi src="<?php echo $img_url4; ?>" alt="<?php echo $name  ?>">
         </div><!-- /caseItem__img3 -->
         <div class="caseItem__contents">
-        <h4 class="caseItem__subTtl wow fadeInUp"><?php echo $title4; ?></h4><!-- /caseItem__subTtl -->
+        <h3 class="caseItem__subTtl wow fadeInUp"><?php echo $title4; ?></h3><!-- /caseItem__subTtl -->
           <p class="caseItem__desc"><?php echo $text4; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
@@ -139,7 +162,7 @@ caseItem
           <img data-js-ofi src="<?php echo $img_url5; ?>" alt="<?php echo $name  ?>">
         </div><!-- /caseItem__img3 -->
         <div class="caseItem__contents">
-        <h4 class="caseItem__subTtl wow fadeInUp"><?php echo $title5; ?></h4><!-- /caseItem__subTtl -->
+        <h3 class="caseItem__subTtl wow fadeInUp"><?php echo $title5; ?></h3><!-- /caseItem__subTtl -->
           <p class="caseItem__desc"><?php echo $text5; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
@@ -151,7 +174,7 @@ caseItem
           <img data-js-ofi src="<?php echo $img_url6; ?>" alt="<?php echo $name  ?>">
         </div><!-- /caseItem__img3 -->
         <div class="caseItem__contents">
-        <h4 class="caseItem__subTtl wow fadeInUp"><?php echo $title6; ?></h4><!-- /caseItem__subTtl -->
+        <h3 class="caseItem__subTtl wow fadeInUp"><?php echo $title6; ?></h3><!-- /caseItem__subTtl -->
           <p class="caseItem__desc"><?php echo $text6; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
@@ -163,7 +186,7 @@ caseItem
           <img data-js-ofi src="<?php echo $img_url7; ?>" alt="<?php echo $name  ?>">
         </div><!-- /caseItem__img3 -->
         <div class="caseItem__contents">
-        <h4 class="caseItem__subTtl wow fadeInUp"><?php echo $title7; ?></h4><!-- /caseItem__subTtl -->
+        <h3 class="caseItem__subTtl wow fadeInUp"><?php echo $title7; ?></h3><!-- /caseItem__subTtl -->
           <p class="caseItem__desc"><?php echo $text7; ?></p><!-- /caseItem__desc -->
         </div><!-- /caseItem__contents -->
       </div><!-- /caseItem__box -->
