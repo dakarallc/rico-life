@@ -67,6 +67,13 @@ if ($madori_img_id1) {
 	$madori_title1 = get_field('madori_title1');
 	$madori_text1 = get_field('madori_text1');
 }
+
+$madori_img_id2 = get_field('madori2');
+if ($madori_img_id2) {
+	$madori_img_url2 = wp_get_attachment_image_src($madori_img_id2, 'large')[0];
+	$madori_title2 = get_field('madori_title2');
+	$madori_text2 = get_field('madori_text2');
+}
 ?>
 
 <div class="page case-page">
@@ -124,6 +131,18 @@ caseItem
 						<p class="caseItem__desc"><?php echo $madori_text1; ?></p><!-- /caseItem__desc -->
 					</div><!-- /caseItem__contents -->
 				</div><!-- /caseItem__box -->
+
+				<?php if (!empty($madori_img_id2)): ?>
+				<div class="caseItem__box wow fadeInUp">
+					<div class="caseItem__img3">
+						<img data-js-ofi src="<?php echo $madori_img_url2; ?>" alt="<?php echo $name  ?>">
+					</div><!-- /caseItem__img3 -->
+					<div class="caseItem__contents">
+					<h3 class="caseItem__subTtl wow fadeInUp"><?php echo $madori_title2; ?></h3><!-- /caseItem__subTtl -->
+						<p class="caseItem__desc"><?php echo $madori_text2; ?></p><!-- /caseItem__desc -->
+					</div><!-- /caseItem__contents -->
+				</div><!-- /caseItem__box -->
+				<?php endif; ?>
 			<?php endif; ?>
 
 

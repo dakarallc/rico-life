@@ -145,18 +145,18 @@
 			gap: 20px;
 			dt {
 				color: #fff;
-				width: 130px;
-				height: 40px;
+				width: 100px;
+				height: 30px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				background: transparent linear-gradient(180deg, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
 				border-radius: 6px;
-				font-size: 2rem;
+				font-size: 1.2rem;
 				@include mixin.sp() {
-					font-size: 1.6rem;
-					width: 100px;
-					height: 30px;
+					font-size: 1.3rem;
+					width: 90px;
+					height: 24px;
 				// height: 40px;
 				// justify-content: center;
 				// width: 100px;

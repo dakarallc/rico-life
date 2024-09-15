@@ -6425,8 +6425,8 @@ event
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 40px;
-  width: 130px;
+  height: 30px;
+  width: 100px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -6439,13 +6439,13 @@ event
   background: transparent -webkit-linear-gradient(top, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
   background: transparent linear-gradient(180deg, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
   border-radius: 6px;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 @media (max-width: 999px) {
   .caseItem__list dl dt {
-    font-size: 1.6rem;
-    height: 30px;
-    width: 100px;
+    font-size: 1.3rem;
+    height: 24px;
+    width: 90px;
   }
 }
 .caseItem__list dl dd {
