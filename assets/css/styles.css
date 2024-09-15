@@ -10858,7 +10858,7 @@ us
 
 .lp {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1366px;
   padding-top: 98px;
   /* ==========================================================================
   event
@@ -10880,6 +10880,22 @@ us
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 20px;
+}
+.lp .sp {
+  display: none !important;
+}
+@media (max-width: 999px) {
+  .lp .sp {
+    display: block !important;
+  }
+}
+.lp .pc {
+  display: block !important;
+}
+@media (max-width: 999px) {
+  .lp .pc {
+    display: none !important;
+  }
 }
 .lp .event {
   text-align: left;

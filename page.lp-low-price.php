@@ -5,9 +5,13 @@ Template Name: lp-低価格×高品質ページ
 ?>
 <?php get_header(); ?>
 <div class="lp">
-	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp1.png" alt="低価格高品質" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp1.png" class="ls-is-cached" loading="lazy">
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp1.png" alt="低価格高品質" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp1.png" class="ls-is-cached sp" loading="lazy">
 
-	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp2.png" alt="低価格高品質" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp2.png" class="ls-is-cached" loading="lazy">
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp-pc1.png" alt="低価格高品質" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp-pc1.png" class="ls-is-cached pc" loading="lazy">
+
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp2.png" alt="低価格高品質" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp2.png" class="ls-is-cached sp" loading="lazy">
+
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp-pc2.png" alt="低価格高品質" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/low-price-lp-pc2.png" class="ls-is-cached pc" loading="lazy">
 
 	<!-- ===============================================================================================
 EVENT

@@ -125,20 +125,20 @@ if ( in_category('event') ) :
             ◎夏も冬も部屋を守るZEH基準の断熱性能！<br />
 
             <h3 class="yellow marugo">💫⭐️ご来場特典⭐️💫</h3>
-			<span class="orange marugo">JCB券</span><br />
+			<span class="orange marugo">HP予約からでJCB券</span><br />
             <span class="orange marugo">最大7,000円分</span>プレゼント！！<br />
 			<div class="cashBack">
 				<div class="bgRed">【カクダイホームの70周年特別企画】</div>
 				
 				下記条件で最大7,000円分キャンペーン<br>
-				①WEB予約から来場<br>
+				①当HP予約からのご来場<br>
 				<span class="orange marugo">2,000円分</span><br />
 
-				②来場アンケート記入<br>
+				②ご来場アンケート記入<br>
 				<span class="orange marugo">2,000円分</span><br />
 
 				③Google口コミ記入<br>
-				<span class="orange marugo">3,000円分</span><br />
+				<span class="orange marugo">2,000円分</span><br />
 				<br>
 				【対象者条件】<br>
 

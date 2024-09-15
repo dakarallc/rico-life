@@ -6,9 +6,13 @@ Template Name: lp-zehページ
 <?php get_header(); ?>
 
 <div class="lp">
-	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/zeh-lp1.png" alt="いえとち本舗のzeh" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/zeh-lp1.png" class="ls-is-cached" loading="lazy">
+	<!-- SP -->
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/zeh-lp1.png" alt="いえとち本舗のzeh" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/zeh-lp1.png" class="ls-is-cached sp" loading="lazy">
 
-	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/zeh-lp2.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/zeh-lp2.png" class="ls-is-cached" loading="lazy">
+	<!-- PC -->
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/zeh-lp-pc1.png" alt="いえとち本舗のzeh" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/zeh-lp-pc1.png" class="ls-is-cached pc" loading="lazy">
+
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/zeh-lp2.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/zeh-lp2.png" class="ls-is-cached sp" loading="lazy">
 
 	<!-- ===============================================================================================
 EVENT
@@ -67,9 +71,9 @@ EVENT
 			<a href="<?php echo do_shortcode('[home_url]'); ?>contact" class="event__btn topLink">来店予約はこちら</a>
 		</div>
 
-		<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/lp3.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/lp3.png" class="ls-is-cached lazyloaded">
+		<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/lp3.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/lp3.png" class="ls-is-cached lazyloaded sp">
 
-		<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/lp4.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/lp4.png" class="ls-is-cached lazyloaded">
+		<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/lp4.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/lp4.png" class="ls-is-cached lazyloaded sp">
 
 
 		<div class="cv">
