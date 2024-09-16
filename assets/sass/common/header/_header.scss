@@ -82,7 +82,7 @@
       }
     }
 
-    @include mixin.pc-m {
+    @include mixin.pc {
       width: 100%;
     }
   }
@@ -153,11 +153,11 @@
       padding: 0 20px;
       text-align: center;
 
-      @include mixin.pc-xl {
+      @include mixin.pc {
         padding: 0 14px;
       }
 
-      @include mixin.pc-m {
+      @include mixin.pc {
         padding: 0 10px;
       }
 
@@ -179,11 +179,11 @@
       font-size: 1.3rem;
       font-weight: bold;
 
-      @include mixin.pc-xl {
+      @include mixin.pc {
         font-size: 1.3rem;
       }
 
-      @include mixin.pc-l {
+      @include mixin.pc {
         font-size: 1.2rem;
       }
 
@@ -216,7 +216,7 @@
       justify-content: center;
     }
 
-    @include mixin.pc-m {
+    @include mixin.pc {
       align-items: center;
       display: flex;
       justify-content: center;

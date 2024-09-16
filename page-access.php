@@ -12,8 +12,8 @@ pageHead
   <div class="pageHead">
     <div class="pageHead__contents">
       <h1 class="pageHead__ttl">
-        <span class="_upper">アクセス</span><!-- /_upper -->
-        <span class="_below">会社情報</span><!-- /_below -->
+        <span class="_upper">会社情報</span><!-- /_upper -->
+        <span class="_below">Over view</span><!-- /_below -->
       </h1><!-- /pageHead__ttl -->
     </div><!-- /pageHead__contents -->
   </div><!-- /pageHead -->
