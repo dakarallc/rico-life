@@ -181,7 +181,7 @@
   }
   @media (min-width: 1000px) {
     .contents__subTtl1 ._below ._lg {
-      font-family: "Furuta", sans-serif;
+      @include mixin.marugoBold();
       font-weight: bold;
     }
   }

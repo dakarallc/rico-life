@@ -30,6 +30,19 @@
   src: url('../font/Futura-Bold.ttf') format("truetype");
 }
 
+@font-face {
+  font-family: 'Zen Maru Gothic';
+  // font-style: bold;
+  src: url('../font/ZenMaruGothic-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  // font-weight: normal;
+  src: url('../font/ZenMaruGothic-Regular.ttf') format("truetype");
+}
+
 /* base */
 
 html {
@@ -46,9 +59,10 @@ html {
 body {
   font-size: 2rem;
   line-height: 2.08;
-  font-family: 'Meiryo UI', sans-serif;
+	@include mixin.marugoRegular();
+  // font-family: 'Meiryo UI', sans-serif;
   color: #000000;
-  letter-spacing: .05em;
+  // letter-spacing: em;
 
   @include mixin.sp() {
     font-size: 1.6rem;

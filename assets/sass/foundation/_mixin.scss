@@ -24,10 +24,16 @@
   font-family: 'メイリオ', 'Meiryo', sans-serif;
 }
 
-@mixin furuta() {
-  font-family: 'Furuta', sans-serif;
+@mixin marugoBold() {
+  font-family: 'Zen Maru Gothic', sans-serif;
+	// font-weight: bold;
 }
 
-@mixin hiragino() {
-  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+@mixin marugoRegular() {
+  font-family: 'Zen Maru Gothic', sans-serif;
+	// font-weight: 500;
 }
+
+// @mixin marugoBold() {
+//   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+// }

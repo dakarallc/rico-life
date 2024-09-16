@@ -141,7 +141,7 @@
   &__subTtl {
     color: #d90200;
     font-weight: bold;
-    @include mixin.furuta();
+    @include mixin.marugoBold();
     margin-bottom: 6px;
     letter-spacing: 0.08em;
     font-size: 2.4rem;

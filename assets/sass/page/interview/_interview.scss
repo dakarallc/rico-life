@@ -28,7 +28,7 @@
   }
 
   &__subTtl {
-    @include mixin.furuta();
+    @include mixin.marugoBold();
     font-weight: bold;
     font-size: 3.6rem;
     margin-bottom: 20px;

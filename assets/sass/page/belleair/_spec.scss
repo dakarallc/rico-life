@@ -78,7 +78,7 @@
     align-items: center;
     color: #fff;
     font-weight: bold;
-    @include mixin.furuta();
+    @include mixin.marugoBold();
     margin-top: 10px;
     position: relative;
     transition: .2s;

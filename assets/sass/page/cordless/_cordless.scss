@@ -250,7 +250,7 @@
       &__ttl {}
 
       &__subTtl {
-        @include mixin.furuta();
+        @include mixin.marugoBold();
         color: #141414;
         border-bottom: 1px solid #6275a8;
         padding-bottom: 0;

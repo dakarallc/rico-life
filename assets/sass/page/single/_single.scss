@@ -54,7 +54,7 @@
   }
   .fv__ttl {
     color: #D90200;
-    font-family: "Furuta", sans-serif;
+    @include mixin.marugoBold();
     font-size: 5.7rem;
     font-weight: bold;
     left: 3%;
@@ -394,7 +394,7 @@
   }
   .post__ttl {
     color: #D90200;
-    font-family: "Furuta", sans-serif;
+    @include mixin.marugoBold();
     font-size: 3.3rem;
     font-weight: bold;
     letter-spacing: 0.02em;
@@ -427,7 +427,7 @@
   }
   .post__eventTtl {
     color: #000;
-    font-family: "Furuta", sans-serif;
+    @include mixin.marugoBold();
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 0.02em;
@@ -587,7 +587,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    font-family: "Furuta", sans-serif;
+    @include mixin.marugoBold();
     font-weight: bold;
     height: 40px;
     justify-content: center;
@@ -923,7 +923,7 @@
 }
 .eventPlan__subTtl {
   color: #000;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 4rem;
   font-weight: bold;
   letter-spacing: 0.08em;
@@ -1198,7 +1198,7 @@
 }
 .homeMade__subTtl {
   color: #D90200;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 2.4rem;
   font-weight: bold;
   letter-spacing: 0.08em;

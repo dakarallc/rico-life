@@ -211,7 +211,7 @@
           position: relative;
           &::before{
             content: "NEW";
-            @include mixin.furuta();
+            @include mixin.marugoBold();
             font-weight: bold;
             font-size: 1.8rem;
             background: #FF9300;
@@ -233,7 +233,7 @@
             text-align: left;
             &::before{
               content: "NEW";
-              @include mixin.furuta();
+              @include mixin.marugoBold();
               font-weight: bold;
               font-size: 1rem;
               background: #FF9300;
@@ -258,7 +258,7 @@
 
     &__subTtl{
       font-size: 2rem;
-      @include mixin.furuta();
+      @include mixin.marugoBold();
       color: #fff;
       line-height: 1.2;
       margin-top: 10px;
@@ -287,7 +287,7 @@
 
     &__remarks{
      font-size: 1.5rem;
-     @include mixin.furuta();
+     @include mixin.marugoBold();
      color: #fff;
      line-height: 1.2;
      margin-top: 10px;

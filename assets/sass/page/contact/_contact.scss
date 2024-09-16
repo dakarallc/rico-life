@@ -295,7 +295,7 @@
 
   .privacy {
     &__ttl {
-      @include mixin.furuta();
+      @include mixin.marugoBold();
       color: #d90200;
       font-size: 3.9rem;
       font-weight: bold;

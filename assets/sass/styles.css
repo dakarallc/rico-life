@@ -451,7 +451,7 @@ h5 {
   ========================================================================== */
 .ttl {
   font-weight: bold;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   color: #d90200;
   font-size: 6rem;
   position: relative;
@@ -512,7 +512,7 @@ h5 {
   ========================================================================== */
 .topLink {
   transition: 0.2s;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   background: #d90200;
   color: #fff;
   font-weight: bold;
@@ -579,7 +579,7 @@ h5 {
   position: relative;
   padding-left: 30px;
   letter-spacing: 0.06em;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
 }
 @media (max-width: 999px) {
   .format__ttl {
@@ -625,7 +625,7 @@ h5 {
 .format__subTtl ._em {
   font-size: 3rem;
   font-weight: bold;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
 }
 @media (max-width: 999px) {
   .format__subTtl ._em {
@@ -717,7 +717,7 @@ h5 {
   }
 }
 .kv__ttl {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   color: #d90200;
   font-size: 6rem;
   font-weight: bold;
@@ -1594,7 +1594,7 @@ h5 {
   }
   .shopTab__item--new::before {
     content: "NEW";
-    font-family: "Furuta", sans-serif;
+    @include mixin.marugoBold();
     font-weight: bold;
     font-size: 1.8rem;
     background: #FF9300;
@@ -1616,7 +1616,7 @@ h5 {
   }
   .shopTab__item--new .shopTab__subTtl::before {
     content: "NEW";
-    font-family: "Furuta", sans-serif;
+    @include mixin.marugoBold();
     font-weight: bold;
     font-size: 1rem;
     background: #FF9300;
@@ -1636,7 +1636,7 @@ h5 {
 }
 .shopTab__subTtl {
   font-size: 2rem;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   color: #fff;
   line-height: 1.2;
   margin-top: 10px;
@@ -1663,7 +1663,7 @@ h5 {
 }
 .shopTab__remarks {
   font-size: 1.5rem;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   color: #fff;
   line-height: 1.2;
   margin-top: 10px;
@@ -2361,7 +2361,7 @@ h5 {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   margin: 38px auto 0;
   font-weight: bold;
 }
@@ -3457,7 +3457,7 @@ h5 {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   position: relative;
   border: 1px solid #012346;
 }
@@ -3669,7 +3669,7 @@ h5 {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   position: relative;
 }
 @media (max-width: 999px) {
@@ -3894,7 +3894,7 @@ h5 {
   align-items: center;
   color: #fff;
   font-weight: bold;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   margin-top: 10px;
   position: relative;
   transition: 0.2s;
@@ -4291,7 +4291,7 @@ h5 {
   ========================================================================== */
 .about-ttl {
   color: #111111;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 6rem;
   font-weight: bold;
   position: relative;
@@ -4357,7 +4357,7 @@ about-massage
 }
 
 .about-massage__inner--title h3 {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 2.3rem;
   letter-spacing: 0.3em;
   line-height: 2;
@@ -4370,7 +4370,7 @@ about-massage
   }
 }
 .about-massage__inner--title h3 span {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 3rem;
   font-weight: bold;
 }
@@ -4542,7 +4542,7 @@ about-massage
 }
 
 .about-massage__inner--title h3 {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 2.3rem;
   letter-spacing: 0.3em;
   line-height: 2;
@@ -4555,7 +4555,7 @@ about-massage
   }
 }
 .about-massage__inner--title h3 span {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 3rem;
   font-weight: bold;
 }
@@ -4686,7 +4686,7 @@ point3
 }
 
 .point3__inner--content a .box h3 {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 2rem;
   font-weight: bold;
   position: relative;
@@ -4728,7 +4728,7 @@ point3
 }
 
 .about-massage__inner--title h3 {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 2.3rem;
   letter-spacing: 0.3em;
   line-height: 2;
@@ -4741,7 +4741,7 @@ point3
   }
 }
 .about-massage__inner--title h3 span {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 3rem;
   font-weight: bold;
 }
@@ -6710,7 +6710,7 @@ zeh
   }
 }
 .caseItem__subTtl {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   color: #d90200;
   font-size: 3.9rem;
   margin-bottom: 27px;
@@ -6952,7 +6952,7 @@ zeh
   align-items: center;
   color: #fff;
   font-weight: bold;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   margin: -54px auto 0;
 }
 @media (max-width: 999px) {
@@ -7266,7 +7266,7 @@ zeh
 }
 .summary__ttl {
   color: #D90200;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 3.9rem;
   font-weight: bold;
   padding-left: 30px;
@@ -7390,7 +7390,7 @@ zeh
   }
 }
 .summary__ttl {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   color: #d90200;
   font-size: 3.9rem;
   font-weight: bold;
@@ -7734,7 +7734,7 @@ zeh
   font-size: 1.6rem;
 }
 .contact .privacy__ttl {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   color: #d90200;
   font-size: 3.9rem;
   font-weight: bold;
@@ -7857,7 +7857,7 @@ zeh
   color: #fff;
   display: flex;
   font-weight: bold;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   height: 40px;
   justify-content: center;
   margin: 40px auto 0;
@@ -8127,7 +8127,7 @@ zeh
   color: #6275a8;
 }
 .cordless .case .format__subTtl {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   color: #141414;
   border-bottom: 1px solid #6275a8;
   padding-bottom: 0;
@@ -8361,7 +8361,7 @@ zeh
   }
 }
 .interview__subTtl {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-weight: bold;
   font-size: 3.6rem;
   margin-bottom: 20px;
@@ -8498,7 +8498,7 @@ zeh
   }
 }
 .post__ttl {
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   color: #d90200;
   font-size: 3.3rem;
   font-weight: bold;
@@ -8669,7 +8669,7 @@ zeh
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   margin: 0 auto;
 }
 .post__btn:hover {
@@ -8872,7 +8872,7 @@ zeh
 
 @media (min-width: 1000px) {
   .contents__subTtl1 ._below ._lg {
-    font-family: "Furuta", sans-serif;
+    @include mixin.marugoBold();
     font-weight: bold;
   }
 }
@@ -9230,7 +9230,7 @@ zeh
 }
 .fv__ttl {
   color: #D90200;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 5.7rem;
   font-weight: bold;
   left: 3%;
@@ -9307,7 +9307,7 @@ zeh
 }
 .fv__ttl {
   color: #D90200;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   font-size: 5.7rem;
   font-weight: bold;
   left: 3%;
@@ -9989,7 +9989,7 @@ zeh
 .us__subTtl {
   color: #d90200;
   font-weight: bold;
-  font-family: "Furuta", sans-serif;
+  @include mixin.marugoBold();
   margin-bottom: 6px;
   letter-spacing: 0.08em;
   font-size: 2.4rem;
