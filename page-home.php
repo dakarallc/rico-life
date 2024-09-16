@@ -37,10 +37,10 @@ EVENT
       <div class="inner event__inner">
         <div class="event__box">
           <div class="event__left">
-            <h2 class="event__ttl  event__ttl-pc ttl ttl--right ">開催中の<br>イベント</h2><!-- /event__ttl -->
+            <h2 class="event__ttl  event__ttl-pc ttl ttl--right ">開催中のイベント</h2><!-- /event__ttl -->
             <h2 class="event__ttl  event__ttl-sp ttl ttl--right ">開催中のイベント</h2><!-- /event__ttl -->
             <!-- ★pc 用ボタン表示 -->
-            <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="event__btn topLink show--pc">view more</a><!-- /event__btn -->
+            <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="event__btn topLink show--pc">イベント一覧へ</a><!-- /event__btn -->
           </div><!-- /event__left -->
           <div class="event__right swiper eventSwiper">
             <ul class="event__list swiper-wrapper">
@@ -56,7 +56,7 @@ EVENT
                 <li class="event__item swiper-slide">
                   <a href="<?php echo esc_url(get_permalink()); ?>">
                     <div class="event__info">
-                      <div class=""><img width="300" data-js-ofi src="<?php echo $eventPic; ?>" alt="<?php echo trimString(get_the_title(), 50);  ?>"></div><!-- /caseItem__img1 -->
+                      <div class="event__info--img"><img width="300" data-js-ofi src="<?php echo $eventPic; ?>" alt="<?php echo trimString(get_the_title(), 50);  ?>"></div><!-- /caseItem__img1 -->
                     </div><!-- /event__info -->
                     <div>
                       <h3 class="event__subTtl"><?php echo trimString(get_the_title(), 50); ?></h3><!-- /event__subTtl -->
@@ -69,7 +69,7 @@ EVENT
             </ul><!-- /event__list -->
             <div class="swiper-pagination swiper-pagination-black"></div>
             <!-- ★sp 用ボタン表示 -->
-            <a href="<?php echo esc_url(get_permalink()); ?>" class="event__btn topLink show--sp">view more</a><!-- /event__btn -->
+            <a href="<?php echo esc_url(get_permalink()); ?>" class="event__btn topLink show--sp">一覧へ</a><!-- /event__btn -->
           </div><!-- /event__right -->
         </div><!-- /event__box -->
       </div><!-- /inner event__inner -->

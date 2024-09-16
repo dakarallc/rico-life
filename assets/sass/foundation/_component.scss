@@ -37,7 +37,8 @@
 
   &::before {
     content: "";
-    width: 4px;
+    width: 6px;
+		border-radius: 6px;
     height: 100%;
     background: #d90200;
     position: absolute;
@@ -98,8 +99,7 @@
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-
-
+	border-radius: 6px;
 
   @include mixin.sp() {
     width: 200px;
@@ -111,6 +111,7 @@
     content: "";
     width: 13px;
     height: 2px;
+		border-radius: 6px;
     background: #fff;
     position: absolute;
     top: 50%;

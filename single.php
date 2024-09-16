@@ -33,7 +33,7 @@ pageHead
   <div class="pageHead__contents">
     <h1 class="pageHead__ttl">
       <?php if ( in_category('staff') ) : ?>
-        <span class="_upper">スタッフ</span><!-- /_upper -->
+        <span class="_upper">スタッフ紹介</span><!-- /_upper -->
         <span class="_below">STAFF INTERVIEW</span><!-- /_below -->
 
       <?php else: ?>

@@ -92,7 +92,7 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
                   <span class="_below">会社情報</span>
                 </a></li>
               <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>735">
-                  <span class="_below">スタッフ</span>
+                  <span class="_below">スタッフ紹介</span>
                 </a></li>
               <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>column">
                   <span class="_below">コラム</span>
