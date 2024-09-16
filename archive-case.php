@@ -45,6 +45,9 @@ caseList
       $industry = get_field('case-industry'); //業種
       $reason = get_field('case-reason'); //理由    
       $hot = get_field('case-isHot'); //HOT
+			$floor_pace = get_field('floor-space'); //床面積
+			$rand_area = get_field('rand-area'); //土地面積
+			$completion = get_field('completion'); //竣工年
       ?>
         <li class="caseList__item wow fadeInUp">
           <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
@@ -56,14 +59,29 @@ caseList
                 <li class="caseList__cat _primary"><?php echo $cat; ?></li><!-- /caseList__cat -->
                 <?php endif; ?>
                 <?php if($hot === "2"): ?>
-                  <li class="caseList__cat _secondary">HOT</li><!-- /caseList__cat -->
+                  <li class="caseList__cat _secondary">Pick up</li><!-- /caseList__cat -->
                 <?php endif; ?>
               </ul><!-- /caseList__cats -->
 
-              <h3 class="caseList__subTtl">
+              <h2 class="caseList__subTtl">
                 <span class="_upper"><?php echo $industry; ?></span><!-- /_upper -->
                 <span class="_below"><?php $name ? print $name  : print '&nbsp;'; ?></span><!-- /_below -->
-              </h3><!-- /caseList__subTtl -->
+              </h2><!-- /caseList__subTtl -->
+							
+							<div class="">
+								<dl>
+									<dt>床面積</dt>
+									<dd><?php echo $floor_pace; ?></dd>
+								</dl>
+								<dl>
+									<dt>土地面積</dt>
+									<dd><?php echo $rand_area; ?></dd>
+								</dl>
+								<dl>
+									<dt>竣工年</dt>
+									<dd><?php echo $completion; ?></dd>
+								</dl>
+							</div><!-- /caseItem__list -->
               <!-- /caseList__desc -->
             </div><!-- /caseList__body -->
           </a>

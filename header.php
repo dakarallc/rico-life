@@ -47,7 +47,7 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
     />
   <link rel="stylesheet" href="./assets/css/uikit.min.css">
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" /> -->
   <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <title><?php echo wp_get_document_title(); ?></title>
   <?php wp_head(); ?>
@@ -78,10 +78,10 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
               <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>about">
                   <span class="_below">いえとち本舗とは</span>
                 </a></li>
-				<li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>hiraya">
-					<span class="_below">はたらく平屋</span>
-					</a>
-				</li>
+							<li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>hiraya">
+								<span class="_below">はたらく平屋</span>
+								</a>
+							</li>
               <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>case">
                   <span class="_below">施工事例</span>
                 </a></li>
