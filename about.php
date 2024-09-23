@@ -349,7 +349,7 @@ plan
 					<p>2F</p>
 					</div>
 					<p>52.17㎡<br>(15.78坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				</div>
 			</div>
