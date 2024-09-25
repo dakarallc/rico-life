@@ -6,10 +6,13 @@ Template Name: lp-customersページ
 <?php get_header(); ?>
 
 <div class="lp">
-	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp1.png" alt="いえとち本舗のzeh" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp1.png" class="ls-is-cached" loading="lazy">
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp1.png" alt="いえとち本舗のzeh" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp1.png" class="ls-is-cached sp" loading="lazy">
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp-pc1.png" alt="いえとち本舗のzeh" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp-pc1.png" class="ls-is-cached pc" loading="lazy">
 
-	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp2.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp2.png" class="ls-is-cached" loading="lazy">
-	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp3.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/customers-lp3.png" class="ls-is-cached" loading="lazy">
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp2.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp2.png" class="ls-is-cached sp" loading="lazy" style="margin-top: 60px;">
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp-pc2.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp-pc2.png" class="ls-is-cached pc" loading="lazy" style="margin-top: 60px;">
+
+	<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/lp/customers-lp3.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/customers-lp3.png" class="ls-is-cached pc" loading="lazy">
 
 	<!-- ===============================================================================================
 EVENT
