@@ -222,7 +222,7 @@ plan
 			<input id="tab3" type="radio" name="tab_bt">
 			<div class="btab_area">
 			<label class="tab1_label" for="tab1"><span>25坪</span><p>1,398万円</p></label>
-			<label class="tab2_label" for="tab2"><span>28坪</span><p>1,498万円</p></label>
+			<label class="tab2_label" for="tab2"><span>28坪</span><p>1,448万円</p></label>
 			<label class="tab3_label" for="tab3"><span>32坪</span><p>1,548万円</p></label>
 			</div>
 			<div class="panel_area">
@@ -361,7 +361,7 @@ plan
 			<input id="tab6" type="radio" name="tab_b">
 			<div class="btab_area">
 			<label class="tab4_label" for="tab4"><span>21坪</span><p>1,398万円</p></label>
-			<label class="tab5_label" for="tab5"><span>24坪</span><p>1,498万円</p></label>
+			<label class="tab5_label" for="tab5"><span>24坪</span><p>1,448万円</p></label>
 			<label class="tab6_label" for="tab6"><span>27坪</span><p>1,548万円</p></label>
 			</div>
 			<div class="panel_area">
