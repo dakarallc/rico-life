@@ -130,3 +130,16 @@ pagination
 </div><!-- /page  -->
 
 <?php get_footer(); ?>
+
+
+
+<?php
+										$live_img = get_field('live_img');
+										 if (get_field('live_img')) :
+										$live_img_url = wp_get_attachment_image_src($live_img, 'large')[0];
+										?>
+											<div class="banner__live-img" style="max-width: 100%; overflow: hidden;">
+												<img src="<?php echo $live_img; ?>" alt="<?php the_title(); ?>" style="width: 100%; height: auto; object-fit: cover;">
+											</div>
+										<?php
+										endif;?>

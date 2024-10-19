@@ -8,6 +8,15 @@ $schedule = get_field('schedule'); //日時
 $time = get_field('time'); //開催時間
 $address = get_field('address'); //住所
 $reserve = get_field('reserve'); //予約方法
+$point1Img = get_field('point1_img');//imgUrl
+$point1_title = get_field('point1_title');//imgUrl
+$point1_text = get_field('point1_text');//imgUrl
+$point2_img = get_field('point2_img');//imgUrl
+$point2_title = get_field('point2_title');//imgUrl
+$point2_text = get_field('point2_text');//imgUrl
+$point3_img = get_field('point3_img');//imgUrl
+$point3_title = get_field('point3_title');//imgUrl
+$point3_text = get_field('point3_text');//imgUrl
 
 ?>
 
@@ -80,13 +89,64 @@ if ( in_category('event') ) :
           </div><!-- /caseItem__mainContents -->
         </div><!-- /caseItem__main -->
 			
-        <div style="text-align: center">
-				
+        <div class="jcbBanner">
+        	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/jcb7000.png" alt="JCB 7000円分">
         </div>
+
+				<div class="cvButtonLinkWrap">
+          <a href="#contactForm" class="cvButtonLink">
+            <div>
+              <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
+            </div>
+            <button class="cvButtonLink__button">
+							<span>ご来場予約はこちら</span>
+							<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
+            </button>
+          </a>
+        </div>
+				<!-- 間取り -->
+			<section class="madori">
+        <div class="madori__inner">
+          <?php if ($madoriImg1) :  ?>
+            <div class="madori__inner--img"><img data-js-ofi src="<?php echo $madoriImg1 ?>" alt="<?php echo $name  ?>"></div><!-- /caseItem__img1 -->
+          <?php endif; ?>
+  
+          <?php if ($madoriImg2)  :  ?>
+            <div class="madori__inner--img"><img data-js-ofi src="<?php echo $madoriImg2 ?>" alt="<?php echo $name  ?>"></div><!-- /caseItem__img1 -->
+          <?php endif; ?>
+        </div>
+        <p class="madori__comment"><?php echo $comment; ?></p>
+      </section>
         
-        <div class="event-message">
-          <div> 
+			<div class="event-message">
+				<div> 
+
+			
+
+			<?php if ($point1_title) :  ?>
+				<h2 class="point">Point</h2>
+				<h3 class="point"><?php echo $point1_title; ?></h3>
+			<?php endif; ?>
+			<?php if ($point1Img) :  ?>
+				<img data-js-ofi src="<?php echo esc_url($point1Img); ?>" alt="Point 1 Image">
+			<?php endif; ?>
+			<?php if ($point1_text) :  ?>
+				<p><?php echo $point1_text; ?></p>
+			<?php endif; ?>
+			
+			<?php if ($point2_img) :  ?>
+				<img data-js-ofi src="<?php echo $point2_img ?>">
+			<?php endif; ?>
+			<?php if ($point2_title) :  ?>
+				<h3 class="point"><?php echo $point2_title; ?></h3>
+			<?php endif; ?>
+			<?php if ($point2_text) :  ?>
+				<p><?php echo $point1_text; ?></p>
+			<?php endif; ?>
+			
 			<?php the_content(); ?>
+			
+		
             ーーーーーーーーーーーーーーーーーーーーー<br />
 
 			<h3 class="marugo orange">実例見学会開催中！！</h3>
@@ -159,57 +219,35 @@ if ( in_category('event') ) :
         </div>
       </div><!-- /post__contents -->
 
+				<!-- CVボタン -->
+				<div class="cvButtonLinkWrap">
+				<a href="#contactForm" class="cvButtonLink">
+					<div>
+						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
+					</div>
+					<button class="cvButtonLink__button">
+						<span>ご来場予約はこちら</span>
+						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
+					</button>
+				</a>
+			</div>
+
       <!-- 70thバナー -->
-      <div class="banner banner70">
+      <!-- <div class="banner banner70">
         <a class="tochi present-pc" href="https://ietochi-kuki.com/1331/" target="_blank">
             <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/70th.png" alt="">
         </a>
         <a class="tochi present-sp" href="https://ietochi-kuki.com/1331/" target="_blank">
             <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/70thSp.png" alt="">
         </a>
-      </div>
+      </div> -->
 
-      <!-- CVボタン -->
-      <div class="cvButtonLinkWrap">
-        <a href="#contactForm" class="cvButtonLink">
-          <div>
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
-          </div>
-          <button class="cvButtonLink__button">
-          <span>ご来場予約はこちら</span>
-          <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
-          </button>
-        </a>
-      </div>
+			<div class="jcbBanner">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/jcb7000.png" alt="JCB 7000円分">
+			</div>
 
-      <!-- 間取り -->
-      <section class="madori">
-        <div class="madori__inner">
-          <?php if ($madoriImg1) :  ?>
-            <div class="madori__inner--img"><img data-js-ofi src="<?php echo $madoriImg1 ?>" alt="<?php echo $name  ?>"></div><!-- /caseItem__img1 -->
-          <?php endif; ?>
-  
-          <?php if ($madoriImg2)  :  ?>
-            <div class="madori__inner--img"><img data-js-ofi src="<?php echo $madoriImg2 ?>" alt="<?php echo $name  ?>"></div><!-- /caseItem__img1 -->
-          <?php endif; ?>
-        </div>
-        <p class="madori__comment"><?php echo $comment; ?></p>
-      </section>
 
-      <!-- CVボタン -->
-      <?php if ($madoriImg1 || $madoriImg2) :  ?>
-        <div class="cvButtonLinkWrap">
-          <a href="#contactForm" class="cvButtonLink">
-            <div>
-              <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
-            </div>
-            <button class="cvButtonLink__button">
-            <span>ご来場予約はこちら</span>
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
-            </button>
-          </a>
-        </div>
-      <?php endif; ?>
+    
       
       <!-- いえとち本舗の家づくり -->
       <div class="homeMadeWrap">

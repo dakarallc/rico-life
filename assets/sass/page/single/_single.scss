@@ -672,6 +672,7 @@
   .post .cvButtonLinkWrap {
     padding: 40px 0;
     text-align: center;
+		width: 100%;
   }
   .post .cvButtonLink {
     -webkit-transition: 0.2s;
@@ -713,12 +714,16 @@
     height: 60px;
     justify-content: center;
     margin: 0 auto;
-    width: 335px;
+    max-width: 335px;
   }
+	
   .post .cvButtonLink__button span {
     color: #fff;
     font-size: 26px;
     font-weight: bold;
+		@media (max-width: 999px) {
+			font-size: 20px;
+		}
   }
   .post .cvButtonLink__button .arrowRight {
     margin-left: 10px;
@@ -737,6 +742,11 @@
     gap: 20px;
     justify-content: space-around;
   }
+	.jcbBanner{
+		max-width: 600px;
+		margin: 0  auto 30px;
+	}
+	
   @media (max-width: 999px) {
     .post .madori__inner {
       display: block;
