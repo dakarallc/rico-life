@@ -83,7 +83,7 @@ if ( in_category('event') ) :
                 <dd><?php echo $address; ?></dd>
               </dl>
 			<?php if ( in_category('actual-house-tours') ) : ?>
-			<p>※写真はイメージです<br>※実際に住むお家の為、ご希望の日程に添えない場合がございます。</p>
+			<p>※写真はイメージです<br>※実際に住むお家の為、ご希望の日程に添えない場合がございます。<br>下記フォームまたは<a href="tel:0480226666">お電話</a>でご予約受付中 。<br>予約は1週間前までとなります。1週間を切っている場合は<a href="tel:0480226666">お電話</a>でお問い合わせください。</p>
 			<?php endif; ?>
             </div><!-- /caseItem__list -->
           </div><!-- /caseItem__mainContents -->
