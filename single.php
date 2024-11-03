@@ -198,7 +198,7 @@ if ( in_category('event') ) :
 				<span class="orange marugo">2,000円分</span><br />
 
 				③Google口コミ記入<br>
-				<span class="orange marugo">2,000円分</span><br />
+				<span class="orange marugo">3,000円分</span><br />
 				<br>
 				【対象者条件】<br>
 

@@ -1,0 +1,354 @@
+@use '../../foundation/mixin';
+
+/* ==========================================================================
+  staffList
+  ========================================================================== */
+.staffList {
+  $self: &;
+  padding-bottom: 60px;
+
+  dl {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    gap: 10px;
+    font-size: 1.4rem;
+
+    @include mixin.sp {
+      font-size: 1.2rem;
+    }
+  }
+
+  dt {
+    font-weight: bold;
+    width: 70px;
+  }
+
+  dd {
+    flex: 1;
+  }
+
+  &__ttl {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    line-height: 1.4;
+    margin-bottom: 33px;
+    text-align: center;
+
+    @include mixin.sp {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    background: none;
+    border-radius: 6px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.169);
+    margin-bottom: 40px;
+    position: relative;
+    transition: 0.2s;
+
+    a {
+      display: block;
+    }
+
+    &::before {
+      background: url(../img/case/arrow.svg) no-repeat center center/30px 10px;
+      bottom: 25px;
+      content: "";
+      height: 10px;
+      position: absolute;
+      right: 9%;
+      transition: 0.2s;
+      width: 30px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+      list-style: none;
+			box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+
+      &::before {
+        right: 6%;
+      }
+    }
+
+    @include mixin.pc {
+      width: calc(100% / 3 - 2% * 2 / 3);
+
+      &:not(:nth-child(3n)) {
+        margin-right: 2%;
+      }
+    }
+
+    @include mixin.sp {
+      width: 100%;
+    }
+  }
+
+  &__body {
+    padding: 20px 6%;
+    position: relative;
+  }
+
+  &__cats {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__cat {
+    align-items: center;
+    background: #D90200;
+    border-radius: 6px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    padding: 2px 10px;
+    font-size: 0.9rem;
+
+    &._primary, &._secondary {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__subTtl {
+    line-height: 1;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+
+    &:hover {
+      list-style: none;
+    }
+
+    &::before {
+      background: #D90200;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      border-radius: 6px;
+    }
+
+    ._upper {
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: 4px;
+    }
+
+    ._below {
+      color: #111111;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+
+  &__desc {
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+  }
+
+  &__img {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 57%;
+    }
+
+    img {
+      border-radius: 6px 6px 0 0;
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      object-position: center center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  &__box {
+    border-top: 1px solid #0D0D0D;
+    margin-bottom: 60px;
+    margin-top: 94px;
+    padding-top: 100px;
+
+    @include mixin.sp {
+      margin-bottom: 40px;
+      margin-top: 70px;
+      padding-top: 70px;
+    }
+  }
+
+  &__logos {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    @include mixin.sp {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__logo {
+    @include mixin.pc {
+      width: calc(100% / 3 - 5% * 2 / 3);
+
+      &:not(:last-child) {
+        margin-right: 5%;
+      }
+    }
+
+    @include mixin.sp {
+      max-width: 300px;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    a {
+      display: block;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+  company
+  ========================================================================== */
+.company {
+  .about {
+    letter-spacing: 0.2em;
+    margin: 0 calc(50% - 50vw);
+    padding: 4px calc(50vw - 50%) 112px;
+    position: relative;
+    width: 100vw;
+
+    @include mixin.sp {
+      margin: 140px calc(50% - 50vw) 0;
+      padding: 4px calc(50vw - 50%) 70px;
+      line-height: 1.7;
+    }
+
+    &::before {
+      background: url(../img/company/company1.png) no-repeat top left/1920px 750px;
+      bottom: 0;
+      content: "";
+      height: 750px;
+      object-fit: cover;
+      position: absolute;
+      right: 0;
+      width: 1920px;
+      z-index: -1;
+    }
+
+    .kv__ttl {
+      margin-bottom: 20px;
+    }
+
+    &__txt {
+      margin-bottom: 35px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 37px;
+    }
+
+    &__ttl {
+      font-weight: 400;
+    }
+  }
+}
+
+.summary {
+  background: #FEFFFF;
+  margin: 0 calc(50% - 50vw);
+  padding: 94px calc(50vw - 50% + 8px) 194px;
+  position: relative;
+  width: 100vw;
+
+  @include mixin.sp {
+    padding-bottom: 80px;
+  }
+
+  &__ttl {
+    color: #D90200;
+    @include mixin.marugoBold();
+    font-size: 3.9rem;
+    font-weight: bold;
+    padding-left: 30px;
+    position: relative;
+
+    @include mixin.sp {
+      font-size: 2.6rem;
+      padding-left: 20px;
+    }
+
+    &::before {
+      background: #D90200;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+
+      @include mixin.sp {
+        width: 3px;
+      }
+    }
+  }
+
+  &__item {
+    align-items: center;
+    border-bottom: 1px solid #0D0D0D;
+    display: flex;
+    letter-spacing: 0;
+    line-height: 1.4;
+    padding: 39px 3%;
+
+    @include mixin.sp {
+      flex-wrap: wrap;
+      padding: 20px 0;
+    }
+
+    dt {
+      font-weight: bold;
+      width: 25%;
+
+      @include mixin.sp {
+        margin-bottom: 8px;
+        width: 100%;
+      }
+    }
+
+    dd {
+      @include mixin.pc {
+        flex: 1 1 0%;
+      }
+
+      @include mixin.sp {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -290,3 +290,58 @@ function add_wp_cron_schedule_auto_paywall($post_id)
   }
 }
 add_action('save_post', 'add_wp_cron_schedule_auto_paywall');
+
+// カスタム投稿タイプ「スタッフ」を登録
+function create_staff_post_type() {
+    $labels = array(
+        'name'               => 'スタッフ',
+        'singular_name'      => 'スタッフ',
+        'menu_name'          => 'スタッフ',
+        'add_new'           => '新規追加',
+        'add_new_item'      => '新規スタッフを追加',
+        'edit_item'         => 'スタッフを編集',
+        'new_item'          => '新規スタッフ',
+        'all_items'         => 'すべてのスタッフ',
+        'view_item'         => 'スタッフを表示',
+        'search_items'      => 'スタッフを検索',
+        'not_found'         => 'スタッフが見つかりませんでした',
+        'not_found_in_trash'=> 'ゴミ箱にスタッフが見つかりませんでした'
+    );
+
+    $args = array(
+        'labels'            => $labels,
+        'public'            => true,
+        'has_archive'       => true,
+        'menu_icon'         => 'dashicons-groups',
+        'supports'          => array('title', 'editor', 'thumbnail'),
+        'rewrite'           => array('slug' => 'staff')
+    );
+
+    register_post_type('staff', $args);
+}
+add_action('init', 'create_staff_post_type');
+
+// カスタムタクソノミー「部署」を追加
+function create_department_taxonomy() {
+    $labels = array(
+        'name'              => '部署',
+        'singular_name'     => '部署',
+        'search_items'      => '部署を検索',
+        'all_items'         => 'すべての部署',
+        'edit_item'         => '部署を編集',
+        'add_new_item'      => '新規部署を追加',
+        'new_item_name'     => '新規部署名'
+    );
+
+    $args = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array('slug' => 'department')
+    );
+
+    register_taxonomy('department', array('staff'), $args);
+}
+add_action('init', 'create_department_taxonomy');
