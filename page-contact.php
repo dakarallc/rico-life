@@ -25,7 +25,12 @@ contact
 ================================================================================================ -->
   <div class="contact wow fadeInUp">
     <div class="inner contact__inner">
-      <h2 class="contact__ttl">来場予約フォーム</h2>
+			<h2 class="contact__ttl">来場予約フォーム</h2>
+			
+			<div class="jcbBanner">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/jcb7000.png" alt="JCB 7000円分">
+			</div>
+
       <p class="contact__desc">下記の必要事項をご記入の上、送信下さい。追って担当者よりご連絡させていただきます。</p><!-- /contact__desc -->
 
       <?php echo do_shortcode('[mwform_formkey key="33"]'); ?>
