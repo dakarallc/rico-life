@@ -78,21 +78,21 @@ point3
 					<a href="#plan">
 						<div class="box">
 							<h3>169,280通りの選択肢</h3>
-							<p>自由に選べる憧れのデザイン&間取り</p>
+							<p>自由に選べる憧れの<br />デザイン&間取り！</p>
 							<img class="bgImage" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/orange-home-bg.png" alt="">
 						</div>
 					</a>
 					<a href="#high">
 						<div  div class="box">
 							<h3>太陽光発電標準搭載</h3>
-							<p>　月々15,000円支払いがお得　　</p>
+							<p>月々15,000円支払いがお得！<br />自家発電で家計を助ける！</p>
 							<img class="bgImage" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/orange-home-bg.png" alt="">
 						</div>
 					</a>
 					<a href="#low">
 						<div class="box">
 							<h3>全棟100%ZHE基準</h3>
-							<p>一年中快適なゼロエネルギー住宅対応</p>
+							<p>1年中快適な<br/>ゼロエネルギー住宅対応!</p>
 							<img class="bgImage" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/orange-home-bg.png" alt="">
 						</div>
 					</a>
