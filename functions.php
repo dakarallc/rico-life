@@ -380,5 +380,31 @@ function register_event_post_type() {
     );
 
     register_post_type('event', $args);
+
+    // イベントカテゴリーのタクソノミーを追加
+    $category_labels = array(
+        'name'              => 'イベントカテゴリー',
+        'singular_name'     => 'イベントカテゴリー',
+        'search_items'      => 'イベントカテゴリーを検索',
+        'all_items'         => 'すべてのイベントカテゴリー',
+        'parent_item'       => '親イベントカテゴリー',
+        'parent_item_colon' => '親イベントカテゴリー:',
+        'edit_item'         => 'イベントカテゴリーを編集',
+        'update_item'       => 'イベントカテゴリーを更新',
+        'add_new_item'      => '新規イベントカテゴリーを追加',
+        'new_item_name'     => '新規イベントカテゴリー名',
+        'menu_name'         => 'カテゴリー'
+    );
+
+    $category_args = array(
+        'hierarchical'      => true,
+        'labels'            => $category_labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array('slug' => 'event-category')
+    );
+
+    register_taxonomy('event-category', array('event'), $category_args);
 }
 add_action('init', 'register_event_post_type');

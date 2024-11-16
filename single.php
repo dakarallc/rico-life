@@ -171,56 +171,56 @@ if ( in_category('event') ) :
 			
 			
 			
-			<span class="blue">テスラ蓄電池</span>と<span class="red">N型太陽光パネル</span><br />
-			で電気もガスもエネルギー代を<br />
-			<span class="orange">ほとんど払わない家</span>をご提案できます！<br />
+					<span class="blue">テスラ蓄電池</span>と<span class="red">N型太陽光パネル</span><br />
+					で電気もガスもエネルギー代を<br />
+					<span class="orange">ほとんど払わない家</span>をご提案できます！<br />
 
             ーーーーーーーーーーーーーーーーーーーーー<br />
 
-            <h3 class="blue marugo">✨⭐️標準搭載⭐️✨</h3>
-            ◎安心の耐震等級”3相当”の住宅！<br />
-            ◎エネルギーをほとんど払わない<br />
-            蓄電池、太陽光発電！<br />
-            ◎火の手から守る省令準耐火性能！<br />
-            ◎夏も冬も部屋を守るZEH基準の断熱性能！<br />
+					<h3 class="blue marugo">✨⭐️標準搭載⭐️✨</h3>
+					◎安心の耐震等級”3相当”の住宅！<br />
+					◎エネルギーをほとんど払わない<br />
+					蓄電池、太陽光発電！<br />
+					◎火の手から守る省令準耐火性能！<br />
+					◎夏も冬も部屋を守るZEH基準の断熱性能！<br />
 
-            <h3 class="yellow marugo">💫⭐️ご来場特典⭐️💫</h3>
-			<span class="orange marugo">HP予約からでJCB券</span><br />
-            <span class="orange marugo">最大7,000円分</span>プレゼント！！<br />
-			<div class="cashBack">
-				<div class="bgRed">【カクダイホームの70周年特別企画】</div>
+					<h3 class="yellow marugo">💫⭐️ご来場特典⭐️💫</h3>
+					<span class="orange marugo">HP予約からでJCB券</span><br />
+					<span class="orange marugo">最大7,000円分</span>プレゼント！！<br />
+					<div class="cashBack">
+						<div class="bgRed">【カクダイホームの70周年特別企画】</div>
 				
-				下記条件で最大7,000円分キャンペーン<br>
-				①当HP予約からのご来場<br>
-				<span class="orange marugo">2,000円分</span><br />
+							下記条件で最大7,000円分キャンペーン<br>
+							①当HP予約からのご来場<br>
+							<span class="orange marugo">2,000円分</span><br />
 
-				②ご来場アンケート記入<br>
-				<span class="orange marugo">2,000円分</span><br />
+							②ご来場アンケート記入<br>
+							<span class="orange marugo">2,000円分</span><br />
 
-				③Google口コミ記入<br>
-				<span class="orange marugo">3,000円分</span><br />
-				<br>
-				【対象者条件】<br>
+							③Google口コミ記入<br>
+							<span class="orange marugo">3,000円分</span><br />
+							<br>
+							【対象者条件】<br>
 
-				下記に該当するお客様1組様につき<br>
-				1回の進呈とさせていただきます。<br>
+							下記に該当するお客様1組様につき<br>
+							1回の進呈とさせていただきます。<br>
 
-				１）マイホームをご検討中の方。<br>
+							１）マイホームをご検討中の方。<br>
 
-				２）はじめて、いえとち本舗 久喜店のイベントに参加された方。<br>
+							２）はじめて、いえとち本舗 久喜店のイベントに参加された方。<br>
 
-				※ご来場プレゼントは1回限りとなります。<br>
+							※ご来場プレゼントは1回限りとなります。<br>
 
-				※その他、不正行為と弊社がみなした場合、プレゼント提供をお断りする場合がございます。<br>
+							※その他、不正行為と弊社がみなした場合、プレゼント提供をお断りする場合がございます。<br>
 
-				※プレゼントの進呈数は限りがあり、なくなり次第終了となります。<br><br>現場見学会、ローン相談、土地探し、プラン相談<br>どんなご相談でも来場特典プレゼント！！<br>詳しくわこちらより、来場予約お待ちしております。
-			</div>
+							※プレゼントの進呈数は限りがあり、なくなり次第終了となります。<br><br>現場見学会、ローン相談、土地探し、プラン相談<br>どんなご相談でも来場特典プレゼント！！<br>詳しくわこちらより、来場予約お待ちしております。
+						</div>
           </div>
         </div>
       </div><!-- /post__contents -->
 
 				<!-- CVボタン -->
-				<div class="cvButtonLinkWrap">
+			<div class="cvButtonLinkWrap">
 				<a href="#contactForm" class="cvButtonLink">
 					<div>
 						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
