@@ -40,7 +40,7 @@ EVENT
             <h2 class="event__ttl  event__ttl-pc ttl ttl--right ">開催中のイベント</h2><!-- /event__ttl -->
             <h2 class="event__ttl  event__ttl-sp ttl ttl--right ">開催中のイベント</h2><!-- /event__ttl -->
             <!-- ★pc 用ボタン表示 -->
-            <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="event__btn topLink show--pc">イベント一覧へ</a><!-- /event__btn -->
+            <a href="<?php echo do_shortcode('[home_url]'); ?>event" class="event__btn topLink show--pc">イベント一覧へ</a><!-- /event__btn -->
           </div><!-- /event__left -->
           <div class="event__right swiper eventSwiper">
             <ul class="event__list swiper-wrapper">
@@ -69,7 +69,7 @@ EVENT
             </ul><!-- /event__list -->
             <div class="swiper-pagination swiper-pagination-black"></div>
             <!-- ★sp 用ボタン表示 -->
-            <a href="<?php echo esc_url(get_permalink()); ?>" class="event__btn topLink show--sp">一覧へ</a><!-- /event__btn -->
+            <a href="<?php echo do_shortcode('[home_url]'); ?>event" class="event__btn topLink show--sp">一覧へ</a><!-- /event__btn -->
           </div><!-- /event__right -->
         </div><!-- /event__box -->
       </div><!-- /inner event__inner -->
