@@ -1,0 +1,168 @@
+@use '../../foundation/mixin';
+
+/* ==========================================================================
+  eventList
+  ========================================================================== */
+.eventList {
+  $self: &;
+  padding-bottom: 60px;
+
+  &__sort {
+    margin-bottom: 20px;
+    text-align: right;
+
+    select {
+      appearance: none;
+      background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='4' viewBox='0 0 8 4'%3E%3Cpath d='M0 0l4 4 4-4z' fill='%23333'/%3E%3C/svg%3E") no-repeat right 12px center;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1.4rem;
+      padding: 8px 32px 8px 12px;
+      transition: border-color 0.2s;
+
+      &:hover {
+        border-color: #999;
+      }
+
+      &:focus {
+        border-color: #666;
+        outline: none;
+      }
+    }
+  }
+
+  .detail {
+    font-size: 1.6rem !important;
+    margin-bottom: 4px;
+    line-height: 2rem;
+    span {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__status {
+    text-align: center;
+    color: white;
+    
+    font-weight: bold;
+		@include mixin.sp {
+			padding: 8px;
+		}
+    span {
+      font-size: 16px;
+      margin-left: 5px;
+      font-weight: normal;
+    }
+    &._now {
+      background-color: rgba(247,105,70,0.82);
+    }
+    &._before {
+      background-color: rgba(114,132,175,0.82);
+    }
+    &._end {
+      background-color: rgba(51,51,51,0.82);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    background: none;
+    border-radius: 6px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.169);
+    margin-bottom: 40px;
+    position: relative;
+    transition: all 0.3s ease;
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
+
+    &:hover {
+      opacity: 0.7;
+      list-style: none;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+      transform: translateY(-2px);
+    }
+
+    @include mixin.pc {
+      width: calc(100% / 3 - 2% * 2 / 3);
+
+      &:not(:nth-child(3n)) {
+        margin-right: 2%;
+      }
+    }
+
+    @include mixin.sp {
+      width: 100%
+    }
+  }
+
+  &__body {
+    padding: 15px 6% 20px;
+    position: relative;
+    background: #fff;
+    border-radius: 0 0 6px 6px;
+  }
+
+  &__subTtl {
+    line-height: 1.4;
+    margin-bottom: 10px;
+    padding-left: 12px;
+    position: relative;
+    font-weight: bold;
+
+    &:hover {
+      list-style: none;
+    }
+
+    &::before {
+      background: #D90200;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      border-radius: 6px;
+    }
+
+    ._below {
+      color: #111111;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    .endEvent {
+      filter: grayscale(60%);
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 57%;
+    }
+
+    img {
+      border-radius: 6px 6px 0 0;
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      object-position: center center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+  }
+}

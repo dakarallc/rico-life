@@ -259,7 +259,7 @@ function add_wp_cron_schedule_auto_paywall($post_id)
   // 予約投稿が公開される際の処理をスキップ
   if (defined('DOING_CRON') && DOING_CRON) return;
 
-   //記事の種類が投稿ではない　または wpのオートセーブの場合
+   //記事の種類が投稿ではない　または wpのオートセーブの�����
   if (get_post_type($post_id) !== 'post'  || defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
 
   if (!isset($_POST['auto_paywall'])) {
@@ -345,3 +345,40 @@ function create_department_taxonomy() {
     register_taxonomy('department', array('staff'), $args);
 }
 add_action('init', 'create_department_taxonomy');
+
+function register_event_post_type() {
+    $labels = array(
+        'name'               => 'イベント',
+        'singular_name'      => 'Event',
+        'menu_name'          => 'イベント',
+        'name_admin_bar'     => 'Event',
+        'add_new'            => 'Add New',
+        'add_new_item'       => 'Add New Event',
+        'new_item'           => 'New Event',
+        'edit_item'          => 'Edit Event',
+        'view_item'          => 'View Event',
+        'all_items'          => 'All Events',
+        'search_items'       => 'Search Events',
+        'parent_item_colon'  => 'Parent Events:',
+        'not_found'          => 'No events found.',
+        'not_found_in_trash' => 'No events found in Trash.'
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array('slug' => 'event'),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments')
+    );
+
+    register_post_type('event', $args);
+}
+add_action('init', 'register_event_post_type');
