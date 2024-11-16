@@ -17,7 +17,8 @@
 		.pageHeadEvent{
 			margin-bottom: 20px;
 		}
-	
+
+
 		.status {
 			text-align: center;
 			padding: 4px 10px;
@@ -27,6 +28,9 @@
 			font-weight: bold;
 			display: inline-block;
 			min-width: 100px;
+			@include mixin.sp() {
+				font-size: 16px;
+			}
 			&._now {
 				background-color: rgba(247,105,70,0.82);
 			}

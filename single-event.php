@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="page event-page eventItem">
-  <?php if ( has_term('field-trip', 'event-category') ) : ?>
+  <?php if ( has_term('actual-house-tours', 'event-category') ) : ?>
     <div class="pageHeadEvent">
       <h1 class="pageHeadEvent__ttl">
         <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/eventHeader.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/eventHeader.svg" class=" ls-is-cached lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/eventHeader.svg" alt="完成入居前見学会" data-eio="l"></noscript>
@@ -51,7 +51,7 @@
   } else {
     $event_status = 'endEvent';
     $status_class = '_end';
-    $status_text = 'イベント終了';
+    $status_text = '';
   }
   ?>
   <section class="post wow fadeInUp">
@@ -69,6 +69,7 @@
             }
             ?>
           </span>
+					<br class="show--sp"/>
           <?php the_title(); ?>
 					<span class="count-down"><?php echo $status_text; ?></span>
         </h2>
@@ -109,7 +110,7 @@
                 <dt>住所</dt>
                 <dd><?php echo esc_html($event_info['address']); ?></dd>
               </dl>
-              <?php if ( in_category('actual-house-tours') ) : ?>
+              <?php if ( has_term('actual-house-tours', 'event-category') ) : ?>
                 <p>※写真はイメージです<br>※実際に住むお家の為、ご希望の日程に添えない場合がございます。<br>下記フォームまたは<a href="tel:0480226666">お電話</a>でご予約受付中 。<br>予約は1週間前までとなります。1週間を切っている場合は<a href="tel:0480226666">お電話</a>でお問い合わせください。</p>
               <?php endif; ?>
             </div>
@@ -125,7 +126,7 @@
             <div>
               <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
             </div>
-            <button class="cvButtonLink__button">
+            <button class="cvButtonLink__button" <?php echo ($event_status === 'endEvent') ? 'disabled' : ''; ?>>
               <span>ご来場予約はこちら</span>
               <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png" alt="矢印" class="arrowRight">
             </button>
@@ -286,7 +287,7 @@
           <div>
             <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
           </div>
-          <button class="cvButtonLink__button">
+          <button class="cvButtonLink__button" <?php echo ($event_status === 'endEvent') ? 'disabled' : ''; ?>>
             <span>ご来場予約はこちら</span>
             <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png" alt="矢印" class="arrowRight">
           </button>
@@ -350,7 +351,7 @@
             <div>
               <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="planImg">
             </div>
-            <button class="cvButtonLink__button">
+            <button class="cvButtonLink__button" <?php echo ($event_status === 'endEvent') ? 'disabled' : ''; ?>>
               <span>ご来場予約はこちら</span>
               <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png" alt="矢印" class="arrowRight">
             </button>
@@ -401,7 +402,7 @@
             <div>
               <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="planImg">
             </div>
-            <button class="cvButtonLink__button">
+            <button class="cvButtonLink__button" <?php echo ($event_status === 'endEvent') ? 'disabled' : ''; ?>>
               <span>ご来場予約はこちら</span>
               <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png" alt="矢印" class="arrowRight">
             </button>

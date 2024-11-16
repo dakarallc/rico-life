@@ -715,7 +715,12 @@
     justify-content: center;
     margin: 0 auto;
     max-width: 335px;
-  }
+    
+    &[disabled] {
+      background-color: rgba(51,51,51,0.82);
+			opacity: 0.4;
+    }
+	}
 	
   .post .cvButtonLink__button span {
     color: #fff;
