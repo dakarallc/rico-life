@@ -85,6 +85,9 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
               <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>case">
                   <span class="_below">施工事例</span>
                 </a></li>
+              <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>event">
+                  <span class="_below">イベント</span>
+                </a></li>
               <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>news">
                   <span class="_below">お知らせ</span>
                 </a></li>
