@@ -22,59 +22,78 @@ fv
 EVENT
 ================================================================================================ -->
   <?php
-  $perPage = -1;
   $args = array(
-    'posts_per_page' => $perPage,
-    'post_type' => 'post',
-    'category_name' => 'event',
-    'post_status' => 'publish',
-    'category__not_in' => array(get_category_by_slug('end')->term_id)
+    'posts_per_page' => -1,
+    'post_type' => 'event',
+    'post_status' => 'publish'
   );
   
-  $the_query = new WP_Query($args);
-  if ($the_query->have_posts()) : ?>
-    <section class="event">
-      <div class="inner event__inner">
-        <div class="event__box">
-          <div class="event__left">
-            <h2 class="event__ttl  event__ttl-pc ttl ttl--right ">開催中のイベント</h2><!-- /event__ttl -->
-            <h2 class="event__ttl  event__ttl-sp ttl ttl--right ">開催中のイベント</h2><!-- /event__ttl -->
-            <!-- ★pc 用ボタン表示 -->
-            <a href="<?php echo do_shortcode('[home_url]'); ?>event" class="event__btn topLink show--pc">イベント一覧へ</a><!-- /event__btn -->
-          </div><!-- /event__left -->
-          <div class="event__right swiper eventSwiper">
-            <ul class="event__list swiper-wrapper">
-              <?php while ($the_query->have_posts()) : $the_query->the_post(); 
-              $eventPic = get_field('event-pic');
-              $img_url1 = $eventPic;
-              $comment = get_field('comment'); //コメント
-              $schedule = get_field('schedule'); //日時
-              $time = get_field('time'); //開催時間
-              $address = get_field('address'); //住所
-              $reserve = get_field('reserve'); //予約方法
-              ?>
-                <li class="event__item swiper-slide">
-                  <a href="<?php echo esc_url(get_permalink()); ?>">
-                    <div class="event__info">
-                      <div class="event__info--img"><img width="300" data-js-ofi src="<?php echo $eventPic; ?>" alt="<?php echo trimString(get_the_title(), 50);  ?>"></div><!-- /caseItem__img1 -->
-                    </div><!-- /event__info -->
-                    <div>
-                      <h3 class="event__subTtl"><?php echo trimString(get_the_title(), 50); ?></h3><!-- /event__subTtl -->
-                      <p class="event__schedule">日程:<?php echo $schedule ; ?></p>
-                      <p class="event__comment"><?php echo $comment ; ?></p>
-                    </div>
-                  </a>
-                </li><!-- /event__item -->
-              <?php endwhile; ?>
-            </ul><!-- /event__list -->
-            <div class="swiper-pagination swiper-pagination-black"></div>
-            <!-- ★sp 用ボタン表示 -->
-            <a href="<?php echo do_shortcode('[home_url]'); ?>event" class="event__btn topLink show--sp">一覧へ</a><!-- /event__btn -->
-          </div><!-- /event__right -->
-        </div><!-- /event__box -->
-      </div><!-- /inner event__inner -->
-    </section><!-- /event -->
-  <?php endif;
+  $event_query = new WP_Query($args);
+  $events = array();
+
+  if ($event_query->have_posts()) :
+    while ($event_query->have_posts()) : $event_query->the_post();
+      
+      $event_info = [
+        'pic' => get_field('event-pic'),
+        'start_date' => get_field('event_start_date'),
+        'end_date' => get_field('event_end_date'), 
+        'start_time' => get_field('event_start_time'),
+        'end_time' => get_field('event_end_time'),
+        'address' => get_field('address')
+      ];
+
+      $now = new DateTime('now', new DateTimeZone('Asia/Tokyo'));
+      $start_datetime = new DateTime($event_info['start_date'] . ' ' . $event_info['start_time'], new DateTimeZone('Asia/Tokyo'));
+      $end_datetime = new DateTime($event_info['end_date'] . ' ' . $event_info['end_time'], new DateTimeZone('Asia/Tokyo'));
+
+      // 開催中のイベントのみ表示
+      if ($start_datetime <= $now && $end_datetime >= $now) {
+        $events[] = array(
+          'post' => $post,
+          'event_info' => $event_info
+        );
+      }
+    endwhile;
+
+    if (!empty($events)) : ?>
+      <section class="event">
+        <div class="inner event__inner">
+          <div class="event__box">
+            <div class="event__left">
+              <h2 class="event__ttl  event__ttl-pc ttl ttl--right ">開催中のイベント</h2>
+              <h2 class="event__ttl  event__ttl-sp ttl ttl--right ">開催中のイベント</h2>
+              <a href="<?php echo do_shortcode('[home_url]'); ?>event" class="event__btn topLink show--pc">イベント一覧へ</a>
+            </div>
+            <div class="event__right swiper eventSwiper">
+              <ul class="event__list swiper-wrapper">
+                <?php foreach ($events as $event) :
+                  $post = $event['post'];
+                  setup_postdata($post);
+                  $event_info = $event['event_info'];
+                ?>
+                  <li class="event__item swiper-slide">
+                    <a href="<?php echo esc_url(get_permalink()); ?>">
+                      <div class="event__info">
+                        <div class="event__info--img"><img width="300" data-js-ofi src="<?php echo esc_url($event_info['pic']); ?>" alt="<?php echo esc_attr(trimString(get_the_title(), 50)); ?>"></div>
+                      </div>
+                      <div>
+                        <h3 class="event__subTtl"><?php echo esc_html(trimString(get_the_title(), 50)); ?></h3>
+                        <p class="event__schedule">日程:<?php echo esc_html($event_info['start_date']); ?> ~ <?php echo esc_html($event_info['end_date']); ?></p>
+                        <p class="event__comment">時間:<?php echo esc_html($event_info['start_time']); ?> ~ <?php echo esc_html($event_info['end_time']); ?></p>
+                      </div>
+                    </a>
+                  </li>
+                <?php endforeach; ?>
+              </ul>
+              <div class="swiper-pagination swiper-pagination-black"></div>
+              <a href="<?php echo do_shortcode('[home_url]'); ?>event" class="event__btn topLink show--sp">一覧へ</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <?php endif;
+  endif;
   wp_reset_postdata(); ?>
 
 <!-- ===============================================================================================
