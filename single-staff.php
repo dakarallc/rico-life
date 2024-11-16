@@ -42,6 +42,7 @@ staffItem
       </div><!-- /staffItem__main -->
 
       <?php if($personal_message): ?>
+			<h2 class="sectionTitle">マイブーム</h2>
       <div class="staffItem__box wow fadeInUp">
         <p class="staffItem__desc"><?php echo $personal_message; ?></p>
       </div><!-- /staffItem__box -->
