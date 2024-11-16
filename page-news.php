@@ -12,8 +12,8 @@ pageHead
   <div class="pageHead">
     <div class="pageHead__contents">
       <h1 class="pageHead__ttl">
-        <span class="_upper">新着イベント</span><!-- /_upper -->
-        <span class="_below">お知らせ</span><!-- /_below -->
+        <span class="_upper">お知らせ</span><!-- /_upper -->
+        <span class="_below">NEWS</span><!-- /_below -->
       </h1><!-- /pageHead__ttl -->
     </div><!-- /pageHead__contents -->
   </div><!-- /pageHead -->
