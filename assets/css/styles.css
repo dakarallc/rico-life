@@ -7263,6 +7263,14 @@ event
     width: 100%;
   }
 }
+.event-page.eventItem .contact {
+  margin-top: 60px;
+}
+@media (max-width: 999px) {
+  .event-page.eventItem .contact {
+    margin-top: 30px;
+  }
+}
 
 /* ==========================================================================
   eventList

@@ -126,7 +126,7 @@
             <div>
               <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
             </div>
-            <button class="cvButtonLink__button" <?php echo ($event_status === 'endEvent') ? 'disabled' : ''; ?>>
+            <button class="cvButtonLink__button">
               <span>ご来場予約はこちら</span>
               <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png" alt="矢印" class="arrowRight">
             </button>
@@ -435,7 +435,16 @@
         </div>
       </section>
     </div>
-		
+      <!-- フォーム -->
+      <div class="contact wow fadeInUp" id="contactForm">
+        <div class="inner contact__inner">
+          <h2 class="contact__ttl">来場予約フォーム</h2>
+          <p class="contact__desc">下記の必要事項をご記入の上、送信下さい。追って担当者よりご連絡させていただきます。</p><!-- /contact__desc -->
+          <?php echo do_shortcode('[mwform_formkey key="33"]'); ?>
+        </div><!-- /inner contact__inner -->
+      </div><!-- /contact -->
+      <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
+    </div><!-- /inner post__inner -->
   </section>
 	
 </div>

@@ -198,5 +198,11 @@
 				width: 100%;
 			}
 		}
+		.contact{
+			margin-top: 60px;
+			@include mixin.sp() {
+				margin-top: 30px;
+			}
+		}
 	}
 }
