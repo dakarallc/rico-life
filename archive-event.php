@@ -64,15 +64,18 @@
             $status_class = '_now';
             $interval = $now->diff($end_datetime);
             $status_text = '【開催中】<span>終了まであと</span>' . get_remaining_time('', $interval);
+            $sort_priority = 1; // 開催中は優先度1
           } elseif ($start_datetime > $now) {
             $event_status = 'beforeEvent';
             $status_class = '_before';
             $interval = $now->diff($start_datetime);
             $status_text = '【開催前】<span>開催まであと</span>' . get_remaining_time('', $interval);
+            $sort_priority = 2; // 開催前は優先度2
           } else {
             $event_status = 'endEvent';
             $status_class = '_end';
             $status_text = 'イベント終了';
+            $sort_priority = 3; // 終了は優先度3
           }
 
           // ソート条件に合致するイベントのみ配列に追加
@@ -86,21 +89,22 @@
               'event_info' => $event_info,
               'event_status' => $event_status,
               'status_class' => $status_class,
-              'status_text' => $status_text
+              'status_text' => $status_text,
+              'sort_priority' => $sort_priority,
+              'start_datetime' => $start_datetime
             );
           }
         endwhile;
 
         // イベントステータスでソート
-        if ($sort_order !== 'all') {
-          usort($events, function($a, $b) use ($sort_order) {
-            if ($sort_order === 'now') {
-              return $a['event_status'] === 'nowEvent' ? -1 : 1;
-            } elseif ($sort_order === 'before') {
-              return $a['event_status'] === 'beforeEvent' ? -1 : 1;
-            } else {
-              return $a['event_status'] === 'endEvent' ? -1 : 1;
+        if ($sort_order === 'all') {
+          usort($events, function($a, $b) {
+            // まず優先度でソート
+            if ($a['sort_priority'] !== $b['sort_priority']) {
+              return $a['sort_priority'] - $b['sort_priority'];
             }
+            // 優先度が同じ場合は開始日時で降順ソート
+            return $b['start_datetime'] <=> $a['start_datetime'];
           });
         }
 
