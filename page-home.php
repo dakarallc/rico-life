@@ -36,6 +36,7 @@ EVENT
       
       $event_info = [
         'pic' => get_field('event-pic'),
+				'is_always' => get_field('is_always'),
         'start_date' => get_field('event_start_date'),
         'end_date' => get_field('event_end_date'), 
         'start_time' => get_field('event_start_time'),
@@ -79,7 +80,7 @@ EVENT
                       </div>
                       <div>
                         <h3 class="event__subTtl"><?php echo esc_html(trimString(get_the_title(), 50)); ?></h3>
-                        <p class="event__schedule">日程:<?php echo esc_html($event_info['start_date']); ?> ~ <?php echo esc_html($event_info['end_date']); ?></p>
+                        <p class="event__schedule">日程:<?php if ($event_info['is_always']): ?>常時開催 ※水曜定休<?php else: ?><?php echo esc_html($event_info['start_date']); ?> ~ <?php echo esc_html($event_info['end_date']); ?><?php endif; ?></p>
                         <p class="event__comment">時間:<?php echo esc_html($event_info['start_time']); ?> ~ <?php echo esc_html($event_info['end_time']); ?></p>
                       </div>
                     </a>

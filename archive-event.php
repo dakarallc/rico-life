@@ -155,15 +155,19 @@
                   </h2>
                   <p class="detail">
                     <span>日程：</span>
-                    <?php echo esc_html($event_info['start_date']); ?>
-                    (<?php echo date('w', strtotime($event_info['start_date'])) === '0' ? '日' : 
-                      (date('w', strtotime($event_info['start_date'])) === '6' ? '土' : 
-                      ['月','火','水','木','金'][date('w', strtotime($event_info['start_date']))-1]); ?>)
-                    ~
-                    <?php echo esc_html($event_info['end_date']); ?>
-                    (<?php echo date('w', strtotime($event_info['end_date'])) === '0' ? '日' : 
-                      (date('w', strtotime($event_info['end_date'])) === '6' ? '土' : 
-                      ['月','火','水','木','金'][date('w', strtotime($event_info['end_date']))-1]); ?>)
+                    <?php if ($event_info['is_always']): ?>
+                      常時開催 ※水曜定休
+                    <?php else: ?>
+                      <?php echo esc_html($event_info['start_date']); ?>
+                      (<?php echo date('w', strtotime($event_info['start_date'])) === '0' ? '日' : 
+                        (date('w', strtotime($event_info['start_date'])) === '6' ? '土' : 
+                        ['月','火','水','木','金'][date('w', strtotime($event_info['start_date']))-1]); ?>)
+                      ~
+                      <?php echo esc_html($event_info['end_date']); ?>
+                      (<?php echo date('w', strtotime($event_info['end_date'])) === '0' ? '日' : 
+                        (date('w', strtotime($event_info['end_date'])) === '6' ? '土' : 
+                        ['月','火','水','木','金'][date('w', strtotime($event_info['end_date']))-1]); ?>)
+                    <?php endif; ?>
                   </p>
                   <p class="detail"><span>時間：</span><?php echo esc_html($event_info['start_time']); ?>~<?php echo esc_html($event_info['end_time']); ?></p>
                   <p class="detail"><span>場所：</span><?php echo esc_html($event_info['address']); ?></p>

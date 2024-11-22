@@ -34,7 +34,7 @@
 	if ($event_info['is_always']) {
 		$event_status = 'nowEvent';
 		$status_class = '_now';
-		$status_text = '常時開催中';
+		$status_text = '';
 		$sort_priority = 1;
 	} elseif($start_datetime <= $now && $end_datetime >= $now) {
     $event_status = 'nowEvent';
@@ -96,16 +96,19 @@
               <dl>
                 <dt>日程</dt>
                 <dd>
-                  <?php echo esc_html($event_info['start_date']); ?>
-                  (<?php echo date('w', strtotime($event_info['start_date'])) === '0' ? '日' : 
-                    (date('w', strtotime($event_info['start_date'])) === '6' ? '土' : 
-                    ['月','火','水','木','金'][date('w', strtotime($event_info['start_date']))-1]); ?>)
-                  ~
-                  <?php echo esc_html($event_info['end_date']); ?>
-                  (<?php echo date('w', strtotime($event_info['end_date'])) === '0' ? '日' : 
-                    (date('w', strtotime($event_info['end_date'])) === '6' ? '土' : 
-                    ['月','火','水','木','金'][date('w', strtotime($event_info['end_date']))-1]); ?>)
-                  <br><span>※毎日開催。水曜日は定休日のため予約不可。</span>
+                  <?php if ($event_info['is_always']): ?>
+                    常時開催 ※水曜定休
+                  <?php else: ?>
+                    <?php echo esc_html($event_info['start_date']); ?>
+                    (<?php echo date('w', strtotime($event_info['start_date'])) === '0' ? '日' : 
+                      (date('w', strtotime($event_info['start_date'])) === '6' ? '土' : 
+                      ['月','火','水','木','金'][date('w', strtotime($event_info['start_date']))-1]); ?>)
+                    ~
+                    <?php echo esc_html($event_info['end_date']); ?>
+                    (<?php echo date('w', strtotime($event_info['end_date'])) === '0' ? '日' : 
+                      (date('w', strtotime($event_info['end_date'])) === '6' ? '土' : 
+                      ['月','火','水','木','金'][date('w', strtotime($event_info['end_date']))-1]); ?>)
+                  <?php endif; ?>
                 </dd>
               </dl>
               <dl>
