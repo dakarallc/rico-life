@@ -48,6 +48,7 @@
           
           $event_info = [
             'pic' => get_field('event-pic'),
+            'is_always' => get_field('is_always'),
             'start_date' => get_field('event_start_date'),
             'end_date' => get_field('event_end_date'),
             'start_time' => get_field('event_start_time'),
@@ -59,7 +60,12 @@
           $start_datetime = new DateTime($event_info['start_date'] . ' ' . $event_info['start_time'], new DateTimeZone('Asia/Tokyo'));
           $end_datetime = new DateTime($event_info['end_date'] . ' ' . $event_info['end_time'], new DateTimeZone('Asia/Tokyo'));
 
-          if ($start_datetime <= $now && $end_datetime >= $now) {
+          if ($event_info['is_always']) {
+            $event_status = 'nowEvent';
+            $status_class = '_now';
+            $status_text = '常時開催中';
+            $sort_priority = 1;
+          } elseif ($start_datetime <= $now && $end_datetime >= $now) {
             $event_status = 'nowEvent';
             $status_class = '_now';
             $interval = $now->diff($end_datetime);
