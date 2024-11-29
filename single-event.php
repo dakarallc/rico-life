@@ -152,14 +152,14 @@
             
             if ($madoriImg1) : ?>
               <div class="madori__inner--img">
-								1階
+								<p>1階</p>
                 <img data-js-ofi src="<?php echo esc_url($madoriImg1); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
               </div>
             <?php endif;
             
             if ($madoriImg2) : ?>
               <div class="madori__inner--img">
-								2階
+								<p>2階</p>
                 <img data-js-ofi src="<?php echo esc_url($madoriImg2); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
               </div>
             <?php endif; ?>
