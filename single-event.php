@@ -146,18 +146,20 @@
         <section class="madori">
           <div class="madori__inner">
             <?php 
-            $madoriImg1 = get_field('madori_img1');
-            $madoriImg2 = get_field('madori_img2');
+            $madoriImg1 = get_field('madori1');
+            $madoriImg2 = get_field('madori2');
             $comment = get_field('comment');
             
             if ($madoriImg1) : ?>
               <div class="madori__inner--img">
+								1階
                 <img data-js-ofi src="<?php echo esc_url($madoriImg1); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
               </div>
             <?php endif;
             
             if ($madoriImg2) : ?>
               <div class="madori__inner--img">
+								2階
                 <img data-js-ofi src="<?php echo esc_url($madoriImg2); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
               </div>
             <?php endif; ?>
