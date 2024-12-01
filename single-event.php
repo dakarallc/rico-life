@@ -171,6 +171,8 @@
 
         <div class="event-message">
           <div>
+						<h2 class="point">Point</h2>
+
             <?php
             $point1_title = get_field('point1_title');
             $point1Img = get_field('point1_img');
@@ -182,44 +184,38 @@
             $point3_title = get_field('point3_title');
             $point3_text = get_field('point3_text');
             
-            if ($point1_title) : ?>
-              <h2 class="point">Point</h2>
-              <h3 class="point">1,<?php echo esc_html($point1_title); ?></h3>
-            <?php endif;
             
+            if ($point1_title) : ?>
+							<h3 class="point">1,<?php echo esc_html($point1_title); ?></h3>
+						<?php endif;
             if ($point1Img) : ?>
               <img data-js-ofi src="<?php echo esc_url($point1Img); ?>" alt="Point 1 Image">
-							<span>※写真はイメージです</span>
+							<span class="annotation">※写真はイメージです</span>
             <?php endif;
-            
             if ($point1_text) : ?>
-              <p><?php echo esc_html($point1_text); ?></p>
+              <p class="event-message-text"><?php echo esc_html($point1_text); ?></p>
             <?php endif;
             
-            if ($point2_img) : ?>
-              <img data-js-ofi src="<?php echo esc_url($point2_img); ?>">
-							<span>※写真はイメージです</span>
-            <?php endif;
-            
-            if ($point2_title) : ?>
+						if ($point2_title) : ?>
               <h3 class="point">2,<?php echo esc_html($point2_title); ?></h3>
             <?php endif;
-            
+            if ($point2_img) : ?>
+              <img data-js-ofi src="<?php echo esc_url($point2_img); ?>">
+							<span class="annotation">※写真はイメージです</span>
+            <?php endif;
             if ($point2_text) : ?>
-              <p><?php echo esc_html($point2_text); ?></p>
+              <p class="event-message-text"><?php echo esc_html($point2_text); ?></p>
             <?php endif;
 
+						if ($point3_title) : ?>
+							<h3 class="point">3,<?php echo esc_html($point3_title); ?></h3>
+						<?php endif;
             if ($point3_img) : ?>
               <img data-js-ofi src="<?php echo esc_url($point3_img); ?>">
-							<span>※写真はイメージです</span>
+							<span class="annotation">※写真はイメージです</span>
             <?php endif;
-            
-            if ($point3_title) : ?>
-              <h3 class="point">3,<?php echo esc_html($point3_title); ?></h3>
-            <?php endif;
-            
             if ($point3_text) : ?>
-              <p><?php echo esc_html($point3_text); ?></p>
+              <p class="event-message-text"><?php echo esc_html($point3_text); ?></p>
             <?php endif;
             
             the_content();

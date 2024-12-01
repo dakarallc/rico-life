@@ -10114,6 +10114,12 @@ event
 .event-message h3 {
   margin-top: 20px;
 }
+.event-message .annotation {
+  font-size: 1rem;
+}
+.event-message-text {
+  margin: 0 !important;
+}
 
 /* ==========================================================================
 plan
