@@ -178,14 +178,18 @@
             $point2_img = get_field('point2_img');
             $point2_title = get_field('point2_title');
             $point2_text = get_field('point2_text');
+            $point3_img = get_field('point3_img');
+            $point3_title = get_field('point3_title');
+            $point3_text = get_field('point3_text');
             
             if ($point1_title) : ?>
               <h2 class="point">Point</h2>
-              <h3 class="point"><?php echo esc_html($point1_title); ?></h3>
+              <h3 class="point">1,<?php echo esc_html($point1_title); ?></h3>
             <?php endif;
             
             if ($point1Img) : ?>
               <img data-js-ofi src="<?php echo esc_url($point1Img); ?>" alt="Point 1 Image">
+							<span>※写真はイメージです</span>
             <?php endif;
             
             if ($point1_text) : ?>
@@ -194,14 +198,28 @@
             
             if ($point2_img) : ?>
               <img data-js-ofi src="<?php echo esc_url($point2_img); ?>">
+							<span>※写真はイメージです</span>
             <?php endif;
             
             if ($point2_title) : ?>
-              <h3 class="point"><?php echo esc_html($point2_title); ?></h3>
+              <h3 class="point">2,<?php echo esc_html($point2_title); ?></h3>
             <?php endif;
             
             if ($point2_text) : ?>
               <p><?php echo esc_html($point2_text); ?></p>
+            <?php endif;
+
+            if ($point3_img) : ?>
+              <img data-js-ofi src="<?php echo esc_url($point3_img); ?>">
+							<span>※写真はイメージです</span>
+            <?php endif;
+            
+            if ($point3_title) : ?>
+              <h3 class="point">3,<?php echo esc_html($point3_title); ?></h3>
+            <?php endif;
+            
+            if ($point3_text) : ?>
+              <p><?php echo esc_html($point3_text); ?></p>
             <?php endif;
             
             the_content();
