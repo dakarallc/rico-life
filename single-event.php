@@ -107,7 +107,7 @@
                     <?php echo esc_html($event_info['end_date']); ?>
                     (<?php echo date('w', strtotime($event_info['end_date'])) === '0' ? '日' : 
                       (date('w', strtotime($event_info['end_date'])) === '6' ? '土' : 
-                      ['月','火','水','木','金'][date('w', strtotime($event_info['end_date']))-1]); ?>)
+                      ['月','火','水','木','金'][date('w', strtotime($event_info['end_date']))-1]); ?>)<br>※水曜定休
                   <?php endif; ?>
                 </dd>
               </dl>
