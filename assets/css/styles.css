@@ -10079,6 +10079,10 @@ event
     max-width: 300px;
   }
 }
+.point-title{
+	font-size: 4rem !important;
+	font-weight: bold;
+}
 .event-message .blue {
   color: #1138A3 !important;
   font-size: 2.5rem;

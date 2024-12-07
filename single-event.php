@@ -171,7 +171,7 @@
 
         <div class="event-message">
           <div>
-						<h2 class="point">Point</h2>
+						<h2 class="point-title">このイベントのPoint!</h2>
 
             <?php
             $point1_title = get_field('point1_title');
@@ -186,33 +186,33 @@
             
             
             if ($point1_title) : ?>
-							<h3 class="point">1,<?php echo esc_html($point1_title); ?></h3>
+							<h3 class="point orange marugo">1,<?php echo esc_html($point1_title); ?></h3>
 						<?php endif;
             if ($point1Img) : ?>
               <img data-js-ofi src="<?php echo esc_url($point1Img); ?>" alt="Point 1 Image">
-							<span class="annotation">※写真はイメージです</span>
+							<p class="annotation">※写真はイメージです</p>
             <?php endif;
             if ($point1_text) : ?>
               <p class="event-message-text"><?php echo esc_html($point1_text); ?></p>
             <?php endif;
             
 						if ($point2_title) : ?>
-              <h3 class="point">2,<?php echo esc_html($point2_title); ?></h3>
+              <h3 class="point orange marugo">2,<?php echo esc_html($point2_title); ?></h3>
             <?php endif;
             if ($point2_img) : ?>
               <img data-js-ofi src="<?php echo esc_url($point2_img); ?>">
-							<span class="annotation">※写真はイメージです</span>
+							<p class="annotation">※写真はイメージです</p>
             <?php endif;
             if ($point2_text) : ?>
               <p class="event-message-text"><?php echo esc_html($point2_text); ?></p>
             <?php endif;
 
 						if ($point3_title) : ?>
-							<h3 class="point">3,<?php echo esc_html($point3_title); ?></h3>
+							<h3 class="point orange marugo">3,<?php echo esc_html($point3_title); ?></h3>
 						<?php endif;
             if ($point3_img) : ?>
               <img data-js-ofi src="<?php echo esc_url($point3_img); ?>">
-							<span class="annotation">※写真はイメージです</span>
+							<p class="annotation">※写真はイメージです</p>
             <?php endif;
             if ($point3_text) : ?>
               <p class="event-message-text"><?php echo esc_html($point3_text); ?></p>
