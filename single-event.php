@@ -222,7 +222,7 @@
             ?>
 
             <div class="event-highlights">
-              <h3 class="marugo orange">実例見学会開催中！！</h3>
+              <!-- <h3 class="marugo orange">実例見学会開催中！！</h3>
               <p>
                 大きすぎる家はいらない。<br>
                 各家族に合った無駄のない間取り。<br>
@@ -262,7 +262,7 @@
                 蓄電池、太陽光発電！<br>
                 ◎火の手から守る省令準耐火性能！<br>
                 ◎夏も冬も部屋を守るZEH基準の断熱性能！
-              </p>
+              </p> -->
 
               <h3 class="yellow marugo">💫⭐️ご来場特典⭐️💫</h3>
               <p>
