@@ -134,5 +134,12 @@ jQuery(function () {
   if ($ofi.length) {
     objectFitImages($ofi.selector);
   };
-	
+
+	//水曜定休のため予約フォームの水曜日を選択不可にする関数
+	jQuery(function($){ 
+		$(".hasDatepicker").datepicker("option","beforeShowDay",function(date){
+			var ret = [(date.getDay() != 3)]; 
+			return ret; 
+		});
+	});
 });
