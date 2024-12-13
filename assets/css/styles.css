@@ -3726,6 +3726,10 @@ point3
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 @media (max-width: 999px) {
   .parts {
@@ -3745,6 +3749,7 @@ point3
   }
 }
 .parts .box .bgImage {
+  height: 160px;
   left: 0;
   position: absolute;
   top: 0;
@@ -10078,10 +10083,6 @@ event
   .event-message {
     max-width: 300px;
   }
-}
-.point-title{
-	font-size: 4rem !important;
-	font-weight: bold;
 }
 .event-message .blue {
   color: #1138A3 !important;

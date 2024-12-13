@@ -481,6 +481,7 @@ point3
 	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	@media (max-width: 999px) {
 		display: block;
 		max-width: 300px;
@@ -500,7 +501,7 @@ point3
 			position: absolute;
 			left: 0;
 			top: 0;
-			
+			height: 160px;
 		}
 	}
 }
