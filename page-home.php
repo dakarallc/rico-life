@@ -49,7 +49,7 @@ EVENT
       $end_datetime = new DateTime($event_info['end_date'] . ' ' . $event_info['end_time'], new DateTimeZone('Asia/Tokyo'));
 
       // 開催中のイベントのみ表示
-      if ($start_datetime <= $now && $end_datetime >= $now) {
+      if (($start_datetime <= $now && $end_datetime >= $now) || $event_info['is_always']) {
         $events[] = array(
           'post' => $post,
           'event_info' => $event_info
