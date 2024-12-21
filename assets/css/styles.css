@@ -10081,7 +10081,7 @@ event
 }
 @media (max-width: 999px) {
   .event-message {
-    max-width: 300px;
+    max-width: 320px;
   }
 }
 .event-message .blue {
