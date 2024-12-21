@@ -220,89 +220,6 @@
             
             the_content();
             ?>
-
-            <div class="event-highlights">
-              <!-- <h3 class="marugo orange">実例見学会開催中！！</h3>
-              <p>
-                大きすぎる家はいらない。<br>
-                各家族に合った無駄のない間取り。<br>
-                コンパクトの中に<br>
-                自分たちだけの特別な思いを。
-              </p>
-
-              <hr>
-
-              <p>
-                家賃＋光熱費をアパートより安く<br>
-                することができます！！<br>
-                安く快適に暮らし、老後までの<br>
-                ローン破綻防止をご提案できます！<br>
-                <br>
-                ほんとにそんな安くなるの？<br>
-                <br>
-                「いえとち」だからできる<br>
-                ローコスト高性能住宅の秘密は見学会で！
-              </p>
-
-              <hr>
-
-              <p>
-                新商品の<br>
-                <span class="blue">テスラ蓄電池</span>と<span class="red">N型太陽光パネル</span><br>
-                で電気もガスもエネルギー代を<br>
-                <span class="orange">ほとんど払わない家</span>をご提案できます！
-              </p>
-
-              <hr>
-
-              <h3 class="blue marugo">✨⭐️標準搭載⭐️✨</h3>
-              <p>
-                ◎安心の耐震等級"3相当"の住宅！<br>
-                ◎エネルギーをほとんど払わない<br>
-                蓄電池、太陽光発電！<br>
-                ◎火の手から守る省令準耐火性能！<br>
-                ◎夏も冬も部屋を守るZEH基準の断熱性能！
-              </p> -->
-
-              <h3 class="yellow marugo">💫⭐️ご来場特典⭐️💫</h3>
-              <p>
-                <span class="orange marugo">HP予約からでJCB券</span><br>
-                <span class="orange marugo">最大7,000円分</span>プレゼント！！
-              </p>
-
-              <div class="cashBack">
-                <div class="bgRed">【カクダイホームの70周年特別企画】</div>
-                <p>
-                  下記条件で<br class="show--sp"最大7,000円分キャンペーン<br>
-                  ①当HP予約からのご来場<br>
-                  <span class="orange marugo">2,000円分</span><br>
-                  ②ご来場アンケート記入<br>
-                  <span class="orange marugo">2,000円分</span><br>
-                  ③Google口コミ記入<br>
-                  <span class="orange marugo">3,000円分</span>
-                </p>
-
-                <p>
-                  <strong>【対象者条件】</strong><br>
-                  下記に該当するお客様1組様につき<br class="show--pc">1回の進呈とさせていただきます。
-                  <br>
-                  １）マイホームをご検討中の方。<br>
-                  ２）はじめて、いえとち本舗 久喜店のイベントに参加された方。
-                </p>
-
-                <p class="note">
-                  ※ご来場プレゼントは1回限りとなります。<br>
-                  ※その他、不正行為と弊社がみなした場合、プレゼント提供をお断りする場合がございます。<br>
-                  ※プレゼントの進呈数は限りがあり、なくなり次第終了となります。
-                </p>
-
-                <p>
-                  現場見学会<br class="show--sp">ローン相談<br class="show--sp">土地探し<br class="show--sp">プラン相談<br>
-                  どんなご相談でも<br class="show--sp">来場特典プレゼント！！<br>
-                  詳しくはこちらより、来場予約お待ちしております。
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -460,6 +377,50 @@
         </div>
       </section>
     </div>
+
+		<div class="event-message">
+			<div class="event-highlights">
+				<h3 class="yellow marugo">💫⭐️ご来場特典⭐️💫</h3>
+				<p>
+					<span class="orange marugo">HP予約からでJCB券</span><br>
+					<span class="orange marugo">最大7,000円分</span>プレゼント！！
+				</p>
+
+				<div class="cashBack">
+					<div class="bgRed">【カクダイホームの70周年特別企画】</div>
+					<p>
+						下記条件で<br class="show--sp"最大7,000円分キャンペーン<br>
+						①当HP予約からのご来場<br>
+						<span class="orange marugo">2,000円分</span><br>
+						②ご来場アンケート記入<br>
+						<span class="orange marugo">2,000円分</span><br>
+						③Google口コミ記入<br>
+						<span class="orange marugo">3,000円分</span>
+					</p>
+
+					<p>
+						<strong>【対象者条件】</strong><br>
+						下記に該当するお客様1組様につき<br class="show--pc">1回の進呈とさせていただきます。
+						<br>
+						１）マイホームをご検討中の方。<br>
+						２）はじめて、いえとち本舗 久喜店のイベントに参加された方。
+					</p>
+
+					<p class="note">
+						※ご来場プレゼントは1回限りとなります。<br>
+						※その他、不正行為と弊社がみなした場合、プレゼント提供をお断りする場合がございます。<br>
+						※プレゼントの進呈数は限りがあり、なくなり次第終了となります。
+					</p>
+
+					<p>
+						現場見学会<br class="show--sp">ローン相談<br class="show--sp">土地探し<br class="show--sp">プラン相談<br>
+						どんなご相談でも<br class="show--sp">来場特典プレゼント！！<br>
+						詳しくはこちらより、来場予約お待ちしております。
+					</p>
+				</div>
+			</div>
+		</div>
+
       <!-- フォーム -->
       <div class="contact wow fadeInUp" id="contactForm">
         <div class="inner contact__inner">
