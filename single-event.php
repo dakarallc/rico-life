@@ -309,7 +309,7 @@
             <p class="number">01 <span>平屋住宅</span></p>
             <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/plan1.png" alt="平屋住宅" class="eventPlanImg">
             <div class="subTtlWrap">
-              <h3 class="eventPlan__subTtl">1,398<span>万円〜</span></h3>
+              <h3 class="eventPlan__subTtl">1,198<span>万円〜</span></h3>
             </div>
           </div>
 
@@ -317,7 +317,7 @@
             <p class="number">02 <span>コンセプト平屋</span></p>
             <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/plan2.png" alt="コンセプト平屋" class="eventPlanImg">
             <div class="subTtlWrap">
-              <h3 class="eventPlan__subTtl">1,648<span>万円〜</span></h3>
+              <h3 class="eventPlan__subTtl">1,748<span>万円〜</span></h3>
             </div>
           </div>
 
@@ -325,7 +325,7 @@
             <p class="number">03 <span>2階建て</span></p>
             <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/plan3.png" alt="2階建て" class="eventPlanImg">
             <div class="subTtlWrap">
-              <h3 class="eventPlan__subTtl">1,398<span>万円〜</span></h3>
+              <h3 class="eventPlan__subTtl">1,498<span>万円〜</span></h3>
             </div>
           </div>
 
@@ -333,7 +333,7 @@
             <p class="number">04 <span>大型(40坪以上)２階建て</span></p>
             <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/plan4.png" alt="大型2階建て" class="eventPlanImg">
             <div class="subTtlWrap">
-              <h3 class="eventPlan__subTtl">1,748<span>万円〜</span></h3>
+              <h3 class="eventPlan__subTtl">1,848<span>万円〜</span></h3>
             </div>
           </div>
         </div>
