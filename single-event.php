@@ -176,11 +176,14 @@
             <?php
             $point1_title = get_field('point1_title');
             $point1Img = get_field('point1_img');
+            $should_show_point1_img_annotation = get_field('should_show_point1_img_annotation');
             $point1_text = get_field('point1_text');
             $point2_img = get_field('point2_img');
+						$should_show_point2_img_annotation = get_field('should_show_point2_img_annotation');
             $point2_title = get_field('point2_title');
             $point2_text = get_field('point2_text');
             $point3_img = get_field('point3_img');
+						$should_show_point3_img_annotation = get_field('should_show_point3_img_annotation');
             $point3_title = get_field('point3_title');
             $point3_text = get_field('point3_text');
             
@@ -190,7 +193,9 @@
 						<?php endif;
             if ($point1Img) : ?>
               <img data-js-ofi src="<?php echo esc_url($point1Img); ?>" alt="Point 1 Image">
+							<?php if ($should_show_point1_img_annotation): ?>
 							<p class="annotation">※写真はイメージです</p>
+							<?php endif; ?>
             <?php endif;
             if ($point1_text) : ?>
               <p class="event-message-text"><?php echo esc_html($point1_text); ?></p>
@@ -201,7 +206,10 @@
             <?php endif;
             if ($point2_img) : ?>
               <img data-js-ofi src="<?php echo esc_url($point2_img); ?>">
+							<?php if ($should_show_point2_img_annotation): ?>
 							<p class="annotation">※写真はイメージです</p>
+							<?php endif; ?>
+							
             <?php endif;
             if ($point2_text) : ?>
               <p class="event-message-text"><?php echo esc_html($point2_text); ?></p>
@@ -212,7 +220,9 @@
 						<?php endif;
             if ($point3_img) : ?>
               <img data-js-ofi src="<?php echo esc_url($point3_img); ?>">
+							<?php if ($should_show_point3_img_annotation): ?>
 							<p class="annotation">※写真はイメージです</p>
+							<?php endif; ?>
             <?php endif;
             if ($point3_text) : ?>
               <p class="event-message-text"><?php echo esc_html($point3_text); ?></p>
