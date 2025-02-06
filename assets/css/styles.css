@@ -10121,6 +10121,7 @@ event
 }
 .event-message .annotation {
   font-size: 1rem;
+  margin-top: 0;
 }
 .event-message-text {
   margin: 0 !important;
