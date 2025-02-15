@@ -25,7 +25,7 @@ contact
 ================================================================================================ -->
   <div class="contact wow fadeInUp">
     <div class="inner contact__inner">
-			<h2 class="contact__ttl">来場予約フォーム</h2>
+			<h2 class="contact__ttl">予約フォーム</h2>
 			
 			<div class="jcbBanner">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/jcb7000.png" alt="JCB 7000円分">
