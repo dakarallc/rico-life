@@ -415,7 +415,6 @@ high-quality
 
 			<div class="high-quality__inner--content">
 				<p>住宅はご家族の大切な生活の基盤です。家族が「安心・快適・安全」に暮らす為に、価格は抑えつつも、品質はそのままの住まいづくりを基本として考えています。</p>
-				<img class="uk-visible@s" src="<?php echo do_shortcode('[theme_url]'); ?>/images/high-quality.png" alt="高品質な家の仕様">
 				<img class="uk-hidden@s" src="<?php echo do_shortcode('[theme_url]'); ?>/images/high-quality-sp.png" alt="高品質な家の仕様">
 			</div>
 		</div>
