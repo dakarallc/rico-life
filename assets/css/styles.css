@@ -3019,6 +3019,10 @@ contact
   background: url(../img/case/bg.jpg) no-repeat top left/cover;
 }
 
+.plan-page .pageHead {
+  background: url(../img/case/bg.jpg) no-repeat top left/cover;
+}
+
 .event-page .pageHead {
   background: url(../img/news/bg.jpg) no-repeat top left/cover;
 }
@@ -6663,24 +6667,17 @@ event
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.4rem;
-  gap: 10px;
-  margin-bottom: 4px;
+  font-size: 1.6rem;
 }
-@media (max-width: 999px) {
-  .caseList dl {
-    font-size: 1.2rem;
-  }
+.caseList .small {
+  font-size: 1rem !important;
+}
+.caseList .cardTable {
+  font-size: 1.6rem;
 }
 .caseList dt {
   font-weight: bold;
   width: 70px;
-}
-.caseList dd {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
 }
 .caseList__ttl {
   font-size: 4rem;
@@ -6759,6 +6756,7 @@ event
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  gap: 4px;
   margin-bottom: 10px;
 }
 .caseList__cat {
@@ -6767,7 +6765,7 @@ event
   -ms-flex-align: center;
   align-items: center;
   background: #D90200;
-  border-radius: 6px;
+  border-radius: 4px;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6776,19 +6774,26 @@ event
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   justify-content: center;
-  margin-left: 5px;
   padding: 2px 10px;
 }
 .caseList__cat._primary, .caseList__cat._secondary {
   font-size: 0.9rem;
 }
 .caseList__subTtl {
+  font-size: 2.2rem !important;
+  font-weight: bold;
   line-height: 1;
-  margin-bottom: 10px;
+  line-height: 2.5rem;
+  margin-bottom: 6px;
   padding-left: 10px;
   position: relative;
+}
+@media (max-width: 999px) {
+  .caseList__subTtl {
+    font-size: 2rem !important;
+  }
 }
 .caseList__subTtl:hover {
   list-style: none;
@@ -7006,7 +7011,7 @@ event
 }
 .summary__item dt {
   font-weight: bold;
-  width: 25%;
+  width: 10%;
 }
 @media (max-width: 999px) {
   .summary__item dt {
@@ -7026,6 +7031,88 @@ event
   .summary__item dd {
     width: 100%;
   }
+}
+
+/* ==========================================================================
+  planFilter 絞り込み検索
+  ========================================================================== */
+.planFilter {
+  padding-bottom: 20px;
+}
+.planFilter__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 999px) {
+  .planFilter__group {
+    margin-bottom: 10px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+.planFilter__title {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 60px;
+}
+@media (max-width: 999px) {
+  .planFilter__title {
+    font-size: 1.6rem;
+  }
+}
+.planFilter__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 999px) {
+  .planFilter__list {
+    width: 100%;
+  }
+}
+.planFilter__btn {
+  background: #fff;
+  border: 1px solid #D90200;
+  border-radius: 4px;
+  color: #D90200;
+  cursor: pointer;
+  font-family: "Zen Maru Gothic", sans-serif;
+  padding: 8px 16px;
+  -webkit-transition: all 0.3s;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all 0.3s;
+  width: 200px;
+}
+@media (max-width: 999px) {
+  .planFilter__btn {
+    font-size: 1.6rem;
+    padding: 6px 12px;
+    width: 100%;
+  }
+}
+.planFilter__btn.is-active {
+  background: #D90200;
+  color: #fff;
+}
+.planFilter__btn:hover {
+  opacity: 0.8;
 }
 
 /* ==========================================================================

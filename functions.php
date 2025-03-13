@@ -143,12 +143,101 @@ function custom_post_type() {
       //'supports' => array('title','editor','thumbnail','custom-fields','excerpt','author','trackbacks','comments','revisions','page-attributes')
     )
   );
+
+  register_post_type( 'plan', // カスタム投稿タイプのスラッグの指定
+    array(
+      'labels' => array(
+        'name' => __( 'プラン集' ),
+        'singular_name' => __( 'プラン集' ),
+        'add_new' => _x('新規追加', 'plan'),
+        'add_new_item' => __('新規追加')
+      ),
+      'public' => true,                 // 投稿タイプをパブリックにする
+      'has_archive' => true,            // アーカイブを有効にする
+      'hierarchical' => false,          // ページ階層の指定
+      'menu_position' =>5,              // 管理画面上の配置指定
+      'menu_icon' => 'dashicons-star-filled',  // アイコン
+      'supports' => array('title') // サポート指定
+      // 全てのサポートを使う場合は下記参照
+      //'supports' => array('title','editor','thumbnail','custom-fields','excerpt','author','trackbacks','comments','revisions','page-attributes')
+    )
+  );
 }
+/**
+ * プラン集にタクソノミー追加
+ */
+function add_plan_case_taxonomies() {
+  // シリーズ
+  register_taxonomy(
+    'series',
+    array('plan', 'case'),
+    array(
+      'hierarchical' => true,
+      'label' => 'シリーズ',
+      'singular_label' => 'シリーズ',
+      'public' => true,
+      'show_ui' => true
+    )
+  );
+
+  // 坪数
+  register_taxonomy(
+    'size',
+    array('plan', 'case'),
+    array(
+      'hierarchical' => true,
+      'label' => '坪数',
+      'singular_label' => '坪数',
+      'public' => true,
+      'show_ui' => true
+    )
+  );
+
+  // 予算
+  register_taxonomy(
+    'budget',
+    array('plan', 'case'),
+    array(
+      'hierarchical' => true,
+      'label' => '予算',
+      'singular_label' => '予算',
+      'public' => true,
+      'show_ui' => true
+    )
+  );
+
+  // 間取り
+  register_taxonomy(
+    'layout',
+    array('plan', 'case'),
+    array(
+      'hierarchical' => true,
+      'label' => '間取り',
+      'singular_label' => '間取り', 
+      'public' => true,
+      'show_ui' => true
+    )
+  );
+
+  // 階数
+  register_taxonomy(
+    'floors',
+    array('plan', 'case'),
+    array(
+      'hierarchical' => true,
+      'label' => '階数',
+      'singular_label' => '間取り', 
+      'public' => true,
+      'show_ui' => true
+    )
+  );
+}
+add_action('init', 'add_plan_case_taxonomies');
 
 /**
- * タクソノミー追加
+ * 施工事例にタクソノミー追加
  */
-function add_taxonomy() {
+function add_case_taxonomy() {
   register_taxonomy(
     'case_category', // タクソノミースラッグ
     'case',          // 使用するカスタム投稿タイプを指定
@@ -161,7 +250,7 @@ function add_taxonomy() {
     )
   );
 }
-add_action( 'init', 'add_taxonomy' );
+add_action( 'init', 'add_case_taxonomy' );
 
 
 /**
@@ -259,7 +348,7 @@ function add_wp_cron_schedule_auto_paywall($post_id)
   // 予約投稿が公開される際の処理をスキップ
   if (defined('DOING_CRON') && DOING_CRON) return;
 
-   //記事の種類が投稿ではない　または wpのオートセーブの�����
+   //記事の種類が投稿ではない　または wpのオートセーブの
   if (get_post_type($post_id) !== 'post'  || defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
 
   if (!isset($_POST['auto_paywall'])) {
@@ -408,3 +497,23 @@ function register_event_post_type() {
     register_taxonomy('event-category', array('event'), $category_args);
 }
 add_action('init', 'register_event_post_type');
+
+/**
+ * プランのフィルタリング機能用のJavaScriptを読み込む
+ * 
+ * プラン一覧ページ（archive-plan）でのみ、
+ * plan-filter.jsを読み込んでフィルタリング機能を有効にする
+ */
+function enqueue_plan_filter_script() {
+  // プラン一覧ページの場合のみ実行
+  if (is_post_type_archive('plan')) {
+    // plan-filter.jsを読み込む
+    // 第1引数: スクリプトのハンドル名
+    // 第2引数: スクリプトのパス
+    // 第3引数: 依存するスクリプト（なし）
+    // 第4引数: バージョン番号
+    // 第5引数: フッターで読み込むかどうか（true=フッターで読み込む）
+    wp_enqueue_script('plan-filter', get_template_directory_uri() . '/assets/js/plan-filter.js', array(), '1.0', true);
+  }
+}
+add_action('wp_enqueue_scripts', 'enqueue_plan_filter_script');
