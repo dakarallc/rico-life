@@ -56,16 +56,15 @@ caseList
             <div class="caseList__body">
               <ul class="caseList__cats">
                 <?php if(!empty($cat)):?>
-                <li class="caseList__cat _primary"><?php echo $cat; ?></li><!-- /caseList__cat -->
+                <li class="caseList__cat"><?php echo $cat; ?></li><!-- /caseList__cat -->
                 <?php endif; ?>
                 <?php if($hot === "2"): ?>
-                  <li class="caseList__cat _secondary">Pick up</li><!-- /caseList__cat -->
+                  <li class="caseList__cat">Pick up</li><!-- /caseList__cat -->
                 <?php endif; ?>
               </ul><!-- /caseList__cats -->
 
               <h2 class="caseList__subTtl">
-                <span class="_upper"><?php echo $industry; ?></span><!-- /_upper -->
-                <span class="_below"><?php $name ? print $name  : print '&nbsp;'; ?></span><!-- /_below -->
+                <?php $name ? print $name  : print '&nbsp;'; ?>
               </h2><!-- /caseList__subTtl -->
 							
 							<div class="">
