@@ -57,17 +57,34 @@ function custom_url_handler($tag)
 function my_script_init() {
   $theme_url = get_template_directory_uri();
 
+  // 共通のスクリプトとスタイル
   wp_enqueue_style('animate', $theme_url . '/assets/css/vendor/animate.css', array(), '1.0.21', 'all');
   wp_enqueue_style('styles', $theme_url . '/assets/css/styles.css', array(), '1.0.28', 'all');
+  
+  // jQuery UI の読み込み
+  wp_enqueue_script('jquery-ui-core');
+  wp_enqueue_script('jquery-ui-datepicker');
+  wp_enqueue_style('jquery-ui-style', '//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css');
+  
   wp_enqueue_script('ofi', $theme_url . '/assets/js/vendor/ofi.min.js', array('jquery'), '1.0.0', true);
   wp_enqueue_script('wow', $theme_url . '/assets/js/vendor/wow.min.js', array('jquery'), '1.0.0', true);
-  wp_enqueue_script('cmn', $theme_url . '/assets/js/common.js', array('jquery'), '1.0.4', true);
+  wp_enqueue_script('cmn', $theme_url . '/assets/js/common.js', array('jquery', 'jquery-ui-datepicker'), '1.0.4', true);
 
-
+  // ホーム、フロントページ、ba-300ページ用のスクリプト
   if(is_home() || is_front_page() || is_page('ba-300')) {
-      wp_enqueue_style('scroll-hint', $theme_url . '/assets/css/vendor/scroll-hint.css', array(), '1.0.21', 'all');
-      wp_enqueue_script('scroll-hint', $theme_url . '/assets/js/vendor/scroll-hint.min.js', array('jquery'), '1.0.0', true);
-      wp_enqueue_script('scrollable', $theme_url . '/assets/js/scrollable.js', array('jquery'), '1.0.4', true);
+    wp_enqueue_style('scroll-hint', $theme_url . '/assets/css/vendor/scroll-hint.css', array(), '1.0.21', 'all');
+    wp_enqueue_script('scroll-hint', $theme_url . '/assets/js/vendor/scroll-hint.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('scrollable', $theme_url . '/assets/js/scrollable.js', array('jquery'), '1.0.4', true);
+  }
+
+  // プラン一覧ページ用のスクリプト
+  if (is_post_type_archive('plan')) {
+    wp_enqueue_script('plan-filter', $theme_url . '/assets/js/plan-filter.js', array(), '1.0', true);
+  }
+
+  // プラン詳細ページ用のスクリプト
+  if (is_singular('plan')) {
+    wp_enqueue_script('modal-script', $theme_url . '/assets/js/modal.js', array(), '1.0', true);
   }
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
@@ -497,23 +514,3 @@ function register_event_post_type() {
     register_taxonomy('event-category', array('event'), $category_args);
 }
 add_action('init', 'register_event_post_type');
-
-/**
- * プランのフィルタリング機能用のJavaScriptを読み込む
- * 
- * プラン一覧ページ（archive-plan）でのみ、
- * plan-filter.jsを読み込んでフィルタリング機能を有効にする
- */
-function enqueue_plan_filter_script() {
-  // プラン一覧ページの場合のみ実行
-  if (is_post_type_archive('plan')) {
-    // plan-filter.jsを読み込む
-    // 第1引数: スクリプトのハンドル名
-    // 第2引数: スクリプトのパス
-    // 第3引数: 依存するスクリプト（なし）
-    // 第4引数: バージョン番号
-    // 第5引数: フッターで読み込むかどうか（true=フッターで読み込む）
-    wp_enqueue_script('plan-filter', get_template_directory_uri() . '/assets/js/plan-filter.js', array(), '1.0', true);
-  }
-}
-add_action('wp_enqueue_scripts', 'enqueue_plan_filter_script');

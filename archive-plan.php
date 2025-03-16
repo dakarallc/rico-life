@@ -6,7 +6,7 @@
     <div class="pageHead__contents">
       <h1 class="pageHead__ttl">
         <span class="_upper">プラン集</span><!-- /_upper -->
-        <span class="_below">PLAN</span><!-- /_below -->
+        <span class="_below">PLANS</span><!-- /_below -->
       </h1><!-- /pageHead__ttl -->
     </div><!-- /pageHead__contents -->
   </div><!-- /pageHead -->
@@ -51,8 +51,8 @@
     </div>
   </section>
 
-  <section class="caseList">
-    <div class="inner caseList__inner">
+  <section class="planList">
+    <div class="inner planList__inner">
       <?php
           $perPage = 9;
           $paged = get_query_var('paged');
@@ -78,19 +78,20 @@
 
 
           if ($my_query->have_posts()) : ?>
-      <ul class="caseList__list">
+      <ul class="planList__list">
       <?php while ($my_query->have_posts()) : $my_query->the_post();
       $copywriting = get_field('copywriting'); //キャッチコピー
       $thumbnail = get_field('thumbnail');//画像
       $thumbnail_url = wp_get_attachment_image_src($thumbnail, 'large')[0];
       $record_low_price = get_field('record-low-price'); //最安値
+			$rand_area2 = get_field('rand-area2'); //坪数
+
+      // カテゴリー取得
+      // 間取り
       $madori = get_the_terms($post->ID, 'layout'); //間取り
       if($madori) {
         $madori_name = $madori[0]->name; //間取りの名前を取得
       }
-			$rand_area2 = get_field('rand-area2'); //坪数
-
-      // カテゴリー取得
       // シリーズ
       $series = get_the_terms($post->ID, 'series');
       if($series) {
@@ -119,17 +120,17 @@
 
 	
       ?>
-        <li class="caseList__item wow fadeInUp">
+        <li class="planList__item wow fadeInUp">
           <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-            <div class="caseList__img"><img data-js-ofi src="<?php echo $thumbnail_url; ?>" alt="<?php $copywriting ? print $copywriting  : print '&nbsp;'; ?>"></div>
-            <div class="caseList__body">
-              <ul class="caseList__cats">
+            <div class="planList__img"><img data-js-ofi src="<?php echo $thumbnail_url; ?>" alt="<?php $copywriting ? print $copywriting  : print '&nbsp;'; ?>"></div>
+            <div class="planList__body">
+              <ul class="planList__cats">
                 <?php if(!empty($floor)):?>
-                <li class="caseList__cat"><?php echo $floor_name; ?></li>
+                <li class="planList__cat"><?php echo $floor_name; ?></li>
                 <?php endif; ?>
               </ul>
 
-              <h2 class="caseList__subTtl">
+              <h2 class="planList__subTtl">
                 <?php $copywriting ? print $copywriting  : print '&nbsp;'; ?>
               </h2>
 							
@@ -144,15 +145,15 @@
 								</dl>
 								<dl>
 									<dt>値段</dt>
-									<dd><?php echo $record_low_price; ?><span class="small">(税抜き)</span>〜</dd>
+									<dd><?php echo $record_low_price; ?><span class="small">万円(税抜き)</span>〜</dd>
 								</dl>
 							</div><!-- /planItem__list -->
-              <!-- /caseList__desc -->
-            </div><!-- /caseList__body -->
+              <!-- /planList__desc -->
+            </div><!-- /planList__body -->
           </a>
-        </li><!-- /caseList__item -->
+        </li><!-- /planList__item -->
         <?php endwhile; ?>
-      </ul><!-- /caseList__list -->
+      </ul><!-- /planList__list -->
       <?php else: ?>
           <p>該当のプランはございません。</p>
           <?php endif; ?>
@@ -182,16 +183,16 @@ pagination
           ?>
 
 
-<!--       <div class="caseList__box wow fadeInUp"> -->
-<!--         <h2 class="caseList__boxTtl caseList__ttl">ベルエールをご利用の法人様</h2><!-- /caseList__boxTtl --> 
-<!--         <ul class="caseList__logos"> -->
-<!--           <li class="caseList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/handred-logo.svg" alt=""></a></li><!-- /caseList__logo --> 
-<!--           <li class="caseList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /caseList__logo --> 
-<!--           <li class="caseList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /caseList__logo --> 
-<!--         </ul>/caseList__logos -->
-<!--       </div>/caseList__box -->
-    </div><!-- /inner caseList__inner -->
-  </section><!-- /caseList -->
+<!--       <div class="planList__box wow fadeInUp"> -->
+<!--         <h2 class="planList__boxTtl planList__ttl">ベルエールをご利用の法人様</h2><!-- /planList__boxTtl --> 
+<!--         <ul class="planList__logos"> -->
+<!--           <li class="planList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/handred-logo.svg" alt=""></a></li><!-- /planList__logo --> 
+<!--           <li class="planList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /planList__logo --> 
+<!--           <li class="planList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /planList__logo --> 
+<!--         </ul>/planList__logos -->
+<!--       </div>/planList__box -->
+    </div><!-- /inner planList__inner -->
+  </section><!-- /planList -->
 </div><!-- /page  -->
 
 <?php get_footer(); ?>

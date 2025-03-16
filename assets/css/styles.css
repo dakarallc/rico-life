@@ -7116,6 +7116,875 @@ event
 }
 
 /* ==========================================================================
+  planItem
+  プラン詳細ページのスタイル
+  ========================================================================== */
+.planItem {
+  height: auto;
+  padding-bottom: 199px;
+  /* セクションタイトル */
+  /* メインタイトル（キャッチコピー） */
+  /* プラン名 */
+  /* サブタイトル（間取り図のタイトルなど） */
+  /* メインビジュアル部分 */
+  /* メインビジュアル画像 */
+  /* メインビジュアル右側コンテンツ */
+  /* カテゴリータグリスト */
+  /* 説明文 */
+  /* 間取り図ボックス */
+  /* 間取り図コンテナ */
+  /* 間取り図説明コンテンツ */
+  /* 間取り図画像 */
+  /* 戻るボタン */
+  /* ポイントリスト */
+  /* テーブル共通スタイル */
+  /* シミュレーションテーブル */
+  /* ローンシミュレーション */
+}
+@media (max-width: 999px) {
+  .planItem {
+    padding-bottom: 80px;
+  }
+}
+.planItem img {
+  border-radius: 6px;
+}
+.planItem .sectionTitle {
+  color: #D90200;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+.planItem .sectionTitle::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  background: #D90200;
+  border-radius: 6px;
+  height: 100%;
+  transform: translateY(-50%);
+  width: 6px;
+}
+.planItem__ttl {
+  color: #D90200;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 3.3rem;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  position: relative;
+}
+@media (max-width: 999px) {
+  .planItem__ttl {
+    font-size: 2.6rem;
+    margin-bottom: 8px;
+  }
+}
+.planItem__txt {
+  font-size: 2rem;
+  margin-bottom: 27px;
+}
+@media (max-width: 999px) {
+  .planItem__txt {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+}
+.planItem__subTtl {
+  color: #D90200;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+}
+@media (max-width: 999px) {
+  .planItem__subTtl {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+}
+.planItem__main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 90px;
+  /* 坪数・価格表示 */
+}
+.planItem__main .cardTable {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 4rem;
+  font-weight: bold;
+  gap: 10px;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+.planItem__main .cardTable .small {
+  font-size: 1.6rem;
+}
+@media (max-width: 999px) {
+  .planItem__main {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+.planItem__img1 {
+  position: relative;
+}
+@media (min-width: 1000px) {
+  .planItem__img1 {
+    margin-right: 1.5%;
+    width: 44%;
+  }
+}
+@media (max-width: 999px) {
+  .planItem__img1 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+.planItem__img1::before {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
+.planItem__img1 img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.planItem__mainContents h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media (min-width: 1000px) {
+  .planItem__mainContents {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+@media (max-width: 999px) {
+  .planItem__mainContents {
+    width: 100%;
+  }
+}
+.planItem__list ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.2em;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.planItem__list ul:not(:last-child) {
+  margin-bottom: 20px;
+}
+.planItem__list ul li {
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #d90200;
+  border-radius: 4px;
+  font-size: 1.4rem !important;
+  padding: 4px 10px;
+}
+@media (max-width: 999px) {
+  .planItem__list ul li {
+    font-size: 1.3rem;
+  }
+}
+.planItem__desc {
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  line-height: 1.9;
+}
+@media (max-width: 999px) {
+  .planItem__desc {
+    margin-bottom: 30px;
+  }
+}
+.planItem__box {
+  width: 48%;
+}
+@media (max-width: 999px) {
+  .planItem__box {
+    width: 100%;
+  }
+}
+.planItem .floorPlan-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4%;
+  margin-bottom: 40px;
+}
+@media (max-width: 999px) {
+  .planItem .floorPlan-container {
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  .planItem__contents {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 999px) {
+  .planItem__contents {
+    width: 100%;
+  }
+}
+.planItem__img3 {
+  height: auto;
+  position: relative;
+}
+@media (min-width: 1000px) {
+  .planItem__img3 {
+    width: 56%;
+  }
+}
+@media (max-width: 999px) {
+  .planItem__img3 {
+    width: 100%;
+  }
+}
+.planItem__img3 img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.planItem__btn {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #D90200;
+  border: 1px solid #D90200;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 54px auto 0;
+  max-width: 352px;
+  width: 100%;
+}
+@media (max-width: 999px) {
+  .planItem__btn {
+    margin: 50px auto 0;
+  }
+}
+.planItem__btn:hover {
+  background: #fff;
+  color: #d90200;
+}
+.planItem .point-list {
+  margin: 15px 0;
+}
+.planItem .point-list__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.planItem .point-list__item i {
+  color: #D90200;
+  margin-right: 10px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.planItem .data-table, .planItem .simulation-table table {
+  border-collapse: collapse;
+  width: 100%;
+  /* 重要な数値の強調 */
+  /* 補足的な単位表示 */
+}
+.planItem .data-table th, .planItem .simulation-table table th, .planItem .data-table td, .planItem .simulation-table table td {
+  border-bottom: 1px solid #eee;
+  line-height: 1.4;
+  padding: 15px 12px;
+}
+.planItem .data-table th, .planItem .simulation-table table th {
+  color: #333;
+  text-align: left;
+  width: 50%;
+}
+.planItem .data-table td, .planItem .simulation-table table td {
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+}
+.planItem .data-table .emphasis, .planItem .simulation-table table .emphasis {
+  color: #D90200;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.planItem .data-table .unit, .planItem .simulation-table table .unit {
+  color: #666;
+  font-size: 1.4rem;
+  margin-left: 4px;
+}
+.planItem .simulation-table {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 30px 0;
+  max-width: 600px;
+  padding: 20px;
+  /* セクションヘッダー */
+  /* 重要な行の強調 */
+  /* 内訳行（やや控えめに） */
+  /* 結果行 */
+}
+.planItem .simulation-table__header {
+  background: #f8f8f8;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align: center;
+}
+.planItem .simulation-table__title {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.planItem .simulation-table .section-header {
+  background: #f5f5f5;
+}
+.planItem .simulation-table .section-header th {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 12px 15px;
+}
+.planItem .simulation-table .important-row {
+  background: #fff9f9;
+}
+.planItem .simulation-table .important-row th, .planItem .simulation-table .important-row td {
+  font-weight: bold;
+  padding: 20px 12px;
+}
+.planItem .simulation-table .important-row td {
+  color: #D90200;
+  font-size: 2rem;
+}
+.planItem .simulation-table .breakdown {
+  background: #fafafa;
+}
+.planItem .simulation-table .breakdown th {
+  color: #666;
+  font-size: 1.4rem;
+  padding-left: 30px;
+}
+.planItem .simulation-table .breakdown td {
+  color: #666;
+  font-size: 1.4rem;
+}
+.planItem .simulation-table .result-row {
+  background: #fff;
+  border-top: 2px solid #eee;
+}
+.planItem .simulation-table .result-row th, .planItem .simulation-table .result-row td {
+  font-weight: bold;
+  padding: 20px 12px;
+}
+.planItem .simulation-table .result-row td {
+  color: #D90200;
+  font-size: 2.2rem;
+}
+.planItem .simulation-table__notes {
+  border-top: 1px dotted #ddd;
+  margin-top: 25px;
+  padding-top: 20px;
+}
+.planItem .simulation-table__note {
+  color: #777;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 3px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.planItem .simulation-table__note:last-child {
+  margin-bottom: 0;
+}
+.planItem .loan-simulation {
+  margin-top: 40px;
+}
+.planItem .loan-simulation .price-breakdown,
+.planItem .loan-simulation .payment-breakdown {
+  background: #f5f5f5;
+}
+.planItem .loan-simulation .price-breakdown th,
+.planItem .loan-simulation .payment-breakdown th {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 15px;
+}
+.planItem .loan-simulation .total-row {
+  background: #fff9f9;
+  border-top: 2px solid #eee;
+}
+.planItem .loan-simulation .total-row th, .planItem .loan-simulation .total-row td {
+  font-weight: bold;
+  padding: 20px 12px;
+}
+.planItem .loan-simulation .total-row td {
+  color: #D90200;
+  font-size: 2.2rem;
+}
+
+.zoom-button {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  bottom: 10px;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  width: 40px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  z-index: 2;
+}
+.zoom-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.zoom-button i {
+  font-size: 1.6rem;
+}
+
+/* モーダル */
+.modal {
+  display: none;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* モーダル内のコンテンツ */
+  /* 閉じるボタン */
+}
+.modal.is-active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.modal__content {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 90vh;
+  max-width: 90%;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.modal__content img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-height: calc(90vh - 120px);
+  max-width: 100%;
+  width: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.modal__close {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.4rem;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  width: 40px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+.modal__close:hover {
+  opacity: 0.8;
+}
+@media (max-width: 999px) {
+  .modal__close {
+    right: 0;
+    top: -40px;
+  }
+}
+
+/* ==========================================================================
+  planList
+  ========================================================================== */
+.planList {
+  padding-bottom: 60px;
+}
+.planList dl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.planList .small {
+  font-size: 1rem !important;
+}
+.planList .cardTable {
+  font-size: 1.6rem;
+}
+.planList dt {
+  font-weight: bold;
+  width: 70px;
+}
+.planList__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.planList__item {
+  background: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.169);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.169);
+  margin-bottom: 40px;
+  position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.planList__item a {
+  display: block;
+}
+.planList__item::before {
+  background: url(../img/plan/arrow.svg) no-repeat center center/30px 10px;
+  bottom: 25px;
+  content: "";
+  height: 10px;
+  position: absolute;
+  right: 9%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  width: 30px;
+}
+.planList__item:hover {
+  list-style: none;
+  opacity: 0.7;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+.planList__item:hover::before {
+  right: 6%;
+}
+@media (min-width: 1000px) {
+  .planList__item {
+    width: 32%;
+  }
+  .planList__item:not(:nth-child(3n)) {
+    margin-right: 2%;
+  }
+}
+@media (max-width: 999px) {
+  .planList__item {
+    width: 100%;
+  }
+}
+.planList__body {
+  padding: 20px 6%;
+  position: relative;
+}
+.planList__cats {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+.planList__cat {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #D90200;
+  border-radius: 4px;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  font-size: 1.2rem;
+  justify-content: center;
+  padding: 2px 10px;
+}
+.planList__subTtl {
+  font-size: 2.2rem !important;
+  font-weight: bold;
+  line-height: 1;
+  line-height: 2.5rem;
+  margin-bottom: 6px;
+  padding-left: 10px;
+  position: relative;
+}
+@media (max-width: 999px) {
+  .planList__subTtl {
+    font-size: 2rem !important;
+  }
+}
+.planList__subTtl::before {
+  background: #D90200;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  border-radius: 6px;
+  transform: translateY(-50%);
+  width: 4px;
+}
+.planList__img {
+  position: relative;
+}
+.planList__img::before {
+  content: "";
+  display: block;
+  padding-top: 57%;
+}
+.planList__img img {
+  border-radius: 6px 6px 0 0;
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* ==========================================================================
+  planFilter 絞り込み検索
+  ========================================================================== */
+.planFilter {
+  padding-bottom: 20px;
+}
+.planFilter__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 999px) {
+  .planFilter__group {
+    margin-bottom: 10px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+.planFilter__title {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 60px;
+}
+@media (max-width: 999px) {
+  .planFilter__title {
+    font-size: 1.6rem;
+  }
+}
+.planFilter__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 999px) {
+  .planFilter__list {
+    width: 100%;
+  }
+}
+.planFilter__btn {
+  background: #fff;
+  border: 1px solid #D90200;
+  border-radius: 4px;
+  color: #D90200;
+  cursor: pointer;
+  font-family: "Zen Maru Gothic", sans-serif;
+  padding: 8px 16px;
+  -webkit-transition: all 0.3s;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all 0.3s;
+  width: 200px;
+}
+@media (max-width: 999px) {
+  .planFilter__btn {
+    font-size: 1.6rem;
+    padding: 6px 12px;
+    width: 100%;
+  }
+}
+.planFilter__btn.is-active {
+  background: #D90200;
+  color: #fff;
+}
+.planFilter__btn:hover {
+  opacity: 0.8;
+}
+
+/* ==========================================================================
   eventItem
   ========================================================================== */
 .event-page.eventItem {

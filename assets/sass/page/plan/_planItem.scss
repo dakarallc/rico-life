@@ -1,0 +1,565 @@
+@use '../../foundation/mixin';
+/* ==========================================================================
+  planItem
+  プラン詳細ページのスタイル
+  ========================================================================== */
+
+.planItem {
+	padding-bottom: 199px;
+	height: auto;
+
+	@include mixin.sp() {
+		padding-bottom: 80px;
+	}
+
+	img {
+		border-radius: 6px;
+	}
+
+	/* セクションタイトル */
+	.sectionTitle {
+		color: #D90200;
+		@include mixin.marugoBold();
+		font-size: 2.8rem;
+		font-weight: bold;
+		letter-spacing: 0.02em;
+		margin-bottom: 20px;
+		padding-left: 20px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 6px;
+			height: 100%;
+			background: #D90200;
+			border-radius: 6px;
+		}
+	}
+
+	/* メインタイトル（キャッチコピー） */
+	&__ttl {
+		color: #D90200;
+		@include mixin.marugoBold();
+		font-size: 3.3rem;
+		font-weight: bold;
+		letter-spacing: 0.04em;
+		margin-bottom: 10px;
+		position: relative;
+
+		@include mixin.sp() {
+			margin-bottom: 8px;
+			font-size: 2.6rem;
+		}
+	}
+
+	/* プラン名 */
+	&__txt {
+		font-size: 2rem;
+		margin-bottom: 27px;
+
+		@include mixin.sp() {
+			font-size: 1.8rem;
+			line-height: 1.5;
+		}
+	}
+
+	/* サブタイトル（間取り図のタイトルなど） */
+	&__subTtl {
+		color: #D90200;
+		@include mixin.marugoBold();
+		font-size: 2.2rem;
+		margin-bottom: 10px;
+		font-weight: bold;
+		position: relative;
+
+		@include mixin.sp() {
+			font-size: 2rem;
+			margin: 10px 0;
+		}
+	}
+
+	/* メインビジュアル部分 */
+	&__main {
+		display: flex;
+		margin-bottom: 90px;
+
+		/* 坪数・価格表示 */
+		.cardTable {
+			display: flex;
+			font-size: 4rem;
+			gap: 10px;
+			font-weight: bold;
+			letter-spacing: 0.05em;
+      margin-bottom: 10px;
+
+			.small {
+				font-size: 1.6rem;
+			}
+		}
+
+		@include mixin.sp() {
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+		}
+	}
+
+	/* メインビジュアル画像 */
+	&__img1 {
+		position: relative;
+
+		@include mixin.pc() {
+			margin-right: 1.5%;
+			width: 44%;
+		}
+
+		@include mixin.sp() {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			padding-top: 60%;
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	/* メインビジュアル右側コンテンツ */
+	&__mainContents {
+    h3{
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+		@include mixin.pc() {
+			flex: 1;
+		}
+
+		@include mixin.sp() {
+			width: 100%;
+		}
+	}
+
+	/* カテゴリータグリスト */
+	&__list {
+		ul {
+			display: flex;
+			align-items: center;
+			letter-spacing: 0.2em;
+			gap: 10px;
+			flex-wrap: wrap;
+
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+
+			li {
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: #d90200;
+				border-radius: 4px;
+				font-size: 1.4rem !important;
+				padding: 4px 10px;
+
+				@include mixin.sp() {
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
+
+	/* 説明文 */
+	&__desc {
+		line-height: 1.9;
+		letter-spacing: 0.1em;
+		font-size: 1.6rem;
+
+		@include mixin.sp() {
+			margin-bottom: 30px;
+		}
+	}
+
+	/* 間取り図ボックス */
+	&__box {
+		width: 48%;
+
+		@include mixin.sp() {
+			width: 100%;
+		}
+	}
+
+	/* 間取り図コンテナ */
+	.floorPlan-container {
+		display: flex;
+		// flex-wrap: wrap;
+		gap: 4%;
+		margin-bottom: 40px;
+
+		@include mixin.sp() {
+			gap: 40px;
+			margin-bottom: 20px;
+		}
+	}
+
+	/* 間取り図説明コンテンツ */
+	&__contents {
+		@include mixin.pc() {
+			flex: 1;
+			margin-left: 20px;
+		}
+
+		@include mixin.sp() {
+			width: 100%;
+		}
+	}
+
+	/* 間取り図画像 */
+	&__img3 {
+		height: auto;
+		position: relative;
+
+		@include mixin.pc() {
+			width: 56%;
+		}
+
+		@include mixin.sp() {
+			width: 100%;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	/* 戻るボタン */
+	&__btn {
+		align-items: center;
+		background: #D90200;
+		border: 1px solid #D90200;
+		color: #fff;
+		display: flex;
+		@include mixin.marugoBold();
+		font-weight: bold;
+		height: 40px;
+		justify-content: center;
+		margin: 54px auto 0;
+		max-width: 352px;
+		width: 100%;
+
+		@include mixin.sp() {
+			margin: 50px auto 0;
+		}
+
+		&:hover {
+			color: #d90200;
+			background: #fff;
+		}
+	}
+
+  /* ポイントリスト */
+  .point-list {
+    margin: 15px 0;
+    
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+      line-height: 1.5;
+
+      i {
+        color: #D90200;
+        margin-right: 10px;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  /* テーブル共通スタイル */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    th, td {
+      padding: 15px 12px;
+      border-bottom: 1px solid #eee;
+      line-height: 1.4;
+    }
+    
+    th {
+      text-align: left;
+      width: 50%;
+      color: #333;
+    }
+    
+    td {
+      text-align: right;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* 重要な数値の強調 */
+    .emphasis {
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: #D90200;
+    }
+
+    /* 補足的な単位表示 */
+    .unit {
+      font-size: 1.4rem;
+      color: #666;
+      margin-left: 4px;
+    }
+  }
+
+  /* シミュレーションテーブル */
+  .simulation-table {
+    max-width: 600px;
+    margin: 30px 0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    
+    table {
+      @extend .data-table;
+    }
+    
+    &__header {
+      margin-bottom: 20px;
+      text-align: center;
+      padding: 15px;
+      background: #f8f8f8;
+      border-radius: 4px;
+    }
+    
+    &__title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    /* セクションヘッダー */
+    .section-header {
+      background: #f5f5f5;
+      th {
+        padding: 12px 15px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+    
+    /* 重要な行の強調 */
+    .important-row {
+      background: #fff9f9;
+      th, td {
+        font-weight: bold;
+        padding: 20px 12px;
+      }
+      td {
+        color: #D90200;
+        font-size: 2rem;
+      }
+    }
+
+    /* 内訳行（やや控えめに） */
+    .breakdown {
+      background: #fafafa;
+      th {
+        padding-left: 30px;
+        color: #666;
+        font-size: 1.4rem;
+      }
+      td {
+        color: #666;
+        font-size: 1.4rem;
+      }
+    }
+
+    /* 結果行 */
+    .result-row {
+      border-top: 2px solid #eee;
+      background: #fff;
+      th, td {
+        font-weight: bold;
+        padding: 20px 12px;
+      }
+      td {
+        font-size: 2.2rem;
+        color: #D90200;
+      }
+    }
+
+    &__notes {
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px dotted #ddd;
+    }
+
+    &__note {
+      color: #777;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      padding-left: 1em;
+      text-indent: -1em;
+      margin-bottom: 3px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  /* ローンシミュレーション */
+  .loan-simulation {
+    margin-top: 40px;
+    .price-breakdown,
+    .payment-breakdown {
+      background: #f5f5f5;
+      th {
+        padding: 15px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+    
+    .total-row {
+      background: #fff9f9;
+      border-top: 2px solid #eee;
+      th, td {
+        font-weight: bold;
+        padding: 20px 12px;
+      }
+      td {
+        font-size: 2.2rem;
+        color: #D90200;
+      }
+    }
+  }
+}
+
+.zoom-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 2;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  i {
+    font-size: 1.6rem;
+  }
+}
+
+/* モーダル */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &.is-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* モーダル内のコンテンツ */
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90vh;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    img {
+      max-width: 100%;
+      max-height: calc(90vh - 120px);
+      width: auto;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+  }
+
+  /* 閉じるボタン */
+  &__close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+    z-index: 2;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @include mixin.sp() {
+      top: -40px;
+      right: 0;
+    }
+  }
+}
