@@ -2596,7 +2596,6 @@ contact
   header
   ========================================================================== */
 .header {
-  background: #F8F8F8;
   height: 98px;
   position: fixed;
   width: 100%;
@@ -12085,7 +12084,6 @@ us
 }
 
 .fv {
-  margin-top: 98px;
   position: relative;
   width: 100%;
 }
@@ -12160,14 +12158,13 @@ us
   fv
   ========================================================================== */
 .fv {
-  margin-top: 98px;
   position: relative;
   width: 100%;
 }
 
 @media (min-width: 1401px) {
   .fv {
-    background: url(../img/top/kv.jpg) no-repeat center center/cover;
+    background: url(../img/top/kv1.png) no-repeat center center/cover;
     height: 800px;
   }
 }
@@ -12178,7 +12175,7 @@ us
 }
 @media (min-width: 601px) {
   .fv {
-    background: url(../img/top/kv.jpg) no-repeat center center/cover;
+    background: url(../img/top/kv1.png) no-repeat center center/cover;
   }
 }
 @media (max-width: 999px) {

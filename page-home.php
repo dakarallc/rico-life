@@ -14,88 +14,14 @@ fv
 ================================================================================================ -->
   <section class="fv">
     <div class="inner fv__inner">
-      <!-- <h2 class="fv__ttl">ちょうどいい価格から<br>豊かな生活へ</h2>/fv__ttl -->
+      <h2 class="fv__ttl">コスパで創る、<br>豊かな暮らし。</h2>
     </div><!-- /inner fv__inner -->
   </section><!-- /fv -->
 
 <!-- ===============================================================================================
 EVENT
 ================================================================================================ -->
-  <?php
-  $args = array(
-    'posts_per_page' => -1,
-    'post_type' => 'event',
-    'post_status' => 'publish'
-  );
-  
-  $event_query = new WP_Query($args);
-  $events = array();
-
-  if ($event_query->have_posts()) :
-    while ($event_query->have_posts()) : $event_query->the_post();
-      
-      $event_info = [
-        'pic' => get_field('event-pic'),
-				'is_always' => get_field('is_always'),
-        'start_date' => get_field('event_start_date'),
-        'end_date' => get_field('event_end_date'), 
-        'start_time' => get_field('event_start_time'),
-        'end_time' => get_field('event_end_time'),
-        'address' => get_field('address')
-      ];
-
-      $now = new DateTime('now', new DateTimeZone('Asia/Tokyo'));
-      $start_datetime = new DateTime($event_info['start_date'] . ' ' . $event_info['start_time'], new DateTimeZone('Asia/Tokyo'));
-      $end_datetime = new DateTime($event_info['end_date'] . ' ' . $event_info['end_time'], new DateTimeZone('Asia/Tokyo'));
-
-      // 開催中のイベントのみ表示
-      if (($start_datetime <= $now && $end_datetime >= $now) || $event_info['is_always']) {
-        $events[] = array(
-          'post' => $post,
-          'event_info' => $event_info
-        );
-      }
-    endwhile;
-
-    if (!empty($events)) : ?>
-      <section class="event">
-        <div class="inner event__inner">
-          <div class="event__box">
-            <div class="event__left">
-              <h2 class="event__ttl  event__ttl-pc ttl ttl--right ">開催中のイベント</h2>
-              <h2 class="event__ttl  event__ttl-sp ttl ttl--right ">開催中のイベント</h2>
-              <a href="<?php echo do_shortcode('[home_url]'); ?>event" class="event__btn topLink show--pc">イベント一覧へ</a>
-            </div>
-            <div class="event__right swiper eventSwiper">
-              <ul class="event__list swiper-wrapper">
-                <?php foreach ($events as $event) :
-                  $post = $event['post'];
-                  setup_postdata($post);
-                  $event_info = $event['event_info'];
-                ?>
-                  <li class="event__item swiper-slide">
-                    <a href="<?php echo esc_url(get_permalink()); ?>">
-                      <div class="event__info">
-                        <div class="event__info--img"><img width="300" data-js-ofi src="<?php echo esc_url($event_info['pic']); ?>" alt="<?php echo esc_attr(trimString(get_the_title(), 50)); ?>"></div>
-                      </div>
-                      <div>
-                        <h3 class="event__subTtl"><?php echo esc_html(trimString(get_the_title(), 50)); ?></h3>
-                        <p class="event__schedule">日程:<?php if ($event_info['is_always']): ?>常時開催 ※水曜定休<?php else: ?><?php echo esc_html($event_info['start_date']); ?> ~ <?php echo esc_html($event_info['end_date']); ?><?php endif; ?></p>
-                        <p class="event__comment">時間:<?php echo esc_html($event_info['start_time']); ?> ~ <?php echo esc_html($event_info['end_time']); ?></p>
-                      </div>
-                    </a>
-                  </li>
-                <?php endforeach; ?>
-              </ul>
-              <div class="swiper-pagination swiper-pagination-black"></div>
-              <a href="<?php echo do_shortcode('[home_url]'); ?>event" class="event__btn topLink show--sp">一覧へ</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    <?php endif;
-  endif;
-  wp_reset_postdata(); ?>
+ 
 
 <!-- ===============================================================================================
 70thバナー
