@@ -61,12 +61,12 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
 <!-- ===============================================================================================
   header
 ================================================================================================ -->
-    <header class="header <?php  if(is_home() || is_front_page()){ echo '_top';} ?>" data-is-top="<?php echo (is_home() || is_front_page()) ? 'true' : 'false'; ?>">
+    <header class="header <?php  if(is_home() || is_front_page()){ echo '_top';} ?>">
       <div class="header__inner inner">
       <?php  if(is_home() || is_front_page()): ?>
         <h1 class="header__logo" data-logo="white"><a href="<?php echo do_shortcode('[home_url]'); ?>"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt="ietochi honpo"></a></h1>
       <?php else: ?>
-        <div class="header__logo" data-logo="black"><a href="<?php echo do_shortcode('[home_url]'); ?>"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo-black.svg" alt="ietochi honpo"></a></div>
+        <div class="header__logo"><a href="<?php echo do_shortcode('[home_url]'); ?>"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt="ietochi honpo"></a></div>
       <?php endif; ?>
         <!-- /header__logo -->
         <div class="header__contents" id="js-headerContents">

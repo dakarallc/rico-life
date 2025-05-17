@@ -3022,6 +3022,13 @@ contact
   }
 }
 
+.header._black .header__item > a {
+  color: #000;
+}
+.header._black .header__item > a:hover {
+  color: #F10000;
+}
+
 .news-page .pageHead {
   background: url(../img/news/bg.jpg) no-repeat top left/cover;
 }
@@ -3090,7 +3097,7 @@ contact
 }
 .toggle span {
   -webkit-transition: 0.35s ease-in-out;
-  border-bottom: solid 2px #d90200;
+  border-bottom: solid 2px #fff;
   display: block;
   left: 8px;
   position: absolute;
@@ -10261,7 +10268,6 @@ event
 @media (max-width: 999px) {
   .fv {
     height: 300px;
-    margin-top: 60px;
   }
 }
 @media (max-width: 600px) {
@@ -12159,7 +12165,6 @@ us
 @media (max-width: 999px) {
   .fv {
     height: 300px;
-    margin-top: 60px;
   }
 }
 @media (max-width: 600px) {

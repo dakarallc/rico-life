@@ -73,6 +73,19 @@
   }
 }
 
+// ヘッダーの黒色スタイル
+.header {
+  &._black {
+    .header__item {
+      > a {
+        color: #000;
+        &:hover {
+          color: #F10000;
+        }
+      }
+    }
+  }
+}
 
 .news-page {
   .pageHead {

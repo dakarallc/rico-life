@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const logoImg = headerLogo.querySelector('img');
   const originalSrc = logoImg.src;
   const blackLogoSrc = originalSrc.replace('logo.svg', 'logo-black.svg');
+  const header = document.querySelector('.header');
 
   function updateLogo() {
     const kv = document.querySelector('.fv');
@@ -32,12 +33,14 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Changing to black logo');
         headerLogo.dataset.logo = 'black';
         logoImg.src = blackLogoSrc;
+        header.classList.add('_black');
       }
     } else {
       if (headerLogo.dataset.logo !== 'white') {
         console.log('Changing to white logo');
         headerLogo.dataset.logo = 'white';
         logoImg.src = originalSrc;
+        header.classList.remove('_black');
       }
     }
   }
