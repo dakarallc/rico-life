@@ -65,7 +65,7 @@ $sp: 639px;  // スマホ
   ========================================================================== */
   .about-ttl {
     color: #111111;
-    @include mixin.marugoBold();
+    @include mixin.yuGothicBold();
     font-size: 6rem;
     font-weight: bold;
     position: relative;
@@ -145,7 +145,7 @@ $sp: 639px;  // スマホ
   position: relative;
 }
 .about-massage__inner--title h3 {
-  @include mixin.marugoBold();
+  @include mixin.yuGothicBold();
   font-size: 2.3rem;
   letter-spacing: 0.3em;
   line-height: 2;
@@ -157,7 +157,7 @@ $sp: 639px;  // スマホ
   }
 }
 .about-massage__inner--title h3 span {
-  @include mixin.marugoBold();
+  @include mixin.yuGothicBold();
   font-size: 3rem;
   font-weight: bold;
 }
@@ -315,7 +315,7 @@ $sp: 639px;  // スマホ
     position: relative;
   }
   .about-massage__inner--title h3 {
-    @include mixin.marugoBold();
+    @include mixin.yuGothicBold();
     font-size: 2.3rem;
     letter-spacing: 0.3em;
     line-height: 2;
@@ -327,7 +327,7 @@ $sp: 639px;  // スマホ
     }
   }
   .about-massage__inner--title h3 span {
-    @include mixin.marugoBold();
+    @include mixin.yuGothicBold();
     font-size: 3rem;
     font-weight: bold;
   }
@@ -449,7 +449,7 @@ point3
 }
 .point3__inner--content a .box h3 {
 	padding-top: 20px;
-	@include mixin.marugoBold();
+	@include mixin.yuGothicBold();
 	font-size: 2rem;
 	font-weight: bold;
 	position: relative;
@@ -521,7 +521,7 @@ point3
   position: relative;
 }
 .about-massage__inner--title h3 {
-  @include mixin.marugoBold();
+  @include mixin.yuGothicBold();
   font-size: 2.3rem;
   letter-spacing: 0.3em;
   line-height: 2;
@@ -533,7 +533,7 @@ point3
   }
 }
 .about-massage__inner--title h3 span {
-  @include mixin.marugoBold();
+  @include mixin.yuGothicBold();
   font-size: 3rem;
   font-weight: bold;
 }
@@ -1256,7 +1256,7 @@ point3
 }
 .zeh-under-text{
 	color: #111111;
-    @include mixin.marugoBold();
+    @include mixin.yuGothicBold();
     font-size: 3rem;
     font-weight: bold;
 }
@@ -1329,7 +1329,7 @@ about 詳細
 
 		.about-detail-title {
 			color: #FF7F00;
-			@include mixin.marugoBold();
+			@include mixin.yuGothicBold();
 			font-size: 4rem;
 			font-weight: bold;
 			position: relative;
@@ -1347,7 +1347,7 @@ about 詳細
 				left: -44px; // 数字の位置調整
 				top: 0; // 中央に配置
 				color: #FF7F00;
-				@include mixin.marugoBold();
+				@include mixin.yuGothicBold();
 				font-size: 4rem;
 				font-weight: bold;
 				background-color: #fff;

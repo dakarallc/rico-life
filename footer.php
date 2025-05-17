@@ -86,6 +86,20 @@ footer
       slidesPerView: 1,
     });
 
+    // FV Swiper initialization
+    var fvSwiper = new Swiper(".fvSwiper", {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true
+      },
+      loop: true,
+    });
+
   </script>
 <?php wp_footer(); ?>
 </body>

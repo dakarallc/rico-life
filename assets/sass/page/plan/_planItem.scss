@@ -19,7 +19,7 @@
 	/* セクションタイトル */
 	.sectionTitle {
 		color: #D90200;
-		@include mixin.marugoBold();
+		@include mixin.yuGothicBold();
 		font-size: 2.8rem;
 		font-weight: bold;
 		letter-spacing: 0.02em;
@@ -43,7 +43,7 @@
 	/* メインタイトル（キャッチコピー） */
 	&__ttl {
 		color: #D90200;
-		@include mixin.marugoBold();
+		@include mixin.yuGothicBold();
 		font-size: 3.3rem;
 		font-weight: bold;
 		letter-spacing: 0.04em;
@@ -70,7 +70,7 @@
 	/* サブタイトル（間取り図のタイトルなど） */
 	&__subTtl {
 		color: #D90200;
-		@include mixin.marugoBold();
+		@include mixin.yuGothicBold();
 		font-size: 2.2rem;
 		margin-bottom: 10px;
 		font-weight: bold;
@@ -257,7 +257,7 @@
 		border: 1px solid #D90200;
 		color: #fff;
 		display: flex;
-		@include mixin.marugoBold();
+		@include mixin.yuGothicBold();
 		font-weight: bold;
 		height: 40px;
 		justify-content: center;

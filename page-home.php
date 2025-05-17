@@ -12,11 +12,30 @@ get_header();
 <!-- ===============================================================================================
 fv
 ================================================================================================ -->
-  <section class="fv">
-    <div class="inner fv__inner">
-      <h2 class="fv__ttl">コスパで創る、<br>豊かな暮らし。</h2>
-    </div><!-- /inner fv__inner -->
-  </section><!-- /fv -->
+	<section class="fv">
+		<div class="swiper fvSwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img class="fv__img1" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/kv1.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img class="fv__img" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/kv2.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/kv3.png" alt="">
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="fv__ttl-wrap">
+			<div class="fv__ttl">
+				<h2>コスパで創る、<br>豊かな暮らし。</h2>
+				<svg xmlns="http://www.w3.org/2000/svg" width="491" height="32" viewBox="0 0 491 32">
+					<text id="Creating_cost-effectively_A_rich_life." data-name="Creating cost-effectively,A rich life." transform="translate(0 25)" fill="#fff" font-size="28" font-family="VDL-PenLetter-Medium, VDL-PenLetter" font-weight="500"><tspan x="0" y="0">Creating cost-effectively,A rich life.</tspan></text>
+				</svg>
+			</div>
+		</div>
+	</section><!-- /fv -->
 
 <!-- ===============================================================================================
 EVENT

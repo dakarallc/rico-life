@@ -181,7 +181,7 @@
   }
   @media (min-width: 1000px) {
     .contents__subTtl1 ._below ._lg {
-      @include mixin.marugoBold();
+      @include mixin.yuGothicBold();
       font-weight: bold;
     }
   }

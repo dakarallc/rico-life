@@ -69,6 +69,7 @@ function my_script_init() {
   wp_enqueue_script('ofi', $theme_url . '/assets/js/vendor/ofi.min.js', array('jquery'), '1.0.0', true);
   wp_enqueue_script('wow', $theme_url . '/assets/js/vendor/wow.min.js', array('jquery'), '1.0.0', true);
   wp_enqueue_script('cmn', $theme_url . '/assets/js/common.js', array('jquery', 'jquery-ui-datepicker'), '1.0.4', true);
+  wp_enqueue_script('logo-change', $theme_url . '/assets/js/logo-change.js', array('jquery'), '1.0.0', true);
 
   // ホーム、フロントページ、ba-300ページ用のスクリプト
   if(is_home() || is_front_page() || is_page('ba-300')) {

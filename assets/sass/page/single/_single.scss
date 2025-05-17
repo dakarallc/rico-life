@@ -4,7 +4,6 @@
   ========================================================================== */
   
   .fv {
-    margin-top: 98px;
     position: relative;
     width: 100%;
   }
@@ -54,7 +53,7 @@
   }
   .fv__ttl {
     color: #D90200;
-    @include mixin.marugoBold();
+    @include mixin.yuGothicBold();
     font-size: 5.7rem;
     font-weight: bold;
     left: 3%;
@@ -394,7 +393,7 @@
   }
   .post__ttl {
     color: #D90200;
-    @include mixin.marugoBold();
+    @include mixin.yuGothicBold();
     font-size: 3.3rem;
     font-weight: bold;
     letter-spacing: 0.02em;
@@ -427,7 +426,7 @@
   }
   .post__eventTtl {
     color: #000;
-    @include mixin.marugoBold();
+    @include mixin.yuGothicBold();
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 0.02em;
@@ -587,7 +586,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    @include mixin.marugoBold();
+    @include mixin.yuGothicBold();
     font-weight: bold;
     height: 40px;
     justify-content: center;
@@ -945,7 +944,7 @@
 }
 .eventPlan__subTtl {
   color: #000;
-  @include mixin.marugoBold();
+  @include mixin.yuGothicBold();
   font-size: 4rem;
   font-weight: bold;
   letter-spacing: 0.08em;
@@ -1220,7 +1219,7 @@
 }
 .homeMade__subTtl {
   color: #D90200;
-  @include mixin.marugoBold();
+  @include mixin.yuGothicBold();
   font-size: 2.4rem;
   font-weight: bold;
   letter-spacing: 0.08em;

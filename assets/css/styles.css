@@ -354,8 +354,9 @@ html {
 
 body {
   color: #000000;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2rem;
+  font-weight: 500;
   line-height: 2.08;
 }
 @media (max-width: 999px) {
@@ -497,8 +498,9 @@ h5 {
   ========================================================================== */
 .ttl {
   color: #d90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 6rem;
+  font-weight: bold;
   font-weight: bold;
   position: relative;
 }
@@ -567,7 +569,8 @@ h5 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-weight: bold;
   font-weight: bold;
   height: 40px;
   padding: 0 20px;
@@ -634,8 +637,9 @@ h5 {
   color: #012346;
 }
 .format__ttl {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 6rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.06em;
   margin-bottom: 38px;
@@ -685,8 +689,9 @@ h5 {
   }
 }
 .format__subTtl ._em {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3rem;
+  font-weight: bold;
   font-weight: bold;
 }
 @media (max-width: 999px) {
@@ -780,8 +785,9 @@ h5 {
 }
 .kv__ttl {
   color: #d90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 6rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.06em;
   line-height: 1.6;
@@ -1348,8 +1354,9 @@ contact
 
 .contact .privacy__ttl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.9rem;
+  font-weight: bold;
   font-weight: bold;
   margin-bottom: 30px;
   padding-left: 30px;
@@ -1489,7 +1496,8 @@ contact
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-weight: bold;
   font-weight: bold;
   height: 40px;
   justify-content: center;
@@ -2380,8 +2388,9 @@ contact
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    font-family: "Zen Maru Gothic", sans-serif;
+    font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
     font-size: 1.8rem;
+    font-weight: bold;
     font-weight: bold;
     height: 66px;
     left: -60px;
@@ -2411,8 +2420,9 @@ contact
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    font-family: "Zen Maru Gothic", sans-serif;
+    font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
     font-size: 1rem;
+    font-weight: bold;
     font-weight: bold;
     height: 40px;
     width: 40px;
@@ -2434,8 +2444,9 @@ contact
 }
 .shopTab__subTtl {
   color: #fff;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2rem;
+  font-weight: bold;
   line-height: 1.2;
   margin-top: 10px;
 }
@@ -2464,8 +2475,9 @@ contact
 }
 .shopTab__remarks {
   color: #fff;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 1.5rem;
+  font-weight: bold;
   line-height: 1.2;
   margin-top: 10px;
   text-align: center;
@@ -3215,7 +3227,8 @@ contact
   -ms-flex-align: center;
   align-items: center;
   color: #fff;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-weight: bold;
   font-weight: bold;
   margin: 38px auto 0;
 }
@@ -3270,8 +3283,9 @@ contact
   ========================================================================== */
 .about-ttl {
   color: #111111;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 6rem;
+  font-weight: bold;
   font-weight: bold;
   margin-bottom: 100px;
   padding: 20px 0;
@@ -3358,8 +3372,9 @@ about-massage
 }
 
 .about-massage__inner--title h3 {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.3rem;
+  font-weight: bold;
   letter-spacing: 0.3em;
   line-height: 2;
 }
@@ -3371,8 +3386,9 @@ about-massage
   }
 }
 .about-massage__inner--title h3 span {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3rem;
+  font-weight: bold;
   font-weight: bold;
 }
 
@@ -3544,8 +3560,9 @@ about-massage
 }
 
 .about-massage__inner--title h3 {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.3rem;
+  font-weight: bold;
   letter-spacing: 0.3em;
   line-height: 2;
 }
@@ -3557,8 +3574,9 @@ about-massage
   }
 }
 .about-massage__inner--title h3 span {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3rem;
+  font-weight: bold;
   font-weight: bold;
 }
 
@@ -3689,8 +3707,9 @@ point3
 }
 
 .point3__inner--content a .box h3 {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2rem;
+  font-weight: bold;
   font-weight: bold;
   padding-top: 20px;
   position: relative;
@@ -3775,8 +3794,9 @@ point3
 }
 
 .about-massage__inner--title h3 {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.3rem;
+  font-weight: bold;
   letter-spacing: 0.3em;
   line-height: 2;
 }
@@ -3788,8 +3808,9 @@ point3
   }
 }
 .about-massage__inner--title h3 span {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3rem;
+  font-weight: bold;
   font-weight: bold;
 }
 
@@ -4530,8 +4551,9 @@ zeh
 
 .zeh-under-text {
   color: #111111;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3rem;
+  font-weight: bold;
   font-weight: bold;
 }
 
@@ -4606,8 +4628,9 @@ about 詳細
 }
 .about-detail .about-detail-content .about-detail-title {
   color: #FF7F00;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 4rem;
+  font-weight: bold;
   font-weight: bold;
   margin-bottom: 20px;
   position: relative;
@@ -4623,8 +4646,9 @@ about 詳細
   color: #FF7F00;
   content: counter(number) ".";
   counter-increment: number 1; /* counter-resetの名前を指定、+1づつ増やす。*/
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 4rem;
+  font-weight: bold;
   font-weight: bold;
   left: -44px;
   position: absolute;
@@ -6267,8 +6291,9 @@ event
 }
 .caseItem .sectionTitle {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.8rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.02em;
   margin-bottom: 10px;
@@ -6290,8 +6315,9 @@ event
 }
 .caseItem__ttl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.3rem;
+  font-weight: bold;
   font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.04em;
@@ -6318,9 +6344,11 @@ event
 }
 .caseItem__subTtl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.2rem;
+  font-weight: bold;
+  font-weight: bold;
   font-weight: bold;
   margin-bottom: 10px;
   position: relative;
@@ -6571,7 +6599,8 @@ event
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-weight: bold;
   font-weight: bold;
   height: 40px;
   -webkit-box-pack: center;
@@ -6958,8 +6987,9 @@ event
 }
 .summary__ttl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.9rem;
+  font-weight: bold;
   font-weight: bold;
   padding-left: 30px;
   position: relative;
@@ -7150,8 +7180,9 @@ event
 }
 .planItem .sectionTitle {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.8rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
@@ -7172,8 +7203,9 @@ event
 }
 .planItem__ttl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.3rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.04em;
   margin-bottom: 10px;
@@ -7197,8 +7229,9 @@ event
 }
 .planItem__subTtl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.2rem;
+  font-weight: bold;
   font-weight: bold;
   margin-bottom: 10px;
   position: relative;
@@ -7409,7 +7442,8 @@ event
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-weight: bold;
   font-weight: bold;
   height: 40px;
   -webkit-box-pack: center;
@@ -8039,8 +8073,9 @@ event
 }
 .event-page.eventItem__ttl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.3rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.04em;
   letter-spacing: 0.02em;
@@ -8706,8 +8741,9 @@ event
 }
 .summary__ttl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.9rem;
+  font-weight: bold;
   font-weight: bold;
   padding-left: 30px;
   position: relative;
@@ -8797,8 +8833,9 @@ event
 }
 .staffItem .sectionTitle {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.8rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.02em;
   margin-bottom: 10px;
@@ -8820,8 +8857,9 @@ event
 }
 .staffItem__ttl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.3rem;
+  font-weight: bold;
   font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.04em;
@@ -8848,9 +8886,11 @@ event
 }
 .staffItem__subTtl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.2rem;
+  font-weight: bold;
+  font-weight: bold;
   font-weight: bold;
   margin-bottom: 10px;
   position: relative;
@@ -9101,7 +9141,8 @@ event
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-weight: bold;
   font-weight: bold;
   height: 40px;
   -webkit-box-pack: center;
@@ -9240,8 +9281,9 @@ event
 }
 .summary__ttl {
   color: #d90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.9rem;
+  font-weight: bold;
   font-weight: bold;
   padding-left: 30px;
   position: relative;
@@ -9676,8 +9718,9 @@ event
 }
 .contact .privacy__ttl {
   color: #d90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.9rem;
+  font-weight: bold;
   font-weight: bold;
   margin-bottom: 30px;
   padding-left: 30px;
@@ -9804,7 +9847,8 @@ event
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-weight: bold;
   font-weight: bold;
   height: 40px;
   -webkit-box-pack: center;
@@ -9855,8 +9899,9 @@ event
 }
 .interview__subTtl {
   color: #d90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.6rem;
+  font-weight: bold;
   font-weight: bold;
   margin-bottom: 20px;
   padding-left: 23px;
@@ -9999,8 +10044,9 @@ event
 }
 .post__ttl {
   color: #d90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.3rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.02em;
   margin-bottom: 10px;
@@ -10179,7 +10225,8 @@ event
   -ms-flex-align: center;
   align-items: center;
   color: #fff;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-weight: bold;
   margin: 0 auto;
 }
 .post__btn:hover {
@@ -10191,7 +10238,6 @@ event
   fv
   ========================================================================== */
 .fv {
-  margin-top: 98px;
   position: relative;
   width: 100%;
 }
@@ -10243,8 +10289,9 @@ event
 }
 .fv__ttl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 5.7rem;
+  font-weight: bold;
   font-weight: bold;
   left: 3%;
   letter-spacing: 0.14em;
@@ -10603,8 +10650,9 @@ event
 }
 .post__ttl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.3rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.02em;
   margin-bottom: 10px;
@@ -10638,8 +10686,9 @@ event
 }
 .post__eventTtl {
   color: #000;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.5rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.02em;
   margin-bottom: 40px;
@@ -10821,7 +10870,8 @@ event
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-weight: bold;
   font-weight: bold;
   height: 40px;
   justify-content: center;
@@ -11210,8 +11260,9 @@ plan
 
 .eventPlan__subTtl {
   color: #000;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 4rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.08em;
   margin-bottom: 6px;
@@ -11517,8 +11568,9 @@ us
 }
 .homeMade__subTtl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.4rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.08em;
   margin-bottom: 6px;
@@ -11790,7 +11842,8 @@ us
 
 @media (min-width: 1000px) {
   .contents__subTtl1 ._below ._lg {
-    font-family: "Zen Maru Gothic", sans-serif;
+    font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+    font-weight: bold;
     font-weight: bold;
   }
 }
@@ -12133,8 +12186,9 @@ us
 }
 .fv__ttl {
   color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 5.7rem;
+  font-weight: bold;
   font-weight: bold;
   left: 3%;
   letter-spacing: 0.14em;
@@ -12158,78 +12212,94 @@ us
   fv
   ========================================================================== */
 .fv {
+  height: 100dvh;
   position: relative;
   width: 100%;
 }
-
-@media (min-width: 1401px) {
-  .fv {
-    background: url(../img/top/kv1.png) no-repeat center center/cover;
-    height: 800px;
-  }
-}
-@media (max-width: 1400px) {
-  .fv {
-    height: 500px;
-  }
-}
-@media (min-width: 601px) {
-  .fv {
-    background: url(../img/top/kv1.png) no-repeat center center/cover;
-  }
-}
-@media (max-width: 999px) {
-  .fv {
-    height: 300px;
-    margin-top: 60px;
-  }
-}
-@media (max-width: 600px) {
-  .fv {
-    background: url(../img/top/kv-sp.jpg) no-repeat center center/cover;
-    height: 587px;
-  }
-}
-@media (max-width: 450px) {
-  .fv {
-    background: url(../img/top/kv-sp.jpg) no-repeat bottom center/cover;
-  }
-}
-.fv__inner {
+.fv .swiper {
   height: 100%;
-  max-width: calc(1278px + 10%);
-  position: relative;
   width: 100%;
 }
-
+.fv .swiper-slide {
+  height: 100%;
+  width: 100%;
+}
+.fv__ttl-wrap {
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
 @media (max-width: 999px) {
-  .fv__inner {
-    max-width: 850px !important;
+  .fv__img1 {
+    -o-object-position: 70% bottom;
+    object-position: 70% bottom;
   }
 }
+.fv img {
+  height: 100dvh;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: bottom;
+  object-position: bottom;
+}
+@media (max-width: 999px) {
+  .fv img {
+    -o-object-position: bottom;
+    object-position: bottom;
+  }
+}
+.fv .swiper-pagination {
+  bottom: 30px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+.fv .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5);
+  height: 12px;
+  opacity: 1;
+  width: 12px;
+}
+.fv .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
 .fv__ttl {
-  color: #D90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  color: #ffffff;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 5.7rem;
+  font-weight: bold;
   font-weight: bold;
   left: 3%;
   letter-spacing: 0.14em;
   line-height: 1.34;
   position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
+.fv__ttl svg {
+  max-width: 280px;
+}
 @media (min-width: 1000px) {
-  .fv__ttl {
-    top: 230px;
+  .fv__ttl svg {
+    max-width: 491px;
   }
 }
 @media (max-width: 999px) {
   .fv__ttl {
-    bottom: 40px;
     font-size: 3rem;
-    left: 20px;
   }
 }
+
 /* ==========================================================================
   news
   ========================================================================== */
@@ -12975,8 +13045,9 @@ us
 }
 .us__subTtl {
   color: #d90200;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 2.4rem;
+  font-weight: bold;
   font-weight: bold;
   letter-spacing: 0.08em;
   margin-bottom: 6px;
