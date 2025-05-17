@@ -11645,6 +11645,44 @@ us
     width: 100%;
   }
 }
+.top .about {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 166px;
+  padding-top: 94px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 80px;
+}
+.top .about .about__logo img {
+  width: 285px;
+}
+@media (max-width: 999px) {
+  .top .about .about__logo img {
+    width: 236px;
+  }
+}
+.top .about p {
+  color: #000000;
+  font-family: "vdl-penletter", sans-serif !important;
+  font-size: 2.1875rem;
+  line-height: 2.08;
+}
+.top .about .about__decoration img {
+  width: 18px;
+}
+@media (max-width: 999px) {
+  .top .contents {
+    padding-bottom: 20px;
+    padding-top: 42px;
+  }
+}
+
 /* ==========================================================================
   contents
   ========================================================================== */

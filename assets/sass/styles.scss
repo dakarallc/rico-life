@@ -5,7 +5,7 @@
   ========================================================================== */
 @use "./foundation/reset";
 // @use "./foundation/variable";
-// @use "./foundation/mixin";
+@use "./foundation/mixin";
 @use "./foundation/base";
 @use "./foundation/keyframe";
 @use "./foundation/component";
@@ -63,6 +63,7 @@
 
 @use "page/single/single";
 
+@use "page/top/aboutTop";
 @use "page/top/contents";
 @use "page/top/event";
 @use "page/top/fv";

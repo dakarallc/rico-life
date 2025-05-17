@@ -37,3 +37,9 @@
 @mixin marugoBold() {
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
+
+@mixin vdlPenLetter() {
+  font-family: "vdl-penletter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}

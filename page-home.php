@@ -9,9 +9,7 @@ get_header();
 
 <div class="top">
 
-<!-- ===============================================================================================
-fv
-================================================================================================ -->
+	<!-- fv -->
 	<section class="fv">
 		<div class="swiper fvSwiper">
 			<div class="swiper-wrapper">
@@ -35,11 +33,18 @@ fv
 				</svg>
 			</div>
 		</div>
-	</section><!-- /fv -->
+	</section>
 
-<!-- ===============================================================================================
-EVENT
-================================================================================================ -->
+	<!-- abou	 -->
+	<section class="about">
+		<div class="about__logo">
+			<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo-black.svg" alt="ロゴ">
+		</div>
+		<p>コスパで創造する、<br class="show--sp">40年間の居住費が<br class="show--sp">いちばん安い家。</p>
+		<div class="about__decoration">
+			<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/round-decoration.svg" alt="">
+		</div>
+	</section>
  
 
 <!-- ===============================================================================================

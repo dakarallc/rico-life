@@ -1,0 +1,35 @@
+@use '../../foundation/mixin';
+.top{
+  .about {
+    padding-bottom: 166px;
+    padding-top: 94px;
+		display: flex;
+		flex-direction: column;
+		gap: 80px;
+		.about__logo{
+			img{
+				width: 285px;
+				@include mixin.sp {
+					width: 236px;
+				}
+			}
+		}
+    p {
+      font-family: "vdl-penletter", sans-serif !important;
+      font-size: 2.1875rem;
+      line-height: 2.08;
+      color: #000000;
+    }
+		.about__decoration{
+			img{
+				width: 18px;
+			}
+		}
+  }
+  @media (max-width: 999px) {
+    .contents {
+      padding-bottom: 20px;
+      padding-top: 42px;
+    }
+  }
+}
