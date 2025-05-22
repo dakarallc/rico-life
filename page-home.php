@@ -35,7 +35,7 @@ get_header();
 		</div>
 	</section>
 
-	<!-- abou	 -->
+	<!-- about	 -->
 	<section class="about">
 		<div class="about__logo">
 			<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo-black.svg" alt="ロゴ">
@@ -45,7 +45,19 @@ get_header();
 			<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/round-decoration.svg" alt="">
 		</div>
 	</section>
- 
+
+	<!-- movie	 -->
+	<section class="movie">
+		<div class="inner">
+			<p>まずは動画をご覧ください！</p>
+			
+			<div class="movie__inner">
+				<iframe width="100%" src="https://www.youtube.com/embed/OKJpQmHUZr0?si=7FpiiuHA2rxe9UzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			<p>Rico Life. のすべてを３分解説します！</p>
+		</div>
+	</section>
+
 
 <!-- ===============================================================================================
 70thバナー

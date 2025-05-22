@@ -1,0 +1,10 @@
+@use '../../foundation/mixin';
+.top{
+  display: flex;
+  flex-direction: column;
+  gap: 205px;
+
+  @include mixin.sp {
+    gap: 154px;
+  }
+}
