@@ -11662,6 +11662,23 @@ us
     gap: 154px;
   }
 }
+.top .top__ttl {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  padding-left: 56px;
+}
+.top .top__ttl span {
+  font-size: 16px;
+  font-weight: normal;
+}
+@media (max-width: 999px) {
+  .top .top__ttl {
+    margin-bottom: 20px;
+  }
+}
 
 .top .about {
   display: -webkit-box;

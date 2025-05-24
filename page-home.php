@@ -58,6 +58,111 @@ get_header();
 		</div>
 	</section>
 
+	<!-- CONCEPT	 -->
+	<section class="concept">
+		<div class="inner">
+			<h2 class="top__ttl">CONCEPT
+				<span>コンセプト</span>
+			</h2>
+		</div>
+	</section>
+
+	<!-- WORKS -->
+	<section class="concept">
+		<div class="inner">
+			<h2 class="top__ttl">WORKS
+				<span>施工事例</span>
+			</h2>
+		</div>
+	</section>
+
+	<!-- EVENT -->
+	<section class="concept">
+		<div class="inner">
+			<h2 class="top__ttl">EVENT
+				<span>イベント情報</span>
+			</h2>
+		</div>
+	</section>
+
+	<!-- PRODUCTS -->
+	<section class="concept">
+		<div class="inner">
+			<h2 class="top__ttl">PRODUCTS
+				<span>商品概要</span>
+			</h2>
+		</div>
+	</section>
+
+	<!-- VOICE -->
+	<section class="concept">
+		<div class="inner">
+			<h2 class="top__ttl">VOICE
+				<span>お客様インタビュー</span>
+			</h2>
+		</div>
+	</section>
+
+	<!-- ABOUT -->
+	<section class="concept">
+		<div class="inner">
+			<h2 class="top__ttl">ABOUT
+				<span>会社紹介</span>
+			</h2>
+		</div>
+	</section>
+
+	<!-- REQUEST -->
+	<section class="concept">
+		<div class="inner">
+			<h2 class="top__ttl">REQUEST
+				<span>資料請求</span>
+			</h2>
+		</div>
+	</section>
+
+	<!-- CONTACT -->
+	<section class="concept">
+		<div class="inner">
+			<h2 class="top__ttl">CONTACT
+				<span>来場予約</span>
+			</h2>
+		</div>
+	</section>
+
+	<!-- COLUMN -->
+	<section class="concept">
+		<div class="inner">
+			<h2 class="top__ttl">COLUMN
+				<span>コラム</span>
+			</h2>
+		</div>
+	</section>
+
+	<!-- NEWS -->
+	<section class="concept">
+		<div class="inner">
+			<h2 class="top__ttl">NEWS
+				<span>お知らせ</span>
+			</h2>
+		</div>
+	</section>
+
+	<!-- Instagram -->
+	<section class="concept">
+		instagram
+	</section>
+
+	<!-- sdgs -->
+	<section class="concept">
+		sdgs
+	</section>
+
+	<!-- 70th -->
+	<section class="concept">
+		70th
+	</section>
+3333
 
 <!-- ===============================================================================================
 70thバナー
