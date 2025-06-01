@@ -225,11 +225,49 @@ get_header();
 	</section>
 
 	<!-- PRODUCTS -->
-	<section class="concept">
+	<section class="product">
 		<div class="inner">
 			<h2 class="section-ttl">PRODUCTS
 				<span>商品概要</span>
 			</h2>
+			<div class="product__list">
+				<div class="product__item">
+					<a href="#">
+						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/product1.png" alt="間取り">
+						<div class="product__label">間取り</div>
+					</a>
+				</div>
+				<div class="product__item">
+					<a href="#">
+						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/product2.png" alt="ソーラー＆蓄電池">
+						<div class="product__label">ソーラー＆蓄電池</div>
+					</a>
+				</div>
+				<div class="product__item">
+					<a href="#">
+						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/product3.png" alt="標準仕様">
+						<div class="product__label">標準仕様</div>
+					</a>
+				</div>
+				<div class="product__item">
+					<a href="#">
+						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/product4.png" alt="コスト">
+						<div class="product__label">コスト</div>
+					</a>
+				</div>
+				<div class="product__item">
+					<a href="#">
+						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/product5.png" alt="家づくりの流れ">
+						<div class="product__label">家づくりの流れ</div>
+					</a>
+				</div>
+				<div class="product__item">
+					<a href="#">
+						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/product6.png" alt="Rico Life.ch">
+						<div class="product__label">Rico Life.ch</div>
+					</a>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -243,7 +281,7 @@ get_header();
 	</section>
 
 	<!-- ABOUT -->
-	<section class="concept">
+	<section class="companyIntroduction">
 		<div class="inner">
 			<h2 class="section-ttl">ABOUT
 				<span>会社紹介</span>
