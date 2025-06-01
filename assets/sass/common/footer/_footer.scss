@@ -228,15 +228,14 @@
 				
 				.footer__sns {
 					display: flex;
+					gap: 16px;
 					justify-content: center;
-					gap: 24px;
-					margin: 32px 0 0 0;
-					a {
-						color: #fff;
-						font-size: 2rem;
-						transition: opacity 0.2s;
+					.icon {
+						font-size: 6rem;
+						color: #222;
+						transition: color 0.2s;
 						&:hover {
-							opacity: 0.7;
+							color: #00796b;
 						}
 					}
 				}

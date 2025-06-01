@@ -179,9 +179,9 @@
 				</div>
 			</div>
 			<div class="footer__sns">
-				<a href="#" target="_blank" rel="noopener"><i class="fa fa-youtube"></i></a>
-				<a href="#" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
-				<a href="#" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.youtube.com/" target="_blank" rel="noopener" class="icon"><i class="fa-brands fa-youtube"></i></a>
+				<a href="https://www.instagram.com/" target="_blank" rel="noopener" class="icon"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.facebook.com/" target="_blank" rel="noopener" class="icon"><i class="fa-brands fa-facebook"></i></a>
 			</div>
 			</div>
     </div>
@@ -219,7 +219,7 @@
     });
 
     var swiper = new Swiper(".eventSwiper", {
-      spaceBetween: 30,
+      spaceBetween: 0,
       autoplay: {
         delay: 3000,
       },
@@ -247,6 +247,16 @@
       },
       loop: true,
     });
+
+		var eventSwiper = new Swiper('.eventSwiper', {
+			slidesPerView: 1,
+			navigation: {
+				nextEl: '.event-swiper-next',
+				prevEl: '.event-swiper-prev',
+			},
+			loop: true,
+			speed: 500,
+		});
 
   </script>
 <?php wp_footer(); ?>

@@ -59,11 +59,7 @@
     border-radius: 4px;
     font-weight: bold;
   }
-	&__btn-wrap{
-		margin:0 auto;
-		text-align: center;
-		margin-top: 60px;
-	}
+	
 
   @include mixin.sp {
     &__inner {

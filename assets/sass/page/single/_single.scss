@@ -277,12 +277,12 @@
   display: -ms-flexbox;
   display: flex;
 }
-@media (min-width: 1000px) {
-  .event__info {
-    margin-right: 4%;
-    width: 100%;
-  }
-}
+// @media (min-width: 1000px) {
+//   .event__info {
+//     margin-right: 4%;
+//     width: 100%;
+//   }
+// }
 @media (max-width: 1300px) {
   .event__info {
     width: 100%;

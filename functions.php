@@ -534,3 +534,8 @@ function register_event_post_type() {
     register_taxonomy('event-category', array('event'), $category_args);
 }
 add_action('init', 'register_event_post_type');
+
+function add_fontawesome_cdn() {
+  wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+}
+add_action('wp_enqueue_scripts', 'add_fontawesome_cdn');
