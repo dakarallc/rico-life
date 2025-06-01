@@ -64,6 +64,27 @@ get_header();
 			<h2 class="section-ttl">CONCEPT
 				<span>コンセプト</span>
 			</h2>
+			<div class="concept__inner">
+				<div class="concept__img">
+					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+				</div>
+				<div class="concept__content">
+					<div class="concept__text">
+						<h3 class="concept__catch">コスパで創る、豊かな暮らし。</h3>
+						<p>住宅購入は<br>『買う費用』より『住む費用』が大切。</p>
+						<p>Rico Life.は、<br>
+							太陽光＆蓄電池＋高耐久素材が標準。<br>
+							光熱費・保険・メンテナンスを削減。<br>
+							<span class="concept__highlight">40年間で最も出費が少ない家。</span><br>
+							ムリせず、賢く。未来に安心を。
+						</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="concept__btn-wrap">
+				<a href="#" class="concept__btn">はじめての方へ</a>
+			</div>
 		</div>
 	</section>
 
