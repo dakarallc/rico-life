@@ -4,20 +4,87 @@
   ========================================================================== */
 
 .footer {
+	color: #fff;
+
+	.area{
+		background-color: #666666;
+		padding: 54px 0;
+		text-align: left;
+		h2{
+			margin-left: -56px;
+			border-bottom: 1px solid #fff !important;
+		}
+		.area__inner{
+			display: flex;
+			gap: 30px;
+			column-gap: 70px;
+			@include mixin.sp {
+				flex-direction: column;
+			}
+
+			.area__inner-item {
+				margin-bottom: 32px;
+
+				.prefecture{
+					font-size: 20px;
+					font-weight: bold;
+					margin-bottom: 10px;
+				}
+
+				.area-list {
+					display: block;
+					list-style: none;
+					padding-left: 0;
+					margin: 0;
+
+					li {
+						margin-bottom: 6px;
+						font-size: 15px;
+						line-height: 1.7;
+						position: relative;
+						padding-left: 1em;
+						&::before {
+							content: "•";
+							position: absolute;
+							left: 0;
+							color: #fff;
+							font-size: 1em;
+						}
+					}
+				}
+			}
+			
+			.saitama-area {
+				display: flex;
+				gap: 24px;
+			}
+
+			
+			@include mixin.sp {
+				.area__inner {
+					flex-direction: column;
+					row-gap: 24px;
+				}
+				.area__inner-item.saitama .area-list {
+					grid-template-columns: 1fr;
+					display: block;
+				}
+			}
+		}
+
+		.area__note {
+			font-size: 13px;
+			color: #fff;
+			margin-top: 18px;
+			line-height: 1.7;
+			letter-spacing: 0.02em;
+		}
+	}
+
   background: #F2F2F2;
   line-height: 1.5;
   padding: 54px 0 0;
-  text-align: center;
-
-  &__logo {
-    margin: 0 auto 37px;
-    width: 365px;
-
-    @include mixin.sp() {
-      width: 195px;
-      margin: 0 auto 20px;
-    }
-  }
+  // text-align: center;
 
   &__txt {
     &:first-of-type {
@@ -35,10 +102,156 @@
     justify-content: center;
     font-size: 1.2rem;
   }
+
+	.footer__contents{
+		background-color: #9CB2AA;
+		padding: 54px 0;
+
+		h2{
+			margin-left: -56px;
+			border-bottom: 1px solid #fff !important;
+		}
+		
+	
+		.footerContentsInner {
+			display: flex;
+			flex-direction: column;
+			gap: 100px;
+			align-items: stretch;
+				//イベント
+			.footer__event {
+				// margin-bottom: 32px;
+			}
+		
+			//リンク集
+			.linkList{
+				.footerNav {
+					flex: 2;
+					ul {
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						gap: 8px 48px;
+						list-style: none;
+						padding: 0;
+						margin: 0;
+				
+						@include mixin.sp {
+							grid-template-columns: 1fr;
+							gap: 8px 0;
+						}
+						li {
+							border-bottom: 1px solid #fff;
+							padding: 6px 0;
+							position: relative;
+							padding-left: 1.2em; // ＞分の余白
+
+							&::before {
+								content: "＞";
+								position: absolute;
+								left: 0;
+								top: 50%; // 上下中央配置のため
+								transform: translateY(-50%); // 上下中央配置のため
+								color: #fff;
+								font-size: 0.6em;
+							}
+
+							a {
+								color: #fff;
+								text-decoration: none;
+								font-size: 1.8rem;
+								transition: opacity 0.2s;
+								&:hover {
+									opacity: 0.7;
+								}
+							}
+						}
+					}
+			}
+			}
+			
+			//会社情報
+			.info {
+				flex: 1;
+				display: flex;
+				gap: 24px;
+				align-items: flex-start;
+				font-size: 1.6rem;
+				font-weight: 100;
+				@include mixin.sp {
+					flex-direction: column;
+					align-items: stretch;
+					gap: 24px;
+				}
+
+				.footer__company {
+					
+					line-height: 2;
+					.footer__logo {
+						width: 300px;
+						@include mixin.sp {
+							width: 200px;
+						}
+					}
+					.footer__address {
+						margin-top: 20px;
+						i {
+							margin-right: 6px;
+						}
+					}
+				}
+				
+				.footer__map {
+					width: 100%;
+					height: 220px;
+					background: #fff;
+					color: #888;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 2rem;
+					border-radius: 8px;
+					overflow: hidden;
+				
+					@include mixin.sp {
+						width: 100%;
+						max-width: 100%;
+						height: 180px;
+						margin: 0 auto;
+					}
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						display: block;
+					}
+				}
+				
+				.footer__sns {
+					display: flex;
+					justify-content: center;
+					gap: 24px;
+					margin: 32px 0 0 0;
+					a {
+						color: #fff;
+						font-size: 2rem;
+						transition: opacity 0.2s;
+						&:hover {
+							opacity: 0.7;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
+
 .fixedMenu+.footer__contents {
-  @include mixin.sp() {
-    padding-top: 50px;
-  }
+	@include mixin.sp {
+		padding-top: 50px;
+	}
+}
+
+.area-list.saitama-city {
+	display: block !important;
 }

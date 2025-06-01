@@ -80,6 +80,23 @@
   }
 }
 
+.section-ttl {
+	margin-bottom: 60px;
+	padding-left:56px;
+	font-size: 36px;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+	display: inline-block;
+	span{
+		font-size: 16px;
+		font-weight: normal;
+	}
+
+	@include mixin.sp {
+		margin-bottom: 20px;
+	}
+}
+
 
 /* ==========================================================================
   topLink

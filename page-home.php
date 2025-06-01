@@ -61,7 +61,7 @@ get_header();
 	<!-- CONCEPT	 -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="top__ttl">CONCEPT
+			<h2 class="section-ttl">CONCEPT
 				<span>コンセプト</span>
 			</h2>
 		</div>
@@ -70,7 +70,7 @@ get_header();
 	<!-- WORKS -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="top__ttl">WORKS
+			<h2 class="section-ttl">WORKS
 				<span>施工事例</span>
 			</h2>
 		</div>
@@ -79,7 +79,7 @@ get_header();
 	<!-- EVENT -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="top__ttl">EVENT
+			<h2 class="section-ttl">EVENT
 				<span>イベント情報</span>
 			</h2>
 		</div>
@@ -88,7 +88,7 @@ get_header();
 	<!-- PRODUCTS -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="top__ttl">PRODUCTS
+			<h2 class="section-ttl">PRODUCTS
 				<span>商品概要</span>
 			</h2>
 		</div>
@@ -97,7 +97,7 @@ get_header();
 	<!-- VOICE -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="top__ttl">VOICE
+			<h2 class="section-ttl">VOICE
 				<span>お客様インタビュー</span>
 			</h2>
 		</div>
@@ -106,7 +106,7 @@ get_header();
 	<!-- ABOUT -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="top__ttl">ABOUT
+			<h2 class="section-ttl">ABOUT
 				<span>会社紹介</span>
 			</h2>
 		</div>
@@ -115,7 +115,7 @@ get_header();
 	<!-- REQUEST -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="top__ttl">REQUEST
+			<h2 class="section-ttl">REQUEST
 				<span>資料請求</span>
 			</h2>
 		</div>
@@ -124,7 +124,7 @@ get_header();
 	<!-- CONTACT -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="top__ttl">CONTACT
+			<h2 class="section-ttl">CONTACT
 				<span>来場予約</span>
 			</h2>
 		</div>
@@ -133,7 +133,7 @@ get_header();
 	<!-- COLUMN -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="top__ttl">COLUMN
+			<h2 class="section-ttl">COLUMN
 				<span>コラム</span>
 			</h2>
 		</div>
@@ -142,7 +142,7 @@ get_header();
 	<!-- NEWS -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="top__ttl">NEWS
+			<h2 class="section-ttl">NEWS
 				<span>お知らせ</span>
 			</h2>
 		</div>
