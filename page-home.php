@@ -83,17 +83,77 @@ get_header();
 				</div>
 			</div>
 			<div class="concept__btn-wrap">
-				<a href="#" class="concept__btn">はじめての方へ</a>
+				<a href="#" class="greenBtn">はじめての方へ</a>
 			</div>
 		</div>
 	</section>
 
 	<!-- WORKS -->
-	<section class="concept">
+	<section class="case">
 		<div class="inner">
 			<h2 class="section-ttl">WORKS
 				<span>施工事例</span>
 			</h2>
+
+			<?php
+      $perPage = 10;
+      $paged = get_query_var('paged');
+      $args = array(
+        'posts_per_page' => $perPage,
+        'post_type' => 'case',
+        'paged' => $paged,
+        // 'orderby' => 'meta_value',
+        'orderby' => array( 'meta_value' => 'DESC', 'date' => 'DESC' ),
+        'meta_key' => 'case-isHot'//カスタムフィールドの値を基準に並べ替え
+      );
+      $my_query = new WP_Query($args);
+      if ($my_query->have_posts()) : 
+    ?>
+      
+    <div class="swiper mySwiper">
+      <!-- swipper設定 -->
+      
+      <!-- <div class=""> -->
+        <ul class="swiper-wrapper">
+          <?php while ($my_query->have_posts()) : $my_query->the_post();
+          $name = get_the_title(); //名称
+          $cat = get_field('case-cat')->name; //カテゴリ名称
+          //画像
+          $img_id1 = get_field('pic1');
+          $img_url1 = wp_get_attachment_image_src($img_id1, 'large')[0];
+          $industry = get_field('case-industry'); //業種
+          $catch = get_field('case-catch');//きゃっち
+          $hot = get_field('case-isHot'); //HOT
+          $floor_space = get_field('floor-space');
+          ?>
+            <li class="swiper-slide">
+              <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
+                <div class="case__img"><img width="300" data-js-ofi src="<?php echo $img_url1; ?>" alt="<?php echo $name ?>"></div>
+                <div class="case__body">
+                  <h3 class="case__title">
+                    <span class=""><?php echo $name ?></span>
+                  </h3>
+                  <p class="case__desc"><?php echo $catch; ?></p>
+                  <div class="case__info">
+                    <?php if ($floor_space): ?>
+                    <p class="case__floor">延床面積：<?php echo esc_html($floor_space); ?></p>
+                    <?php endif; ?>
+                    <?php $place = get_field('place'); if ($place): ?>
+                    <p class="case__place">建築場所：<?php echo esc_html($place); ?></p>
+                    <?php endif; ?>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <?php endwhile; ?>
+          </ul><!-- /case__list -->
+          <div class="swiper-pagination swiper-pagination-black"></div>
+        <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
+      <!-- </div> -->
+    </div>
+
+
 		</div>
 	</section>
 
@@ -103,6 +163,7 @@ get_header();
 			<h2 class="section-ttl">EVENT
 				<span>イベント情報</span>
 			</h2>
+			
 		</div>
 	</section>
 
@@ -237,22 +298,31 @@ case swipper設定はfooter.phpに記載
           $industry = get_field('case-industry'); //業種
           $catch = get_field('case-catch');//きゃっち
           $hot = get_field('case-isHot'); //HOT
+          $floor_space = get_field('floor-space');
           ?>
             <li class="swiper-slide">
               <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                <div class="caseList__img"><img width="300" data-js-ofi src="<?php echo $img_url1; ?>" alt="<?php echo $name ?>"></div>
-                <!-- /caseList__img -->
-                <div class="caseList__body">
-                  <h3 class="caseList__subTtl">
+                <div class="case__img"><img width="300" data-js-ofi src="<?php echo $img_url1; ?>" alt="<?php echo $name ?>"></div>
+                <!-- /case__img -->
+                <div class="case__body">
+                  <h3 class="case__subTtl">
                     <span class="_below"><?php echo $name ?></span><!-- /_below -->
-                  </h3><!-- /caseList__subTtl -->
-                  <p class="caseList__desc"><?php echo trimString($catch, 30); ?></p>
-                  <!-- /caseList__desc -->
-                </div><!-- /caseList__body -->
+                  </h3><!-- /case__subTtl -->
+                  <p class="case__desc"><?php echo trimString($catch, 30); ?></p>
+                  <!-- /case__desc -->
+                  <div class="case__info">
+                    <?php if ($floor_space): ?>
+                    <p class="case__floor">延床面積：<?php echo esc_html($floor_space); ?></p>
+                    <?php endif; ?>
+                    <?php $place = get_field('place'); if ($place): ?>
+                    <p class="case__place">建築場所：<?php echo esc_html($place); ?></p>
+                    <?php endif; ?>
+                  </div>
+                </div><!-- /case__body -->
               </a>
-            </li><!-- /caseList__item -->
+            </li><!-- /case__item -->
             <?php endwhile; ?>
-          </ul><!-- /caseList__list -->
+          </ul><!-- /case__list -->
           <div class="swiper-pagination swiper-pagination-black"></div>
         <?php endif; ?>
         <?php wp_reset_postdata(); ?>

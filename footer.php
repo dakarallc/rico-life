@@ -13,11 +13,6 @@
   </ul>
 <?php endif; ?>
 
-
-
-
-
-
 <!-- footer -->
 <footer class="footer">
 
@@ -126,7 +121,7 @@
     <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/triangle.svg" alt="">
     <p>TOP</p>
   </div>
- 
+
   <div class="footer__contents">
     <div class="inner footerContentsInner">
 			<div class="footer__event">
@@ -139,7 +134,6 @@
 				</div>
 			</div>
 
-     
 			<div class="linkList">
 				<h2 class="section-ttl">LINK
 					<span>リンク集</span>
@@ -219,7 +213,7 @@
         },
         // 1200px以上の場合
         1200: {
-          slidesPerView: 3.5,
+          slidesPerView: 3,
         }
       }
     });

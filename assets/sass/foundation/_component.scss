@@ -509,6 +509,38 @@
   }
 }
 
+/* ==========================================================================
+  ボタン
+  ========================================================================== */
+.greenBtn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: #9CB2AA;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 36px;
+	width: 330px;
+	padding: 16px 48px;
+	text-decoration: none;
+	margin-top: 16px;
+	transition: background 0.2s;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+	position: relative;
+	
+	&::after {
+		content: '＞';
+		position: absolute;
+		right: 24px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&:hover {
+		background: #a0b5a7;
+	}
+}
+
 
 /* ==========================================================================
   case
@@ -527,9 +559,29 @@
     opacity: 0.5;
   }
   
-  .swiper-pagination {
-    position: static;
-  }
+
+	.swiper-pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		position: static;
+		margin-top: 40px;
+	}
+	.swiper-pagination-bullet {
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		background: transparent;
+		border: 2px solid #444;
+		opacity: 1;
+		margin: 0;
+		transition: background 0.2s, border 0.2s;
+	}
+	.swiper-pagination-bullet-active {
+		background: #444;
+		border: 2px solid #444;
+	}
 
   /* ==========================================================================
   contact

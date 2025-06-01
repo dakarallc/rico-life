@@ -63,34 +63,6 @@
 		margin:0 auto;
 		text-align: center;
 		margin-top: 60px;
-		.concept__btn {
-			display: inline-flex;
-			align-items: center;
-			justify-content: center;
-			background: #9CB2AA;
-			color: #fff;
-			font-weight: bold;
-			border-radius: 36px;
-			width: 330px;
-			padding: 16px 48px;
-			text-decoration: none;
-			margin-top: 16px;
-			transition: background 0.2s;
-			box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-			position: relative;
-			
-			&::after {
-				content: '＞';
-				position: absolute;
-				right: 24px;
-				top: 50%;
-				transform: translateY(-50%);
-			}
-	
-			&:hover {
-				background: #a0b5a7;
-			}
-		}
 	}
 
   @include mixin.sp {
