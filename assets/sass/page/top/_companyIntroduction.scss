@@ -1,0 +1,69 @@
+@use '../../foundation/mixin';
+
+.companyIntroduction__container {
+  display: flex;
+  width: 100%;
+  height: 140px;
+  background: #fff;
+  overflow: hidden;
+  gap: 30px;
+
+  @include mixin.sp {
+    flex-direction: column;
+		height: auto;
+  }
+}
+
+.companyIntroduction__block {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #000;
+  transition: background 0.2s;
+
+  @include mixin.sp {
+    flex: none;
+    height: 140px;
+  }
+
+  &:hover {
+    background: #f5f5f5;
+  }
+
+  &--left,
+  &--right {
+    @include mixin.sp {
+      justify-content: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.companyIntroduction__block--left {
+  justify-content: flex-start;
+  padding-left: 3vw;
+}
+
+.companyIntroduction__block--right {
+  justify-content: flex-end;
+  padding-right: 3vw;
+}
+
+.companyIntroduction__divider {
+  width: 40px;
+  background: #000;
+  height: 100%;
+  flex-shrink: 0;
+
+  @include mixin.sp {
+    width: 100%;
+    height: 40px;
+  }
+}

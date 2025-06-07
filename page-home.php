@@ -286,6 +286,14 @@ get_header();
 			<h2 class="section-ttl">ABOUT
 				<span>会社紹介</span>
 			</h2>
+			<div class="companyIntroduction__container">
+				<a href="/about/" class="companyIntroduction__block companyIntroduction__block--left">
+					<span>スタッフ紹介</span>
+				</a>
+				<a href="/access/" class="companyIntroduction__block companyIntroduction__block--right">
+					<span>会社概要</span>
+				</a>
+			</div>
 		</div>
 	</section>
 
