@@ -152,6 +152,9 @@
       display: block;
       padding: 0 20px;
       text-align: center;
+			height: 52px;
+      color: #fff;
+      transition: color 0.3s ease;
 
       @include mixin.pc {
         padding: 0 14px;
@@ -178,7 +181,7 @@
     ._below {
       font-size: 1.3rem;
       font-weight: bold;
-
+			padding-top: 12px;
       @include mixin.pc {
         font-size: 1.3rem;
       }
@@ -189,6 +192,32 @@
 
       @include mixin.sp {
         font-size: 1.6rem;
+      }
+    }
+  }
+
+  // 黒テーマ時のスタイル
+  &._black {
+    .header__item {
+      > a {
+        color: #000;
+        
+        &:hover {
+          color: #F10000;
+        }
+      }
+    }
+  }
+
+  // SPでメニューが開いている時は常に黒
+  .header__contents.action {
+    .header__item {
+      > a {
+        color: #000;
+        
+        &:hover {
+          color: #F10000;
+        }
       }
     }
   }

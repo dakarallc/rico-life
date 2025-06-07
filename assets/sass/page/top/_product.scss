@@ -9,7 +9,7 @@
 	
 			@include mixin.sp {
 				grid-template-columns: repeat(2, 1fr);
-				gap: 32px 16px;
+				gap: 16px 16px;
 			}
 		}
 	
@@ -26,12 +26,16 @@
 			object-fit: cover;
 			transition: transform 0.3s, box-shadow 0.2s;
 			display: block;
+
+			@include mixin.sp {
+				width: 140px;
+				height: 140px;
+			}
 		}
 	
 		&__item a {
 			display: flex;
 			flex-direction: column;
-			align-items: center;
 			overflow: hidden;
 		}
 	
@@ -45,5 +49,9 @@
 			font-weight: bold;
 			color: #333;
 			letter-spacing: 0.05em;
+
+			@include mixin.sp {
+				font-size: 1.4rem;
+			}
 		}
 	}

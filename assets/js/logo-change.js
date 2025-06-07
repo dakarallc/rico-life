@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const blackLogoSrc = originalSrc.replace('logo.svg', 'logo-black.svg');
   const header = document.querySelector('.header');
 
-  function updateLogo() {
+  function updateHeaderTheme() {
     const kv = document.querySelector('.fv');
     if (!kv) return;
 
@@ -27,17 +27,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const logoRect = headerLogo.getBoundingClientRect();
     const logoBottom = logoRect.bottom;
 
-    // KVの下端より下にロゴが来たら黒に変更
+    // KVの下端より下にロゴが来たら黒テーマに変更
     if (logoBottom > kvRect.bottom) {
       if (headerLogo.dataset.logo !== 'black') {
-        console.log('Changing to black logo');
+        console.log('Changing to black theme');
         headerLogo.dataset.logo = 'black';
         logoImg.src = blackLogoSrc;
         header.classList.add('_black');
       }
     } else {
       if (headerLogo.dataset.logo !== 'white') {
-        console.log('Changing to white logo');
+        console.log('Changing to white theme');
         headerLogo.dataset.logo = 'white';
         logoImg.src = originalSrc;
         header.classList.remove('_black');
@@ -45,6 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  window.addEventListener('scroll', updateLogo);
-  updateLogo(); // Initial check
+  window.addEventListener('scroll', updateHeaderTheme);
+  updateHeaderTheme(); // Initial check
 }); 

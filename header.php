@@ -64,63 +64,50 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
     <header class="header <?php  if(is_home() || is_front_page()){ echo '_top';} ?>">
       <div class="header__inner inner">
       <?php  if(is_home() || is_front_page()): ?>
-        <h1 class="header__logo" data-logo="white"><a href="<?php echo do_shortcode('[home_url]'); ?>"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt="ietochi honpo"></a></h1>
+        <h1 class="header__logo" data-logo="white"><a href="<?php echo do_shortcode('[home_url]'); ?>"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt="rico life"></a></h1>
       <?php else: ?>
-        <div class="header__logo"><a href="<?php echo do_shortcode('[home_url]'); ?>"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt="ietochi honpo"></a></div>
+        <div class="header__logo"><a href="<?php echo do_shortcode('[home_url]'); ?>"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt="rico life"></a></div>
       <?php endif; ?>
         <!-- /header__logo -->
         <div class="header__contents" id="js-headerContents">
           <nav class="header__nav">
             <ul class="header__list">
-              <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>">
-                  <span class="_below"><span class="show--pc">トップ</span><span class="show--sp">TOP</span></span>
-                </a></li>
-              <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>about">
-                  <span class="_below">いえとち本舗とは</span>
-                </a></li>
-							<li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>hiraya">
-								<span class="_below">はたらく平屋</span>
-								</a>
-							</li>
-              <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>case">
-                  <span class="_below">施工事例</span>
-                </a></li>
-              <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>event">
-                  <span class="_below">イベント</span>
-                </a></li>
-              <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>news">
-                  <span class="_below">お知らせ</span>
-                </a></li>
-              <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>access">
-                  <span class="_below">会社情報</span>
-                </a></li>
-              <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>staff/">
-                  <span class="_below">スタッフ紹介</span>
-                </a></li>
-              <li class="header__item"><a href="<?php echo do_shortcode('[home_url]'); ?>column">
-                  <span class="_below">コラム</span>
-                </a></li>
+              <li class="header__item">
+                <a href="<?php echo do_shortcode('[home_url]'); ?>">
+                  <i class="fab fa-youtube fa-xl"></i>
+                  <p class="_below">YouTube</p>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="<?php echo do_shortcode('[home_url]'); ?>about">
+									<i class="fa-brands fa-instagram fa-xl"></i>
+                  <p class="_below">Instagram</p>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="<?php echo do_shortcode('[home_url]'); ?>request">
+								<i class="fa-solid fa-book-open fa-xl"></i>
+                  <p class="_below">資料請求</p>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="<?php echo do_shortcode('[home_url]'); ?>contact">
+									<i class="fa-solid fa-house fa-xl"></i>
+                  <p class="_below">来場予約</p>
+                </a>
+              </li>
             </ul>
           </nav>
-          
-          <a href="<?php echo do_shortcode('[home_url]'); ?>request" class="header__link blue">
-            <div class="fx">
-              <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/document.svg" alt="">
-              <p>資料請求</p>
-            </div>
-          </a>
-          <a href="<?php echo do_shortcode('[home_url]'); ?>contact" class="header__link green">
-            <div class="fx">
-              <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/shop.svg" alt="">
-              <p>ご来店</p>
-            </div>
-          </a>
         </div>
-        <div class="toggle" id="js-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+
+				<div class="toggle__line">
+					<div class="toggle" id="js-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					menu
+				</div>
       </div><!-- /header__inner -->
     </header><!-- /header -->
     <div class="overlayer" id="js-overlayer"></div><!-- /overlay -->

@@ -9,7 +9,7 @@
   position: relative;
   height: 30px;
   width: 42px;
-  z-index: 3;
+  z-index: 1000;
   top: -3px;
   transition: 0.3s;
   display: none;
@@ -73,5 +73,43 @@
     transform: translateX(-50%);
     white-space: nowrap;
     margin-left: 1px;
+  }
+}
+
+.toggle__line {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+
+  @include mixin.pc {
+    display: none;
+  }
+}
+
+// 黒テーマ時のトグルスタイル
+.header._black {
+  .toggle {
+    span {
+      border-bottom-color: #000;
+    }
+  }
+  
+  .toggle__line {
+    color: #000;
+  }
+}
+
+// メニューが開いている時は常に黒
+.header__contents.action ~ .toggle__line {
+  color: #000;
+  
+  .toggle {
+    span {
+      border-bottom-color: #000;
+    }
   }
 }
