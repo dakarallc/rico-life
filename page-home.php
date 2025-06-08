@@ -79,7 +79,6 @@ get_header();
 							ムリせず、賢く。未来に安心を。
 						</p>
 					</div>
-					
 				</div>
 			</div>
 			<div class="btnWrap">
@@ -96,64 +95,55 @@ get_header();
 			</h2>
 
 			<?php
-      $perPage = 10;
-      $paged = get_query_var('paged');
-      $args = array(
-        'posts_per_page' => $perPage,
-        'post_type' => 'case',
-        'paged' => $paged,
-        // 'orderby' => 'meta_value',
-        'orderby' => array( 'meta_value' => 'DESC', 'date' => 'DESC' ),
-        'meta_key' => 'case-isHot'//カスタムフィールドの値を基準に並べ替え
-      );
-      $my_query = new WP_Query($args);
-      if ($my_query->have_posts()) : 
-    ?>
-      
-    <div class="swiper mySwiper">
-      <!-- swipper設定 -->
-      
-      <!-- <div class=""> -->
-        <ul class="swiper-wrapper">
-          <?php while ($my_query->have_posts()) : $my_query->the_post();
-          $name = get_the_title(); //名称
-          $cat = get_field('case-cat')->name; //カテゴリ名称
-          //画像
-          $img_id1 = get_field('pic1');
-          $img_url1 = wp_get_attachment_image_src($img_id1, 'large')[0];
-          $industry = get_field('case-industry'); //業種
-          $catch = get_field('case-catch');//きゃっち
-          $hot = get_field('case-isHot'); //HOT
-          $floor_space = get_field('floor-space');
-          ?>
-            <li class="swiper-slide">
-              <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                <div class="case__img"><img width="300" data-js-ofi src="<?php echo $img_url1; ?>" alt="<?php echo $name ?>"></div>
-                <div class="case__body">
-                  <h3 class="case__title">
-                    <span class=""><?php echo $name ?></span>
-                  </h3>
-                  <p class="case__desc"><?php echo $catch; ?></p>
-                  <div class="case__info">
-                    <?php if ($floor_space): ?>
-                    <p class="case__floor">延床面積：<?php echo esc_html($floor_space); ?></p>
-                    <?php endif; ?>
-                    <?php $place = get_field('place'); if ($place): ?>
-                    <p class="case__place">建築場所：<?php echo esc_html($place); ?></p>
-                    <?php endif; ?>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <?php endwhile; ?>
-          </ul><!-- /case__list -->
-          <div class="swiper-pagination swiper-pagination-black"></div>
-        <?php endif; ?>
-        <?php wp_reset_postdata(); ?>
-      <!-- </div> -->
-    </div>
-
-
+			$perPage = 10;
+			$paged = get_query_var('paged');
+			$args = array(
+				'posts_per_page' => $perPage,
+				'post_type' => 'case',
+				'paged' => $paged,
+				'orderby' => array( 'meta_value' => 'DESC', 'date' => 'DESC' ),
+				'meta_key' => 'case-isHot'
+			);
+			$my_query = new WP_Query($args);
+			if ($my_query->have_posts()) : 
+			?>
+			<div class="swiper mySwiper">
+				<ul class="swiper-wrapper">
+					<?php while ($my_query->have_posts()) : $my_query->the_post();
+					$name = get_the_title();
+					$cat = get_field('case-cat')->name;
+					$img_id1 = get_field('pic1');
+					$img_url1 = wp_get_attachment_image_src($img_id1, 'large')[0];
+					$industry = get_field('case-industry');
+					$catch = get_field('case-catch');
+					$hot = get_field('case-isHot');
+					$floor_space = get_field('floor-space');
+					?>
+					<li class="swiper-slide">
+						<a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
+							<div class="case__img"><img width="300" data-js-ofi src="<?php echo $img_url1; ?>" alt="<?php echo $name ?>"></div>
+							<div class="case__body">
+								<h3 class="case__title">
+									<span class=""><?php echo $name ?></span>
+								</h3>
+								<p class="case__desc"><?php echo $catch; ?></p>
+								<div class="case__info">
+									<?php if ($floor_space): ?>
+									<p class="case__floor">延床面積：<?php echo esc_html($floor_space); ?></p>
+									<?php endif; ?>
+									<?php $place = get_field('place'); if ($place): ?>
+									<p class="case__place">建築場所：<?php echo esc_html($place); ?></p>
+									<?php endif; ?>
+								</div>
+							</div>
+						</a>
+					</li>
+					<?php endwhile; ?>
+				</ul>
+				<div class="swiper-pagination swiper-pagination-black"></div>
+			<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
+			</div>
 		</div>
 	</section>
 
@@ -167,7 +157,7 @@ get_header();
 			<?php
 			$args = array(
 				'post_type' => 'event',
-				'posts_per_page' => 5, // 複数件取得してスライド可能に
+				'posts_per_page' => 5,
 				'orderby' => 'date',
 				'order' => 'DESC'
 			);
@@ -175,47 +165,47 @@ get_header();
 
 			if ($event_query->have_posts()) :
 			?>
-				<div class="event__slider swiper eventSwiper">
-					<div class="swiper-wrapper">
-						<?php while ($event_query->have_posts()) : $event_query->the_post();
-							$event_pic = get_field('event-pic');
-							$is_always = get_field('is_always');
-							$start_date = get_field('event_start_date');
-							$end_date = get_field('event_end_date');
-							$start_time = get_field('event_start_time');
-							$end_time = get_field('event_end_time');
-							$address = get_field('address');
-						?>
-							<div class="event__slide swiper-slide">
-								<a href="<?php echo esc_url(get_permalink()); ?>" class="event__container">
-									<div class="event__image">
-										<img src="<?php echo esc_url($event_pic); ?>" alt="<?php the_title(); ?>">
-									</div>
-									<div class="event__info">
-										<h3 class="event__main-title"><?php the_title(); ?></h3>
-										<hr class="event__divider">
-										<p>完成見学会 ※完全予約制</p>
-										<div class="event__row">
-											<span class="event__icon"><i class="fa-regular fa-calendar"></i></span>
-											<span class="event__date"><?php echo esc_html($start_date); ?> - <?php echo esc_html($end_date); ?></span>
-										</div>
-										<div class="event__row">
-											<span class="event__icon"><i class="fa-solid fa-location-dot"></i></span>
-											<span class="event__place"><?php echo esc_html($address); ?></span>
-										</div>
-									</div>
-								</a>
+			<div class="event__slider swiper eventSwiper">
+				<div class="swiper-wrapper">
+					<?php while ($event_query->have_posts()) : $event_query->the_post();
+					$event_pic = get_field('event-pic');
+					$is_always = get_field('is_always');
+					$start_date = get_field('event_start_date');
+					$end_date = get_field('event_end_date');
+					$start_time = get_field('event_start_time');
+					$end_time = get_field('event_end_time');
+					$address = get_field('address');
+					?>
+					<div class="event__slide swiper-slide">
+						<a href="<?php echo esc_url(get_permalink()); ?>" class="event__container">
+							<div class="event__image">
+								<img src="<?php echo esc_url($event_pic); ?>" alt="<?php the_title(); ?>">
 							</div>
-						<?php endwhile; ?>
+							<div class="event__info">
+								<h3 class="event__main-title"><?php the_title(); ?></h3>
+								<hr class="event__divider">
+								<p>完成見学会 ※完全予約制</p>
+								<div class="event__row">
+									<span class="event__icon"><i class="fa-regular fa-calendar"></i></span>
+									<span class="event__date"><?php echo esc_html($start_date); ?> - <?php echo esc_html($end_date); ?></span>
+								</div>
+								<div class="event__row">
+									<span class="event__icon"><i class="fa-solid fa-location-dot"></i></span>
+									<span class="event__place"><?php echo esc_html($address); ?></span>
+								</div>
+							</div>
+						</a>
 					</div>
-					<div class="swiper-button-prev event-swiper-prev"></div>
-					<div class="swiper-button-next event-swiper-next"></div>
+					<?php endwhile; ?>
 				</div>
+				<div class="swiper-button-prev event-swiper-prev"></div>
+				<div class="swiper-button-next event-swiper-next"></div>
+			</div>
 			<?php
-				wp_reset_postdata();
+			wp_reset_postdata();
 			else:
 			?>
-				<p>現在、開催中のイベントはありません。</p>
+			<p>現在、開催中のイベントはありません。</p>
 			<?php endif; ?>
 			
 			<div class="btnWrap">
@@ -272,13 +262,13 @@ get_header();
 	</section>
 
 	<!-- VOICE -->
-	<section class="concept">
+	<!-- <section class="concept">
 		<div class="inner">
 			<h2 class="section-ttl">VOICE
 				<span>お客様インタビュー</span>
 			</h2>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- ABOUT -->
 	<section class="companyIntroduction">
@@ -349,7 +339,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-		<div class="contact__txt"	>
+		<div class="contact__txt">
 			<p>お打合せは埼玉県久喜市にある店舗にて行わせていただきます。<br/>キッズスペースや駐車場を完備しています。</p>
 		</div>
 	</section>
@@ -376,29 +366,29 @@ get_header();
 
 		$the_query = new WP_Query($args);
 		if ($the_query->have_posts()) : ?>
-			<div class="inner news__inner">
-				<h2 class="section-ttl">NEWS
-					<span>お知らせ</span>
-				</h2>
-				<div class="news__box">
-					<ul class="news__list">
-						<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-							<li class="news__item">
-								<a href="<?php echo esc_url(get_permalink()); ?>">
-									<div class="news__info">
-										<time class="news__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y.n.j'); ?></time>
-										<span class="news__cat">News</span>
-									</div>
-									<div class="news__body">
-										<p class="news__subTtl"><?php echo trimString(get_the_title(), 50); ?></p>
-										<i class="fa-solid fa-chevron-right news__arrow"></i>
-									</div>
-								</a>
-							</li>
-						<?php endwhile; ?>
-					</ul>
-				</div>
+		<div class="inner news__inner">
+			<h2 class="section-ttl">NEWS
+				<span>お知らせ</span>
+			</h2>
+			<div class="news__box">
+				<ul class="news__list">
+					<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+					<li class="news__item">
+						<a href="<?php echo esc_url(get_permalink()); ?>">
+							<div class="news__info">
+								<time class="news__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y.n.j'); ?></time>
+								<span class="news__cat">News</span>
+							</div>
+							<div class="news__body">
+								<p class="news__subTtl"><?php echo trimString(get_the_title(), 50); ?></p>
+								<i class="fa-solid fa-chevron-right news__arrow"></i>
+							</div>
+						</a>
+					</li>
+					<?php endwhile; ?>
+				</ul>
 			</div>
+		</div>
 		<?php endif;
 		wp_reset_postdata(); ?>
 	
@@ -428,153 +418,10 @@ get_header();
 						<p class="sdgs__sub-text">
 							埼玉県SDGs公式パートナー企業です。
 						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<!-- 70th -->
-	<section class="concept">
-		70th
-	</section>
-3333
-
-<!-- ===============================================================================================
-70thバナー
-================================================================================================ -->
-
-  <!--  -->
-  <div class="banner banner70">
-    <div class="inner">
-      <a class="tochi present-pc" href="https://ietochi-kuki.com/1331/" target="_blank">
-          <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/70th.png" alt="">
-      </a>
-      <a class="tochi present-sp" href="https://ietochi-kuki.com/1331/" target="_blank">
-          <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/70thSp.png" alt="">
-      </a>
-    </div>
-  </div>
-
-
-<!-- ===============================================================================================
-case swipper設定はfooter.phpに記載
-================================================================================================ -->
-
-<section class="tcase">
-  <div class="tcase__inner">
-    <?php
-      $perPage = 10;
-      $paged = get_query_var('paged');
-      $args = array(
-        'posts_per_page' => $perPage,
-        'post_type' => 'case',
-        'paged' => $paged,
-        // 'orderby' => 'meta_value',
-        'orderby' => array( 'meta_value' => 'DESC', 'date' => 'DESC' ),
-        'meta_key' => 'case-isHot'//カスタムフィールドの値を基準に並べ替え
-      );
-      $my_query = new WP_Query($args);
-      if ($my_query->have_posts()) : 
-    ?>
-      
-    <div class="swiper mySwiper">
-      <!-- swipper設定 -->
-      
-      <!-- <div class=""> -->
-        <ul class="swiper-wrapper">
-          <?php while ($my_query->have_posts()) : $my_query->the_post();
-          $name = get_the_title(); //名称
-          $cat = get_field('case-cat')->name; //カテゴリ名称
-          //画像
-          $img_id1 = get_field('pic1');
-          $img_url1 = wp_get_attachment_image_src($img_id1, 'large')[0];
-          $industry = get_field('case-industry'); //業種
-          $catch = get_field('case-catch');//きゃっち
-          $hot = get_field('case-isHot'); //HOT
-          $floor_space = get_field('floor-space');
-          ?>
-            <li class="swiper-slide">
-              <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                <div class="case__img"><img width="300" data-js-ofi src="<?php echo $img_url1; ?>" alt="<?php echo $name ?>"></div>
-                <!-- /case__img -->
-                <div class="case__body">
-                  <h3 class="case__subTtl">
-                    <span class="_below"><?php echo $name ?></span><!-- /_below -->
-                  </h3><!-- /case__subTtl -->
-                  <p class="case__desc"><?php echo trimString($catch, 30); ?></p>
-                  <!-- /case__desc -->
-                  <div class="case__info">
-                    <?php if ($floor_space): ?>
-                    <p class="case__floor">延床面積：<?php echo esc_html($floor_space); ?></p>
-                    <?php endif; ?>
-                    <?php $place = get_field('place'); if ($place): ?>
-                    <p class="case__place">建築場所：<?php echo esc_html($place); ?></p>
-                    <?php endif; ?>
-                  </div>
-                </div><!-- /case__body -->
-              </a>
-            </li><!-- /case__item -->
-            <?php endwhile; ?>
-          </ul><!-- /case__list -->
-          <div class="swiper-pagination swiper-pagination-black"></div>
-        <?php endif; ?>
-        <?php wp_reset_postdata(); ?>
-      <!-- </div> -->
-    </div>
-  </div>
-</section>
-<!-- 
-
-<!-- ===============================================================================================
-contents
-================================================================================================ -->
-  <section class="contents">
-    <div class="inner contents__inner">
-      <h2 class="contents__ttl ttl ttl--left">CONTENTS</h2><!-- /contents__ttl -->
-      <ul class="contents__list">
-        <li class="contents__item contents__item--full contents__item--interview wow fadeInUp"><a href="<?php echo do_shortcode('[home_url]'); ?>column" target="_blank">
-            <div class="contents__box column">
-              <h3 class="contents__subTtl1">
-                <span class="_upper">COLUMN</span><!-- /_upper -->
-                <span class="_below"><span class="_lg">家づくりお役立ち情報</span></span><!-- /_below -->
-              </h3><!-- /contents__subTtl1 -->
-            </div><!-- /contents__box -->
-          </a></li><!-- /contents__item -->
-        <li class="contents__item contents__item--half contents__item--agency wow fadeInUp"><a href="https://page.line.me/060hsjgx?openQrModal=true" target="_blank">
-            <div class="contents__box line">
-              <h3 class="contents__subTtl2">
-                <span class="_upper">LINE</span><!-- /_upper -->
-                <span class="_below">友達登録<i class="fas fa-external-link-alt"></i></span><!-- /_below -->
-              </h3><!-- /contents__subTtl1 -->
-            </div><!-- /contents__box -->
-          </a></li><!-- /contents__item -->
-        <li class="contents__item contents__item--half contents__item--contact wow fadeInUp"><a href="https://www.instagram.com/ietochi_kuki/" target="_blank">
-            <div class="contents__box instagram">
-              <h3 class="contents__subTtl2">
-                <span class="_upper">INSTAGRAM</span><!-- /_upper -->
-                <span class="_below">インスタグラム<i class="fas fa-external-link-alt"></i></span><!-- /_below -->
-              </h3><!-- /contents__subTtl1 -->
-            </div><!-- /contents__box -->
-          </a></li><!-- /contents__item -->
-      </ul><!-- /contents__list -->
-    </div><!-- /inner contents -->
-  </section><!-- /contents -->
-
-</div><!-- /top -->
-
-<div class="requestBanner">
-  <div class="requestBanner__content">
-    <div class="requestBanner__text">
-      <span class="requestBanner__lead">かんたん入力<span class="requestBanner__sec">60</span>秒</span>
-      <a href="#" class="requestBanner__btn">
-        資料請求はこちら
-        <span class="requestBanner__arrow">&gt;</span>
-      </a>
-    </div>
-    <div class="requestBanner__books">
-      <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/request.png" alt="資料請求冊子" class="requestBanner__img">
-    </div>
-  </div>
-</div>
 
 <?php get_footer(); ?>
