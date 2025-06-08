@@ -1,0 +1,81 @@
+@use '../../foundation/mixin';
+.request, .contact{
+	&__ttl{
+		text-align: center;
+		font-size: 3rem;
+		font-weight: bold;
+		color: #333;
+		margin: 0 auto;
+	}
+	&__txt{
+		text-align: center;
+		font-size: 1.6rem;
+		color: #333;
+		margin: 0 auto;
+	}
+}
+.c-requestBanner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+
+	
+
+  &__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 48px;
+    @include mixin.sp {
+      flex-direction: column-reverse;
+      gap: 24px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+		text-align: center;
+    @include mixin.sp {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+		
+  }
+
+  &__lead {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    font-family: inherit;
+
+    .c-requestBanner__sec {
+      color: #D49BAA;
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin: 0 2px;
+      vertical-align: middle;
+    }
+  }
+
+  &__books {
+    width: 50%;
+    @include mixin.sp {
+      width: 100%;
+    }
+  }
+  &__img {
+    width: 100%; 
+    height: auto;
+  }
+}

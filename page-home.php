@@ -298,20 +298,59 @@ get_header();
 	</section>
 
 	<!-- REQUEST -->
-	<section class="concept">
+	<section class="request">
 		<div class="inner">
 			<h2 class="section-ttl">REQUEST
 				<span>資料請求</span>
 			</h2>
 		</div>
+
+		<p class="show--sp request__ttl">リコライフの全てが分かる<br/>資料３点セット</p>
+		<div class="c-requestBanner">
+			<div class="c-requestBanner__content inner">
+				<div class="c-requestBanner__text">
+					<p class="show--pc request__ttl">リコライフの全てが分かる<br/>資料３点セット</p>
+					<div class="btnWrap">
+						<span class="c-requestBanner__lead">かんたん入力<span class="c-requestBanner__sec">60</span>秒</span>
+						<a href="/request/" class="greenBtn">
+							資料請求はこちら
+						</a>
+					</div>
+				</div>
+				<div class="c-requestBanner__books">
+					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/request.png" alt="資料請求冊子" class="c-requestBanner__img">
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<!-- CONTACT -->
-	<section class="concept">
+	<section class="contact">
 		<div class="inner">
 			<h2 class="section-ttl">CONTACT
 				<span>来場予約</span>
 			</h2>
+		</div>
+
+		<p class="show--sp contact__ttl">ご来場いただくと<br/>無料で間取り作成から<br/>お見積りまでご相談！</p>
+		<div class="c-requestBanner">
+			<div class="c-requestBanner__content inner">
+				<div class="c-requestBanner__text">
+					<p class="show--pc contact__ttl">ご来場いただくと<br/>無料で間取り作成から<br/>お見積りまでご相談！</p>
+					<div class="btnWrap">
+						<span class="c-requestBanner__lead"><span class="c-requestBanner__sec">間取り・資金</span>相談</span>
+						<a href="/contact/" class="greenBtn">
+							来場予約はこちら
+						</a>
+					</div>
+				</div>
+				<div class="c-requestBanner__books">
+					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/contact.png" alt="来場予約" class="c-requestBanner__img">
+				</div>
+			</div>
+		</div>
+		<div class="contact__txt"	>
+			<p>お打合せは埼玉県久喜市にある店舗にて行わせていただきます。<br/>キッズスペースや駐車場を完備しています。</p>
 		</div>
 	</section>
 
@@ -325,22 +364,73 @@ get_header();
 	</section>
 
 	<!-- NEWS -->
-	<section class="concept">
-		<div class="inner">
-			<h2 class="section-ttl">NEWS
-				<span>お知らせ</span>
-			</h2>
+	<section class="news">
+		<?php
+		$perPage = 3;
+		$args = array(
+			'posts_per_page' => $perPage,
+			'post_type' => 'post',
+			'category_name' => 'news',
+			'post_status' => 'publish'
+		);
+
+		$the_query = new WP_Query($args);
+		if ($the_query->have_posts()) : ?>
+			<div class="inner news__inner">
+				<h2 class="section-ttl">NEWS
+					<span>お知らせ</span>
+				</h2>
+				<div class="news__box">
+					<ul class="news__list">
+						<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+							<li class="news__item">
+								<a href="<?php echo esc_url(get_permalink()); ?>">
+									<div class="news__info">
+										<time class="news__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y.n.j'); ?></time>
+										<span class="news__cat">News</span>
+									</div>
+									<div class="news__body">
+										<p class="news__subTtl"><?php echo trimString(get_the_title(), 50); ?></p>
+										<i class="fa-solid fa-chevron-right news__arrow"></i>
+									</div>
+								</a>
+							</li>
+						<?php endwhile; ?>
+					</ul>
+				</div>
+			</div>
+		<?php endif;
+		wp_reset_postdata(); ?>
+	
+		<div class="btnWrap">
+			<a href="<?php echo do_shortcode('[home_url]'); ?>news" class="primaryBtn">お知らせはこちら</a>
 		</div>
 	</section>
 
 	<!-- Instagram -->
-	<section class="concept">
-		instagram
+	<section class="instagram">
+		<div class="inner">
+			<h2 class="instagram__title">
+				<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/instagram.svg" alt="Instagram" class="instagram__logo">
+			</h2>
+			<?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+		</div>
 	</section>
 
 	<!-- sdgs -->
-	<section class="concept">
-		sdgs
+	<section class="sdgs">
+		<div class="inner sdgs__inner">
+			<div class="sdgs__logo-wrap">
+				<img class="sdgs__logo" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/sdgs.png" alt="SDGsロゴ">
+				<div class="sdgs__text-block">
+					<div class="sdgs__main-text">
+						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo-black.svg" alt="Rico Life ロゴ" class="sdgs__rico-logo">
+						<p class="sdgs__sub-text">
+							埼玉県SDGs公式パートナー企業です。
+						</p>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<!-- 70th -->
@@ -433,73 +523,7 @@ case swipper設定はfooter.phpに記載
     </div>
   </div>
 </section>
-
-<!-- ===============================================================================================
-news
-================================================================================================ -->
-<?php
-  $perPage = 3;
-  $args = array(
-    'posts_per_page' => $perPage,
-    'post_type' => 'post',
-    'category_name' => 'news',
-    'post_status' => 'publish'
-  );
-
-  $the_query = new WP_Query($args);
-  if ($the_query->have_posts()) : ?>
-    <section class="news">
-      <div class="inner news__inner">
-        <div class="news__box">
-          <div class="news__left">
-            <h2 class="news__ttl ttl ttl--right">NEWS</h2><!-- /news__ttl -->
-            <!-- ★pc 用ボタン表示 -->
-            <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="news__btn topLink show--pc">view more</a><!-- /news__btn -->
-          </div><!-- /news__left -->
-          <div class="news__right">
-            <ul class="news__list">
-              <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                <li class="news__item"><a href="<?php echo esc_url(get_permalink()); ?>">
-                    <div class="news__info">
-                      <time class="news__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y.n.j'); ?></time>
-                      <span class="news__cat">News</span><!-- /news__cat -->
-                    </div><!-- /news__info -->
-                    <h3 class="news__subTtl"><?php echo trimString(get_the_title(), 50); ?></h3><!-- /news__subTtl -->
-                  </a></li><!-- /news__item -->
-              <?php endwhile; ?>
-            </ul><!-- /news__list -->
-            <!-- ★sp 用ボタン表示 -->
-            <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="news__btn topLink show--sp">view more</a><!-- /news__btn -->
-          </div><!-- /news__right -->
-        </div><!-- /news__box -->
-      </div><!-- /inner news__inner -->
-    </section><!-- /news -->
-  <?php endif;
-  wp_reset_postdata(); ?>
-
-<!-- ===============================================================================================
-us
-================================================================================================ -->
-  <section class="us">
-    <div class="inner us__inner">
-      <div class="us__wrap">
-        <h2 class="us__ttl ttl ttl--left wow fadeInUp">いえとち本舗とは</h2><!-- /us__ttl -->
-        <div class="us__box">
-          <h3 class="us__subTtl">お手頃価格だけではない</h3><!-- /us__subTtl -->
-          <p class="us__txt">住みたい場所をみつけること<br>高品質な家を選ぶ事こと<br>経済的なメリットをつくること<br>まとめて考えることが暮らしの豊かさをつくる近道です。</p>
-          <!-- /us__txt -->
-          <!-- ★pc tab用ボタン表示 -->
-          <a href="<?php echo do_shortcode('[home_url]'); ?>about" class="us__btn topLink show--adjustTab">view more</a><!-- /us__btn topLink -->
-        </div><!-- /us__box -->
-        <!-- ★sp 用ボタン表示 -->
-        <a href="<?php echo do_shortcode('[home_url]'); ?>about" class="us__btn topLink show--adjustSp">view more</a><!-- /us__btn topLink -->
-      </div><!-- /us__wrap -->
-    </div><!-- /inner us__inner -->
-  </section><!-- /us -->
-
-<!-- ===============================================================================================
-product
-================================================================================================ -->
+<!-- 
 
 <!-- ===============================================================================================
 contents
@@ -537,5 +561,20 @@ contents
   </section><!-- /contents -->
 
 </div><!-- /top -->
+
+<div class="requestBanner">
+  <div class="requestBanner__content">
+    <div class="requestBanner__text">
+      <span class="requestBanner__lead">かんたん入力<span class="requestBanner__sec">60</span>秒</span>
+      <a href="#" class="requestBanner__btn">
+        資料請求はこちら
+        <span class="requestBanner__arrow">&gt;</span>
+      </a>
+    </div>
+    <div class="requestBanner__books">
+      <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/top/request.png" alt="資料請求冊子" class="requestBanner__img">
+    </div>
+  </div>
+</div>
 
 <?php get_footer(); ?>
