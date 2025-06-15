@@ -65,7 +65,7 @@
 
 @use "page/top/topCommon";
 @use "page/top/aboutTop";
-@use "page/top/concept";
+@use "page/top/topConcept";
 @use "page/top/case";
 @use "page/top/movie";
 @use "page/top/contents";
@@ -77,6 +77,11 @@
 @use "page/top/request";
 @use "page/top/instagram";
 @use "page/top/sdgs";
+
+@use "page/concept/conceptCommon";
+@use "page/concept/conceptFv";
+@use "page/concept/concept";
+@use "page/concept/finalMessage";
 
 @use "page/lp/lp";
 

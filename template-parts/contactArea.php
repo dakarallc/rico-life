@@ -1,9 +1,11 @@
 <!-- REQUEST -->
 <section class="request">
 		<div class="inner">
-			<h2 class="section-ttl">REQUEST
-				<span>資料請求</span>
-			</h2>
+			<div class="ttlWrap">
+				<h2 class="section-ttl">REQUEST
+					<span>資料請求</span>
+				</h2>
+			</div>
 		</div>
 
 		<p class="show--sp request__ttl">リコライフの全てが分かる<br/>資料３点セット</p>
@@ -30,9 +32,11 @@
 	<!-- CONTACT -->
 	<section class="contact">
 		<div class="inner">
-			<h2 class="section-ttl">CONTACT
-				<span>来場予約</span>
-			</h2>
+			<div class="ttlWrap">
+				<h2 class="section-ttl">CONTACT
+					<span>来場予約</span>
+				</h2>
+			</div>
 		</div>
 
 		<p class="show--sp contact__ttl">ご来場いただくと<br/>無料で間取り作成から<br/>お見積りまでご相談！</p>

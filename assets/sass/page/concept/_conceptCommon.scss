@@ -1,0 +1,106 @@
+@use "../../foundation/mixin";
+.concept {
+	display: flex;
+	flex-direction: column;
+	gap: 205px !important;
+
+	@include mixin.sp {
+		gap: 154px !important;
+	}
+	.concept__ttl {
+		margin-bottom: 60px;
+		padding-left: 56px;
+		font-size: 36px;
+		font-weight: bold;
+		border-bottom: 1px solid #000;
+		display: inline-block;
+		span {
+			font-size: 16px;
+			font-weight: normal;
+		}
+
+		@include mixin.sp {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.catch {
+	position: relative;
+	z-index: 1;
+	h3 {
+		font-size: 3rem;
+		font-weight: bold;
+		line-height: 1.6;
+		@include mixin.sp {
+			font-size: 2.5rem;
+		}
+	}
+}
+
+// 共通セクションレイアウト
+.conceptSection {
+	position: relative;
+	img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		height: 400px;
+		object-fit: cover;
+		z-index: -1;
+		mask-image: linear-gradient(to right, transparent, black);
+		-webkit-mask-image: linear-gradient(to right, transparent, black);
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 32px;
+	}
+
+	&__left {
+		flex: 1;
+		min-width: 220px;
+		.conceptSection__title {
+			font-size: 28px;
+			font-weight: bold;
+			margin-bottom: 24px;
+		}
+		.conceptSection__lead {
+			font-size: 16px;
+			color: #333;
+			margin-bottom: 16px;
+			line-height: 1.8;
+		}
+	}
+
+	&__right {
+		flex: 2;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		@include mixin.sp {
+			gap: 16px;
+		}
+	}
+
+	&__block {
+		font-size: 15px;
+		line-height: 3;
+		letter-spacing: 0.05em;
+		@include mixin.sp {
+			padding: 16px 10px;
+			font-size: 14px;
+		}
+	}
+}
+
+// スマホのみ表示
+.show--sp {
+	display: none;
+	@include mixin.sp {
+		display: inline;
+	}
+}

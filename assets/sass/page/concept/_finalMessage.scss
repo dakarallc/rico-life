@@ -1,0 +1,15 @@
+@use "../../foundation/mixin";
+.finalMessage {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__logo {
+		display: flex;
+		align-items: flex-end;
+		img {
+			width: 200px;
+		}
+	}
+}

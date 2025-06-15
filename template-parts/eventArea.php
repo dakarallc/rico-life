@@ -1,9 +1,11 @@
 <!-- EVENT -->
 <section class="event">
 	<div class="inner">
-		<h2 class="section-ttl">EVENT
-			<span>イベント情報</span>
-		</h2>
+		<div class="ttlWrap">
+			<h2 class="section-ttl">EVENT
+				<span>イベント情報</span>
+			</h2>
+		</div>
 
 		<?php
   $args = [
