@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.{php,js,css,scss,html,json}\"",
+    "format:check": "prettier --check \"**/*.{php,js,css,scss,html,json}\"",
+    "format:php": "prettier --write \"**/*.php\"",
+    "format:js": "prettier --write \"**/*.js\"",
+    "format:css": "prettier --write \"**/*.{css,scss}\"",
+    "format:assets": "prettier --write \"**/*.{js,css,scss,json}\""
   },
   "keywords": [],
   "author": "",
@@ -15,6 +21,7 @@
   ],
   "description": "",
   "devDependencies": {
+    "@prettier/plugin-php": "^0.22.4",
     "autoprefixer": "^10.4.19",
     "css-declaration-sorter": "^7.2.0",
     "gulp": "^5.0.0",
@@ -22,9 +29,11 @@
     "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^10.0.0",
+    "gulp-prettier": "^6.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sass-glob": "^1.1.0",
+    "prettier": "^3.5.3",
     "sass": "^1.75.0"
   }
 }

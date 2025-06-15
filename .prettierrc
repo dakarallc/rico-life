@@ -1,0 +1,52 @@
+{
+  "plugins": ["@prettier/plugin-php"],
+  "tabWidth": 2,
+  "useTabs": true,
+  "semi": true,
+  "singleQuote": false,
+  "quoteProps": "as-needed",
+  "trailingComma": "none",
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "arrowParens": "avoid",
+  "printWidth": 120,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": "*.php",
+      "options": {
+        "parser": "php",
+        "plugins": ["@prettier/plugin-php"],
+        "phpVersion": "7.4",
+        "tabWidth": 2,
+        "useTabs": true,
+        "printWidth": 120,
+        "braceStyle": "1tbs"
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "options": {
+        "parser": "babel",
+        "tabWidth": 2,
+        "useTabs": true
+      }
+    },
+    {
+      "files": ["*.css", "*.scss"],
+      "options": {
+        "parser": "css",
+        "tabWidth": 2,
+        "useTabs": true
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "parser": "json",
+        "tabWidth": 2,
+        "useTabs": false
+      }
+    }
+  ]
+}

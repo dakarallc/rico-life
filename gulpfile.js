@@ -14,6 +14,7 @@ const cssdeclsort  = require('css-declaration-sorter');   // css並べ替え
 // var mozjpeg      = require('imagemin-mozjpeg');         // jpg画像の圧縮最適化
 const rename       = require("gulp-rename");              //ファイル名変更
 const cleanCSS     = require("gulp-clean-css");           //cssの圧縮
+const prettier     = require("gulp-prettier");           //コードフォーマット
 // var uglify       = require("gulp-uglify");              //jsの圧縮
 // var ejs = require("gulp-ejs");                          //ejs
 // var replace = require("gulp-replace");
@@ -46,12 +47,58 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('assets/css'));// コンパイル後の出力先
 });
 
+// PHPファイルのフォーマット（npmスクリプト実行）
+gulp.task('format-php', function (done) {
+  const { spawn } = require('child_process');
+  const npmProcess = spawn('npm', ['run', 'format:php'], { 
+    stdio: 'inherit',
+    shell: true 
+  });
+  
+  npmProcess.on('close', (code) => {
+    if (code === 0) {
+      console.log('PHP formatting completed successfully');
+    } else {
+      console.log(`PHP formatting exited with code ${code}`);
+    }
+    done();
+  });
+});
+
+// JSファイルのフォーマット（npmスクリプト実行）
+gulp.task('format-js', function (done) {
+  const { spawn } = require('child_process');
+  const npmProcess = spawn('npm', ['run', 'format:js'], { 
+    stdio: 'inherit',
+    shell: true 
+  });
+  
+  npmProcess.on('close', (code) => {
+    if (code === 0) {
+      console.log('JS formatting completed successfully');
+    } else {
+      console.log(`JS formatting exited with code ${code}`);
+    }
+    done();
+  });
+});
+
+// 全ファイルのフォーマット
+gulp.task('format', gulp.parallel('format-php', 'format-js'));
+
 // 監視
 gulp.task('watch', function (done) {
   gulp.watch('assets/sass/**/*.scss', gulp.task('sass')); //sassが更新されたらgulp sassを実行
   done();
 });
 
+// 監視（フォーマット付き）
+gulp.task('watch-format', function (done) {
+  gulp.watch('assets/sass/**/*.scss', gulp.task('sass'));
+  gulp.watch(['**/*.php', '!node_modules/**', '!vendor/**'], gulp.task('format-php'));
+  gulp.watch(['assets/js/**/*.js', '!assets/js/vendor/**'], gulp.task('format-js'));
+  done();
+});
 
 // default
 gulp.task('default', gulp.series(gulp.parallel('watch')));
