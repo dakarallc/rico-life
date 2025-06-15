@@ -59,9 +59,11 @@ Template Name: TOP
 	<!-- CONCEPT	 -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="section-ttl">CONCEPT
-				<span>コンセプト</span>
-			</h2>
+			<div class="ttlWrap">
+				<h2 class="section-ttl">CONCEPT
+					<span>コンセプト</span>
+				</h2>
+			</div>
 			<div class="concept__inner">
 				<div class="concept__img">
 					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/concept.png" alt="テーブルの写真">
@@ -73,14 +75,11 @@ Template Name: TOP
 						<p>Rico Life.は、<br>
 							太陽光＆蓄電池＋高耐久素材が標準。<br>
 							光熱費・保険・メンテナンスを削減。<br>
-							<span class="concept__highlight">40年間で最も出費が少ない家。</span><br>
+							<span class="highlight-yellow">40年間で最も出費が少ない家。</span><br>
 							ムリせず、賢く。未来に安心を。
 						</p>
 					</div>
 				</div>
-			</div>
-			<div class="btnWrap">
-				<a href="#" class="greenBtn">はじめての方へ</a>
 			</div>
 		</div>
 	</section>
@@ -88,9 +87,11 @@ Template Name: TOP
 	<!-- WORKS -->
 	<section class="case">
 		<div class="inner">
-			<h2 class="section-ttl">WORKS
-				<span>施工事例</span>
-			</h2>
+			<div class="ttlWrap">
+				<h2 class="section-ttl">WORKS
+					<span>施工事例</span>
+				</h2>
+			</div>
 
 			<?php
    $perPage = 10;
@@ -169,9 +170,12 @@ Template Name: TOP
 	<!-- ABOUT -->
 		<section class="companyIntroduction">
 		<div class="inner">
-			<h2 class="section-ttl">ABOUT
-				<span>会社紹介</span>
-			</h2>
+			<div class="ttlWrap">
+				<h2 class="section-ttl">ABOUT
+					<span>会社紹介</span>
+				</h2>
+			</div>
+
 			<div class="companyIntroduction__container">
 				<a href="/about/" class="companyIntroduction__block companyIntroduction__block--left">
 					<span>スタッフ紹介</span>
@@ -188,9 +192,11 @@ Template Name: TOP
 	<!-- COLUMN -->
 	<section class="concept">
 		<div class="inner">
-			<h2 class="section-ttl">COLUMN
-				<span>コラム</span>
-			</h2>
+			<div class="ttlWrap">
+				<h2 class="section-ttl">COLUMN
+					<span>コラム</span>
+				</h2>
+			</div>
 		</div>
 	</section>
 
@@ -207,9 +213,12 @@ Template Name: TOP
   $the_query = new WP_Query($args);
   if ($the_query->have_posts()): ?>
 		<div class="inner news__inner">
-			<h2 class="section-ttl">NEWS
-				<span>お知らせ</span>
-			</h2>
+			<div class="ttlWrap">
+				<h2 class="section-ttl">NEWS
+					<span>お知らせ</span>
+				</h2>
+			</div>
+			
 			<div class="news__box">
 				<ul class="news__list">
 					<?php while ($the_query->have_posts()):
