@@ -1,51 +1,49 @@
-@use '../../foundation/mixin';
+@use "../../foundation/mixin";
 /* ==========================================================================
   slim
   ========================================================================== */
 
 .slim {
-  padding: 76px 0 18px;
+	padding: 76px 0 18px;
 
-  @include mixin.sp() {
-    padding: 44px 0 40px;
-  }
+	@include mixin.sp() {
+		padding: 44px 0 40px;
+	}
 
-  &__inner {
-    display: flex;
-    align-items: flex-start;
+	&__inner {
+		display: flex;
+		align-items: flex-start;
 
-    @include mixin.sp() {
-      flex-wrap: wrap;
-    }
-  }
+		@include mixin.sp() {
+			flex-wrap: wrap;
+		}
+	}
 
-  .format {
+	.format {
+		@include mixin.pc() {
+			padding-top: 20px;
+			flex: 1 1 0%;
+		}
 
+		@include mixin.sp() {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
 
-    @include mixin.pc() {
-      padding-top: 20px;
-      flex: 1 1 0%;
-    }
+	&__img {
+		@include mixin.pc() {
+			margin-left: 4%;
+			width: 49%;
+		}
 
-    @include mixin.sp() {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
+		@include mixin.sp() {
+			text-align: center;
+			width: 100%;
 
-  &__img {
-    @include mixin.pc() {
-      margin-left: 4%;
-      width: 49%;
-    }
-
-    @include mixin.sp() {
-      text-align: center;
-      width: 100%;
-
-      img {
-        width: 75%;
-      }
-    }
-  }
+			img {
+				width: 75%;
+			}
+		}
+	}
 }

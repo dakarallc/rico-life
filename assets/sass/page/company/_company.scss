@@ -1,133 +1,127 @@
-@use '../../foundation/mixin';
+@use "../../foundation/mixin";
 /* ==========================================================================
   company
   ========================================================================== */
 
 .company {
+	.about {
+		letter-spacing: 0.2em;
+		margin: 0 calc(50% - 50vw);
+		padding: 4px calc(50vw - 50%) 112px;
+		position: relative;
+		width: 100vw;
 
-  .about {
-    letter-spacing: .2em;
-    margin: 0 calc(50% - 50vw);
-    padding: 4px calc(50vw - 50%) 112px;
-    position: relative;
-    width: 100vw;
+		@include mixin.sp() {
+			margin: 140px calc(50% - 50vw) 0;
+			padding: 4px calc(50vw - 50%) 70px;
+		}
 
-    @include mixin.sp() {
-      margin: 140px calc(50% - 50vw) 0;
-      padding: 4px calc(50vw - 50%) 70px;
-    }
+		&::before {
+			content: "";
+			width: 1920px;
+			height: 750px;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			object-fit: cover;
+			z-index: -1;
+		}
 
-    &::before {
-      content: "";
-      width: 1920px;
-      height: 750px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      object-fit: cover;
-      z-index: -1;
+		@include mixin.sp() {
+			line-height: 1.7;
+		}
 
+		.kv__ttl {
+			margin-bottom: 20px;
+		}
 
-    }
+		&__txt {
+			margin-bottom: 35px;
+		}
 
-    @include mixin.sp() {
-      line-height: 1.7;
-    }
+		&__item {
+			&:not(:last-child) {
+				margin-bottom: 37px;
+			}
+		}
 
-
-    .kv__ttl {
-      margin-bottom: 20px;
-    }
-
-    &__txt {
-      margin-bottom: 35px;
-    }
-
-    &__item {
-      &:not(:last-child) {
-        margin-bottom: 37px;
-      }
-
-
-    }
-
-    &__ttl {
-      font-weight: 400;
-    }
-  }
+		&__ttl {
+			font-weight: 400;
+		}
+	}
 }
 
 .summary {
-  background: #FEFFFF;
-  margin: 0 calc(50% - 50vw);
-  padding: 94px calc(50vw - 50% + 8px) 194px;
-  position: relative;
-  width: 100vw;
+	background: #feffff;
+	margin: 0 calc(50% - 50vw);
+	padding: 94px calc(50vw - 50% + 8px) 194px;
+	position: relative;
+	width: 100vw;
 
-  @include mixin.sp() {
-    padding-bottom: 80px;
-  }
+	@include mixin.sp() {
+		padding-bottom: 80px;
+	}
 
-  &__ttl {
-    @include mixin.yuGothicBold();
-    color: #d90200;
-    font-size: 3.9rem;
-    font-weight: bold;
-    padding-left: 30px;
-    position: relative;
+	&__ttl {
+		@include mixin.yuGothicBold();
+		color: #d90200;
+		font-size: 3.9rem;
+		font-weight: bold;
+		padding-left: 30px;
+		position: relative;
 
-    @include mixin.sp() {
-      font-size: 2.6rem;
-      padding-left: 20px;
-    }
+		@include mixin.sp() {
+			font-size: 2.6rem;
+			padding-left: 20px;
+		}
 
-    &::before {
-      content: "";
-      width: 4px;
-      height: 100%;
-      background: #d90200;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
+		&::before {
+			content: "";
+			width: 4px;
+			height: 100%;
+			background: #d90200;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
 
-      @include mixin.sp() {
-        width: 3px;
-      }
-    }
-  }
+			@include mixin.sp() {
+				width: 3px;
+			}
+		}
+	}
 
-  &__item {
-    border-bottom: 1px solid #0D0D0D;
-    display: flex;
-    padding: 39px 3%;
-    line-height: 1.4;
-    letter-spacing: 0;
-    align-items: center;
+	&__item {
+		border-bottom: 1px solid #0d0d0d;
+		display: flex;
+		padding: 39px 3%;
+		line-height: 1.4;
+		letter-spacing: 0;
+		align-items: center;
 
-    @include mixin.sp() {
-      flex-wrap: wrap;
-      padding: 20px 0;
-    }
+		@include mixin.sp() {
+			flex-wrap: wrap;
+			padding: 20px 0;
+		}
 
-    dt {
-      width: 25%;
-      font-weight: bold;
+		dt {
+			width: 25%;
+			font-weight: bold;
 
-      @include mixin.sp() {
-        width: 100%;
-        margin-bottom: 8px;
-      }
-    }
+			@include mixin.sp() {
+				width: 100%;
+				margin-bottom: 8px;
+			}
+		}
 
-    dd {
-      @include mixin.pc() {
-        flex: 1 1 0%;
-      }
+		dd {
+			@include mixin.pc() {
+				flex: 1 1 0%;
+			}
 
-      @include mixin.sp() {
-        width: 100%;
-      }
-    }
-  }
+			@include mixin.sp() {
+				width: 100%;
+			}
+		}
+	}
 }

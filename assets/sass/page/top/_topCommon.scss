@@ -1,20 +1,20 @@
-@use '../../foundation/mixin';
-.top{
-  display: flex;
-  flex-direction: column;
-  gap: 205px;
+@use "../../foundation/mixin";
+.top {
+	display: flex;
+	flex-direction: column;
+	gap: 205px;
 
-  @include mixin.sp {
-    gap: 154px;
-  }
-	.top__ttl{
+	@include mixin.sp {
+		gap: 154px;
+	}
+	.top__ttl {
 		margin-bottom: 60px;
-		padding-left:56px;
+		padding-left: 56px;
 		font-size: 36px;
 		font-weight: bold;
 		border-bottom: 1px solid #000;
 		display: inline-block;
-		span{
+		span {
 			font-size: 16px;
 			font-weight: normal;
 		}

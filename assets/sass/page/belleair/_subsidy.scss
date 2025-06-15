@@ -1,94 +1,92 @@
-@use '../../foundation/mixin';
+@use "../../foundation/mixin";
 /* ==========================================================================
   subsidy
   ========================================================================== */
 
-  .subsidy{
-    padding: 40px 0 80px;
-    background: #f0f7fd;
+.subsidy {
+	padding: 40px 0 80px;
+	background: #f0f7fd;
 
-    @include mixin.sp(){
-      padding: 40px 0 50px;
-    }
-    &__inner{
-      max-width: calc(1300px + 5% * 2);
+	@include mixin.sp() {
+		padding: 40px 0 50px;
+	}
+	&__inner {
+		max-width: calc(1300px + 5% * 2);
 
-      @include mixin.sp(){
-        max-width: initial!important;
-      }
-    }
-    &__tbl{
-      font-size: 1.4rem;
-      line-height: 1.5;
-      border: 1px solid #141414;
-      border-collapse: collapse;
-      width: 100%;
+		@include mixin.sp() {
+			max-width: initial !important;
+		}
+	}
+	&__tbl {
+		font-size: 1.4rem;
+		line-height: 1.5;
+		border: 1px solid #141414;
+		border-collapse: collapse;
+		width: 100%;
 
+		@include mixin.sp() {
+			width: 800px;
+			font-size: 1.3rem;
+		}
 
-      @include mixin.sp(){
-        width: 800px;
-        font-size: 1.3rem;
-      }
+		th,
+		td {
+			padding: 6px;
+			vertical-align: middle;
+			border: 1px solid #141414;
 
-      th,td{
-        padding: 6px;
-        vertical-align: middle;
-        border: 1px solid #141414;
+			&.nowrap {
+				white-space: nowrap;
+			}
+		}
+		td {
+			&:first-child {
+				width: 80px;
 
-        &.nowrap{
-          white-space: nowrap;
-        }
+				@include mixin.sp() {
+					width: 50px;
+				}
+			}
+			background: #fff;
 
-      }
-      td{
-        &:first-child{
-          width: 80px;
+			&.red {
+				color: red;
+			}
 
-          @include mixin.sp(){
-            width: 50px;
-          }
-        }
-        background: #fff;
+			&.blue {
+				color: blue;
+			}
 
-        &.red{
-          color: red;
-        }
+			a {
+				color: #4b6990;
+				text-decoration: underline;
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+			a[href*="tel:"] {
+				color: #141414;
+				text-decoration: none;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
 
-        &.blue{
-          color: blue;
-        }
+		th {
+			background: #012346;
+			color: #fff;
+			white-space: nowrap;
+		}
+	}
 
-        a{
-          color: #4b6990;
-          text-decoration: underline;
-          &:hover{
-            opacity: .7;
-          }
-        }
-        a[href*="tel:"] {
-          color: #141414;
-          text-decoration: none;
-          &:hover{
-            opacity: 1;
-          }
-        }
-      }
+	._defaultHide2 {
+		display: none;
+	}
 
-      th{
-        background: #012346;
-        color: #fff;
-        white-space: nowrap;
-      
-      }
-    }
-
-    ._defaultHide2{
-      display: none;
-    }
-
-    .spec__btn{
-      max-width: 500px;
-    margin: 30px auto;
-    height: 60px;
-    }
-  }
+	.spec__btn {
+		max-width: 500px;
+		margin: 30px auto;
+		height: 60px;
+	}
+}

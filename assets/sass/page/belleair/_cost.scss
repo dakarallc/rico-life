@@ -1,179 +1,174 @@
-@use '../../foundation/mixin';
+@use "../../foundation/mixin";
 /* ==========================================================================
   cost
   ========================================================================== */
 
 .cost {
-  background: url(../img/belleair/cost-bg.png) no-repeat center center/cover;
-  padding: 180px 0 85px;
-  position: relative;
+	background: url(../img/belleair/cost-bg.png) no-repeat center center/cover;
+	padding: 180px 0 85px;
+	position: relative;
 
-  @include mixin.sp() {
-    padding: 66px 0 50px;
-    background: #fff;
-  }
+	@include mixin.sp() {
+		padding: 66px 0 50px;
+		background: #fff;
+	}
 
-  &::before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 4.5vw 50vw 0 50vw;
-    border-color: #F4F6F8 transparent transparent;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+	&::before {
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 4.5vw 50vw 0 50vw;
+		border-color: #f4f6f8 transparent transparent;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
 
-    @include mixin.sp() {
-      border-width: 6.5vw 50vw 0 50vw;
-    }
-  }
+		@include mixin.sp() {
+			border-width: 6.5vw 50vw 0 50vw;
+		}
+	}
 
+	.format {
+		flex: 1 1 0%;
 
-  .format {
-    flex: 1 1 0%;
+		&__subTtl {
+			border-bottom: 1px solid #141414;
+		}
 
-    &__subTtl {
-      border-bottom: 1px solid #141414;
-    }
+		&__txt {
+			color: #141414;
+		}
+	}
 
-    &__txt {
-      color: #141414;
-    }
-  }
+	&__table {
+		border-collapse: collapse;
+		table-layout: fixed;
+		text-align: center;
+		width: 100%;
+		margin-top: 27px;
+		max-width: 681px;
 
-  &__table {
-    border-collapse: collapse;
-    table-layout: fixed;
-    text-align: center;
-    width: 100%;
-    margin-top: 27px;
-    max-width: 681px;
+		th:first-child {
+			width: 110px;
 
+			@include mixin.sp() {
+				width: 70px;
+			}
+		}
 
+		th,
+		td {
+			padding: 7px 2px;
+		}
 
-    th:first-child {
-      width: 110px;
+		tr {
+			&:not(:last-child) {
+				border-bottom: 1px solid #d1d1d1;
+			}
+		}
 
-      @include mixin.sp() {
-        width: 70px;
-      }
-    }
+		th {
+			font-size: 1.9rem;
 
-    th,
-    td {
-      padding: 7px 2px;
-    }
+			@include mixin.sp() {
+				font-size: 1.2rem;
+			}
+		}
 
-    tr {
-      &:not(:last-child) {
-        border-bottom: 1px solid #D1D1D1;
-      }
-    }
+		td {
+			font-size: 2.3rem;
 
-    th {
-      font-size: 1.9rem;
+			@include mixin.sp() {
+				font-size: 1.5rem;
+			}
 
-      @include mixin.sp() {
-        font-size: 1.2rem;
-      }
-    }
+			@media (max-width: 355px) {
+				font-size: 1.2rem;
+			}
 
-    td {
-      font-size: 2.3rem;
+			._plus {
+				position: relative;
 
-      @include mixin.sp() {
-        font-size: 1.5rem;
-      }
+				&::after {
+					content: "+";
+					font-size: 2.2rem;
+					position: absolute;
+					right: -33px;
+					top: 50%;
+					transform: translateY(-50%);
 
-      @media (max-width: 355px) {
-        font-size: 1.2rem;
-      }
+					@include mixin.sp() {
+						font-size: 1.6rem;
+						right: -18px;
+					}
+				}
+			}
 
+			._equal {
+				position: relative;
 
-      ._plus {
-        position: relative;
+				&::after {
+					content: "＝";
+					font-size: 2.2rem;
+					position: absolute;
+					left: -35px;
+					top: 50%;
+					transform: translateY(-50%);
 
-        &::after {
-          content: "+";
-          font-size: 2.2rem;
-          position: absolute;
-          right: -33px;
-          top: 50%;
-          transform: translateY(-50%);
+					@include mixin.sp() {
+						font-size: 1.6rem;
+						left: -19px;
+					}
+				}
+			}
+		}
 
-          @include mixin.sp() {
-            font-size: 1.6rem;
-            right: -18px;
-          }
-        }
-      }
+		._ttl {
+			font-size: 1.8rem;
 
-      ._equal {
-        position: relative;
+			@include mixin.sp() {
+				font-size: 1.6rem;
+			}
+		}
 
-        &::after {
-          content: "＝";
-          font-size: 2.2rem;
-          position: absolute;
-          left: -35px;
-          top: 50%;
-          transform: translateY(-50%);
+		._belleair {
+			font-weight: bold;
+			font-size: 2.4rem;
+			color: #4b6990;
 
-          @include mixin.sp() {
-            font-size: 1.6rem;
-            left: -19px;
-          }
-        }
-      }
-    }
+			@include mixin.sp() {
+				font-size: 1.8rem;
+			}
 
-    ._ttl {
-      font-size: 1.8rem;
+			._plus,
+			._equal {
+				&::after {
+					font-weight: bold;
+					color: #4b6990;
+				}
+			}
 
-      @include mixin.sp() {
-        font-size: 1.6rem;
-      }
-    }
+			._plus {
+				&::after {
+					right: -30px;
 
-    ._belleair {
-      font-weight: bold;
-      font-size: 2.4rem;
-      color: #4B6990;
+					@include mixin.sp() {
+						right: -17px;
+					}
+				}
+			}
 
-      @include mixin.sp() {
-        font-size: 1.8rem;
-      }
+			._equal {
+				&::after {
+					left: -32px;
 
-      ._plus,
-      ._equal {
-        &::after {
-          font-weight: bold;
-          color: #4B6990;
-        }
-      }
-
-      ._plus {
-        &::after {
-          right: -30px;
-
-          @include mixin.sp() {
-            right: -17px;
-          }
-        }
-      }
-
-      ._equal {
-        &::after {
-          left: -32px;
-
-          @include mixin.sp() {
-            left: -19px;
-          }
-        }
-      }
-    }
-
-  }
+					@include mixin.sp() {
+						left: -19px;
+					}
+				}
+			}
+		}
+	}
 }

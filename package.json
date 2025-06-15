@@ -14,11 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "browserslist": [
-    "last 2 versions",
-    "iOS 8.1",
-    "Android 4.0"
-  ],
+  "browserslist": ["last 2 versions", "iOS 8.1", "Android 4.0"],
   "description": "",
   "devDependencies": {
     "@prettier/plugin-php": "^0.22.4",

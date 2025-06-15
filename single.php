@@ -1,34 +1,41 @@
-<?php get_header(); 
+<?php get_header();
 
-$eventPic = get_field('event-pic');//imgUrl
-$madoriImg1 = get_field('madori1');//imgUrl
-$madoriImg2 = get_field('madori2');//imgUrl
-$comment = get_field('comment'); //コメント
-$schedule = get_field('schedule'); //日時
-$time = get_field('time'); //開催時間
-$address = get_field('address'); //住所
-$reserve = get_field('reserve'); //予約方法
-$point1Img = get_field('point1_img');//imgUrl
-$point1_title = get_field('point1_title');//imgUrl
-$point1_text = get_field('point1_text');//imgUrl
-$point2_img = get_field('point2_img');//imgUrl
-$point2_title = get_field('point2_title');//imgUrl
-$point2_text = get_field('point2_text');//imgUrl
-$point3_img = get_field('point3_img');//imgUrl
-$point3_title = get_field('point3_title');//imgUrl
-$point3_text = get_field('point3_text');//imgUrl
+$eventPic = get_field("event-pic"); //imgUrl
+$madoriImg1 = get_field("madori1"); //imgUrl
+$madoriImg2 = get_field("madori2"); //imgUrl
+$comment = get_field("comment"); //コメント
+$schedule = get_field("schedule"); //日時
+$time = get_field("time"); //開催時間
+$address = get_field("address"); //住所
+$reserve = get_field("reserve"); //予約方法
+$point1Img = get_field("point1_img"); //imgUrl
+$point1_title = get_field("point1_title"); //imgUrl
+$point1_text = get_field("point1_text"); //imgUrl
+$point2_img = get_field("point2_img"); //imgUrl
+$point2_title = get_field("point2_title"); //imgUrl
+$point2_text = get_field("point2_text"); //imgUrl
+$point3_img = get_field("point3_img"); //imgUrl
+$point3_title = get_field("point3_title"); //imgUrl
+$point3_text = get_field("point3_text");
 
+//imgUrl
 ?>
 
 <div class="page news-page">
 <!-- ===============================================================================================
 pageHead
 ================================================================================================ -->
-<?php if ( in_category('event') ) : ?>
-	<?php if ( in_category('field-trip') ) : ?>
+<?php if (in_category("event")): ?>
+	<?php if (in_category("field-trip")): ?>
   <div	class="pageHeadEvent">
     <h1 class="pageHeadEvent__ttl">
-      <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/eventHeader.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/eventHeader.svg" class=" ls-is-cached lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/eventHeader.svg" alt="完成入居前見学会" data-eio="l"></noscript>
+      <img src="<?php echo do_shortcode(
+      	"[theme_url]",
+      ); ?>/assets/img/event/eventHeader.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/eventHeader.svg" class=" ls-is-cached lazyloaded"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/eventHeader.svg" alt="完成入居前見学会" data-eio="l"></noscript>
     </h1><!-- /pageHead__ttl -->
   </div><!-- /pageHead -->
 	<?php else: ?>
@@ -37,11 +44,11 @@ pageHead
 			
 		</div><!-- /pageHead -->
 	<?php endif; ?>
-<?php else : ?>
+<?php else: ?>
 <div class="pageHead">
   <div class="pageHead__contents">
     <h1 class="pageHead__ttl">
-      <?php if ( in_category('staff') ) : ?>
+      <?php if (in_category("staff")): ?>
         <span class="_upper">スタッフ紹介</span><!-- /_upper -->
         <span class="_below">STAFF INTERVIEW</span><!-- /_below -->
 
@@ -52,22 +59,20 @@ pageHead
     </h1><!-- /pageHead__ttl -->
   </div><!-- /pageHead__contents -->
 </div><!-- /pageHead -->
-<?php endif ; ?>
+<?php endif; ?>
 
-  <?php get_template_part('template-parts/breadcrumb'); ?>
+  <?php get_template_part("template-parts/breadcrumb"); ?>
 
 <!-- ===============================================================================================
 post
 ================================================================================================ -->
-<?php
-if ( in_category('event') ) : 
-?>
+<?php if (in_category("event")): ?>
   <section class="post wow fadeInUp">
     <div class="inner post__inner">
       <h2 class="post__eventTtl"><?php the_title(); ?></h2><!-- /post__ttl -->
       <div class="post__contents">
         <div class="caseItem__main wow fadeInUp">
-          <div class="caseItem__img1"><img data-js-ofi src="<?php echo $eventPic ?>" alt="<?php echo $name  ?>"></div><!-- /caseItem__img1 -->
+          <div class="caseItem__img1"><img data-js-ofi src="<?php echo $eventPic; ?>" alt="<?php echo $name; ?>"></div><!-- /caseItem__img1 -->
           <div class="mainContents">
             <div class="list">
               <dl>
@@ -82,7 +87,7 @@ if ( in_category('event') ) :
                 <dt>住所</dt>
                 <dd><?php echo $address; ?></dd>
               </dl>
-			<?php if ( in_category('actual-house-tours') ) : ?>
+			<?php if (in_category("actual-house-tours")): ?>
 			<p>※写真はイメージです<br>※実際に住むお家の為、ご希望の日程に添えない場合がございます。<br>下記フォームまたは<a href="tel:0480226666">お電話</a>でご予約受付中 。<br>予約は1週間前までとなります。1週間を切っている場合は<a href="tel:0480226666">お電話</a>でお問い合わせください。</p>
 			<?php endif; ?>
             </div><!-- /caseItem__list -->
@@ -96,23 +101,31 @@ if ( in_category('event') ) :
 				<div class="cvButtonLinkWrap">
           <a href="#contactForm" class="cvButtonLink">
             <div>
-              <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
+              <img src="<?php echo do_shortcode(
+              	"[theme_url]",
+              ); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
             </div>
             <button class="cvButtonLink__button">
 							<span>ご来場予約はこちら</span>
-							<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
+							<img src="<?php echo do_shortcode(
+       	"[theme_url]",
+       ); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
             </button>
           </a>
         </div>
 				<!-- 間取り -->
 			<section class="madori">
         <div class="madori__inner">
-          <?php if ($madoriImg1) :  ?>
-            <div class="madori__inner--img"><img data-js-ofi src="<?php echo $madoriImg1 ?>" alt="<?php echo $name  ?>"></div><!-- /caseItem__img1 -->
+          <?php if ($madoriImg1): ?>
+            <div class="madori__inner--img"><img data-js-ofi src="<?php echo $madoriImg1; ?>" alt="<?php echo $name; ?>"></div><!-- /caseItem__img1 -->
           <?php endif; ?>
   
-          <?php if ($madoriImg2)  :  ?>
-            <div class="madori__inner--img"><img data-js-ofi src="<?php echo $madoriImg2 ?>" alt="<?php echo $name  ?>"></div><!-- /caseItem__img1 -->
+          <?php if ($madoriImg2): ?>
+            <div class="madori__inner--img"><img data-js-ofi src="<?php echo $madoriImg2; ?>" alt="<?php echo $name; ?>"></div><!-- /caseItem__img1 -->
           <?php endif; ?>
         </div>
         <p class="madori__comment"><?php echo $comment; ?></p>
@@ -123,24 +136,24 @@ if ( in_category('event') ) :
 
 			
 
-			<?php if ($point1_title) :  ?>
+			<?php if ($point1_title): ?>
 				<h2 class="point">Point</h2>
 				<h3 class="point"><?php echo $point1_title; ?></h3>
 			<?php endif; ?>
-			<?php if ($point1Img) :  ?>
+			<?php if ($point1Img): ?>
 				<img data-js-ofi src="<?php echo esc_url($point1Img); ?>" alt="Point 1 Image">
 			<?php endif; ?>
-			<?php if ($point1_text) :  ?>
+			<?php if ($point1_text): ?>
 				<p><?php echo $point1_text; ?></p>
 			<?php endif; ?>
 			
-			<?php if ($point2_img) :  ?>
-				<img data-js-ofi src="<?php echo $point2_img ?>">
+			<?php if ($point2_img): ?>
+				<img data-js-ofi src="<?php echo $point2_img; ?>">
 			<?php endif; ?>
-			<?php if ($point2_title) :  ?>
+			<?php if ($point2_title): ?>
 				<h3 class="point"><?php echo $point2_title; ?></h3>
 			<?php endif; ?>
-			<?php if ($point2_text) :  ?>
+			<?php if ($point2_text): ?>
 				<p><?php echo $point1_text; ?></p>
 			<?php endif; ?>
 			
@@ -223,11 +236,19 @@ if ( in_category('event') ) :
 			<div class="cvButtonLinkWrap">
 				<a href="#contactForm" class="cvButtonLink">
 					<div>
-						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
+						<img src="<?php echo do_shortcode(
+      	"[theme_url]",
+      ); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
 					</div>
 					<button class="cvButtonLink__button">
 						<span>ご来場予約はこちら</span>
-						<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
+						<img src="<?php echo do_shortcode(
+      	"[theme_url]",
+      ); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
 					</button>
 				</a>
 			</div>
@@ -235,10 +256,10 @@ if ( in_category('event') ) :
       <!-- 70thバナー -->
       <!-- <div class="banner banner70">
         <a class="tochi present-pc" href="https://ietochi-kuki.com/1331/" target="_blank">
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/70th.png" alt="">
+            <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/70th.png" alt="">
         </a>
         <a class="tochi present-sp" href="https://ietochi-kuki.com/1331/" target="_blank">
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/70thSp.png" alt="">
+            <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/70thSp.png" alt="">
         </a>
       </div> -->
 
@@ -251,7 +272,11 @@ if ( in_category('event') ) :
       
       <!-- いえとち本舗の家づくり -->
       <div class="homeMadeWrap">
-        <h2 class="homeMade__ttl  wow fadeInUp"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/logo.png"  alt="いえとち本舗" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/logo.png" class="logo lazyloaded">の家づくり</h2><!-- /homeMade__ttl -->
+        <h2 class="homeMade__ttl  wow fadeInUp"><img src="<?php echo do_shortcode(
+        	"[theme_url]",
+        ); ?>/assets/img/event/logo.png"  alt="いえとち本舗" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/logo.png" class="logo lazyloaded">の家づくり</h2><!-- /homeMade__ttl -->
         <section class="homeMade">
           <div class="homeMade__inner">
             <div class="homeMade__wrap content-left homeMade1">
@@ -296,11 +321,19 @@ if ( in_category('event') ) :
           <div class="cvButtonLinkWrap">
             <a href="#contactForm" class="cvButtonLink">
               <div>
-                <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
+                <img src="<?php echo do_shortcode(
+                	"[theme_url]",
+                ); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
               </div>
               <button class="cvButtonLink__button">
               <span>ご来場予約はこちら</span>
-              <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
+              <img src="<?php echo do_shortcode(
+              	"[theme_url]",
+              ); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
               </button>
             </a>
           </div>
@@ -313,7 +346,11 @@ if ( in_category('event') ) :
         <div class="eventPlan__wrap">
           <div class="eventPlan__box">
             <p class="number">01 <span>平屋住宅</span></p>
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/plan1.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
+            <img src="<?php echo do_shortcode(
+            	"[theme_url]",
+            ); ?>/assets/img/event/plan1.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
             <div class="subTtlWrap">
               <h3 class="eventPlan__subTtl">1,398<span>万円〜</span></h3><!-- /homeMade__subTtl -->
             </div>
@@ -321,7 +358,11 @@ if ( in_category('event') ) :
 
           <div class="eventPlan__box">
             <p class="number">02 <span>コンセプト平屋</span></p>
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/plan2.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
+            <img src="<?php echo do_shortcode(
+            	"[theme_url]",
+            ); ?>/assets/img/event/plan2.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
             <div class="subTtlWrap">
               <h3 class="eventPlan__subTtl">1,648<span>万円〜</span></h3><!-- /homeMade__subTtl -->
             </div>
@@ -329,7 +370,11 @@ if ( in_category('event') ) :
 
           <div class="eventPlan__box">
             <p class="number">03 <span>2階建て</span></p>
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/plan3.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
+            <img src="<?php echo do_shortcode(
+            	"[theme_url]",
+            ); ?>/assets/img/event/plan3.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
             <div class="subTtlWrap">
               <h3 class="eventPlan__subTtl">1,398<span>万円〜</span></h3><!-- /homeMade__subTtl -->
             </div>
@@ -337,7 +382,11 @@ if ( in_category('event') ) :
 
           <div class="eventPlan__box">
             <p class="number">04 <span>大型(40坪以上)２階建て</span></p>
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/plan4.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
+            <img src="<?php echo do_shortcode(
+            	"[theme_url]",
+            ); ?>/assets/img/event/plan4.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
             <div class="subTtlWrap">
               <h3 class="eventPlan__subTtl">1,748<span>万円〜</span></h3><!-- /homeMade__subTtl -->
             </div>
@@ -350,11 +399,19 @@ if ( in_category('event') ) :
         <div class="cvButtonLinkWrap">
           <a href="#contactForm" class="cvButtonLink">
             <div>
-              <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="planImg lazyloaded">
+              <img src="<?php echo do_shortcode(
+              	"[theme_url]",
+              ); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/arrowRight.png" class="planImg lazyloaded">
             </div>
             <button class="cvButtonLink__button">
             <span>ご来場予約はこちら</span>
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
+            <img src="<?php echo do_shortcode(
+            	"[theme_url]",
+            ); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
             </button>
           </a>
         </div>
@@ -363,21 +420,37 @@ if ( in_category('event') ) :
       <!-- 住宅ローン -->
       <section class="housingLoan">
         <div class="housingLoan__img">
-          <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/housingLoan.png"  alt="住宅ローン" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/housingLoan.png" class="eventPlanImg lazyloaded">
+          <img src="<?php echo do_shortcode(
+          	"[theme_url]",
+          ); ?>/assets/img/event/housingLoan.png"  alt="住宅ローン" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/housingLoan.png" class="eventPlanImg lazyloaded">
         </div>
         <div class="housingLoan__contents">
           <p class="free">無料相談・無料審査大歓迎！</p>
           <div class="simulationWrap"> 
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/simulation.svg"  alt="住宅ローン" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/simulation.svg" class="simulation lazyloaded">
+            <img src="<?php echo do_shortcode(
+            	"[theme_url]",
+            ); ?>/assets/img/event/simulation.svg"  alt="住宅ローン" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/simulation.svg" class="simulation lazyloaded">
           </div>
           <div class="listWrap">
             <ul class="housingLoan__list">
               <li>
-                <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/check.svg"  alt="チェック" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/check.svg" class="lazyloaded">
+                <img src="<?php echo do_shortcode(
+                	"[theme_url]",
+                ); ?>/assets/img/event/check.svg"  alt="チェック" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/check.svg" class="lazyloaded">
                 住宅ローンお支払いシミュレーション
               </li>
               <li>
-                <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/check.svg"  alt="チェック" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/check.svg" class="lazyloaded">
+                <img src="<?php echo do_shortcode(
+                	"[theme_url]",
+                ); ?>/assets/img/event/check.svg"  alt="チェック" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/check.svg" class="lazyloaded">
                 土地・建物の総額資金計画と住宅ローンのシミュレーション</li>
             </ul>
           </div>
@@ -389,10 +462,10 @@ if ( in_category('event') ) :
 ================================================================================================ -->
       <div class="banner">
         <a class="tochi present-pc" href="https://ietochi-kuki.com/1331/" target="_blank">
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/70th.png" alt="">
+            <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/70th.png" alt="">
         </a>
         <a class="tochi present-sp" href="https://ietochi-kuki.com/1331/" target="_blank">
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/70thSp.png" alt="">
+            <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/70thSp.png" alt="">
         </a>
       </div>
 
@@ -400,11 +473,19 @@ if ( in_category('event') ) :
       <div class="cvButtonLinkWrap">
         <a href="#contactForm" class="cvButtonLink">
           <div>
-            <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
+            <img src="<?php echo do_shortcode(
+            	"[theme_url]",
+            ); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
           </div>
           <button class="cvButtonLink__button">
           <span>ご来場予約はこちら</span>
-          <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
+          <img src="<?php echo do_shortcode(
+          	"[theme_url]",
+          ); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
           </button>
         </a>
       </div>
@@ -416,7 +497,11 @@ if ( in_category('event') ) :
           宅建士が在籍する不動産部があるため<br class="show--sp">
           土地と建物をワンストップでご提案可能！</p>
         <div class="searchLand__img">
-          <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/event/searchLand.png"  alt="住宅ローン" data-src="<?php echo do_shortcode('[theme_url]'); ?>/img/event/searchLand.png" class=" lazyloaded">
+          <img src="<?php echo do_shortcode(
+          	"[theme_url]",
+          ); ?>/assets/img/event/searchLand.png"  alt="住宅ローン" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/event/searchLand.png" class=" lazyloaded">
         </div>
         
       </section>
@@ -429,18 +514,22 @@ if ( in_category('event') ) :
           <?php echo do_shortcode('[mwform_formkey key="33"]'); ?>
         </div><!-- /inner contact__inner -->
       </div><!-- /contact -->
-      <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
+      <a href="<?php echo do_shortcode(
+      	"[home_url]",
+      ); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
     </div><!-- /inner post__inner -->
   </section><!-- /post -->
-  <?php elseif( in_category('end') ) : ?>
+  <?php elseif (in_category("end")): ?>
   <section class="post wow fadeInUp">
     <div class="inner post__inner">
       <h2 class="post__ttl"><?php the_title(); ?></h2><!-- /post__ttl -->
-      <time class="post__time" datetime="<?php the_time('c'); ?>">※このイベントは終了しています。</time><!-- /post__time -->
+      <time class="post__time" datetime="<?php the_time(
+      	"c",
+      ); ?>">※このイベントは終了しています。</time><!-- /post__time -->
       <div class="post__contents">
         <p><?php echo $comment; ?></p>
         <div class="caseItem__main wow fadeInUp">
-          <div class="caseItem__img1"><img data-js-ofi src="<?php echo $eventPic ?>" alt="<?php echo $name  ?>"></div><!-- /caseItem__img1 -->
+          <div class="caseItem__img1"><img data-js-ofi src="<?php echo $eventPic; ?>" alt="<?php echo $name; ?>"></div><!-- /caseItem__img1 -->
           <div class="mainContents">
             <div class="list">
               <dl>
@@ -463,30 +552,36 @@ if ( in_category('event') ) :
           <?php the_content(); ?>
         </div>
       </div><!-- /post__contents -->
-      <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
+      <a href="<?php echo do_shortcode(
+      	"[home_url]",
+      ); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
     </div><!-- /inner post__inner -->
   </section><!-- /post -->
   <?php else: ?>
-    <?php if ( in_category('staff') ) : ?>
+    <?php if (in_category("staff")): ?>
       <section class="post wow fadeInUp">
         <div class="inner post__inner">
           <div class="post__contents">
             <?php the_content(); ?>
           </div><!-- /post__contents -->
 
-          <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
+          <a href="<?php echo do_shortcode(
+          	"[home_url]",
+          ); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
         </div><!-- /inner post__inner -->
       </section><!-- /post -->
     <?php else: ?>
     <section class="post wow fadeInUp">
     <div class="inner post__inner">
       <h2 class="post__ttl"><?php the_title(); ?></h2><!-- /post__ttl -->
-      <time class="post__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y.n.j'); ?></time><!-- /post__time -->
+      <time class="post__time" datetime="<?php the_time("c"); ?>"><?php the_time("Y.n.j"); ?></time><!-- /post__time -->
       <div class="post__contents">
         <?php the_content(); ?>
       </div><!-- /post__contents -->
 
-      <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
+      <a href="<?php echo do_shortcode(
+      	"[home_url]",
+      ); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
     </div><!-- /inner post__inner -->
   </section><!-- /post -->
   <?php endif; ?>

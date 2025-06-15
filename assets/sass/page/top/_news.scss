@@ -1,4 +1,4 @@
-@use '../../foundation/mixin';
+@use "../../foundation/mixin";
 /* ==========================================================================
   news
   ========================================================================== */
@@ -31,12 +31,12 @@
 		&:hover {
 			opacity: 0.7;
 			.news__time {
-				color: #F10000;
+				color: #f10000;
 			}
 		}
 	}
 
-	.news__body{
+	.news__body {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -138,6 +138,6 @@
 	}
 
 	.news__item:hover .news__arrow {
-		color: #F10000;
+		color: #f10000;
 	}
 }

@@ -1,59 +1,59 @@
-@use '../../foundation/mixin';
+@use "../../foundation/mixin";
 /* ==========================================================================
   thanks (404も同様コード使用)
   ========================================================================== */
 
 .thanks,
 .notFound {
-  padding-bottom: 233px;
+	padding-bottom: 233px;
 
-  @include mixin.sp() {
-    padding-bottom: 80px;
-  }
+	@include mixin.sp() {
+		padding-bottom: 80px;
+	}
 
-  &__ttl {
-    color: #d90200;
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: 0;
-    margin-bottom: 25px;
-    text-align: center;
+	&__ttl {
+		color: #d90200;
+		font-size: 3rem;
+		font-weight: bold;
+		letter-spacing: 0;
+		margin-bottom: 25px;
+		text-align: center;
 
-    @include mixin.sp() {
-      font-size: 2.6rem;
-    }
-  }
+		@include mixin.sp() {
+			font-size: 2.6rem;
+		}
+	}
 
-  &__txt {
-    letter-spacing: .2em;
-    line-height: 1.6;
-  }
+	&__txt {
+		letter-spacing: 0.2em;
+		line-height: 1.6;
+	}
 
-  &__btn {
-    align-items: center;
-    background: #d90200;
-    border: 1px solid #d90200;
-    color: #fff;
-    display: flex;
-    font-weight: bold;
-    @include mixin.yuGothicBold();
-    height: 40px;
-    justify-content: center;
-    margin: 40px auto 0;
-    max-width: 352px;
-    width: 100%;
+	&__btn {
+		align-items: center;
+		background: #d90200;
+		border: 1px solid #d90200;
+		color: #fff;
+		display: flex;
+		font-weight: bold;
+		@include mixin.yuGothicBold();
+		height: 40px;
+		justify-content: center;
+		margin: 40px auto 0;
+		max-width: 352px;
+		width: 100%;
 
-    &:hover {
-      color: #d90200;
-      background: #fff;
-    }
-  }
+		&:hover {
+			color: #d90200;
+			background: #fff;
+		}
+	}
 }
 
-.thanks__txt+.thanks__txt {
-  margin-top: 25px;
+.thanks__txt + .thanks__txt {
+	margin-top: 25px;
 }
 
 .notFound {
-  text-align: center;
+	text-align: center;
 }

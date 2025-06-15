@@ -61,37 +61,45 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
 <!-- ===============================================================================================
   header
 ================================================================================================ -->
-    <header class="header <?php  if(is_home() || is_front_page()){ echo '_top';} ?>">
+    <header class="header <?php if (is_home() || is_front_page()) {
+    	echo "_top";
+    } ?>">
       <div class="header__inner inner">
-      <?php  if(is_home() || is_front_page()): ?>
-        <h1 class="header__logo" data-logo="white"><a href="<?php echo do_shortcode('[home_url]'); ?>"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt="rico life"></a></h1>
+      <?php if (is_home() || is_front_page()): ?>
+        <h1 class="header__logo" data-logo="white"><a href="<?php echo do_shortcode(
+        	"[home_url]",
+        ); ?>"><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/common/logo.svg" alt="rico life"></a></h1>
       <?php else: ?>
-        <div class="header__logo"><a href="<?php echo do_shortcode('[home_url]'); ?>"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt="rico life"></a></div>
+        <div class="header__logo"><a href="<?php echo do_shortcode("[home_url]"); ?>"><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/common/logo.svg" alt="rico life"></a></div>
       <?php endif; ?>
         <!-- /header__logo -->
         <div class="header__contents" id="js-headerContents">
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="<?php echo do_shortcode('[home_url]'); ?>">
+                <a href="<?php echo do_shortcode("[home_url]"); ?>">
                   <i class="fab fa-youtube fa-xl"></i>
                   <p class="_below">YouTube</p>
                 </a>
               </li>
               <li class="header__item">
-                <a href="<?php echo do_shortcode('[home_url]'); ?>about">
+                <a href="<?php echo do_shortcode("[home_url]"); ?>about">
 									<i class="fa-brands fa-instagram fa-xl"></i>
                   <p class="_below">Instagram</p>
                 </a>
               </li>
               <li class="header__item">
-                <a href="<?php echo do_shortcode('[home_url]'); ?>request">
+                <a href="<?php echo do_shortcode("[home_url]"); ?>request">
 								<i class="fa-solid fa-book-open fa-xl"></i>
                   <p class="_below">資料請求</p>
                 </a>
               </li>
               <li class="header__item">
-                <a href="<?php echo do_shortcode('[home_url]'); ?>contact">
+                <a href="<?php echo do_shortcode("[home_url]"); ?>contact">
 									<i class="fa-solid fa-house fa-xl"></i>
                   <p class="_below">来場予約</p>
                 </a>

@@ -1,15 +1,14 @@
-@use '../../foundation/mixin';
+@use "../../foundation/mixin";
 /* ==========================================================================
   bgArea
   ========================================================================== */
 
 .bgArea {
-  background: url(../img/belleair/bed-bg.jpg) no-repeat center left/cover;
-  width: 100%;
-  height: 715px;
+	background: url(../img/belleair/bed-bg.jpg) no-repeat center left/cover;
+	width: 100%;
+	height: 715px;
 
-  @include mixin.sp() {
-    height: 235px;
-
-  }
+	@include mixin.sp() {
+		height: 235px;
+	}
 }

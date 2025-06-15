@@ -11,23 +11,36 @@ mv
 ================================================================================================ -->
 	<main class="main">
 		<div class="show--pc">
-			<img  src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-pc.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-pc.png" class=" ls-is-cached lazyloaded">
+			<img  src="<?php echo do_shortcode(
+   	"[theme_url]",
+   ); ?>/assets/img/about/kv-about-pc.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/kv-about-pc.png" class=" ls-is-cached lazyloaded">
 			<noscript>
-				<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-pc.png" alt="いえとち本舗の平屋" data-eio="l">
+				<img src="<?php echo do_shortcode(
+    	"[theme_url]",
+    ); ?>/assets/img/about/kv-about-pc.png" alt="いえとち本舗の平屋" data-eio="l">
 			</noscript>
 		</div>
 		<div class="show--sp">
-			<img  src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-sp.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-sp.png" class=" ls-is-cached lazyloaded">
+			<img  src="<?php echo do_shortcode(
+   	"[theme_url]",
+   ); ?>/assets/img/about/kv-about-sp.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/kv-about-sp.png" class=" ls-is-cached lazyloaded">
 			<noscript>
-				<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/kv-about-sp.png" alt="いえとち本舗の平屋" data-eio="l">
+				<img src="<?php echo do_shortcode(
+    	"[theme_url]",
+    ); ?>/assets/img/about/kv-about-sp.png" alt="いえとち本舗の平屋" data-eio="l">
 			</noscript>
 		</div>
 	</main>
-	<?php if (function_exists('bcn_display')) : ?>
+	<?php if (function_exists("bcn_display")): ?>
 		<div class="breadcrumb">
 			<div class="breadcrumb__contents">
-			<?php bcn_display(); //BreadcrumbNavXTのパンくずを表示するための記述
-			?>
+			<?php bcn_display();
+ 	//BreadcrumbNavXTのパンくずを表示するための記述
+ 	?>
 		</div><!-- /breadcrumb__contents -->
 		</div>
 	<?php endif; ?>
@@ -46,9 +59,13 @@ about-massage
 		</div>   
 
 		<div class="about-massage__inner--content">
-			<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/about-massage.png" alt="いえとち本舗の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/about-massage.png" class=" ls-is-cached lazyloaded">
+			<img src="<?php echo do_shortcode(
+   	"[theme_url]",
+   ); ?>/images/about-massage.png" alt="いえとち本舗の家" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/about-massage.png" class=" ls-is-cached lazyloaded">
 			<noscript>
-			<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/about-massage.png" alt="いえとち本舗の家" data-eio="l">
+			<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/about-massage.png" alt="いえとち本舗の家" data-eio="l">
 			</noscript>
 		</div>
 
@@ -79,21 +96,21 @@ point3
 						<div class="box">
 							<h3>169,280通りの選択肢</h3>
 							<p>自由に選べる憧れの<br />デザイン&間取り！</p>
-							<img class="bgImage" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/orange-home-bg.png" alt="">
+							<img class="bgImage" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/orange-home-bg.png" alt="">
 						</div>
 					</a>
 					<a href="#high">
 						<div  div class="box">
 							<h3>太陽光発電標準搭載</h3>
 							<p>月々15,000円支払いがお得！<br />自家発電で家計を助ける！</p>
-							<img class="bgImage" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/orange-home-bg.png" alt="">
+							<img class="bgImage" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/orange-home-bg.png" alt="">
 						</div>
 					</a>
 					<a href="#low">
 						<div class="box">
 							<h3>全棟100%ZHE基準</h3>
 							<p>1年中快適な<br/>ゼロエネルギー住宅対応!</p>
-							<img class="bgImage" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/orange-home-bg.png" alt="">
+							<img class="bgImage" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/orange-home-bg.png" alt="">
 						</div>
 					</a>
 				</div>
@@ -110,7 +127,11 @@ zeh
 				<h2 class="about-ttl">ZEH基準の住宅性能で<br>快適で健康な暮らし</h2>
 			</div>
 			<div class="zeh__inner--content">
-				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="zehモデル" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/zeh.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/images/zeh.png" alt="zehモデル" data-eio="l"></noscript>
+				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="zehモデル" data-src="<?php echo do_shortcode(
+    	"[theme_url]",
+    ); ?>/images/zeh.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/zeh.png" alt="zehモデル" data-eio="l"></noscript>
 				<p>自宅で発電した電気を使い、余った電気は売電する時代です。(環境にも、家計にも優しい時代)当社は、光熱費（電気代を含む）やガソリン代も0円（電気自動車の場合）、電気を買わずに住む住宅を目指し、大容量の太陽光発電を標準搭載しています。
 				太陽光発電システムは自然エネルギーを利用する為、発電時にCO2を排出することなく、環境にとても優しい仕組みです。</p>
 			</div>
@@ -129,7 +150,7 @@ zeh
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">低価格×高品質を実現</h3>
 				<div class="pc-flex">
-					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail1.png" alt="">
+					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail1.png" alt="">
 					<div class="about-detail-message">
 						<p>土地や建物が大きな家は住宅ローンも大きくなります。<br class="show--pc"/>そしてローンだけでなく今後は光熱費の上昇で固定費がどんどん高くなります。そのため、無理なく持てる家を建てることが大事です。<br class="show--sp"/>いえとち本舗では、注文住宅を規格化し合理化することで高水準な仕様のまま、コストダウンを実現しております。さらに、太陽光発電が標準装備でエネルギーコスト節約という付加価値つき住宅です。<br class="show--sp"/>単に安いのではなく、お客様が安心して快適に暮らせるような仕様になっております。</p>
 					</div>
@@ -139,7 +160,7 @@ zeh
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">太陽光で家が稼いでくれる</h3>
 				<div class="pc-flex">
-					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail2.png" alt="">
+					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail2.png" alt="">
 					<div class="about-detail-message">
 						<p>太陽光パネル付きの家が稼いでくれる。<br>いえとち本舗のイエテラスは、太陽光が標準搭載です。近年、電気代が高騰しておりますが、まだまだ上がることが予想されております。<br class="show--sp"/>その電気を家が蓄え、売電してくれることで毎月の電気代が0円になるだけでなく、搭載量によっては住宅ローンの負担軽減も可能です。さらに、自然エネルギーを利用した太陽光発電はCO2を排出することがないため、環境にとてもやさしいです。<br class="show--sp"/>日々の生活が充実したものになります。</p>
 					</div>
@@ -149,16 +170,18 @@ zeh
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">豊富なデザインと間取り</h3>
 				<div class="pc-flex">
-					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail3.png" alt="">
+					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail3.png" alt="">
 					<div class="about-detail-message">
 						<div class="select-title">
 							<p>169,280通りの選択肢</p>
 						</div>
 
 						<div class="choises__inner--content section__inner--content">
-							<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/choices.png" alt="選択肢" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/choices.png" class=" ls-is-cached lazyloaded">
+							<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/choices.png" alt="選択肢" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/choices.png" class=" ls-is-cached lazyloaded">
 							<noscript>
-								<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/choices.png" alt="選択肢" data-eio="l">
+								<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/choices.png" alt="選択肢" data-eio="l">
 							</noscript>
 						</div>
 						<p>規格化したから、決められたものから少しの変更しかできないと思われるかと思いますが、それぞれ豊富な種類からカスタマイズすることが可能です。<br class="show--sp"/>自分たちだけのオシャレなマイホームが完成します。</p>
@@ -182,7 +205,7 @@ zeh
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">災害に強く耐久性◎</h3>
 				<div class="pc-flex">
-					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail4.png" alt="">
+					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail4.png" alt="">
 					<div class="about-detail-message">
 						<p>日本は地震大国です。何十年も暮らすマイホームだからこそ地震に強い耐震性と耐久性が大切です。『いえとち本舗』は基礎工事から内装工事に至るまで耐久性とエコロジーを取り入れ、レベルの高い性能を実現しています。凹凸のないハコ型にすることで、地震に対して構造部分の強さを保つだけでなく、建物価格を低く抑えることができます。また規格化した物件だからこそ、一定の品質を保ちます。</p>
 					</div>
@@ -192,7 +215,7 @@ zeh
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">土地探しもお任せ！</h3>
 				<div class="pc-flex">
-					<img class="leftImg" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/about-detail5.png" alt="">
+					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail5.png" alt="">
 					<div class="about-detail-message">
 						<p>マイホームを建てる時には土地探しも重要になります。現地見学をして周辺の環境を確かめたり、物件を含めた全体予算をしっかりと算出したりと、面倒なことがたくさんあります。いえとち本舗は、「家」も「土地」もセットでご提案いたしますのでご安心ください。地元密着で70年の情報力と提案力でサポートいたします。</p>
 					</div>
@@ -229,7 +252,13 @@ plan
 			<div id="panel1" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-1.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-1png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/1-1.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/1-1png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/1-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan madori-sp">
 					<div class="floor-plan__inner">
@@ -237,18 +266,32 @@ plan
 						<p>1F</p>
 					</div>
 					<p>38.76㎡<br>(11.72坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/1-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 					<div class="floor-plan__inner">
 					<div class="floor">
 						<p>2F</p>
 					</div>
 					<p>39.74㎡<br>(12.02坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/1-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-01png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/1.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/1-01png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/1.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				</div>
 				<div class="floor-plan flex">
@@ -257,21 +300,33 @@ plan
 					<p>1F</p>
 					</div>
 					<p>38.76㎡<br>(11.72坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/1-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan__inner madori-pc">
 					<div class="floor">
 					<p>2F</p>
 					</div>
 					<p>39.74㎡<br>(12.02坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/1-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				</div>
 			</div>
 			<div id="panel2" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2-1.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/2-1.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/2-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan madori-sp">
 					<div class="floor-plan__inner">
@@ -279,18 +334,32 @@ plan
 						<p>1F</p>
 					</div>
 					<p>45.27㎡<br>(13.69坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/2-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/2-2.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 					<div class="floor-plan__inner">
 					<div class="floor">
 						<p>2F</p>
 					</div>
 					<p>46.37㎡<br>(14.02坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2-3.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/2-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/2-3.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/1-01png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/2.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/1-01png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/2.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				</div>
 				<div class="floor-plan flex">
@@ -299,14 +368,22 @@ plan
 					<p>1F</p>
 					</div>
 					<p>45.27㎡<br>(13.69坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/2-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/2-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan__inner madori-pc">
 					<div class="floor">
 					<p>2F</p>
 					</div>
 					<p>46.37㎡<br>(14.02坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/2-3.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/2-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/2-3.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				</div>
 			</div>
@@ -314,7 +391,11 @@ plan
 			<div id="panel3" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="32坪1,188万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-1.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/3-1.png" alt="32坪1,188万円の家" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="32坪1,188万円の家" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/3-1.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/3-1.png" alt="32坪1,188万円の家" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan madori-sp">
 					<div class="floor-plan__inner">
@@ -322,18 +403,32 @@ plan
 						<p>1F</p>
 					</div>
 					<p>50.85㎡<br>(15.88坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 					<div class="floor-plan__inner">
 					<div class="floor">
 						<p>2F</p>
 					</div>
 					<p>52.17㎡<br>(15.78坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/3.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/3.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/3.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				</div>
 				<div class="floor-plan flex">
@@ -342,14 +437,22 @@ plan
 					<p>1F</p>
 					</div>
 					<p>50.85㎡<br>(15.88坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan__inner madori-pc">
 					<div class="floor">
 					<p>2F</p>
 					</div>
 					<p>52.17㎡<br>(15.78坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/3-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				</div>
 			</div>
@@ -368,22 +471,50 @@ plan
 			<div id="panel4" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/4-1.png" class="lazyload house"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/4-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/4-2.png" class="lazyload madori"><noscript><img class="madori" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/4-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/4-1.png" class="lazyload house"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/4-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/4-2.png" class="lazyload madori"><noscript><img class="madori" src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/4-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/4.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/4.png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/4.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/4.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/4.png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/4.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				</div>
 			</div>
 			<div id="panel5" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/5-1.png" class="lazyload house"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/img/about/5-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/5-2.png" class="lazyload madori"><noscript><img class="madori" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/5-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/5-1.png" class="lazyload house"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/about/5-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/5-2.png" class="lazyload madori"><noscript><img class="madori" src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/5-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/5.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/5.png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/5.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/5.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/5.png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/5.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				</div>
 			</div>
@@ -391,11 +522,25 @@ plan
 			<div id="panel6" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/6-1.png" class="lazyload house"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/img/about/6-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/6-2.png" class="lazyload madori"><noscript><img class="madori-pc" src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/6-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/6-1.png" class="lazyload house"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/img/about/6-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/6-2.png" class="lazyload madori"><noscript><img class="madori-pc" src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/6-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/6.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/6.png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/about/6.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo do_shortcode(
+     	"[theme_url]",
+     ); ?>/assets/img/about/6.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/6.png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/about/6.png" alt="25坪998万円の家" data-eio="l"></noscript>
 					
 				</div>
 				</div>
@@ -415,7 +560,9 @@ high-quality
 
 			<div class="high-quality__inner--content">
 				<p>住宅はご家族の大切な生活の基盤です。家族が「安心・快適・安全」に暮らす為に、価格は抑えつつも、品質はそのままの住まいづくりを基本として考えています。</p>
-				<img class="uk-hidden@s" src="<?php echo do_shortcode('[theme_url]'); ?>/images/high-quality-sp.png" alt="高品質な家の仕様">
+				<img class="uk-hidden@s" src="<?php echo do_shortcode(
+    	"[theme_url]",
+    ); ?>/images/high-quality-sp.png" alt="高品質な家の仕様">
 			</div>
 		</div>
   </section>
@@ -432,7 +579,13 @@ low-price
       </div>
       <div class="low-price__inner--contents uk-grid">
         <div class="content uk-width-1-3@s">
-          <img src="<?php echo do_shortcode('[theme_url]'); ?>/images/house-bg.svg" alt="低価格のポイント1" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/images/house-bg.svg" alt="低価格のポイント1" data-eio="l"></noscript>
+          <img src="<?php echo do_shortcode(
+          	"[theme_url]",
+          ); ?>/images/house-bg.svg" alt="低価格のポイント1" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/house-bg.svg" alt="低価格のポイント1" data-eio="l"></noscript>
           <div class="content__inner">
             <h4>建設・不動産の融合</h4>
             <p>土地と建物をトータルでご提案することにより余計な中間マージンが発生しないため
@@ -441,14 +594,26 @@ low-price
           </div>
         </div>
         <div class="content uk-width-1-3@s">
-          <img src="<?php echo do_shortcode('[theme_url]'); ?>/images/house-bg.svg" alt="低価格のポイント2" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/images/house-bg.svg" alt="低価格のポイント2" data-eio="l"></noscript>
+          <img src="<?php echo do_shortcode(
+          	"[theme_url]",
+          ); ?>/images/house-bg.svg" alt="低価格のポイント2" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/house-bg.svg" alt="低価格のポイント2" data-eio="l"></noscript>
           <div class="content__inner">
           <h4>共同で購入！</h4>
           <p>いえとち本舗では全国のフランチャイズ加盟店と建材を共同購入することで、流通コストを削減しています。</p>
           </div>
         </div>
         <div class="content uk-width-1-3@s">
-          <img src="<?php echo do_shortcode('[theme_url]'); ?>/images/house-bg.svg" alt="低価格のポイント3" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/images/house-bg.svg" alt="低価格のポイント3" data-eio="l"></noscript>
+          <img src="<?php echo do_shortcode(
+          	"[theme_url]",
+          ); ?>/images/house-bg.svg" alt="低価格のポイント3" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/house-bg.svg" alt="低価格のポイント3" data-eio="l"></noscript>
           <div class="content__inner">
             <h4>規格の統一化</h4>
             <p>バランスの取れた住まいの規格設計を基に、高さや間取りの構造を統一。
@@ -473,7 +638,11 @@ low-price
       </div>
       <div class="voice__inner--content uk-grid">
         <div class="uk-width-1-2@s">
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="お客様との打ち合わせ" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/voice.png" class="lazyload"><noscript><img src="<?php echo do_shortcode('[theme_url]'); ?>/images/voice.png" alt="お客様との打ち合わせ" data-eio="l"></noscript>
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="お客様との打ち合わせ" data-src="<?php echo do_shortcode(
+          	"[theme_url]",
+          ); ?>/images/voice.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/voice.png" alt="お客様との打ち合わせ" data-eio="l"></noscript>
         </div>
         <div class="uk-width-1-2@s">
           <p>1番の決め手は地元密着で長く営業しているからです。
@@ -488,16 +657,16 @@ low-price
 EVENT
 ================================================================================================ -->
 <?php
-  $perPage = -1;
-  $args = array(
-    'posts_per_page' => $perPage,
-    'post_type' => 'post',
-    'category_name' => 'event',
-    'post_status' => 'publish',
-    'category__not_in' => array(get_category_by_slug('end')->term_id)
-  );
-  $the_query = new WP_Query($args);
-  if ($the_query->have_posts()) : ?>
+$perPage = -1;
+$args = [
+	"posts_per_page" => $perPage,
+	"post_type" => "post",
+	"category_name" => "event",
+	"post_status" => "publish",
+	"category__not_in" => [get_category_by_slug("end")->term_id],
+];
+$the_query = new WP_Query($args);
+if ($the_query->have_posts()): ?>
     <section class="event">
       <div class="inner event__inner">
         <div class="event__box">
@@ -505,42 +674,58 @@ EVENT
             <h2 class="event__ttl  event__ttl-pc ttl ttl--right ">開催中の<br>イベント</h2><!-- /event__ttl -->
             <h2 class="event__ttl  event__ttl-sp ttl ttl--right ">開催中のイベント</h2><!-- /event__ttl -->
             <!-- ★pc 用ボタン表示 -->
-            <a href="<?php echo do_shortcode('[home_url]'); ?>news" class="event__btn topLink show--pc">view more</a><!-- /event__btn -->
+            <a href="<?php echo do_shortcode(
+            	"[home_url]",
+            ); ?>news" class="event__btn topLink show--pc">view more</a><!-- /event__btn -->
           </div><!-- /event__left -->
           <div class="event__right swiper eventSwiper">
             <ul class="event__list swiper-wrapper">
-              <?php while ($the_query->have_posts()) : $the_query->the_post(); 
-              $eventPic = get_field('event-pic');
-              $img_url1 = $eventPic;
-              $comment = get_field('comment'); //コメント
-              $schedule = get_field('schedule'); //日時
-              $time = get_field('time'); //開催時間
-              $address = get_field('address'); //住所
-              $reserve = get_field('reserve'); //予約方法
-              ?>
+              <?php while ($the_query->have_posts()):
+
+              	$the_query->the_post();
+              	$eventPic = get_field("event-pic");
+              	$img_url1 = $eventPic;
+              	$comment = get_field("comment"); //コメント
+              	$schedule = get_field("schedule"); //日時
+              	$time = get_field("time"); //開催時間
+              	$address = get_field("address"); //住所
+              	$reserve = get_field("reserve");
+
+              	//予約方法
+              	?>
                 <li class="event__item swiper-slide">
                   <a href="<?php echo esc_url(get_permalink()); ?>">
                     <div class="event__info">
-                      <div class=""><img width="300" data-js-ofi src="<?php echo $eventPic; ?>" alt="<?php echo trimString(get_the_title(), 50);  ?>"></div><!-- /caseItem__img1 -->
+                      <div class=""><img width="300" data-js-ofi src="<?php echo $eventPic; ?>" alt="<?php echo trimString(
+	get_the_title(),
+	50,
+); ?>"></div><!-- /caseItem__img1 -->
                     </div><!-- /event__info -->
                     <div>
-                      <h3 class="event__subTtl"><?php echo trimString(get_the_title(), 50); ?></h3><!-- /event__subTtl -->
-                      <p class="event__schedule">日程:<?php echo $schedule ; ?></p>
-                      <p class="event__comment"><?php echo $comment ; ?></p>
+                      <h3 class="event__subTtl"><?php echo trimString(
+                      	get_the_title(),
+                      	50,
+                      ); ?></h3><!-- /event__subTtl -->
+                      <p class="event__schedule">日程:<?php echo $schedule; ?></p>
+                      <p class="event__comment"><?php echo $comment; ?></p>
                     </div>
                   </a>
                 </li><!-- /event__item -->
-              <?php endwhile; ?>
+              <?php
+              endwhile; ?>
             </ul><!-- /event__list -->
             <div class="swiper-pagination swiper-pagination-black"></div>
             <!-- ★sp 用ボタン表示 -->
-            <a href="<?php echo esc_url(get_permalink()); ?>" class="event__btn topLink show--sp">view more</a><!-- /event__btn -->
+            <a href="<?php echo esc_url(
+            	get_permalink(),
+            ); ?>" class="event__btn topLink show--sp">view more</a><!-- /event__btn -->
           </div><!-- /event__right -->
         </div><!-- /event__box -->
       </div><!-- /inner event__inner -->
     </section><!-- /event -->
   <?php endif;
-  wp_reset_postdata(); ?>
+wp_reset_postdata();
+?>
 
   <!-- ===============================================================================================
 施工事例 swipper設定はfooter.phpに記載
@@ -549,52 +734,58 @@ EVENT
 <section class="tcase">
   <div class="tcase__inner">
     <?php
-      $perPage = 10;
-      $paged = get_query_var('paged');
-      $args = array(
-        'posts_per_page' => $perPage,
-        'post_type' => 'case',
-        'paged' => $paged,
-        // 'orderby' => 'meta_value',
-        'orderby' => array( 'meta_value' => 'DESC', 'date' => 'DESC' ),
-        'meta_key' => 'case-isHot'//カスタムフィールドの値を基準に並べ替え
-      );
-      $my_query = new WP_Query($args);
-      if ($my_query->have_posts()) : 
-    ?>
+    $perPage = 10;
+    $paged = get_query_var("paged");
+    $args = [
+    	"posts_per_page" => $perPage,
+    	"post_type" => "case",
+    	"paged" => $paged,
+    	// 'orderby' => 'meta_value',
+    	"orderby" => ["meta_value" => "DESC", "date" => "DESC"],
+    	"meta_key" => "case-isHot",
+    	//カスタムフィールドの値を基準に並べ替え
+    ];
+    $my_query = new WP_Query($args);
+    if ($my_query->have_posts()): ?>
       
     <div class="swiper mySwiper">
       <!-- swipper設定 -->
       
       <!-- <div class=""> -->
         <ul class="swiper-wrapper">
-          <?php while ($my_query->have_posts()) : $my_query->the_post();
-          $name = get_the_title(); //名称
-          $cat = get_field('case-cat')->name; //カテゴリ名称
-          //画像
-          $img_id1 = get_field('pic1');
-          $img_url1 = wp_get_attachment_image_src($img_id1, 'large')[0];
-          $industry = get_field('case-industry'); //業種
-          $catch = get_field('case-catch');//きゃっち
-          $hot = get_field('case-isHot'); //HOT
-          ?>
+          <?php while ($my_query->have_posts()):
+
+          	$my_query->the_post();
+          	$name = get_the_title(); //名称
+          	$cat = get_field("case-cat")->name; //カテゴリ名称
+          	//画像
+          	$img_id1 = get_field("pic1");
+          	$img_url1 = wp_get_attachment_image_src($img_id1, "large")[0];
+          	$industry = get_field("case-industry"); //業種
+          	$catch = get_field("case-catch"); //きゃっち
+          	$hot = get_field("case-isHot");
+
+          	//HOT
+          	?>
             <li class="swiper-slide">
               <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                <div class="caseList__img"><img width="300" data-js-ofi src="<?php echo $img_url1; ?>" alt="<?php echo $name ?>"></div>
+                <div class="caseList__img"><img width="300" data-js-ofi src="<?php echo $img_url1; ?>" alt="<?php echo $name; ?>"></div>
                 <!-- /caseList__img -->
                 <div class="caseList__body">
                   <h3 class="caseList__subTtl">
-                    <span class="_below"><?php echo $name ?></span><!-- /_below -->
+                    <span class="_below"><?php echo $name; ?></span><!-- /_below -->
                   </h3><!-- /caseList__subTtl -->
                   <p class="caseList__desc"><?php echo trimString($catch, 30); ?></p>
                   <!-- /caseList__desc -->
                 </div><!-- /caseList__body -->
               </a>
             </li><!-- /caseList__item -->
-            <?php endwhile; ?>
+            <?php
+          endwhile; ?>
           </ul><!-- /caseList__list -->
           <div class="swiper-pagination swiper-pagination-black"></div>
-        <?php endif; ?>
+        <?php endif;
+    ?>
         <?php wp_reset_postdata(); ?>
       <!-- </div> -->
     </div>
@@ -611,24 +802,36 @@ EVENT
     </div>
 
     <div>
-			<a href="<?php echo do_shortcode('[home_url]'); ?>about/low-price/">
-				<img src=<?php echo do_shortcode('[theme_url]'); ?>/images/card-low-price.png" alt="低価格×高品質" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-low-price.png" class="lazyload">
+			<a href="<?php echo do_shortcode("[home_url]"); ?>about/low-price/">
+				<img src=<?php echo do_shortcode(
+    	"[theme_url]",
+    ); ?>/images/card-low-price.png" alt="低価格×高品質" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/card-low-price.png" class="lazyload">
 				<noscript>
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-low-price.png" alt="低価格×高品質" data-eio="l">
+					<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/card-low-price.png" alt="低価格×高品質" data-eio="l">
 				</noscript>
 			</a>
 
-			<a href="<?php echo do_shortcode('[home_url]'); ?>about/zeh/">
-				<img src=<?php echo do_shortcode('[theme_url]'); ?>/images/card-zeh.png" alt="ZEH対応" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-zeh.png" class="lazyload">
+			<a href="<?php echo do_shortcode("[home_url]"); ?>about/zeh/">
+				<img src=<?php echo do_shortcode(
+    	"[theme_url]",
+    ); ?>/images/card-zeh.png" alt="ZEH対応" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/card-zeh.png" class="lazyload">
 				<noscript>
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-zeh.png" alt="ZEH対応" data-eio="l">
+					<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/card-zeh.png" alt="ZEH対応" data-eio="l">
 				</noscript>
 			</a>
 			
-			<a href="<?php echo do_shortcode('[home_url]'); ?>about/customers/">
-				<img src=<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" alt="お客様への取り組み" data-src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" class="lazyload">
+			<a href="<?php echo do_shortcode("[home_url]"); ?>about/customers/">
+				<img src=<?php echo do_shortcode(
+    	"[theme_url]",
+    ); ?>/images/card-effort.png" alt="お客様への取り組み" data-src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/images/card-effort.png" class="lazyload">
 				<noscript>
-					<img src="<?php echo do_shortcode('[theme_url]'); ?>/images/card-effort.png" alt="お客様への取り組み" data-eio="l">
+					<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/card-effort.png" alt="お客様への取り組み" data-eio="l">
 				</noscript>
 			</a>
 		</div>

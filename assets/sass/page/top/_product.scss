@@ -1,57 +1,59 @@
-@use '../../foundation/mixin';
+@use "../../foundation/mixin";
 
-	.product {
-		&__list {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 48px 32px;
-			margin-top: 48px;
-	
-			@include mixin.sp {
-				grid-template-columns: repeat(2, 1fr);
-				gap: 16px 16px;
-			}
-		}
-	
-		&__item {
-			display: flex;
-			flex-direction: column;
-			gap: 16px;
-			align-items: center;
-		}
-	
-		&__item img {
-			width: 180px;
-			height: 180px;
-			object-fit: cover;
-			transition: transform 0.3s, box-shadow 0.2s;
-			display: block;
+.product {
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 48px 32px;
+		margin-top: 48px;
 
-			@include mixin.sp {
-				width: 140px;
-				height: 140px;
-			}
-		}
-	
-		&__item a {
-			display: flex;
-			flex-direction: column;
-			overflow: hidden;
-		}
-	
-		&__item a:hover img {
-			box-shadow: 0 4px 6px rgba(0,0,0,0.18);
-			transform: scale(1.04);
-		}
-	
-		&__label {
-			font-size: 1.8rem;
-			font-weight: bold;
-			color: #333;
-			letter-spacing: 0.05em;
-
-			@include mixin.sp {
-				font-size: 1.4rem;
-			}
+		@include mixin.sp {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 16px 16px;
 		}
 	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		align-items: center;
+	}
+
+	&__item img {
+		width: 180px;
+		height: 180px;
+		object-fit: cover;
+		transition:
+			transform 0.3s,
+			box-shadow 0.2s;
+		display: block;
+
+		@include mixin.sp {
+			width: 140px;
+			height: 140px;
+		}
+	}
+
+	&__item a {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	&__item a:hover img {
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
+		transform: scale(1.04);
+	}
+
+	&__label {
+		font-size: 1.8rem;
+		font-weight: bold;
+		color: #333;
+		letter-spacing: 0.05em;
+
+		@include mixin.sp {
+			font-size: 1.4rem;
+		}
+	}
+}

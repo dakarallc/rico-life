@@ -1,45 +1,46 @@
-@use './variable';
+@use "./variable";
 
 @mixin roboto() {
-  font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 // メディアクエリ
 // スマホ
 @mixin sp {
-  @media (max-width: #{variable.$w-breakpoint}px) {
-    @content;
-  }
+	@media (max-width: #{variable.$w-breakpoint}px) {
+		@content;
+	}
 }
 
 // PC
 @mixin pc {
-  @media (min-width: #{variable.$w-breakpoint + 1}px) {
-    @content;
-  }
+	@media (min-width: #{variable.$w-breakpoint + 1}px) {
+		@content;
+	}
 }
 
-
 @mixin meiryo() {
-  font-family: 'メイリオ', 'Meiryo', sans-serif;
+	font-family: "メイリオ", "Meiryo", sans-serif;
 }
 
 @mixin yuGothicBold() {
-  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
-  font-weight: bold;
+	font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+	font-weight: bold;
 }
 
 @mixin yuGothicRegular() {
-  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
-  font-weight: 500;
+	font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+	font-weight: 500;
 }
 
 @mixin marugoBold() {
-  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-family:
+		"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+		"ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 @mixin vdlPenLetter() {
-  font-family: "vdl-penletter", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+	font-family: "vdl-penletter", sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }

@@ -1,79 +1,74 @@
-@use '../../foundation/mixin';
+@use "../../foundation/mixin";
 /* ==========================================================================
   shop
   ========================================================================== */
 
 .shop {
-  position: relative;
-  padding-top: 100px;
-  margin-top: -100px;
+	position: relative;
+	padding-top: 100px;
+	margin-top: -100px;
 
-  @include mixin.sp(){
-    padding-top: 70px;
-    margin-top: -70px;
-  }
-  
-  &__contents{
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-    background: #E8F2FA;
-    padding: 100px 0;
+	@include mixin.sp() {
+		padding-top: 70px;
+		margin-top: -70px;
+	}
 
-    @include mixin.sp() {
-      padding: 44px 0;
-    }
-  }
+	&__contents {
+		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+		background: #e8f2fa;
+		padding: 100px 0;
 
+		@include mixin.sp() {
+			padding: 44px 0;
+		}
+	}
 
+	.format__ttl {
+		color: #003274;
 
+		@include mixin.sp() {
+			margin-bottom: 30px;
+		}
 
-  .format__ttl {
-    color: #003274;
+		&::before {
+			background: #003274;
+		}
+	}
 
-    @include mixin.sp() {
-      margin-bottom: 30px;
-    }
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-    &::before {
-      background: #003274;
-    }
-  }
+		@include mixin.sp() {
+			flex-wrap: wrap;
+		}
+	}
 
-  &__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	&__item {
+		@include mixin.sp() {
+			width: 100%;
+			text-align: center;
 
-    @include mixin.sp() {
-      flex-wrap: wrap;
-    }
-  }
+			&:not(:last-child) {
+				margin-bottom: 35px;
+			}
+		}
 
-  &__item {
+		img {
+			@include mixin.pc() {
+				width: auto;
+			}
 
-    @include mixin.sp() {
-      width: 100%;
-      text-align: center;
+			@include mixin.sp() {
+				width: 60%;
+			}
+		}
 
-      &:not(:last-child) {
-        margin-bottom: 35px;
-      }
-    }
-
-    img {
-      @include mixin.pc() {
-        width: auto;
-      }
-
-      @include mixin.sp() {
-        width: 60%;
-      }
-    }
-
-
-    a {
-      &:hover {
-        opacity: .7;
-      }
-    }
-  }
+		a {
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
 }

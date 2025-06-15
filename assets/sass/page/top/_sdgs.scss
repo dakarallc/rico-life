@@ -1,38 +1,38 @@
-@use '../../foundation/mixin';
+@use "../../foundation/mixin";
 
 .sdgs {
-  background: #fff;
-  text-align: left;
-  
-  &__inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+	background: #fff;
+	text-align: left;
 
-  &__logo-wrap {
+	&__inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__logo-wrap {
 		max-width: 500px;
 		margin: 0 auto;
-  }
+	}
 
-  &__logo {
-    height: auto;
-    display: block;
+	&__logo {
+		height: auto;
+		display: block;
 		width: 100%;
-  }
+	}
 
-  &__text-block {
+	&__text-block {
 		text-align: center;
-  }
+	}
 
-  &__main-text {
+	&__main-text {
 		text-align: center;
-  }
+	}
 
-  &__rico-logo {
-    height: 32px;
-    width: auto;
-    vertical-align: middle;
-    margin-right: 8px;
-  }
+	&__rico-logo {
+		height: 32px;
+		width: auto;
+		vertical-align: middle;
+		margin-right: 8px;
+	}
 }

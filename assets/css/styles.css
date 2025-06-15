@@ -1714,7 +1714,7 @@ contact
 }
 
 .banner {
-  background: #F4F6F8;
+  background: #f4f6f8;
   padding: 104px 0 168px;
 }
 
@@ -1794,7 +1794,7 @@ contact
   }
 }
 .purchase {
-  background: #F4F6F8;
+  background: #f4f6f8;
   padding: 100px 0;
 }
 
@@ -1815,7 +1815,7 @@ contact
   }
 }
 .purchase {
-  background: #F4F6F8;
+  background: #f4f6f8;
   padding: 100px 0;
 }
 .purchase .banner__purchase {
@@ -2498,7 +2498,7 @@ contact
 }
 .shop__contents {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-  background: #E8F2FA;
+  background: #e8f2fa;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   padding: 100px 0;
 }
@@ -2566,9 +2566,9 @@ contact
   shopTab
   ========================================================================== */
 .shopTab {
-  background: transparent -webkit-gradient(linear, left top, left bottom, from(#003274), to(#6296FF)) 0% 0% no-repeat;
-  background: transparent -webkit-linear-gradient(top, #003274 0%, #6296FF 100%) 0% 0% no-repeat;
-  background: transparent linear-gradient(180deg, #003274 0%, #6296FF 100%) 0% 0% no-repeat;
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#003274), to(#6296ff)) 0% 0% no-repeat;
+  background: transparent -webkit-linear-gradient(top, #003274 0%, #6296ff 100%) 0% 0% no-repeat;
+  background: transparent linear-gradient(180deg, #003274 0%, #6296ff 100%) 0% 0% no-repeat;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   padding: 155px 0 86px;
@@ -2665,7 +2665,7 @@ contact
   -webkit-box-ordinal-group: 0;
   -webkit-order: -1;
   -ms-flex-order: -1;
-  background: #C9E0FF;
+  background: #c9e0ff;
   cursor: pointer;
   line-height: 1.4;
   order: -1;
@@ -2720,7 +2720,7 @@ contact
   width: 100%;
 }
 .shopTab .tab__switch:checked + .tab__label {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .shopTab .tab__switch:checked + .tab__label::before {
   bottom: -16px;
@@ -2816,7 +2816,7 @@ contact
     position: relative;
   }
   .shopTab__item--new::before {
-    background: #FF9300;
+    background: #ff9300;
     border-radius: 50%;
     content: "NEW";
     display: -webkit-box;
@@ -2848,7 +2848,7 @@ contact
     text-align: left;
   }
   .shopTab__item--new .shopTab__subTtl::before {
-    background: #FF9300;
+    background: #ff9300;
     border-radius: 50%;
     content: "NEW";
     display: -webkit-box;
@@ -3464,7 +3464,7 @@ contact
   }
 }
 .pageHead__ttl ._below {
-  color: #D90200;
+  color: #d90200;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -3478,7 +3478,7 @@ contact
   color: #000;
 }
 .header._black .header__item > a:hover {
-  color: #F10000;
+  color: #f10000;
 }
 
 .news-page .pageHead {
@@ -3844,7 +3844,7 @@ contact
 
   ========================================================================== */
 .hiraya-massage {
-  background: #B6C8B8;
+  background: #b6c8b8;
   color: #fff;
   font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   padding: 100px 0;
@@ -3941,8 +3941,8 @@ contact
 
   ========================================================================== */
 .siyou {
-  background-color: #CBA797;
-  color: #FFFFFF;
+  background-color: #cba797;
+  color: #ffffff;
   font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   padding: 100px 0;
   width: 100%;
@@ -3958,7 +3958,7 @@ contact
 }
 
 .siyou__inner--title h3 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 45px;
   font-weight: bold;
   margin-bottom: 30px;
@@ -4029,11 +4029,11 @@ contact
   }
 }
 .taiyo .green {
-  color: #708D6E;
+  color: #708d6e;
 }
 
 .taiyo .orange {
-  color: #E28C6A;
+  color: #e28c6a;
 }
 
 .taiyo__inner--title h3 {
@@ -4125,7 +4125,7 @@ contact
   }
 }
 .tokucho .green {
-  color: #708D6E;
+  color: #708d6e;
 }
 
 .tokucho__inner--title h3 {
@@ -4296,7 +4296,7 @@ contact
   }
 }
 .tokucho__inner--content .meritto div .orange {
-  color: #E28C6A;
+  color: #e28c6a;
   font-size: 50px;
   margin-bottom: 20px;
 }
@@ -4502,7 +4502,7 @@ contact
 }
 
 .gallary__content .gallary01::before {
-  border-top: 1px solid #E28C6A;
+  border-top: 1px solid #e28c6a;
   bottom: -50px;
   content: "";
   height: 1px;
@@ -4513,7 +4513,7 @@ contact
 
 @media (max-width: 999px) {
   .gallary__content .gallary01::before {
-    border-top: 15px solid #E28C6A;
+    border-top: 15px solid #e28c6a;
     height: 15px;
   }
 }
@@ -4523,7 +4523,7 @@ contact
 }
 
 .gallary__content .gallary03::after {
-  border-top: 1px solid #B6C8B8;
+  border-top: 1px solid #b6c8b8;
   content: "";
   height: 1px;
   position: absolute;
@@ -4534,7 +4534,7 @@ contact
 
 @media (max-width: 999px) {
   .gallary__content .gallary03::after {
-    border-top: 15px solid #B6C8B8;
+    border-top: 15px solid #b6c8b8;
     height: 15px;
   }
 }
@@ -4625,27 +4625,27 @@ contact
   }
 }
 .zumen .en-green {
-  background-color: #B6C8B8;
+  background-color: #b6c8b8;
 }
 
 .zumen .en-orange {
-  background-color: #FFBDA0;
+  background-color: #ffbda0;
 }
 
 .zumen .box-orange {
-  background: #CBA797;
+  background: #cba797;
 }
 
 .zumen .box-green {
-  background: #B6C8B8;
+  background: #b6c8b8;
 }
 
 .zumen .orange {
-  color: #E28C6A;
+  color: #e28c6a;
 }
 
 .zumen .green {
-  color: #708D6E;
+  color: #708d6e;
 }
 
 .zumen__inner {
@@ -4868,7 +4868,7 @@ contact
 }
 
 .hiraya-case {
-  background-color: #B6C8B8;
+  background-color: #b6c8b8;
   font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   padding: 100px 0;
   width: 100%;
@@ -4880,27 +4880,27 @@ contact
   }
 }
 .hiraya-case .en-green {
-  background-color: #B6C8B8;
+  background-color: #b6c8b8;
 }
 
 .hiraya-case .en-orange {
-  background-color: #FFBDA0;
+  background-color: #ffbda0;
 }
 
 .hiraya-case .box-orange {
-  background: #CBA797;
+  background: #cba797;
 }
 
 .hiraya-case .box-green {
-  background: #B6C8B8;
+  background: #b6c8b8;
 }
 
 .hiraya-case .orange {
-  color: #E28C6A;
+  color: #e28c6a;
 }
 
 .hiraya-case .green {
-  color: #708D6E;
+  color: #708d6e;
 }
 
 .hiraya-case__inner {
@@ -4973,7 +4973,7 @@ contact
   -ms-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   aspect-ratio: 1/1;
-  background-color: #B6C8B8;
+  background-color: #b6c8b8;
   border-radius: 50%;
   left: 100%;
   opacity: 0.3;
@@ -6604,7 +6604,7 @@ contact
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #D90200;
+  background: #d90200;
   border-radius: 4px;
   color: #fff;
   display: -webkit-box;
@@ -6633,7 +6633,7 @@ contact
   }
 }
 .planList__subTtl::before {
-  background: #D90200;
+  background: #d90200;
   content: "";
   height: 100%;
   left: 0;
@@ -6720,9 +6720,9 @@ contact
 }
 .planFilter__btn {
   background: #fff;
-  border: 1px solid #D90200;
+  border: 1px solid #d90200;
   border-radius: 4px;
-  color: #D90200;
+  color: #d90200;
   cursor: pointer;
   font-family: "Zen Maru Gothic", sans-serif;
   padding: 8px 16px;
@@ -6740,7 +6740,7 @@ contact
   }
 }
 .planFilter__btn.is-active {
-  background: #D90200;
+  background: #d90200;
   color: #fff;
 }
 .planFilter__btn:hover {
@@ -6802,7 +6802,7 @@ contact
   justify-content: center;
 }
 .event-page.eventItem__ttl {
-  color: #D90200;
+  color: #d90200;
   font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.3rem;
   font-weight: bold;
@@ -7120,7 +7120,7 @@ contact
   list-style: none;
 }
 .eventList__subTtl::before {
-  background: #D90200;
+  background: #d90200;
   content: "";
   height: 100%;
   left: 0;
@@ -7283,7 +7283,7 @@ contact
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #D90200;
+  background: #d90200;
   border-radius: 6px;
   color: #fff;
   display: -webkit-box;
@@ -7311,7 +7311,7 @@ contact
   list-style: none;
 }
 .staffList__subTtl::before {
-  background: #D90200;
+  background: #d90200;
   content: "";
   height: 100%;
   left: 0;
@@ -7358,7 +7358,7 @@ contact
   width: 100%;
 }
 .staffList__box {
-  border-top: 1px solid #0D0D0D;
+  border-top: 1px solid #0d0d0d;
   margin-bottom: 60px;
   margin-top: 94px;
   padding-top: 100px;
@@ -7458,7 +7458,7 @@ contact
 }
 
 .summary {
-  background: #FEFFFF;
+  background: #feffff;
   margin: 0 calc(50% - 50vw);
   padding: 94px calc(50vw - 50% + 8px) 194px;
   position: relative;
@@ -7470,7 +7470,7 @@ contact
   }
 }
 .summary__ttl {
-  color: #D90200;
+  color: #d90200;
   font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
   font-size: 3.9rem;
   font-weight: bold;
@@ -7485,7 +7485,7 @@ contact
   }
 }
 .summary__ttl::before {
-  background: #D90200;
+  background: #d90200;
   content: "";
   height: 100%;
   left: 0;
@@ -7505,7 +7505,7 @@ contact
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid #0D0D0D;
+  border-bottom: 1px solid #0d0d0d;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7998,7 +7998,7 @@ contact
 }
 
 .summary {
-  background: #FEFFFF;
+  background: #feffff;
   margin: 0 calc(50% - 50vw);
   padding: 94px calc(50vw - 50% + 8px) 194px;
   position: relative;
@@ -8041,7 +8041,7 @@ contact
   }
 }
 .summary__item {
-  border-bottom: 1px solid #0D0D0D;
+  border-bottom: 1px solid #0d0d0d;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8707,7 +8707,7 @@ contact
   news
   ========================================================================== */
 .news-page {
-  background: #F4F6F8;
+  background: #f4f6f8;
 }
 .news-page .news {
   padding: 20px 2% 200px;
@@ -10743,11 +10743,11 @@ us
   }
 }
 .contents .column {
-  background: #D90200;
+  background: #d90200;
 }
 
 .contents .line {
-  background: #00B900;
+  background: #00b900;
 }
 
 .contents .instagram {
@@ -11099,7 +11099,7 @@ us
   opacity: 0.7;
 }
 .news .news__item:hover .news__time {
-  color: #F10000;
+  color: #f10000;
 }
 .news .news__body {
   display: -webkit-box;
@@ -11237,7 +11237,7 @@ us
   }
 }
 .news .news__item:hover .news__arrow {
-  color: #F10000;
+  color: #f10000;
 }
 
 .product__list {
@@ -11417,14 +11417,16 @@ us
   }
 }
 
-.request__ttl, .contact__ttl {
+.request__ttl,
+.contact__ttl {
   color: #333;
   font-size: 3rem;
   font-weight: bold;
   margin: 0 auto;
   text-align: center;
 }
-.request__txt, .contact__txt {
+.request__txt,
+.contact__txt {
   color: #333;
   font-size: 1.6rem;
   margin: 0 auto;
@@ -11512,7 +11514,7 @@ us
   margin-bottom: 16px;
 }
 .c-requestBanner__lead .c-requestBanner__sec {
-  color: #D49BAA;
+  color: #d49baa;
   font-size: 2.2rem;
   font-weight: bold;
   margin: 0 2px;
@@ -11920,7 +11922,7 @@ us
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #F8F8F8;
+  background: #f8f8f8;
   -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.161);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.161);
   display: -webkit-box;

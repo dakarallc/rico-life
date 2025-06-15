@@ -1,50 +1,50 @@
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('Logo change script loaded');
-  
-  const headerLogo = document.querySelector('.header__logo');
-  if (!headerLogo) {
-    console.log('Header logo not found');
-    return;
-  }
+document.addEventListener("DOMContentLoaded", function () {
+	console.log("Logo change script loaded");
 
-  // トップページ以外では処理を行わない
-  if (!document.querySelector('.header._top')) {
-    console.log('Not on top page');
-    return;
-  }
+	const headerLogo = document.querySelector(".header__logo");
+	if (!headerLogo) {
+		console.log("Header logo not found");
+		return;
+	}
 
-  console.log('Initializing logo change');
-  const logoImg = headerLogo.querySelector('img');
-  const originalSrc = logoImg.src;
-  const blackLogoSrc = originalSrc.replace('logo.svg', 'logo-black.svg');
-  const header = document.querySelector('.header');
+	// トップページ以外では処理を行わない
+	if (!document.querySelector(".header._top")) {
+		console.log("Not on top page");
+		return;
+	}
 
-  function updateHeaderTheme() {
-    const kv = document.querySelector('.fv');
-    if (!kv) return;
+	console.log("Initializing logo change");
+	const logoImg = headerLogo.querySelector("img");
+	const originalSrc = logoImg.src;
+	const blackLogoSrc = originalSrc.replace("logo.svg", "logo-black.svg");
+	const header = document.querySelector(".header");
 
-    const kvRect = kv.getBoundingClientRect();
-    const logoRect = headerLogo.getBoundingClientRect();
-    const logoBottom = logoRect.bottom;
+	function updateHeaderTheme() {
+		const kv = document.querySelector(".fv");
+		if (!kv) return;
 
-    // KVの下端より下にロゴが来たら黒テーマに変更
-    if (logoBottom > kvRect.bottom) {
-      if (headerLogo.dataset.logo !== 'black') {
-        console.log('Changing to black theme');
-        headerLogo.dataset.logo = 'black';
-        logoImg.src = blackLogoSrc;
-        header.classList.add('_black');
-      }
-    } else {
-      if (headerLogo.dataset.logo !== 'white') {
-        console.log('Changing to white theme');
-        headerLogo.dataset.logo = 'white';
-        logoImg.src = originalSrc;
-        header.classList.remove('_black');
-      }
-    }
-  }
+		const kvRect = kv.getBoundingClientRect();
+		const logoRect = headerLogo.getBoundingClientRect();
+		const logoBottom = logoRect.bottom;
 
-  window.addEventListener('scroll', updateHeaderTheme);
-  updateHeaderTheme(); // Initial check
-}); 
+		// KVの下端より下にロゴが来たら黒テーマに変更
+		if (logoBottom > kvRect.bottom) {
+			if (headerLogo.dataset.logo !== "black") {
+				console.log("Changing to black theme");
+				headerLogo.dataset.logo = "black";
+				logoImg.src = blackLogoSrc;
+				header.classList.add("_black");
+			}
+		} else {
+			if (headerLogo.dataset.logo !== "white") {
+				console.log("Changing to white theme");
+				headerLogo.dataset.logo = "white";
+				logoImg.src = originalSrc;
+				header.classList.remove("_black");
+			}
+		}
+	}
+
+	window.addEventListener("scroll", updateHeaderTheme);
+	updateHeaderTheme(); // Initial check
+});
