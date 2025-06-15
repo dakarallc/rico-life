@@ -1,15 +1,25 @@
 
 <!-- menuLink -->
 
-<?php get_template_part('template-parts/bannerArea'); ?>
-<?php if(is_page('top')) : ?>
+<?php get_template_part("template-parts/bannerArea"); ?>
+<?php if (is_page("top")): ?>
 <?php else: ?>
   <ul class="menuLink">
-    <li class="menuLink__item menuLink__item--company"><a href="<?php echo do_shortcode('[home_url]'); ?>hiraya">はたらく平屋</a></li>
-    <li class="menuLink__item menuLink__item--company"><a href="<?php echo do_shortcode('[home_url]'); ?>access">アクセス</a></li>
-    <li class="menuLink__item menuLink__item--contact"><a href="<?php echo do_shortcode('[home_url]'); ?>contact">お問い合わせ</a></li>
-    <li class="menuLink__item menuLink__item--case"><a href="<?php echo do_shortcode('[home_url]'); ?>case">施工事例</a></li>
-    <li class="menuLink__item menuLink__item--news"><a href="<?php echo do_shortcode('[home_url]'); ?>news">新着イベント</a></li>
+    <li class="menuLink__item menuLink__item--company"><a href="<?php echo do_shortcode(
+    	"[home_url]",
+    ); ?>hiraya">はたらく平屋</a></li>
+    <li class="menuLink__item menuLink__item--company"><a href="<?php echo do_shortcode(
+    	"[home_url]",
+    ); ?>access">アクセス</a></li>
+    <li class="menuLink__item menuLink__item--contact"><a href="<?php echo do_shortcode(
+    	"[home_url]",
+    ); ?>contact">お問い合わせ</a></li>
+    <li class="menuLink__item menuLink__item--case"><a href="<?php echo do_shortcode(
+    	"[home_url]",
+    ); ?>case">施工事例</a></li>
+    <li class="menuLink__item menuLink__item--news"><a href="<?php echo do_shortcode(
+    	"[home_url]",
+    ); ?>news">新着イベント</a></li>
   </ul>
 <?php endif; ?>
 
@@ -19,9 +29,11 @@
 	<!-- 施工可能エリア -->
 	<section class="area">
 		<div class="inner">
-			<h2 class="section-ttl">AREA
-				<span>施工可能エリア</span>
-			</h2>
+			<div class="ttlWrap">
+				<h2 class="section-ttl">AREA
+					<span>施工可能エリア</span>
+				</h2>
+			</div>
 			<div class="area__inner">
 				<div class="area__inner-item">
 					<p class="prefecture">埼玉県</p>
@@ -113,21 +125,23 @@
 
   <!-- <div class="toTop updown" id="js-toTop2">
     <a href="https://campage.jp/ietochi-kuki/planmenyu/download">
-      <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/plan-download.png" alt="">
+      <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/common/plan-download.png" alt="">
     </a>
   </div> -->
 
   <div class="toTop planDownload" id="js-toTop">
-    <img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/triangle.svg" alt="">
+    <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/common/triangle.svg" alt="">
     <p>TOP</p>
   </div>
 
   <div class="footer__contents">
     <div class="inner footerContentsInner">
 			<div class="footer__event">
-				<h2 class="section-ttl">EVENT
-					<span>イベント情報</span>
-				</h2>
+				<div class="ttlWrap">
+					<h2 class="section-ttl">EVENT
+						<span>イベント情報</span>
+					</h2>
+				</div>
 	
 				<div >
 					<!-- ここにイベントスライダーのHTMLを入れる -->
@@ -135,9 +149,11 @@
 			</div>
 
 			<div class="linkList">
-				<h2 class="section-ttl">LINK
-					<span>リンク集</span>
-				</h2>
+				<div class="ttlWrap">
+					<h2 class="section-ttl">LINK
+						<span>リンク集</span>
+					</h2>
+				</div>
 				<nav class="footerNav">
 					<ul>
 						<li><a href="#">コンセプト</a></li>
@@ -162,7 +178,9 @@
 				<div class="info">
 					<div class="footer__company">
 						<div class="footer__logo">
-							<a href="<?php echo do_shortcode('[home_url]'); ?>"><img src="<?php echo do_shortcode('[theme_url]'); ?>/assets/img/common/logo.svg" alt="ietochi honpo"></a>
+							<a href="<?php echo do_shortcode("[home_url]"); ?>"><img src="<?php echo do_shortcode(
+	"[theme_url]",
+); ?>/assets/img/common/logo.svg" alt="ietochi honpo"></a>
 						</div>
 						<div class="footer__address">
 							<p>本社メインオフィス</p>
@@ -186,10 +204,10 @@
 			</div>
     </div>
 
-  <small class="footer__copyright">&copy; <?php echo date('Y');?> カクダイグループ</small><!-- /footer__copyright -->
+  <small class="footer__copyright">&copy; <?php echo date("Y"); ?> カクダイグループ</small><!-- /footer__copyright -->
   
 </footer><!-- /footer -->
-<?php get_template_part('template-parts/floatingBanner'); ?>
+<?php get_template_part("template-parts/floatingBanner"); ?>
 </div><!-- /wrapper -->
 <script>
     var swiper = new Swiper(".mySwiper", {
