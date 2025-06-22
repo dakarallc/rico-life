@@ -277,6 +277,21 @@
   }
 }
 
+// finalMessage
+.finalMessage {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__logo {
+		display: flex;
+		align-items: center;
+		img {
+			width: 200px;
+		}
+	}
+}
 
 /* ==========================================================================
   kv
