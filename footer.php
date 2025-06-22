@@ -1,28 +1,6 @@
 
 <!-- menuLink -->
 
-<?php get_template_part("template-parts/bannerArea"); ?>
-<?php if (is_page("top")): ?>
-<?php else: ?>
-  <ul class="menuLink">
-    <li class="menuLink__item menuLink__item--company"><a href="<?php echo do_shortcode(
-    	"[home_url]",
-    ); ?>hiraya">はたらく平屋</a></li>
-    <li class="menuLink__item menuLink__item--company"><a href="<?php echo do_shortcode(
-    	"[home_url]",
-    ); ?>access">アクセス</a></li>
-    <li class="menuLink__item menuLink__item--contact"><a href="<?php echo do_shortcode(
-    	"[home_url]",
-    ); ?>contact">お問い合わせ</a></li>
-    <li class="menuLink__item menuLink__item--case"><a href="<?php echo do_shortcode(
-    	"[home_url]",
-    ); ?>case">施工事例</a></li>
-    <li class="menuLink__item menuLink__item--news"><a href="<?php echo do_shortcode(
-    	"[home_url]",
-    ); ?>news">新着イベント</a></li>
-  </ul>
-<?php endif; ?>
-
 <!-- footer -->
 <footer class="footer">
 
@@ -203,9 +181,6 @@
 			</div>
 			</div>
     </div>
-
-  <small class="footer__copyright">&copy; <?php echo date("Y"); ?> カクダイグループ</small><!-- /footer__copyright -->
-  
 </footer><!-- /footer -->
 <?php get_template_part("template-parts/floatingBanner"); ?>
 </div><!-- /wrapper -->
