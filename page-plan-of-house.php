@@ -25,11 +25,42 @@ Template Name: 間取り
 
 	<!-- Standard plan -->
 	<section class="message">
-		<div class="inner message__inner">
+		<div class="inner products__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">Standard plan
 					<span>コンセプト規格設計 例</span>
 				</h2>
+			</div>
+		</div>
+	</section>
+
+	<!-- PRODUCTS	 -->
+	<section class="products">
+		<div class="inner products__inner">
+			<div class="ttlWrap">
+				<h2 class="section-ttl">PRODUCTS
+					<span>商品概要</span>
+				</h2>
+			</div>
+
+			<div class="catch">
+				<h3 >
+					新しいカタチの<br class="show--sp">規格プラン方式
+				</h3>
+			</div>
+
+			<div class="products__img">
+				<img src="<?php echo do_shortcode(
+    	"[theme_url]",
+    ); ?>/assets/img/plan-of-house/products.png" alt="新しいカタチの規格プラン方式">
+			</div>
+			<div class="products__text">
+				<p>
+					Rico Life.は<br class="show--sp">
+					弊社規格プランに加え、<br>
+					<span class="highlight-yellow">お客様が見つけたプランも</span><br>基準を満たせば、<span class="highlight-yellow">規格プラン価格として建築可能。</span><br>
+					効率的で安心の家づくりを実現します。
+				</p>
 			</div>
 		</div>
 	</section>

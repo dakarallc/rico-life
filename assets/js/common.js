@@ -124,6 +124,29 @@ jQuery(function () {
 		);
 	});
 
+	//ヘッダーの色変更処理（KV画像の高さを基準）
+	if (jQuery('.planOfHouse .fv').length) {
+		var header = jQuery('.header');
+		var kvSection = jQuery('.planOfHouse .fv');
+		
+		jQuery(window).on('scroll', function() {
+			var kvHeight = kvSection.outerHeight();
+			var scrollTop = jQuery(this).scrollTop();
+			
+			if (scrollTop > kvHeight) {
+				// KVの高さを超えたら黒ヘッダー
+				if (!header.hasClass('_black')) {
+					header.addClass('_black');
+				}
+			} else {
+				// KV内にいる時は白ヘッダー
+				if (header.hasClass('_black')) {
+					header.removeClass('_black');
+				}
+			}
+		});
+	}
+
 	//object-fit(IE対応)
 	var $ofi = jQuery("[data-js-ofi]");
 	if ($ofi.length) {

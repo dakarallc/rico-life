@@ -11854,6 +11854,42 @@ us
   width: 100px;
 }
 
+.planOfHouse .products__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 60px;
+}
+.planOfHouse .products__img {
+  max-width: 300px;
+}
+@media (max-width: 999px) {
+  .planOfHouse .products__img {
+    max-width: 235px;
+  }
+}
+.planOfHouse .products__text p {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 2;
+}
+.planOfHouse .products__text p span {
+  font-weight: bold;
+}
+.planOfHouse .products__text-value, .planOfHouse .products__text--value {
+  display: inline-block;
+  margin-right: 30px;
+  text-align: left;
+  vertical-align: top;
+  width: 100px;
+}
+
 .planOfHouse {
   display: -webkit-box;
   display: -webkit-flex;
