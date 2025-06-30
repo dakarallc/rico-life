@@ -1,106 +1,102 @@
 @use "../../foundation/mixin";
+
 /* ==========================================================================
   banner
   ========================================================================== */
-.banner70 {
-	padding: 60px 0 20px !important;
-}
 
 .banner {
 	background: #f4f6f8;
 	padding: 104px 0 168px;
-}
-@media (max-width: 999px) {
-	.banner .present-pc {
-		display: none;
-	}
-}
-.banner .present-pc img {
-	margin-bottom: 50px;
-}
-@media (min-width: 1000px) {
-	.banner .present-sp {
-		display: none;
-	}
-}
-.banner .present-sp img {
-	margin-bottom: 30px;
-}
-@media (max-width: 999px) {
-	.banner {
+
+	@include mixin.sp {
 		padding: 44px 0;
 	}
-}
-.banner .tochi img {
-	margin-bottom: 30px;
-}
-@media (max-width: 999px) {
-	.banner .tochi img {
-		margin-bottom: 20px;
+
+	// Present content (PC/SP variants)
+	.present-pc {
+		@include mixin.sp {
+			display: none;
+		}
+
+		img {
+			margin-bottom: 50px;
+		}
 	}
-}
-.banner a:hover {
-	opacity: 0.7;
-}
-.banner__note {
-	font-size: 1.6rem;
-	line-height: 1.5;
-	margin-top: 5px;
-	text-align: center;
-}
-@media (max-width: 999px) {
-	.banner__note {
-		font-size: 1.4rem;
+
+	.present-sp {
+		@include mixin.pc {
+			display: none;
+		}
+
+		img {
+			margin-bottom: 30px;
+		}
 	}
-}
-.banner__list {
-	-ms-flex-wrap: wrap;
-	-webkit-flex-wrap: wrap;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	flex-wrap: wrap;
-}
-.banner__item {
-	margin-bottom: 30px;
-}
-@media (max-width: 999px) {
-	.banner__item {
-		margin-bottom: 20px;
+
+	// Tochi content
+	.tochi {
+		img {
+			margin-bottom: 30px;
+
+			@include mixin.sp {
+				margin-bottom: 20px;
+			}
+		}
 	}
-}
-@media (min-width: 1000px) {
-	.banner__item {
-		width: calc(50% - 5% / 2);
+
+	// Hover effect for all links
+	a {
+		&:hover {
+			opacity: 0.7;
+		}
 	}
-	.banner__item:not(:nth-child(2n)) {
-		margin-right: 5%;
+
+	&__note {
+		font-size: 1.6rem;
+		line-height: 1.5;
+		margin-top: 5px;
+		text-align: center;
+
+		@include mixin.sp {
+			font-size: 1.4rem;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		margin-bottom: 30px;
+
+		@include mixin.sp {
+			margin-bottom: 20px;
+		}
+
+		@include mixin.pc {
+			width: calc(50% - 5% / 2);
+
+			&:not(:nth-child(2n)) {
+				margin-right: 5%;
+			}
+		}
 	}
 }
 
+// Special banner variant
+.banner70 {
+	padding: 60px 0 20px !important;
+}
+
+// Purchase banner section
 .purchase {
 	background: #f4f6f8;
 	padding: 100px 0;
-}
-.purchase .banner__purchase {
-	display: block;
-	margin: 0 auto;
-	max-width: 755px;
-	width: 100%;
-}
-.purchase .banner__purchase:hover {
-	opacity: 0.7;
-}
-@media (max-width: 999px) {
-	.purchase {
+
+	@include mixin.sp {
 		padding: 50px 0;
 	}
-}
-
-.purchase {
-	padding: 100px 0;
-	background: #f4f6f8;
 
 	.banner__purchase {
 		display: block;
@@ -112,37 +108,83 @@
 			opacity: 0.7;
 		}
 	}
-
-	@include mixin.sp() {
-		padding: 50px 0;
-	}
 }
 
-@media screen and (min-width: 500px) {
-	.floating {
+// Floating banner (mobile only) - Native App Style
+.floating {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 84px;
+	z-index: 999;
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-top: 0.5px solid rgba(0, 0, 0, 0.08);
+
+	@media screen and (min-width: 500px) {
 		display: none;
 	}
-}
-.floating {
-	bottom: 0;
-	height: 50px;
-	left: 0;
-	position: fixed;
-	width: 100%;
-	z-index: 999;
-}
-.floating__inner {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-}
-.floating__inner .tell {
-	width: 50%;
-}
-.floating__inner .req-con {
-	width: 25%;
-}
-.floating__inner img {
-	height: 60px;
+
+	// Safe area for iPhone
+	padding-bottom: env(safe-area-inset-bottom);
+
+	&__inner {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		justify-content: space-around;
+		padding: 6px 0;
+	}
+
+	&__item {
+		flex: 1;
+		text-align: center;
+		position: relative;
+
+		a {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 8px 4px 6px;
+			color: #8E8E93;
+			text-decoration: none;
+			transition: all 0.2s ease;
+			border-radius: 12px;
+			min-height: 52px;
+
+			&:hover,
+			&:active {
+				color: #D49BAA;
+				background: rgba(212, 155, 170, 0.1);
+				transform: scale(0.95);
+			}
+
+			i {
+				display: block;
+				margin-bottom: 14px;
+				font-size: 20px;
+				transition: all 0.2s ease;
+			}
+		}
+
+		// Active state for current page
+		&.active a {
+			color: #D49BAA;
+			
+			i {
+				transform: translateY(-1px);
+			}
+		}
+	}
+
+	&__text {
+		font-size: 10px;
+		font-weight: 500;
+		margin: 0;
+		line-height: 1.1;
+		letter-spacing: -0.1px;
+	}
 }

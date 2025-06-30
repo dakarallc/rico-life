@@ -114,7 +114,7 @@
 
   <div class="footer__contents">
     <div class="inner footerContentsInner">
-			<div class="footer__event">
+			<!-- <div class="footer__event">
 				<div class="ttlWrap">
 					<h2 class="section-ttl">EVENT
 						<span>イベント情報</span>
@@ -122,11 +122,11 @@
 				</div>
 	
 				<div >
-					<!-- ここにイベントスライダーのHTMLを入れる -->
+			
 				</div>
-			</div>
+			</div> -->
 
-			<div class="linkList">
+			<!-- <div class="linkList">
 				<div class="ttlWrap">
 					<h2 class="section-ttl">LINK
 						<span>リンク集</span>
@@ -150,7 +150,7 @@
 						<li><a href="#">ニュース</a></li>
 					</ul>
 				</nav>
-			</div>
+			</div> -->
 
 			<div>
 				<div class="info">
@@ -162,7 +162,7 @@
 						</div>
 						<div class="footer__address">
 							<p>本社メインオフィス</p>
-							<p><i class="fa fa-phone"></i> 0480-23-1717</p>
+							<p><i class="fa fa-phone"></i> <a href="tel:0480231717">0480-23-1717</a></p>
 							<p><i class="fa fa-clock-o"></i> 10:00〜18:00（休：毎週水曜・夏季・年末年始）</p>
 							<p><i class="fa fa-map-marker"></i> 346-0003 埼玉県久喜市久喜中央4-9-49<br>
 								※トヨタカローラ久喜店のすぐ近くです！
@@ -175,9 +175,8 @@
 				</div>
 			</div>
 			<div class="footer__sns">
-				<a href="https://www.youtube.com/" target="_blank" rel="noopener" class="icon"><i class="fa-brands fa-youtube"></i></a>
-				<a href="https://www.instagram.com/" target="_blank" rel="noopener" class="icon"><i class="fa-brands fa-instagram"></i></a>
-				<a href="https://www.facebook.com/" target="_blank" rel="noopener" class="icon"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://www.youtube.com/@ricolife-66" target="_blank" rel="noopener" class="icon"><i class="fa-brands fa-youtube"></i></a>
+				<a href="https://www.instagram.com/ricolife_kuki/" target="_blank" rel="noopener" class="icon"><i class="fa-brands fa-instagram"></i></a>
 			</div>
 			</div>
     </div>

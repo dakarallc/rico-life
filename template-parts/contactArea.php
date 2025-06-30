@@ -1,5 +1,5 @@
 <!-- REQUEST -->
-<section class="request">
+<!-- <section class="request">
 		<div class="inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">REQUEST
@@ -27,7 +27,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- CONTACT -->
 	<section class="contact">

@@ -206,4 +206,22 @@ jQuery(function () {
 			return ret;
 		});
 	});
+
+	// Floating banner active state
+	if (jQuery('.floating').length) {
+		var currentPath = window.location.pathname;
+		var $floatingItems = jQuery('.floating__item');
+		
+		// Remove active class from all items
+		$floatingItems.removeClass('active');
+		
+		// Add active class based on current page
+		if (currentPath.includes('/contact')) {
+			$floatingItems.eq(2).addClass('active'); // 来場予約 (now index 2, was 3)
+		}
+		// else if (currentPath.includes('/request')) {
+		//	$floatingItems.eq(2).addClass('active'); // 資料請求 - commented out
+		// }
+		// YouTube and Instagram are external links, so no active state needed
+	}
 });

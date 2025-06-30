@@ -50,7 +50,7 @@ Template Name: TOP
 			<p>まずは動画をご覧ください！</p>
 			
 			<div class="movie__inner">
-				<iframe width="100%" src="https://www.youtube.com/embed/OKJpQmHUZr0?si=7FpiiuHA2rxe9UzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="100%" src="https://www.youtube.com/embed/x3vwHpVTqHo?si=GwlJZYqfgZMVRc5z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
 			<p>Rico Life. のすべてを３分解説します！</p>
 		</div>
@@ -85,7 +85,7 @@ Template Name: TOP
 	</section>
 
 	<!-- WORKS -->
-	<section class="case">
+	<!-- <section class="case">
 		<div class="inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">WORKS
@@ -150,13 +150,15 @@ Template Name: TOP
 			<?php wp_reset_postdata(); ?>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- EVENT -->
-	<?php get_template_part("template-parts/eventArea"); ?>
+	<?php //get_template_part("template-parts/eventArea"); ?>
 
 	<!-- PRODUCTS -->
-	<?php get_template_part("template-parts/productArea"); ?>
+	<?php
+//get_template_part("template-parts/productArea");
+?>
 
 	<!-- VOICE -->
 	<!-- <section class="concept">
@@ -168,7 +170,7 @@ Template Name: TOP
 	</section> -->
 
 	<!-- ABOUT -->
-		<section class="companyIntroduction">
+		<!-- <section class="companyIntroduction">
 		<div class="inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">ABOUT
@@ -185,12 +187,12 @@ Template Name: TOP
 				</a>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<?php get_template_part("template-parts/contactArea"); ?>
 
 	<!-- COLUMN -->
-	<section class="concept">
+	<!-- <section class="concept">
 		<div class="inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">COLUMN
@@ -198,10 +200,10 @@ Template Name: TOP
 				</h2>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- NEWS -->
-	<section class="news">
+	<!-- <section class="news">
 		<?php
   $perPage = 3;
   $args = [
@@ -255,7 +257,7 @@ Template Name: TOP
 			<h2 class="instagram__title">
 				<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/instagram.svg" alt="Instagram" class="instagram__logo">
 			</h2>
-			<?php echo do_shortcode("[instagram-feed feed=1]"); ?>
+			<?php echo do_shortcode("[instagram-feed feed=2]"); ?>
 		</div>
 	</section>
 
