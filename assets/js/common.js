@@ -128,24 +128,70 @@ jQuery(function () {
 	if (jQuery('.planOfHouse .fv').length) {
 		var header = jQuery('.header');
 		var kvSection = jQuery('.planOfHouse .fv');
+		var headerLogo = jQuery('.header__logo');
+		var logoImg = headerLogo.find('img');
+		var originalSrc = logoImg.attr('src');
+		var blackLogoSrc = originalSrc.replace('logo.svg', 'logo-black.svg');
 		
 		jQuery(window).on('scroll', function() {
 			var kvHeight = kvSection.outerHeight();
 			var scrollTop = jQuery(this).scrollTop();
 			
 			if (scrollTop > kvHeight) {
-				// KVの高さを超えたら黒ヘッダー
+				// KVの高さを超えたら黒ヘッダー・黒ロゴ・白背景
 				if (!header.hasClass('_black')) {
 					header.addClass('_black');
+					header.addClass('_whiteBg');
+					headerLogo.attr('data-logo', 'black');
+					logoImg.attr('src', blackLogoSrc);
 				}
 			} else {
-				// KV内にいる時は白ヘッダー
+				// KV内にいる時は白ヘッダー・白ロゴ・透明背景
 				if (header.hasClass('_black')) {
 					header.removeClass('_black');
+					header.removeClass('_whiteBg');
+					headerLogo.attr('data-logo', 'white');
+					logoImg.attr('src', originalSrc);
 				}
 			}
 		});
 	}
+
+	//planTabsの切り替え処理
+	jQuery('.planTabs__btn').on('click', function() {
+		var tabTarget = jQuery(this).data('tab');
+		var $parentTabs = jQuery(this).closest('.planTabs');
+		
+		// メインタブのアクティブ状態を切り替え
+		$parentTabs.find('.planTabs__btn').removeClass('active');
+		jQuery(this).addClass('active');
+		
+		// コンテンツの表示切り替え
+		$parentTabs.find('.planTabs__content').removeClass('active');
+		$parentTabs.find('#' + tabTarget).addClass('active');
+		
+		// サブタブの最初のボタンをアクティブにする
+		$parentTabs.find('#' + tabTarget + ' .planTabs__subBtn').removeClass('active');
+		$parentTabs.find('#' + tabTarget + ' .planTabs__subBtn:first').addClass('active');
+		
+		// サブコンテンツの最初の項目を表示する
+		$parentTabs.find('#' + tabTarget + ' .planTabs__subContent').removeClass('active');
+		$parentTabs.find('#' + tabTarget + ' .planTabs__subContent:first').addClass('active');
+	});
+
+	// サブタブの切り替え処理
+	jQuery('.planTabs__subBtn').on('click', function() {
+		var subTabTarget = jQuery(this).data('subtab');
+		var $parentContent = jQuery(this).closest('.planTabs__content');
+		
+		// サブタブのアクティブ状態を切り替え
+		$parentContent.find('.planTabs__subBtn').removeClass('active');
+		jQuery(this).addClass('active');
+		
+		// サブコンテンツの表示切り替え
+		$parentContent.find('.planTabs__subContent').removeClass('active');
+		$parentContent.find('#' + subTabTarget).addClass('active');
+	});
 
 	//object-fit(IE対応)
 	var $ofi = jQuery("[data-js-ofi]");

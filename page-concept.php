@@ -221,6 +221,9 @@ Template Name: Concept
 			</div>
 		</div>
 	</section>
+
+	<!-- finalMessage -->
+	<?php get_template_part("template-parts/toTopButton"); ?>
 	
 	<!-- finalMessage -->
 	<?php get_template_part("template-parts/message"); ?>
