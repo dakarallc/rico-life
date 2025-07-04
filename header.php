@@ -74,7 +74,9 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
 	"[theme_url]",
 ); ?>/assets/img/common/logo.svg" alt="rico life"></a></h1>
       <?php else: ?>
-        <div class="header__logo" data-logo="black"><a href="<?php echo do_shortcode("[home_url]"); ?>"><img src="<?php echo do_shortcode(
+        <div class="header__logo" data-logo="black"><a href="<?php echo do_shortcode(
+        	"[home_url]",
+        ); ?>"><img src="<?php echo do_shortcode(
 	"[theme_url]",
 ); ?>/assets/img/common/logo-black.svg" alt="rico life"></a></div>
       <?php endif; ?>
@@ -94,12 +96,12 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
                   <p class="_below">Instagram</p>
                 </a>
               </li>
-              <!-- <li class="header__item">
+              <li class="header__item">
                 <a href="<?php echo do_shortcode("[home_url]"); ?>request" > 
 								<i class="fa-solid fa-book-open fa-xl"></i>
-                  <p class="_below">資料請求</p>
+                  <p class="_below">お問い合わせ</p>
                 </a>
-              </li> -->
+              </li>
               <li class="header__item">
                 <a href="<?php echo do_shortcode("[home_url]"); ?>contact">
 									<i class="fa-solid fa-house fa-xl"></i>

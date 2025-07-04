@@ -3260,31 +3260,6 @@ contact
   line-height: 1;
   position: relative;
 }
-.header__item::after {
-  background: #F10000;
-  border-radius: 6px;
-  bottom: -13px;
-  content: "";
-  height: 4px;
-  left: 0;
-  position: absolute;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform-origin: left center;
-  transform-origin: left center;
-  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.865, 0.86, 1.015);
-  transition: all 0.5s cubic-bezier(0.165, 0.865, 0.86, 1.015);
-  width: 100%;
-}
-@media (min-width: 1000px) {
-  .header__item:hover {
-    opacity: 1;
-  }
-  .header__item:hover::after {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
 @media (max-width: 999px) {
   .header__item {
     border-bottom: 1px solid #acacac;
@@ -3315,7 +3290,7 @@ contact
   }
 }
 .header__item > a:hover {
-  color: #F10000;
+  opacity: 0.8;
 }
 @media (max-width: 999px) {
   .header__item > a {
@@ -3323,7 +3298,7 @@ contact
     text-align: left;
   }
   .header__item > a:hover {
-    color: #F10000;
+    opacity: 0.8;
   }
 }
 .header__item ._below {
@@ -3350,7 +3325,7 @@ contact
   color: #000;
 }
 .header._black .header__item > a:hover {
-  color: #F10000;
+  opacity: 0.8;
 }
 .header._whiteBg {
   background: #fff;
@@ -3361,7 +3336,7 @@ contact
   color: #000;
 }
 .header .header__contents.action .header__item > a:hover {
-  color: #F10000;
+  opacity: 0.8;
 }
 .header .green {
   background-color: #00C9C8;
@@ -3420,9 +3395,6 @@ contact
 }
 .header__link:hover {
   opacity: 0.8;
-}
-.header__link:hover p {
-  color: #fff;
 }
 @media (max-width: 999px) {
   .header__link .fx {

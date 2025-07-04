@@ -6,24 +6,8 @@ Template Name: 資料請求・お問い合わせ
 <?php get_header(); ?>
 
 <div class="page agency-page">
-<!-- ===============================================================================================
-pageHead
-================================================================================================ -->
-  <div class="pageHead">
-    <div class="pageHead__contents">
-      <h1 class="pageHead__ttl">
-        <span class="_upper">お問い合わせ</span><!-- /_upper -->
-        <span class="_below">Contact</span><!-- /_below -->
-      </h1><!-- /pageHead__ttl -->
-    </div><!-- /pageHead__contents -->
-  </div><!-- /pageHead -->
-
-  <?php get_template_part("template-parts/breadcrumb"); ?>
 
 
-<!-- ===============================================================================================
-contact
-================================================================================================ -->
   <div class="contact wow fadeInUp">
     <div class="inner contact__inner">
 			<h2 class="contact__ttl">資料請求・お問い合わせフォーム</h2>

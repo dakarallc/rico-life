@@ -114,29 +114,30 @@
     line-height: 1;
     position: relative;
 
-    &::after {
-      background: #F10000;
-      bottom: -13px;
-      content: "";
-      height: 4px;
-      border-radius: 6px;
-      left: 0;
-      position: absolute;
-      transform: scale(0);
-      transform-origin: left center;
-      transition: all 0.5s cubic-bezier(0.165, 0.865, 0.86, 1.015);
-      width: 100%;
-    }
+    // アンダーラインエフェクト削除
+    // &::after {
+    //   background: #F10000;
+    //   bottom: -13px;
+    //   content: "";
+    //   height: 4px;
+    //   border-radius: 6px;
+    //   left: 0;
+    //   position: absolute;
+    //   transform: scale(0);
+    //   transform-origin: left center;
+    //   transition: all 0.5s cubic-bezier(0.165, 0.865, 0.86, 1.015);
+    //   width: 100%;
+    // }
 
-    @include mixin.pc {
-      &:hover {
-        opacity: 1;
+    // @include mixin.pc {
+    //   &:hover {
+    //     opacity: 1;
 
-        &::after {
-          transform: scale(1);
-        }
-      }
-    }
+    //     &::after {
+    //       transform: scale(1);
+    //     }
+    //   }
+    // }
 
     @include mixin.sp {
       border-bottom: 1px solid #acacac;
@@ -165,7 +166,7 @@
       }
 
       &:hover {
-        color: #F10000;
+        opacity: .8;
       }
 
       @include mixin.sp {
@@ -173,7 +174,7 @@
         text-align: left;
 
         &:hover {
-          color: #F10000;
+          opacity: .8;
         }
       }
     }
@@ -203,7 +204,7 @@
         color: #000;
         
         &:hover {
-          color: #F10000;
+          opacity: 0.8;
         }
       }
     }
@@ -222,7 +223,7 @@
         color: #000;
         
         &:hover {
-          color: #F10000;
+          opacity: 0.8;
         }
       }
     }
@@ -266,10 +267,6 @@
 
     &:hover {
       opacity: 0.8;
-
-      p {
-        color: #fff;
-      }
     }
 
     .fx {
