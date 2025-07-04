@@ -1,19 +1,34 @@
-# on:
-#   push:
-#     branches:
-#       - main 
-# name: Build and Deploy
-# jobs:
-#   FTP-Deploy-Action:
-#     name: FTP-Deploy-Action
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: FTP-Deploy-Action
-#         uses: SamKirkland/FTP-Deploy-Action@2.0.0
-#         env:
-#           FTP_SERVER: ${{ secrets.FTP_SERVER }}
-#           FTP_USERNAME: ${{ secrets.FTP_USER }}
-#           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-#           LOCAL_DIR: "./"
-#           REMOTE_DIR: "/ietochi-kuki.com/public_html/wp-content/themes/ietochi/"
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to FTP Server
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: "./"
+          server-dir: "/ricolife.jp/public_html/wp-content/themes/ietochi-kuki/"
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.DS_Store
+            **/Thumbs.db
+            **/*.log
+            .github/
