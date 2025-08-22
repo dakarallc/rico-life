@@ -1,0 +1,2 @@
+echo "🚀 Running Prettier on staged files..."
+npm run format:staged && git add -A
