@@ -1,22 +1,19 @@
-name: 🚀 Deploy website on push
-
 on:
   push:
     branches:
-      - main
-
+      - main 
+name: Build and Deploy
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v4
-
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /ricolife.jp/public_html/wp-content/themes/ietochi-kuki/
+      - uses: actions/checkout@v2
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          LOCAL_DIR: "./"
+          REMOTE_DIR: "/ricolife.jp/public_html/wp-content/themes/ietochi-kuki/"
