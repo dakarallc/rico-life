@@ -81,6 +81,9 @@ Template Name: TOP
 					</div>
 				</div>
 			</div>
+			<div class="btnWrap">
+				<a href="<?php echo do_shortcode("[home_url]"); ?>concept" class="greenBtn">はじめての方へ</a>
+			</div>
 		</div>
 	</section>
 
