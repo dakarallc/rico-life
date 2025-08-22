@@ -11,17 +11,16 @@
 ); ?>/img/event/eventHeader.svg" class=" ls-is-cached lazyloaded"><noscript><img src="<?php echo do_shortcode(
 	"[theme_url]",
 ); ?>/img/event/eventHeader.svg" alt="完成入居前見学会" data-eio="l"></noscript>
-      </h1><!-- /pageHead__ttl -->
-    </div><!-- /pageHead -->
+      </h1>
+    </div>
   <?php else: ?>
     <div class="pageHeadEvent event">
       <h1 class="pageHeadEvent__ttl">
       </h1>
-    </div><!-- /pageHead -->
+    </div>
   <?php endif; ?>
 
   <?php
-  // Get event info
   $event_info = [
   	"pic" => get_field("event-pic"),
   	"is_always" => get_field("is_always"),
@@ -32,7 +31,6 @@
   	"address" => get_field("address"),
   ];
 
-  // Calculate event status
   $now = new DateTime("now", new DateTimeZone("Asia/Tokyo"));
   $start_datetime = new DateTime(
   	$event_info["start_date"] . " " . $event_info["start_time"],
@@ -150,7 +148,6 @@
           </a>
         </div>
 
-        <!-- 間取り -->
         <section class="madori">
           <div class="madori__inner">
             <?php
@@ -257,7 +254,6 @@
 					</a>
 				</div>
 
-      <!-- 住宅ローン -->
       <section class="housingLoan">
         <div class="housingLoan__img">
           <img src="<?php echo do_shortcode(
@@ -287,18 +283,17 @@
       </section>
     </div>
 
-      <!-- フォーム -->
       <div class="contact wow fadeInUp" id="contactForm">
         <div class="inner contact__inner">
           <h2 class="contact__ttl">予約フォーム</h2>
-          <p class="contact__desc">下記の必要事項をご記入の上、送信下さい。追って担当者よりご連絡させていただきます。</p><!-- /contact__desc -->
+          <p class="contact__desc">下記の必要事項をご記入の上、送信下さい。追って担当者よりご連絡させていただきます。</p>
           <?php echo do_shortcode('[mwform_formkey key="33"]'); ?>
-        </div><!-- /inner contact__inner -->
-      </div><!-- /contact -->
-      <a href="<?php echo do_shortcode(
-      	"[home_url]",
-      ); ?>event" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
-    </div><!-- /inner post__inner -->
+        </div>
+      </div>
+			<div class="btnWrap">
+				<a href="<?php echo do_shortcode("[home_url]"); ?>event" class="primaryBtn wow fadeInUp">一覧に戻る</a>
+    	</div>
+    </div>
   </section>
 </div>
 
