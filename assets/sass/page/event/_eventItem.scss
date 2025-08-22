@@ -51,7 +51,7 @@
 			margin-bottom: 4px;
 			letter-spacing: 0.04em;
 			font-weight: bold;
-			color: #d90200;
+			color: #a0b5a7;
 
 			@include mixin.yuGothicBold();
 			font-size: 3.3rem;
@@ -148,7 +148,7 @@
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					background: transparent linear-gradient(180deg, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
+					background: transparent linear-gradient(180deg, #a0b5a7 0%, #a0b5a7 100%) 0% 0% no-repeat;
 					border-radius: 6px;
 					font-size: 1.2rem;
 					@include mixin.sp() {

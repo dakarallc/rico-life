@@ -15,7 +15,7 @@
 	}
 
 	.sectionTitle {
-		color: #D90200;
+		color: #a0b5a7;
 		@include mixin.yuGothicBold();
 		font-size: 2.8rem;
 		font-weight: bold;
@@ -33,7 +33,7 @@
 			transform: translateY(-50%);
 			width: 6px;
 			height: 100%;
-			background: #D90200;
+			background: #a0b5a7;
 			border-radius: 6PX;
 		}
 	}
@@ -42,7 +42,7 @@
 		margin-bottom: 4px;
 		letter-spacing: .04em;
 		font-weight: bold;
-		color: #D90200;
+		color: #a0b5a7;
     @include mixin.yuGothicBold();
     font-size: 3.3rem;
     font-weight: bold;
@@ -67,7 +67,7 @@
 
 	&__subTtl {
 		@include mixin.yuGothicBold();
-		color: #D90200;
+		color: #a0b5a7;
 		@include mixin.yuGothicBold();
 		font-size: 2.2rem;
 		margin-bottom: 10px;
@@ -150,7 +150,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				background: transparent linear-gradient(180deg, #d90200 0%, #d90200 100%) 0% 0% no-repeat;
+				background: transparent linear-gradient(180deg, #a0b5a7 0%, #a0b5a7 100%) 0% 0% no-repeat;
 				border-radius: 6px;
 				font-size: 1.2rem;
 				@include mixin.sp() {
@@ -276,8 +276,8 @@
 	
 	&__btn {
 		align-items: center;
-		background: #D90200;
-		border: 1px solid #D90200;
+		background: #a0b5a7;
+		border: 1px solid #a0b5a7;
 		color: #fff;
 		display: flex;
 		@include mixin.yuGothicBold();
@@ -293,7 +293,7 @@
 		}
 
 		&:hover {
-			color: #d90200;
+			color: #a0b5a7;
 			background: #fff;
 		}
 	}

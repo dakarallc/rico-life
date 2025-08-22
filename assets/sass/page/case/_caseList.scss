@@ -106,7 +106,7 @@
 
   &__cat {
     align-items: center;
-    background: #D90200;
+    background: #a0b5a7;
     border-radius: 4px;
     color: #fff;
     display: flex;
@@ -135,7 +135,7 @@
     }
 
     &::before {
-      background: #D90200;
+      background: #a0b5a7;
       content: "";
       height: 100%;
       left: 0;
@@ -296,7 +296,7 @@
   }
 
   &__ttl {
-    color: #D90200;
+    color: #a0b5a7;
     @include mixin.yuGothicBold();
     font-size: 3.9rem;
     font-weight: bold;
@@ -309,7 +309,7 @@
     }
 
     &::before {
-      background: #D90200;
+      background: #a0b5a7;
       content: "";
       height: 100%;
       left: 0;
@@ -403,9 +403,9 @@
   &__btn {
     font-family: "Zen Maru Gothic", sans-serif;
     background: #fff;
-    border: 1px solid #D90200;
+    border: 1px solid #a0b5a7;
     border-radius: 4px;
-    color: #D90200;
+    color: #a0b5a7;
     cursor: pointer;
     padding: 8px 16px;
     transition: all 0.3s;
@@ -420,7 +420,7 @@
     }
 
     &.is-active {
-      background: #D90200;
+      background: #a0b5a7;
       color: #fff;
     }
     

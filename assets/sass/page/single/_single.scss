@@ -319,7 +319,7 @@
     }
   }
   .post__ttl {
-    color: #D90200;
+    color: #a0b5a7;
     @include mixin.yuGothicBold();
     font-size: 3.3rem;
     font-weight: bold;
@@ -337,7 +337,7 @@
   }
   .post__ttl::before {
     -webkit-transform: translateY(-50%);
-    background: #D90200;
+    background: #a0b5a7;
     content: "";
     height: 100%;
     left: 0;
@@ -401,7 +401,7 @@
     }
   }
   .post__contents p a {
-    color: #D90200;
+    color: #a0b5a7;
     text-decoration: underline;
   }
   .post__contents p a:hover {
@@ -506,8 +506,8 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     align-items: center;
-    background: #D90200;
-    border: 1px solid #D90200;
+    background: #a0b5a7;
+    border: 1px solid #a0b5a7;
     color: #fff;
     display: -webkit-box;
     display: -webkit-flex;
@@ -523,7 +523,7 @@
   }
   .post__btn:hover {
     background: #fff;
-    color: #D90200;
+    color: #a0b5a7;
   }
   @media (min-width: 1000px) {
     .post .mainContents {
@@ -560,7 +560,7 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     align-items: center;
-    background: #D90200;
+    background: #a0b5a7;
     border-radius: 23px;
     color: #fff;
     display: -webkit-box;
@@ -789,7 +789,7 @@
 }
 .eventPlan__box .number {
   -webkit-transform: translateY(-50%);
-  color: #D90200;
+  color: #a0b5a7;
   font-size: 40px;
   font-weight: bold;
   position: absolute;
@@ -1097,7 +1097,7 @@
 }
 .homeMade__box .number {
   -webkit-transform: translateY(-50%);
-  color: #D90200;
+  color: #a0b5a7;
   font-size: 40px;
   font-weight: bold;
   position: absolute;
@@ -1145,7 +1145,7 @@
   }
 }
 .homeMade__subTtl {
-  color: #D90200;
+  color: #a0b5a7;
   @include mixin.yuGothicBold();
   font-size: 2.4rem;
   font-weight: bold;

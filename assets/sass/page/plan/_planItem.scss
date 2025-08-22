@@ -18,7 +18,7 @@
 
 	/* セクションタイトル */
 	.sectionTitle {
-		color: #D90200;
+		color: #a0b5a7;
 		@include mixin.yuGothicBold();
 		font-size: 2.8rem;
 		font-weight: bold;
@@ -35,14 +35,14 @@
 			transform: translateY(-50%);
 			width: 6px;
 			height: 100%;
-			background: #D90200;
+			background: #a0b5a7;
 			border-radius: 6px;
 		}
 	}
 
 	/* メインタイトル（キャッチコピー） */
 	&__ttl {
-		color: #D90200;
+		color: #a0b5a7;
 		@include mixin.yuGothicBold();
 		font-size: 3.3rem;
 		font-weight: bold;
@@ -69,7 +69,7 @@
 
 	/* サブタイトル（間取り図のタイトルなど） */
 	&__subTtl {
-		color: #D90200;
+		color: #a0b5a7;
 		@include mixin.yuGothicBold();
 		font-size: 2.2rem;
 		margin-bottom: 10px;
@@ -172,7 +172,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				background: #d90200;
+				background: #a0b5a7;
 				border-radius: 4px;
 				font-size: 1.4rem !important;
 				padding: 4px 10px;
@@ -253,8 +253,8 @@
 	/* 戻るボタン */
 	&__btn {
 		align-items: center;
-		background: #D90200;
-		border: 1px solid #D90200;
+		background: #a0b5a7;
+		border: 1px solid #a0b5a7;
 		color: #fff;
 		display: flex;
 		@include mixin.yuGothicBold();
@@ -270,7 +270,7 @@
 		}
 
 		&:hover {
-			color: #d90200;
+			color: #a0b5a7;
 			background: #fff;
 		}
 	}
@@ -287,7 +287,7 @@
       line-height: 1.5;
 
       i {
-        color: #D90200;
+        color: #a0b5a7;
         margin-right: 10px;
         flex-shrink: 0;
       }
@@ -320,7 +320,7 @@
     .emphasis {
       font-size: 2.4rem;
       font-weight: bold;
-      color: #D90200;
+      color: #a0b5a7;
     }
 
     /* 補足的な単位表示 */
@@ -377,7 +377,7 @@
         padding: 20px 12px;
       }
       td {
-        color: #D90200;
+        color: #a0b5a7;
         font-size: 2rem;
       }
     }
@@ -406,7 +406,7 @@
       }
       td {
         font-size: 2.2rem;
-        color: #D90200;
+        color: #a0b5a7;
       }
     }
 
@@ -453,7 +453,7 @@
       }
       td {
         font-size: 2.2rem;
-        color: #D90200;
+        color: #a0b5a7;
       }
     }
   }

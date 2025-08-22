@@ -12,7 +12,7 @@
 
   &__ttl {
     @include mixin.yuGothicBold();
-    color: #d90200;
+    color: #a0b5a7;
     font-size: 3.3rem;
     font-weight: bold;
     padding-left: 30px;
@@ -30,7 +30,7 @@
       content: "";
       width: 4px;
       height: 100%;
-      background: #d90200;
+      background: #a0b5a7;
       position: absolute;
       top: 50%;
       left: 0;
@@ -92,7 +92,7 @@
       }
 
       a {
-        color: #d90200;
+        color: #a0b5a7;
         text-decoration: underline;
 
         &:hover {
@@ -213,8 +213,8 @@
     width: 100%;
     font-weight: bold;
     height: 40px;
-    background: #d90200;
-    border: 1px solid #d90200;
+    background: #a0b5a7;
+    border: 1px solid #a0b5a7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,7 +223,7 @@
     margin: 0 auto;
 
     &:hover {
-      color: #d90200;
+      color: #a0b5a7;
       background: #fff;
     }
   }

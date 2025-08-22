@@ -104,7 +104,7 @@
 
 	&__cat {
 		align-items: center;
-		background: #d90200;
+		background: #a0b5a7;
 		border-radius: 6px;
 		color: #fff;
 		display: flex;
@@ -130,7 +130,7 @@
 		}
 
 		&::before {
-			background: #d90200;
+			background: #a0b5a7;
 			content: "";
 			height: 100%;
 			left: 0;
@@ -291,7 +291,7 @@
 	}
 
 	&__ttl {
-		color: #d90200;
+		color: #a0b5a7;
 		@include mixin.yuGothicBold();
 		font-size: 3.9rem;
 		font-weight: bold;
@@ -304,7 +304,7 @@
 		}
 
 		&::before {
-			background: #d90200;
+			background: #a0b5a7;
 			content: "";
 			height: 100%;
 			left: 0;

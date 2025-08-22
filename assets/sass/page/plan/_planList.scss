@@ -90,7 +90,7 @@
 
 	&__cat {
 		align-items: center;
-		background: #d90200;
+		background: #a0b5a7;
 		border-radius: 4px;
 		color: #fff;
 		display: flex;
@@ -112,7 +112,7 @@
 		line-height: 2.5rem;
 
 		&::before {
-			background: #d90200;
+			background: #a0b5a7;
 			content: "";
 			height: 100%;
 			left: 0;
@@ -187,9 +187,9 @@
 	&__btn {
 		font-family: "Zen Maru Gothic", sans-serif;
 		background: #fff;
-		border: 1px solid #d90200;
+		border: 1px solid #a0b5a7;
 		border-radius: 4px;
-		color: #d90200;
+		color: #a0b5a7;
 		cursor: pointer;
 		padding: 8px 16px;
 		transition: all 0.3s;
@@ -204,7 +204,7 @@
 		}
 
 		&.is-active {
-			background: #d90200;
+			background: #a0b5a7;
 			color: #fff;
 		}
 
