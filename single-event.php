@@ -144,11 +144,8 @@
               	"[theme_url]",
               ); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
             </div>
-            <button class="cvButtonLink__button">
-              <span>ご来場予約はこちら</span>
-              <img src="<?php echo do_shortcode(
-              	"[theme_url]",
-              ); ?>/assets/img/event/arrowRight.png" alt="矢印" class="arrowRight">
+            <button class="greenBtn">
+							ご来場予約はこちら
             </button>
           </a>
         </div>
@@ -204,7 +201,7 @@
             $point3_text = get_field("point3_text");
 
             if ($point1_title): ?>
-							<h3 class="point orange marugo">1,<?php echo esc_html($point1_title); ?></h3>
+							<h3 class="point marugo">1,<?php echo esc_html($point1_title); ?></h3>
 						<?php endif;
             if ($point1Img): ?>
               <img data-js-ofi src="<?php echo esc_url($point1Img); ?>" alt="Point 1 Image">
@@ -217,7 +214,7 @@
             <?php endif;
 
             if ($point2_title): ?>
-              <h3 class="point orange marugo">2,<?php echo esc_html($point2_title); ?></h3>
+              <h3 class="point marugo">2,<?php echo esc_html($point2_title); ?></h3>
             <?php endif;
             if ($point2_img): ?>
               <img data-js-ofi src="<?php echo esc_url($point2_img); ?>">
@@ -231,7 +228,7 @@
             <?php endif;
 
             if ($point3_title): ?>
-							<h3 class="point orange marugo">3,<?php echo esc_html($point3_title); ?></h3>
+							<h3 class="point marugo">3,<?php echo esc_html($point3_title); ?></h3>
 						<?php endif;
             if ($point3_img): ?>
               <img data-js-ofi src="<?php echo esc_url($point3_img); ?>">
@@ -249,21 +246,18 @@
         </div>
       </div>
 
-      <div class="cvButtonLinkWrap">
-        <a href="#contactForm" class="cvButtonLink">
-          <div>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
-          </div>
-          <button class="cvButtonLink__button" <?php echo $event_status === "endEvent" ? "disabled" : ""; ?>>
-            <span>ご来場予約はこちら</span>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/arrowRight.png" alt="矢印" class="arrowRight">
-          </button>
-        </a>
-      </div>
+			<div class="cvButtonLinkWrap">
+					<a href="#contactForm" class="cvButtonLink">
+						<div>
+							<img src="<?php echo do_shortcode(
+								"[theme_url]",
+							); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+						</div>
+						<button class="greenBtn">
+							ご来場予約はこちら
+						</button>
+					</a>
+				</div>
 
       <!-- 住宅ローン -->
       <section class="housingLoan">

@@ -1164,7 +1164,7 @@ h5 {
 @media (min-width: 601px) {
 	.fixedMenu__item--buy a {
 		height: 90px;
-		background: #f26149;
+		background: #809186;
 		color: #fff;
 		font-size: 1.8rem;
 	}
@@ -1179,7 +1179,7 @@ h5 {
 	.fixedMenu__item--buy {
 		width: 60%;
 		order: -1;
-		background: #f26149;
+		background: #809186;
 		position: relative;
 	}
 	.fixedMenu__item--buy::before {
@@ -7723,13 +7723,13 @@ zeh
 	width: 100%;
 	max-width: 268px;
 	height: 50px;
-	background: #f26149;
+	background: #809186;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #fff;
 	position: relative;
-	border: 1px solid #f26149;
+	border: 1px solid #809186;
 	margin: 0 auto;
 	transition: 0.2s;
 }
@@ -7737,10 +7737,10 @@ zeh
 	background: #fff;
 }
 .contact__submit:hover input[type="submit"] {
-	color: #f26149;
+	color: #809186;
 }
 .contact__submit:hover::before {
-	color: #f26149;
+	color: #809186;
 }
 .contact__submit::before {
 	content: "＞";

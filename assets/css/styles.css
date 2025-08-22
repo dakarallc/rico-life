@@ -1514,8 +1514,9 @@ contact
   -webkit-justify-content: center;
   -webkit-transition: 0.2s;
   align-items: center;
-  background: #F26149;
-  border: 1px solid #F26149;
+  background: #a0b5a7;
+  border: 1px solid #809186;
+  border-radius: 36px;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1535,11 +1536,12 @@ contact
 }
 
 .contact__submit:hover input[type=submit] {
-  color: #F26149;
+  border-radius: 36px;
+  color: #809186;
 }
 
 .contact__submit:hover::before {
-  color: #F26149;
+  color: #809186;
 }
 
 .contact__submit::before {
@@ -2091,13 +2093,13 @@ contact
 }
 @media (min-width: 601px) {
   .fixedMenu__item--buy a {
-    background: #F26149;
+    background: #809186;
     color: #fff;
     font-size: 1.8rem;
     height: 90px;
   }
   .fixedMenu__item--buy a:hover {
-    background: #f5826f;
+    background: #96a49b;
   }
   .fixedMenu__item--buy a p {
     margin-top: 5px;
@@ -2109,7 +2111,7 @@ contact
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
     -ms-flex-order: -1;
-    background: #F26149;
+    background: #809186;
     order: -1;
     position: relative;
   }
@@ -8480,7 +8482,7 @@ contact
   opacity: 1;
 }
 .contact__submit {
-  background: #F26149;
+  background: #809186;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8496,7 +8498,7 @@ contact
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #F26149;
+  border: 1px solid #809186;
   color: #fff;
   margin: 0 auto;
   position: relative;
@@ -8507,10 +8509,10 @@ contact
   background: #fff;
 }
 .contact__submit:hover input[type=submit] {
-  color: #F26149;
+  color: #809186;
 }
 .contact__submit:hover::before {
-  color: #F26149;
+  color: #809186;
 }
 .contact__submit::before {
   color: #fff;

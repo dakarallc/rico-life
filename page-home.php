@@ -156,7 +156,7 @@ Template Name: TOP
 	</section> -->
 
 	<!-- EVENT -->
-	<?php //get_template_part("template-parts/eventArea"); ?>
+	<?php get_template_part("template-parts/eventArea"); ?>
 
 	<!-- PRODUCTS -->
 	<?php
