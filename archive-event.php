@@ -1,14 +1,15 @@
 <?php get_header(); ?>
 
 <div class="page event-page">
-  <div class="pageHead">
-    <div class="pageHead__contents">
-      <h1 class="pageHead__ttl">
-        <span class="_upper">イベント</span>
-        <span class="_below">EVENTS</span>
-      </h1>
+  <!-- fv -->
+  <section class="fv">
+    <img class="fv__img" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/kv2.png" alt="">
+    <div class="inner fv__inner">
+      <div class="fv__ttl">
+        <h1>EVENT</h1>
+      </div>
     </div>
-  </div>
+  </section>
 
   <?php get_template_part("template-parts/breadcrumb"); ?>
 
