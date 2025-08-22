@@ -244,13 +244,13 @@
     width: 100%;
     max-width: 268px;
     height: 50px;
-    background: #F26149;
+    background: #809186;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     position: relative;
-    border: 1px solid #F26149;
+    border: 1px solid #809186;
     margin: 0 auto;
 
     @include mixin.sp() {}
@@ -259,11 +259,11 @@
       background: #fff;
 
       input[type="submit"] {
-        color: #F26149;
+        color: #809186;
       }
 
       &::before {
-        color: #F26149;
+        color: #809186;
       }
     }
 

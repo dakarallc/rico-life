@@ -984,8 +984,9 @@
   -webkit-justify-content: center;
   -webkit-transition: 0.2s;
   align-items: center;
-  background: #F26149;
-  border: 1px solid #F26149;
+  background: #a0b5a7;
+  border: 1px solid #809186;
+	border-radius: 36px;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1003,10 +1004,11 @@
   background: #fff;
 }
 .contact__submit:hover input[type=submit] {
-  color: #F26149;
+  color: #809186;
+	border-radius: 36px;
 }
 .contact__submit:hover::before {
-  color: #F26149;
+  color: #809186;
 }
 .contact__submit::before {
   -webkit-transform: translateY(-50%);

@@ -100,20 +100,14 @@ post
             <div>
               <img src="<?php echo do_shortcode(
               	"[theme_url]",
-              ); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
+              ); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
             </div>
-            <button class="cvButtonLink__button">
-							<span>ご来場予約はこちら</span>
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
+            <button class="greenBtn">
+							ご来場予約はこちら
             </button>
           </a>
         </div>
+
 				<!-- 間取り -->
 			<section class="madori">
         <div class="madori__inner">
@@ -230,25 +224,18 @@ post
       </div><!-- /post__contents -->
 
 				<!-- CVボタン -->
-			<div class="cvButtonLinkWrap">
-				<a href="#contactForm" class="cvButtonLink">
-					<div>
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
-					</div>
-					<button class="cvButtonLink__button">
-						<span>ご来場予約はこちら</span>
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
-					</button>
-				</a>
-			</div>
+			 <div class="cvButtonLinkWrap">
+          <a href="#contactForm" class="cvButtonLink">
+            <div>
+              <img src="<?php echo do_shortcode(
+              	"[theme_url]",
+              ); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+            </div>
+            <button class="greenBtn">
+							ご来場予約はこちら
+            </button>
+          </a>
+        </div>
 
       <!-- 70thバナー -->
       <!-- <div class="banner banner70">
@@ -310,25 +297,18 @@ post
             </div><!-- /homeMade__wrap -->
           </div><!-- /inner homeMade__inner -->
           <!-- CVボタン -->
-          <div class="cvButtonLinkWrap">
-            <a href="#contactForm" class="cvButtonLink">
-              <div>
-                <img src="<?php echo do_shortcode(
-                	"[theme_url]",
-                ); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
-              </div>
-              <button class="cvButtonLink__button">
-              <span>ご来場予約はこちら</span>
-              <img src="<?php echo do_shortcode(
-              	"[theme_url]",
-              ); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
-              </button>
-            </a>
-          </div>
+					<div class="cvButtonLinkWrap">
+						<a href="#contactForm" class="cvButtonLink">
+							<div>
+								<img src="<?php echo do_shortcode(
+									"[theme_url]",
+								); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+							</div>
+							<button class="greenBtn">
+								ご来場予約はこちら
+							</button>
+						</a>
+					</div>
         </section><!-- /us -->
       </div>
 
@@ -388,25 +368,18 @@ post
 
         
         <!-- CVボタン -->
-        <div class="cvButtonLinkWrap">
-          <a href="#contactForm" class="cvButtonLink">
-            <div>
-              <img src="<?php echo do_shortcode(
-              	"[theme_url]",
-              ); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/arrowRight.png" class="planImg lazyloaded">
-            </div>
-            <button class="cvButtonLink__button">
-            <span>ご来場予約はこちら</span>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
-            </button>
-          </a>
-        </div>
+				<div class="cvButtonLinkWrap">
+					<a href="#contactForm" class="cvButtonLink">
+						<div>
+							<img src="<?php echo do_shortcode(
+								"[theme_url]",
+							); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+						</div>
+						<button class="greenBtn">
+							ご来場予約はこちら
+						</button>
+					</a>
+				</div>
       </section><!-- /eventPlan -->
 
       <!-- 住宅ローン -->
@@ -462,25 +435,18 @@ post
       </div>
 
       <!-- CVボタン -->
-      <div class="cvButtonLinkWrap">
-        <a href="#contactForm" class="cvButtonLink">
-          <div>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/kantan.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/arrowRight.png" class="hukidashi lazyloaded">
-          </div>
-          <button class="cvButtonLink__button">
-          <span>ご来場予約はこちら</span>
-          <img src="<?php echo do_shortcode(
-          	"[theme_url]",
-          ); ?>/assets/img/event/arrowRight.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/arrowRight.png" class="arrowRight lazyloaded">
-          </button>
-        </a>
-      </div>
+			<div class="cvButtonLinkWrap">
+				<a href="#contactForm" class="cvButtonLink">
+					<div>
+						<img src="<?php echo do_shortcode(
+							"[theme_url]",
+						); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+					</div>
+					<button class="greenBtn">
+						ご来場予約はこちら
+					</button>
+				</a>
+			</div>
 
       <!-- 土地探し -->
       <section class="searchLand">
