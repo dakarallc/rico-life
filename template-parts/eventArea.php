@@ -8,29 +8,36 @@
 		</div>
 
 		<?php
-  $args = [
-  	"post_type" => "event",
-  	"posts_per_page" => 5,
-  	"orderby" => "date",
-  	"order" => "DESC",
-  ];
-  $event_query = new WP_Query($args);
+		$args = [
+			'post_type' => 'event',
+			'posts_per_page' => 5,
+			'orderby' => 'date',
+			'order' => 'DESC',
+		];
+		$event_query = new WP_Query($args);
 
-  if ($event_query->have_posts()): ?>
-			<div class="event__slider swiper eventSwiper">
-				<div class="swiper-wrapper">
-					<?php while ($event_query->have_posts()):
+		if ($event_query->have_posts()):
+			$event_count = $event_query->found_posts;
+			$use_slider = $event_count > 1;
+		?>
+			<?php if ($use_slider): ?>
+				<div class="event__slider swiper eventSwiper">
+					<div class="swiper-wrapper">
+			<?php else: ?>
+				<div class="event__single">
+			<?php endif; ?>
 
-     	$event_query->the_post();
-     	$is_always = get_field("is_always");
-     	$event_pic = get_field("event-pic");
-     	$start_date = get_field("event_start_date");
-     	$end_date = get_field("event_end_date");
-     	$start_time = get_field("event_start_time");
-     	$end_time = get_field("event_end_time");
-     	$address = get_field("address");
-     	?>
-						<div class="event__slide swiper-slide">
+				<?php while ($event_query->have_posts()):
+					$event_query->the_post();
+					$is_always = get_field('is_always');
+					$event_pic = get_field('event-pic');
+					$start_date = get_field('event_start_date');
+					$end_date = get_field('event_end_date');
+					$start_time = get_field('event_start_time');
+					$end_time = get_field('event_end_time');
+					$address = get_field('address');
+				?>
+						<div class="<?php echo $use_slider ? 'event__slide swiper-slide' : 'event__item'; ?>">
 							<a href="<?php echo esc_url(get_permalink()); ?>" class="event__container">
 								<div class="event__image">
 									<img src="<?php echo esc_url($event_pic); ?>" alt="<?php the_title(); ?>">
@@ -56,12 +63,17 @@
 								</div>
 							</a>
 						</div>
-					<?php
-     endwhile; ?>
+					<?php endwhile; ?>
+
+			<?php if ($use_slider): ?>
+					</div>
+					<div class="swiper-button-prev event-swiper-prev"></div>
+					<div class="swiper-button-next event-swiper-next"></div>
 				</div>
-				<div class="swiper-button-prev event-swiper-prev"></div>
-				<div class="swiper-button-next event-swiper-next"></div>
-			</div>
+			<?php else: ?>
+				</div>
+			<?php endif; ?>
+			
 			<?php wp_reset_postdata(); ?>
 		<?php else: ?>
 			<p>現在、開催中のイベントはありません。</p>
