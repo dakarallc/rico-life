@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: いえとち本舗とは
+Template Name: RicoLifeとは
 */
 ?>
 <?php get_header(); ?>
@@ -13,25 +13,25 @@ mv
 		<div class="show--pc">
 			<img  src="<?php echo do_shortcode(
    	"[theme_url]",
-   ); ?>/assets/img/about/kv-about-pc.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode(
+   ); ?>/assets/img/about/kv-about-pc.png" alt="RicoLifeの平屋" data-src="<?php echo do_shortcode(
 	"[theme_url]",
 ); ?>/assets/img/about/kv-about-pc.png" class=" ls-is-cached lazyloaded">
 			<noscript>
 				<img src="<?php echo do_shortcode(
     	"[theme_url]",
-    ); ?>/assets/img/about/kv-about-pc.png" alt="いえとち本舗の平屋" data-eio="l">
+    ); ?>/assets/img/about/kv-about-pc.png" alt="RicoLifeの平屋" data-eio="l">
 			</noscript>
 		</div>
 		<div class="show--sp">
 			<img  src="<?php echo do_shortcode(
    	"[theme_url]",
-   ); ?>/assets/img/about/kv-about-sp.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode(
+   ); ?>/assets/img/about/kv-about-sp.png" alt="RicoLifeの平屋" data-src="<?php echo do_shortcode(
 	"[theme_url]",
 ); ?>/assets/img/about/kv-about-sp.png" class=" ls-is-cached lazyloaded">
 			<noscript>
 				<img src="<?php echo do_shortcode(
     	"[theme_url]",
-    ); ?>/assets/img/about/kv-about-sp.png" alt="いえとち本舗の平屋" data-eio="l">
+    ); ?>/assets/img/about/kv-about-sp.png" alt="RicoLifeの平屋" data-eio="l">
 			</noscript>
 		</div>
 	</main>
@@ -61,18 +61,18 @@ about-massage
 		<div class="about-massage__inner--content">
 			<img src="<?php echo do_shortcode(
    	"[theme_url]",
-   ); ?>/images/about-massage.png" alt="いえとち本舗の家" data-src="<?php echo do_shortcode(
+   ); ?>/images/about-massage.png" alt="RicoLifeの家" data-src="<?php echo do_shortcode(
 	"[theme_url]",
 ); ?>/images/about-massage.png" class=" ls-is-cached lazyloaded">
 			<noscript>
-			<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/about-massage.png" alt="いえとち本舗の家" data-eio="l">
+			<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/about-massage.png" alt="RicoLifeの家" data-eio="l">
 			</noscript>
 		</div>
 
 		<div class="about-massage__inner--title">
 			<h3>
 				<span>大きくて高い<br class="show--sp"/>無理をした住まいはいらない。<br/>
-				そんなご家族のご要望に応え<br/>豊かな暮らしを<br/>いえとち本舗がお届けいたします。</span>
+				そんなご家族のご要望に応え<br/>豊かな暮らしを<br/>RicoLifeがお届けいたします。</span>
 			</h3>
 		</div>
 	</div>
@@ -84,7 +84,7 @@ point3
 ================================================================================================ -->
 	<section class="point3">
 		<div class="title">
-			<h2 class="about-ttl"><span>いえとち本舗は</span><br/>低価格×高品質×ZEHの家</h2>
+			<h2 class="about-ttl"><span>RicoLifeは</span><br/>低価格×高品質×ZEHの家</h2>
 		</div>
 		<div class="point3__inner inner">
 			<div class="point3__inner--content section__inner--content">
@@ -140,11 +140,11 @@ zeh
 	</section>
 
 <!-- ===============================================================================================
-いえとち本舗とは
+RicoLifeとは
 ================================================================================================ -->
 	<section class="about-detail">
 		<div class="point3__inner--title">
-			<h2 class="about-ttl">いえとち本舗とは</h2>
+			<h2 class="about-ttl">RicoLifeとは</h2>
 		</div>
 		<div class="inner">
 			<div class="about-detail-content">
@@ -152,7 +152,7 @@ zeh
 				<div class="pc-flex">
 					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail1.png" alt="">
 					<div class="about-detail-message">
-						<p>土地や建物が大きな家は住宅ローンも大きくなります。<br class="show--pc"/>そしてローンだけでなく今後は光熱費の上昇で固定費がどんどん高くなります。そのため、無理なく持てる家を建てることが大事です。<br class="show--sp"/>いえとち本舗では、注文住宅を規格化し合理化することで高水準な仕様のまま、コストダウンを実現しております。さらに、太陽光発電が標準装備でエネルギーコスト節約という付加価値つき住宅です。<br class="show--sp"/>単に安いのではなく、お客様が安心して快適に暮らせるような仕様になっております。</p>
+						<p>土地や建物が大きな家は住宅ローンも大きくなります。<br class="show--pc"/>そしてローンだけでなく今後は光熱費の上昇で固定費がどんどん高くなります。そのため、無理なく持てる家を建てることが大事です。<br class="show--sp"/>RicoLifeでは、注文住宅を規格化し合理化することで高水準な仕様のまま、コストダウンを実現しております。さらに、太陽光発電が標準装備でエネルギーコスト節約という付加価値つき住宅です。<br class="show--sp"/>単に安いのではなく、お客様が安心して快適に暮らせるような仕様になっております。</p>
 					</div>
 				</div>
 			</div>
@@ -162,7 +162,7 @@ zeh
 				<div class="pc-flex">
 					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail2.png" alt="">
 					<div class="about-detail-message">
-						<p>太陽光パネル付きの家が稼いでくれる。<br>いえとち本舗のイエテラスは、太陽光が標準搭載です。近年、電気代が高騰しておりますが、まだまだ上がることが予想されております。<br class="show--sp"/>その電気を家が蓄え、売電してくれることで毎月の電気代が0円になるだけでなく、搭載量によっては住宅ローンの負担軽減も可能です。さらに、自然エネルギーを利用した太陽光発電はCO2を排出することがないため、環境にとてもやさしいです。<br class="show--sp"/>日々の生活が充実したものになります。</p>
+						<p>太陽光パネル付きの家が稼いでくれる。<br>RicoLifeのイエテラスは、太陽光が標準搭載です。近年、電気代が高騰しておりますが、まだまだ上がることが予想されております。<br class="show--sp"/>その電気を家が蓄え、売電してくれることで毎月の電気代が0円になるだけでなく、搭載量によっては住宅ローンの負担軽減も可能です。さらに、自然エネルギーを利用した太陽光発電はCO2を排出することがないため、環境にとてもやさしいです。<br class="show--sp"/>日々の生活が充実したものになります。</p>
 					</div>
 				</div>
 			</div>
@@ -187,7 +187,7 @@ zeh
 						<p>規格化したから、決められたものから少しの変更しかできないと思われるかと思いますが、それぞれ豊富な種類からカスタマイズすることが可能です。<br class="show--sp"/>自分たちだけのオシャレなマイホームが完成します。</p>
 
 						<div class="select-title step7">
-							<p>いえとち本舗の選び方7ステップ</p>
+							<p>RicoLifeの選び方7ステップ</p>
 							<ol>
 								<li>住みたい場所(土地)を選ぶ</li>
 								<li>大きさ・間取りを選ぶ</li>
@@ -207,7 +207,7 @@ zeh
 				<div class="pc-flex">
 					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail4.png" alt="">
 					<div class="about-detail-message">
-						<p>日本は地震大国です。何十年も暮らすマイホームだからこそ地震に強い耐震性と耐久性が大切です。『いえとち本舗』は基礎工事から内装工事に至るまで耐久性とエコロジーを取り入れ、レベルの高い性能を実現しています。凹凸のないハコ型にすることで、地震に対して構造部分の強さを保つだけでなく、建物価格を低く抑えることができます。また規格化した物件だからこそ、一定の品質を保ちます。</p>
+						<p>日本は地震大国です。何十年も暮らすマイホームだからこそ地震に強い耐震性と耐久性が大切です。『RicoLife』は基礎工事から内装工事に至るまで耐久性とエコロジーを取り入れ、レベルの高い性能を実現しています。凹凸のないハコ型にすることで、地震に対して構造部分の強さを保つだけでなく、建物価格を低く抑えることができます。また規格化した物件だからこそ、一定の品質を保ちます。</p>
 					</div>
 				</div>
 			</div>
@@ -217,7 +217,7 @@ zeh
 				<div class="pc-flex">
 					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail5.png" alt="">
 					<div class="about-detail-message">
-						<p>マイホームを建てる時には土地探しも重要になります。現地見学をして周辺の環境を確かめたり、物件を含めた全体予算をしっかりと算出したりと、面倒なことがたくさんあります。いえとち本舗は、「家」も「土地」もセットでご提案いたしますのでご安心ください。地元密着で70年の情報力と提案力でサポートいたします。</p>
+						<p>マイホームを建てる時には土地探しも重要になります。現地見学をして周辺の環境を確かめたり、物件を含めた全体予算をしっかりと算出したりと、面倒なことがたくさんあります。RicoLifeは、「家」も「土地」もセットでご提案いたしますのでご安心ください。地元密着で70年の情報力と提案力でサポートいたします。</p>
 					</div>
 				</div>
 			</div>
@@ -603,7 +603,7 @@ low-price
 ); ?>/images/house-bg.svg" alt="低価格のポイント2" data-eio="l"></noscript>
           <div class="content__inner">
           <h4>共同で購入！</h4>
-          <p>いえとち本舗では全国のフランチャイズ加盟店と建材を共同購入することで、流通コストを削減しています。</p>
+          <p>RicoLifeでは全国のフランチャイズ加盟店と建材を共同購入することで、流通コストを削減しています。</p>
           </div>
         </div>
         <div class="content uk-width-1-3@s">
@@ -757,8 +757,8 @@ wp_reset_postdata();
 
           	$my_query->the_post();
           	$name = get_the_title(); //名称
-          	$cat = get_field("case-cat")->name; //カテゴリ名称
-          	//画像
+          	$cat = get_field("case-cat")->name; //画像
+          	//カテゴリ名称
           	$img_id1 = get_field("pic1");
           	$img_url1 = wp_get_attachment_image_src($img_id1, "large")[0];
           	$industry = get_field("case-industry"); //業種
@@ -798,7 +798,7 @@ wp_reset_postdata();
 <section class="points3 section">
   <div class=" inner">
     <div class="points3__title">
-			<h2 class="about-ttl">いえとち本舗をもっと</br>知れる3つの強み・特徴</h2>
+			<h2 class="about-ttl">RicoLifeをもっと</br>知れる3つの強み・特徴</h2>
     </div>
 
     <div>

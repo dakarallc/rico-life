@@ -32,7 +32,7 @@ staffItem
     <div class="inner staffItem__inner">
       <h1 class="staffItem__ttl wow fadeInUp"><?php echo $name; ?></h1><!-- /staffItem__ttl -->
       <?php if ($departments): ?>
-      <p class="staffItem__txt wow fadeInUp">いえとち本舗久喜店　<?php echo $departments[0]->name; ?></p>
+      <p class="staffItem__txt wow fadeInUp">RicoLife久喜店　<?php echo $departments[0]->name; ?></p>
       <?php endif; ?>
 
       <div class="staffItem__main wow fadeInUp">
@@ -65,7 +65,7 @@ staffItem
       <?php endif; ?>
 
       <?php if ($about_ietochi): ?>
-			<h2 class="sectionTitle">いえとち本舗とは</h2>
+			<h2 class="sectionTitle">RicoLifeとは</h2>
       <div class="staffItem__box wow fadeInUp">
         <p class="staffItem__desc"><?php echo $about_ietochi; ?></p>
       </div><!-- /staffItem__box -->

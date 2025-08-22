@@ -220,7 +220,7 @@ post
 
 							１）マイホームをご検討中の方。<br>
 
-							２）はじめて、いえとち本舗 久喜店のイベントに参加された方。<br>
+							２）はじめて、RicoLife 久喜店のイベントに参加された方。<br>
 
 							※ご来場プレゼントは1回限りとなります。<br>
 
@@ -270,11 +270,11 @@ post
 
     
       
-      <!-- いえとち本舗の家づくり -->
+      <!-- RicoLifeの家づくり -->
       <div class="homeMadeWrap">
         <h2 class="homeMade__ttl  wow fadeInUp"><img src="<?php echo do_shortcode(
         	"[theme_url]",
-        ); ?>/assets/img/event/logo.png"  alt="いえとち本舗" data-src="<?php echo do_shortcode(
+        ); ?>/assets/img/event/logo.png"  alt="RicoLife" data-src="<?php echo do_shortcode(
 	"[theme_url]",
 ); ?>/img/event/logo.png" class="logo lazyloaded">の家づくり</h2><!-- /homeMade__ttl -->
         <section class="homeMade">

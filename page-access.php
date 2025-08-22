@@ -27,7 +27,7 @@ company
     <div class="inner company_inner">
 
       <div class="kv">
-        <h2 class="kv__ttl wow fadeInUp">いえとち本舗久喜店
+        <h2 class="kv__ttl wow fadeInUp">RicoLife久喜店
         </h2><!-- /kv__ttl -->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.7909847172805!2d139.6698563156286!3d36.0742018801046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c9fc2765e6cb%3A0xa40df5669086fcda!2z44GE44GI44Go44Gh5pys6IiX5LmF5Zac5bqX!5e0!3m2!1sja!2sjp!4v1635433511470!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div><!-- /kv -->

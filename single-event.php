@@ -273,12 +273,12 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/jcb7000.png" alt="JCB 7000円分">
       </div>
 
-      <!-- いえとち本舗の家づくり -->
+      <!-- RicoLifeの家づくり -->
       <div class="homeMadeWrap">
         <h2 class="homeMade__ttl wow fadeInUp">
           <img src="<?php echo do_shortcode(
           	"[theme_url]",
-          ); ?>/assets/img/event/logo.png" alt="いえとち本舗" class="logo">の家づくり
+          ); ?>/assets/img/event/logo.png" alt="RicoLife" class="logo">の家づくり
         </h2>
 
         <section class="homeMade">
@@ -458,7 +458,7 @@
 						下記に該当するお客様1組様につき<br class="show--pc">1回の進呈とさせていただきます。
 						<br>
 						１）マイホームをご検討中の方。<br>
-						２）はじめて、いえとち本舗 久喜店のイベントに参加された方。
+						２）はじめて、RicoLife 久喜店のイベントに参加された方。
 					</p>
 
 					<p class="note">

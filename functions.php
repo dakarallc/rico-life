@@ -301,7 +301,7 @@ function page_is_ancestor_of($slug) {
  */
 // function  archive_description($description){
 //   if(is_post_type_archive('case')){
-//     $description = 'いえとち本舗久喜店の施工事例です。';
+//     $description = 'RicoLife久喜店の施工事例です。';
 //   }
 //   return $description;
 // }

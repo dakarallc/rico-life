@@ -175,7 +175,7 @@ hiraya-massage
         <div class="meritto wow fadeInUp">
           
           <div>
-            <p>いえとち本舗が誇るコストダウンのノウハウを活用し<br>
+            <p>RicoLifeが誇るコストダウンのノウハウを活用し<br>
               　<span class="orange ">圧倒的低価格</span>でご提供可能に！</p>
           </div>
           <img src="https://ietochi-kuki.com/wp-content/themes/ietochi/assets/img/hiraya/tokucho02.png" alt="" class="ls-is-cached lazyloaded ">
@@ -224,7 +224,7 @@ hiraya-massage
         <div class="meritto wow fadeInUp">
           
           <div>
-            <p>いえとち本舗久喜店を運営する㈱カクダイホームは</p>
+            <p>RicoLife久喜店を運営する㈱カクダイホームは</p>
             <p class="orange line">創業70年</p>
             <p>の総合不動産のカクダイグループ企業です。
               地域とともに成長し、その実績が信頼の証です。

@@ -95,13 +95,13 @@ EVENT
 
 		<img src="<?php echo do_shortcode(
   	"[theme_url]",
-  ); ?>/assets/img/lp/lp3.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode(
+  ); ?>/assets/img/lp/lp3.png" alt="RicoLifeの平屋" data-src="<?php echo do_shortcode(
 	"[theme_url]",
 ); ?>/assets/img/lp/lp3.png" class="ls-is-cached lazyloaded">
 
 		<img src="<?php echo do_shortcode(
   	"[theme_url]",
-  ); ?>/assets/img/lp/lp4.png" alt="いえとち本舗の平屋" data-src="<?php echo do_shortcode(
+  ); ?>/assets/img/lp/lp4.png" alt="RicoLifeの平屋" data-src="<?php echo do_shortcode(
 	"[theme_url]",
 ); ?>/assets/img/lp/lp4.png" class="ls-is-cached lazyloaded">
 
