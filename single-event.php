@@ -249,9 +249,7 @@
 			<div class="cvButtonLinkWrap">
 					<a href="#contactForm" class="cvButtonLink">
 						<div>
-							<img src="<?php echo do_shortcode(
-								"[theme_url]",
-							); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+							<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
 						</div>
 						<button class="greenBtn">
 							ご来場予約はこちら
@@ -299,7 +297,7 @@
       </div><!-- /contact -->
       <a href="<?php echo do_shortcode(
       	"[home_url]",
-      ); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
+      ); ?>event" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
     </div><!-- /inner post__inner -->
   </section>
 </div>
