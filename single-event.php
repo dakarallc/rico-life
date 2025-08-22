@@ -137,10 +137,6 @@
           </div>
         </div>
 
-        <div class="jcbBanner">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/jcb7000.png" alt="JCB 7000円分">
-        </div>
-
         <div class="cvButtonLinkWrap">
           <a href="#contactForm" class="cvButtonLink">
             <div>
@@ -269,140 +265,6 @@
         </a>
       </div>
 
-      <div class="jcbBanner">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/jcb7000.png" alt="JCB 7000円分">
-      </div>
-
-      <!-- RicoLifeの家づくり -->
-      <div class="homeMadeWrap">
-        <h2 class="homeMade__ttl wow fadeInUp">
-          <img src="<?php echo do_shortcode(
-          	"[theme_url]",
-          ); ?>/assets/img/event/logo.png" alt="RicoLife" class="logo">の家づくり
-        </h2>
-
-        <section class="homeMade">
-          <div class="homeMade__inner">
-            <div class="homeMade__wrap content-left homeMade1">
-              <div class="homeMade__box box">
-                <p class="number">01</p>
-                <h3 class="homeMade__subTtl">安心の標準装備</h3>
-                <p class="homeMade__txt">太陽光発電と蓄電池がセットで標準装備！上がり続ける電気代を太陽光発電が軽減！</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="homeMade__inner">
-            <div class="homeMade__wrap content-right homeMade2">
-              <div class="homeMade__box box">
-                <p class="number">02</p>
-                <h3 class="homeMade__subTtl">太陽光とセットで固定費を下げる！</h3>
-                <p class="homeMade__txt">オール電化標準対応<br>・IHコンロ<br>・エコキュート etc</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="homeMade__inner">
-            <div class="homeMade__wrap content-left homeMade3">
-              <div class="homeMade__box box">
-                <p class="number">03</p>
-                <h3 class="homeMade__subTtl">地震対策も万全！</h3>
-                <p class="homeMade__txt">ベタ基礎・金物工法を採用<br>耐震等級３相当で地震対策も万全！</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="homeMade__inner">
-            <div class="homeMade__wrap content-right homeMade4">
-              <div class="homeMade__box box">
-                <p class="number">04</p>
-                <h3 class="homeMade__subTtl">吹付け断熱を標準装備！</h3>
-                <p class="homeMade__txt">冬暖かく、夏涼しい。<br>２０３０年基準の断熱等級５対応！</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="cvButtonLinkWrap">
-          <a href="#contactForm" class="cvButtonLink">
-            <div>
-              <img src="<?php echo do_shortcode(
-              	"[theme_url]",
-              ); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="planImg">
-            </div>
-            <button class="cvButtonLink__button" <?php echo $event_status === "endEvent" ? "disabled" : ""; ?>>
-              <span>ご来場予約はこちら</span>
-              <img src="<?php echo do_shortcode(
-              	"[theme_url]",
-              ); ?>/assets/img/event/arrowRight.png" alt="矢印" class="arrowRight">
-            </button>
-          </a>
-        </div>
-			</div>
-
-      <!-- 豊富な規格プラン -->
-      <section class="eventPlan">
-        <h2 class="eventPlan__ttl wow fadeInUp">豊富な規格プラン</h2>
-        <div class="eventPlan__wrap">
-          <div class="eventPlan__box">
-            <p class="number">01 <span>平屋住宅</span></p>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/plan1.png" alt="平屋住宅" class="eventPlanImg">
-            <div class="subTtlWrap">
-              <h3 class="eventPlan__subTtl">1,198<span>万円〜</span></h3>
-            </div>
-          </div>
-
-          <div class="eventPlan__box">
-            <p class="number">02 <span>コンセプト平屋</span></p>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/plan2.png" alt="コンセプト平屋" class="eventPlanImg">
-            <div class="subTtlWrap">
-              <h3 class="eventPlan__subTtl">1,748<span>万円〜</span></h3>
-            </div>
-          </div>
-
-          <div class="eventPlan__box">
-            <p class="number">03 <span>2階建て</span></p>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/plan3.png" alt="2階建て" class="eventPlanImg">
-            <div class="subTtlWrap">
-              <h3 class="eventPlan__subTtl">1,498<span>万円〜</span></h3>
-            </div>
-          </div>
-
-          <div class="eventPlan__box">
-            <p class="number">04 <span>大型(40坪以上)２階建て</span></p>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/plan4.png" alt="大型2階建て" class="eventPlanImg">
-            <div class="subTtlWrap">
-              <h3 class="eventPlan__subTtl">1,848<span>万円〜</span></h3>
-            </div>
-          </div>
-        </div>
-        <p>※上記プランに表示されている価格は全て税抜価格です</p>
-
-        <div class="cvButtonLinkWrap">
-          <a href="#contactForm" class="cvButtonLink">
-            <div>
-              <img src="<?php echo do_shortcode(
-              	"[theme_url]",
-              ); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="planImg">
-            </div>
-            <button class="cvButtonLink__button" <?php echo $event_status === "endEvent" ? "disabled" : ""; ?>>
-              <span>ご来場予約はこちら</span>
-              <img src="<?php echo do_shortcode(
-              	"[theme_url]",
-              ); ?>/assets/img/event/arrowRight.png" alt="矢印" class="arrowRight">
-            </button>
-          </a>
-        </div>
-      </section>
-
       <!-- 住宅ローン -->
       <section class="housingLoan">
         <div class="housingLoan__img">
@@ -433,49 +295,6 @@
       </section>
     </div>
 
-		<div class="event-message">
-			<div class="event-highlights">
-				<h3 class="yellow marugo">💫⭐️ご来場特典⭐️💫</h3>
-				<p>
-					<span class="orange marugo">HP予約からでJCB券</span><br>
-					<span class="orange marugo">最大7,000円分</span>プレゼント！！
-				</p>
-
-				<div class="cashBack">
-					<div class="bgRed">【カクダイホームの70周年特別企画】</div>
-					<p>
-						下記条件で<br class="show--sp"最大7,000円分キャンペーン<br>
-						①当HP予約からのご来場<br>
-						<span class="orange marugo">2,000円分</span><br>
-						②ご来場アンケート記入<br>
-						<span class="orange marugo">2,000円分</span><br>
-						③Google口コミ記入<br>
-						<span class="orange marugo">3,000円分</span>
-					</p>
-
-					<p>
-						<strong>【対象者条件】</strong><br>
-						下記に該当するお客様1組様につき<br class="show--pc">1回の進呈とさせていただきます。
-						<br>
-						１）マイホームをご検討中の方。<br>
-						２）はじめて、RicoLife 久喜店のイベントに参加された方。
-					</p>
-
-					<p class="note">
-						※ご来場プレゼントは1回限りとなります。<br>
-						※その他、不正行為と弊社がみなした場合、プレゼント提供をお断りする場合がございます。<br>
-						※プレゼントの進呈数は限りがあり、なくなり次第終了となります。
-					</p>
-
-					<p>
-						現場見学会<br class="show--sp">ローン相談<br class="show--sp">土地探し<br class="show--sp">プラン相談<br>
-						どんなご相談でも<br class="show--sp">来場特典プレゼント！！<br>
-						詳しくはこちらより、来場予約お待ちしております。
-					</p>
-				</div>
-			</div>
-		</div>
-
       <!-- フォーム -->
       <div class="contact wow fadeInUp" id="contactForm">
         <div class="inner contact__inner">
@@ -489,7 +308,6 @@
       ); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
     </div><!-- /inner post__inner -->
   </section>
-	
 </div>
 
 <?php get_footer(); ?>

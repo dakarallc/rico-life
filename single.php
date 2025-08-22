@@ -93,10 +93,7 @@ post
             </div><!-- /caseItem__list -->
           </div><!-- /caseItem__mainContents -->
         </div><!-- /caseItem__main -->
-			
-        <div class="jcbBanner">
-        	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/jcb7000.png" alt="JCB 7000円分">
-        </div>
+		
 
 				<div class="cvButtonLinkWrap">
           <a href="#contactForm" class="cvButtonLink">
@@ -263,18 +260,13 @@ post
         </a>
       </div> -->
 
-			<div class="jcbBanner">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/jcb7000.png" alt="JCB 7000円分">
-			</div>
-
-
     
       
       <!-- RicoLifeの家づくり -->
       <div class="homeMadeWrap">
         <h2 class="homeMade__ttl  wow fadeInUp"><img src="<?php echo do_shortcode(
         	"[theme_url]",
-        ); ?>/assets/img/event/logo.png"  alt="RicoLife" data-src="<?php echo do_shortcode(
+        ); ?>/assets/img/common/logo.svg"  alt="RicoLife" data-src="<?php echo do_shortcode(
 	"[theme_url]",
 ); ?>/img/event/logo.png" class="logo lazyloaded">の家づくり</h2><!-- /homeMade__ttl -->
         <section class="homeMade">

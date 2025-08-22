@@ -9783,11 +9783,6 @@ contact
   justify-content: space-around;
 }
 
-.jcbBanner {
-  margin: 0 auto 30px;
-  max-width: 600px;
-}
-
 @media (max-width: 999px) {
   .post .madori__inner {
     display: block;
@@ -10016,7 +10011,7 @@ plan
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  border: 1px solid #F2000F;
+  border: 1px solid #a0b5a7;
   border-radius: 6px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -10084,7 +10079,7 @@ plan
 }
 
 .housingLoan .listWrap {
-  background: #F2000F;
+  background: #a0b5a7;
   border-radius: 6px;
   color: #fff;
   gap: 20px;
