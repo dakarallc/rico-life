@@ -88,7 +88,7 @@ Template Name: TOP
 	</section>
 
 	<!-- WORKS -->
-	<!-- <section class="case">
+	<section class="case">
 		<div class="inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">WORKS
@@ -153,7 +153,11 @@ Template Name: TOP
 			<?php wp_reset_postdata(); ?>
 			</div>
 		</div>
-	</section> -->
+
+		<div class="btnWrap">
+			<a href="<?php echo esc_url(home_url("/case")); ?>" class="primaryBtn">施工事例はこちら</a>
+		</div>
+	</section>
 
 	<!-- EVENT -->
 	<?php get_template_part("template-parts/eventArea"); ?>

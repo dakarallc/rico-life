@@ -126,7 +126,7 @@
 				</div>
 			</div> -->
 
-			<!-- <div class="linkList">
+			<div class="linkList">
 				<div class="ttlWrap">
 					<h2 class="section-ttl">LINK
 						<span>リンク集</span>
@@ -134,9 +134,9 @@
 				</div>
 				<nav class="footerNav">
 					<ul>
-						<li><a href="#">コンセプト</a></li>
-						<li><a href="#">施工事例</a></li>
-						<li><a href="#">間取り</a></li>
+						<li><a href="<?php echo esc_url(home_url("/concept")); ?>">コンセプト</a></li>
+						<li><a href="<?php echo esc_url(home_url("/case")); ?>">施工事例</a></li>
+						<!-- <li><a href="#">間取り</a></li>
 						<li><a href="#">ソーラー＆蓄電池</a></li>
 						<li><a href="#">標準仕様</a></li>
 						<li><a href="#">コスト</a></li>
@@ -147,10 +147,10 @@
 						<li><a href="#">会社概要</a></li>
 						<li><a href="#">Privacy Policy</a></li>
 						<li><a href="#">コラム</a></li>
-						<li><a href="#">ニュース</a></li>
+						<li><a href="#">ニュース</a></li> -->
 					</ul>
 				</nav>
-			</div> -->
+			</div>
 
 			<div>
 				<div class="info">
