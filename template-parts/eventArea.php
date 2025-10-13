@@ -8,18 +8,19 @@
 		</div>
 
 		<?php
-		$args = [
-			'post_type' => 'event',
-			'posts_per_page' => 5,
-			'orderby' => 'date',
-			'order' => 'DESC',
-		];
-		$event_query = new WP_Query($args);
+  $args = [
+  	"post_type" => "event",
+  	"posts_per_page" => 5,
+  	"orderby" => "date",
+  	"order" => "DESC",
+  ];
+  $event_query = new WP_Query($args);
 
-		if ($event_query->have_posts()):
-			$event_count = $event_query->found_posts;
-			$use_slider = $event_count > 1;
-		?>
+  if ($event_query->have_posts()):
+
+  	$event_count = $event_query->found_posts;
+  	$use_slider = $event_count > 1;
+  	?>
 			<?php if ($use_slider): ?>
 				<div class="event__slider swiper eventSwiper">
 					<div class="swiper-wrapper">
@@ -28,16 +29,30 @@
 			<?php endif; ?>
 
 				<?php while ($event_query->have_posts()):
-					$event_query->the_post();
-					$is_always = get_field('is_always');
-					$event_pic = get_field('event-pic');
-					$start_date = get_field('event_start_date');
-					$end_date = get_field('event_end_date');
-					$start_time = get_field('event_start_time');
-					$end_time = get_field('event_end_time');
-					$address = get_field('address');
-				?>
-						<div class="<?php echo $use_slider ? 'event__slide swiper-slide' : 'event__item'; ?>">
+
+    	$event_query->the_post();
+    	$is_always = get_field("is_always");
+    	$event_pic = get_field("event-pic");
+    	$start_date = get_field("event_start_date");
+    	$end_date = get_field("event_end_date");
+    	$start_time = get_field("event_start_time");
+    	$end_time = get_field("event_end_time");
+    	$address = get_field("address");
+    	$categories = get_the_terms(get_the_ID(), "event_category");
+    	$is_kansei_kengaku = false;
+    	if ($categories && !is_wp_error($categories)) {
+    		foreach ($categories as $category) {
+    			// 完成見学会として表示するカテゴリー以外の場合
+    			if ($category->slug === "actual-house-tours") {
+    				$is_kansei_kengaku = false;
+    				break;
+    			} else {
+    				$is_kansei_kengaku = true;
+    			}
+    		}
+    	}
+    	?>
+						<div class="<?php echo $use_slider ? "event__slide swiper-slide" : "event__item"; ?>">
 							<a href="<?php echo esc_url(get_permalink()); ?>" class="event__container">
 								<div class="event__image">
 									<img src="<?php echo esc_url($event_pic); ?>" alt="<?php the_title(); ?>">
@@ -45,7 +60,11 @@
 								<div class="event__info">
 									<h3 class="event__main-title"><?php the_title(); ?></h3>
 									<hr class="event__divider">
-									<p>完成見学会 ※完全予約制</p>
+									<?php if ($is_kansei_kengaku): ?>
+										<p>完成見学会 ※完全予約制</p>
+									<?php else: ?>
+										<p>※完全予約制</p>
+									<?php endif; ?>
 									<div class="event__row">
 										<span class="event__icon"><i class="fa-regular fa-calendar"></i></span>
 										<span class="event__date">
@@ -63,7 +82,8 @@
 								</div>
 							</a>
 						</div>
-					<?php endwhile; ?>
+					<?php
+    endwhile; ?>
 
 			<?php if ($use_slider): ?>
 					</div>
@@ -75,9 +95,12 @@
 			<?php endif; ?>
 			
 			<?php wp_reset_postdata(); ?>
-		<?php else: ?>
+		<?php
+  else:
+  	 ?>
 			<p>現在、開催中のイベントはありません。</p>
-		<?php endif;
+		<?php
+  endif;
   ?>
 
 		<div class="btnWrap">
