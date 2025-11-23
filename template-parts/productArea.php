@@ -1,12 +1,12 @@
 
 	<!-- PRODUCTS -->
 	<section class="product">
+		<div class="ttlWrap">
+			<h2 class="section-ttl">PRODUCTS
+				<span>商品概要</span>
+			</h2>
+		</div>
 		<div class="inner">
-			<div class="ttlWrap">
-				<h2 class="section-ttl">PRODUCTS
-					<span>商品概要</span>
-				</h2>
-			</div>
 			<div class="product__list">
 				<div class="product__item">
 					<a href="#">
@@ -15,7 +15,7 @@
 					</a>
 				</div>
 				<div class="product__item">
-					<a href="#">
+					<a href="<?php echo esc_url(home_url("/storage-battery")); ?>">
 						<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/product2.png" alt="ソーラー＆蓄電池">
 						<div class="product__label">ソーラー＆蓄電池</div>
 					</a>

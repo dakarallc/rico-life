@@ -626,6 +626,27 @@ h5 {
 }
 
 /* ==========================================================================
+  badge
+  ========================================================================== */
+.badge {
+	background: #648ea3;
+	border-radius: 20px;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 500;
+	margin-left: 10px;
+	padding: 6px 16px;
+}
+@media (max-width: 999px) {
+	.badge {
+		font-size: 12px;
+		margin-left: 5px;
+		padding: 4px 12px;
+	}
+}
+
+/* ==========================================================================
   topLink
   ========================================================================== */
 .topLink {
@@ -1039,6 +1060,7 @@ h5 {
 	min-width: initial;
 	width: auto;
 }
+
 /* ==========================================================================
   ボタン
   ========================================================================== */
@@ -1186,8 +1208,8 @@ h5 {
 }
 
 /* ==========================================================================
-contact
-========================================================================== */
+  contact
+  ========================================================================== */
 .contact-page {
 	background: #f4f6f8;
 }
@@ -1363,6 +1385,38 @@ contact
 		width: 100%;
 	}
 }
+.contact__contents input[type="text"]::-webkit-input-placeholder,
+.contact__contents input[type="email"]::-webkit-input-placeholder,
+.contact__contents input[type="tel"]::-webkit-input-placeholder,
+.contact__contents textarea::-webkit-input-placeholder,
+.contact__contents select::-webkit-input-placeholder {
+	color: #acacac;
+}
+
+.contact__contents input[type="text"]::-moz-placeholder,
+.contact__contents input[type="email"]::-moz-placeholder,
+.contact__contents input[type="tel"]::-moz-placeholder,
+.contact__contents textarea::-moz-placeholder,
+.contact__contents select::-moz-placeholder {
+	color: #acacac;
+}
+
+.contact__contents input[type="text"]:-ms-input-placeholder,
+.contact__contents input[type="email"]:-ms-input-placeholder,
+.contact__contents input[type="tel"]:-ms-input-placeholder,
+.contact__contents textarea:-ms-input-placeholder,
+.contact__contents select:-ms-input-placeholder {
+	color: #acacac;
+}
+
+.contact__contents input[type="text"]::-ms-input-placeholder,
+.contact__contents input[type="email"]::-ms-input-placeholder,
+.contact__contents input[type="tel"]::-ms-input-placeholder,
+.contact__contents textarea::-ms-input-placeholder,
+.contact__contents select::-ms-input-placeholder {
+	color: #acacac;
+}
+
 .contact__contents input[type="text"]::-webkit-input-placeholder,
 .contact__contents input[type="email"]::-webkit-input-placeholder,
 .contact__contents input[type="tel"]::-webkit-input-placeholder,
@@ -12756,6 +12810,9 @@ us
 	}
 }
 
+.storageBattery .fv__ttl {
+	color: #fff;
+}
 .storageBattery .products__inner {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -12767,6 +12824,10 @@ us
 	-ms-flex-direction: column;
 	flex-direction: column;
 	gap: 60px;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 .storageBattery .products__img {
 	max-width: 300px;
@@ -12791,6 +12852,271 @@ us
 	text-align: left;
 	vertical-align: top;
 	width: 100px;
+}
+.storageBattery .productDetail {
+	background: #fff;
+	padding: 60px 0;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail {
+		padding: 40px 0;
+	}
+}
+.storageBattery .productDetail__inner {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 20px;
+}
+.storageBattery .productDetail__images {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	margin-bottom: 40px;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__images {
+		gap: 20px;
+		grid-template-columns: 1fr;
+		margin-bottom: 30px;
+	}
+}
+.storageBattery .productDetail__images--single {
+	grid-template-columns: 1fr;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+}
+.storageBattery .productDetail__image {
+	aspect-ratio: 4/5;
+	background: #fff;
+	border-radius: 8px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 20px;
+}
+.storageBattery .productDetail__image--battery {
+	aspect-ratio: 4/5;
+	background: #fff;
+}
+.storageBattery .productDetail__image img {
+	height: 100%;
+	width: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+.storageBattery .productDetail__brand {
+	margin-bottom: 30px;
+	text-align: center;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__brand {
+		margin-bottom: 20px;
+	}
+}
+.storageBattery .productDetail__brandLogo {
+	height: auto;
+	margin-bottom: 15px;
+	max-width: 200px;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__brandLogo {
+		margin-bottom: 10px;
+		max-width: 150px;
+	}
+}
+.storageBattery .productDetail__brandLogo--tesla {
+	max-width: 300px;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__brandLogo--tesla {
+		max-width: 220px;
+	}
+}
+.storageBattery .productDetail__brandText {
+	color: #333;
+	font-size: 48px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	line-height: 1.2;
+	margin: 0 0 15px 0;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__brandText {
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+}
+.storageBattery .productDetail__brandText--tesla {
+	font-size: 60px;
+	letter-spacing: 0.15em;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__brandText--tesla {
+		font-size: 42px;
+	}
+}
+.storageBattery .productDetail__brandSub {
+	display: block;
+	font-size: 32px;
+	letter-spacing: 0.15em;
+	margin-top: 5px;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__brandSub {
+		font-size: 24px;
+	}
+}
+.storageBattery .productDetail__brandName {
+	color: #333;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__brandName {
+		font-size: 16px;
+	}
+}
+.storageBattery .productDetail__warranties {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	gap: 40px;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__warranties {
+		gap: 20px;
+		margin-bottom: 30px;
+	}
+}
+.storageBattery .productDetail__warranties--single {
+	gap: 0;
+}
+.storageBattery .productDetail__warranty {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.storageBattery .productDetail__warrantyBadge {
+	background: #d32f2f;
+	border-radius: 50%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 140px;
+	width: 140px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	color: #fff;
+	justify-content: center;
+	-webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__warrantyBadge {
+		height: 110px;
+		width: 110px;
+	}
+}
+.storageBattery .productDetail__warrantyBadge--quality {
+	background: #d32f2f;
+}
+.storageBattery .productDetail__warrantyLabel {
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__warrantyLabel {
+		font-size: 12px;
+		margin-bottom: 4px;
+	}
+}
+.storageBattery .productDetail__warrantyYears {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__warrantyYears {
+		font-size: 38px;
+	}
+}
+.storageBattery .productDetail__warrantyYears small {
+	font-size: 24px;
+	margin-left: 4px;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__warrantyYears small {
+		font-size: 20px;
+	}
+}
+.storageBattery .productDetail__description {
+	margin: 0 auto;
+	max-width: 800px;
+	text-align: center;
+}
+.storageBattery .productDetail__catchCopy {
+	color: #333;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__catchCopy {
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+}
+.storageBattery .productDetail__text {
+	color: #333;
+	font-size: 20px;
+	line-height: 1.8;
+	margin: 0;
+}
+@media (max-width: 999px) {
+	.storageBattery .productDetail__text {
+		font-size: 16px;
+	}
 }
 
 .lp {

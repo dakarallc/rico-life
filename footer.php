@@ -136,8 +136,8 @@
 					<ul>
 						<li><a href="<?php echo esc_url(home_url("/concept")); ?>">コンセプト</a></li>
 						<li><a href="<?php echo esc_url(home_url("/case")); ?>">施工事例</a></li>
+						<li><a href="<?php echo esc_url(home_url("/storage-battery")); ?>">ソーラー＆蓄電池</a></li>
 						<!-- <li><a href="#">間取り</a></li>
-						<li><a href="#">ソーラー＆蓄電池</a></li>
 						<li><a href="#">標準仕様</a></li>
 						<li><a href="#">コスト</a></li>
 						<li><a href="#">家づくりの流れ</a></li>

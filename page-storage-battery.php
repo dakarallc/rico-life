@@ -31,24 +31,114 @@ Template Name: ソーラー&蓄電池
 					<span>商品概要</span>
 				</h2>
 			</div>
+			
 
 			<div class="catch">
 				<h3 >
-					新しいカタチの<br class="show--sp">規格プラン方式
+					ソーラー＆蓄電池
 				</h3>
 			</div>
 
 			<div class="products__img">
 				<img src="<?php echo do_shortcode(
     	"[theme_url]",
-    ); ?>/assets/img/plan-of-house/products.png" alt="新しいカタチの規格プラン方式">
+    ); ?>/assets/img/storage-battery/1523to113.svg" alt="新しいカタチの規格プラン方式">
 			</div>
 			<div class="products__text">
 				<p>
-					Rico Life.は<br class="show--sp">
-					弊社規格プランに加え、<br>
-					<span class="highlight-yellow">お客様が見つけたプランも</span><br>基準を満たせば、<span class="highlight-yellow">規格プラン価格として建築可能。</span><br>
-					効率的で安心の家づくりを実現します。
+				電気代は40年で<br class="show--sp">
+				15,230,000円支払う可能性があります。<br>
+				<br>
+				ソーラー＆蓄電池が<br class="show--sp">
+				標準装備のRico Life.は<br class="show--sp">
+				僅か<span class="highlight-yellow">1,113,000円に</span>することが出来ます。
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Solar	 -->
+	<section class="productDetail solar">
+		<div class="inner productDetail__inner">
+			<div class="ttlWrap">
+				<h2 class="section-ttl">
+					Solar
+					<span class="badge">標準装備</span>
+					<span>太陽光発電 - 創エネルギーシステム</span>
+				</h2>
+			</div>
+
+			<div class="productDetail__images productDetail__images--single">
+				<div class="productDetail__image">
+					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/storage-battery/solerPanel.png" alt="ソーラーパネル">
+				</div>
+			</div>
+
+			<div class="productDetail__brand">
+				<h3 class="productDetail__brandText">LONGI</h3>
+				<p class="productDetail__brandName">N型バックコンタクトモジュール</p>
+			</div>
+
+			<div class="productDetail__warranties">
+				<div class="productDetail__warranty">
+					<div class="productDetail__warrantyBadge">
+						<span class="productDetail__warrantyLabel">製品保証</span>
+						<span class="productDetail__warrantyYears">30<small>年</small></span>
+					</div>
+				</div>
+				<div class="productDetail__warranty">
+					<div class="productDetail__warrantyBadge productDetail__warrantyBadge--quality">
+						<span class="productDetail__warrantyLabel">品質保証</span>
+						<span class="productDetail__warrantyYears">30<small>年</small></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="productDetail__description">
+				<h3 class="productDetail__catchCopy">
+					世界を牽引する<br>
+					太陽光発電企業が手がけた、
+				</h3>
+				<p class="productDetail__text">
+					30年保証付きの<br>
+					<span class="highlight-yellow">最高峰・次世代ソーラーパネル。</span>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Battery	 -->
+	<section class="productDetail battery">
+		<div class="inner productDetail__inner">
+			<div class="ttlWrap">
+				<h2 class="section-ttl">
+					Battery
+					<span class="badge">標準装備</span>
+					<span>太陽光発電 - 創エネルギーシステム</span>
+				</h2>
+			</div>
+
+			<div class="productDetail__images productDetail__images--single">
+				<div class="productDetail__image productDetail__image--battery">
+					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/storage-battery/tesla.png" alt="Tesla Powerwall">
+				</div>
+			</div>
+
+			<div class="productDetail__warranties productDetail__warranties--single">
+				<div class="productDetail__warranty">
+					<div class="productDetail__warrantyBadge productDetail__warrantyBadge--quality">
+						<span class="productDetail__warrantyLabel">製品保証</span>
+						<span class="productDetail__warrantyYears">10<small>年</small></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="productDetail__description">
+				<h3 class="productDetail__catchCopy">世界をリードする、</h3>
+				<p class="productDetail__text">
+					<span class="highlight-yellow">電気自動車のTESLAが開発。</span><br>
+					次世代の暮らしを支える、<br>
+					家庭用蓄電システム。
 				</p>
 			</div>
 		</div>
@@ -56,7 +146,7 @@ Template Name: ソーラー&蓄電池
 
 	<!-- Free plan	 -->
 	<section class="why conceptSection">
-		<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+		<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/storage-battery/energyBg.png" alt="テーブルの写真">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">Energy
