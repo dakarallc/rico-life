@@ -12080,6 +12080,17 @@ h5 {
 .storageBattery .fv__ttl {
 	color: #fff;
 }
+.storageBattery .ttlWrap {
+	-webkit-align-self: flex-start;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+}
+@media (min-width: 1000px) {
+	.storageBattery .ttlWrap {
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
 .storageBattery .products__inner {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -12128,11 +12139,6 @@ h5 {
 	.storageBattery .productDetail {
 		padding: 40px 0;
 	}
-}
-.storageBattery .productDetail__inner {
-	margin: 0 auto;
-	max-width: 1200px;
-	padding: 0 20px;
 }
 .storageBattery .productDetail__images {
 	display: grid;

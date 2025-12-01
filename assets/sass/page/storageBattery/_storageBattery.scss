@@ -5,6 +5,17 @@
 			color: #fff;
 		}
 	}
+
+	// ページ全体でttlWrapの位置を統一
+	.ttlWrap {
+		align-self: flex-start;
+
+		@include mixin.pc {
+			margin-left: 0;
+			padding-left: 0;
+		}
+	}
+
 	.products {
 		&__inner {
 			display: flex;
@@ -46,12 +57,6 @@
 
 		@include mixin.sp {
 			padding: 40px 0;
-		}
-
-		&__inner {
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 0 20px;
 		}
 
 		&__images {
