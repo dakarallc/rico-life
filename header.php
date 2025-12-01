@@ -115,17 +115,6 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
 
         <!-- SP用メニュー -->
         <div class="spMenu" id="js-spMenu">
-          <div class="spMenu__header">
-            <div class="spMenu__logo">
-              <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/common/logo-black.svg" alt="Rico Life.">
-            </div>
-            <button class="spMenu__close" id="js-spMenuClose">
-              <span></span>
-              <span></span>
-              <span class="spMenu__closeText">とじる</span>
-            </button>
-          </div>
-
           <div class="spMenu__body">
             <h2 class="spMenu__title">TABLE CONTENTS<span>もくじ</span></h2>
 

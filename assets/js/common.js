@@ -44,17 +44,33 @@ jQuery(function () {
 	});
 
 	//SP表示でのヘッダーの切り替え処理（SPメニュー用）
-	jQuery("#js-toggle").click(function () {
-		jQuery("#js-spMenu").addClass("is-open");
-		jQuery("body").css("overflow", "hidden");
-		jQuery("#js-toggle").toggleClass("active");
-	});
+	var $spHeaderLogo = jQuery(".header__logo");
+	var $spLogoImg = $spHeaderLogo.find("img");
+	var spOriginalSrc = $spLogoImg.attr("src");
+	var spBlackLogoSrc = spOriginalSrc ? spOriginalSrc.replace("logo.svg", "logo-black.svg") : "";
 
-	// SPメニューを閉じる
-	jQuery("#js-spMenuClose").click(function () {
-		jQuery("#js-spMenu").removeClass("is-open");
-		jQuery("body").css("overflow", "");
-		jQuery("#js-toggle").removeClass("active");
+	jQuery("#js-toggle").click(function () {
+		if (jQuery("#js-spMenu").hasClass("is-open")) {
+			// 開いている場合は閉じる
+			jQuery("#js-spMenu").removeClass("is-open");
+			jQuery("body").css("overflow", "");
+			jQuery("#js-toggle").removeClass("active");
+			jQuery(".toggle__line").removeClass("is-open");
+			jQuery(".header").removeClass("menu-open");
+			// ロゴを元に戻す（TOPページの場合のみ）
+			if (jQuery(".header._top").length && jQuery(window).scrollTop() <= jQuery(".fv").outerHeight()) {
+				$spLogoImg.attr("src", spOriginalSrc);
+			}
+		} else {
+			// 閉じている場合は開く
+			jQuery("#js-spMenu").addClass("is-open");
+			jQuery("body").css("overflow", "hidden");
+			jQuery("#js-toggle").addClass("active");
+			jQuery(".toggle__line").addClass("is-open");
+			jQuery(".header").addClass("menu-open");
+			// ロゴを黒に変更
+			$spLogoImg.attr("src", spBlackLogoSrc);
+		}
 	});
 
 	// SPメニュー内のリンククリックで閉じる
@@ -62,15 +78,17 @@ jQuery(function () {
 		jQuery("#js-spMenu").removeClass("is-open");
 		jQuery("body").css("overflow", "");
 		jQuery("#js-toggle").removeClass("active");
+		jQuery(".toggle__line").removeClass("is-open");
+		jQuery(".header").removeClass("menu-open");
 	});
 
 	jQuery("#js-overlayer").click(function () {
 		jQuery(this).fadeOut();
 		jQuery("#js-spMenu").removeClass("is-open");
 		jQuery("body").css("overflow", "");
-		if (jQuery("#js-toggle").hasClass("active")) {
-			jQuery("#js-toggle").removeClass("active");
-		}
+		jQuery("#js-toggle").removeClass("active");
+		jQuery(".toggle__line").removeClass("is-open");
+		jQuery(".header").removeClass("menu-open");
 	});
 
 	var mediaQuery = matchMedia("(max-width: 999px)");
@@ -134,37 +152,34 @@ jQuery(function () {
 		);
 	});
 
-	//ヘッダーの色変更処理（KV画像の高さを基準）
-	if (jQuery(".planOfHouse .fv").length) {
-		var header = jQuery(".header");
-		var kvSection = jQuery(".planOfHouse .fv");
-		var headerLogo = jQuery(".header__logo");
-		var logoImg = headerLogo.find("img");
-		var originalSrc = logoImg.attr("src");
+	//ヘッダーの色変更処理（TOPページ：KV通過で白背景・黒アイコン）
+	if (jQuery(".header._top").length) {
+		var $header = jQuery(".header");
+		var $kvSection = jQuery(".fv");
+		var $headerLogo = jQuery(".header__logo");
+		var $logoImg = $headerLogo.find("img");
+		var originalSrc = $logoImg.attr("src");
 		var blackLogoSrc = originalSrc.replace("logo.svg", "logo-black.svg");
 
-		jQuery(window).on("scroll", function () {
-			var kvHeight = kvSection.outerHeight();
-			var scrollTop = jQuery(this).scrollTop();
+		function updateHeaderStyle() {
+			var kvHeight = $kvSection.length ? $kvSection.outerHeight() : 100;
+			var scrollTop = jQuery(window).scrollTop();
 
 			if (scrollTop > kvHeight) {
-				// KVの高さを超えたら黒ヘッダー・黒ロゴ・白背景
-				if (!header.hasClass("_black")) {
-					header.addClass("_black");
-					header.addClass("_whiteBg");
-					headerLogo.attr("data-logo", "black");
-					logoImg.attr("src", blackLogoSrc);
-				}
+				// KV通過したら：背景白、アイコン黒
+				$header.addClass("_black _whiteBg");
+				$headerLogo.attr("data-logo", "black");
+				$logoImg.attr("src", blackLogoSrc);
 			} else {
-				// KV内にいる時は白ヘッダー・白ロゴ・透明背景
-				if (header.hasClass("_black")) {
-					header.removeClass("_black");
-					header.removeClass("_whiteBg");
-					headerLogo.attr("data-logo", "white");
-					logoImg.attr("src", originalSrc);
-				}
+				// KV上にいる時：背景なし、アイコン白
+				$header.removeClass("_black _whiteBg");
+				$headerLogo.attr("data-logo", "white");
+				$logoImg.attr("src", originalSrc);
 			}
-		});
+		}
+
+		jQuery(window).on("scroll", updateHeaderStyle);
+		updateHeaderStyle(); // 初期状態も設定
 	}
 
 	//planTabsの切り替え処理

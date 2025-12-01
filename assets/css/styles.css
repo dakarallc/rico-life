@@ -3290,11 +3290,18 @@ h5 {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
+	/* SPメニューが開いている時は白背景・黒アイコン */
 }
 @media (max-width: 999px) {
 	.header {
 		height: 60px;
 	}
+}
+.header.menu-open {
+	background: #fff;
+}
+.header.menu-open .header__item > a {
+	color: #000;
 }
 .header__inner {
 	-webkit-box-align: center;
@@ -3838,11 +3845,13 @@ h5 {
 	color: #000;
 }
 
-.header__contents.action ~ .toggle__line {
-	color: #000;
+/* メニューが開いている時は常に黒 */
+.toggle.active span {
+	border-bottom-color: #000 !important;
 }
-.header__contents.action ~ .toggle__line .toggle span {
-	border-bottom-color: #000;
+
+.toggle__line.is-open {
+	color: #000;
 }
 
 /* ==========================================================================
@@ -3850,20 +3859,27 @@ h5 {
   ========================================================================== */
 .spMenu {
 	background: #fff;
-	display: none;
-	height: 100%;
+	height: calc(100% - 60px);
 	left: 0;
 	position: fixed;
-	top: 0;
+	top: 60px;
 	width: 100%;
-	z-index: 1000;
+	z-index: 998;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	opacity: 0;
 	overflow-y: auto;
-	/* Header */
+	visibility: hidden;
+	-webkit-transition:
+		opacity 0.35s ease-in-out,
+		visibility 0.35s ease-in-out;
+	display: none;
+	transition:
+		opacity 0.35s ease-in-out,
+		visibility 0.35s ease-in-out;
 	/* Body */
 	/* Navigation List */
 	/* Contact Section */
@@ -3871,78 +3887,15 @@ h5 {
 }
 @media (max-width: 999px) {
 	.spMenu {
-		display: none;
-	}
-	.spMenu.is-open {
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
 	}
-}
-.spMenu__header {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	border-bottom: 1px solid #eee;
-	padding: 15px 20px;
-}
-.spMenu__logo img {
-	height: 32px;
-	width: auto;
-}
-.spMenu__close {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	background: none;
-	border: none;
-	cursor: pointer;
-	padding: 5px;
-}
-.spMenu__close span:not(.spMenu__closeText) {
-	background: #333;
-	display: block;
-	height: 2px;
-	margin: 3px 0;
-	width: 24px;
-}
-.spMenu__close span:not(.spMenu__closeText):first-child {
-	-webkit-transform: rotate(45deg) translateY(5px);
-	transform: rotate(45deg) translateY(5px);
-}
-.spMenu__close span:not(.spMenu__closeText):nth-child(2) {
-	-webkit-transform: rotate(-45deg) translateY(-5px);
-	transform: rotate(-45deg) translateY(-5px);
-}
-.spMenu__closeText {
-	background: transparent !important;
-	color: #333;
-	font-size: 10px;
-	height: auto !important;
-	margin-top: 4px;
-	width: auto !important;
-	-webkit-transform: none !important;
-	transform: none !important;
+	.spMenu.is-open {
+		opacity: 1;
+		visibility: visible;
+	}
 }
 .spMenu__body {
 	-webkit-box-flex: 1;

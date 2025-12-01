@@ -102,13 +102,13 @@
 	}
 }
 
-// メニューが開いている時は常に黒
-.header__contents.action ~ .toggle__line {
-	color: #000;
-
-	.toggle {
-		span {
-			border-bottom-color: #000;
-		}
+/* メニューが開いている時は常に黒 */
+.toggle.active {
+	span {
+		border-bottom-color: #000 !important;
 	}
+}
+
+.toggle__line.is-open {
+	color: #000;
 }
