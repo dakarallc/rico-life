@@ -574,6 +574,8 @@ h5 {
 @media (max-width: 999px) {
 	.ttlWrap {
 		margin-bottom: 20px;
+		margin-left: 0;
+		padding-left: 0;
 	}
 }
 
@@ -644,6 +646,90 @@ h5 {
 		margin-left: 5px;
 		padding: 4px 12px;
 	}
+}
+
+/* ==========================================================================
+  products (共通セクション)
+  ========================================================================== */
+.products {
+	padding: 60px 0;
+}
+@media (max-width: 999px) {
+	.products {
+		padding: 40px 0;
+	}
+}
+.products__inner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 60px;
+}
+@media (max-width: 999px) {
+	.products__inner {
+		gap: 30px;
+	}
+}
+.products .ttlWrap {
+	-webkit-align-self: flex-start;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+}
+@media (min-width: 1000px) {
+	.products .ttlWrap {
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
+.products .catch h3 {
+	font-size: 2.8rem;
+	font-weight: bold;
+	line-height: 1.6;
+}
+@media (max-width: 999px) {
+	.products .catch h3 {
+		font-size: 2rem;
+	}
+}
+.products__img {
+	margin: 0 auto;
+	max-width: 300px;
+}
+@media (max-width: 999px) {
+	.products__img {
+		max-width: 235px;
+	}
+}
+.products__img img {
+	height: auto;
+	width: 100%;
+}
+.products__text p {
+	font-size: 2.2rem;
+	font-weight: bold;
+	line-height: 2;
+}
+@media (max-width: 999px) {
+	.products__text p {
+		font-size: 1.6rem;
+	}
+}
+.products__text p span {
+	font-weight: bold;
+}
+.products__text-value,
+.products__text--value {
+	display: inline-block;
+	margin-right: 30px;
+	text-align: left;
+	vertical-align: top;
+	width: 100px;
 }
 
 /* ==========================================================================
@@ -2354,6 +2440,7 @@ h5 {
 	-ms-flex-pack: center;
 	font-size: 1.2rem;
 	justify-content: center;
+	/* フローティングバナー分のスペース確保 */
 }
 @media screen and (max-width: 499px) {
 	.footer__copyright {
@@ -2367,6 +2454,11 @@ h5 {
 .footer .footer__contents h2 {
 	border-bottom: 1px solid #fff !important;
 	margin-left: -56px;
+}
+@media (max-width: 999px) {
+	.footer .footer__contents h2 {
+		margin-left: 0;
+	}
 }
 .footer .footer__contents .footerContentsInner {
 	display: -webkit-box;
@@ -2383,6 +2475,8 @@ h5 {
 	-webkit-align-items: stretch;
 	-ms-flex-align: stretch;
 	align-items: stretch;
+	/* リンク集 */
+	/* 会社情報 */
 }
 .footer .footer__contents .footerContentsInner .linkList .footerNav {
 	-webkit-box-flex: 2;
@@ -3766,6 +3860,9 @@ h5 {
 	border-bottom-color: #000;
 }
 
+/* ==========================================================================
+  parts
+  ========================================================================== */
 /* ==========================================================================
   agency
   ========================================================================== */
@@ -12100,43 +12197,6 @@ us
 	width: 100px;
 }
 
-.planOfHouse .products__inner {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	gap: 60px;
-}
-.planOfHouse .products__img {
-	max-width: 300px;
-}
-@media (max-width: 999px) {
-	.planOfHouse .products__img {
-		max-width: 235px;
-	}
-}
-.planOfHouse .products__text p {
-	font-size: 2.2rem;
-	font-weight: bold;
-	line-height: 2;
-}
-.planOfHouse .products__text p span {
-	font-weight: bold;
-}
-.planOfHouse .products__text-value,
-.planOfHouse .products__text--value {
-	display: inline-block;
-	margin-right: 30px;
-	text-align: left;
-	vertical-align: top;
-	width: 100px;
-}
-
 .planOfHouse {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -12813,57 +12873,6 @@ us
 .storageBattery .fv__ttl {
 	color: #fff;
 }
-.storageBattery .ttlWrap {
-	-webkit-align-self: flex-start;
-	-ms-flex-item-align: start;
-	align-self: flex-start;
-}
-@media (min-width: 1000px) {
-	.storageBattery .ttlWrap {
-		margin-left: 0;
-		padding-left: 0;
-	}
-}
-.storageBattery .products__inner {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	gap: 60px;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-.storageBattery .products__img {
-	max-width: 300px;
-}
-@media (max-width: 999px) {
-	.storageBattery .products__img {
-		max-width: 235px;
-	}
-}
-.storageBattery .products__text p {
-	font-size: 2.2rem;
-	font-weight: bold;
-	line-height: 2;
-}
-.storageBattery .products__text p span {
-	font-weight: bold;
-}
-.storageBattery .products__text-value,
-.storageBattery .products__text--value {
-	display: inline-block;
-	margin-right: 30px;
-	text-align: left;
-	vertical-align: top;
-	width: 100px;
-}
 .storageBattery .productDetail {
 	background: #fff;
 	padding: 60px 0;
@@ -12871,6 +12880,12 @@ us
 @media (max-width: 999px) {
 	.storageBattery .productDetail {
 		padding: 40px 0;
+	}
+}
+@media (min-width: 1000px) {
+	.storageBattery .productDetail .ttlWrap {
+		margin-left: 0;
+		padding-left: 0;
 	}
 }
 .storageBattery .productDetail__images {

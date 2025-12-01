@@ -4,7 +4,6 @@
   Foundation
   ========================================================================== */
 @use "./foundation/reset";
-// @use "./foundation/variable";
 @use "./foundation/mixin";
 @use "./foundation/base";
 @use "./foundation/keyframe";
@@ -27,12 +26,11 @@
 @use "common/header/pageHead";
 @use "common/header/toggle";
 
-// /* ==========================================================================
-//   parts
-//   ========================================================================== */
+/* ==========================================================================
+  parts
+  ========================================================================== */
 
 @use "page/agency/agency";
-
 
 @use "page/about/about";
 
@@ -58,7 +56,7 @@
 
 @use "page/interview/interview";
 
-@use "page/news/news"  as newsPage;
+@use "page/news/news" as newsPage;
 @use "page/news/post";
 
 @use "page/single/single";
@@ -82,7 +80,6 @@
 @use "page/concept/conceptFv";
 @use "page/concept/concept";
 
-@use "page/planOfHouse/products";
 @use "page/planOfHouse/planOfHouseCommon";
 @use "page/planOfHouse/planOfHouseFv";
 @use "page/planOfHouse/planTabs";
@@ -92,10 +89,3 @@
 @use "page/storageBattery/storageBattery";
 
 @use "page/lp/lp";
-
-
-// /* ==========================================================================
-//   page
-//   ========================================================================== */
-
-// @use "page/*";

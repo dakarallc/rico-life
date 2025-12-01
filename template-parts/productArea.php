@@ -1,12 +1,12 @@
 
 	<!-- PRODUCTS -->
 	<section class="product">
-		<div class="ttlWrap">
-			<h2 class="section-ttl">PRODUCTS
-				<span>商品概要</span>
-			</h2>
-		</div>
 		<div class="inner">
+			<div class="ttlWrap">
+				<h2 class="section-ttl">MENU
+					<span>メニュー</span>
+				</h2>
+			</div>
 			<div class="product__list">
 				<div class="product__item">
 					<a href="#">

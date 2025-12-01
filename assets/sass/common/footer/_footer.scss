@@ -1,32 +1,30 @@
-@use '../../foundation/mixin';
+@use "../../foundation/mixin";
 /* ==========================================================================
   footer
   ========================================================================== */
 
 .footer {
 	color: #fff;
-	
-	.area{
+
+	.area {
 		padding: 30px 0;
 		background-color: #666666;
 		text-align: left;
-		h2{
-			// margin-left: -56px;
+		h2 {
 			border-bottom: 1px solid #fff !important;
 		}
-		.area__inner{
+		.area__inner {
 			display: flex;
 			gap: 30px;
 			column-gap: 70px;
 			@include mixin.sp {
 				flex-direction: column;
-				
 			}
 
 			.area__inner-item {
 				margin-bottom: 32px;
 
-				.prefecture{
+				.prefecture {
 					font-size: 20px;
 					font-weight: bold;
 					margin-bottom: 10px;
@@ -54,13 +52,12 @@
 					}
 				}
 			}
-			
+
 			.saitama-area {
 				display: flex;
 				gap: 24px;
 			}
 
-			
 			@include mixin.sp {
 				.area__inner {
 					flex-direction: column;
@@ -81,54 +78,52 @@
 			letter-spacing: 0.02em;
 		}
 	}
-  line-height: 1.5;
-  padding: 54px 0 0;
-  // text-align: center;
+	line-height: 1.5;
+	padding: 54px 0 0;
 
-  &__txt {
-    &:first-of-type {
-      margin-bottom: 13px;
-    }
-  }
+	&__txt {
+		&:first-of-type {
+			margin-bottom: 13px;
+		}
+	}
 
-  &__copyright {
-    background: transparent linear-gradient(180deg, #a0b5a7 0%, #a0b5a7 100%) 0% 0% no-repeat;
-    height: 25px;
-    color: #fff;
-    margin-top: 49px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    
-    // フローティングバナー分のスペース確保
-    @media screen and (max-width: 499px) {
-      padding-bottom: 84px;
-    }
-  }
+	&__copyright {
+		background: transparent linear-gradient(180deg, #a0b5a7 0%, #a0b5a7 100%) 0% 0% no-repeat;
+		height: 25px;
+		color: #fff;
+		margin-top: 49px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.2rem;
 
-	.footer__contents{
-		background-color: #9CB2AA;
+		/* フローティングバナー分のスペース確保 */
+		@media screen and (max-width: 499px) {
+			padding-bottom: 84px;
+		}
+	}
+
+	.footer__contents {
+		background-color: #9cb2aa;
 		padding: 54px 0;
 
-		h2{
+		h2 {
 			margin-left: -56px;
 			border-bottom: 1px solid #fff !important;
+
+			@include mixin.sp {
+				margin-left: 0;
+			}
 		}
-		
-	
+
 		.footerContentsInner {
 			display: flex;
 			flex-direction: column;
 			gap: 100px;
 			align-items: stretch;
-				//イベント
-			.footer__event {
-				// margin-bottom: 32px;
-			}
-		
-			//リンク集
-			.linkList{
+
+			/* リンク集 */
+			.linkList {
 				.footerNav {
 					flex: 2;
 					ul {
@@ -138,7 +133,7 @@
 						list-style: none;
 						padding: 0;
 						margin: 0;
-				
+
 						@include mixin.sp {
 							grid-template-columns: 1fr;
 							gap: 8px 0;
@@ -147,14 +142,16 @@
 							border-bottom: 1px solid #fff;
 							padding: 6px 0;
 							position: relative;
-							padding-left: 1.2em; // ＞分の余白
+							padding-left: 1.2em;
+
+							// ＞分の余白
 
 							&::before {
 								content: "＞";
 								position: absolute;
 								left: 0;
-								top: 50%; // 上下中央配置のため
-								transform: translateY(-50%); // 上下中央配置のため
+								top: 50%;
+								transform: translateY(-50%);
 								color: #fff;
 								font-size: 0.6em;
 							}
@@ -170,10 +167,10 @@
 							}
 						}
 					}
+				}
 			}
-			}
-			
-			//会社情報
+
+			/* 会社情報 */
 			.info {
 				flex: 1;
 				display: flex;
@@ -188,7 +185,6 @@
 				}
 
 				.footer__company {
-					
 					line-height: 2;
 					.footer__logo {
 						width: 300px;
@@ -203,7 +199,7 @@
 						}
 					}
 				}
-				
+
 				.footer__map {
 					width: 100%;
 					height: 220px;
@@ -215,7 +211,7 @@
 					font-size: 2rem;
 					border-radius: 8px;
 					overflow: hidden;
-				
+
 					@include mixin.sp {
 						width: 100%;
 						max-width: 100%;
@@ -229,7 +225,7 @@
 						display: block;
 					}
 				}
-				
+
 				.footer__sns {
 					display: flex;
 					gap: 16px;
@@ -248,8 +244,7 @@
 	}
 }
 
-
-.fixedMenu+.footer__contents {
+.fixedMenu + .footer__contents {
 	@include mixin.sp {
 		padding-top: 50px;
 	}

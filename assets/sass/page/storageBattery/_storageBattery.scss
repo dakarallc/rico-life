@@ -6,50 +6,6 @@
 		}
 	}
 
-	// ページ全体でttlWrapの位置を統一
-	.ttlWrap {
-		align-self: flex-start;
-
-		@include mixin.pc {
-			margin-left: 0;
-			padding-left: 0;
-		}
-	}
-
-	.products {
-		&__inner {
-			display: flex;
-			flex-direction: column;
-			gap: 60px;
-			align-items: center;
-		}
-
-		&__img {
-			max-width: 300px;
-			@include mixin.sp {
-				max-width: 235px;
-			}
-		}
-		&__text {
-			p {
-				font-size: 2.2rem;
-				line-height: 2;
-				font-weight: bold;
-				span {
-					font-weight: bold;
-				}
-			}
-			&-value,
-			&--value {
-				display: inline-block;
-				width: 100px;
-				margin-right: 30px;
-				text-align: left;
-				vertical-align: top;
-			}
-		}
-	}
-
 	// Product Detail Section
 	.productDetail {
 		background: #fff;
@@ -57,6 +13,13 @@
 
 		@include mixin.sp {
 			padding: 40px 0;
+		}
+
+		.ttlWrap {
+			@include mixin.pc {
+				margin-left: 0;
+				padding-left: 0;
+			}
 		}
 
 		&__images {
