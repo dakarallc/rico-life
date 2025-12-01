@@ -65,26 +65,18 @@
 		}
 
 		@include mixin.sp {
-			background: #f8f8f8;
-			flex-direction: column;
-			height: 100%;
-			max-width: 500px;
-			padding: 40px 20px;
-			position: fixed;
-			right: 0;
-			top: 60px;
-			transform: translateX(140%);
-			transition: 0.3s;
-			width: 77%;
-			z-index: 999;
-
-			&.action {
-				transform: translateX(0);
-			}
+			display: none;
 		}
 
 		@include mixin.pc {
 			width: 100%;
+		}
+
+		/* PC用メニュー専用 */
+		&--pc {
+			@include mixin.sp {
+				display: none !important;
+			}
 		}
 	}
 

@@ -81,7 +81,8 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
 ); ?>/assets/img/common/logo-black.svg" alt="rico life"></a></div>
       <?php endif; ?>
         <!-- /header__logo -->
-        <div class="header__contents" id="js-headerContents">
+        <!-- PC用メニュー -->
+        <div class="header__contents header__contents--pc">
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
@@ -97,7 +98,7 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
                 </a>
               </li>
               <li class="header__item">
-                <a href="<?php echo do_shortcode("[home_url]"); ?>request" > 
+                <a href="<?php echo do_shortcode("[home_url]"); ?>request" >
 								<i class="fa-solid fa-book-open fa-xl"></i>
                   <p class="_below">お問い合わせ</p>
                 </a>
@@ -110,6 +111,73 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
               </li>
             </ul>
           </nav>
+        </div>
+
+        <!-- SP用メニュー -->
+        <div class="spMenu" id="js-spMenu">
+          <div class="spMenu__header">
+            <div class="spMenu__logo">
+              <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/common/logo-black.svg" alt="Rico Life.">
+            </div>
+            <button class="spMenu__close" id="js-spMenuClose">
+              <span></span>
+              <span></span>
+              <span class="spMenu__closeText">とじる</span>
+            </button>
+          </div>
+
+          <div class="spMenu__body">
+            <h2 class="spMenu__title">TABLE CONTENTS<span>もくじ</span></h2>
+
+            <nav class="spMenu__nav">
+              <ul class="spMenu__list">
+                <li><a href="<?php echo do_shortcode("[home_url]"); ?>">TOP</a></li>
+                <li><a href="<?php echo do_shortcode("[home_url]"); ?>concept">コンセプト</a></li>
+                <li><a href="<?php echo do_shortcode("[home_url]"); ?>case">施工事例</a></li>
+                <li><a href="<?php echo do_shortcode("[home_url]"); ?>event">イベント情報</a></li>
+                <li><a href="<?php echo do_shortcode("[home_url]"); ?>plan-of-house">間取り</a></li>
+                <li><a href="<?php echo do_shortcode("[home_url]"); ?>storage-battery">ソーラー＆蓄電池</a></li>
+                <!-- <li><a href="#">標準仕様</a></li>
+                <li><a href="#">コスト</a></li>
+                <li><a href="#">家づくりの流れ</a></li> -->
+                <!-- <li><a href="#">Rico Life.ch</a></li>
+                <li><a href="<?php echo do_shortcode("[home_url]"); ?>interview">お客様インタビュー</a></li> -->
+                <!-- <li><a href="<?php echo do_shortcode("[home_url]"); ?>staff">スタッフ紹介</a></li>
+                <li><a href="<?php echo do_shortcode("[home_url]"); ?>company">会社概要</a></li>
+                <li><a href="<?php echo do_shortcode("[home_url]"); ?>privacy">Privacy Policy</a></li>
+                <li><a href="#">コラム</a></li> -->
+                <li><a href="<?php echo do_shortcode("[home_url]"); ?>news">ニュース</a></li>
+              </ul>
+            </nav>
+
+            <div class="spMenu__contact">
+              <p class="spMenu__contactLabel">お電話でのお問合せはこちら</p>
+              <a href="tel:0480-22-6666" class="spMenu__tel">
+                <i class="fas fa-phone-alt"></i>0480-22-6666
+              </a>
+              <p class="spMenu__company"><i class="fas fa-building"></i>株式会社カクダイホーム</p>
+              <p class="spMenu__hours"><i class="far fa-clock"></i>10:00〜18:00 (休：水曜日・年末年始)</p>
+            </div>
+          </div>
+
+          <div class="spMenu__footer">
+            <a href="https://www.youtube.com/@ricolife-66" target="_blank" class="spMenu__footerItem">
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+            <a href="https://www.instagram.com/ricolife_kuki/" target="_blank" class="spMenu__footerItem">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="<?php echo do_shortcode("[home_url]"); ?>request" class="spMenu__footerItem">
+              <i class="fas fa-book-open"></i>
+              <span>資料請求</span>
+            </a>
+            <a href="<?php echo do_shortcode("[home_url]"); ?>contact" class="spMenu__footerItem">
+              <i class="fas fa-calendar-alt"></i>
+              <span>来場予約</span>
+            </a>
+          </div>
         </div>
 
 				<div class="toggle__line">
