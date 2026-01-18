@@ -14,7 +14,6 @@ const cssdeclsort = require("css-declaration-sorter"); // css並べ替え
 // var mozjpeg      = require('imagemin-mozjpeg');         // jpg画像の圧縮最適化
 const rename = require("gulp-rename"); //ファイル名変更
 const cleanCSS = require("gulp-clean-css"); //cssの圧縮
-const prettier = require("gulp-prettier"); //コードフォーマット
 // var uglify       = require("gulp-uglify");              //jsの圧縮
 // var ejs = require("gulp-ejs");                          //ejs
 // var replace = require("gulp-replace");

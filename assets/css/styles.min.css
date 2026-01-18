@@ -286,11 +286,13 @@ input[type="submit"]::-moz-foucus-inner {
 }
 @font-face {
 	font-family: "Zen Maru Gothic";
+	font-weight: 700;
 	src: url(../font/ZenMaruGothic-Bold.ttf) format("truetype");
 }
 @font-face {
 	font-family: "Zen Maru Gothic";
 	font-style: normal;
+	font-weight: 400;
 	src: url(../font/ZenMaruGothic-Regular.ttf) format("truetype");
 }
 html {
@@ -309,12 +311,13 @@ body {
 	font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
 	font-size: 2rem;
 	font-weight: 500;
+	letter-spacing: 0.1em;
 	line-height: 2.08;
 }
 @media (max-width: 999px) {
 	body {
 		font-size: 1.6rem;
-		line-height: 1.3;
+		line-height: 1.8;
 	}
 }
 @media screen and (max-width: 499px) {
@@ -370,7 +373,7 @@ h2,
 h3,
 h4,
 h5 {
-	line-height: 1.5;
+	line-height: 1.8;
 }
 @-webkit-keyframes showItem {
 	0% {
@@ -933,6 +936,39 @@ h5 {
 }
 .interview .kv::before {
 	background: url(../img/interview/interview1.jpg) no-repeat center center/cover;
+}
+.fv {
+	height: 60dvh;
+	position: relative;
+	width: 100%;
+}
+.fv__inner {
+	position: relative;
+}
+.fv__ttl {
+	bottom: 20px;
+	color: #000;
+	font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+	font-size: 5.7rem;
+	font-weight: 700;
+	font-weight: 700;
+	left: 3%;
+	letter-spacing: 0.14em;
+	line-height: 1.34;
+	position: absolute;
+}
+@media (max-width: 999px) {
+	.fv__ttl {
+		font-size: 2.6rem;
+	}
+}
+.fv__img {
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
 }
 .news__list + .pagination {
 	margin-top: 42px;
@@ -12237,59 +12273,12 @@ h5 {
 		display: inline;
 	}
 }
-.storageBattery {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	gap: 30px;
-}
-.storageBattery .fv {
-	height: 60dvh;
-	position: relative;
-	width: 100%;
-}
-.storageBattery .fv__inner {
-	position: relative;
-}
-.storageBattery .fv__ttl {
-	bottom: 20px;
-	color: #000;
-	font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
-	font-size: 5.7rem;
-	font-weight: 700;
-	font-weight: 700;
-	left: 3%;
-	letter-spacing: 0.14em;
-	line-height: 1.34;
-	position: absolute;
-}
-@media (max-width: 999px) {
-	.storageBattery .fv__ttl {
-		font-size: 2.6rem;
-	}
-}
-.storageBattery .fv img {
-	height: 100%;
-	width: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
-	-o-object-position: bottom;
-	object-position: bottom;
-}
-@media (max-width: 999px) {
-	.storageBattery .fv img {
-		-o-object-position: bottom;
-		object-position: bottom;
-	}
-}
 .storageBattery .fv__ttl {
 	color: #fff;
+}
+.storageBattery .fv img {
+	-o-object-position: bottom;
+	object-position: bottom;
 }
 .storageBattery .productDetail {
 	background: #fff;
@@ -12555,6 +12544,251 @@ h5 {
 @media (max-width: 999px) {
 	.storageBattery .productDetail__text {
 		font-size: 16px;
+	}
+}
+.standardSpec {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 160px;
+}
+.standardSpec .fv::after {
+	background: rgba(0, 0, 0, 0.1);
+	content: "";
+	height: 100%;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.standardSpec .fv__ttl {
+	color: #fff;
+	z-index: 1;
+}
+@media (min-width: 1000px) {
+	.standardSpec .ttlWrap {
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
+.specHead {
+	padding: 40px 0 20px;
+}
+@media (min-width: 1000px) {
+	.specHead {
+		padding: 60px 0 30px;
+	}
+}
+.specHead__title {
+	color: #333;
+	font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+	font-size: 3.6rem;
+	font-weight: 700;
+	font-weight: 700;
+	margin-top: 20px;
+}
+@media (min-width: 1000px) {
+	.specHead__title {
+		font-size: 4.8rem;
+		margin-top: 30px;
+	}
+}
+.specIntro {
+	padding: 20px 0 40px;
+}
+@media (min-width: 1000px) {
+	.specIntro {
+		padding: 30px 0 60px;
+	}
+}
+.specIntro__inner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 30px;
+}
+@media (min-width: 1000px) {
+	.specIntro__inner {
+		gap: 40px;
+	}
+}
+.specIntro__catch {
+	color: #333;
+	font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+	font-size: 2.2rem;
+	font-weight: 700;
+	font-weight: 700;
+	line-height: 1.6;
+}
+@media (min-width: 1000px) {
+	.specIntro__catch {
+		font-size: 2.8rem;
+	}
+}
+.specIntro__text p {
+	color: #333;
+	font-size: 1.5rem;
+	line-height: 2;
+	margin-bottom: 15px;
+}
+@media (min-width: 1000px) {
+	.specIntro__text p {
+		font-size: 1.6rem;
+		margin-bottom: 20px;
+	}
+}
+.specIntro__text p:last-child {
+	margin-bottom: 0;
+}
+.specIntro__imgWrap {
+	margin: 0 auto;
+	max-width: 300px;
+	width: 100%;
+}
+.specIntro__imgWrap img {
+	height: auto;
+	width: 100%;
+}
+.specCategory {
+	padding: 0 0 60px;
+}
+@media (min-width: 1000px) {
+	.specCategory {
+		padding: 0 0 100px;
+	}
+}
+.specCategory__inner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 60px;
+}
+@media (min-width: 1000px) {
+	.specCategory__inner {
+		gap: 80px;
+	}
+}
+.specCategory__list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 160px;
+}
+.specCategory__item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	color: inherit;
+	flex-direction: column;
+	gap: 30px;
+	text-decoration: none;
+}
+@media (min-width: 1000px) {
+	.specCategory__item {
+		gap: 20px;
+	}
+}
+.specCategory__item .ttlWrap {
+	margin-bottom: 0;
+}
+.specCategory__body {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 30px;
+}
+@media (min-width: 1000px) {
+	.specCategory__body {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		gap: 30px;
+		-webkit-box-align: start;
+		-webkit-align-items: flex-start;
+		-ms-flex-align: start;
+		align-items: flex-start;
+	}
+}
+.specCategory__imgWrap {
+	aspect-ratio: 16/9;
+	overflow: hidden;
+	width: 100%;
+}
+@media (min-width: 1000px) {
+	.specCategory__imgWrap {
+		width: 50%;
+		-webkit-flex-shrink: 0;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+	}
+}
+.specCategory__imgWrap img {
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.specCategory__content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 30px;
+}
+@media (min-width: 1000px) {
+	.specCategory__content {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		gap: 20px;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
 	}
 }
 .lp {

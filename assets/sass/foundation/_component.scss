@@ -514,6 +514,42 @@
 }
 
 /* ==========================================================================
+  fv (共通ファーストビュー)
+  ========================================================================== */
+.fv {
+	position: relative;
+	width: 100%;
+	height: 60dvh;
+
+	&__inner {
+		position: relative;
+	}
+
+	&__ttl {
+		color: #000000;
+		@include mixin.yuGothicBold();
+		font-size: 5.7rem;
+		font-weight: bold;
+		left: 3%;
+		letter-spacing: 0.14em;
+		line-height: 1.34;
+		position: absolute;
+		bottom: 20px;
+
+		@include mixin.sp {
+			font-size: 2.6rem;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+/* ==========================================================================
   pagination
   ========================================================================== */
 
