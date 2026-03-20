@@ -101,12 +101,6 @@
 		</div>
 	</section>
 
-  <!-- <div class="toTop updown" id="js-toTop2">
-    <a href="https://campage.jp/ietochi-kuki/planmenyu/download">
-      <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/common/plan-download.png" alt="">
-    </a>
-  </div> -->
-
   <div class="toTop planDownload" id="js-toTop">
     <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/common/triangle.svg" alt="">
     <p>TOP</p>
@@ -114,18 +108,6 @@
 
   <div class="footer__contents">
     <div class="inner footerContentsInner">
-			<!-- <div class="footer__event">
-				<div class="ttlWrap">
-					<h2 class="section-ttl">EVENT
-						<span>イベント情報</span>
-					</h2>
-				</div>
-	
-				<div >
-			
-				</div>
-			</div> -->
-
 			<div class="linkList">
 				<div class="ttlWrap">
 					<h2 class="section-ttl">LINK
@@ -136,19 +118,20 @@
 					<ul>
 						<li><a href="<?php echo esc_url(home_url("/concept")); ?>">コンセプト</a></li>
 						<li><a href="<?php echo esc_url(home_url("/case")); ?>">施工事例</a></li>
-						<li><a href="<?php echo esc_url(home_url("/storage-battery")); ?>">ソーラー＆蓄電池</a></li>
+						<li><a href="<?php echo esc_url(home_url("/plan-of-house")); ?>">間取り</a></li>
+						<li class="footerNav__hasChild">
+							<a href="<?php echo esc_url(home_url("/standard-spec")); ?>">標準仕様</a>
+							<ul class="footerNav__subList">
+								<li><a href="<?php echo esc_url(home_url("/standard-spec/home-appliances")); ?>">住宅設備</a></li>
+								<li><a href="<?php echo esc_url(home_url("/standard-spec/performance")); ?>">住宅性能</a></li>
+								<li><a href="<?php echo esc_url(home_url("/standard-spec/interior")); ?>">内装建材</a></li>
+								<li><a href="<?php echo esc_url(home_url("/standard-spec/structure")); ?>">建物構造</a></li>
+								<li><a href="<?php echo esc_url(home_url("/storage-battery")); ?>">ソーラー＆蓄電池</a></li>
+							</ul>
+						</li>
 						<li><a href="<?php echo esc_url(home_url("/staff")); ?>">スタッフ紹介</a></li>
-						<!-- <li><a href="#">間取り</a></li>
-						<li><a href="#">標準仕様</a></li>
-						<li><a href="#">コスト</a></li>
-						<li><a href="#">家づくりの流れ</a></li>
-						<li><a href="#">Rico Life.ch</a></li>
-						<li><a href="#">お客様インタビュー</a></li>
-						<li><a href="#">スタッフ紹介</a></li>
-						<li><a href="#">会社概要</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">コラム</a></li>
-						<li><a href="#">ニュース</a></li> -->
+						<li><a href="<?php echo esc_url(home_url("/company")); ?>">会社概要</a></li>
+						<li><a href="<?php echo esc_url(home_url("/news")); ?>">ニュース</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -209,22 +192,6 @@
           slidesPerView: 3,
         }
       }
-    });
-
-    var swiper = new Swiper(".eventSwiper", {
-      spaceBetween: 0,
-      autoplay: {
-        delay: 3000,
-      },
-      speed: 300,
-      pagination: {
-        el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-      },
-      loop: true,
-      centeredSlides : true,
-      slidesPerView: 1,
     });
 
     // FV Swiper initialization

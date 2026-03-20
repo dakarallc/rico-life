@@ -125,17 +125,19 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
                 <li><a href="<?php echo do_shortcode("[home_url]"); ?>case">施工事例</a></li>
                 <li><a href="<?php echo do_shortcode("[home_url]"); ?>event">イベント情報</a></li>
                 <li><a href="<?php echo do_shortcode("[home_url]"); ?>plan-of-house">間取り</a></li>
-                <li><a href="<?php echo do_shortcode("[home_url]"); ?>storage-battery">ソーラー＆蓄電池</a></li>
-                <li><a href="<?php echo do_shortcode("[home_url]"); ?>staff">スタッフ紹介</a></li>
-                <!-- <li><a href="#">標準仕様</a></li>
-                <li><a href="#">コスト</a></li>
-                <li><a href="#">家づくりの流れ</a></li> -->
-                <!-- <li><a href="#">Rico Life.ch</a></li>
-                <li><a href="<?php echo do_shortcode("[home_url]"); ?>interview">お客様インタビュー</a></li> -->
-                <li><a href="<?php echo do_shortcode("[home_url]"); ?>company">会社概要</a></li>
-                <li><a href="<?php echo do_shortcode("[home_url]"); ?>privacy">Privacy Policy</a></li>
-                <li><a href="#">コラム</a></li> -->
-                <li><a href="<?php echo do_shortcode("[home_url]"); ?>news">ニュース</a></li>
+                <li>
+                  <a href="<?php echo esc_url(home_url("/standard-spec")); ?>">標準仕様</a>
+                  <ul class="spMenu__subList">
+                    <li><a href="<?php echo esc_url(home_url("/standard-spec/home-appliances")); ?>">住宅設備</a></li>
+                    <li><a href="<?php echo esc_url(home_url("/standard-spec/performance")); ?>">住宅性能</a></li>
+                    <li><a href="<?php echo esc_url(home_url("/standard-spec/interior")); ?>">内装建材</a></li>
+                    <li><a href="<?php echo esc_url(home_url("/standard-spec/structure")); ?>">建物構造</a></li>
+                    <li><a href="<?php echo esc_url(home_url("/storage-battery")); ?>">ソーラー＆蓄電池</a></li>
+                  </ul>
+                </li>
+                <li><a href="<?php echo esc_url(home_url("/staff")); ?>">スタッフ紹介</a></li>
+                <li><a href="<?php echo esc_url(home_url("/company")); ?>">会社概要</a></li>
+                <li><a href="<?php echo esc_url(home_url("/news")); ?>">ニュース</a></li>
               </ul>
             </nav>
 
