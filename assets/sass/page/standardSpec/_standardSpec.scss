@@ -7,6 +7,11 @@
 	display: flex;
 	flex-direction: column;
 	gap: 160px;
+
+	.breadcrumb {
+		margin-top: -150px;
+		margin-bottom: -150px;
+	}
 	.fv {
 		&::after {
 			content: "";
@@ -50,6 +55,32 @@
 
 		@include mixin.pc {
 			font-size: 4.8rem;
+			margin-top: 30px;
+		}
+	}
+
+	&__lead {
+		margin-top: 30px;
+
+		@include mixin.sp {
+			margin-top: 20px;
+		}
+
+		p {
+			font-size: 1.5rem;
+			line-height: 2;
+			color: #333;
+
+			@include mixin.pc {
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.specNav {
+		margin-top: 40px;
+
+		@include mixin.sp {
 			margin-top: 30px;
 		}
 	}

@@ -1918,6 +1918,33 @@ h5 {
 }
 
 /* ==========================================================================
+  ユーティリティ
+  ========================================================================== */
+.show--sp {
+  display: none;
+}
+@media (max-width: 999px) {
+  .show--sp {
+    display: inline;
+  }
+}
+
+.catch {
+  position: relative;
+  z-index: 1;
+}
+.catch h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+@media (max-width: 999px) {
+  .catch h3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ==========================================================================
   common
   ========================================================================== */
 /* ==========================================================================
@@ -12114,21 +12141,7 @@ us
   }
 }
 
-.catch {
-  position: relative;
-  z-index: 1;
-}
-.catch h3 {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.6;
-}
-@media (max-width: 999px) {
-  .catch h3 {
-    font-size: 2.5rem;
-  }
-}
-
+/* 共通セクションレイアウト */
 .conceptSection {
   position: relative;
 }
@@ -12210,15 +12223,6 @@ us
   .conceptSection__block {
     font-size: 14px;
     padding: 16px 10px;
-  }
-}
-
-.show--sp {
-  display: none;
-}
-@media (max-width: 999px) {
-  .show--sp {
-    display: inline;
   }
 }
 
@@ -12349,21 +12353,7 @@ us
   }
 }
 
-.catch {
-  position: relative;
-  z-index: 1;
-}
-.catch h3 {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.6;
-}
-@media (max-width: 999px) {
-  .catch h3 {
-    font-size: 2.5rem;
-  }
-}
-
+/* 共通セクションレイアウト */
 .conceptSection {
   position: relative;
 }
@@ -12445,15 +12435,6 @@ us
   .conceptSection__block {
     font-size: 14px;
     padding: 16px 10px;
-  }
-}
-
-.show--sp {
-  display: none;
-}
-@media (max-width: 999px) {
-  .show--sp {
-    display: inline;
   }
 }
 
@@ -12787,23 +12768,6 @@ us
   }
 }
 
-.storageBattery {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 205px !important;
-}
-@media (max-width: 999px) {
-  .storageBattery {
-    gap: 154px !important;
-  }
-}
 .storageBattery .planOfHouse__ttl {
   border-bottom: 1px solid #000;
   display: inline-block;
@@ -12823,21 +12787,7 @@ us
   }
 }
 
-.catch {
-  position: relative;
-  z-index: 1;
-}
-.catch h3 {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.6;
-}
-@media (max-width: 999px) {
-  .catch h3 {
-    font-size: 2.5rem;
-  }
-}
-
+/* 共通セクションレイアウト */
 .conceptSection {
   position: relative;
 }
@@ -12922,287 +12872,20 @@ us
   }
 }
 
-.show--sp {
-  display: none;
-}
-@media (max-width: 999px) {
-  .show--sp {
-    display: inline;
-  }
-}
-
-.storageBattery .fv__ttl {
-  color: #fff;
-}
+/* ==========================================================================
+  Storage Battery - ページ固有スタイル
+  ========================================================================== */
 .storageBattery .fv img {
   -o-object-position: bottom;
   object-position: bottom;
 }
-.storageBattery .productDetail {
-  background: #fff;
-  padding: 60px 0;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail {
-    padding: 40px 0;
-  }
-}
-@media (min-width: 1000px) {
-  .storageBattery .productDetail .ttlWrap {
-    margin-left: 0;
-    padding-left: 0;
-  }
-}
-.storageBattery .productDetail__images {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 40px;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__images {
-    gap: 20px;
-    grid-template-columns: 1fr;
-    margin-bottom: 30px;
-  }
-}
-.storageBattery .productDetail__images--single {
-  grid-template-columns: 1fr;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 600px;
-}
 .storageBattery .productDetail__image {
   aspect-ratio: 4/5;
-  background: #fff;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   padding: 20px;
 }
-.storageBattery .productDetail__image--battery {
-  aspect-ratio: 4/5;
-  background: #fff;
-}
 .storageBattery .productDetail__image img {
-  height: 100%;
-  width: 100%;
   -o-object-fit: contain;
   object-fit: contain;
-}
-.storageBattery .productDetail__brand {
-  margin-bottom: 30px;
-  text-align: center;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__brand {
-    margin-bottom: 20px;
-  }
-}
-.storageBattery .productDetail__brandLogo {
-  height: auto;
-  margin-bottom: 15px;
-  max-width: 200px;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__brandLogo {
-    margin-bottom: 10px;
-    max-width: 150px;
-  }
-}
-.storageBattery .productDetail__brandLogo--tesla {
-  max-width: 300px;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__brandLogo--tesla {
-    max-width: 220px;
-  }
-}
-.storageBattery .productDetail__brandText {
-  color: #333;
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  line-height: 1.2;
-  margin: 0 0 15px 0;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__brandText {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-}
-.storageBattery .productDetail__brandText--tesla {
-  font-size: 60px;
-  letter-spacing: 0.15em;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__brandText--tesla {
-    font-size: 42px;
-  }
-}
-.storageBattery .productDetail__brandSub {
-  display: block;
-  font-size: 32px;
-  letter-spacing: 0.15em;
-  margin-top: 5px;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__brandSub {
-    font-size: 24px;
-  }
-}
-.storageBattery .productDetail__brandName {
-  color: #333;
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__brandName {
-    font-size: 16px;
-  }
-}
-.storageBattery .productDetail__warranties {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  gap: 40px;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__warranties {
-    gap: 20px;
-    margin-bottom: 30px;
-  }
-}
-.storageBattery .productDetail__warranties--single {
-  gap: 0;
-}
-.storageBattery .productDetail__warranty {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.storageBattery .productDetail__warrantyBadge {
-  background: #d32f2f;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 140px;
-  width: 140px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  color: #fff;
-  justify-content: center;
-  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__warrantyBadge {
-    height: 110px;
-    width: 110px;
-  }
-}
-.storageBattery .productDetail__warrantyBadge--quality {
-  background: #d32f2f;
-}
-.storageBattery .productDetail__warrantyLabel {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__warrantyLabel {
-    font-size: 12px;
-    margin-bottom: 4px;
-  }
-}
-.storageBattery .productDetail__warrantyYears {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__warrantyYears {
-    font-size: 38px;
-  }
-}
-.storageBattery .productDetail__warrantyYears small {
-  font-size: 24px;
-  margin-left: 4px;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__warrantyYears small {
-    font-size: 20px;
-  }
-}
-.storageBattery .productDetail__description {
-  margin: 0 auto;
-  max-width: 800px;
-  text-align: center;
-}
-.storageBattery .productDetail__catchCopy {
-  color: #333;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__catchCopy {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-}
-.storageBattery .productDetail__text {
-  color: #333;
-  font-size: 20px;
-  line-height: 1.8;
-  margin: 0;
-}
-@media (max-width: 999px) {
-  .storageBattery .productDetail__text {
-    font-size: 16px;
-  }
 }
 
 /* ==========================================================================
@@ -13219,6 +12902,10 @@ us
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 160px;
+}
+.standardSpec .breadcrumb {
+  margin-bottom: -150px;
+  margin-top: -150px;
 }
 .standardSpec .fv::after {
   background: rgba(0, 0, 0, 0.1);
@@ -13263,6 +12950,32 @@ us
 @media (min-width: 1000px) {
   .specHead__title {
     font-size: 4.8rem;
+    margin-top: 30px;
+  }
+}
+.specHead__lead {
+  margin-top: 30px;
+}
+@media (max-width: 999px) {
+  .specHead__lead {
+    margin-top: 20px;
+  }
+}
+.specHead__lead p {
+  color: #333;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+@media (min-width: 1000px) {
+  .specHead__lead p {
+    font-size: 1.6rem;
+  }
+}
+.specHead .specNav {
+  margin-top: 40px;
+}
+@media (max-width: 999px) {
+  .specHead .specNav {
     margin-top: 30px;
   }
 }
@@ -13464,6 +13177,555 @@ us
     -ms-flex-pack: center;
     justify-content: center;
   }
+}
+
+/* ==========================================================================
+  Standard Spec - Common (全仕様詳細ページ共通スタイル)
+  ========================================================================== */
+/* スムーススクロール（標準仕様ページ共通） */
+html:has(.specEquipment),
+html:has(.specPerformance),
+html:has(.specInterior),
+html:has(.specStructure) {
+  scroll-behavior: smooth;
+}
+
+/* 共通ページラッパー */
+.specEquipment,
+.specPerformance,
+.specInterior,
+.specStructure,
+.storageBattery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* スムーススクロール用オフセット */
+  /* finalMessageの余白調整 */
+}
+.specEquipment .fv::after,
+.specPerformance .fv::after,
+.specInterior .fv::after,
+.specStructure .fv::after,
+.storageBattery .fv::after {
+  background: rgba(0, 0, 0, 0.15);
+  content: "";
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.specEquipment .fv__ttl,
+.specPerformance .fv__ttl,
+.specInterior .fv__ttl,
+.specStructure .fv__ttl,
+.storageBattery .fv__ttl {
+  color: #fff;
+  z-index: 1;
+}
+.specEquipment section[id],
+.specPerformance section[id],
+.specInterior section[id],
+.specStructure section[id],
+.storageBattery section[id] {
+  scroll-margin-top: 80px;
+}
+.specEquipment .finalMessage,
+.specPerformance .finalMessage,
+.specInterior .finalMessage,
+.specStructure .finalMessage,
+.storageBattery .finalMessage {
+  padding: 100px 0;
+}
+@media (max-width: 999px) {
+  .specEquipment .finalMessage,
+  .specPerformance .finalMessage,
+  .specInterior .finalMessage,
+  .specStructure .finalMessage,
+  .storageBattery .finalMessage {
+    padding: 80px 0;
+  }
+}
+
+/* ==========================================================================
+  specHead - 詳細ページのヘッド部分
+  ========================================================================== */
+.specHead {
+  padding: 60px 0 40px;
+}
+@media (max-width: 999px) {
+  .specHead {
+    padding: 40px 0 30px;
+  }
+}
+@media (min-width: 1000px) {
+  .specHead .ttlWrap {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+.specHead__title {
+  color: #333;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-size: 3.6rem;
+  font-weight: bold;
+  font-weight: bold;
+  margin-top: 20px;
+}
+@media (min-width: 1000px) {
+  .specHead__title {
+    font-size: 4.8rem;
+    margin-top: 30px;
+  }
+}
+.specHead__lead {
+  margin-top: 40px;
+}
+@media (max-width: 999px) {
+  .specHead__lead {
+    margin-top: 30px;
+  }
+}
+.specHead__lead p {
+  color: #333;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+@media (min-width: 1000px) {
+  .specHead__lead p {
+    font-size: 1.6rem;
+  }
+}
+.specHead__lead p + p {
+  margin-top: 20px;
+}
+
+/* ==========================================================================
+  specNav - ページ内リンク（縦リスト）
+  ========================================================================== */
+.specNav {
+  margin-top: 50px;
+}
+@media (max-width: 999px) {
+  .specNav {
+    margin-top: 40px;
+  }
+}
+.specNav__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.specNav__item {
+  border-bottom: 1px solid #ddd;
+}
+.specNav__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #333;
+  padding: 16px 8px;
+  text-decoration: none;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+.specNav__link:hover {
+  background: #f9f9f5;
+}
+.specNav__icon {
+  height: 40px;
+  width: 40px;
+  -o-object-fit: contain;
+  margin-right: 16px;
+  object-fit: contain;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+@media (max-width: 999px) {
+  .specNav__icon {
+    height: 36px;
+    margin-right: 12px;
+    width: 36px;
+  }
+}
+.specNav__text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (max-width: 999px) {
+  .specNav__text {
+    font-size: 1.6rem;
+  }
+}
+.specNav__arrow {
+  border-bottom: 2px solid #c9a572;
+  border-right: 2px solid #c9a572;
+  height: 12px;
+  width: 12px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+.specNav__note {
+  color: #888;
+  font-size: 1.2rem;
+  margin-top: 12px;
+}
+@media (max-width: 999px) {
+  .specNav__note {
+    font-size: 1.1rem;
+  }
+}
+
+/* ==========================================================================
+  specDetail - 各製品セクション
+  ========================================================================== */
+.specDetail {
+  padding: 80px 0;
+}
+@media (max-width: 999px) {
+  .specDetail {
+    padding: 60px 0;
+  }
+}
+.specDetail__titleWrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  border-bottom: 1px solid #333;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-right: calc(-50vw + 50%);
+  padding-bottom: 12px;
+  padding-right: calc(50vw - 50%);
+}
+@media (min-width: 1000px) {
+  .specDetail__titleWrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+}
+.specDetail__title {
+  color: #333;
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+@media (max-width: 999px) {
+  .specDetail__title {
+    font-size: 3.6rem;
+  }
+}
+@media (min-width: 1000px) {
+  .specDetail__title {
+    margin-bottom: 0;
+  }
+}
+.specDetail__subtitle {
+  color: #555;
+  font-size: 1.4rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 1000px) {
+  .specDetail__subtitle {
+    font-size: 1.5rem;
+  }
+}
+.specDetail__hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+@media (min-width: 1000px) {
+  .specDetail__hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 40px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+}
+.specDetail__mainImg {
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  .specDetail__mainImg {
+    width: 55%;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+}
+.specDetail__mainImg img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.specDetail__heroBody {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 1000px) {
+  .specDetail__heroBody {
+    padding-top: 8px;
+  }
+}
+.specDetail__catch {
+  color: #333;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+@media (min-width: 1000px) {
+  .specDetail__catch {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+}
+.specDetail__desc {
+  color: #333;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+@media (min-width: 1000px) {
+  .specDetail__desc {
+    font-size: 1.6rem;
+  }
+}
+
+/* ==========================================================================
+  specFeature - 特徴リスト（サムネ + テキスト）
+  ========================================================================== */
+.specFeature {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 999px) {
+  .specFeature {
+    gap: 30px;
+  }
+}
+.specFeature__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 20px;
+}
+@media (min-width: 1000px) {
+  .specFeature__item {
+    gap: 30px;
+  }
+}
+.specFeature__img {
+  width: 120px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  border-radius: 4px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+@media (min-width: 1000px) {
+  .specFeature__img {
+    width: 160px;
+  }
+}
+.specFeature__img img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.specFeature__body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 4px;
+}
+.specFeature__title {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+@media (min-width: 1000px) {
+  .specFeature__title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+}
+.specFeature__text {
+  color: #555;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+@media (min-width: 1000px) {
+  .specFeature__text {
+    font-size: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+  specColor - カラーセレクション（内装建材ページ等）
+  ========================================================================== */
+.specColor {
+  margin-top: 50px;
+}
+@media (max-width: 999px) {
+  .specColor {
+    margin-top: 40px;
+  }
+}
+.specColor__label {
+  border-bottom: 1px solid #999;
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+}
+@media (min-width: 1000px) {
+  .specColor__label {
+    font-size: 1.5rem;
+  }
+}
+.specColor__grid {
+  display: grid;
+  gap: 20px 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (min-width: 1000px) {
+  .specColor__grid {
+    gap: 24px 16px;
+  }
+}
+.specColor__grid--4col {
+  gap: 20px 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.specColor__item {
+  text-align: center;
+}
+.specColor__item img {
+  border: 1px solid #eee;
+  display: block;
+  height: auto;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.specColor__item span {
+  color: #555;
+  display: block;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+@media (min-width: 1000px) {
+  .specColor__item span {
+    font-size: 1.2rem;
+  }
+}
+.specColor__item span small {
+  color: #888;
+  font-size: 1rem;
+}
+.specColor__note {
+  color: #888;
+  font-size: 1.1rem;
+  margin-top: 16px;
+}
+
+/* ==========================================================================
+  Standard Spec - Equipment ページ固有スタイル
+  ========================================================================== */
+.specEquipment {
+  /* Equipment固有のスタイルがあればここに追加 */
 }
 
 .lp {

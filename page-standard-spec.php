@@ -20,6 +20,7 @@ Template Name: 標準仕様
 		</div>
 	</section>
 
+	<?php get_template_part("template-parts/breadcrumb"); ?>
 	<!-- PAGE TITLE -->
 	<section class="specHead">
 		<div class="inner">
@@ -87,7 +88,7 @@ Template Name: 標準仕様
 								確認できます。
 							</p>
 							<div class="btnWrap">
-								<a href="<?php echo esc_url(home_url("/standard-spec-equipment")); ?>" class="primaryBtn">詳細を見る</a>
+								<a href="<?php echo esc_url(home_url("/standard-spec/home-appliances")); ?>" class="primaryBtn">詳細を見る</a>
 							</div>
 						</div>
 					</div>
@@ -112,7 +113,7 @@ Template Name: 標準仕様
 								機能がわかります。
 							</p>
 							<div class="btnWrap">
-								<a href="<?php echo esc_url(home_url("/standard-spec-performance")); ?>" class="primaryBtn">詳細を見る</a>
+								<a href="<?php echo esc_url(home_url("/standard-spec/performance")); ?>" class="primaryBtn">詳細を見る</a>
 							</div>
 						</div>
 					</div>
@@ -137,7 +138,7 @@ Template Name: 標準仕様
 								確認することができます。
 							</p>
 							<div class="btnWrap">
-								<a href="<?php echo esc_url(home_url("/standard-spec-interior")); ?>" class="primaryBtn">詳細を見る</a>
+								<a href="<?php echo esc_url(home_url("/standard-spec/interior")); ?>" class="primaryBtn">詳細を見る</a>
 							</div>
 						</div>
 					</div>
@@ -162,7 +163,7 @@ Template Name: 標準仕様
 								支える基本性能が見られます。
 							</p>
 							<div class="btnWrap">
-								<a href="<?php echo esc_url(home_url("/standard-spec-structure")); ?>" class="primaryBtn">詳細を見る</a>
+								<a href="<?php echo esc_url(home_url("/standard-spec/structure")); ?>" class="primaryBtn">詳細を見る</a>
 							</div>
 						</div>
 					</div>
@@ -196,7 +197,7 @@ Template Name: 標準仕様
 		</div>
 	</section>
 
-	<!-- finalMessage -->
+	<!-- toTopButton -->
 	<?php get_template_part("template-parts/toTopButton"); ?>
 
 	<!-- finalMessage -->

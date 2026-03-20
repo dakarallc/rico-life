@@ -22,6 +22,7 @@ Template Name: ソーラー&蓄電池
 		
 	</section>
 
+	<?php get_template_part("template-parts/breadcrumb"); ?>
 
 	<!-- PRODUCTS	 -->
 	<section class="products">

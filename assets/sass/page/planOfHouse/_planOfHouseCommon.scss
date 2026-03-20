@@ -26,20 +26,7 @@
 	}
 }
 
-.catch {
-	position: relative;
-	z-index: 1;
-	h3 {
-		font-size: 3rem;
-		font-weight: bold;
-		line-height: 1.6;
-		@include mixin.sp {
-			font-size: 2.5rem;
-		}
-	}
-}
-
-// 共通セクションレイアウト
+/* 共通セクションレイアウト */
 .conceptSection {
 	position: relative;
 	img {
@@ -95,13 +82,5 @@
 			padding: 16px 10px;
 			font-size: 14px;
 		}
-	}
-}
-
-// スマホのみ表示
-.show--sp {
-	display: none;
-	@include mixin.sp {
-		display: inline;
 	}
 }

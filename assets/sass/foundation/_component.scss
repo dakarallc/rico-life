@@ -1316,3 +1316,26 @@
 .notFound {
 	text-align: center;
 }
+
+/* ==========================================================================
+  ユーティリティ
+  ========================================================================== */
+.show--sp {
+	display: none;
+	@include mixin.sp {
+		display: inline;
+	}
+}
+
+.catch {
+	position: relative;
+	z-index: 1;
+	h3 {
+		font-size: 3rem;
+		font-weight: bold;
+		line-height: 1.6;
+		@include mixin.sp {
+			font-size: 2.5rem;
+		}
+	}
+}
