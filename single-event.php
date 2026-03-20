@@ -4,13 +4,7 @@
   <?php if (has_term("actual-house-tours", "event-category")): ?>
     <div class="pageHeadEvent">
       <h1 class="pageHeadEvent__ttl">
-        <img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/event/eventHeader.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/eventHeader.svg" class=" ls-is-cached lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/eventHeader.svg" alt="完成入居前見学会" data-eio="l"></noscript>
+        <img src="<?php echo rico_theme_url(); ?>/assets/img/event/eventHeader.svg"  alt="完成入居前見学会" data-src="<?php echo rico_theme_url(); ?>/img/event/eventHeader.svg" class=" ls-is-cached lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/img/event/eventHeader.svg" alt="完成入居前見学会" data-eio="l"></noscript>
       </h1>
     </div>
   <?php else: ?>
@@ -138,9 +132,7 @@
         <div class="cvButtonLinkWrap">
           <a href="#contactForm" class="cvButtonLink">
             <div>
-              <img src="<?php echo do_shortcode(
-              	"[theme_url]",
-              ); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+              <img src="<?php echo rico_theme_url(); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
             </div>
             <button class="greenBtn">
 							ご来場予約はこちら
@@ -246,7 +238,7 @@
 			<div class="cvButtonLinkWrap">
 					<a href="#contactForm" class="cvButtonLink">
 						<div>
-							<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
 						</div>
 						<button class="greenBtn">
 							ご来場予約はこちら
@@ -256,25 +248,21 @@
 
       <section class="housingLoan">
         <div class="housingLoan__img">
-          <img src="<?php echo do_shortcode(
-          	"[theme_url]",
-          ); ?>/assets/img/event/housingLoan.png" alt="住宅ローン" class="eventPlanImg">
+          <img src="<?php echo rico_theme_url(); ?>/assets/img/event/housingLoan.png" alt="住宅ローン" class="eventPlanImg">
         </div>
         <div class="housingLoan__contents">
           <p class="free">無料相談・無料審査大歓迎！</p>
           <div class="simulationWrap">
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/simulation.svg" alt="シミュレーション" class="simulation">
+            <img src="<?php echo rico_theme_url(); ?>/assets/img/event/simulation.svg" alt="シミュレーション" class="simulation">
           </div>
           <div class="listWrap">
             <ul class="housingLoan__list">
               <li>
-                <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/check.svg" alt="チェック">
+                <img src="<?php echo rico_theme_url(); ?>/assets/img/event/check.svg" alt="チェック">
                 住宅ローンお支払いシミュレーション
               </li>
               <li>
-                <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/check.svg" alt="チェック">
+                <img src="<?php echo rico_theme_url(); ?>/assets/img/event/check.svg" alt="チェック">
                 土地・建物の総額資金計画と住宅ローンのシミュレーション
               </li>
             </ul>
@@ -291,7 +279,7 @@
         </div>
       </div>
 			<div class="btnWrap">
-				<a href="<?php echo do_shortcode("[home_url]"); ?>event" class="primaryBtn wow fadeInUp">一覧に戻る</a>
+				<a href="<?php echo rico_home_url(); ?>event" class="primaryBtn wow fadeInUp">一覧に戻る</a>
     	</div>
     </div>
   </section>

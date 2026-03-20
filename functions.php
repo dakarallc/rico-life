@@ -47,9 +47,20 @@ add_shortcode("theme_url", "theme_shortcode");
  * ホームURL
  */
 function home_shortcode() {
-	return esc_url(home_url("/"));
+	return rico_home_url("/");
 }
 add_shortcode("home_url", "home_shortcode");
+
+/**
+ * テーマURLヘルパー関数（テンプレート内で直接使用）
+ */
+function rico_theme_url() {
+	return esc_url(get_template_directory_uri());
+}
+
+function rico_home_url($path = "/") {
+	return esc_url(home_url($path));
+}
 
 /**
  * ホームURL(contact7プラグイン内で使用)
@@ -59,7 +70,7 @@ function custom_add_form_tag() {
 	wpcf7_add_form_tag("home_url", "custom_url_handler");
 }
 function custom_url_handler($tag) {
-	return esc_url(home_url("/"));
+	return rico_home_url("/");
 }
 
 /**
@@ -111,10 +122,7 @@ add_action("after_setup_theme", "gutenberg_support_setup");
  * 事前読み込み画像（マウスオーバー用 読み込みされないことあるため、事前読み込み）
  */
 function meta_headcustomtags() {
-	echo '<link rel="preload" href="' .
-		do_shortcode("[theme_url]") .
-		'/assets/img/common/mail-white.svg" as="image">' .
-		"\n";
+	echo '<link rel="preload" href="' . rico_theme_url() . '/assets/img/common/mail-white.svg" as="image">' . "\n";
 }
 add_action("wp_head", "meta_headcustomtags", 99);
 

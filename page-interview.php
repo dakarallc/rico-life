@@ -54,12 +54,8 @@ inrerview
           <p class="interview__txt">ベルエールは中国の空気清浄機メーカーとの共同開発先であり生産委託先になる訳ですが、実は空気清浄機業界では有力企業であり、BOSCH（独）、Honeywell（米）等の欧米大手企業と取引があり、高い技術力と実績のある会社です。会社見学でまず感心したのは、中国の国家認可を受けた試験室を自前に持ち、空気清浄機関連の試験装置を豊富に揃えているところです。</p><!-- /interview__txt -->
           <p class="interview__txt">しかし、それ以上感心したのは、製品の改良に余念がないという経営者の姿勢です。こちらの提出した改良点を素直に受け入れ、誠実かつ迅速に実施して頂いています。弊社からすると製品の改善に共に努める事が出来る良いパートナーに巡り合えたと感じております。</p><!-- /interview__txt -->
           <ul class="interview__imgs">
-            <li class="interview__img"><img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/interview/interview2.jpg" alt="中国の製造工場の様子"></li><!-- /interview__img -->
-            <li class="interview__img"><img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/interview/interview3.jpg" alt="中国の製造工場の様子"></li><!-- /interview__img -->
+            <li class="interview__img"><img src="<?php echo rico_theme_url(); ?>/assets/img/interview/interview2.jpg" alt="中国の製造工場の様子"></li><!-- /interview__img -->
+            <li class="interview__img"><img src="<?php echo rico_theme_url(); ?>/assets/img/interview/interview3.jpg" alt="中国の製造工場の様子"></li><!-- /interview__img -->
           </ul><!-- /interview__imgs -->
         </li><!-- /interview__item -->
         <li class="interview__item wow fadeInUp">

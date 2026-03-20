@@ -339,7 +339,7 @@ if ($floor) {
       </div>
 
       
-      <a href="<?php echo do_shortcode("[home_url]"); ?>plan" class="planItem__btn wow fadeInUp">一覧に戻る</a>
+      <a href="<?php echo rico_home_url(); ?>plan" class="planItem__btn wow fadeInUp">一覧に戻る</a>
     </div>
   </section>
 </div>

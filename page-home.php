@@ -12,13 +12,13 @@ Template Name: TOP
 		<div class="swiper fvSwiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<img class="fv__img1" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/kv1.png" alt="">
+					<img class="fv__img1" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.png" alt="">
 				</div>
 				<div class="swiper-slide">
-					<img class="fv__img" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/kv2.png" alt="">
+					<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="">
 				</div>
 				<div class="swiper-slide">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/kv3.png" alt="">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/top/kv3.png" alt="">
 				</div>
 			</div>
 			<div class="swiper-pagination"></div>
@@ -36,11 +36,11 @@ Template Name: TOP
 	<!-- about	 -->
 	<section class="about">
 		<div class="about__logo">
-			<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/common/logo-black.svg" alt="ロゴ">
+			<img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo-black.svg" alt="ロゴ">
 		</div>
 		<p>コスパで創造する、<br class="show--sp">40年間の居住費が<br class="show--sp">いちばん安い家。</p>
 		<div class="about__decoration">
-			<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/round-decoration.svg" alt="">
+			<img src="<?php echo rico_theme_url(); ?>/assets/img/top/round-decoration.svg" alt="">
 		</div>
 	</section>
 
@@ -66,7 +66,7 @@ Template Name: TOP
 			</div>
 			<div class="concept__inner">
 				<div class="concept__img">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="テーブルの写真">
 				</div>
 				<div class="concept__content">
 					<div class="concept__text">
@@ -82,7 +82,7 @@ Template Name: TOP
 				</div>
 			</div>
 			<div class="btnWrap">
-				<a href="<?php echo do_shortcode("[home_url]"); ?>concept" class="primaryBtn">初めての方はこちら</a>
+				<a href="<?php echo rico_home_url(); ?>concept" class="primaryBtn">初めての方はこちら</a>
 			</div>
 		</div>
 	</section>
@@ -155,7 +155,7 @@ Template Name: TOP
 		</div>
 
 		<div class="btnWrap">
-			<a href="<?php echo esc_url(home_url("/case")); ?>" class="primaryBtn">施工事例はこちら</a>
+			<a href="<?php echo rico_home_url("/case"); ?>" class="primaryBtn">施工事例はこちら</a>
 		</div>
 	</section>
 
@@ -167,117 +167,18 @@ Template Name: TOP
 //get_template_part("template-parts/productArea");
 ?>
 
-	<!-- VOICE -->
-	<!-- <section class="concept">
-		<div class="inner">
-			<h2 class="section-ttl">VOICE
-				<span>お客様インタビュー</span>
-			</h2>
-		</div>
-	</section> -->
-
-	<!-- ABOUT -->
-		<!-- <section class="companyIntroduction">
-		<div class="inner">
-			<div class="ttlWrap">
-				<h2 class="section-ttl">ABOUT
-					<span>会社紹介</span>
-				</h2>
-			</div>
-
-			<div class="companyIntroduction__container">
-				<a href="/about/" class="companyIntroduction__block companyIntroduction__block--left">
-					<span>スタッフ紹介</span>
-				</a>
-				<a href="/access/" class="companyIntroduction__block companyIntroduction__block--right">
-					<span>会社概要</span>
-				</a>
-			</div>
-		</div>
-	</section> -->
 
 	<?php get_template_part("template-parts/contactArea"); ?>
 
-	<!-- COLUMN -->
-	<!-- <section class="concept">
-		<div class="inner">
-			<div class="ttlWrap">
-				<h2 class="section-ttl">COLUMN
-					<span>コラム</span>
-				</h2>
-			</div>
-		</div>
-	</section> -->
-
-	<!-- NEWS -->
-	<!-- <section class="news">
-		<?php
-  $perPage = 3;
-  $args = [
-  	"posts_per_page" => $perPage,
-  	"post_type" => "post",
-  	"category_name" => "news",
-  	"post_status" => "publish",
-  ];
-  $the_query = new WP_Query($args);
-  if ($the_query->have_posts()): ?>
-		<div class="inner news__inner">
-			<div class="ttlWrap">
-				<h2 class="section-ttl">NEWS
-					<span>お知らせ</span>
-				</h2>
-			</div>
-			
-			<div class="news__box">
-				<ul class="news__list">
-					<?php while ($the_query->have_posts()):
-     	$the_query->the_post(); ?>
-					<li class="news__item">
-						<a href="<?php echo esc_url(get_permalink()); ?>">
-							<div class="news__info">
-								<time class="news__time" datetime="<?php the_time("c"); ?>"><?php the_time("Y.n.j"); ?></time>
-								<span class="news__cat">News</span>
-							</div>
-							<div class="news__body">
-								<p class="news__subTtl"><?php echo trimString(get_the_title(), 50); ?></p>
-								<i class="fa-solid fa-chevron-right news__arrow"></i>
-							</div>
-						</a>
-					</li>
-					<?php
-     endwhile; ?>
-				</ul>
-			</div>
-		</div>
-		<?php endif;
-  wp_reset_postdata();
-  ?>
-	
-		<div class="btnWrap">
-			<a href="<?php echo do_shortcode("[home_url]"); ?>news" class="primaryBtn">お知らせはこちら</a>
-		</div>
-	</section>
-
-	<!-- Instagram -->
-	<section class="instagram">
-		<div class="inner">
-			<h2 class="instagram__title">
-				<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/instagram.svg" alt="Instagram" class="instagram__logo">
-			</h2>
-			<?php echo do_shortcode("[instagram-feed feed=2]"); ?>
-		</div>
-	</section>
 
 	<!-- sdgs -->
 	<section class="sdgs">
 		<div class="inner sdgs__inner">
 			<div class="sdgs__logo-wrap">
-				<img class="sdgs__logo" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/sdgs.png" alt="SDGsロゴ">
+				<img class="sdgs__logo" src="<?php echo rico_theme_url(); ?>/assets/img/top/sdgs.png" alt="SDGsロゴ">
 				<div class="sdgs__text-block">
 					<div class="sdgs__main-text">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/common/logo-black.svg" alt="Rico Life ロゴ" class="sdgs__rico-logo">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo-black.svg" alt="Rico Life ロゴ" class="sdgs__rico-logo">
 						<p class="sdgs__sub-text">
 							埼玉県SDGs公式パートナー企業です。
 						</p>

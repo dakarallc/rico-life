@@ -1,2 +1,38 @@
-// //ブレークポイント
+/* ブレークポイント */
 $w-breakpoint: 999;
+
+/* Colors */
+$color-primary: #a0b5a7;
+$color-primary-dark: #809186;
+$color-text: #333;
+$color-text-light: #555;
+$color-text-muted: #888;
+$color-border: #707070;
+$color-border-light: #ddd;
+$color-highlight: #f6ffb0;
+$color-bg-gray: #f4f4f4;
+$color-white: #fff;
+$color-accent-pink: #d49baa;
+$color-accent-brown: #a25e5f;
+$color-accent-blue: #648ea3;
+$color-accent-gold: #c9a572;
+
+/* Spacing */
+$spacing-xs: 10px;
+$spacing-sm: 20px;
+$spacing-md: 30px;
+$spacing-lg: 40px;
+$spacing-xl: 60px;
+$spacing-xxl: 100px;
+
+/* Font sizes */
+$font-size-xs: 1.2rem;
+$font-size-sm: 1.4rem;
+$font-size-base: 1.6rem;
+$font-size-md: 2rem;
+$font-size-lg: 2.8rem;
+$font-size-xl: 3.6rem;
+$font-size-xxl: 4.8rem;
+
+/* Breakpoints */
+$w-breakpoint-xs: 355;

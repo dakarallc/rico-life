@@ -23,9 +23,7 @@ notFound
     <div class="inner thank__inner">
       <h2 class="notFound__ttl">お探しのページは<br class="show--sp">見つかりませんでした。</h2><!-- /notFound__ttl -->
       <p class="notFound__txt">大変申し訳ありません。<br>お探しのページは見つかりませんでした。<br>ご指定のページは削除されたか、<br class="show--sp">移動した可能性がございます。</p><!-- /notFound__txt -->
-      <a href="<?php echo do_shortcode(
-      	"[home_url]",
-      ); ?>" class="notFound__btn wow fadeInUp">TOPに戻る</a><!-- /notFound__btn -->
+      <a href="<?php echo rico_home_url(); ?>" class="notFound__btn wow fadeInUp">TOPに戻る</a><!-- /notFound__btn -->
     </div><!-- /inner thank__inner -->
   </section><!-- /notFound -->
 </div><!-- /page  -->

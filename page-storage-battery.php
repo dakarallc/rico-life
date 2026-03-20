@@ -10,7 +10,7 @@ Template Name: ソーラー&蓄電池
 
 	<!-- fv -->
 	<section class="fv">
-		<img class="fv__img" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/storage-battery/kv.png" alt="">
+		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/kv.png" alt="">
 		<div class="inner fv__inner">
 			<div class="fv__ttl">
 				<h2>
@@ -41,9 +41,7 @@ Template Name: ソーラー&蓄電池
 			</div>
 
 			<div class="products__img">
-				<img src="<?php echo do_shortcode(
-    	"[theme_url]",
-    ); ?>/assets/img/storage-battery/1523to113.svg" alt="新しいカタチの規格プラン方式">
+				<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/1523to113.svg" alt="新しいカタチの規格プラン方式">
 			</div>
 			<div class="products__text">
 				<p>
@@ -71,7 +69,7 @@ Template Name: ソーラー&蓄電池
 
 			<div class="productDetail__images productDetail__images--single">
 				<div class="productDetail__image">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/storage-battery/solerPanel.png" alt="ソーラーパネル">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/solerPanel.png" alt="ソーラーパネル">
 				</div>
 			</div>
 
@@ -121,7 +119,7 @@ Template Name: ソーラー&蓄電池
 
 			<div class="productDetail__images productDetail__images--single">
 				<div class="productDetail__image productDetail__image--battery">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/storage-battery/tesla.png" alt="Tesla Powerwall">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/tesla.png" alt="Tesla Powerwall">
 				</div>
 			</div>
 
@@ -147,7 +145,7 @@ Template Name: ソーラー&蓄電池
 
 	<!-- Free plan	 -->
 	<section class="why conceptSection">
-		<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/storage-battery/energyBg.png" alt="テーブルの写真">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/energyBg.png" alt="テーブルの写真">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">Energy

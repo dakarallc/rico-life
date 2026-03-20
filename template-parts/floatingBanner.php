@@ -16,17 +16,13 @@
       </a>
     </div>
     <div class="floating__item">
-      <a href="<?php echo do_shortcode(
-      	"[home_url]",
-      ); ?>request" onClick="ga('send', 'event', 'request', 'tap','reservation')">
+      <a href="<?php echo rico_home_url(); ?>request" onClick="ga('send', 'event', 'request', 'tap','reservation')">
         <i class="fa-solid fa-book-open fa-xl"></i>
         <p class="floating__text">お問い合わせ</p>
       </a>
     </div>
     <div class="floating__item">
-      <a href="<?php echo do_shortcode(
-      	"[home_url]",
-      ); ?>contact" onClick="ga('send', 'event', 'raizyou', 'tap','reservation')">
+      <a href="<?php echo rico_home_url(); ?>contact" onClick="ga('send', 'event', 'raizyou', 'tap','reservation')">
         <i class="fa-solid fa-house fa-xl"></i>
         <p class="floating__text">来場予約</p>
       </a>

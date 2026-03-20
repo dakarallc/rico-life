@@ -10,37 +10,37 @@
 			<div class="product__list">
 				<div class="product__item">
 					<a href="#">
-						<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/product1.png" alt="間取り">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/top/product1.png" alt="間取り">
 						<div class="product__label">間取り</div>
 					</a>
 				</div>
 				<div class="product__item">
-					<a href="<?php echo esc_url(home_url("/storage-battery")); ?>">
-						<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/product2.png" alt="ソーラー＆蓄電池">
+					<a href="<?php echo rico_home_url("/storage-battery"); ?>">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/top/product2.png" alt="ソーラー＆蓄電池">
 						<div class="product__label">ソーラー＆蓄電池</div>
 					</a>
 				</div>
 				<div class="product__item">
 					<a href="#">
-						<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/product3.png" alt="標準仕様">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/top/product3.png" alt="標準仕様">
 						<div class="product__label">標準仕様</div>
 					</a>
 				</div>
 				<div class="product__item">
 					<a href="#">
-						<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/product4.png" alt="コスト">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/top/product4.png" alt="コスト">
 						<div class="product__label">コスト</div>
 					</a>
 				</div>
 				<div class="product__item">
 					<a href="#">
-						<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/product5.png" alt="家づくりの流れ">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/top/product5.png" alt="家づくりの流れ">
 						<div class="product__label">家づくりの流れ</div>
 					</a>
 				</div>
 				<div class="product__item">
 					<a href="#">
-						<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/product6.png" alt="Rico Life.ch">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/top/product6.png" alt="Rico Life.ch">
 						<div class="product__label">Rico Life.ch</div>
 					</a>
 				</div>

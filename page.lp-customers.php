@@ -6,33 +6,13 @@ Template Name: lp-customersページ
 <?php get_header(); ?>
 
 <div class="lp">
-	<img src="<?php echo do_shortcode(
- 	"[theme_url]",
- ); ?>/assets/img/lp/customers-lp1.png" alt="RicoLifeのzeh" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/lp/customers-lp1.png" class="ls-is-cached sp" loading="lazy">
-	<img src="<?php echo do_shortcode(
- 	"[theme_url]",
- ); ?>/assets/img/lp/customers-lp-pc1.png" alt="RicoLifeのzeh" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/lp/customers-lp-pc1.png" class="ls-is-cached pc" loading="lazy">
+	<img src="<?php echo rico_theme_url(); ?>/assets/img/lp/customers-lp1.png" alt="RicoLifeのzeh" data-src="<?php echo rico_theme_url(); ?>/assets/img/lp/customers-lp1.png" class="ls-is-cached sp" loading="lazy">
+	<img src="<?php echo rico_theme_url(); ?>/assets/img/lp/customers-lp-pc1.png" alt="RicoLifeのzeh" data-src="<?php echo rico_theme_url(); ?>/assets/img/lp/customers-lp-pc1.png" class="ls-is-cached pc" loading="lazy">
 
-	<img src="<?php echo do_shortcode(
- 	"[theme_url]",
- ); ?>/assets/img/lp/customers-lp2.png" alt="RicoLifeの平屋" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/lp/customers-lp2.png" class="ls-is-cached sp" loading="lazy" style="margin-top: 60px;">
-	<img src="<?php echo do_shortcode(
- 	"[theme_url]",
- ); ?>/assets/img/lp/customers-lp-pc2.png" alt="RicoLifeの平屋" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/lp/customers-lp-pc2.png" class="ls-is-cached pc" loading="lazy" style="margin-top: 60px;">
+	<img src="<?php echo rico_theme_url(); ?>/assets/img/lp/customers-lp2.png" alt="RicoLifeの平屋" data-src="<?php echo rico_theme_url(); ?>/assets/img/lp/customers-lp2.png" class="ls-is-cached sp" loading="lazy" style="margin-top: 60px;">
+	<img src="<?php echo rico_theme_url(); ?>/assets/img/lp/customers-lp-pc2.png" alt="RicoLifeの平屋" data-src="<?php echo rico_theme_url(); ?>/assets/img/lp/customers-lp-pc2.png" class="ls-is-cached pc" loading="lazy" style="margin-top: 60px;">
 
-	<img src="<?php echo do_shortcode(
- 	"[theme_url]",
- ); ?>/assets/img/lp/customers-lp3.png" alt="RicoLifeの平屋" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/customers-lp3.png" class="ls-is-cached pc" loading="lazy">
+	<img src="<?php echo rico_theme_url(); ?>/assets/img/lp/customers-lp3.png" alt="RicoLifeの平屋" data-src="<?php echo rico_theme_url(); ?>/assets/customers-lp3.png" class="ls-is-cached pc" loading="lazy">
 
 	<!-- ===============================================================================================
 EVENT
@@ -55,7 +35,7 @@ EVENT
 						<h2 class="event__ttl event__ttl-pc ttl ttl--right">開催中の<br>イベント</h2><!-- /event__ttl -->
 						<h2 class="event__ttl event__ttl-sp ttl ttl--right">開催中のイベント</h2><!-- /event__ttl -->
 						<!-- ★pc 用ボタン表示 -->
-						<a href="<?php echo do_shortcode("[home_url]"); ?>news" class="event__btn topLink show--pc">view more</a>
+						<a href="<?php echo rico_home_url(); ?>news" class="event__btn topLink show--pc">view more</a>
 					</div><!-- /event__left -->
 					<div class="event__right swiper eventSwiper">
 						<ul class="event__list swiper-wrapper">
@@ -95,15 +75,15 @@ EVENT
 		</section><!-- /event -->
 
 		<div class="cv">
-			<a href="<?php echo do_shortcode("[home_url]"); ?>contact" class="event__btn topLink">来店予約はこちら</a>
+			<a href="<?php echo rico_home_url(); ?>contact" class="event__btn topLink">来店予約はこちら</a>
 		</div>
 		
 		<div class="cv">
-			<a href="<?php echo do_shortcode("[home_url]"); ?>request" class="event__btn topLink">資料請求はこちら</a>
+			<a href="<?php echo rico_home_url(); ?>request" class="event__btn topLink">資料請求はこちら</a>
 
-			<a href="<?php echo do_shortcode("[home_url]"); ?>contact" class="event__btn topLink">来店予約はこちら</a>
+			<a href="<?php echo rico_home_url(); ?>contact" class="event__btn topLink">来店予約はこちら</a>
 
-			<a href="<?php echo do_shortcode("[home_url]"); ?>news" class="event__btn topLink">イベントページ</a>
+			<a href="<?php echo rico_home_url(); ?>news" class="event__btn topLink">イベントページ</a>
 		</div>
 	<?php endif;
  wp_reset_postdata();

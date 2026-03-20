@@ -11,27 +11,15 @@ mv
 ================================================================================================ -->
 	<main class="main">
 		<div class="show--pc">
-			<img  src="<?php echo do_shortcode(
-   	"[theme_url]",
-   ); ?>/assets/img/about/kv-about-pc.png" alt="RicoLifeの平屋" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/kv-about-pc.png" class=" ls-is-cached lazyloaded">
+			<img  src="<?php echo rico_theme_url(); ?>/assets/img/about/kv-about-pc.png" alt="RicoLifeの平屋" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/kv-about-pc.png" class=" ls-is-cached lazyloaded">
 			<noscript>
-				<img src="<?php echo do_shortcode(
-    	"[theme_url]",
-    ); ?>/assets/img/about/kv-about-pc.png" alt="RicoLifeの平屋" data-eio="l">
+				<img src="<?php echo rico_theme_url(); ?>/assets/img/about/kv-about-pc.png" alt="RicoLifeの平屋" data-eio="l">
 			</noscript>
 		</div>
 		<div class="show--sp">
-			<img  src="<?php echo do_shortcode(
-   	"[theme_url]",
-   ); ?>/assets/img/about/kv-about-sp.png" alt="RicoLifeの平屋" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/kv-about-sp.png" class=" ls-is-cached lazyloaded">
+			<img  src="<?php echo rico_theme_url(); ?>/assets/img/about/kv-about-sp.png" alt="RicoLifeの平屋" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/kv-about-sp.png" class=" ls-is-cached lazyloaded">
 			<noscript>
-				<img src="<?php echo do_shortcode(
-    	"[theme_url]",
-    ); ?>/assets/img/about/kv-about-sp.png" alt="RicoLifeの平屋" data-eio="l">
+				<img src="<?php echo rico_theme_url(); ?>/assets/img/about/kv-about-sp.png" alt="RicoLifeの平屋" data-eio="l">
 			</noscript>
 		</div>
 	</main>
@@ -59,13 +47,9 @@ about-massage
 		</div>   
 
 		<div class="about-massage__inner--content">
-			<img src="<?php echo do_shortcode(
-   	"[theme_url]",
-   ); ?>/images/about-massage.png" alt="RicoLifeの家" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/about-massage.png" class=" ls-is-cached lazyloaded">
+			<img src="<?php echo rico_theme_url(); ?>/images/about-massage.png" alt="RicoLifeの家" data-src="<?php echo rico_theme_url(); ?>/images/about-massage.png" class=" ls-is-cached lazyloaded">
 			<noscript>
-			<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/about-massage.png" alt="RicoLifeの家" data-eio="l">
+			<img src="<?php echo rico_theme_url(); ?>/images/about-massage.png" alt="RicoLifeの家" data-eio="l">
 			</noscript>
 		</div>
 
@@ -96,21 +80,21 @@ point3
 						<div class="box">
 							<h3>169,280通りの選択肢</h3>
 							<p>自由に選べる憧れの<br />デザイン&間取り！</p>
-							<img class="bgImage" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/orange-home-bg.png" alt="">
+							<img class="bgImage" src="<?php echo rico_theme_url(); ?>/assets/img/about/orange-home-bg.png" alt="">
 						</div>
 					</a>
 					<a href="#high">
 						<div  div class="box">
 							<h3>太陽光発電標準搭載</h3>
 							<p>月々15,000円支払いがお得！<br />自家発電で家計を助ける！</p>
-							<img class="bgImage" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/orange-home-bg.png" alt="">
+							<img class="bgImage" src="<?php echo rico_theme_url(); ?>/assets/img/about/orange-home-bg.png" alt="">
 						</div>
 					</a>
 					<a href="#low">
 						<div class="box">
 							<h3>全棟100%ZHE基準</h3>
 							<p>1年中快適な<br/>ゼロエネルギー住宅対応!</p>
-							<img class="bgImage" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/orange-home-bg.png" alt="">
+							<img class="bgImage" src="<?php echo rico_theme_url(); ?>/assets/img/about/orange-home-bg.png" alt="">
 						</div>
 					</a>
 				</div>
@@ -127,11 +111,7 @@ zeh
 				<h2 class="about-ttl">ZEH基準の住宅性能で<br>快適で健康な暮らし</h2>
 			</div>
 			<div class="zeh__inner--content">
-				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="zehモデル" data-src="<?php echo do_shortcode(
-    	"[theme_url]",
-    ); ?>/images/zeh.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/zeh.png" alt="zehモデル" data-eio="l"></noscript>
+				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="zehモデル" data-src="<?php echo rico_theme_url(); ?>/images/zeh.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/images/zeh.png" alt="zehモデル" data-eio="l"></noscript>
 				<p>自宅で発電した電気を使い、余った電気は売電する時代です。(環境にも、家計にも優しい時代)当社は、光熱費（電気代を含む）やガソリン代も0円（電気自動車の場合）、電気を買わずに住む住宅を目指し、大容量の太陽光発電を標準搭載しています。
 				太陽光発電システムは自然エネルギーを利用する為、発電時にCO2を排出することなく、環境にとても優しい仕組みです。</p>
 			</div>
@@ -150,7 +130,7 @@ RicoLifeとは
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">低価格×高品質を実現</h3>
 				<div class="pc-flex">
-					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail1.png" alt="">
+					<img class="leftImg" src="<?php echo rico_theme_url(); ?>/assets/img/about/about-detail1.png" alt="">
 					<div class="about-detail-message">
 						<p>土地や建物が大きな家は住宅ローンも大きくなります。<br class="show--pc"/>そしてローンだけでなく今後は光熱費の上昇で固定費がどんどん高くなります。そのため、無理なく持てる家を建てることが大事です。<br class="show--sp"/>RicoLifeでは、注文住宅を規格化し合理化することで高水準な仕様のまま、コストダウンを実現しております。さらに、太陽光発電が標準装備でエネルギーコスト節約という付加価値つき住宅です。<br class="show--sp"/>単に安いのではなく、お客様が安心して快適に暮らせるような仕様になっております。</p>
 					</div>
@@ -160,7 +140,7 @@ RicoLifeとは
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">太陽光で家が稼いでくれる</h3>
 				<div class="pc-flex">
-					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail2.png" alt="">
+					<img class="leftImg" src="<?php echo rico_theme_url(); ?>/assets/img/about/about-detail2.png" alt="">
 					<div class="about-detail-message">
 						<p>太陽光パネル付きの家が稼いでくれる。<br>RicoLifeのイエテラスは、太陽光が標準搭載です。近年、電気代が高騰しておりますが、まだまだ上がることが予想されております。<br class="show--sp"/>その電気を家が蓄え、売電してくれることで毎月の電気代が0円になるだけでなく、搭載量によっては住宅ローンの負担軽減も可能です。さらに、自然エネルギーを利用した太陽光発電はCO2を排出することがないため、環境にとてもやさしいです。<br class="show--sp"/>日々の生活が充実したものになります。</p>
 					</div>
@@ -170,18 +150,16 @@ RicoLifeとは
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">豊富なデザインと間取り</h3>
 				<div class="pc-flex">
-					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail3.png" alt="">
+					<img class="leftImg" src="<?php echo rico_theme_url(); ?>/assets/img/about/about-detail3.png" alt="">
 					<div class="about-detail-message">
 						<div class="select-title">
 							<p>169,280通りの選択肢</p>
 						</div>
 
 						<div class="choises__inner--content section__inner--content">
-							<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/choices.png" alt="選択肢" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/choices.png" class=" ls-is-cached lazyloaded">
+							<img src="<?php echo rico_theme_url(); ?>/images/choices.png" alt="選択肢" data-src="<?php echo rico_theme_url(); ?>/images/choices.png" class=" ls-is-cached lazyloaded">
 							<noscript>
-								<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/choices.png" alt="選択肢" data-eio="l">
+								<img src="<?php echo rico_theme_url(); ?>/images/choices.png" alt="選択肢" data-eio="l">
 							</noscript>
 						</div>
 						<p>規格化したから、決められたものから少しの変更しかできないと思われるかと思いますが、それぞれ豊富な種類からカスタマイズすることが可能です。<br class="show--sp"/>自分たちだけのオシャレなマイホームが完成します。</p>
@@ -205,7 +183,7 @@ RicoLifeとは
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">災害に強く耐久性◎</h3>
 				<div class="pc-flex">
-					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail4.png" alt="">
+					<img class="leftImg" src="<?php echo rico_theme_url(); ?>/assets/img/about/about-detail4.png" alt="">
 					<div class="about-detail-message">
 						<p>日本は地震大国です。何十年も暮らすマイホームだからこそ地震に強い耐震性と耐久性が大切です。『RicoLife』は基礎工事から内装工事に至るまで耐久性とエコロジーを取り入れ、レベルの高い性能を実現しています。凹凸のないハコ型にすることで、地震に対して構造部分の強さを保つだけでなく、建物価格を低く抑えることができます。また規格化した物件だからこそ、一定の品質を保ちます。</p>
 					</div>
@@ -215,7 +193,7 @@ RicoLifeとは
 			<div class="about-detail-content">
 				<h3 class="about-detail-title">土地探しもお任せ！</h3>
 				<div class="pc-flex">
-					<img class="leftImg" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/about/about-detail5.png" alt="">
+					<img class="leftImg" src="<?php echo rico_theme_url(); ?>/assets/img/about/about-detail5.png" alt="">
 					<div class="about-detail-message">
 						<p>マイホームを建てる時には土地探しも重要になります。現地見学をして周辺の環境を確かめたり、物件を含めた全体予算をしっかりと算出したりと、面倒なことがたくさんあります。RicoLifeは、「家」も「土地」もセットでご提案いたしますのでご安心ください。地元密着で70年の情報力と提案力でサポートいたします。</p>
 					</div>
@@ -252,13 +230,7 @@ plan
 			<div id="panel1" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/1-1.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/1-1png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/1-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/about/1-1.png" alt="25坪998万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/1-1png" class=" lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/1-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan madori-sp">
 					<div class="floor-plan__inner">
@@ -266,32 +238,18 @@ plan
 						<p>1F</p>
 					</div>
 					<p>38.76㎡<br>(11.72坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/1-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/1-2.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 					<div class="floor-plan__inner">
 					<div class="floor">
 						<p>2F</p>
 					</div>
 					<p>39.74㎡<br>(12.02坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/1-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/1-3.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/1.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/1-01png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/about/1.png" alt="25坪998万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/1-01png" class=" lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/1.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				</div>
 				<div class="floor-plan flex">
@@ -300,33 +258,21 @@ plan
 					<p>1F</p>
 					</div>
 					<p>38.76㎡<br>(11.72坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/1-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/1-2.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan__inner madori-pc">
 					<div class="floor">
 					<p>2F</p>
 					</div>
 					<p>39.74㎡<br>(12.02坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/1-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/1-3.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				</div>
 			</div>
 			<div id="panel2" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/2-1.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/2-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/2-1.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/2-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan madori-sp">
 					<div class="floor-plan__inner">
@@ -334,32 +280,18 @@ plan
 						<p>1F</p>
 					</div>
 					<p>45.27㎡<br>(13.69坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/2-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/2-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/2-2.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/2-2.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 					<div class="floor-plan__inner">
 					<div class="floor">
 						<p>2F</p>
 					</div>
 					<p>46.37㎡<br>(14.02坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/2-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/2-3.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/2-3.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/2-3.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/2.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/1-01png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/2.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/about/2.png" alt="25坪998万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/1-01png" class=" lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/2.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				</div>
 				<div class="floor-plan flex">
@@ -368,22 +300,14 @@ plan
 					<p>1F</p>
 					</div>
 					<p>45.27㎡<br>(13.69坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/2-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/2-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/2-2.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/2-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan__inner madori-pc">
 					<div class="floor">
 					<p>2F</p>
 					</div>
 					<p>46.37㎡<br>(14.02坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/2-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/2-3.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/2-3.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/2-3.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				</div>
 			</div>
@@ -391,11 +315,7 @@ plan
 			<div id="panel3" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="32坪1,188万円の家" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/3-1.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/3-1.png" alt="32坪1,188万円の家" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="32坪1,188万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/3-1.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/3-1.png" alt="32坪1,188万円の家" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan madori-sp">
 					<div class="floor-plan__inner">
@@ -403,32 +323,18 @@ plan
 						<p>1F</p>
 					</div>
 					<p>50.85㎡<br>(15.88坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 					<div class="floor-plan__inner">
 					<div class="floor">
 						<p>2F</p>
 					</div>
 					<p>52.17㎡<br>(15.78坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
 					</div>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/3.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/3.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/3.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/about/3.png" alt="25坪998万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/3.svg" class=" lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/3.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				</div>
 				<div class="floor-plan flex">
@@ -437,22 +343,14 @@ plan
 					<p>1F</p>
 					</div>
 					<p>50.85㎡<br>(15.88坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/3-2.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/3-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="floor-plan__inner madori-pc">
 					<div class="floor">
 					<p>2F</p>
 					</div>
 					<p>52.17㎡<br>(15.78坪)</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/3-3.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/3-3.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/3-3.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				</div>
 			</div>
@@ -471,50 +369,22 @@ plan
 			<div id="panel4" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/4-1.png" class="lazyload house"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/4-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/4-2.png" class="lazyload madori"><noscript><img class="madori" src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/4-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/4-1.png" class="lazyload house"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/4-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/4-2.png" class="lazyload madori"><noscript><img class="madori" src="<?php echo rico_theme_url(); ?>/assets/img/about/4-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/4.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/4.png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/4.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/about/4.png" alt="25坪998万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/4.png" class=" lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/4.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				</div>
 			</div>
 			<div id="panel5" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/5-1.png" class="lazyload house"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/about/5-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/5-2.png" class="lazyload madori"><noscript><img class="madori" src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/5-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/5-1.png" class="lazyload house"><noscript><img src="<?php echo rico_theme_url(); ?>/img/about/5-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/5-2.png" class="lazyload madori"><noscript><img class="madori" src="<?php echo rico_theme_url(); ?>/assets/img/about/5-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/5.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/5.png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/5.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/about/5.png" alt="25坪998万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/5.png" class=" lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/5.png" alt="25坪998万円の家" data-eio="l"></noscript>
 				</div>
 				</div>
 			</div>
@@ -522,25 +392,11 @@ plan
 			<div id="panel6" class="tab_panel">
 				<div class="flex">
 				<div class="house-img">
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/6-1.png" class="lazyload house"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/about/6-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/6-2.png" class="lazyload madori"><noscript><img class="madori-pc" src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/6-2.png" alt="間取り1階" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="25坪998万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/6-1.png" class="lazyload house"><noscript><img src="<?php echo rico_theme_url(); ?>/img/about/6-1.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="間取り1階" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/6-2.png" class="lazyload madori"><noscript><img class="madori-pc" src="<?php echo rico_theme_url(); ?>/assets/img/about/6-2.png" alt="間取り1階" data-eio="l"></noscript>
 				</div>
 				<div class="repayment-plan">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/about/6.png" alt="25坪998万円の家" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/6.png" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/about/6.png" alt="25坪998万円の家" data-eio="l"></noscript>
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/about/6.png" alt="25坪998万円の家" data-src="<?php echo rico_theme_url(); ?>/assets/img/about/6.png" class=" lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/assets/img/about/6.png" alt="25坪998万円の家" data-eio="l"></noscript>
 					
 				</div>
 				</div>
@@ -560,9 +416,7 @@ high-quality
 
 			<div class="high-quality__inner--content">
 				<p>住宅はご家族の大切な生活の基盤です。家族が「安心・快適・安全」に暮らす為に、価格は抑えつつも、品質はそのままの住まいづくりを基本として考えています。</p>
-				<img class="uk-hidden@s" src="<?php echo do_shortcode(
-    	"[theme_url]",
-    ); ?>/images/high-quality-sp.png" alt="高品質な家の仕様">
+				<img class="uk-hidden@s" src="<?php echo rico_theme_url(); ?>/images/high-quality-sp.png" alt="高品質な家の仕様">
 			</div>
 		</div>
   </section>
@@ -579,13 +433,7 @@ low-price
       </div>
       <div class="low-price__inner--contents uk-grid">
         <div class="content uk-width-1-3@s">
-          <img src="<?php echo do_shortcode(
-          	"[theme_url]",
-          ); ?>/images/house-bg.svg" alt="低価格のポイント1" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/house-bg.svg" alt="低価格のポイント1" data-eio="l"></noscript>
+          <img src="<?php echo rico_theme_url(); ?>/images/house-bg.svg" alt="低価格のポイント1" data-src="<?php echo rico_theme_url(); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/images/house-bg.svg" alt="低価格のポイント1" data-eio="l"></noscript>
           <div class="content__inner">
             <h4>建設・不動産の融合</h4>
             <p>土地と建物をトータルでご提案することにより余計な中間マージンが発生しないため
@@ -594,26 +442,14 @@ low-price
           </div>
         </div>
         <div class="content uk-width-1-3@s">
-          <img src="<?php echo do_shortcode(
-          	"[theme_url]",
-          ); ?>/images/house-bg.svg" alt="低価格のポイント2" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/house-bg.svg" alt="低価格のポイント2" data-eio="l"></noscript>
+          <img src="<?php echo rico_theme_url(); ?>/images/house-bg.svg" alt="低価格のポイント2" data-src="<?php echo rico_theme_url(); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/images/house-bg.svg" alt="低価格のポイント2" data-eio="l"></noscript>
           <div class="content__inner">
           <h4>共同で購入！</h4>
           <p>RicoLifeでは全国のフランチャイズ加盟店と建材を共同購入することで、流通コストを削減しています。</p>
           </div>
         </div>
         <div class="content uk-width-1-3@s">
-          <img src="<?php echo do_shortcode(
-          	"[theme_url]",
-          ); ?>/images/house-bg.svg" alt="低価格のポイント3" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/house-bg.svg" alt="低価格のポイント3" data-eio="l"></noscript>
+          <img src="<?php echo rico_theme_url(); ?>/images/house-bg.svg" alt="低価格のポイント3" data-src="<?php echo rico_theme_url(); ?>/images/house-bg.svg" class=" lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/images/house-bg.svg" alt="低価格のポイント3" data-eio="l"></noscript>
           <div class="content__inner">
             <h4>規格の統一化</h4>
             <p>バランスの取れた住まいの規格設計を基に、高さや間取りの構造を統一。
@@ -638,11 +474,7 @@ low-price
       </div>
       <div class="voice__inner--content uk-grid">
         <div class="uk-width-1-2@s">
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="お客様との打ち合わせ" data-src="<?php echo do_shortcode(
-          	"[theme_url]",
-          ); ?>/images/voice.png" class="lazyload"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/voice.png" alt="お客様との打ち合わせ" data-eio="l"></noscript>
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="お客様との打ち合わせ" data-src="<?php echo rico_theme_url(); ?>/images/voice.png" class="lazyload"><noscript><img src="<?php echo rico_theme_url(); ?>/images/voice.png" alt="お客様との打ち合わせ" data-eio="l"></noscript>
         </div>
         <div class="uk-width-1-2@s">
           <p>1番の決め手は地元密着で長く営業しているからです。
@@ -674,9 +506,7 @@ if ($the_query->have_posts()): ?>
             <h2 class="event__ttl  event__ttl-pc ttl ttl--right ">開催中の<br>イベント</h2><!-- /event__ttl -->
             <h2 class="event__ttl  event__ttl-sp ttl ttl--right ">開催中のイベント</h2><!-- /event__ttl -->
             <!-- ★pc 用ボタン表示 -->
-            <a href="<?php echo do_shortcode(
-            	"[home_url]",
-            ); ?>news" class="event__btn topLink show--pc">view more</a><!-- /event__btn -->
+            <a href="<?php echo rico_home_url(); ?>news" class="event__btn topLink show--pc">view more</a><!-- /event__btn -->
           </div><!-- /event__left -->
           <div class="event__right swiper eventSwiper">
             <ul class="event__list swiper-wrapper">
@@ -802,36 +632,24 @@ wp_reset_postdata();
     </div>
 
     <div>
-			<a href="<?php echo do_shortcode("[home_url]"); ?>about/low-price/">
-				<img src=<?php echo do_shortcode(
-    	"[theme_url]",
-    ); ?>/images/card-low-price.png" alt="低価格×高品質" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/card-low-price.png" class="lazyload">
+			<a href="<?php echo rico_home_url(); ?>about/low-price/">
+				<img src=<?php echo rico_theme_url(); ?>/images/card-low-price.png" alt="低価格×高品質" data-src="<?php echo rico_theme_url(); ?>/images/card-low-price.png" class="lazyload">
 				<noscript>
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/card-low-price.png" alt="低価格×高品質" data-eio="l">
+					<img src="<?php echo rico_theme_url(); ?>/images/card-low-price.png" alt="低価格×高品質" data-eio="l">
 				</noscript>
 			</a>
 
-			<a href="<?php echo do_shortcode("[home_url]"); ?>about/zeh/">
-				<img src=<?php echo do_shortcode(
-    	"[theme_url]",
-    ); ?>/images/card-zeh.png" alt="ZEH対応" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/card-zeh.png" class="lazyload">
+			<a href="<?php echo rico_home_url(); ?>about/zeh/">
+				<img src=<?php echo rico_theme_url(); ?>/images/card-zeh.png" alt="ZEH対応" data-src="<?php echo rico_theme_url(); ?>/images/card-zeh.png" class="lazyload">
 				<noscript>
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/card-zeh.png" alt="ZEH対応" data-eio="l">
+					<img src="<?php echo rico_theme_url(); ?>/images/card-zeh.png" alt="ZEH対応" data-eio="l">
 				</noscript>
 			</a>
 			
-			<a href="<?php echo do_shortcode("[home_url]"); ?>about/customers/">
-				<img src=<?php echo do_shortcode(
-    	"[theme_url]",
-    ); ?>/images/card-effort.png" alt="お客様への取り組み" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/images/card-effort.png" class="lazyload">
+			<a href="<?php echo rico_home_url(); ?>about/customers/">
+				<img src=<?php echo rico_theme_url(); ?>/images/card-effort.png" alt="お客様への取り組み" data-src="<?php echo rico_theme_url(); ?>/images/card-effort.png" class="lazyload">
 				<noscript>
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/images/card-effort.png" alt="お客様への取り組み" data-eio="l">
+					<img src="<?php echo rico_theme_url(); ?>/images/card-effort.png" alt="お客様への取り組み" data-eio="l">
 				</noscript>
 			</a>
 		</div>

@@ -241,9 +241,7 @@ caseItem
       </div><!-- /caseItem__box -->
       
 
-      <a href="<?php echo do_shortcode(
-      	"[home_url]",
-      ); ?>case" class="caseItem__btn wow fadeInUp">一覧に戻る</a><!-- /caseItem__btn -->
+      <a href="<?php echo rico_home_url(); ?>case" class="caseItem__btn wow fadeInUp">一覧に戻る</a><!-- /caseItem__btn -->
     </div><!-- /inner caseItem__inner -->
   </section><!-- /caseItem -->
 </div><!-- /page  -->

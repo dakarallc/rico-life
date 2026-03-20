@@ -68,17 +68,9 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
     } ?>">
       <div class="header__inner inner">
       <?php if (is_home() || is_front_page()): ?>
-        <h1 class="header__logo" data-logo="white"><a href="<?php echo do_shortcode(
-        	"[home_url]",
-        ); ?>"><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/common/logo.svg" alt="rico life"></a></h1>
+        <h1 class="header__logo" data-logo="white"><a href="<?php echo rico_home_url(); ?>"><img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo.svg" alt="rico life"></a></h1>
       <?php else: ?>
-        <div class="header__logo" data-logo="black"><a href="<?php echo do_shortcode(
-        	"[home_url]",
-        ); ?>"><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/common/logo-black.svg" alt="rico life"></a></div>
+        <div class="header__logo" data-logo="black"><a href="<?php echo rico_home_url(); ?>"><img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo-black.svg" alt="rico life"></a></div>
       <?php endif; ?>
         <!-- /header__logo -->
         <!-- PC用メニュー -->
@@ -98,13 +90,13 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
                 </a>
               </li>
               <li class="header__item">
-                <a href="<?php echo do_shortcode("[home_url]"); ?>request" >
+                <a href="<?php echo rico_home_url(); ?>request" >
 								<i class="fa-solid fa-book-open fa-xl"></i>
                   <p class="_below">お問い合わせ</p>
                 </a>
               </li>
               <li class="header__item">
-                <a href="<?php echo do_shortcode("[home_url]"); ?>contact">
+                <a href="<?php echo rico_home_url(); ?>contact">
 									<i class="fa-solid fa-house fa-xl"></i>
                   <p class="_below">来場予約</p>
                 </a>
@@ -120,24 +112,24 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
 
             <nav class="spMenu__nav">
               <ul class="spMenu__list">
-                <li><a href="<?php echo do_shortcode("[home_url]"); ?>">TOP</a></li>
-                <li><a href="<?php echo do_shortcode("[home_url]"); ?>concept">コンセプト</a></li>
-                <li><a href="<?php echo do_shortcode("[home_url]"); ?>case">施工事例</a></li>
-                <li><a href="<?php echo do_shortcode("[home_url]"); ?>event">イベント情報</a></li>
-                <li><a href="<?php echo do_shortcode("[home_url]"); ?>plan-of-house">間取り</a></li>
+                <li><a href="<?php echo rico_home_url(); ?>">TOP</a></li>
+                <li><a href="<?php echo rico_home_url(); ?>concept">コンセプト</a></li>
+                <li><a href="<?php echo rico_home_url(); ?>case">施工事例</a></li>
+                <li><a href="<?php echo rico_home_url(); ?>event">イベント情報</a></li>
+                <li><a href="<?php echo rico_home_url(); ?>plan-of-house">間取り</a></li>
                 <li>
-                  <a href="<?php echo esc_url(home_url("/standard-spec")); ?>">標準仕様</a>
+                  <a href="<?php echo rico_home_url("/standard-spec"); ?>">標準仕様</a>
                   <ul class="spMenu__subList">
-                    <li><a href="<?php echo esc_url(home_url("/standard-spec/home-appliances")); ?>">住宅設備</a></li>
-                    <li><a href="<?php echo esc_url(home_url("/standard-spec/performance")); ?>">住宅性能</a></li>
-                    <li><a href="<?php echo esc_url(home_url("/standard-spec/interior")); ?>">内装建材</a></li>
-                    <li><a href="<?php echo esc_url(home_url("/standard-spec/structure")); ?>">建物構造</a></li>
-                    <li><a href="<?php echo esc_url(home_url("/storage-battery")); ?>">ソーラー＆蓄電池</a></li>
+                    <li><a href="<?php echo rico_home_url("/standard-spec/home-appliances"); ?>">住宅設備</a></li>
+                    <li><a href="<?php echo rico_home_url("/standard-spec/performance"); ?>">住宅性能</a></li>
+                    <li><a href="<?php echo rico_home_url("/standard-spec/interior"); ?>">内装建材</a></li>
+                    <li><a href="<?php echo rico_home_url("/standard-spec/structure"); ?>">建物構造</a></li>
+                    <li><a href="<?php echo rico_home_url("/storage-battery"); ?>">ソーラー＆蓄電池</a></li>
                   </ul>
                 </li>
-                <li><a href="<?php echo esc_url(home_url("/staff")); ?>">スタッフ紹介</a></li>
-                <li><a href="<?php echo esc_url(home_url("/company")); ?>">会社概要</a></li>
-                <li><a href="<?php echo esc_url(home_url("/news")); ?>">ニュース</a></li>
+                <li><a href="<?php echo rico_home_url("/staff"); ?>">スタッフ紹介</a></li>
+                <li><a href="<?php echo rico_home_url("/company"); ?>">会社概要</a></li>
+                <li><a href="<?php echo rico_home_url("/news"); ?>">ニュース</a></li>
               </ul>
             </nav>
 
@@ -160,11 +152,11 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
               <i class="fab fa-instagram"></i>
               <span>Instagram</span>
             </a>
-            <a href="<?php echo do_shortcode("[home_url]"); ?>request" class="spMenu__footerItem">
+            <a href="<?php echo rico_home_url(); ?>request" class="spMenu__footerItem">
               <i class="fas fa-book-open"></i>
               <span>資料請求</span>
             </a>
-            <a href="<?php echo do_shortcode("[home_url]"); ?>contact" class="spMenu__footerItem">
+            <a href="<?php echo rico_home_url(); ?>contact" class="spMenu__footerItem">
               <i class="fas fa-calendar-alt"></i>
               <span>来場予約</span>
             </a>

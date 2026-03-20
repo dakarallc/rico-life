@@ -3,7 +3,7 @@
 <div class="page event-page">
   <!-- fv -->
   <section class="fv">
-    <img class="fv__img" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/kv2.png" alt="">
+    <img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="">
     <div class="inner fv__inner">
       <div class="fv__ttl">
         <h1>EVENT</h1>

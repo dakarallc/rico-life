@@ -185,15 +185,9 @@ pagination
 <!--       <div class="planList__box wow fadeInUp"> -->
 <!--         <h2 class="planList__boxTtl planList__ttl">ベルエールをご利用の法人様</h2><!-- /planList__boxTtl --> 
 <!--         <ul class="planList__logos"> -->
-<!--           <li class="planList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/common/handred-logo.svg" alt=""></a></li><!-- /planList__logo --> 
-<!--           <li class="planList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /planList__logo --> 
-<!--           <li class="planList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /planList__logo --> 
+<!--           <li class="planList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo rico_theme_url(); ?>/assets/img/common/handred-logo.svg" alt=""></a></li><!-- /planList__logo --> 
+<!--           <li class="planList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /planList__logo --> 
+<!--           <li class="planList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /planList__logo --> 
 <!--         </ul>/planList__logos -->
 <!--       </div>/planList__box -->
     </div><!-- /inner planList__inner -->
@@ -213,5 +207,6 @@ if (get_field("live_img")):
 											</div>
 										<?php
 endif;
+
 
 ?>

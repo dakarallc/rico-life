@@ -9,9 +9,7 @@ Template Name: 標準仕様 - 住宅性能
 
 	<!-- fv -->
 	<section class="fv">
-		<img class="fv__img" src="<?php echo do_shortcode(
-  	"[theme_url]",
-  ); ?>/assets/img/standard-spec/performance/performance-kv.jpg" alt="住宅性能">
+		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/performance-kv.jpg" alt="住宅性能">
 		<div class="inner fv__inner">
 			<div class="fv__ttl">
 				<h2>
@@ -51,27 +49,21 @@ Template Name: 標準仕様 - 住宅性能
 				<ul class="specNav__list">
 					<li class="specNav__item">
 						<a href="#sash" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/performance/icon-sash.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/icon-sash.png" alt="" class="specNav__icon">
 							<span class="specNav__text">高断熱サッシ</span>
 							<span class="specNav__arrow"></span>
 						</a>
 					</li>
 					<li class="specNav__item">
 						<a href="#entrance-door" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/performance/icon-entrance-door.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/icon-entrance-door.png" alt="" class="specNav__icon">
 							<span class="specNav__text">玄関ドア</span>
 							<span class="specNav__arrow"></span>
 						</a>
 					</li>
 					<li class="specNav__item">
 						<a href="#insulation" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/performance/icon-insulation.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/icon-insulation.png" alt="" class="specNav__icon">
 							<span class="specNav__text">断熱材</span>
 							<span class="specNav__arrow"></span>
 						</a>
@@ -92,7 +84,7 @@ Template Name: 標準仕様 - 住宅性能
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/performance/sash1.jpg" alt="高断熱サッシ">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/sash1.jpg" alt="高断熱サッシ">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -111,9 +103,7 @@ Template Name: 標準仕様 - 住宅性能
 			<ul class="specFeature">
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/performance/sash2.jpg" alt="高性能トリプルガラス">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/sash2.jpg" alt="高性能トリプルガラス">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">高性能トリプルガラス</h4>
@@ -122,7 +112,7 @@ Template Name: 標準仕様 - 住宅性能
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/performance/sash3.jpg" alt="Low-Eガラス">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/sash3.jpg" alt="Low-Eガラス">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">Low-Eガラス</h4>
@@ -131,9 +121,7 @@ Template Name: 標準仕様 - 住宅性能
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/performance/sash4.jpg" alt="アルゴンガス封入">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/sash4.jpg" alt="アルゴンガス封入">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">アルゴンガス封入</h4>
@@ -142,9 +130,7 @@ Template Name: 標準仕様 - 住宅性能
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/performance/sash5.jpg" alt="耐風・水密性能">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/sash5.jpg" alt="耐風・水密性能">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">耐風・水密性能</h4>
@@ -165,9 +151,7 @@ Template Name: 標準仕様 - 住宅性能
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/standard-spec/performance/entrance-door1.jpg" alt="玄関ドア">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/entrance-door1.jpg" alt="玄関ドア">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -186,9 +170,7 @@ Template Name: 標準仕様 - 住宅性能
 			<ul class="specFeature">
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/performance/entrance-door2.jpg" alt="スマート解錠">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/entrance-door2.jpg" alt="スマート解錠">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">スマート解錠</h4>
@@ -197,9 +179,7 @@ Template Name: 標準仕様 - 住宅性能
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/performance/entrance-door3.jpg" alt="アプリ連携">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/entrance-door3.jpg" alt="アプリ連携">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">アプリ連携</h4>
@@ -208,9 +188,7 @@ Template Name: 標準仕様 - 住宅性能
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/performance/entrance-door4.jpg" alt="断熱仕様〈K4〉">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/entrance-door4.jpg" alt="断熱仕様〈K4〉">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">断熱仕様〈K4〉</h4>
@@ -219,9 +197,7 @@ Template Name: 標準仕様 - 住宅性能
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/performance/entrance-door5.jpg" alt="豊富なカラー展開">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/entrance-door5.jpg" alt="豊富なカラー展開">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">豊富なカラー展開</h4>
@@ -242,7 +218,7 @@ Template Name: 標準仕様 - 住宅性能
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/performance/insulation1.jpg" alt="断熱材">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/insulation1.jpg" alt="断熱材">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -260,9 +236,7 @@ Template Name: 標準仕様 - 住宅性能
 			<ul class="specFeature">
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/performance/insulation2.jpg" alt="優れた断熱性能">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/insulation2.jpg" alt="優れた断熱性能">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">優れた断熱性能</h4>
@@ -271,9 +245,7 @@ Template Name: 標準仕様 - 住宅性能
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/performance/insulation3.jpg" alt="すき間を埋める施工性">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/insulation3.jpg" alt="すき間を埋める施工性">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">すき間を埋める施工性</h4>
@@ -282,9 +254,7 @@ Template Name: 標準仕様 - 住宅性能
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/performance/insulation4.jpg" alt="長く保つ密着性能">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance/insulation4.jpg" alt="長く保つ密着性能">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">長く保つ密着性能</h4>

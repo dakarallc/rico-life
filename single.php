@@ -29,13 +29,7 @@ pageHead
 	<?php if (in_category("field-trip")): ?>
   <div	class="pageHeadEvent">
     <h1 class="pageHeadEvent__ttl">
-      <img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/event/eventHeader.svg"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/eventHeader.svg" class=" ls-is-cached lazyloaded"><noscript><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/eventHeader.svg" alt="完成入居前見学会" data-eio="l"></noscript>
+      <img src="<?php echo rico_theme_url(); ?>/assets/img/event/eventHeader.svg"  alt="完成入居前見学会" data-src="<?php echo rico_theme_url(); ?>/img/event/eventHeader.svg" class=" ls-is-cached lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/img/event/eventHeader.svg" alt="完成入居前見学会" data-eio="l"></noscript>
     </h1><!-- /pageHead__ttl -->
   </div><!-- /pageHead -->
 	<?php else: ?>
@@ -98,9 +92,7 @@ post
 				<div class="cvButtonLinkWrap">
           <a href="#contactForm" class="cvButtonLink">
             <div>
-              <img src="<?php echo do_shortcode(
-              	"[theme_url]",
-              ); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+              <img src="<?php echo rico_theme_url(); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
             </div>
             <button class="greenBtn">
 							ご来場予約はこちら
@@ -227,9 +219,7 @@ post
 			 <div class="cvButtonLinkWrap">
           <a href="#contactForm" class="cvButtonLink">
             <div>
-              <img src="<?php echo do_shortcode(
-              	"[theme_url]",
-              ); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+              <img src="<?php echo rico_theme_url(); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
             </div>
             <button class="greenBtn">
 							ご来場予約はこちら
@@ -240,10 +230,10 @@ post
       <!-- 70thバナー -->
       <!-- <div class="banner banner70">
         <a class="tochi present-pc" href="https://ietochi-kuki.com/1331/" target="_blank">
-            <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/70th.png" alt="">
+            <img src="<?php echo rico_theme_url(); ?>/assets/img/event/70th.png" alt="">
         </a>
         <a class="tochi present-sp" href="https://ietochi-kuki.com/1331/" target="_blank">
-            <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/70thSp.png" alt="">
+            <img src="<?php echo rico_theme_url(); ?>/assets/img/event/70thSp.png" alt="">
         </a>
       </div> -->
 
@@ -251,11 +241,7 @@ post
       
       <!-- RicoLifeの家づくり -->
       <div class="homeMadeWrap">
-        <h2 class="homeMade__ttl  wow fadeInUp"><img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/common/logo.svg"  alt="RicoLife" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/logo.png" class="logo lazyloaded">の家づくり</h2><!-- /homeMade__ttl -->
+        <h2 class="homeMade__ttl  wow fadeInUp"><img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo.svg"  alt="RicoLife" data-src="<?php echo rico_theme_url(); ?>/img/event/logo.png" class="logo lazyloaded">の家づくり</h2><!-- /homeMade__ttl -->
         <section class="homeMade">
           <div class="homeMade__inner">
             <div class="homeMade__wrap content-left homeMade1">
@@ -300,9 +286,7 @@ post
 					<div class="cvButtonLinkWrap">
 						<a href="#contactForm" class="cvButtonLink">
 							<div>
-								<img src="<?php echo do_shortcode(
-									"[theme_url]",
-								); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
 							</div>
 							<button class="greenBtn">
 								ご来場予約はこちら
@@ -318,11 +302,7 @@ post
         <div class="eventPlan__wrap">
           <div class="eventPlan__box">
             <p class="number">01 <span>平屋住宅</span></p>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/plan1.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
+            <img src="<?php echo rico_theme_url(); ?>/assets/img/event/plan1.png"  alt="完成入居前見学会" data-src="<?php echo rico_theme_url(); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
             <div class="subTtlWrap">
               <h3 class="eventPlan__subTtl">1,398<span>万円〜</span></h3><!-- /homeMade__subTtl -->
             </div>
@@ -330,11 +310,7 @@ post
 
           <div class="eventPlan__box">
             <p class="number">02 <span>コンセプト平屋</span></p>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/plan2.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
+            <img src="<?php echo rico_theme_url(); ?>/assets/img/event/plan2.png"  alt="完成入居前見学会" data-src="<?php echo rico_theme_url(); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
             <div class="subTtlWrap">
               <h3 class="eventPlan__subTtl">1,648<span>万円〜</span></h3><!-- /homeMade__subTtl -->
             </div>
@@ -342,11 +318,7 @@ post
 
           <div class="eventPlan__box">
             <p class="number">03 <span>2階建て</span></p>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/plan3.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
+            <img src="<?php echo rico_theme_url(); ?>/assets/img/event/plan3.png"  alt="完成入居前見学会" data-src="<?php echo rico_theme_url(); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
             <div class="subTtlWrap">
               <h3 class="eventPlan__subTtl">1,398<span>万円〜</span></h3><!-- /homeMade__subTtl -->
             </div>
@@ -354,11 +326,7 @@ post
 
           <div class="eventPlan__box">
             <p class="number">04 <span>大型(40坪以上)２階建て</span></p>
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/plan4.png"  alt="完成入居前見学会" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
+            <img src="<?php echo rico_theme_url(); ?>/assets/img/event/plan4.png"  alt="完成入居前見学会" data-src="<?php echo rico_theme_url(); ?>/img/event/plan1.png" class="eventPlanImg lazyloaded">
             <div class="subTtlWrap">
               <h3 class="eventPlan__subTtl">1,748<span>万円〜</span></h3><!-- /homeMade__subTtl -->
             </div>
@@ -371,9 +339,7 @@ post
 				<div class="cvButtonLinkWrap">
 					<a href="#contactForm" class="cvButtonLink">
 						<div>
-							<img src="<?php echo do_shortcode(
-								"[theme_url]",
-							); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
 						</div>
 						<button class="greenBtn">
 							ご来場予約はこちら
@@ -385,37 +351,21 @@ post
       <!-- 住宅ローン -->
       <section class="housingLoan">
         <div class="housingLoan__img">
-          <img src="<?php echo do_shortcode(
-          	"[theme_url]",
-          ); ?>/assets/img/event/housingLoan.png"  alt="住宅ローン" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/housingLoan.png" class="eventPlanImg lazyloaded">
+          <img src="<?php echo rico_theme_url(); ?>/assets/img/event/housingLoan.png"  alt="住宅ローン" data-src="<?php echo rico_theme_url(); ?>/img/event/housingLoan.png" class="eventPlanImg lazyloaded">
         </div>
         <div class="housingLoan__contents">
           <p class="free">無料相談・無料審査大歓迎！</p>
           <div class="simulationWrap"> 
-            <img src="<?php echo do_shortcode(
-            	"[theme_url]",
-            ); ?>/assets/img/event/simulation.svg"  alt="住宅ローン" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/simulation.svg" class="simulation lazyloaded">
+            <img src="<?php echo rico_theme_url(); ?>/assets/img/event/simulation.svg"  alt="住宅ローン" data-src="<?php echo rico_theme_url(); ?>/img/event/simulation.svg" class="simulation lazyloaded">
           </div>
           <div class="listWrap">
             <ul class="housingLoan__list">
               <li>
-                <img src="<?php echo do_shortcode(
-                	"[theme_url]",
-                ); ?>/assets/img/event/check.svg"  alt="チェック" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/check.svg" class="lazyloaded">
+                <img src="<?php echo rico_theme_url(); ?>/assets/img/event/check.svg"  alt="チェック" data-src="<?php echo rico_theme_url(); ?>/img/event/check.svg" class="lazyloaded">
                 住宅ローンお支払いシミュレーション
               </li>
               <li>
-                <img src="<?php echo do_shortcode(
-                	"[theme_url]",
-                ); ?>/assets/img/event/check.svg"  alt="チェック" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/check.svg" class="lazyloaded">
+                <img src="<?php echo rico_theme_url(); ?>/assets/img/event/check.svg"  alt="チェック" data-src="<?php echo rico_theme_url(); ?>/img/event/check.svg" class="lazyloaded">
                 土地・建物の総額資金計画と住宅ローンのシミュレーション</li>
             </ul>
           </div>
@@ -427,10 +377,10 @@ post
 ================================================================================================ -->
       <div class="banner">
         <a class="tochi present-pc" href="https://ietochi-kuki.com/1331/" target="_blank">
-            <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/70th.png" alt="">
+            <img src="<?php echo rico_theme_url(); ?>/assets/img/event/70th.png" alt="">
         </a>
         <a class="tochi present-sp" href="https://ietochi-kuki.com/1331/" target="_blank">
-            <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/event/70thSp.png" alt="">
+            <img src="<?php echo rico_theme_url(); ?>/assets/img/event/70thSp.png" alt="">
         </a>
       </div>
 
@@ -438,9 +388,7 @@ post
 			<div class="cvButtonLinkWrap">
 				<a href="#contactForm" class="cvButtonLink">
 					<div>
-						<img src="<?php echo do_shortcode(
-							"[theme_url]",
-						); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
 					</div>
 					<button class="greenBtn">
 						ご来場予約はこちら
@@ -455,11 +403,7 @@ post
           宅建士が在籍する不動産部があるため<br class="show--sp">
           土地と建物をワンストップでご提案可能！</p>
         <div class="searchLand__img">
-          <img src="<?php echo do_shortcode(
-          	"[theme_url]",
-          ); ?>/assets/img/event/searchLand.png"  alt="住宅ローン" data-src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/img/event/searchLand.png" class=" lazyloaded">
+          <img src="<?php echo rico_theme_url(); ?>/assets/img/event/searchLand.png"  alt="住宅ローン" data-src="<?php echo rico_theme_url(); ?>/img/event/searchLand.png" class=" lazyloaded">
         </div>
         
       </section>
@@ -472,9 +416,7 @@ post
           <?php echo do_shortcode('[mwform_formkey key="33"]'); ?>
         </div><!-- /inner contact__inner -->
       </div><!-- /contact -->
-      <a href="<?php echo do_shortcode(
-      	"[home_url]",
-      ); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
+      <a href="<?php echo rico_home_url(); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
     </div><!-- /inner post__inner -->
   </section><!-- /post -->
   <?php elseif (in_category("end")): ?>
@@ -510,9 +452,7 @@ post
           <?php the_content(); ?>
         </div>
       </div><!-- /post__contents -->
-      <a href="<?php echo do_shortcode(
-      	"[home_url]",
-      ); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
+      <a href="<?php echo rico_home_url(); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
     </div><!-- /inner post__inner -->
   </section><!-- /post -->
   <?php else: ?>
@@ -523,9 +463,7 @@ post
             <?php the_content(); ?>
           </div><!-- /post__contents -->
 
-          <a href="<?php echo do_shortcode(
-          	"[home_url]",
-          ); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
+          <a href="<?php echo rico_home_url(); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
         </div><!-- /inner post__inner -->
       </section><!-- /post -->
     <?php else: ?>
@@ -537,9 +475,7 @@ post
         <?php the_content(); ?>
       </div><!-- /post__contents -->
 
-      <a href="<?php echo do_shortcode(
-      	"[home_url]",
-      ); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
+      <a href="<?php echo rico_home_url(); ?>news" class="post__btn wow fadeInUp">一覧に戻る</a><!-- /post__btn -->
     </div><!-- /inner post__inner -->
   </section><!-- /post -->
   <?php endif; ?>

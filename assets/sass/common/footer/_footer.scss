@@ -148,7 +148,8 @@
 								content: "＞";
 								position: absolute;
 								left: 0;
-								top: 6px;
+								top: 50%;
+								transform: translateY(-50%);
 								color: #fff;
 								font-size: 0.6em;
 							}
@@ -157,10 +158,21 @@
 								color: #fff;
 								text-decoration: none;
 								font-size: 1.8rem;
+								line-height: 1.6;
 								transition: opacity 0.2s;
 								&:hover {
 									opacity: 0.7;
 								}
+							}
+						}
+
+						/* 子メニュー付き項目は2列分使う */
+						.footerNav__hasChild {
+							grid-column: 1 / -1;
+
+							&::before {
+								top: 12px;
+								transform: none;
 							}
 						}
 

@@ -9,9 +9,7 @@ Template Name: 標準仕様 - 内装建材
 
 	<!-- fv -->
 	<section class="fv">
-		<img class="fv__img" src="<?php echo do_shortcode(
-  	"[theme_url]",
-  ); ?>/assets/img/standard-spec/interior/interior-kv.jpg" alt="内装建材">
+		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-kv.jpg" alt="内装建材">
 		<div class="inner fv__inner">
 			<div class="fv__ttl">
 				<h2>
@@ -50,18 +48,14 @@ Template Name: 標準仕様 - 内装建材
 				<ul class="specNav__list">
 					<li class="specNav__item">
 						<a href="#interior-door" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/interior/icon-interior-door.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/icon-interior-door.png" alt="" class="specNav__icon">
 							<span class="specNav__text">室内ドア</span>
 							<span class="specNav__arrow"></span>
 						</a>
 					</li>
 					<li class="specNav__item">
 						<a href="#flooring" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/interior/icon-flooring.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/icon-flooring.png" alt="" class="specNav__icon">
 							<span class="specNav__text">フローリング</span>
 							<span class="specNav__arrow"></span>
 						</a>
@@ -82,9 +76,7 @@ Template Name: 標準仕様 - 内装建材
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/standard-spec/interior/interior-door1.jpg" alt="室内ドア">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door1.jpg" alt="室内ドア">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -103,9 +95,7 @@ Template Name: 標準仕様 - 内装建材
 			<ul class="specFeature">
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door2.jpg" alt="ストレスのない使い心地">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door2.jpg" alt="ストレスのない使い心地">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">ストレスのない使い心地</h4>
@@ -114,9 +104,7 @@ Template Name: 標準仕様 - 内装建材
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door3.jpg" alt="長く美しさを保つ高い品質">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door3.jpg" alt="長く美しさを保つ高い品質">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">長く美しさを保つ高い品質</h4>
@@ -125,9 +113,7 @@ Template Name: 標準仕様 - 内装建材
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door4.jpg" alt="豊富なカラーバリエーション">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door4.jpg" alt="豊富なカラーバリエーション">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">豊富なカラーバリエーション</h4>
@@ -141,39 +127,27 @@ Template Name: 標準仕様 - 内装建材
 				<p class="specColor__label">お好きなカラーを選択可能</p>
 				<div class="specColor__grid">
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door-color1.jpg" alt="コージーライトグレー">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door-color1.jpg" alt="コージーライトグレー">
 						<span>コージーライトグレー</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door-color2.jpg" alt="プレシャスホワイト">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door-color2.jpg" alt="プレシャスホワイト">
 						<span>プレシャスホワイト</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door-color3.jpg" alt="クリエアイボリー">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door-color3.jpg" alt="クリエアイボリー">
 						<span>クリエアイボリー <small>※1</small></span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door-color4.jpg" alt="クリエオーク">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door-color4.jpg" alt="クリエオーク">
 						<span>クリエオーク <small>※1</small></span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door-color5.jpg" alt="クリエチェリー">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door-color5.jpg" alt="クリエチェリー">
 						<span>クリエチェリー <small>※1</small></span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door-color6.jpg" alt="クリエモカ">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door-color6.jpg" alt="クリエモカ">
 						<span>クリエモカ <small>※1</small></span>
 					</div>
 				</div>
@@ -184,27 +158,19 @@ Template Name: 標準仕様 - 内装建材
 				<p class="specColor__label">LDKドアはデザインタイプを選択可能</p>
 				<div class="specColor__grid specColor__grid--4col">
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door-ldk1.jpg" alt="LDKドア 型番:LGL">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door-ldk1.jpg" alt="LDKドア 型番:LGL">
 						<span>LDKドア<small>※1 型のみ</small><br>型番：LGL</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door-ldk2.jpg" alt="LDKドア 型番:LGM">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door-ldk2.jpg" alt="LDKドア 型番:LGM">
 						<span>LDKドア<small>※1 型のみ</small><br>型番：LGM</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door-ldk3.jpg" alt="LDKドア 型番:LGN">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door-ldk3.jpg" alt="LDKドア 型番:LGN">
 						<span>LDKドア<small>※1 型のみ</small><br>型番：LGN</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/interior-door-ldk4.jpg" alt="LDKドア 型番:LAA">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/interior-door-ldk4.jpg" alt="LDKドア 型番:LAA">
 						<span>LDKドア<small>※1 型のみ</small><br>型番：LAA</span>
 					</div>
 				</div>
@@ -223,9 +189,7 @@ Template Name: 標準仕様 - 内装建材
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/standard-spec/interior/flooring1.jpg" alt="フローリング">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring1.jpg" alt="フローリング">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -244,9 +208,7 @@ Template Name: 標準仕様 - 内装建材
 			<ul class="specFeature">
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring2.jpg" alt="天然木のような質感と表情">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring2.jpg" alt="天然木のような質感と表情">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">天然木のような質感と表情</h4>
@@ -255,9 +217,7 @@ Template Name: 標準仕様 - 内装建材
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring3.jpg" alt="環境に配慮した基材">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring3.jpg" alt="環境に配慮した基材">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">環境に配慮した基材</h4>
@@ -266,9 +226,7 @@ Template Name: 標準仕様 - 内装建材
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring4.jpg" alt="豊富なカラーバリエーション">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring4.jpg" alt="豊富なカラーバリエーション">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">豊富なカラーバリエーション</h4>
@@ -282,75 +240,51 @@ Template Name: 標準仕様 - 内装建材
 				<p class="specColor__label">お好きなカラーを選択可能</p>
 				<div class="specColor__grid">
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color1.jpg" alt="ホワイトオークF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color1.jpg" alt="ホワイトオークF">
 						<span>ホワイトオークF</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color2.jpg" alt="グレージュエルムF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color2.jpg" alt="グレージュエルムF">
 						<span>グレージュエルムF</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color3.jpg" alt="ウォルナットF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color3.jpg" alt="ウォルナットF">
 						<span>ウォルナットF</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color4.jpg" alt="チェスナットF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color4.jpg" alt="チェスナットF">
 						<span>チェスナットF</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color5.jpg" alt="クルミF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color5.jpg" alt="クルミF">
 						<span>クルミF</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color6.jpg" alt="ホワイトペイントF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color6.jpg" alt="ホワイトペイントF">
 						<span>ホワイトペイントF</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color7.jpg" alt="ナチュラルオークF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color7.jpg" alt="ナチュラルオークF">
 						<span>ナチュラルオークF</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color8.jpg" alt="ラフオークF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color8.jpg" alt="ラフオークF">
 						<span>ラフオークF</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color9.jpg" alt="チェリーF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color9.jpg" alt="チェリーF">
 						<span>チェリーF</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color10.jpg" alt="イタリアンウォルナットF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color10.jpg" alt="イタリアンウォルナットF">
 						<span>イタリアンウォルナットF</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color11.jpg" alt="サンダーオークF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color11.jpg" alt="サンダーオークF">
 						<span>サンダーオークF</span>
 					</div>
 					<div class="specColor__item">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/interior/flooring-color12.jpg" alt="メープルF">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior/flooring-color12.jpg" alt="メープルF">
 						<span>メープルF</span>
 					</div>
 				</div>

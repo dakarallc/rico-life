@@ -104,7 +104,7 @@
   ?>
 
 		<div class="btnWrap">
-			<a href="<?php echo esc_url(home_url("/event")); ?>" class="primaryBtn">イベント情報はこちら</a>
+			<a href="<?php echo rico_home_url("/event"); ?>" class="primaryBtn">イベント情報はこちら</a>
 		</div>
 	</div>
 </section>

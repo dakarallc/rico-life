@@ -8,7 +8,7 @@ Template Name: 標準仕様
 <div class="standardSpec">
 	<!-- fv -->
 	<section class="fv">
-		<img class="fv__img" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/kv.jpg" alt="標準仕様">
+		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/kv.jpg" alt="標準仕様">
 		<div class="inner fv__inner">
 			<div class="fv__ttl">
 				<h2>
@@ -42,7 +42,7 @@ Template Name: 標準仕様
 			</h2>
 
 			<div class="specIntro__imgWrap">
-				<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/intro.png" alt="標準仕様">
+				<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/intro.png" alt="標準仕様">
 			</div>
 
 			<div class="specIntro__text">
@@ -78,7 +78,7 @@ Template Name: 標準仕様
 					</div>
 					<div class="specCategory__body">
 						<div class="specCategory__imgWrap">
-							<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/equipment.jpg" alt="住宅設備">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment.jpg" alt="住宅設備">
 						</div>
 						<div class="specCategory__content">
 							<p class="specCategory__desc">
@@ -88,7 +88,7 @@ Template Name: 標準仕様
 								確認できます。
 							</p>
 							<div class="btnWrap">
-								<a href="<?php echo esc_url(home_url("/standard-spec/home-appliances")); ?>" class="primaryBtn">詳細を見る</a>
+								<a href="<?php echo rico_home_url("/standard-spec/home-appliances"); ?>" class="primaryBtn">詳細を見る</a>
 							</div>
 						</div>
 					</div>
@@ -103,7 +103,7 @@ Template Name: 標準仕様
 					</div>
 					<div class="specCategory__body">
 						<div class="specCategory__imgWrap">
-							<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/performance.jpg" alt="住宅性能">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/performance.jpg" alt="住宅性能">
 						</div>
 						<div class="specCategory__content">
 							<p class="specCategory__desc">
@@ -113,7 +113,7 @@ Template Name: 標準仕様
 								機能がわかります。
 							</p>
 							<div class="btnWrap">
-								<a href="<?php echo esc_url(home_url("/standard-spec/performance")); ?>" class="primaryBtn">詳細を見る</a>
+								<a href="<?php echo rico_home_url("/standard-spec/performance"); ?>" class="primaryBtn">詳細を見る</a>
 							</div>
 						</div>
 					</div>
@@ -128,7 +128,7 @@ Template Name: 標準仕様
 					</div>
 					<div class="specCategory__body">
 						<div class="specCategory__imgWrap">
-							<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/interior.jpg" alt="内装建材">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/interior.jpg" alt="内装建材">
 						</div>
 						<div class="specCategory__content">
 							<p class="specCategory__desc">
@@ -138,7 +138,7 @@ Template Name: 標準仕様
 								確認することができます。
 							</p>
 							<div class="btnWrap">
-								<a href="<?php echo esc_url(home_url("/standard-spec/interior")); ?>" class="primaryBtn">詳細を見る</a>
+								<a href="<?php echo rico_home_url("/standard-spec/interior"); ?>" class="primaryBtn">詳細を見る</a>
 							</div>
 						</div>
 					</div>
@@ -153,7 +153,7 @@ Template Name: 標準仕様
 					</div>
 					<div class="specCategory__body">
 						<div class="specCategory__imgWrap">
-							<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/structure.jpg" alt="建物構造">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure.jpg" alt="建物構造">
 						</div>
 						<div class="specCategory__content">
 							<p class="specCategory__desc">
@@ -163,7 +163,7 @@ Template Name: 標準仕様
 								支える基本性能が見られます。
 							</p>
 							<div class="btnWrap">
-								<a href="<?php echo esc_url(home_url("/standard-spec/structure")); ?>" class="primaryBtn">詳細を見る</a>
+								<a href="<?php echo rico_home_url("/standard-spec/structure"); ?>" class="primaryBtn">詳細を見る</a>
 							</div>
 						</div>
 					</div>
@@ -178,7 +178,7 @@ Template Name: 標準仕様
 					</div>
 					<div class="specCategory__body">
 						<div class="specCategory__imgWrap">
-							<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/solar-energy.jpg" alt="ソーラー＆蓄電池">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/solar-energy.jpg" alt="ソーラー＆蓄電池">
 						</div>
 						<div class="specCategory__content">
 							<p class="specCategory__desc">
@@ -188,7 +188,7 @@ Template Name: 標準仕様
 								具体的な内容で確認できます。
 							</p>
 							<div class="btnWrap">
-								<a href="<?php echo esc_url(home_url("/storage-battery")); ?>" class="primaryBtn">詳細を見る</a>
+								<a href="<?php echo rico_home_url("/storage-battery"); ?>" class="primaryBtn">詳細を見る</a>
 							</div>
 						</div>
 					</div>

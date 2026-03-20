@@ -49,9 +49,9 @@
     	} ?>
 				<div class="product__item">
 					<a href="<?php echo esc_url($product["url"]); ?>">
-						<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/<?php echo esc_attr(
-	$product["img"],
-); ?>" alt="<?php echo esc_attr($product["label"]); ?>">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/<?php echo esc_attr($product["img"]); ?>" alt="<?php echo esc_attr(
+	$product["label"],
+); ?>">
 						<div class="product__label"><?php echo esc_html($product["label"]); ?></div>
 					</a>
 				</div>

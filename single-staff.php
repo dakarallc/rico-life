@@ -71,7 +71,7 @@ staffItem
       </div><!-- /staffItem__box -->
       <?php endif; ?>
 
-      <a href="<?php echo do_shortcode("[home_url]"); ?>staff" class="staffItem__btn wow fadeInUp">一覧に戻る</a>
+      <a href="<?php echo rico_home_url(); ?>staff" class="staffItem__btn wow fadeInUp">一覧に戻る</a>
     </div><!-- /inner staffItem__inner -->
   </section><!-- /staffItem -->
 </div><!-- /page -->

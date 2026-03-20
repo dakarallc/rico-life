@@ -35,9 +35,7 @@ thanks
       <h2 class="thanks__ttl">お問い合わせ<br class="show--sp">ありがとうございます</h2><!-- /thanks__ttl -->
       <p class="thanks__txt">この度はお問い合わせいただきありがとうございます。<br>ご記入いただいたメールアドレス宛に自動メールを送信させていただきました。メールが届かない場合、 正常に受付出来ていない場合がございます。その際はお手数ですが、もう一度お問い合わせ下さい。</p><!-- /thanks__txt -->
       <p class="thanks__txt">いただいた内容については、後ほど担当者よりご連絡させていただきます。今しばらくお待ちくださいますようお願い申し上げます。</p><!-- /thanks__txt -->
-      <a href="<?php echo do_shortcode(
-      	"[home_url]",
-      ); ?>" class="thanks__btn wow fadeInUp">TOPに戻る</a><!-- /thanks__btn -->
+      <a href="<?php echo rico_home_url(); ?>" class="thanks__btn wow fadeInUp">TOPに戻る</a><!-- /thanks__btn -->
     </div><!-- /inner thank__inner -->
   </section><!-- /thanks -->
 </div><!-- /page  -->

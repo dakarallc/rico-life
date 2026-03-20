@@ -10,7 +10,7 @@ Template Name: 間取り
 
 	<!-- fv -->
 	<section class="fv">
-		<img class="fv__img" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/plan-of-house/kv.png" alt="">
+		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/kv.png" alt="">
 		<div class="inner fv__inner">
 			<div class="fv__ttl">
 				<h2>自由設計も、
@@ -40,9 +40,7 @@ Template Name: 間取り
 			</div>
 
 			<div class="products__img">
-				<img src="<?php echo do_shortcode(
-    	"[theme_url]",
-    ); ?>/assets/img/plan-of-house/products.png" alt="新しいカタチの規格プラン方式">
+				<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/products.png" alt="新しいカタチの規格プラン方式">
 			</div>
 			<div class="products__text">
 				<p>
@@ -90,14 +88,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent active" id="standard-2story-28">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/standard-2story-28.jpg" alt="2階建て 28坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-2story-28.jpg" alt="2階建て 28坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/floorplan-2story-28.jpg" alt="間取り図 2階建て 28坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-2story-28.jpg" alt="間取り図 2階建て 28坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -123,14 +117,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent" id="standard-2story-32">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/standard-2story-32.jpg" alt="2階建て 32坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-2story-32.jpg" alt="2階建て 32坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/floorplan-2story-32.jpg" alt="間取り図 2階建て 32坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-2story-32.jpg" alt="間取り図 2階建て 32坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -156,14 +146,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent" id="standard-2story-35">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/standard-2story-35.jpg" alt="2階建て 35坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-2story-35.jpg" alt="2階建て 35坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/floorplan-2story-35.jpg" alt="間取り図 2階建て 35坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-2story-35.jpg" alt="間取り図 2階建て 35坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -198,12 +184,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent active" id="standard-hiraya-28">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/plan-of-house/standard-hiraya-28.jpg" alt="平屋 28坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-hiraya-28.jpg" alt="平屋 28坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/floorplan-hiraya-28.jpg" alt="間取り図 平屋 28坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-hiraya-28.jpg" alt="間取り図 平屋 28坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -229,12 +213,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent" id="standard-hiraya-32">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/plan-of-house/standard-hiraya-32.jpg" alt="平屋 32坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-hiraya-32.jpg" alt="平屋 32坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/floorplan-hiraya-32.jpg" alt="間取り図 平屋 32坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-hiraya-32.jpg" alt="間取り図 平屋 32坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -260,12 +242,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent" id="standard-hiraya-35">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/plan-of-house/standard-hiraya-35.jpg" alt="平屋 35坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-hiraya-35.jpg" alt="平屋 35坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/floorplan-hiraya-35.jpg" alt="間取り図 平屋 35坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-hiraya-35.jpg" alt="間取り図 平屋 35坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -327,14 +307,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent active" id="free-2story-28">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-2story-28.jpg" alt="自由設計 2階建て 28坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-2story-28.jpg" alt="自由設計 2階建て 28坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-floorplan-2story-28.jpg" alt="間取り図 自由設計 2階建て 28坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-2story-28.jpg" alt="間取り図 自由設計 2階建て 28坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -360,14 +336,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent" id="free-2story-32">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-2story-32.jpg" alt="自由設計 2階建て 32坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-2story-32.jpg" alt="自由設計 2階建て 32坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-floorplan-2story-32.jpg" alt="間取り図 自由設計 2階建て 32坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-2story-32.jpg" alt="間取り図 自由設計 2階建て 32坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -393,14 +365,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent" id="free-2story-35">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-2story-35.jpg" alt="自由設計 2階建て 35坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-2story-35.jpg" alt="自由設計 2階建て 35坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-floorplan-2story-35.jpg" alt="間取り図 自由設計 2階建て 35坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-2story-35.jpg" alt="間取り図 自由設計 2階建て 35坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -435,14 +403,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent active" id="free-hiraya-28">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-hiraya-28.jpg" alt="自由設計 平屋 28坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-hiraya-28.jpg" alt="自由設計 平屋 28坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-floorplan-hiraya-28.jpg" alt="間取り図 自由設計 平屋 28坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-hiraya-28.jpg" alt="間取り図 自由設計 平屋 28坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -468,14 +432,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent" id="free-hiraya-32">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-hiraya-32.jpg" alt="自由設計 平屋 32坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-hiraya-32.jpg" alt="自由設計 平屋 32坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-floorplan-hiraya-32.jpg" alt="間取り図 自由設計 平屋 32坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-hiraya-32.jpg" alt="間取り図 自由設計 平屋 32坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -501,14 +461,10 @@ Template Name: 間取り
 					<div class="planTabs__subContent" id="free-hiraya-35">
 						<div class="planItem">
 							<div class="planItem__image">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-hiraya-35.jpg" alt="自由設計 平屋 35坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-hiraya-35.jpg" alt="自由設計 平屋 35坪">
 							</div>
 							<div class="planItem__floorplan">
-								<img src="<?php echo do_shortcode(
-        	"[theme_url]",
-        ); ?>/assets/img/plan-of-house/free-floorplan-hiraya-35.jpg" alt="間取り図 自由設計 平屋 35坪">
+								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-hiraya-35.jpg" alt="間取り図 自由設計 平屋 35坪">
 							</div>
 							<div class="planItem__price">
 								<div class="planItem__priceItem">
@@ -537,7 +493,7 @@ Template Name: 間取り
 
 	<!-- Free plan	 -->
 	<section class="why conceptSection">
-		<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="テーブルの写真">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">Plan

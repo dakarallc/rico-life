@@ -9,9 +9,7 @@ Template Name: 標準仕様 - 住宅設備
 
 	<!-- fv -->
 	<section class="fv">
-		<img class="fv__img" src="<?php echo do_shortcode(
-  	"[theme_url]",
-  ); ?>/assets/img/standard-spec/equipment/equipment-kv.jpg" alt="住宅設備">
+		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/equipment-kv.jpg" alt="住宅設備">
 		<div class="inner fv__inner">
 			<div class="fv__ttl">
 				<h2>
@@ -51,36 +49,28 @@ Template Name: 標準仕様 - 住宅設備
 				<ul class="specNav__list">
 					<li class="specNav__item">
 						<a href="#kitchen" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/equipment/icon-kitchen.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/icon-kitchen.png" alt="" class="specNav__icon">
 							<span class="specNav__text">システムキッチン</span>
 							<span class="specNav__arrow"></span>
 						</a>
 					</li>
 					<li class="specNav__item">
 						<a href="#washroom" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/equipment/icon-washroom.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/icon-washroom.png" alt="" class="specNav__icon">
 							<span class="specNav__text">洗面化粧台</span>
 							<span class="specNav__arrow"></span>
 						</a>
 					</li>
 					<li class="specNav__item">
 						<a href="#bathroom" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/equipment/icon-bathroom.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/icon-bathroom.png" alt="" class="specNav__icon">
 							<span class="specNav__text">ユニットバス</span>
 							<span class="specNav__arrow"></span>
 						</a>
 					</li>
 					<li class="specNav__item">
 						<a href="#toilet" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/equipment/icon-toilet.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/icon-toilet.png" alt="" class="specNav__icon">
 							<span class="specNav__text">トイレ</span>
 							<span class="specNav__arrow"></span>
 						</a>
@@ -101,9 +91,7 @@ Template Name: 標準仕様 - 住宅設備
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/standard-spec/equipment/kitchen1.jpg" alt="システムキッチン">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/kitchen1.jpg" alt="システムキッチン">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -121,9 +109,7 @@ Template Name: 標準仕様 - 住宅設備
 			<ul class="specFeature">
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/kitchen2.jpg" alt="人造大理石トップ">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/kitchen2.jpg" alt="人造大理石トップ">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">人造大理石トップ</h4>
@@ -132,9 +118,7 @@ Template Name: 標準仕様 - 住宅設備
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/kitchen3.jpg" alt="キレイシンク">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/kitchen3.jpg" alt="キレイシンク">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">キレイシンク</h4>
@@ -143,9 +127,7 @@ Template Name: 標準仕様 - 住宅設備
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/kitchen4.jpg" alt="キッチンコンセント">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/kitchen4.jpg" alt="キッチンコンセント">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">キッチンコンセント</h4>
@@ -154,9 +136,7 @@ Template Name: 標準仕様 - 住宅設備
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/kitchen5.jpg" alt="食器洗い乾燥機">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/kitchen5.jpg" alt="食器洗い乾燥機">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">食器洗い乾燥機</h4>
@@ -165,9 +145,7 @@ Template Name: 標準仕様 - 住宅設備
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/kitchen6.jpg" alt="全28色の扉カラー">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/kitchen6.jpg" alt="全28色の扉カラー">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">全28色の扉カラー</h4>
@@ -188,7 +166,7 @@ Template Name: 標準仕様 - 住宅設備
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/equipment/washroom1.jpg" alt="洗面化粧台">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/washroom1.jpg" alt="洗面化粧台">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -207,9 +185,7 @@ Template Name: 標準仕様 - 住宅設備
 			<ul class="specFeature">
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/washroom2.jpg" alt="大型洗面ボウル">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/washroom2.jpg" alt="大型洗面ボウル">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">大型洗面ボウル</h4>
@@ -218,9 +194,7 @@ Template Name: 標準仕様 - 住宅設備
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/washroom3.jpg" alt="くるくる水栓">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/washroom3.jpg" alt="くるくる水栓">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">くるくる水栓</h4>
@@ -229,9 +203,7 @@ Template Name: 標準仕様 - 住宅設備
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/washroom4.jpg" alt="デザインバリエーション">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/washroom4.jpg" alt="デザインバリエーション">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">デザインバリエーション</h4>
@@ -240,9 +212,7 @@ Template Name: 標準仕様 - 住宅設備
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/washroom5.jpg" alt="選べるサイズ展開">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/washroom5.jpg" alt="選べるサイズ展開">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">選べるサイズ展開</h4>
@@ -263,7 +233,7 @@ Template Name: 標準仕様 - 住宅設備
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/equipment/bathroom1.jpg" alt="バスルーム">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/bathroom1.jpg" alt="バスルーム">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -281,9 +251,7 @@ Template Name: 標準仕様 - 住宅設備
 			<ul class="specFeature">
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/bathroom2.jpg" alt="エコアクアシャワー">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/bathroom2.jpg" alt="エコアクアシャワー">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">エコアクアシャワー</h4>
@@ -292,9 +260,7 @@ Template Name: 標準仕様 - 住宅設備
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/bathroom3.jpg" alt="くるりんポイ排水口">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/bathroom3.jpg" alt="くるりんポイ排水口">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">くるりんポイ排水口</h4>
@@ -303,9 +269,7 @@ Template Name: 標準仕様 - 住宅設備
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/bathroom4.jpg" alt="マグネット対応壁面">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/bathroom4.jpg" alt="マグネット対応壁面">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">マグネット対応壁面</h4>
@@ -326,7 +290,7 @@ Template Name: 標準仕様 - 住宅設備
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/equipment/toilet1.jpg" alt="トイレ">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/toilet1.jpg" alt="トイレ">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -343,9 +307,7 @@ Template Name: 標準仕様 - 住宅設備
 			<ul class="specFeature">
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/toilet2.jpg" alt="ハイパーキラミック便器">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/toilet2.jpg" alt="ハイパーキラミック便器">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">ハイパーキラミック便器</h4>
@@ -354,9 +316,7 @@ Template Name: 標準仕様 - 住宅設備
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/equipment/toilet3.jpg" alt="ビデ専用ノズル">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/toilet3.jpg" alt="ビデ専用ノズル">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">ビデ専用ノズル</h4>
@@ -365,7 +325,7 @@ Template Name: 標準仕様 - 住宅設備
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/equipment/toilet4.jpg" alt="ECO5洗浄">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/equipment/toilet4.jpg" alt="ECO5洗浄">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">ECO5洗浄</h4>

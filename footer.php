@@ -102,7 +102,7 @@
 	</section>
 
   <div class="toTop planDownload" id="js-toTop">
-    <img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/common/triangle.svg" alt="">
+    <img src="<?php echo rico_theme_url(); ?>/assets/img/common/triangle.svg" alt="">
     <p>TOP</p>
   </div>
 
@@ -116,22 +116,22 @@
 				</div>
 				<nav class="footerNav">
 					<ul>
-						<li><a href="<?php echo esc_url(home_url("/concept")); ?>">コンセプト</a></li>
-						<li><a href="<?php echo esc_url(home_url("/case")); ?>">施工事例</a></li>
-						<li><a href="<?php echo esc_url(home_url("/plan-of-house")); ?>">間取り</a></li>
+						<li><a href="<?php echo rico_home_url("/concept"); ?>">コンセプト</a></li>
+						<li><a href="<?php echo rico_home_url("/case"); ?>">施工事例</a></li>
+						<li><a href="<?php echo rico_home_url("/plan-of-house"); ?>">間取り</a></li>
 						<li class="footerNav__hasChild">
-							<a href="<?php echo esc_url(home_url("/standard-spec")); ?>">標準仕様</a>
+							<a href="<?php echo rico_home_url("/standard-spec"); ?>">標準仕様</a>
 							<ul class="footerNav__subList">
-								<li><a href="<?php echo esc_url(home_url("/standard-spec/home-appliances")); ?>">住宅設備</a></li>
-								<li><a href="<?php echo esc_url(home_url("/standard-spec/performance")); ?>">住宅性能</a></li>
-								<li><a href="<?php echo esc_url(home_url("/standard-spec/interior")); ?>">内装建材</a></li>
-								<li><a href="<?php echo esc_url(home_url("/standard-spec/structure")); ?>">建物構造</a></li>
-								<li><a href="<?php echo esc_url(home_url("/storage-battery")); ?>">ソーラー＆蓄電池</a></li>
+								<li><a href="<?php echo rico_home_url("/standard-spec/home-appliances"); ?>">住宅設備</a></li>
+								<li><a href="<?php echo rico_home_url("/standard-spec/performance"); ?>">住宅性能</a></li>
+								<li><a href="<?php echo rico_home_url("/standard-spec/interior"); ?>">内装建材</a></li>
+								<li><a href="<?php echo rico_home_url("/standard-spec/structure"); ?>">建物構造</a></li>
+								<li><a href="<?php echo rico_home_url("/storage-battery"); ?>">ソーラー＆蓄電池</a></li>
 							</ul>
 						</li>
-						<li><a href="<?php echo esc_url(home_url("/staff")); ?>">スタッフ紹介</a></li>
-						<li><a href="<?php echo esc_url(home_url("/company")); ?>">会社概要</a></li>
-						<li><a href="<?php echo esc_url(home_url("/news")); ?>">ニュース</a></li>
+						<li><a href="<?php echo rico_home_url("/staff"); ?>">スタッフ紹介</a></li>
+						<li><a href="<?php echo rico_home_url("/company"); ?>">会社概要</a></li>
+						<li><a href="<?php echo rico_home_url("/news"); ?>">ニュース</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -140,9 +140,7 @@
 				<div class="info">
 					<div class="footer__company">
 						<div class="footer__logo">
-							<a href="<?php echo do_shortcode("[home_url]"); ?>"><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/common/logo.svg" alt="ietochi honpo"></a>
+							<a href="<?php echo rico_home_url(); ?>"><img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo.svg" alt="ietochi honpo"></a>
 						</div>
 						<div class="footer__address">
 							<p>本社メインオフィス</p>

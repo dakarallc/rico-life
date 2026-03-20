@@ -305,6 +305,11 @@ input[type=submit]::-moz-foucus-inner {
   padding: 0;
 }
 
+/* ブレークポイント */
+/* Colors */
+/* Spacing */
+/* Font sizes */
+/* Breakpoints */
 @font-face {
   font-family: "Meiryo UI";
   font-style: normal;
@@ -2621,6 +2626,7 @@ h5 {
   list-style: none;
   margin: 0;
   padding: 0;
+  /* 子メニュー付き項目は2列分使う */
   /* フッターサブメニュー */
 }
 @media (max-width: 999px) {
@@ -2636,22 +2642,33 @@ h5 {
   position: relative;
 }
 .footer .footer__contents .footerContentsInner .linkList .footerNav ul > li::before {
-  color: #fff;
   content: "＞";
-  font-size: 0.6em;
   left: 0;
   position: absolute;
-  top: 6px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  color: #fff;
+  font-size: 0.6em;
+  transform: translateY(-50%);
 }
 .footer .footer__contents .footerContentsInner .linkList .footerNav ul > li > a {
   color: #fff;
   font-size: 1.8rem;
+  line-height: 1.6;
   text-decoration: none;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 .footer .footer__contents .footerContentsInner .linkList .footerNav ul > li > a:hover {
   opacity: 0.7;
+}
+.footer .footer__contents .footerContentsInner .linkList .footerNav ul .footerNav__hasChild {
+  grid-column: 1/-1;
+}
+.footer .footer__contents .footerContentsInner .linkList .footerNav ul .footerNav__hasChild::before {
+  top: 12px;
+  -webkit-transform: none;
+  transform: none;
 }
 .footer .footer__contents .footerContentsInner .linkList .footerNav ul .footerNav__subList {
   display: -webkit-box;

@@ -34,9 +34,7 @@ thanks
     <div class="inner thank__inner">
       <h2 class="thanks__ttl">品切れ中<br class="show--sp"></h2><!-- /thanks__ttl -->
       <p class="thanks__txt">CO2センサー搭載空気清浄機はAmazonで品切れです。 直営オンラインショップかお問い合わせから予約ください。</p><!-- /thanks__txt -->
-      <a href="<?php echo do_shortcode(
-      	"[home_url]",
-      ); ?>" class="thanks__btn wow fadeInUp">TOPに戻る</a><!-- /thanks__btn -->
+      <a href="<?php echo rico_home_url(); ?>" class="thanks__btn wow fadeInUp">TOPに戻る</a><!-- /thanks__btn -->
     </div><!-- /inner thank__inner -->
   </section><!-- /thanks -->
 </div><!-- /page  -->

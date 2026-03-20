@@ -124,15 +124,9 @@ pagination
 <!--       <div class="caseList__box wow fadeInUp"> -->
 <!--         <h2 class="caseList__boxTtl caseList__ttl">ベルエールをご利用の法人様</h2><!-- /caseList__boxTtl --> 
 <!--         <ul class="caseList__logos"> -->
-<!--           <li class="caseList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/common/handred-logo.svg" alt=""></a></li><!-- /caseList__logo --> 
-<!--           <li class="caseList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /caseList__logo --> 
-<!--           <li class="caseList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo do_shortcode(
-	"[theme_url]",
-); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /caseList__logo --> 
+<!--           <li class="caseList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo rico_theme_url(); ?>/assets/img/common/handred-logo.svg" alt=""></a></li><!-- /caseList__logo --> 
+<!--           <li class="caseList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /caseList__logo --> 
+<!--           <li class="caseList__logo"><a href="" target="_blank" rel="noopener"><img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo.svg" alt=""></a></li><!-- /caseList__logo --> 
 <!--         </ul>/caseList__logos -->
 <!--       </div>/caseList__box -->
     </div><!-- /inner caseList__inner -->
@@ -152,5 +146,6 @@ if (get_field("live_img")):
 											</div>
 										<?php
 endif;
+
 
 ?>

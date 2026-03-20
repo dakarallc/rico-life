@@ -9,9 +9,7 @@ Template Name: 標準仕様 - 建物構造
 
 	<!-- fv -->
 	<section class="fv">
-		<img class="fv__img" src="<?php echo do_shortcode(
-  	"[theme_url]",
-  ); ?>/assets/img/standard-spec/structure/structure-kv.jpg" alt="建物構造">
+		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/structure-kv.jpg" alt="建物構造">
 		<div class="inner fv__inner">
 			<div class="fv__ttl">
 				<h2>
@@ -51,45 +49,35 @@ Template Name: 標準仕様 - 建物構造
 				<ul class="specNav__list">
 					<li class="specNav__item">
 						<a href="#structural-panel" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/structure/icon-structural-panel.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/icon-structural-panel.png" alt="" class="specNav__icon">
 							<span class="specNav__text">構造用耐力面材</span>
 							<span class="specNav__arrow"></span>
 						</a>
 					</li>
 					<li class="specNav__item">
 						<a href="#seismic" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/structure/icon-seismic.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/icon-seismic.png" alt="" class="specNav__icon">
 							<span class="specNav__text">耐震等級3</span>
 							<span class="specNav__arrow"></span>
 						</a>
 					</li>
 					<li class="specNav__item">
 						<a href="#foundation" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/structure/icon-foundation.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/icon-foundation.png" alt="" class="specNav__icon">
 							<span class="specNav__text">基礎構造</span>
 							<span class="specNav__arrow"></span>
 						</a>
 					</li>
 					<li class="specNav__item">
 						<a href="#jointsystem" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/structure/icon-jointsystem.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/icon-jointsystem.png" alt="" class="specNav__icon">
 							<span class="specNav__text">接合工法</span>
 							<span class="specNav__arrow"></span>
 						</a>
 					</li>
 					<li class="specNav__item">
 						<a href="#exterior-wall" class="specNav__link">
-							<img src="<?php echo do_shortcode(
-       	"[theme_url]",
-       ); ?>/assets/img/standard-spec/structure/icon-exterior-wall.png" alt="" class="specNav__icon">
+							<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/icon-exterior-wall.png" alt="" class="specNav__icon">
 							<span class="specNav__text">外壁</span>
 							<span class="specNav__arrow"></span>
 						</a>
@@ -110,9 +98,7 @@ Template Name: 標準仕様 - 建物構造
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/standard-spec/structure/structural-panel1.jpg" alt="構造用耐力面材">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/structural-panel1.jpg" alt="構造用耐力面材">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -142,7 +128,7 @@ Template Name: 標準仕様 - 建物構造
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/structure/seismic1.jpg" alt="耐震等級3">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/seismic1.jpg" alt="耐震等級3">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -171,7 +157,7 @@ Template Name: 標準仕様 - 建物構造
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/structure/foundation1.jpg" alt="ベタ基礎">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/foundation1.jpg" alt="ベタ基礎">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -201,9 +187,7 @@ Template Name: 標準仕様 - 建物構造
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode(
-     	"[theme_url]",
-     ); ?>/assets/img/standard-spec/structure/jointsystem1.jpg" alt="接合工法">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/jointsystem1.jpg" alt="接合工法">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -232,7 +216,7 @@ Template Name: 標準仕様 - 建物構造
 
 			<div class="specDetail__hero">
 				<div class="specDetail__mainImg">
-					<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/standard-spec/structure/exterior-wall1.jpg" alt="外壁">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/exterior-wall1.jpg" alt="外壁">
 				</div>
 				<div class="specDetail__heroBody">
 					<h3 class="specDetail__catch">
@@ -251,9 +235,7 @@ Template Name: 標準仕様 - 建物構造
 			<ul class="specFeature">
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/structure/exterior-wall2.jpg" alt="美しさが長く続く外壁">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/exterior-wall2.jpg" alt="美しさが長く続く外壁">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">美しさが長く続く外壁</h4>
@@ -262,9 +244,7 @@ Template Name: 標準仕様 - 建物構造
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/structure/exterior-wall3.jpg" alt="お手入れしやすい外壁">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/exterior-wall3.jpg" alt="お手入れしやすい外壁">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">お手入れしやすい外壁</h4>
@@ -273,9 +253,7 @@ Template Name: 標準仕様 - 建物構造
 				</li>
 				<li class="specFeature__item">
 					<div class="specFeature__img">
-						<img src="<?php echo do_shortcode(
-      	"[theme_url]",
-      ); ?>/assets/img/standard-spec/structure/exterior-wall4.jpg" alt="すっきりとした外観デザイン">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/structure/exterior-wall4.jpg" alt="すっきりとした外観デザイン">
 					</div>
 					<div class="specFeature__body">
 						<h4 class="specFeature__title">すっきりとした外観デザイン</h4>

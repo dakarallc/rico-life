@@ -9,13 +9,15 @@ Template Name: Concept
 
 	<!-- fv -->
 		<section class="fv">
-			<img class="fv__img" src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/kv2.png" alt="">
+			<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="">
 			<div class="inner fv__inner">
 					<div class="fv__ttl">
 						<h2>コスパで創る、<br>豊かな暮らし。</h2>
 				</div>
 			</div>
 	</section>
+
+	<?php get_template_part("template-parts/breadcrumb"); ?>
 
 	<!-- CONCEPT	 -->
 	<section class="message">
@@ -34,7 +36,7 @@ Template Name: Concept
 			</div>
 
 			<div class="message__logo">
-				<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/common/logo-black.svg" alt="ロゴ">
+				<img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo-black.svg" alt="ロゴ">
 			</div>
 
 			<div class="message__text">
@@ -64,7 +66,7 @@ Template Name: Concept
 
 	<!-- Why  -->
 	<section class="why conceptSection">
-		<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="テーブルの写真">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">Way？
@@ -121,7 +123,7 @@ Template Name: Concept
 
 	<!-- How	 -->
 	<section class="how conceptSection">
-		<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="テーブルの写真">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">How？
@@ -177,7 +179,7 @@ Template Name: Concept
 
 	<!-- What	 -->
 	<section class="how conceptSection">
-		<img src="<?php echo do_shortcode("[theme_url]"); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="テーブルの写真">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">What？
