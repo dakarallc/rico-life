@@ -5,27 +5,27 @@ Template Name: TOP
 ?>
 <?php get_header(); ?>
 
-<div class="top">
+<main class="top">
 
 	<!-- fv -->
 	<section class="fv">
 		<div class="swiper fvSwiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<img class="fv__img1" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.png" alt="">
+					<img class="fv__img1" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.png" alt="Rico Life. 久喜市の注文住宅">
 				</div>
 				<div class="swiper-slide">
-					<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="">
+					<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="Rico Life. 埼玉県の新築一戸建て">
 				</div>
 				<div class="swiper-slide">
-					<img src="<?php echo rico_theme_url(); ?>/assets/img/top/kv3.png" alt="">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/top/kv3.png" alt="Rico Life. コスパで創る豊かな暮らし">
 				</div>
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
 		<div class="fv__ttl-wrap">
 			<div class="fv__ttl">
-				<h2>コスパで創る、<br>豊かな暮らし。</h2>
+				<h1>コスパで創る、<br>豊かな暮らし。</h1>
 				<svg xmlns="http://www.w3.org/2000/svg" width="491" height="32" viewBox="0 0 491 32">
 					<text id="Creating_cost-effectively_A_rich_life." data-name="Creating cost-effectively,A rich life." transform="translate(0 25)" fill="#fff" font-size="28" font-family="VDL-PenLetter-Medium, VDL-PenLetter" font-weight="500"><tspan x="0" y="0">Creating cost-effectively,A rich life.</tspan></text>
 				</svg>
@@ -66,7 +66,7 @@ Template Name: TOP
 			</div>
 			<div class="concept__inner">
 				<div class="concept__img">
-					<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="注文住宅のリビング空間">
 				</div>
 				<div class="concept__content">
 					<div class="concept__text">

@@ -6,17 +6,17 @@ Template Name: ソーラー&蓄電池
 ?>
 <?php get_header(); ?>
 
-<div class="storageBattery">
+<main class="storageBattery">
 
 	<!-- fv -->
 	<section class="fv">
-		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/kv.png" alt="">
+		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/kv.png" alt="ソーラー＆蓄電池 標準装備">
 		<div class="inner fv__inner">
 			<div class="fv__ttl">
-				<h2>
+				<h1>
 					電気代は、削減できる<br>
 					固定費です。
-				</h2>
+				</h1>
 			</div>
 		</div>
 		
@@ -145,7 +145,7 @@ Template Name: ソーラー&蓄電池
 
 	<!-- Free plan	 -->
 	<section class="why conceptSection">
-		<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/energyBg.png" alt="テーブルの写真">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/energyBg.png" alt="エネルギー効率の高い住まい">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">Energy

@@ -5,14 +5,14 @@ Template Name: Concept
 ?>
 <?php get_header(); ?>
 
-<div class="concept">
+<main class="concept">
 
 	<!-- fv -->
 		<section class="fv">
-			<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="">
+			<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="Rico Life. のコンセプト">
 			<div class="inner fv__inner">
 					<div class="fv__ttl">
-						<h2>コスパで創る、<br>豊かな暮らし。</h2>
+						<h1>コスパで創る、<br>豊かな暮らし。</h1>
 				</div>
 			</div>
 	</section>
@@ -36,7 +36,7 @@ Template Name: Concept
 			</div>
 
 			<div class="message__logo">
-				<img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo-black.svg" alt="ロゴ">
+				<img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo-black.svg" alt="Rico Life. ロゴ">
 			</div>
 
 			<div class="message__text">
@@ -66,7 +66,7 @@ Template Name: Concept
 
 	<!-- Why  -->
 	<section class="why conceptSection">
-		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="注文住宅のリビング空間">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">Way？
@@ -123,7 +123,7 @@ Template Name: Concept
 
 	<!-- How	 -->
 	<section class="how conceptSection">
-		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="注文住宅のリビング空間">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">How？
@@ -179,7 +179,7 @@ Template Name: Concept
 
 	<!-- What	 -->
 	<section class="how conceptSection">
-		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="注文住宅のリビング空間">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">What？

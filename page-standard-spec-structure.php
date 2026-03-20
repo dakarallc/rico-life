@@ -5,7 +5,7 @@ Template Name: 標準仕様 - 建物構造
 ?>
 <?php get_header(); ?>
 
-<div class="specStructure">
+<main class="specStructure">
 
 	<!-- fv -->
 	<section class="fv">
@@ -29,7 +29,7 @@ Template Name: 標準仕様 - 建物構造
 					<span>商品概要</span>
 				</h2>
 			</div>
-			<h3 class="specHead__title">建物構造・耐久性能</h3>
+			<h1 class="specHead__title">建物構造・耐久性能</h1>
 
 			<div class="specHead__lead">
 				<p>

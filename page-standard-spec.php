@@ -5,7 +5,7 @@ Template Name: 標準仕様
 ?>
 <?php get_header(); ?>
 
-<div class="standardSpec">
+<main class="standardSpec">
 	<!-- fv -->
 	<section class="fv">
 		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/standard-spec/kv.jpg" alt="標準仕様">

@@ -3,7 +3,7 @@
 	<section class="finalMessage">
 		<div class="inner finalMessage__inner">
 			<div class="finalMessage__logo">
-				<img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo-black.svg" alt="テーブルの写真">は
+				<img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo-black.svg" alt="Rico Life. ロゴ">は
 			</div>
 			
 			<div class="catch">

@@ -63,6 +63,46 @@ function rico_home_url($path = "/") {
 }
 
 /**
+ * 構造化データ（JSON-LD）出力
+ */
+function rico_output_jsonld() {
+	if (is_front_page()) { ?>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "HomeAndConstructionBusiness",
+            "name": "Rico Life.（カクダイホーム）",
+            "description": "埼玉県久喜市の注文住宅。コスパで創る、豊かな暮らし。太陽光発電・蓄電池標準装備の高性能住宅。",
+            "url": "<?php echo esc_url(home_url("/")); ?>",
+            "logo": "<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/common/logo.svg",
+            "image": "<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/kv1.png",
+            "telephone": "0480-23-1717",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "久喜中央4-9-49",
+                "addressLocality": "久喜市",
+                "addressRegion": "埼玉県",
+                "postalCode": "346-0003",
+                "addressCountry": "JP"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 36.0713,
+                "longitude": 139.6734
+            },
+            "openingHours": "Mo-Tu,Th-Su 10:00-18:00",
+            "priceRange": "$$",
+            "areaServed": {
+                "@type": "State",
+                "name": "埼玉県"
+            }
+        }
+        </script>
+        <?php }
+}
+add_action("wp_head", "rico_output_jsonld");
+
+/**
  * ホームURL(contact7プラグイン内で使用)
  */
 add_action("wpcf7_init", "custom_add_form_tag");

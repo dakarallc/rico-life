@@ -5,7 +5,7 @@ Template Name: 標準仕様 - 内装建材
 ?>
 <?php get_header(); ?>
 
-<div class="specInterior">
+<main class="specInterior">
 
 	<!-- fv -->
 	<section class="fv">
@@ -29,7 +29,7 @@ Template Name: 標準仕様 - 内装建材
 					<span>商品概要</span>
 				</h2>
 			</div>
-			<h3 class="specHead__title">内装建材</h3>
+			<h1 class="specHead__title">内装建材</h1>
 
 			<div class="specHead__lead">
 				<p>

@@ -28,9 +28,9 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.js" defer></script>
   <script>
   (function(d) {
     var config = {
@@ -43,12 +43,11 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
 </script>
   <link
       rel="stylesheet"
-      href="//unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   <link rel="stylesheet" href="./assets/css/uikit.min.css">
   
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" /> -->
-  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <title><?php echo wp_get_document_title(); ?></title>
   <?php wp_head(); ?>
 </head>

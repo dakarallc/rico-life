@@ -5,7 +5,7 @@ Template Name: 標準仕様 - 住宅設備
 ?>
 <?php get_header(); ?>
 
-<div class="specEquipment">
+<main class="specEquipment">
 
 	<!-- fv -->
 	<section class="fv">
@@ -29,7 +29,7 @@ Template Name: 標準仕様 - 住宅設備
 					<span>商品概要</span>
 				</h2>
 			</div>
-			<h3 class="specHead__title">住宅設備</h3>
+			<h1 class="specHead__title">住宅設備</h1>
 
 			<div class="specHead__lead">
 				<p>
