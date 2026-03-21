@@ -6,8 +6,8 @@
 .toggle {
 	cursor: pointer;
 	position: relative;
-	height: 30px;
-	width: 42px;
+	height: 24px;
+	width: 34px;
 	z-index: 1000;
 	top: -3px;
 	transition: 0.3s;
@@ -29,36 +29,36 @@
 		-webkit-transition: 0.35s ease-in-out;
 		border-bottom: solid 2px #fff;
 		display: block;
-		left: 8px;
+		left: 5px;
 		position: absolute;
 		transition: 0.35s ease-in-out;
-		width: 24px;
+		width: 22px;
 
 		&:nth-child(1) {
-			top: 7px;
+			top: 4px;
 		}
 
 		&:nth-child(2) {
-			top: 16px;
+			top: 11px;
 		}
 
 		&:nth-child(3) {
-			top: 25px;
+			top: 18px;
 		}
 	}
 
 	&.active span {
 		&:nth-child(1) {
 			-webkit-transform: rotate(-45deg);
-			left: 8px;
-			top: 18px;
+			left: 5px;
+			top: 12px;
 			transform: rotate(-45deg);
 		}
 
 		&:nth-child(2),
 		&:nth-child(3) {
 			-webkit-transform: rotate(45deg);
-			top: 18px;
+			top: 12px;
 			transform: rotate(45deg);
 		}
 	}
@@ -79,8 +79,9 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	gap: 2px;
 	color: #fff;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: bold;
 	transition: color 0.3s ease;
 

@@ -34,32 +34,37 @@
 
 		@include mixin.sp {
 			max-width: initial !important;
+			padding: 0 16px;
 		}
 	}
 
 	&__logo {
 		width: 300px;
+		display: flex;
+		align-items: center;
 
 		@include mixin.pc {
 			width: 250px;
 		}
 
 		@include mixin.sp {
-			height: 32px;
-			width: 200px;
-
-			img {
-				vertical-align: top;
-			}
+			height: 100%;
+			width: 160px;
 		}
 
 		> a {
 			display: flex;
 			align-items: center;
-			justify-content: center;
 
 			&:hover {
 				opacity: 0.8;
+			}
+
+			img {
+				@include mixin.sp {
+					height: 28px;
+					width: auto;
+				}
 			}
 		}
 	}

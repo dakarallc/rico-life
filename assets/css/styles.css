@@ -3505,10 +3505,19 @@ h5 {
 @media (max-width: 999px) {
   .header__inner {
     max-width: initial !important;
+    padding: 0 16px;
   }
 }
 .header__logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 300px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 @media (min-width: 1000px) {
   .header__logo {
@@ -3517,11 +3526,8 @@ h5 {
 }
 @media (max-width: 999px) {
   .header__logo {
-    height: 32px;
-    width: 200px;
-  }
-  .header__logo img {
-    vertical-align: top;
+    height: 100%;
+    width: 160px;
   }
 }
 .header__logo > a {
@@ -3533,13 +3539,15 @@ h5 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 .header__logo > a:hover {
   opacity: 0.8;
+}
+@media (max-width: 999px) {
+  .header__logo > a img {
+    height: 28px;
+    width: auto;
+  }
 }
 .header__contents {
   -webkit-box-align: center;
@@ -3931,10 +3939,10 @@ h5 {
   ========================================================================== */
 .toggle {
   cursor: pointer;
-  height: 30px;
+  height: 24px;
   position: relative;
   top: -3px;
-  width: 42px;
+  width: 34px;
   z-index: 1000;
   -webkit-transition: 0.3s;
   display: none;
@@ -3955,29 +3963,29 @@ h5 {
   -webkit-transition: 0.35s ease-in-out;
   border-bottom: solid 2px #fff;
   display: block;
-  left: 8px;
+  left: 5px;
   position: absolute;
   transition: 0.35s ease-in-out;
-  width: 24px;
+  width: 22px;
 }
 .toggle span:nth-child(1) {
-  top: 7px;
+  top: 4px;
 }
 .toggle span:nth-child(2) {
-  top: 16px;
+  top: 11px;
 }
 .toggle span:nth-child(3) {
-  top: 25px;
+  top: 18px;
 }
 .toggle.active span:nth-child(1) {
   -webkit-transform: rotate(-45deg);
-  left: 8px;
-  top: 18px;
+  left: 5px;
+  top: 12px;
   transform: rotate(-45deg);
 }
 .toggle.active span:nth-child(2), .toggle.active span:nth-child(3) {
   -webkit-transform: rotate(45deg);
-  top: 18px;
+  top: 12px;
   transform: rotate(45deg);
 }
 .toggle__txt {
@@ -4007,8 +4015,9 @@ h5 {
   -ms-flex-direction: column;
   color: #fff;
   flex-direction: column;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
+  gap: 2px;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -12785,16 +12794,140 @@ us
   Storage Battery - ページ固有スタイル
   ========================================================================== */
 .storageBattery {
-  /* 製品画像（ソーラーパネル・蓄電池）はcontainで表示 */
+  /* 製品画像グリッド */
+  /* ブランド表示 */
+  /* 説明文（ブランド・保証の下） */
+  /* テキストブロック（Energyセクション） */
 }
 .storageBattery .fv img {
   -o-object-position: bottom;
   object-position: bottom;
 }
-.storageBattery .specDetail__mainImg img {
+.storageBattery .specDetail__images {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+@media (max-width: 999px) {
+  .storageBattery .specDetail__images {
+    margin-bottom: 30px;
+  }
+}
+.storageBattery .specDetail__images--two {
+  grid-template-columns: repeat(2, 1fr);
+}
+.storageBattery .specDetail__images--single {
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+.storageBattery .specDetail__imageItem {
+  background: #fff;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.storageBattery .specDetail__imageItem img {
+  height: auto;
+  width: 100%;
   -o-object-fit: contain;
   object-fit: contain;
-  padding: 20px;
+}
+.storageBattery .specDetail__brand {
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media (max-width: 999px) {
+  .storageBattery .specDetail__brand {
+    margin-bottom: 20px;
+  }
+}
+.storageBattery .specDetail__brandText {
+  color: #333;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  margin: 0 0 8px 0;
+}
+@media (max-width: 999px) {
+  .storageBattery .specDetail__brandText {
+    font-size: 36px;
+  }
+}
+.storageBattery .specDetail__brandName {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+@media (max-width: 999px) {
+  .storageBattery .specDetail__brandName {
+    font-size: 16px;
+  }
+}
+.storageBattery .specDetail__brandSub {
+  color: #333;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin: 0;
+}
+@media (max-width: 999px) {
+  .storageBattery .specDetail__brandSub {
+    font-size: 24px;
+  }
+}
+.storageBattery .specDetail__description {
+  margin: 40px auto 0;
+  max-width: 800px;
+  text-align: center;
+}
+@media (max-width: 999px) {
+  .storageBattery .specDetail__description {
+    margin-top: 30px;
+  }
+}
+.storageBattery .specDetail__blocks {
+  margin-top: 40px;
+}
+@media (max-width: 999px) {
+  .storageBattery .specDetail__blocks {
+    margin-top: 30px;
+  }
+}
+.storageBattery .specDetail__blocks p {
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  line-height: 2.5;
+}
+@media (min-width: 1000px) {
+  .storageBattery .specDetail__blocks p {
+    font-size: 1.6rem;
+  }
+}
+.storageBattery .specDetail__blocks p + p {
+  margin-top: 16px;
+}
+
+/* 注釈テキスト */
+.specHead__note {
+  color: #888;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 16px;
 }
 
 /* ==========================================================================
