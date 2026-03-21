@@ -12784,17 +12784,17 @@ us
 /* ==========================================================================
   Storage Battery - ページ固有スタイル
   ========================================================================== */
+.storageBattery {
+  /* 製品画像（ソーラーパネル・蓄電池）はcontainで表示 */
+}
 .storageBattery .fv img {
   -o-object-position: bottom;
   object-position: bottom;
 }
-.storageBattery .productDetail__image {
-  aspect-ratio: 4/5;
-  padding: 20px;
-}
-.storageBattery .productDetail__image img {
+.storageBattery .specDetail__mainImg img {
   -o-object-fit: contain;
   object-fit: contain;
+  padding: 20px;
 }
 
 /* ==========================================================================
@@ -13214,6 +13214,20 @@ html:has(.specStructure) {
 }
 .specHead__lead p + p {
   margin-top: 20px;
+}
+.specHead__img {
+  margin: 40px auto 0;
+  max-width: 300px;
+}
+@media (max-width: 999px) {
+  .specHead__img {
+    margin-top: 30px;
+    max-width: 235px;
+  }
+}
+.specHead__img img {
+  height: auto;
+  width: 100%;
 }
 
 /* ==========================================================================

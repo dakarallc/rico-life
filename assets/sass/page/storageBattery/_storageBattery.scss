@@ -10,12 +10,11 @@
 		}
 	}
 
-	.productDetail__image {
-		padding: 20px;
-		aspect-ratio: 4 / 5;
-
+	/* 製品画像（ソーラーパネル・蓄電池）はcontainで表示 */
+	.specDetail__mainImg {
 		img {
 			object-fit: contain;
+			padding: 20px;
 		}
 	}
 }

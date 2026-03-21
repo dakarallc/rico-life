@@ -19,63 +19,60 @@ Template Name: ソーラー&蓄電池
 				</h1>
 			</div>
 		</div>
-		
 	</section>
 
 	<?php get_template_part("template-parts/breadcrumb"); ?>
 
-	<!-- PRODUCTS	 -->
-	<section class="products">
-		<div class="inner products__inner">
+	<!-- HEAD -->
+	<section class="specHead">
+		<div class="inner">
 			<div class="ttlWrap">
-				<h2 class="section-ttl">PRODUCTS
+				<h2 class="section-ttl">SolarEnergy
 					<span>商品概要</span>
 				</h2>
 			</div>
-			
+			<h3 class="specHead__title">ソーラー＆蓄電池</h3>
 
-			<div class="catch">
-				<h3 >
-					ソーラー＆蓄電池
-				</h3>
-			</div>
-
-			<div class="products__img">
-				<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/1523to113.svg" alt="新しいカタチの規格プラン方式">
-			</div>
-			<div class="products__text">
+			<div class="specHead__lead">
 				<p>
-				電気代は40年で<br class="show--sp">
-				15,230,000円支払う可能性があります。<br>
-				<br>
-				ソーラー＆蓄電池が<br class="show--sp">
-				標準装備のRico Life.は<br class="show--sp">
-				僅か<span class="highlight-yellow">1,113,000円に</span>することが出来ます。
+					電気代は40年で<br class="show--sp">
+					15,230,000円支払う可能性があります。
 				</p>
+				<p>
+					ソーラー＆蓄電池が<br class="show--sp">
+					標準装備のRico Life.は<br class="show--sp">
+					僅か<span class="highlight-yellow">1,113,000円に</span>することが出来ます。
+				</p>
+			</div>
+
+			<div class="specHead__img">
+				<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/1523to113.svg" alt="電気代40年比較 1523万円が113万円に">
 			</div>
 		</div>
 	</section>
 
-	<!-- Solar	 -->
-	<section class="productDetail solar">
-		<div class="inner productDetail__inner">
-			<div class="ttlWrap">
-				<h2 class="section-ttl">
-					Solar
-					<span class="badge">標準装備</span>
-					<span>太陽光発電 - 創エネルギーシステム</span>
-				</h2>
+	<!-- Solar -->
+	<section class="specDetail">
+		<div class="inner">
+			<div class="specDetail__titleWrap">
+				<h2 class="specDetail__title">Solar</h2>
+				<p class="specDetail__subtitle">太陽光発電 [LONGI N型バックコンタクトモジュール]</p>
 			</div>
 
-			<div class="productDetail__images productDetail__images--single">
-				<div class="productDetail__image">
-					<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/solerPanel.png" alt="ソーラーパネル">
+			<div class="specDetail__hero">
+				<div class="specDetail__mainImg">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/solerPanel.png" alt="太陽光発電パネル LONGI">
 				</div>
-			</div>
-
-			<div class="productDetail__brand">
-				<h3 class="productDetail__brandText">LONGI</h3>
-				<p class="productDetail__brandName">N型バックコンタクトモジュール</p>
+				<div class="specDetail__heroBody">
+					<h3 class="specDetail__catch">
+						世界を牽引する<br>
+						太陽光発電企業が手がけた、
+					</h3>
+					<p class="specDetail__desc">
+						30年保証付きの<br>
+						<span class="highlight-yellow">最高峰・次世代ソーラーパネル。</span>
+					</p>
+				</div>
 			</div>
 
 			<div class="productDetail__warranties">
@@ -92,34 +89,30 @@ Template Name: ソーラー&蓄電池
 					</div>
 				</div>
 			</div>
-
-			<div class="productDetail__description">
-				<h3 class="productDetail__catchCopy">
-					世界を牽引する<br>
-					太陽光発電企業が手がけた、
-				</h3>
-				<p class="productDetail__text">
-					30年保証付きの<br>
-					<span class="highlight-yellow">最高峰・次世代ソーラーパネル。</span>
-				</p>
-			</div>
 		</div>
 	</section>
 
-	<!-- Battery	 -->
-	<section class="productDetail battery">
-		<div class="inner productDetail__inner">
-			<div class="ttlWrap">
-				<h2 class="section-ttl">
-					Battery
-					<span class="badge">標準装備</span>
-					<span>太陽光発電 - 創エネルギーシステム</span>
-				</h2>
+	<!-- Battery -->
+	<section class="specDetail">
+		<div class="inner">
+			<div class="specDetail__titleWrap">
+				<h2 class="specDetail__title">Battery</h2>
+				<p class="specDetail__subtitle">蓄電池 [Tesla Powerwall]</p>
 			</div>
 
-			<div class="productDetail__images productDetail__images--single">
-				<div class="productDetail__image productDetail__image--battery">
-					<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/tesla.png" alt="Tesla Powerwall">
+			<div class="specDetail__hero">
+				<div class="specDetail__mainImg">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/tesla.png" alt="Tesla Powerwall 家庭用蓄電池">
+				</div>
+				<div class="specDetail__heroBody">
+					<h3 class="specDetail__catch">
+						世界をリードする、
+					</h3>
+					<p class="specDetail__desc">
+						<span class="highlight-yellow">電気自動車のTESLAが開発。</span><br>
+						次世代の暮らしを支える、<br>
+						家庭用蓄電システム。
+					</p>
 				</div>
 			</div>
 
@@ -131,19 +124,10 @@ Template Name: ソーラー&蓄電池
 					</div>
 				</div>
 			</div>
-
-			<div class="productDetail__description">
-				<h3 class="productDetail__catchCopy">世界をリードする、</h3>
-				<p class="productDetail__text">
-					<span class="highlight-yellow">電気自動車のTESLAが開発。</span><br>
-					次世代の暮らしを支える、<br>
-					家庭用蓄電システム。
-				</p>
-			</div>
 		</div>
 	</section>
 
-	<!-- Free plan	 -->
+	<!-- Energy -->
 	<section class="why conceptSection">
 		<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/energyBg.png" alt="エネルギー効率の高い住まい">
 		<div class="inner conceptSection__inner">
@@ -152,7 +136,7 @@ Template Name: ソーラー&蓄電池
 					<span>エネルギーが未来を創る</span>
 				</h2>
 			</div>
-			
+
 			<div class="catch">
 				<h3>
 					電気代は<br class="show--sp">
@@ -160,7 +144,7 @@ Template Name: ソーラー&蓄電池
 					固定費です。
 				</h3>
 			</div>
-			
+
 			<div>
 				<div class="conceptSection__block">
 					未来に優しい、<br class="show--sp">
@@ -197,15 +181,14 @@ Template Name: ソーラー&蓄電池
 		</div>
 	</section>
 
-	<!-- finalMessage -->
+	<!-- toTopButton -->
 	<?php get_template_part("template-parts/toTopButton"); ?>
-
 
 	<!-- finalMessage -->
 	<?php get_template_part("template-parts/message"); ?>
 
 	<!-- PRODUCTS -->
-	<?php get_template_part("template-parts/productArea"); ?>
+	<?php get_template_part("template-parts/specProductArea"); ?>
 
 
 	<?php get_template_part("template-parts/contactArea"); ?>
