@@ -66,39 +66,40 @@ function rico_home_url($path = "/") {
  * 構造化データ（JSON-LD）出力
  */
 function rico_output_jsonld() {
-	if (is_front_page()) { ?>
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "HomeAndConstructionBusiness",
-            "name": "Rico Life.（カクダイホーム）",
-            "description": "埼玉県久喜市の注文住宅。コスパで創る、豊かな暮らし。太陽光発電・蓄電池標準装備の高性能住宅。",
-            "url": "<?php echo esc_url(home_url("/")); ?>",
-            "logo": "<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/common/logo.svg",
-            "image": "<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/kv1.png",
-            "telephone": "0480-23-1717",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "久喜中央4-9-49",
-                "addressLocality": "久喜市",
-                "addressRegion": "埼玉県",
-                "postalCode": "346-0003",
-                "addressCountry": "JP"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 36.0713,
-                "longitude": 139.6734
-            },
-            "openingHours": "Mo-Tu,Th-Su 10:00-18:00",
-            "priceRange": "$$",
-            "areaServed": {
-                "@type": "State",
-                "name": "埼玉県"
-            }
-        }
-        </script>
-        <?php }
+	if (is_front_page()) {
+		$data = [
+			"@context" => "https://schema.org",
+			"@type" => "HomeAndConstructionBusiness",
+			"name" => "Rico Life.（カクダイホーム）",
+			"description" => "埼玉県久喜市の注文住宅。コスパで創る、豊かな暮らし。太陽光発電・蓄電池標準装備の高性能住宅。",
+			"url" => home_url("/"),
+			"logo" => get_template_directory_uri() . "/assets/img/common/logo.svg",
+			"image" => get_template_directory_uri() . "/assets/img/top/kv1.png",
+			"telephone" => "0480-23-1717",
+			"address" => [
+				"@type" => "PostalAddress",
+				"streetAddress" => "久喜中央4-9-49",
+				"addressLocality" => "久喜市",
+				"addressRegion" => "埼玉県",
+				"postalCode" => "346-0003",
+				"addressCountry" => "JP",
+			],
+			"geo" => [
+				"@type" => "GeoCoordinates",
+				"latitude" => 36.0713,
+				"longitude" => 139.6734,
+			],
+			"openingHours" => "Mo-Tu,Th-Su 10:00-18:00",
+			"priceRange" => "$$",
+			"areaServed" => [
+				"@type" => "State",
+				"name" => "埼玉県",
+			],
+		];
+		echo '<script type="application/ld+json">' . "\n";
+		echo wp_json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+		echo "\n" . "</script>" . "\n";
+	}
 }
 add_action("wp_head", "rico_output_jsonld");
 
@@ -368,6 +369,7 @@ function auto_paywall_custom_fields($post) {
 	$auto_paywall = get_post_meta($post->ID, "auto_paywall", true);
 	$paywall_date = get_post_meta($post->ID, "paywall_date", true);
 	$paywall_time = get_post_meta($post->ID, "paywall_time", true);
+	wp_nonce_field("auto_paywall_nonce_action", "auto_paywall_nonce");
 	?>
   <p>
     <label>
@@ -410,6 +412,13 @@ function add_wp_cron_schedule_auto_paywall($post_id) {
 		return;
 	}
 
+	if (
+		!isset($_POST["auto_paywall_nonce"]) ||
+		!wp_verify_nonce($_POST["auto_paywall_nonce"], "auto_paywall_nonce_action")
+	) {
+		return;
+	}
+
 	//記事の種類が投稿ではない　または wpのオートセーブの
 	if (get_post_type($post_id) !== "post" || (defined("DOING_AUTOSAVE") && DOING_AUTOSAVE)) {
 		return;
@@ -422,9 +431,9 @@ function add_wp_cron_schedule_auto_paywall($post_id) {
 		return;
 	}
 	//paywallの時間設定
-	update_post_meta($post_id, "auto_paywall", $_POST["auto_paywall"]);
-	update_post_meta($post_id, "paywall_date", $_POST["paywall_date"]);
-	update_post_meta($post_id, "paywall_time", $_POST["paywall_time"]);
+	update_post_meta($post_id, "auto_paywall", sanitize_text_field($_POST["auto_paywall"]));
+	update_post_meta($post_id, "paywall_date", sanitize_text_field($_POST["paywall_date"]));
+	update_post_meta($post_id, "paywall_time", sanitize_text_field($_POST["paywall_time"]));
 
 	$scheduled_time = wp_next_scheduled("my_auto_function_cron", [$post_id]);
 
@@ -434,7 +443,9 @@ function add_wp_cron_schedule_auto_paywall($post_id) {
 	}
 
 	date_default_timezone_set("Asia/Tokyo");
-	$datetime = strtotime($_POST["paywall_date"] . " " . $_POST["paywall_time"]);
+	$datetime = strtotime(
+		sanitize_text_field($_POST["paywall_date"]) . " " . sanitize_text_field($_POST["paywall_time"]),
+	);
 
 	//カスタムフィールドで設定した時間が現在時刻より未来の場合はcronを登録
 	if ($datetime > time()) {

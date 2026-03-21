@@ -33,7 +33,7 @@
 		width: 100%;
 
 		@include mixin.sp {
-			max-width: initial !important;
+			max-width: initial;
 			padding: 0 16px;
 		}
 	}
@@ -88,7 +88,7 @@
 		/* PC用メニュー専用 */
 		&--pc {
 			@include mixin.sp {
-				display: none !important;
+				display: none;
 			}
 		}
 	}

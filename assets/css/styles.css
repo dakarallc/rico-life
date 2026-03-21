@@ -892,6 +892,15 @@ h5 {
   }
 }
 
+/* finalMessage */
+.finalMessage {
+  padding: 80px 0;
+}
+@media (max-width: 999px) {
+  .finalMessage {
+    padding: 60px 0;
+  }
+}
 .finalMessage__inner {
   display: -webkit-box;
   display: -webkit-flex;
@@ -916,6 +925,16 @@ h5 {
 }
 .finalMessage__logo img {
   width: 200px;
+}
+
+/* 下部共通セクション間の余白 */
+.product {
+  padding: 80px 0;
+}
+@media (max-width: 999px) {
+  .product {
+    padding: 60px 0;
+  }
 }
 
 /* ==========================================================================
@@ -1193,8 +1212,7 @@ h5 {
   ボタン
   ========================================================================== */
 .btnWrap {
-  margin: 0 auto;
-  margin-top: 60px;
+  margin: 60px auto 0;
   text-align: center;
 }
 
@@ -2481,7 +2499,7 @@ h5 {
   text-align: left;
 }
 .footer .area h2 {
-  border-bottom: 1px solid #fff !important;
+  border-bottom: 1px solid #fff;
 }
 .footer .area .area__inner {
   display: -webkit-box;
@@ -2593,7 +2611,7 @@ h5 {
   padding: 54px 0;
 }
 .footer .footer__contents h2 {
-  border-bottom: 1px solid #fff !important;
+  border-bottom: 1px solid #fff;
   margin-left: -56px;
 }
 @media (max-width: 999px) {
@@ -2823,8 +2841,8 @@ h5 {
   }
 }
 
-.area-list.saitama-city {
-  display: block !important;
+.footer .area .area-list.saitama-city {
+  display: block;
 }
 
 /* ==========================================================================
@@ -3511,7 +3529,7 @@ h5 {
 }
 @media (max-width: 999px) {
   .header__inner {
-    max-width: initial !important;
+    max-width: initial;
     padding: 0 16px;
   }
 }
@@ -3587,7 +3605,7 @@ h5 {
 }
 @media (max-width: 999px) {
   .header__contents--pc {
-    display: none !important;
+    display: none;
   }
 }
 @media (min-width: 1000px) {
@@ -11937,12 +11955,12 @@ us
 .product__list {
   display: grid;
   gap: 48px 32px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 48px;
 }
 @media (max-width: 999px) {
   .product__list {
-    gap: 16px 16px;
+    gap: 16px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -13545,7 +13563,6 @@ html:has(.specStructure) {
   -ms-flex-direction: column;
   flex-direction: column;
   /* スムーススクロール用オフセット */
-  /* finalMessageの余白調整 */
 }
 .specEquipment .fv::after,
 .specPerformance .fv::after,
@@ -13582,22 +13599,6 @@ html:has(.specStructure) {
 .specStructure .breadcrumb,
 .storageBattery .breadcrumb {
   padding-bottom: 0;
-}
-.specEquipment .finalMessage,
-.specPerformance .finalMessage,
-.specInterior .finalMessage,
-.specStructure .finalMessage,
-.storageBattery .finalMessage {
-  padding: 100px 0;
-}
-@media (max-width: 999px) {
-  .specEquipment .finalMessage,
-  .specPerformance .finalMessage,
-  .specInterior .finalMessage,
-  .specStructure .finalMessage,
-  .storageBattery .finalMessage {
-    padding: 80px 0;
-  }
 }
 
 /* ==========================================================================
@@ -14079,26 +14080,6 @@ html:has(.specStructure) {
   color: #888;
   font-size: 1.1rem;
   margin-top: 16px;
-}
-
-/* ==========================================================================
-  specProductArea - PRODUCTS グリッド（PC4列 / SP2列）
-  ========================================================================== */
-.specEquipment .product__list,
-.specPerformance .product__list,
-.specInterior .product__list,
-.specStructure .product__list,
-.storageBattery .product__list {
-  grid-template-columns: repeat(2, 1fr);
-}
-@media (min-width: 1000px) {
-  .specEquipment .product__list,
-  .specPerformance .product__list,
-  .specInterior .product__list,
-  .specStructure .product__list,
-  .storageBattery .product__list {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 /* ==========================================================================

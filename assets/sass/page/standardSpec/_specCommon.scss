@@ -47,15 +47,6 @@ html:has(.specStructure) {
 	.breadcrumb {
 		padding-bottom: 0;
 	}
-
-	/* finalMessageの余白調整 */
-	.finalMessage {
-		padding: 100px 0;
-
-		@include mixin.sp {
-			padding: 80px 0;
-		}
-	}
 }
 
 /* ==========================================================================
@@ -465,22 +456,5 @@ html:has(.specStructure) {
 		font-size: 1.1rem;
 		color: #888;
 		margin-top: 16px;
-	}
-}
-
-/* ==========================================================================
-  specProductArea - PRODUCTS グリッド（PC4列 / SP2列）
-  ========================================================================== */
-.specEquipment,
-.specPerformance,
-.specInterior,
-.specStructure,
-.storageBattery {
-	.product__list {
-		grid-template-columns: repeat(2, 1fr);
-
-		@include mixin.pc {
-			grid-template-columns: repeat(4, 1fr);
-		}
 	}
 }
