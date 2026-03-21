@@ -3457,13 +3457,9 @@ h5 {
 }
 @media (max-width: 999px) {
   .breadcrumb__contents {
-    overflow-x: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-  .breadcrumb__contents::-webkit-scrollbar {
-    display: none;
   }
 }
 
