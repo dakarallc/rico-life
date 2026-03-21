@@ -50,6 +50,7 @@
 		@include mixin.sp {
 			height: 100%;
 			width: 160px;
+			overflow: hidden;
 		}
 
 		> a {
@@ -61,10 +62,8 @@
 			}
 
 			img {
-				@include mixin.sp {
-					height: 28px;
-					width: auto;
-				}
+				max-width: 100%;
+				height: auto;
 			}
 		}
 	}

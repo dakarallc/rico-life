@@ -17,6 +17,10 @@
 			font-size: 2.2rem;
 			line-height: 2;
 			font-weight: bold;
+
+			@include mixin.sp {
+				font-size: 1.6rem;
+			}
 			span {
 				font-weight: bold;
 			}

@@ -2800,15 +2800,16 @@ h5 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  gap: 16px;
+  gap: 24px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-top: 30px;
 }
 .footer .footer__contents .footerContentsInner .info .footer__sns .icon {
-  color: #222;
-  font-size: 6rem;
+  color: #fff;
+  font-size: 3rem;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -3533,6 +3534,7 @@ h5 {
 @media (max-width: 999px) {
   .header__logo {
     height: 100%;
+    overflow: hidden;
     width: 160px;
   }
 }
@@ -3549,11 +3551,9 @@ h5 {
 .header__logo > a:hover {
   opacity: 0.8;
 }
-@media (max-width: 999px) {
-  .header__logo > a img {
-    height: 28px;
-    width: auto;
-  }
+.header__logo > a img {
+  height: auto;
+  max-width: 100%;
 }
 .header__contents {
   -webkit-box-align: center;
@@ -3947,7 +3947,7 @@ h5 {
   cursor: pointer;
   height: 24px;
   position: relative;
-  top: -3px;
+  top: 0;
   width: 34px;
   z-index: 1000;
   -webkit-transition: 0.3s;
@@ -4021,9 +4021,9 @@ h5 {
   -ms-flex-direction: column;
   color: #fff;
   flex-direction: column;
-  font-size: 1rem;
-  font-weight: bold;
-  gap: 2px;
+  font-size: 0.9rem;
+  font-weight: normal;
+  gap: 0;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -12197,18 +12197,32 @@ us
 }
 .c-requestBanner__lead {
   color: #333;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-family: inherit;
   font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   margin-bottom: 16px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .c-requestBanner__lead .c-requestBanner__sec {
   color: #d49baa;
   font-size: 2.2rem;
   font-weight: bold;
   margin: 0 2px;
-  vertical-align: middle;
 }
 .c-requestBanner__books {
   width: 50%;
@@ -12295,12 +12309,23 @@ us
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 205px !important;
+}
+.concept > section {
+  margin-top: 205px;
 }
 @media (max-width: 999px) {
-  .concept {
-    gap: 154px !important;
+  .concept > section {
+    margin-top: 154px;
   }
+}
+.concept > section:first-child {
+  margin-top: 0;
+}
+.concept > .fv + .breadcrumb + section {
+  margin-top: 0;
+}
+.concept .breadcrumb {
+  padding-bottom: 0;
 }
 .concept .concept__ttl {
   border-bottom: 1px solid #000;
@@ -12399,6 +12424,11 @@ us
   font-size: 2.2rem;
   font-weight: bold;
   line-height: 2;
+}
+@media (max-width: 999px) {
+  .message__text p {
+    font-size: 1.6rem;
+  }
 }
 .message__text p span {
   font-weight: bold;
@@ -12800,8 +12830,9 @@ us
   Storage Battery - ページ固有スタイル
   ========================================================================== */
 .storageBattery {
-  /* 製品画像（ソーラーパネル・蓄電池）はcontainで表示 */
+  /* 製品画像（ソーラーパネル・蓄電池）はcontainで表示、PC時1/3幅 */
   /* ブランド表示 */
+  /* hero内の保証バッジは左寄せ */
   /* 説明文（ブランド・保証の下） */
   /* テキストブロック（Energyセクション） */
 }
@@ -12811,8 +12842,7 @@ us
 }
 @media (min-width: 1000px) {
   .storageBattery .specDetail__mainImg {
-    margin: 0 auto 30px;
-    max-width: 500px;
+    width: 33%;
   }
 }
 .storageBattery .specDetail__mainImg img {
@@ -12826,6 +12856,37 @@ us
 @media (max-width: 999px) {
   .storageBattery .specDetail__brand {
     margin-bottom: 20px;
+  }
+}
+.storageBattery .specDetail__heroBody .productDetail__warranties {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media (min-width: 1000px) {
+  .storageBattery .specDetail__heroBody .productDetail__warranties {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+.storageBattery .specDetail__heroBody .specDetail__description {
+  margin: 30px 0 0;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .storageBattery .specDetail__heroBody .specDetail__description {
+    text-align: left;
+  }
+}
+.storageBattery .specDetail__heroBody .specDetail__brand {
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .storageBattery .specDetail__heroBody .specDetail__brand {
+    text-align: left;
   }
 }
 .storageBattery .specDetail__brandText {
@@ -12872,6 +12933,16 @@ us
 @media (max-width: 999px) {
   .storageBattery .specDetail__description {
     margin-top: 30px;
+  }
+}
+.storageBattery .specDetail__description .specDetail__desc {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+@media (max-width: 999px) {
+  .storageBattery .specDetail__description .specDetail__desc {
+    font-size: 2.4rem;
   }
 }
 .storageBattery .specDetail__blocks {
@@ -13009,6 +13080,16 @@ us
   コスト比較コンポーネント（1523→113）
   ========================================================================== */
 .costCompare {
+  margin: 50px 0 30px;
+  /* 数字エリア（PC横並び / SP縦並び） */
+  /* 説明文エリア（横幅いっぱい） */
+}
+@media (min-width: 1000px) {
+  .costCompare {
+    margin: 60px 0 40px;
+  }
+}
+.costCompare__numbers {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13023,10 +13104,9 @@ us
   -ms-flex-align: center;
   align-items: center;
   gap: 24px;
-  margin: 50px 0 30px;
 }
 @media (min-width: 1000px) {
-  .costCompare {
+  .costCompare__numbers {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -13037,7 +13117,6 @@ us
     -ms-flex-pack: center;
     gap: 40px;
     justify-content: center;
-    margin: 60px 0 40px;
   }
 }
 .costCompare__item {
@@ -13048,12 +13127,11 @@ us
   font-size: 8rem;
   font-weight: 900;
   line-height: 1;
-  margin: 0 0 16px 0;
+  margin: 0;
 }
 @media (max-width: 999px) {
   .costCompare__number {
     font-size: 6rem;
-    margin-bottom: 12px;
   }
 }
 .costCompare__number small {
@@ -13064,17 +13142,6 @@ us
 @media (max-width: 999px) {
   .costCompare__number small {
     font-size: 2rem;
-  }
-}
-.costCompare__label {
-  color: #333;
-  font-size: 1.5rem;
-  line-height: 2;
-  margin: 0;
-}
-@media (min-width: 1000px) {
-  .costCompare__label {
-    font-size: 1.6rem;
   }
 }
 .costCompare__arrow {
@@ -13089,24 +13156,53 @@ us
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
+  height: 40px;
   justify-content: center;
+}
+@media (min-width: 1000px) {
+  .costCompare__arrow {
+    height: auto;
+    width: 40px;
+  }
 }
 .costCompare__arrow span {
   border-bottom: 3px solid #333;
   border-right: 3px solid #333;
   display: block;
-  height: 40px;
-  width: 40px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  height: 24px;
+  width: 24px;
+  -webkit-transform: rotate(45deg) translate(-4px, -4px);
+  transform: rotate(45deg) translate(-4px, -4px);
 }
 @media (min-width: 1000px) {
   .costCompare__arrow span {
-    height: 30px;
-    width: 30px;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    height: 20px;
+    width: 20px;
+    -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+    transform: rotate(-45deg) translate(-3px, 3px);
   }
+}
+.costCompare__body {
+  margin-top: 40px;
+}
+@media (max-width: 999px) {
+  .costCompare__body {
+    margin-top: 30px;
+  }
+}
+.costCompare__body p {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2;
+}
+@media (max-width: 999px) {
+  .costCompare__body p {
+    font-size: 1.6rem;
+  }
+}
+.costCompare__body p + p {
+  margin-top: 20px;
 }
 
 /* 注釈テキスト */
@@ -13979,6 +14075,26 @@ html:has(.specStructure) {
   color: #888;
   font-size: 1.1rem;
   margin-top: 16px;
+}
+
+/* ==========================================================================
+  specProductArea - PRODUCTS グリッド（PC4列 / SP2列）
+  ========================================================================== */
+.specEquipment .product__list,
+.specPerformance .product__list,
+.specInterior .product__list,
+.specStructure .product__list,
+.storageBattery .product__list {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 1000px) {
+  .specEquipment .product__list,
+  .specPerformance .product__list,
+  .specInterior .product__list,
+  .specStructure .product__list,
+  .storageBattery .product__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* ==========================================================================

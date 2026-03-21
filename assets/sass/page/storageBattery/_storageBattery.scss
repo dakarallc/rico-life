@@ -10,11 +10,10 @@
 		}
 	}
 
-	/* 製品画像（ソーラーパネル・蓄電池）はcontainで表示 */
+	/* 製品画像（ソーラーパネル・蓄電池）はcontainで表示、PC時1/3幅 */
 	.specDetail__mainImg {
 		@include mixin.pc {
-			max-width: 500px;
-			margin: 0 auto 30px;
+			width: 33%;
 		}
 
 		img {
@@ -29,6 +28,34 @@
 
 		@include mixin.sp {
 			margin-bottom: 20px;
+		}
+	}
+
+	/* hero内の保証バッジは左寄せ */
+	.specDetail__heroBody {
+		.productDetail__warranties {
+			justify-content: center;
+
+			@include mixin.pc {
+				justify-content: flex-start;
+			}
+		}
+
+		.specDetail__description {
+			text-align: center;
+			margin: 30px 0 0;
+
+			@include mixin.pc {
+				text-align: left;
+			}
+		}
+
+		.specDetail__brand {
+			text-align: center;
+
+			@include mixin.pc {
+				text-align: left;
+			}
 		}
 	}
 
@@ -76,6 +103,16 @@
 
 		@include mixin.sp {
 			margin-top: 30px;
+		}
+
+		.specDetail__desc {
+			font-size: 3.2rem;
+			font-weight: bold;
+			line-height: 1.5;
+
+			@include mixin.sp {
+				font-size: 2.4rem;
+			}
 		}
 	}
 
@@ -184,17 +221,24 @@
   コスト比較コンポーネント（1523→113）
   ========================================================================== */
 .costCompare {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 24px;
 	margin: 50px 0 30px;
 
 	@include mixin.pc {
-		flex-direction: row;
-		justify-content: center;
-		gap: 40px;
 		margin: 60px 0 40px;
+	}
+
+	/* 数字エリア（PC横並び / SP縦並び） */
+	&__numbers {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+
+		@include mixin.pc {
+			flex-direction: row;
+			justify-content: center;
+			gap: 40px;
+		}
 	}
 
 	&__item {
@@ -206,11 +250,10 @@
 		font-weight: 900;
 		color: #333;
 		line-height: 1;
-		margin: 0 0 16px 0;
+		margin: 0;
 
 		@include mixin.sp {
 			font-size: 6rem;
-			margin-bottom: 12px;
 		}
 
 		small {
@@ -224,34 +267,53 @@
 		}
 	}
 
-	&__label {
-		font-size: 1.5rem;
-		line-height: 2;
-		color: #333;
-		margin: 0;
-
-		@include mixin.pc {
-			font-size: 1.6rem;
-		}
-	}
-
 	&__arrow {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		height: 40px;
+
+		@include mixin.pc {
+			height: auto;
+			width: 40px;
+		}
 
 		span {
 			display: block;
-			width: 40px;
-			height: 40px;
+			width: 24px;
+			height: 24px;
 			border-right: 3px solid #333;
 			border-bottom: 3px solid #333;
-			transform: rotate(45deg);
+			transform: rotate(45deg) translate(-4px, -4px);
 
 			@include mixin.pc {
-				width: 30px;
-				height: 30px;
-				transform: rotate(-45deg);
+				width: 20px;
+				height: 20px;
+				transform: rotate(-45deg) translate(-3px, 3px);
+			}
+		}
+	}
+
+	/* 説明文エリア（横幅いっぱい） */
+	&__body {
+		margin-top: 40px;
+
+		@include mixin.sp {
+			margin-top: 30px;
+		}
+
+		p {
+			font-size: 1.8rem;
+			line-height: 2;
+			color: #333;
+			font-weight: bold;
+
+			@include mixin.sp {
+				font-size: 1.6rem;
+			}
+
+			& + p {
+				margin-top: 20px;
 			}
 		}
 	}
