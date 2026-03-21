@@ -33,28 +33,25 @@ Template Name: ソーラー&蓄電池
 			</div>
 			<h3 class="specHead__title">ソーラー＆蓄電池</h3>
 
-			<div class="specHead__img">
-				<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/1523to113.svg" alt="電気代40年比較 1523万円が113万円に">
+			<div class="costCompare">
+				<div class="costCompare__item costCompare__item--before">
+					<p class="costCompare__number">1523<small>万円</small></p>
+					<p class="costCompare__label">電気代は40年で<br>※15,230,000円支払う<br>可能性があります。</p>
+				</div>
+				<div class="costCompare__arrow">
+					<span></span>
+				</div>
+				<div class="costCompare__item costCompare__item--after">
+					<p class="costCompare__number">113<small>万円</small></p>
+					<p class="costCompare__label">ソーラー＆蓄電池が<br>標準装備のRico Life.は<br>僅か<span class="highlight-yellow">※1,113,000円に</span><br>することが出来ます。</p>
+				</div>
 			</div>
 
-			<div class="specHead__lead">
-				<p>
-					電気代は40年で<br class="show--sp">
-					<span class="highlight-yellow">※</span>15,230,000円支払う<br class="show--sp">
-					可能性があります。
-				</p>
-				<p>
-					ソーラー＆蓄電池が<br class="show--sp">
-					標準装備のRico Life.は<br class="show--sp">
-					僅か<span class="highlight-yellow"><span class="highlight-yellow">※</span>1,113,000円に</span><br class="show--sp">
-					することが出来ます。
-				</p>
-				<p class="specHead__note">
-					※内容を保証するものでは有りません。<br>
-					一定条件下で高性能な太陽光と蓄電池を搭載し<br class="show--sp">
-					比較したシミュレーションです。
-				</p>
-			</div>
+			<p class="specHead__note">
+				※内容を保証するものでは有りません。<br>
+				一定条件下で高性能な太陽光と蓄電池を搭載し<br class="show--sp">
+				比較したシミュレーションです。
+			</p>
 		</div>
 	</section>
 
@@ -63,16 +60,14 @@ Template Name: ソーラー&蓄電池
 		<div class="inner">
 			<div class="specDetail__titleWrap">
 				<h2 class="specDetail__title">Solar</h2>
-				<p class="specDetail__subtitle">太陽光発電 - 創エネルギーシステム</p>
+				<p class="specDetail__subtitle">
+					<span class="badge">標準装備</span>
+					太陽光発電 - 創エネルギーシステム
+				</p>
 			</div>
 
-			<div class="specDetail__images specDetail__images--two">
-				<div class="specDetail__imageItem">
-					<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/solerPanel.png" alt="LONGi ソーラーパネル 表面">
-				</div>
-				<div class="specDetail__imageItem">
-					<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/solerPanel-back.png" alt="LONGi ソーラーパネル 裏面">
-				</div>
+			<div class="specDetail__mainImg">
+				<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/solerPanel.png" alt="LONGi ソーラーパネル N型バックコンタクトモジュール">
 			</div>
 
 			<div class="specDetail__brand">
@@ -113,7 +108,10 @@ Template Name: ソーラー&蓄電池
 		<div class="inner">
 			<div class="specDetail__titleWrap">
 				<h2 class="specDetail__title">Battery</h2>
-				<p class="specDetail__subtitle">太陽光発電 - 創エネルギーシステム</p>
+				<p class="specDetail__subtitle">
+					<span class="badge">標準装備</span>
+					太陽光発電 - 創エネルギーシステム
+				</p>
 			</div>
 
 			<div class="specDetail__images specDetail__images--single">

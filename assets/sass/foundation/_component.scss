@@ -723,7 +723,12 @@
 	font-weight: bold;
 	border-radius: 36px;
 	width: 330px;
+	max-width: 100%;
 	padding: 10px 0;
+
+	@include mixin.sp {
+		width: 300px;
+	}
 	text-decoration: none;
 	transition: background 0.2s;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
