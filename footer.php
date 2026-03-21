@@ -118,7 +118,6 @@
 					<ul>
 						<li><a href="<?php echo rico_home_url("/concept"); ?>">コンセプト</a></li>
 						<li><a href="<?php echo rico_home_url("/case"); ?>">施工事例</a></li>
-						<li><a href="<?php echo rico_home_url("/plan-of-house"); ?>">間取り</a></li>
 						<li class="footerNav__hasChild">
 							<a href="<?php echo rico_home_url("/standard-spec"); ?>">標準仕様</a>
 							<ul class="footerNav__subList">

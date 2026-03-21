@@ -107,16 +107,15 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
         <!-- SP用メニュー -->
         <div class="spMenu" id="js-spMenu">
           <div class="spMenu__body">
-            <h2 class="spMenu__title">TABLE CONTENTS<span>もくじ</span></h2>
+            <h2 class="spMenu__title">MENU<span>メニュー</span></h2>
 
             <nav class="spMenu__nav">
               <ul class="spMenu__list">
                 <li><a href="<?php echo rico_home_url(); ?>">TOP</a></li>
-                <li><a href="<?php echo rico_home_url(); ?>concept">コンセプト</a></li>
-                <li><a href="<?php echo rico_home_url(); ?>case">施工事例</a></li>
-                <li><a href="<?php echo rico_home_url(); ?>event">イベント情報</a></li>
-                <li><a href="<?php echo rico_home_url(); ?>plan-of-house">間取り</a></li>
-                <li>
+                <li><a href="<?php echo rico_home_url("/concept"); ?>">コンセプト</a></li>
+                <li><a href="<?php echo rico_home_url("/case"); ?>">施工事例</a></li>
+                <li><a href="<?php echo rico_home_url("/event"); ?>">イベント情報</a></li>
+                <li class="spMenu__hasChild">
                   <a href="<?php echo rico_home_url("/standard-spec"); ?>">標準仕様</a>
                   <ul class="spMenu__subList">
                     <li><a href="<?php echo rico_home_url("/standard-spec/home-appliances"); ?>">住宅設備</a></li>

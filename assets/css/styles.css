@@ -4073,6 +4073,7 @@ h5 {
   transition: opacity 0.35s ease-in-out, visibility 0.35s ease-in-out;
   /* Body */
   /* Navigation List */
+  /* 子メニュー付き項目は1カラム幅 */
   /* サブメニュー（標準仕様の子ページ等） */
   /* Contact Section */
   /* Footer Navigation */
@@ -4141,6 +4142,9 @@ h5 {
 }
 .spMenu__list > li > a:hover {
   opacity: 0.7;
+}
+.spMenu__hasChild {
+  grid-column: 1/-1;
 }
 .spMenu__subList {
   display: grid;

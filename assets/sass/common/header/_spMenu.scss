@@ -89,6 +89,11 @@
 		}
 	}
 
+	/* 子メニュー付き項目は1カラム幅 */
+	&__hasChild {
+		grid-column: 1 / -1;
+	}
+
 	/* サブメニュー（標準仕様の子ページ等） */
 	&__subList {
 		list-style: none;
