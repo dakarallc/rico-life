@@ -10,7 +10,6 @@
 	width: 100%;
 
 	@include mixin.sp() {
-		max-width: 500px !important;
 		padding: 0 16px;
 	}
 }

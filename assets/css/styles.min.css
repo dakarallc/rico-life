@@ -435,7 +435,6 @@ h5 {
 }
 @media (max-width: 999px) {
 	.inner {
-		max-width: 500px !important;
 		padding: 0 16px;
 	}
 }
@@ -3474,7 +3473,6 @@ h5 {
 }
 .header__item ._below {
 	font-size: 1.3rem;
-	font-weight: 700;
 	padding-top: 12px;
 }
 @media (min-width: 1000px) {

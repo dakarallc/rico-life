@@ -78,25 +78,25 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
             <ul class="header__list">
               <li class="header__item">
                 <a href="https://www.youtube.com/@ricolife-66" target="_blank">
-                  <i class="fab fa-youtube fa-xl"></i>
+                  <i class="fab fa-youtube fa-lg"></i>
                   <p class="_below">YouTube</p>
                 </a>
               </li>
               <li class="header__item">
                 <a href="https://www.instagram.com/ricolife_kuki/" target="_blank">
-									<i class="fa-brands fa-instagram fa-xl"></i>
+									<i class="fa-brands fa-instagram fa-lg"></i>
                   <p class="_below">Instagram</p>
                 </a>
               </li>
               <li class="header__item">
                 <a href="<?php echo rico_home_url(); ?>request" >
-								<i class="fa-solid fa-book-open fa-xl"></i>
+								<i class="fa-solid fa-book-open fa-lg"></i>
                   <p class="_below">お問い合わせ</p>
                 </a>
               </li>
               <li class="header__item">
                 <a href="<?php echo rico_home_url(); ?>contact">
-									<i class="fa-solid fa-house fa-xl"></i>
+									<i class="fa-solid fa-house fa-lg"></i>
                   <p class="_below">来場予約</p>
                 </a>
               </li>
