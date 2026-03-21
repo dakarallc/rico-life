@@ -25,9 +25,14 @@
 
 	&__contents {
 		@include mixin.sp() {
-			overflow-x: scroll;
+			overflow-x: auto;
 			white-space: nowrap;
-			padding-bottom: 10px;
+			-webkit-overflow-scrolling: touch;
+			scrollbar-width: none;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
 		}
 	}
 }

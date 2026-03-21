@@ -3457,9 +3457,13 @@ h5 {
 }
 @media (max-width: 999px) {
   .breadcrumb__contents {
-    overflow-x: scroll;
-    padding-bottom: 10px;
+    overflow-x: auto;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .breadcrumb__contents::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -12943,11 +12947,21 @@ us
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 160px;
+  /* セクション間の余白はgapではなく各セクションのpaddingで管理 */
+}
+.standardSpec > section:not(.fv) {
+  margin-top: 0;
 }
 .standardSpec .breadcrumb {
-  margin-bottom: -150px;
-  margin-top: -150px;
+  padding-bottom: 0;
+}
+.standardSpec .specCategory {
+  margin-top: 80px;
+}
+@media (max-width: 999px) {
+  .standardSpec .specCategory {
+    margin-top: 60px;
+  }
 }
 .standardSpec .fv::after {
   background: rgba(0, 0, 0, 0.1);
@@ -13278,6 +13292,13 @@ html:has(.specStructure) {
 .specStructure section[id],
 .storageBattery section[id] {
   scroll-margin-top: 80px;
+}
+.specEquipment .breadcrumb,
+.specPerformance .breadcrumb,
+.specInterior .breadcrumb,
+.specStructure .breadcrumb,
+.storageBattery .breadcrumb {
+  padding-bottom: 0;
 }
 .specEquipment .finalMessage,
 .specPerformance .finalMessage,

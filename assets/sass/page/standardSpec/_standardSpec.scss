@@ -6,11 +6,24 @@
 .standardSpec {
 	display: flex;
 	flex-direction: column;
-	gap: 160px;
+
+	/* セクション間の余白はgapではなく各セクションのpaddingで管理 */
+	> section {
+		&:not(.fv) {
+			margin-top: 0;
+		}
+	}
 
 	.breadcrumb {
-		margin-top: -150px;
-		margin-bottom: -150px;
+		padding-bottom: 0;
+	}
+
+	.specCategory {
+		margin-top: 80px;
+
+		@include mixin.sp {
+			margin-top: 60px;
+		}
 	}
 	.fv {
 		&::after {
