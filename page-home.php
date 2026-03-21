@@ -12,13 +12,22 @@ Template Name: TOP
 		<div class="swiper fvSwiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<img class="fv__img1" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.png" alt="Rico Life. 久喜市の注文住宅">
+					<picture>
+						<source srcset="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.webp" type="image/webp">
+						<img class="fv__img1" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.png" alt="Rico Life. 久喜市の注文住宅" fetchpriority="high">
+					</picture>
 				</div>
 				<div class="swiper-slide">
-					<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="Rico Life. 埼玉県の新築一戸建て">
+					<picture>
+						<source srcset="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.webp" type="image/webp">
+						<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="Rico Life. 埼玉県の新築一戸建て">
+					</picture>
 				</div>
 				<div class="swiper-slide">
-					<img src="<?php echo rico_theme_url(); ?>/assets/img/top/kv3.png" alt="Rico Life. コスパで創る豊かな暮らし">
+					<picture>
+						<source srcset="<?php echo rico_theme_url(); ?>/assets/img/top/kv3.webp" type="image/webp">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/top/kv3.png" alt="Rico Life. コスパで創る豊かな暮らし">
+					</picture>
 				</div>
 			</div>
 			<div class="swiper-pagination"></div>
@@ -162,10 +171,8 @@ Template Name: TOP
 	<!-- EVENT -->
 	<?php get_template_part("template-parts/eventArea"); ?>
 
-	<!-- PRODUCTS -->
-	<?php
-//get_template_part("template-parts/productArea");
-?>
+	<!-- MENU -->
+	<?php get_template_part("template-parts/productArea"); ?>
 
 
 	<?php get_template_part("template-parts/contactArea"); ?>
