@@ -38,34 +38,23 @@
     	$start_time = get_field("event_start_time");
     	$end_time = get_field("event_end_time");
     	$address = get_field("address");
-    	$categories = get_the_terms(get_the_ID(), "event_category");
-    	$is_kansei_kengaku = false;
-    	if ($categories && !is_wp_error($categories)) {
-    		foreach ($categories as $category) {
-    			// 完成見学会として表示するカテゴリー以外の場合
-    			if ($category->slug === "actual-house-tours") {
-    				$is_kansei_kengaku = false;
-    				break;
-    			} else {
-    				$is_kansei_kengaku = true;
-    			}
-    		}
-    	}
+    	$subtitle = get_field("event_subtitle");
     	?>
-						<div class="<?php echo $use_slider ? "event__slide swiper-slide" : "event__item"; ?>">
-							<a href="<?php echo esc_url(get_permalink()); ?>" class="event__container">
+					<div class="<?php echo $use_slider ? "event__slide swiper-slide" : "event__item"; ?>">
+						<a href="<?php echo esc_url(get_permalink()); ?>" class="event__container">
+							<!-- タイトル + サブタイトル（上部） -->
+							<div class="event__header">
+								<h3 class="event__main-title"><?php the_title(); ?></h3>
+								<?php if ($subtitle): ?>
+									<p class="event__subtitle"><?php echo esc_html($subtitle); ?></p>
+								<?php endif; ?>
+							</div>
+							<!-- 写真 + 情報（横並び） -->
+							<div class="event__body">
 								<div class="event__image">
 									<img src="<?php echo esc_url($event_pic); ?>" alt="<?php the_title(); ?>">
 								</div>
 								<div class="event__info">
-									<h3 class="event__main-title"><?php the_title(); ?></h3>
-									<?php
-         $subtitle = get_field("event_subtitle");
-         if ($subtitle): ?>
-										<p class="event__subtitle"><?php echo esc_html($subtitle); ?></p>
-									<?php endif;
-         ?>
-									<hr class="event__divider">
 									<p class="event__reserve">※完全予約制</p>
 									<div class="event__details">
 										<dl>
@@ -92,9 +81,10 @@
 										</dl>
 									</div>
 								</div>
-							</a>
-						</div>
-					<?php
+							</div>
+						</a>
+					</div>
+				<?php
     endwhile; ?>
 
 			<?php if ($use_slider): ?>
@@ -105,7 +95,7 @@
 			<?php else: ?>
 				</div>
 			<?php endif; ?>
-			
+
 			<?php wp_reset_postdata(); ?>
 		<?php
   else:

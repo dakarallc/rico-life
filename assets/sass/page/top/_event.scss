@@ -12,91 +12,119 @@
 		display: flex;
 		background: #fff;
 		align-items: stretch;
-		min-height: 320px;
 		width: 100%;
+		border-bottom: none;
 	}
 	&__item {
 		display: flex;
 		background: #fff;
 		align-items: stretch;
-		min-height: 320px;
 		width: 100%;
-		max-width: 800px;
-		margin: 0 auto;
-		@include mixin.sp() {
-			max-width: 100%;
-		}
+		border-bottom: none;
 	}
 	&__container {
 		display: flex;
+		flex-direction: column;
 		width: 100%;
-		align-items: stretch;
 		background: #fff;
-		@include mixin.sp() {
-			flex-direction: column;
+		text-decoration: none;
+		color: inherit;
+	}
+
+	/* タイトル + サブタイトル（上部） */
+	&__header {
+		margin-bottom: 20px;
+		text-align: left;
+
+		@include mixin.sp {
+			margin-bottom: 16px;
 		}
 	}
+
+	&__main-title {
+		font-size: 2.4rem;
+		font-weight: bold;
+		margin-bottom: 4px;
+		color: #333;
+
+		@include mixin.sp {
+			font-size: 2rem;
+		}
+	}
+
+	&__subtitle {
+		font-size: 1.4rem;
+		color: #333;
+		font-weight: normal;
+		margin-bottom: 0;
+
+		@include mixin.sp {
+			font-size: 1.3rem;
+		}
+	}
+
+	/* 写真 + 情報（横並び） */
+	&__body {
+		display: flex;
+		gap: 24px;
+		align-items: flex-start;
+
+		@include mixin.sp {
+			flex-direction: column;
+			gap: 16px;
+		}
+	}
+
 	&__image {
 		flex: 1;
-		position: relative;
-		display: flex;
-		align-items: stretch;
+
 		img {
 			width: 100%;
 			height: auto;
 			display: block;
+			border-radius: 4px;
 		}
 	}
+
 	&__info {
 		flex: 1;
-		padding: 32px 24px;
+		padding-top: 4px;
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		justify-content: center;
 		text-align: left;
-		align-items: flex-start;
-		font-size: 1.6rem;
+	}
+
+	&__reserve {
+		font-size: 1.4rem;
 		font-weight: bold;
-		@include mixin.sp() {
-			padding: 18px 10px;
+		margin-bottom: 16px;
+		color: #333;
+
+		@include mixin.sp {
+			font-size: 1.3rem;
 		}
 	}
-	&__main-title {
-		font-size: 2rem;
-		font-weight: bold;
-		margin-bottom: 4px;
-	}
-	&__subtitle {
-		font-size: 1.3rem;
-		color: #666;
-		font-weight: normal;
-		margin-bottom: 8px;
-	}
-	&__divider {
-		border: none;
-		border-top: 2px solid #222;
-		margin: 8px 0 12px 0;
-		width: 100%;
-	}
-	&__reserve {
-		font-size: 1.3rem;
-		font-weight: bold;
-		margin-bottom: 10px;
-	}
+
 	&__details {
 		width: 100%;
 
 		dl {
 			display: flex;
 			gap: 0;
-			margin-bottom: 2px;
-			font-size: 1.2rem;
-			line-height: 1.6;
-			font-weight: normal;
+			margin-bottom: 4px;
+			font-size: 1.4rem;
+			line-height: 1.8;
+
+			@include mixin.sp {
+				font-size: 1.3rem;
+			}
 
 			dt {
 				white-space: nowrap;
 				font-weight: bold;
+				color: #333;
 			}
 
 			dd {
