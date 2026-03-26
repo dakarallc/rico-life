@@ -30,7 +30,7 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.js"></script>
   <script>
   (function(d) {
     var config = {

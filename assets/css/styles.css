@@ -7705,7 +7705,8 @@ h5 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
   position: relative;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -7714,12 +7715,14 @@ h5 {
 }
 @media (max-width: 999px) {
   .eventDetail .fv__inner {
-    padding: 20px 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 }
 .eventDetail .fv__ttl {
   bottom: auto;
   color: #fff;
+  font-size: inherit;
   left: auto;
   position: static;
   z-index: 1;
