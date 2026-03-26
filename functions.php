@@ -84,6 +84,17 @@ function rico_get_remaining_time($interval) {
 }
 
 /**
+ * イベントカテゴリーページをイベント一覧にリダイレクト
+ */
+function rico_redirect_event_category() {
+	if (is_tax("event-category")) {
+		wp_redirect(home_url("/event/"), 301);
+		exit();
+	}
+}
+add_action("template_redirect", "rico_redirect_event_category");
+
+/**
  * 構造化データ（JSON-LD）出力
  */
 function rico_output_jsonld() {
