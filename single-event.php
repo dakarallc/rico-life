@@ -50,21 +50,33 @@ function rico_get_day_of_week($date_str) {
 /* カテゴリー取得 */
 $event_cats = get_the_terms(get_the_ID(), "event-category");
 $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->name : "";
+$is_open_house = has_term("actual-house-tours", "event-category") || has_term("field-trip", "event-category");
 ?>
 
 <main class="eventDetail">
 
 	<!-- fv -->
 	<section class="fv">
-		<img class="fv__img" src="<?php echo esc_url($event_info["pic"]); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"
-			<?php echo $event_status === "endEvent" ? 'style="filter: grayscale(100%);"' : ""; ?>>
+		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/event/event-kv.jpg" alt="イベント">
 		<div class="inner fv__inner">
 			<div class="fv__ttl">
-				<?php if (has_term("actual-house-tours", "event-category")): ?>
+				<?php if ($is_open_house): ?>
 					<h1>OPEN HOUSE</h1>
 				<?php else: ?>
 					<h1>EVENT</h1>
 				<?php endif; ?>
+				<p class="fv__badge">
+						<?php if ($is_open_house): ?>
+							<?php if ($event_info["is_always"]): ?>
+								<?php echo esc_html($event_cat_name); ?> in <?php echo esc_html($event_info["address"]); ?>
+							<?php else: ?>
+								【期間限定】<?php echo esc_html($event_cat_name); ?> in <?php echo esc_html($event_info["address"]); ?>
+							<?php endif; ?>
+						<?php else: ?>
+							【期間限定】<?php echo $event_cat_name ? esc_html($event_cat_name) : "イベント"; ?>
+						<?php endif; ?>
+					</p>
+			</div>
 		</div>
 	</section>
 
@@ -73,34 +85,20 @@ $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->nam
 	<!-- HEAD -->
 	<section class="eventDetail__head">
 		<div class="inner">
-			<?php if ($event_cat_name): ?>
-				<p class="eventDetail__badge">
-					<?php if ($event_info["is_always"]): ?>
-						<?php echo esc_html($event_cat_name); ?> in <?php echo esc_html($event_info["address"]); ?>
-					<?php else: ?>
-						【期間限定】<?php echo esc_html($event_cat_name); ?> in <?php echo esc_html($event_info["address"]); ?>
-					<?php endif; ?>
-				</p>
-			<?php endif; ?>
-
-			<?php if ($event_info["subtitle"]): ?>
-				<h2 class="eventDetail__subtitle"><?php echo esc_html($event_info["subtitle"]); ?></h2>
-			<?php else: ?>
-				<h2 class="eventDetail__subtitle"><?php the_title(); ?></h2>
-			<?php endif; ?>
-
-			<!-- 説明文（画像の上） -->
-			<?php if ($event_info["comment"]): ?>
-				<div class="eventDetail__desc">
-					<p><?php echo nl2br(esc_html($event_info["comment"])); ?></p>
-				</div>
-			<?php endif; ?>
-
 			<!-- メイン画像 -->
 			<div class="eventDetail__mainImg">
 				<img src="<?php echo esc_url($event_info["pic"]); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"
 					<?php echo $event_status === "endEvent" ? 'style="filter: grayscale(100%);"' : ""; ?>>
 			</div>
+
+			<h2 class="eventDetail__title"><?php the_title(); ?></h2>
+
+			<!-- 説明文 -->
+			<?php if ($event_info["comment"]): ?>
+				<div class="eventDetail__desc">
+					<p><?php echo nl2br(esc_html($event_info["comment"])); ?></p>
+				</div>
+			<?php endif; ?>
 
 			<!-- イベント情報 -->
 			<div class="eventDetail__info">
@@ -154,21 +152,25 @@ $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->nam
 		<div class="inner">
 			<div class="specDetail__titleWrap">
 				<h2 class="specDetail__title">POINT</h2>
-				<p class="specDetail__subtitle">この住まいの見どころ</p>
+				<p class="specDetail__subtitle"><?php echo $is_open_house ? "この住まいの見どころ" : "このイベントの見どころ"; ?></p>
 			</div>
 
 			<?php if ($point1_title): ?>
 			<div class="eventDetail__point">
 				<h3 class="eventDetail__pointLabel">POINT 01</h3>
 				<p class="eventDetail__pointTitle"><?php echo esc_html($point1_title); ?></p>
-				<?php if ($point1_img): ?>
-					<div class="eventDetail__pointImg">
-						<img src="<?php echo esc_url($point1_img); ?>" alt="<?php echo esc_attr($point1_title); ?>">
-					</div>
-				<?php endif; ?>
-				<?php if ($point1_text): ?>
-					<p class="eventDetail__pointText"><?php echo nl2br(esc_html($point1_text)); ?></p>
-				<?php endif; ?>
+				<div class="eventDetail__pointBody">
+					<?php if ($point1_img): ?>
+						<div class="eventDetail__pointImg">
+							<img src="<?php echo esc_url($point1_img); ?>" alt="<?php echo esc_attr($point1_title); ?>">
+						</div>
+					<?php endif; ?>
+					<?php if ($point1_text): ?>
+						<div class="eventDetail__pointContent">
+							<p class="eventDetail__pointText"><?php echo nl2br(esc_html($point1_text)); ?></p>
+						</div>
+					<?php endif; ?>
+				</div>
 			</div>
 			<?php endif; ?>
 
@@ -176,14 +178,18 @@ $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->nam
 			<div class="eventDetail__point">
 				<h3 class="eventDetail__pointLabel">POINT 02</h3>
 				<p class="eventDetail__pointTitle"><?php echo esc_html($point2_title); ?></p>
-				<?php if ($point2_img): ?>
-					<div class="eventDetail__pointImg">
-						<img src="<?php echo esc_url($point2_img); ?>" alt="<?php echo esc_attr($point2_title); ?>">
-					</div>
-				<?php endif; ?>
-				<?php if ($point2_text): ?>
-					<p class="eventDetail__pointText"><?php echo nl2br(esc_html($point2_text)); ?></p>
-				<?php endif; ?>
+				<div class="eventDetail__pointBody">
+					<?php if ($point2_img): ?>
+						<div class="eventDetail__pointImg">
+							<img src="<?php echo esc_url($point2_img); ?>" alt="<?php echo esc_attr($point2_title); ?>">
+						</div>
+					<?php endif; ?>
+					<?php if ($point2_text): ?>
+						<div class="eventDetail__pointContent">
+							<p class="eventDetail__pointText"><?php echo nl2br(esc_html($point2_text)); ?></p>
+						</div>
+					<?php endif; ?>
+				</div>
 			</div>
 			<?php endif; ?>
 
@@ -191,14 +197,18 @@ $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->nam
 			<div class="eventDetail__point">
 				<h3 class="eventDetail__pointLabel">POINT 03</h3>
 				<p class="eventDetail__pointTitle"><?php echo esc_html($point3_title); ?></p>
-				<?php if ($point3_img): ?>
-					<div class="eventDetail__pointImg">
-						<img src="<?php echo esc_url($point3_img); ?>" alt="<?php echo esc_attr($point3_title); ?>">
-					</div>
-				<?php endif; ?>
-				<?php if ($point3_text): ?>
-					<p class="eventDetail__pointText"><?php echo nl2br(esc_html($point3_text)); ?></p>
-				<?php endif; ?>
+				<div class="eventDetail__pointBody">
+					<?php if ($point3_img): ?>
+						<div class="eventDetail__pointImg">
+							<img src="<?php echo esc_url($point3_img); ?>" alt="<?php echo esc_attr($point3_title); ?>">
+						</div>
+					<?php endif; ?>
+					<?php if ($point3_text): ?>
+						<div class="eventDetail__pointContent">
+							<p class="eventDetail__pointText"><?php echo nl2br(esc_html($point3_text)); ?></p>
+						</div>
+					<?php endif; ?>
+				</div>
 			</div>
 			<?php endif; ?>
 
@@ -206,10 +216,15 @@ $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->nam
 
 			<!-- スタッフコメント -->
 			<div class="eventDetail__staffComment">
-				<p>
-					Rico Life.　営業部の佐藤と申します。今回のイベントでは、約20帖のLDKを中心に、家事動線や　収納計画にこだわったプランをご見学いただけます。<br><br>
-					平屋ならではの暮らしやすさや、コンパクトでも広がりを感じる空間づくりのポイントを、ぜひ現地でご体感ください。
-				</p>
+				<div class="eventDetail__staffImg">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/event/staff-sato.jpg" alt="営業部 佐藤">
+				</div>
+				<div class="eventDetail__staffBody">
+					<p>
+						Rico Life.　営業部の佐藤と申します。今回のイベントでは、約20帖のLDKを中心に、家事動線や　収納計画にこだわったプランをご見学いただけます。<br><br>
+						平屋ならではの暮らしやすさや、コンパクトでも広がりを感じる空間づくりのポイントを、ぜひ現地でご体感ください。
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>

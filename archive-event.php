@@ -1,236 +1,241 @@
 <?php get_header(); ?>
 
-<div class="page event-page">
-  <!-- fv -->
-  <section class="fv">
-    <img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="">
-    <div class="inner fv__inner">
-      <div class="fv__ttl">
-        <h1>EVENT</h1>
-      </div>
-    </div>
-  </section>
+<main class="eventDetail">
+	<!-- fv -->
+	<section class="fv">
+		<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/event/event-kv.jpg" alt="イベント情報">
+		<div class="inner fv__inner">
+			<div class="fv__ttl">
+				<h1>EVENT</h1>
+				<p class="fv__badge">イベント情報</p>
+			</div>
+		</div>
+	</section>
 
-  <?php get_template_part("template-parts/breadcrumb"); ?>
+	<?php get_template_part("template-parts/breadcrumb"); ?>
 
-  <section class="eventList">
-    <div class="inner eventList__inner">
-      <?php // ソート順の取得
+	<section class="eventList">
+		<div class="inner eventList__inner">
+			<?php $sort_order = isset($_GET["sort"]) ? sanitize_text_field($_GET["sort"]) : "all"; ?>
 
-$sort_order = isset($_GET["sort"]) ? $_GET["sort"] : "all"; ?>
-      
-      <div class="eventList__sort">
-        <select name="sort" onchange="window.location.href=this.value">
-          <option value="?sort=all" <?php echo $sort_order === "all" ? "selected" : ""; ?>>すべて</option>
-          <option value="?sort=now" <?php echo $sort_order === "now" ? "selected" : ""; ?>>開催中</option>
-          <option value="?sort=before" <?php echo $sort_order === "before" ? "selected" : ""; ?>>開催前</option>
-          <option value="?sort=end" <?php echo $sort_order === "end" ? "selected" : ""; ?>>終了</option>
-        </select>
-      </div>
+			<div class="eventList__sort">
+				<select name="sort" onchange="window.location.href=this.value">
+					<option value="?sort=all" <?php echo $sort_order === "all" ? "selected" : ""; ?>>すべて</option>
+					<option value="?sort=now" <?php echo $sort_order === "now" ? "selected" : ""; ?>>開催中</option>
+					<option value="?sort=before" <?php echo $sort_order === "before" ? "selected" : ""; ?>>開催前</option>
+					<option value="?sort=end" <?php echo $sort_order === "end" ? "selected" : ""; ?>>終了</option>
+				</select>
+			</div>
 
-      <?php
-      $paged = get_query_var("paged") ? get_query_var("paged") : 1;
-      $posts_per_page = 9;
+			<?php
+   $paged = get_query_var("paged") ? get_query_var("paged") : 1;
+   $posts_per_page = 9;
 
-      $event_query = new WP_Query([
-      	"posts_per_page" => -1, // 一時的にすべての投稿を取得
-      	"post_type" => "event",
-      	"orderby" => "date",
-      	"order" => "DESC",
-      ]);
+   $event_query = new WP_Query([
+   	"posts_per_page" => -1,
+   	"post_type" => "event",
+   	"orderby" => "date",
+   	"order" => "DESC",
+   ]);
 
-      if ($event_query->have_posts()):
-      	$events = [];
+   if ($event_query->have_posts()):
+   	$events = [];
 
-      	// イベントの情報を収集してソート用の配列に格納
-      	while ($event_query->have_posts()):
-      		$event_query->the_post();
+   	while ($event_query->have_posts()):
+   		$event_query->the_post();
 
-      		$event_info = [
-      			"pic" => get_field("event-pic"),
-      			"is_always" => get_field("is_always"),
-      			"start_date" => get_field("event_start_date"),
-      			"end_date" => get_field("event_end_date"),
-      			"start_time" => get_field("event_start_time"),
-      			"end_time" => get_field("event_end_time"),
-      			"address" => get_field("address"),
-      		];
+   		$event_info = [
+   			"pic" => get_field("event-pic"),
+   			"is_always" => get_field("is_always"),
+   			"start_date" => get_field("event_start_date"),
+   			"end_date" => get_field("event_end_date"),
+   			"start_time" => get_field("event_start_time"),
+   			"end_time" => get_field("event_end_time"),
+   			"address" => get_field("address"),
+   			"subtitle" => get_field("event_subtitle"),
+   		];
 
-      		$now = new DateTime("now", new DateTimeZone("Asia/Tokyo"));
-      		$start_datetime = new DateTime(
-      			$event_info["start_date"] . " " . $event_info["start_time"],
-      			new DateTimeZone("Asia/Tokyo"),
-      		);
-      		$end_datetime = new DateTime(
-      			$event_info["end_date"] . " " . $event_info["end_time"],
-      			new DateTimeZone("Asia/Tokyo"),
-      		);
+   		$now = new DateTime("now", new DateTimeZone("Asia/Tokyo"));
 
-      		if ($event_info["is_always"]) {
-      			$event_status = "nowEvent";
-      			$status_class = "_now";
-      			$status_text = "常時開催中";
-      			$sort_priority = 1;
-      		} elseif ($start_datetime <= $now && $end_datetime >= $now) {
-      			$event_status = "nowEvent";
-      			$status_class = "_now";
-      			$interval = $now->diff($end_datetime);
-      			$status_text = "【開催中】<span>終了まであと</span>" . get_remaining_time("", $interval);
-      			$sort_priority = 1; // 開催中は優先度1
-      		} elseif ($start_datetime > $now) {
-      			$event_status = "beforeEvent";
-      			$status_class = "_before";
-      			$interval = $now->diff($start_datetime);
-      			$status_text = "【開催前】<span>開催まであと</span>" . get_remaining_time("", $interval);
-      			$sort_priority = 2; // 開催前は優先度2
-      		} else {
-      			$event_status = "endEvent";
-      			$status_class = "_end";
-      			$status_text = "イベント終了";
-      			$sort_priority = 3; // 終了は優先度3
-      		}
+   		if ($event_info["start_date"] && $event_info["start_time"]) {
+   			$start_datetime = new DateTime(
+   				$event_info["start_date"] . " " . $event_info["start_time"],
+   				new DateTimeZone("Asia/Tokyo"),
+   			);
+   		} else {
+   			$start_datetime = $now;
+   		}
 
-      		// ソート条件に合致するイベントのみ配列に追加
-      		if (
-      			$sort_order === "all" ||
-      			($sort_order === "now" && $event_status === "nowEvent") ||
-      			($sort_order === "before" && $event_status === "beforeEvent") ||
-      			($sort_order === "end" && $event_status === "endEvent")
-      		) {
-      			$events[] = [
-      				"post" => $post,
-      				"event_info" => $event_info,
-      				"event_status" => $event_status,
-      				"status_class" => $status_class,
-      				"status_text" => $status_text,
-      				"sort_priority" => $sort_priority,
-      				"start_datetime" => $start_datetime,
-      			];
-      		}
-      	endwhile;
+   		if ($event_info["end_date"] && $event_info["end_time"]) {
+   			$end_datetime = new DateTime(
+   				$event_info["end_date"] . " " . $event_info["end_time"],
+   				new DateTimeZone("Asia/Tokyo"),
+   			);
+   		} else {
+   			$end_datetime = $now;
+   		}
 
-      	// イベントステータスでソート
-      	if ($sort_order === "all") {
-      		usort($events, function ($a, $b) {
-      			// まず優先度でソート
-      			if ($a["sort_priority"] !== $b["sort_priority"]) {
-      				return $a["sort_priority"] - $b["sort_priority"];
-      			}
-      			// 優先度が同じ場合は開始日時で降順ソート
-      			return $b["start_datetime"] <=> $a["start_datetime"];
-      		});
-      	}
+   		if ($event_info["is_always"]) {
+   			$event_status = "nowEvent";
+   			$status_class = "_now";
+   			$status_text = "常時開催中";
+   			$sort_priority = 1;
+   		} elseif ($start_datetime <= $now && $end_datetime >= $now) {
+   			$event_status = "nowEvent";
+   			$status_class = "_now";
+   			$interval = $now->diff($end_datetime);
+   			$status_text = "【開催中】<span>終了まであと</span>" . rico_get_remaining_time($interval);
+   			$sort_priority = 1;
+   		} elseif ($start_datetime > $now) {
+   			$event_status = "beforeEvent";
+   			$status_class = "_before";
+   			$interval = $now->diff($start_datetime);
+   			$status_text = "【開催前】<span>開催まであと</span>" . rico_get_remaining_time($interval);
+   			$sort_priority = 2;
+   		} else {
+   			$event_status = "endEvent";
+   			$status_class = "_end";
+   			$status_text = "イベント終了";
+   			$sort_priority = 3;
+   		}
 
-      	// ページネーション用の計算
-      	$total_events = count($events);
-      	$max_pages = ceil($total_events / $posts_per_page);
-      	$offset = ($paged - 1) * $posts_per_page;
-      	$events = array_slice($events, $offset, $posts_per_page);
+   		if (
+   			$sort_order === "all" ||
+   			($sort_order === "now" && $event_status === "nowEvent") ||
+   			($sort_order === "before" && $event_status === "beforeEvent") ||
+   			($sort_order === "end" && $event_status === "endEvent")
+   		) {
+   			$events[] = [
+   				"post" => $post,
+   				"event_info" => $event_info,
+   				"event_status" => $event_status,
+   				"status_class" => $status_class,
+   				"status_text" => $status_text,
+   				"sort_priority" => $sort_priority,
+   				"start_datetime" => $start_datetime,
+   			];
+   		}
+   	endwhile;
 
-      	// ソート後のイベント数をチェック
-      	if (empty($events)): ?>
-          <p>該当するイベントはございません。</p>
-      <?php else: ?>
-        <ul class="eventList__list">
-          <?php foreach ($events as $event):
+   	if ($sort_order === "all") {
+   		usort($events, function ($a, $b) {
+   			if ($a["sort_priority"] !== $b["sort_priority"]) {
+   				return $a["sort_priority"] - $b["sort_priority"];
+   			}
+   			return $b["start_datetime"] <=> $a["start_datetime"];
+   		});
+   	}
 
-          	$post = $event["post"];
-          	setup_postdata($post);
-          	$event_info = $event["event_info"];
-          	$event_status = $event["event_status"];
-          	$status_class = $event["status_class"];
-          	$status_text = $event["status_text"];
-          	?>
-            <li class="eventList__item wow fadeInUp">
-              <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                <div class="eventList__img">
-                  <img 
-                    data-js-ofi 
-                    <?php echo $event_status === "endEvent" ? 'class="endEvent"' : ""; ?> 
-                    src="<?php echo esc_url($event_info["pic"]); ?>" 
-                    alt="<?php echo esc_attr(get_the_title() ?: "&nbsp;"); ?>"
-                  >
-                </div>
-                <div class="eventList__status <?php echo esc_attr($status_class); ?>">
-                  <?php echo wp_kses($status_text, ["span" => []]); ?>
-                </div>
-                <div class="eventList__body">
-                  <h2 class="eventList__subTtl">
-                    <?php echo esc_html(get_the_title() ?: "&nbsp;"); ?>
-                  </h2>
-                  <p class="detail">
-                    <span>日程：</span>
-                    <?php if ($event_info["is_always"]): ?>
-                      常時開催 ※水曜定休
-                    <?php else: ?>
-                      <?php echo esc_html($event_info["start_date"]); ?>
-                      (<?php echo date("w", strtotime($event_info["start_date"])) === "0"
-                      	? "日"
-                      	: (date("w", strtotime($event_info["start_date"])) === "6"
-                      		? "土"
-                      		: ["月", "火", "水", "木", "金"][date("w", strtotime($event_info["start_date"])) - 1]); ?>)
-                      ~
-                      <?php echo esc_html($event_info["end_date"]); ?>
-                      (<?php echo date("w", strtotime($event_info["end_date"])) === "0"
-                      	? "日"
-                      	: (date("w", strtotime($event_info["end_date"])) === "6"
-                      		? "土"
-                      		: ["月", "火", "水", "木", "金"][date("w", strtotime($event_info["end_date"])) - 1]); ?>)
-                    <?php endif; ?>
-                  </p>
-                  <p class="detail"><span>時間：</span><?php echo esc_html(
-                  	$event_info["start_time"],
-                  ); ?>~<?php echo esc_html($event_info["end_time"]); ?></p>
-                  <p class="detail"><span>場所：</span><?php echo esc_html($event_info["address"]); ?></p>
-                </div>
-              </a>
-            </li>
-          <?php
-          endforeach; ?>
-        </ul>
-      <?php endif;
-      else:
-      	 ?>
-        <p>現在、イベントはございません。少々お待ちください。</p>
-      <?php
-      endif;
-      ?>
+   	$total_events = count($events);
+   	$max_pages = ceil($total_events / $posts_per_page);
+   	$offset = ($paged - 1) * $posts_per_page;
+   	$events = array_slice($events, $offset, $posts_per_page);
 
-      <?php
-      $page_arg = [
-      	"end_size" => 0,
-      	"mid_size" => 1,
-      	"prev_next" => true,
-      	"prev_text" => "前へ",
-      	"next_text" => "次へ",
-      	"current" => $paged,
-      	"total" => $max_pages,
-      	"base" => add_query_arg("paged", "%#%"),
-      	"format" => "",
-      ];
-      if ($max_pages > 1): ?>
-        <div class="pagination">
-          <?php echo paginate_links($page_arg); ?>
-        </div>
-      <?php endif;
-      ?>
+   	if (empty($events)): ?>
+					<p>該当するイベントはございません。</p>
+				<?php else: ?>
+					<ul class="eventList__list">
+						<?php foreach ($events as $event):
 
-    </div>
-  </section>
-</div>
+      	$post = $event["post"];
+      	setup_postdata($post);
+      	$event_info = $event["event_info"];
+      	$event_status = $event["event_status"];
+      	$status_class = $event["status_class"];
+      	$status_text = $event["status_text"];
+      	?>
+						<li class="eventList__item wow fadeInUp">
+							<a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
+								<div class="eventList__img">
+									<img
+										<?php echo $event_status === "endEvent" ? 'class="endEvent"' : ""; ?>
+										src="<?php echo esc_url($event_info["pic"]); ?>"
+										alt="<?php echo esc_attr(get_the_title() ?: ""); ?>"
+									>
+								</div>
+								<div class="eventList__status <?php echo esc_attr($status_class); ?>">
+									<?php echo wp_kses($status_text, ["span" => []]); ?>
+								</div>
+								<div class="eventList__body">
+									<h2 class="eventList__subTtl">
+										<?php echo esc_html(get_the_title()); ?>
+									</h2>
+									<?php if ($event_info["subtitle"]): ?>
+										<p class="eventList__subtitle"><?php echo esc_html($event_info["subtitle"]); ?></p>
+									<?php endif; ?>
+									<div class="eventList__info">
+										<dl>
+											<dt>【会場】</dt>
+											<dd><?php echo esc_html($event_info["address"]); ?> ※詳細はご予約いただいた際にお伝えいたします</dd>
+										</dl>
+										<dl>
+											<dt>【開催期間】</dt>
+											<dd>
+												<?php if ($event_info["is_always"]): ?>
+													常時開催
+												<?php else: ?>
+													<?php echo esc_html($event_info["start_date"]); ?>(<?php echo rico_get_day_of_week(
+	$event_info["start_date"],
+); ?>)〜<?php echo esc_html($event_info["end_date"]); ?>(<?php echo rico_get_day_of_week($event_info["end_date"]); ?>)
+												<?php endif; ?>
+											</dd>
+										</dl>
+										<dl>
+											<dt>【見学時間】</dt>
+											<dd><?php echo esc_html($event_info["start_time"]); ?>〜<?php echo esc_html($event_info["end_time"]); ?></dd>
+										</dl>
+										<dl>
+											<dt>【定休日】</dt>
+											<dd>水曜日</dd>
+										</dl>
+									</div>
+									<p class="eventList__reserve">※完全予約制</p>
+								</div>
+							</a>
+						</li>
+						<?php
+      endforeach; ?>
+					</ul>
+				<?php endif;
+   else:
+   	 ?>
+				<p>現在、イベントはございません。少々お待ちください。</p>
+			<?php
+   endif;
+   ?>
+
+			<?php if ($max_pages > 1):
+   	$page_arg = [
+   		"end_size" => 0,
+   		"mid_size" => 1,
+   		"prev_next" => true,
+   		"prev_text" => "前へ",
+   		"next_text" => "次へ",
+   		"current" => $paged,
+   		"total" => $max_pages,
+   		"base" => add_query_arg("paged", "%#%"),
+   		"format" => "",
+   	]; ?>
+				<div class="pagination">
+					<?php echo paginate_links($page_arg); ?>
+				</div>
+			<?php
+   endif; ?>
+
+		</div>
+	</section>
+</main>
 
 <?php
-// 残り時間を取得する関数
-function get_remaining_time($prefix, $interval) {
+function rico_get_remaining_time($interval) {
 	if ($interval->days > 0) {
-		return $prefix . $interval->days . "日";
+		return $interval->days . "日";
 	} elseif ($interval->h > 0) {
-		return $prefix . $interval->h . "時間";
+		return $interval->h . "時間";
 	}
-	return $prefix . $interval->i . "分";
+	return $interval->i . "分";
 }
 
 get_footer();
-
 
 ?>

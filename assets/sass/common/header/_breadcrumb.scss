@@ -7,10 +7,13 @@
 	color: #000;
 	font-size: 1.2rem;
 	letter-spacing: 0.1em;
-	padding: 8px 10px 60px 79px;
+	max-width: calc(988px + 5% * 2);
+	margin: 0 auto;
+	padding: 8px 5% 20px;
+	width: 100%;
 
 	@include mixin.sp() {
-		padding: 20px 16px 30px;
+		padding: 8px 16px 10px;
 	}
 
 	&__arrow {
