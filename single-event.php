@@ -40,13 +40,6 @@ if ($event_info["is_always"]) {
 	$event_status = "endEvent";
 }
 
-/* 曜日変換ヘルパー */
-function rico_get_day_of_week($date_str) {
-	$w = date("w", strtotime($date_str));
-	$days = ["日", "月", "火", "水", "木", "金", "土"];
-	return $days[$w];
-}
-
 /* カテゴリー取得 */
 $event_cats = get_the_terms(get_the_ID(), "event-category");
 $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->name : "";

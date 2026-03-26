@@ -63,6 +63,27 @@ function rico_home_url($path = "/") {
 }
 
 /**
+ * 曜日変換ヘルパー
+ */
+function rico_get_day_of_week($date_str) {
+	$w = date("w", strtotime($date_str));
+	$days = ["日", "月", "火", "水", "木", "金", "土"];
+	return $days[$w];
+}
+
+/**
+ * 残り時間表示ヘルパー
+ */
+function rico_get_remaining_time($interval) {
+	if ($interval->days > 0) {
+		return $interval->days . "日";
+	} elseif ($interval->h > 0) {
+		return $interval->h . "時間";
+	}
+	return $interval->i . "分";
+}
+
+/**
  * 構造化データ（JSON-LD）出力
  */
 function rico_output_jsonld() {

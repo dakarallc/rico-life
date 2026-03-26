@@ -226,16 +226,4 @@
 	</section>
 </main>
 
-<?php
-function rico_get_remaining_time($interval) {
-	if ($interval->days > 0) {
-		return $interval->days . "日";
-	} elseif ($interval->h > 0) {
-		return $interval->h . "時間";
-	}
-	return $interval->i . "分";
-}
-
-get_footer();
-
-?>
+<?php get_footer(); ?>
