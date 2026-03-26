@@ -59,25 +59,37 @@
 								</div>
 								<div class="event__info">
 									<h3 class="event__main-title"><?php the_title(); ?></h3>
+									<?php
+         $subtitle = get_field("event_subtitle");
+         if ($subtitle): ?>
+										<p class="event__subtitle"><?php echo esc_html($subtitle); ?></p>
+									<?php endif;
+         ?>
 									<hr class="event__divider">
-									<?php if ($is_kansei_kengaku): ?>
-										<p>完成見学会 ※完全予約制</p>
-									<?php else: ?>
-										<p>※完全予約制</p>
-									<?php endif; ?>
-									<div class="event__row">
-										<span class="event__icon"><i class="fa-regular fa-calendar"></i></span>
-										<span class="event__date">
-											<?php if ($is_always): ?>
-												常時開催
-											<?php else: ?>
-												<?php echo esc_html($start_date); ?> - <?php echo esc_html($end_date); ?>
-											<?php endif; ?>
-										</span>
-									</div>
-									<div class="event__row">
-										<span class="event__icon"><i class="fa-solid fa-location-dot"></i></span>
-										<span class="event__place"><?php echo esc_html($address); ?></span>
+									<p class="event__reserve">※完全予約制</p>
+									<div class="event__details">
+										<dl>
+											<dt>【会場】</dt>
+											<dd><?php echo esc_html($address); ?></dd>
+										</dl>
+										<dl>
+											<dt>【開催期間】</dt>
+											<dd>
+												<?php if ($is_always): ?>
+													常時開催
+												<?php else: ?>
+													<?php echo esc_html($start_date); ?>〜<?php echo esc_html($end_date); ?>
+												<?php endif; ?>
+											</dd>
+										</dl>
+										<dl>
+											<dt>【見学時間】</dt>
+											<dd><?php echo esc_html($start_time); ?>〜<?php echo esc_html($end_time); ?></dd>
+										</dl>
+										<dl>
+											<dt>【定休日】</dt>
+											<dd>水曜日</dd>
+										</dl>
 									</div>
 								</div>
 							</a>

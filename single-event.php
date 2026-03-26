@@ -87,8 +87,7 @@ $is_open_house = has_term("actual-house-tours", "event-category") || has_term("f
 		<div class="inner">
 			<!-- メイン画像 -->
 			<div class="eventDetail__mainImg">
-				<img src="<?php echo esc_url($event_info["pic"]); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"
-					<?php echo $event_status === "endEvent" ? 'style="filter: grayscale(100%);"' : ""; ?>>
+				<img src="<?php echo esc_url($event_info["pic"]); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
 			</div>
 
 			<h2 class="eventDetail__title"><?php the_title(); ?></h2>

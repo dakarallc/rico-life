@@ -12145,32 +12145,45 @@ us
 .event__main-title {
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 4px;
+}
+.event__subtitle {
+  color: #666;
+  font-size: 1.3rem;
+  font-weight: normal;
   margin-bottom: 8px;
 }
 .event__divider {
   border: none;
   border-top: 2px solid #222;
-  margin: 8px 0 16px 0;
+  margin: 8px 0 12px 0;
   width: 100%;
 }
-.event__row {
+.event__reserve {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.event__details {
+  width: 100%;
+}
+.event__details dl {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  gap: 0;
+  line-height: 1.6;
+  margin-bottom: 2px;
 }
-.event__icon {
-  color: #222;
-  margin-right: 10px;
-}
-.event__date, .event__place {
+.event__details dl dt {
   font-weight: bold;
-  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.event__details dl dd {
+  color: #555;
 }
 
 .swiper-button-prev.event-swiper-prev, .swiper-button-next.event-swiper-next {
