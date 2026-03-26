@@ -7661,12 +7661,12 @@ h5 {
   flex-direction: column;
   /* HEAD */
   /* POINT */
-  /* スタッフコメント */
+  /* スタッフコメント（POINT内に配置） */
   /* 4つの特徴 */
   /* その他イベント */
 }
 .eventDetail .fv::after {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.3);
   content: "";
   height: 100%;
   left: 0;
@@ -7676,62 +7676,76 @@ h5 {
   width: 100%;
 }
 .eventDetail .fv__ttl {
+  bottom: auto;
   color: #fff;
+  left: 5%;
+  top: 20%;
   z-index: 1;
 }
 .eventDetail .fv__ttl h1 {
-  font-size: 4.8rem;
-  letter-spacing: 0.1em;
+  font-size: 5.6rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
 }
 @media (max-width: 999px) {
   .eventDetail .fv__ttl h1 {
-    font-size: 3.2rem;
+    font-size: 3.6rem;
   }
 }
 .eventDetail .breadcrumb {
   padding-bottom: 0;
 }
 .eventDetail__head {
-  padding: 40px 0 60px;
+  padding: 40px 0 0;
 }
 @media (max-width: 999px) {
   .eventDetail__head {
-    padding: 30px 0 40px;
+    padding: 30px 0 0;
   }
 }
 .eventDetail__badge {
-  background: #648ea3;
-  border-radius: 4px;
-  color: #fff;
-  display: inline-block;
+  color: #555;
   font-size: 1.4rem;
   font-weight: bold;
-  margin-bottom: 20px;
-  padding: 8px 20px;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
 }
 @media (max-width: 999px) {
   .eventDetail__badge {
     font-size: 1.2rem;
-    padding: 6px 16px;
   }
 }
 .eventDetail__subtitle {
   color: #333;
   font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   font-weight: bold;
   font-weight: bold;
-  line-height: 1.5;
-  margin-bottom: 30px;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  margin-bottom: 24px;
 }
 @media (max-width: 999px) {
   .eventDetail__subtitle {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     margin-bottom: 20px;
   }
 }
+.eventDetail__desc {
+  margin-bottom: 24px;
+}
+.eventDetail__desc p {
+  color: #555;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+@media (min-width: 1000px) {
+  .eventDetail__desc p {
+    font-size: 1.6rem;
+  }
+}
 .eventDetail__mainImg {
-  border-radius: 4px;
   margin-bottom: 30px;
   overflow: hidden;
   width: 100%;
@@ -7741,29 +7755,9 @@ h5 {
   height: auto;
   width: 100%;
 }
-.eventDetail__desc {
-  margin-bottom: 30px;
-}
-.eventDetail__desc p {
-  color: #333;
-  font-size: 1.5rem;
-  line-height: 2;
-}
-@media (min-width: 1000px) {
-  .eventDetail__desc p {
-    font-size: 1.6rem;
-  }
-}
 .eventDetail__info {
-  background: #f8f8f8;
-  border-radius: 8px;
   margin-bottom: 30px;
-  padding: 24px;
-}
-@media (max-width: 999px) {
-  .eventDetail__info {
-    padding: 20px 16px;
-  }
+  padding: 0;
 }
 .eventDetail__info dl {
   display: -webkit-box;
@@ -7771,9 +7765,9 @@ h5 {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.5rem;
-  gap: 8px;
-  line-height: 1.8;
-  margin-bottom: 8px;
+  gap: 0;
+  line-height: 2;
+  margin-bottom: 4px;
 }
 @media (max-width: 999px) {
   .eventDetail__info dl {
@@ -7789,7 +7783,7 @@ h5 {
   white-space: nowrap;
 }
 .eventDetail__info dl dd {
-  color: #555;
+  color: #333;
 }
 .eventDetail__points {
   padding: 60px 0;
@@ -7807,32 +7801,34 @@ h5 {
     margin-bottom: 40px;
   }
 }
-.eventDetail__point:last-child {
+.eventDetail__point:last-of-type {
   margin-bottom: 0;
 }
 .eventDetail__pointLabel {
-  color: #648ea3;
-  font-size: 1.4rem;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  margin-bottom: 8px;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  margin-bottom: 4px;
+}
+@media (max-width: 999px) {
+  .eventDetail__pointLabel {
+    font-size: 1.4rem;
+  }
 }
 .eventDetail__pointTitle {
-  color: #333;
-  font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
+  color: #555;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 @media (max-width: 999px) {
   .eventDetail__pointTitle {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 16px;
   }
 }
 .eventDetail__pointImg {
-  border-radius: 4px;
   margin-bottom: 20px;
   overflow: hidden;
   width: 100%;
@@ -7853,12 +7849,14 @@ h5 {
   }
 }
 .eventDetail__staffComment {
-  background: #f8f8f8;
-  padding: 60px 0;
+  border-top: 1px solid #eee;
+  margin-top: 60px;
+  padding-top: 40px;
 }
 @media (max-width: 999px) {
   .eventDetail__staffComment {
-    padding: 40px 0;
+    margin-top: 40px;
+    padding-top: 30px;
   }
 }
 .eventDetail__staffComment p {
@@ -7872,11 +7870,11 @@ h5 {
   }
 }
 .eventDetail__features {
-  padding: 60px 0;
+  padding: 60px 0 0;
 }
 @media (max-width: 999px) {
   .eventDetail__features {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
 }
 .eventDetail__featureGrid {
@@ -7890,11 +7888,13 @@ h5 {
   }
 }
 .eventDetail__featureItem img {
-  border-radius: 4px;
-  display: block;
+  aspect-ratio: 4/3;
   height: auto;
-  margin-bottom: 12px;
   width: 100%;
+  -o-object-fit: cover;
+  display: block;
+  margin-bottom: 12px;
+  object-fit: cover;
 }
 .eventDetail__featureItem p {
   color: #555;
@@ -7936,7 +7936,6 @@ h5 {
 }
 .eventDetail__otherImg {
   aspect-ratio: 4/3;
-  border-radius: 4px;
   margin-bottom: 8px;
   overflow: hidden;
   width: 100%;
@@ -7952,6 +7951,23 @@ h5 {
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.4;
+}
+
+/* greenBtn outline バリエーション */
+.greenBtn--outline {
+  background: transparent;
+  border: 2px solid #9cb2aa;
+  color: #9cb2aa;
+}
+.greenBtn--outline::after {
+  color: #9cb2aa;
+}
+.greenBtn--outline:hover {
+  background: #9cb2aa;
+  color: #fff;
+}
+.greenBtn--outline:hover::after {
+  color: #fff;
 }
 
 /* ==========================================================================

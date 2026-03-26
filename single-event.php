@@ -60,8 +60,11 @@ $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->nam
 			<?php echo $event_status === "endEvent" ? 'style="filter: grayscale(100%);"' : ""; ?>>
 		<div class="inner fv__inner">
 			<div class="fv__ttl">
-				<h1>OPEN HOUSE</h1>
-			</div>
+				<?php if (has_term("actual-house-tours", "event-category")): ?>
+					<h1>OPEN HOUSE</h1>
+				<?php else: ?>
+					<h1>EVENT</h1>
+				<?php endif; ?>
 		</div>
 	</section>
 
@@ -86,18 +89,18 @@ $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->nam
 				<h2 class="eventDetail__subtitle"><?php the_title(); ?></h2>
 			<?php endif; ?>
 
-			<!-- メイン画像 -->
-			<div class="eventDetail__mainImg">
-				<img src="<?php echo esc_url($event_info["pic"]); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"
-					<?php echo $event_status === "endEvent" ? 'style="filter: grayscale(100%);"' : ""; ?>>
-			</div>
-
-			<!-- 説明文 -->
+			<!-- 説明文（画像の上） -->
 			<?php if ($event_info["comment"]): ?>
 				<div class="eventDetail__desc">
 					<p><?php echo nl2br(esc_html($event_info["comment"])); ?></p>
 				</div>
 			<?php endif; ?>
+
+			<!-- メイン画像 -->
+			<div class="eventDetail__mainImg">
+				<img src="<?php echo esc_url($event_info["pic"]); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"
+					<?php echo $event_status === "endEvent" ? 'style="filter: grayscale(100%);"' : ""; ?>>
+			</div>
 
 			<!-- イベント情報 -->
 			<div class="eventDetail__info">
@@ -129,7 +132,7 @@ $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->nam
 
 			<!-- 来場予約ボタン -->
 			<div class="btnWrap">
-				<a href="<?php echo rico_home_url("/contact"); ?>" class="greenBtn">来場予約はこちら</a>
+				<a href="<?php echo rico_home_url("/contact"); ?>" class="greenBtn greenBtn--outline">来場予約はこちら</a>
 			</div>
 		</div>
 	</section>
@@ -200,20 +203,18 @@ $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->nam
 			<?php endif; ?>
 
 			<?php the_content(); ?>
+
+			<!-- スタッフコメント -->
+			<div class="eventDetail__staffComment">
+				<p>
+					Rico Life.　営業部の佐藤と申します。今回のイベントでは、約20帖のLDKを中心に、家事動線や　収納計画にこだわったプランをご見学いただけます。<br><br>
+					平屋ならではの暮らしやすさや、コンパクトでも広がりを感じる空間づくりのポイントを、ぜひ現地でご体感ください。
+				</p>
+			</div>
 		</div>
 	</section>
 	<?php endif;
  ?>
-
-	<!-- スタッフコメント -->
-	<section class="eventDetail__staffComment">
-		<div class="inner">
-			<p>
-				Rico Life.　営業部の佐藤と申します。今回のイベントでは、約20帖のLDKを中心に、家事動線や　収納計画にこだわったプランをご見学いただけます。<br><br>
-				平屋ならではの暮らしやすさや、コンパクトでも広がりを感じる空間づくりのポイントを、ぜひ現地でご体感ください。
-			</p>
-		</div>
-	</section>
 
 	<!-- 4つの特徴 -->
 	<section class="eventDetail__features">
@@ -242,7 +243,7 @@ $event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->nam
 	<!-- 来場予約ボタン -->
 	<div class="inner">
 		<div class="btnWrap">
-			<a href="<?php echo rico_home_url("/contact"); ?>" class="greenBtn">来場予約はこちら</a>
+			<a href="<?php echo rico_home_url("/contact"); ?>" class="greenBtn greenBtn--outline">来場予約はこちら</a>
 		</div>
 	</div>
 
