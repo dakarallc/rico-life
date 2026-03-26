@@ -1,288 +1,301 @@
 <?php get_header(); ?>
 
-<div class="page event-page eventItem">
-  <?php if (has_term("actual-house-tours", "event-category")): ?>
-    <div class="pageHeadEvent">
-      <h1 class="pageHeadEvent__ttl">
-        <img src="<?php echo rico_theme_url(); ?>/assets/img/event/eventHeader.svg"  alt="完成入居前見学会" data-src="<?php echo rico_theme_url(); ?>/img/event/eventHeader.svg" class=" ls-is-cached lazyloaded"><noscript><img src="<?php echo rico_theme_url(); ?>/img/event/eventHeader.svg" alt="完成入居前見学会" data-eio="l"></noscript>
-      </h1>
-    </div>
-  <?php else: ?>
-    <div class="pageHeadEvent event">
-      <h1 class="pageHeadEvent__ttl">
-      </h1>
-    </div>
-  <?php endif; ?>
+<?php
+$event_info = [
+	"pic" => get_field("event-pic"),
+	"is_always" => get_field("is_always"),
+	"start_date" => get_field("event_start_date"),
+	"end_date" => get_field("event_end_date"),
+	"start_time" => get_field("event_start_time"),
+	"end_time" => get_field("event_end_time"),
+	"address" => get_field("address"),
+	"comment" => get_field("comment"),
+	"subtitle" => get_field("event_subtitle"),
+];
 
-  <?php
-  $event_info = [
-  	"pic" => get_field("event-pic"),
-  	"is_always" => get_field("is_always"),
-  	"start_date" => get_field("event_start_date"),
-  	"end_date" => get_field("event_end_date"),
-  	"start_time" => get_field("event_start_time"),
-  	"end_time" => get_field("event_end_time"),
-  	"address" => get_field("address"),
-  ];
+$now = new DateTime("now", new DateTimeZone("Asia/Tokyo"));
 
-  $now = new DateTime("now", new DateTimeZone("Asia/Tokyo"));
-  $start_datetime = new DateTime(
-  	$event_info["start_date"] . " " . $event_info["start_time"],
-  	new DateTimeZone("Asia/Tokyo"),
-  );
-  $end_datetime = new DateTime($event_info["end_date"] . " " . $event_info["end_time"], new DateTimeZone("Asia/Tokyo"));
+if ($event_info["start_date"] && $event_info["start_time"]) {
+	$start_datetime = new DateTime(
+		$event_info["start_date"] . " " . $event_info["start_time"],
+		new DateTimeZone("Asia/Tokyo"),
+	);
+} else {
+	$start_datetime = $now;
+}
 
-  if ($event_info["is_always"]) {
-  	$event_status = "nowEvent";
-  	$status_class = "_now";
-  	$status_text = "";
-  	$sort_priority = 1;
-  } elseif ($start_datetime <= $now && $end_datetime >= $now) {
-  	$event_status = "nowEvent";
-  	$status_class = "_now";
-  	$interval = $now->diff($end_datetime);
-  	$days = $interval->days;
-  	$hours = $interval->h;
-  	$status_text = "<span>終了まであと</span>" . ($days > 0 ? $days . "日" : "") . ($hours > 0 ? $hours . "時間" : "");
-  } elseif ($start_datetime > $now) {
-  	$event_status = "beforeEvent";
-  	$status_class = "_before";
-  	$interval = $now->diff($start_datetime);
-  	$days = $interval->days;
-  	$hours = $interval->h;
-  	$status_text = "<span>開催まであと</span>" . ($days > 0 ? $days . "日" : "") . ($hours > 0 ? $hours . "時間" : "");
-  } else {
-  	$event_status = "endEvent";
-  	$status_class = "_end";
-  	$status_text = "";
-  }
-  ?>
-  <section class="post wow fadeInUp">
-    <div class="inner post__inner">
-      <div class="post__header">
-        <h2 class="post__eventTtl">
-          <span class="status <?php echo $status_class; ?>">
-            <?php if ($event_status === "nowEvent") {
-            	echo "開催中";
-            } elseif ($event_status === "beforeEvent") {
-            	echo "開催前";
-            } else {
-            	echo "イベント終了";
-            } ?>
-          </span>
-					<br class="show--sp"/>
-          <?php the_title(); ?>
-					<span class="count-down"><?php echo $status_text; ?></span>
-        </h2>
-        
-      </div>
-      
-      <div class="post__contents">
-        <div class="caseItem__main wow fadeInUp">
-          <div class="caseItem__img1">
-            <img data-js-ofi 
-              <?php echo $event_status === "endEvent" ? 'class="endEvent"' : ""; ?>
-              src="<?php echo esc_url($event_info["pic"]); ?>" 
-              alt="<?php echo esc_attr(get_the_title()); ?>">
-          </div>
+if ($event_info["end_date"] && $event_info["end_time"]) {
+	$end_datetime = new DateTime($event_info["end_date"] . " " . $event_info["end_time"], new DateTimeZone("Asia/Tokyo"));
+} else {
+	$end_datetime = $now;
+}
 
-          <div class="mainContents">
-            <div class="list">
-              <dl>
-                <dt>日程</dt>
-                <dd>
-                  <?php if ($event_info["is_always"]): ?>
-                    常時開催 ※水曜定休
-                  <?php else: ?>
-                    <?php echo esc_html($event_info["start_date"]); ?>
-                    (<?php echo date("w", strtotime($event_info["start_date"])) === "0"
-                    	? "日"
-                    	: (date("w", strtotime($event_info["start_date"])) === "6"
-                    		? "土"
-                    		: ["月", "火", "水", "木", "金"][date("w", strtotime($event_info["start_date"])) - 1]); ?>)
-                    ~
-                    <?php echo esc_html($event_info["end_date"]); ?>
-                    (<?php echo date("w", strtotime($event_info["end_date"])) === "0"
-                    	? "日"
-                    	: (date("w", strtotime($event_info["end_date"])) === "6"
-                    		? "土"
-                    		: ["月", "火", "水", "木", "金"][
-                    			date("w", strtotime($event_info["end_date"])) - 1
-                    		]); ?>)<br>※水曜定休
-                  <?php endif; ?>
-                </dd>
-              </dl>
-              <dl>
-                <dt>時間</dt>
-                <dd><?php echo esc_html($event_info["start_time"]); ?>~<?php echo esc_html(
-	$event_info["end_time"],
-); ?></dd>
-              </dl>
-              <dl>
-                <dt>住所</dt>
-                <dd><?php echo esc_html($event_info["address"]); ?></dd>
-              </dl>
-              <?php if (has_term("actual-house-tours", "event-category")): ?>
-                <p>※写真はイメージです<br>※実際に住むお家の為、ご希望の日程に添えない場合がございます。<br>下記フォームまたは<a href="tel:0480226666">お電話</a>でご予約受付中 。<br>予約は1週間前までとなります。1週間を切っている場合は<a href="tel:0480226666">お電話</a>でお問い合わせください。</p>
-              <?php endif; ?>
-            </div>
-          </div>
-        </div>
+if ($event_info["is_always"]) {
+	$event_status = "nowEvent";
+} elseif ($start_datetime <= $now && $end_datetime >= $now) {
+	$event_status = "nowEvent";
+} elseif ($start_datetime > $now) {
+	$event_status = "beforeEvent";
+} else {
+	$event_status = "endEvent";
+}
 
-        <div class="cvButtonLinkWrap">
-          <a href="#contactForm" class="cvButtonLink">
-            <div>
-              <img src="<?php echo rico_theme_url(); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
-            </div>
-            <button class="greenBtn">
-							ご来場予約はこちら
-            </button>
-          </a>
-        </div>
+/* 曜日変換ヘルパー */
+function rico_get_day_of_week($date_str) {
+	$w = date("w", strtotime($date_str));
+	$days = ["日", "月", "火", "水", "木", "金", "土"];
+	return $days[$w];
+}
 
-        <section class="madori">
-          <div class="madori__inner">
-            <?php
-            $madoriImg1 = get_field("madori1");
-            $madoriImg2 = get_field("madori2");
-            $comment = get_field("comment");
+/* カテゴリー取得 */
+$event_cats = get_the_terms(get_the_ID(), "event-category");
+$event_cat_name = $event_cats && !is_wp_error($event_cats) ? $event_cats[0]->name : "";
+?>
 
-            if ($madoriImg1): ?>
-              <div class="madori__inner--img">
-								<p>1階</p>
-                <img data-js-ofi src="<?php echo esc_url($madoriImg1); ?>" alt="<?php echo esc_attr(
-	get_the_title(),
-); ?>">
-              </div>
-            <?php endif;
+<main class="eventDetail">
 
-            if ($madoriImg2): ?>
-              <div class="madori__inner--img">
-								<p>2階</p>
-                <img data-js-ofi src="<?php echo esc_url($madoriImg2); ?>" alt="<?php echo esc_attr(
-	get_the_title(),
-); ?>">
-              </div>
-            <?php endif;
-            ?>
-          </div>
-          <?php if ($comment): ?>
-            <p class="madori__comment"><?php echo esc_html($comment); ?></p>
-          <?php endif; ?>
-        </section>
+	<!-- fv -->
+	<section class="fv">
+		<img class="fv__img" src="<?php echo esc_url($event_info["pic"]); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"
+			<?php echo $event_status === "endEvent" ? 'style="filter: grayscale(100%);"' : ""; ?>>
+		<div class="inner fv__inner">
+			<div class="fv__ttl">
+				<h1>OPEN HOUSE</h1>
+			</div>
+		</div>
+	</section>
 
-        <div class="event-message">
-          <div>
-						<h2 class="point-title">このイベントのPoint!</h2>
+	<?php get_template_part("template-parts/breadcrumb"); ?>
 
-            <?php
-            $point1_title = get_field("point1_title");
-            $point1Img = get_field("point1_img");
-            $should_show_point1_img_annotation = get_field("should_show_point1_img_annotation");
-            $point1_text = get_field("point1_text");
-            $point2_img = get_field("point2_img");
-            $should_show_point2_img_annotation = get_field("should_show_point2_img_annotation");
-            $point2_title = get_field("point2_title");
-            $point2_text = get_field("point2_text");
-            $point3_img = get_field("point3_img");
-            $should_show_point3_img_annotation = get_field("should_show_point3_img_annotation");
-            $point3_title = get_field("point3_title");
-            $point3_text = get_field("point3_text");
+	<!-- HEAD -->
+	<section class="eventDetail__head">
+		<div class="inner">
+			<?php if ($event_cat_name): ?>
+				<p class="eventDetail__badge">
+					<?php if ($event_info["is_always"]): ?>
+						<?php echo esc_html($event_cat_name); ?> in <?php echo esc_html($event_info["address"]); ?>
+					<?php else: ?>
+						【期間限定】<?php echo esc_html($event_cat_name); ?> in <?php echo esc_html($event_info["address"]); ?>
+					<?php endif; ?>
+				</p>
+			<?php endif; ?>
 
-            if ($point1_title): ?>
-							<h3 class="point marugo">1,<?php echo esc_html($point1_title); ?></h3>
-						<?php endif;
-            if ($point1Img): ?>
-              <img data-js-ofi src="<?php echo esc_url($point1Img); ?>" alt="Point 1 Image">
-							<?php if ($should_show_point1_img_annotation): ?>
-							<p class="annotation">※写真はイメージです</p>
-							<?php endif; ?>
-            <?php endif;
-            if ($point1_text): ?>
-              <p class="event-message-text"><?php echo esc_html($point1_text); ?></p>
-            <?php endif;
+			<?php if ($event_info["subtitle"]): ?>
+				<h2 class="eventDetail__subtitle"><?php echo esc_html($event_info["subtitle"]); ?></h2>
+			<?php else: ?>
+				<h2 class="eventDetail__subtitle"><?php the_title(); ?></h2>
+			<?php endif; ?>
 
-            if ($point2_title): ?>
-              <h3 class="point marugo">2,<?php echo esc_html($point2_title); ?></h3>
-            <?php endif;
-            if ($point2_img): ?>
-              <img data-js-ofi src="<?php echo esc_url($point2_img); ?>">
-							<?php if ($should_show_point2_img_annotation): ?>
-							<p class="annotation">※写真はイメージです</p>
-							<?php endif; ?>
-							
-            <?php endif;
-            if ($point2_text): ?>
-              <p class="event-message-text"><?php echo esc_html($point2_text); ?></p>
-            <?php endif;
+			<!-- メイン画像 -->
+			<div class="eventDetail__mainImg">
+				<img src="<?php echo esc_url($event_info["pic"]); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"
+					<?php echo $event_status === "endEvent" ? 'style="filter: grayscale(100%);"' : ""; ?>>
+			</div>
 
-            if ($point3_title): ?>
-							<h3 class="point marugo">3,<?php echo esc_html($point3_title); ?></h3>
-						<?php endif;
-            if ($point3_img): ?>
-              <img data-js-ofi src="<?php echo esc_url($point3_img); ?>">
-							<?php if ($should_show_point3_img_annotation): ?>
-							<p class="annotation">※写真はイメージです</p>
-							<?php endif; ?>
-            <?php endif;
-            if ($point3_text): ?>
-              <p class="event-message-text"><?php echo esc_html($point3_text); ?></p>
-            <?php endif;
-
-            the_content();
-            ?>
-          </div>
-        </div>
-      </div>
-
-			<div class="cvButtonLinkWrap">
-					<a href="#contactForm" class="cvButtonLink">
-						<div>
-							<img src="<?php echo rico_theme_url(); ?>/assets/img/event/kantan.svg" alt="簡単予約" class="hukidashi">
-						</div>
-						<button class="greenBtn">
-							ご来場予約はこちら
-						</button>
-					</a>
+			<!-- 説明文 -->
+			<?php if ($event_info["comment"]): ?>
+				<div class="eventDetail__desc">
+					<p><?php echo nl2br(esc_html($event_info["comment"])); ?></p>
 				</div>
+			<?php endif; ?>
 
-      <section class="housingLoan">
-        <div class="housingLoan__img">
-          <img src="<?php echo rico_theme_url(); ?>/assets/img/event/housingLoan.png" alt="住宅ローン" class="eventPlanImg">
-        </div>
-        <div class="housingLoan__contents">
-          <p class="free">無料相談・無料審査大歓迎！</p>
-          <div class="simulationWrap">
-            <img src="<?php echo rico_theme_url(); ?>/assets/img/event/simulation.svg" alt="シミュレーション" class="simulation">
-          </div>
-          <div class="listWrap">
-            <ul class="housingLoan__list">
-              <li>
-                <img src="<?php echo rico_theme_url(); ?>/assets/img/event/check.svg" alt="チェック">
-                住宅ローンお支払いシミュレーション
-              </li>
-              <li>
-                <img src="<?php echo rico_theme_url(); ?>/assets/img/event/check.svg" alt="チェック">
-                土地・建物の総額資金計画と住宅ローンのシミュレーション
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </div>
+			<!-- イベント情報 -->
+			<div class="eventDetail__info">
+				<dl>
+					<dt>【会場】</dt>
+					<dd><?php echo esc_html($event_info["address"]); ?> ※詳細はご予約いただいた際にお伝えいたします</dd>
+				</dl>
+				<dl>
+					<dt>【開催期間】</dt>
+					<dd>
+						<?php if ($event_info["is_always"]): ?>
+							常時開催
+						<?php else: ?>
+							<?php echo esc_html($event_info["start_date"]); ?>(<?php echo rico_get_day_of_week(
+	$event_info["start_date"],
+); ?>)〜<?php echo esc_html($event_info["end_date"]); ?>(<?php echo rico_get_day_of_week($event_info["end_date"]); ?>)
+						<?php endif; ?>
+					</dd>
+				</dl>
+				<dl>
+					<dt>【見学時間】</dt>
+					<dd><?php echo esc_html($event_info["start_time"]); ?>〜<?php echo esc_html($event_info["end_time"]); ?></dd>
+				</dl>
+				<dl>
+					<dt>【定休日】</dt>
+					<dd>水曜日</dd>
+				</dl>
+			</div>
 
-      <div class="contact wow fadeInUp" id="contactForm">
-        <div class="inner contact__inner">
-          <h2 class="contact__ttl">予約フォーム</h2>
-          <p class="contact__desc">下記の必要事項をご記入の上、送信下さい。追って担当者よりご連絡させていただきます。</p>
-          <?php echo do_shortcode('[mwform_formkey key="33"]'); ?>
-        </div>
-      </div>
+			<!-- 来場予約ボタン -->
 			<div class="btnWrap">
-				<a href="<?php echo rico_home_url(); ?>event" class="primaryBtn wow fadeInUp">一覧に戻る</a>
-    	</div>
-    </div>
-  </section>
-</div>
+				<a href="<?php echo rico_home_url("/contact"); ?>" class="greenBtn">来場予約はこちら</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- POINT -->
+	<?php
+ $point1_title = get_field("point1_title");
+ $point1_img = get_field("point1_img");
+ $point1_text = get_field("point1_text");
+ $point2_title = get_field("point2_title");
+ $point2_img = get_field("point2_img");
+ $point2_text = get_field("point2_text");
+ $point3_title = get_field("point3_title");
+ $point3_img = get_field("point3_img");
+ $point3_text = get_field("point3_text");
+
+ if ($point1_title || $point2_title || $point3_title): ?>
+	<section class="eventDetail__points">
+		<div class="inner">
+			<div class="specDetail__titleWrap">
+				<h2 class="specDetail__title">POINT</h2>
+				<p class="specDetail__subtitle">この住まいの見どころ</p>
+			</div>
+
+			<?php if ($point1_title): ?>
+			<div class="eventDetail__point">
+				<h3 class="eventDetail__pointLabel">POINT 01</h3>
+				<p class="eventDetail__pointTitle"><?php echo esc_html($point1_title); ?></p>
+				<?php if ($point1_img): ?>
+					<div class="eventDetail__pointImg">
+						<img src="<?php echo esc_url($point1_img); ?>" alt="<?php echo esc_attr($point1_title); ?>">
+					</div>
+				<?php endif; ?>
+				<?php if ($point1_text): ?>
+					<p class="eventDetail__pointText"><?php echo nl2br(esc_html($point1_text)); ?></p>
+				<?php endif; ?>
+			</div>
+			<?php endif; ?>
+
+			<?php if ($point2_title): ?>
+			<div class="eventDetail__point">
+				<h3 class="eventDetail__pointLabel">POINT 02</h3>
+				<p class="eventDetail__pointTitle"><?php echo esc_html($point2_title); ?></p>
+				<?php if ($point2_img): ?>
+					<div class="eventDetail__pointImg">
+						<img src="<?php echo esc_url($point2_img); ?>" alt="<?php echo esc_attr($point2_title); ?>">
+					</div>
+				<?php endif; ?>
+				<?php if ($point2_text): ?>
+					<p class="eventDetail__pointText"><?php echo nl2br(esc_html($point2_text)); ?></p>
+				<?php endif; ?>
+			</div>
+			<?php endif; ?>
+
+			<?php if ($point3_title): ?>
+			<div class="eventDetail__point">
+				<h3 class="eventDetail__pointLabel">POINT 03</h3>
+				<p class="eventDetail__pointTitle"><?php echo esc_html($point3_title); ?></p>
+				<?php if ($point3_img): ?>
+					<div class="eventDetail__pointImg">
+						<img src="<?php echo esc_url($point3_img); ?>" alt="<?php echo esc_attr($point3_title); ?>">
+					</div>
+				<?php endif; ?>
+				<?php if ($point3_text): ?>
+					<p class="eventDetail__pointText"><?php echo nl2br(esc_html($point3_text)); ?></p>
+				<?php endif; ?>
+			</div>
+			<?php endif; ?>
+
+			<?php the_content(); ?>
+		</div>
+	</section>
+	<?php endif;
+ ?>
+
+	<!-- スタッフコメント -->
+	<section class="eventDetail__staffComment">
+		<div class="inner">
+			<p>
+				Rico Life.　営業部の佐藤と申します。今回のイベントでは、約20帖のLDKを中心に、家事動線や　収納計画にこだわったプランをご見学いただけます。<br><br>
+				平屋ならではの暮らしやすさや、コンパクトでも広がりを感じる空間づくりのポイントを、ぜひ現地でご体感ください。
+			</p>
+		</div>
+	</section>
+
+	<!-- 4つの特徴 -->
+	<section class="eventDetail__features">
+		<div class="inner">
+			<div class="eventDetail__featureGrid">
+				<div class="eventDetail__featureItem">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/event/feature1.jpg" alt="間取りや土地探しのご相談">
+					<p>間取りや土地探しなど、家づくりに関するご相談も承ります。</p>
+				</div>
+				<div class="eventDetail__featureItem">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/event/feature2.jpg" alt="事前予約で待ち時間なし">
+					<p>事前にご予約いただくことで、待ち時間なくご案内が可能です。</p>
+				</div>
+				<div class="eventDetail__featureItem">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/event/feature3.jpg" alt="キッズスペース完備">
+					<p>お子さまが遊べるスペースもご用意しています。</p>
+				</div>
+				<div class="eventDetail__featureItem">
+					<img src="<?php echo rico_theme_url(); ?>/assets/img/event/feature4.jpg" alt="完全予約制で落ち着いた見学">
+					<p>事前予約制のため、落ち着いて住まいをご見学いただけます。</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 来場予約ボタン -->
+	<div class="inner">
+		<div class="btnWrap">
+			<a href="<?php echo rico_home_url("/contact"); ?>" class="greenBtn">来場予約はこちら</a>
+		</div>
+	</div>
+
+	<!-- finalMessage -->
+	<?php get_template_part("template-parts/message"); ?>
+
+	<!-- toTopButton -->
+	<?php get_template_part("template-parts/toTopButton"); ?>
+
+	<!-- その他イベント -->
+	<?php
+ $other_events = new WP_Query([
+ 	"post_type" => "event",
+ 	"posts_per_page" => 4,
+ 	"post__not_in" => [get_the_ID()],
+ 	"orderby" => "date",
+ 	"order" => "DESC",
+ ]);
+
+ if ($other_events->have_posts()): ?>
+	<section class="eventDetail__others">
+		<div class="inner">
+			<div class="specDetail__titleWrap">
+				<h2 class="specDetail__title">Event</h2>
+				<p class="specDetail__subtitle">その他イベント</p>
+			</div>
+			<div class="eventDetail__otherList">
+				<?php
+    while ($other_events->have_posts()):
+
+    	$other_events->the_post();
+    	$other_pic = get_field("event-pic");
+    	?>
+				<a href="<?php echo esc_url(get_permalink()); ?>" class="eventDetail__otherItem">
+					<div class="eventDetail__otherImg">
+						<img src="<?php echo esc_url($other_pic); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
+					</div>
+					<p class="eventDetail__otherTitle"><?php the_title(); ?></p>
+				</a>
+				<?php
+    endwhile;
+    wp_reset_postdata();
+    ?>
+			</div>
+		</div>
+	</section>
+	<?php endif;
+ ?>
+
+	<!-- MENU -->
+	<?php get_template_part("template-parts/productArea"); ?>
+
+	<!-- REQUEST / CONTACT -->
+	<?php get_template_part("template-parts/contactArea"); ?>
 
 <?php get_footer(); ?>
