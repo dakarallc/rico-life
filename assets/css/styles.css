@@ -7879,6 +7879,15 @@ h5 {
   font-weight: bold;
   margin-bottom: 8px;
 }
+.eventDetail .modal {
+  display: none;
+}
+.eventDetail .modal.is-active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .eventDetail__madoriImg {
   cursor: pointer;
   position: relative;

@@ -219,6 +219,14 @@
 		margin-bottom: 8px;
 	}
 
+	.modal {
+		display: none;
+
+		&.is-active {
+			display: flex;
+		}
+	}
+
 	&__madoriImg {
 		position: relative;
 		cursor: pointer;
