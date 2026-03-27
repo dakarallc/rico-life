@@ -7663,6 +7663,7 @@ h5 {
   -ms-flex-direction: column;
   flex-direction: column;
   /* HEAD */
+  /* 間取り */
   /* POINT */
   /* スタッフコメント（POINT内に配置） */
   /* 4つの特徴 */
@@ -7849,6 +7850,49 @@ h5 {
 }
 .eventDetail__info dl dd {
   color: #333;
+}
+.eventDetail__madori {
+  padding: 60px 0;
+}
+@media (max-width: 999px) {
+  .eventDetail__madori {
+    padding: 40px 0;
+  }
+}
+.eventDetail__madoriGrid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 999px) {
+  .eventDetail__madoriGrid {
+    gap: 24px;
+    grid-template-columns: 1fr;
+  }
+}
+.eventDetail__madoriItem {
+  text-align: center;
+}
+.eventDetail__madoriLabel {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.eventDetail__madoriImg {
+  cursor: pointer;
+  position: relative;
+}
+.eventDetail__madoriImg img {
+  border-radius: 4px;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.eventDetail__madoriImg .zoom-button {
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
 }
 .eventDetail__points {
   padding: 60px 0;

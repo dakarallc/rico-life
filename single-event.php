@@ -139,7 +139,66 @@ $is_open_house = has_term("actual-house-tours", "event-category") || has_term("f
  $point3_img = get_field("point3_img");
  $point3_text = get_field("point3_text");
 
- if ($point1_title || $point2_title || $point3_title): ?>
+ $madori1 = get_field("madori1");
+ $madori2 = get_field("madori2");
+
+ if ($madori1 || $madori2): ?>
+	<section class="eventDetail__madori">
+		<div class="inner">
+			<div class="eventDetail__madoriGrid">
+				<?php if ($madori1): ?>
+					<div class="eventDetail__madoriItem">
+						<p class="eventDetail__madoriLabel">1F</p>
+						<div class="eventDetail__madoriImg">
+							<img src="<?php echo esc_url($madori1); ?>" alt="1F 間取り" class="modal-trigger">
+							<button type="button" class="zoom-button" aria-label="拡大表示">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+					</div>
+				<?php endif; ?>
+				<?php if ($madori2): ?>
+					<div class="eventDetail__madoriItem">
+						<p class="eventDetail__madoriLabel">2F</p>
+						<div class="eventDetail__madoriImg">
+							<img src="<?php echo esc_url($madori2); ?>" alt="2F 間取り" class="modal-trigger">
+							<button type="button" class="zoom-button" aria-label="拡大表示">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+					</div>
+				<?php endif; ?>
+			</div>
+		</div>
+
+		<!-- 間取りモーダル -->
+		<?php if ($madori1): ?>
+			<div class="modal" id="floorplanModal1">
+				<div class="modal__content">
+					<button type="button" class="modal__close" aria-label="閉じる">
+						<i class="fas fa-times"></i>
+					</button>
+					<img src="<?php echo esc_url($madori1); ?>" alt="1F 間取り">
+					<p class="modal__caption">1F</p>
+				</div>
+			</div>
+		<?php endif; ?>
+		<?php if ($madori2): ?>
+			<div class="modal" id="floorplanModal2">
+				<div class="modal__content">
+					<button type="button" class="modal__close" aria-label="閉じる">
+						<i class="fas fa-times"></i>
+					</button>
+					<img src="<?php echo esc_url($madori2); ?>" alt="2F 間取り">
+					<p class="modal__caption">2F</p>
+				</div>
+			</div>
+		<?php endif; ?>
+	</section>
+	<?php endif;
+ ?>
+
+	<?php if ($point1_title || $point2_title || $point3_title): ?>
 	<section class="eventDetail__points">
 		<div class="inner">
 			<div class="specDetail__titleWrap">
@@ -220,8 +279,7 @@ $is_open_house = has_term("actual-house-tours", "event-category") || has_term("f
 			</div>
 		</div>
 	</section>
-	<?php endif;
- ?>
+	<?php endif; ?>
 
 	<!-- 4つの特徴 -->
 	<section class="eventDetail__features">

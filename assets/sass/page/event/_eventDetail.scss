@@ -188,6 +188,55 @@
 		}
 	}
 
+	/* 間取り */
+	&__madori {
+		padding: 60px 0;
+
+		@include mixin.sp {
+			padding: 40px 0;
+		}
+	}
+
+	&__madoriGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+
+		@include mixin.sp {
+			grid-template-columns: 1fr;
+			gap: 24px;
+		}
+	}
+
+	&__madoriItem {
+		text-align: center;
+	}
+
+	&__madoriLabel {
+		font-size: 1.6rem;
+		font-weight: bold;
+		color: #333;
+		margin-bottom: 8px;
+	}
+
+	&__madoriImg {
+		position: relative;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 4px;
+		}
+
+		.zoom-button {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+		}
+	}
+
 	/* POINT */
 	&__points {
 		padding: 60px 0;
