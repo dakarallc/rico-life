@@ -227,6 +227,26 @@
 		}
 	}
 
+	.modal__content {
+		max-width: 95vw;
+		max-height: 95vh;
+		width: 90vw;
+		padding: 20px;
+		background: #fff;
+		border-radius: 8px;
+
+		img {
+			width: 100%;
+			height: auto;
+			max-height: calc(90vh - 80px);
+			object-fit: contain;
+		}
+	}
+
+	.modal__caption {
+		color: #fff;
+	}
+
 	&__madoriImg {
 		position: relative;
 		cursor: pointer;
