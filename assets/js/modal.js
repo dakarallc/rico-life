@@ -1,15 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-	console.log("Modal script loaded");
-
 	// モーダルの開閉処理
 	function openModal(modalId) {
-		console.log("Opening modal:", modalId);
 		const modal = document.getElementById(modalId);
 		if (modal) {
 			modal.style.display = "block";
 			document.body.style.overflow = "hidden";
-		} else {
-			console.warn("Modal not found:", modalId);
 		}
 	}
 
@@ -23,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// ズームボタンのクリックイベント
 	const zoomButtons = document.querySelectorAll(".zoom-button");
-	console.log("Zoom buttons found:", zoomButtons.length);
 	zoomButtons.forEach((button, index) => {
 		button.addEventListener("click", function (e) {
 			e.preventDefault();
+			e.stopPropagation();
 			const modalId = `floorplanModal${index + 1}`;
 			openModal(modalId);
 		});
@@ -35,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	// 画像のクリックイベント
 	const modalTriggers = document.querySelectorAll(".modal-trigger");
 	modalTriggers.forEach((trigger, index) => {
-		trigger.addEventListener("click", function () {
+		trigger.addEventListener("click", function (e) {
+			e.stopPropagation();
 			const modalId = `floorplanModal${index + 1}`;
 			openModal(modalId);
 		});
