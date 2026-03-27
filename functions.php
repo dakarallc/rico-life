@@ -178,8 +178,8 @@ function my_script_init() {
 		wp_enqueue_script("plan-filter", $theme_url . "/assets/js/plan-filter.js", [], "1.0", true);
 	}
 
-	// プラン詳細ページ用のスクリプト
-	if (is_singular("plan")) {
+	// モーダルスクリプト（プラン詳細・イベント詳細）
+	if (is_singular("plan") || is_singular("event")) {
 		wp_enqueue_script("modal-script", $theme_url . "/assets/js/modal.js", [], "1.0", true);
 	}
 }
