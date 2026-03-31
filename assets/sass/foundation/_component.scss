@@ -831,11 +831,11 @@
 	font-weight: bold;
 	letter-spacing: 0;
 	margin-bottom: 37px;
-	text-align: center;
+	text-align: left !important;
 }
 @media (max-width: 999px) {
 	.contact__ttl {
-		font-size: 2rem;
+		font-size: 1.8rem !important;
 		margin-bottom: 20px;
 	}
 }
@@ -1024,6 +1024,90 @@
 }
 .contact__contents .preferred-date {
 	margin-bottom: 30px;
+}
+.contact__txt {
+	text-align: left !important;
+	display: inline-block;
+}
+.contact__txt-wrap {
+	text-align: center;
+}
+
+/* コンタクト横並び */
+.contact__row {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
+.contact__rowLeft {
+	flex: 1;
+}
+
+.contact__rowRight {
+	flex: 1;
+}
+
+.contact__action {
+	text-align: center;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+/* スタッフカード */
+.contact__staffCard {
+	background: #eaf3ee;
+	border-radius: 16px;
+	padding: 24px 28px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.contact__staffPhoto {
+	width: 90px;
+	flex-shrink: 0;
+
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+		aspect-ratio: 1;
+		object-fit: cover;
+		object-position: center top;
+	}
+}
+
+.contact__staffMsg {
+	font-size: 1.4rem;
+	line-height: 1.9;
+	color: #333;
+}
+
+@media (max-width: 767px) {
+	.contact__row {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.contact__staffCard {
+		flex-direction: column-reverse;
+		padding: 20px;
+		gap: 12px;
+		text-align: left;
+	}
+
+	.contact__staffPhoto {
+		width: 80px;
+	}
+
+	.contact__staffMsg {
+		font-size: 1.3rem;
+	}
 }
 .contact__txt._zip {
 	-ms-flex-align: start;

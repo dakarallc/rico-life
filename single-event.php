@@ -73,56 +73,57 @@ $is_open_house = has_term("actual-house-tours", "event-category") || has_term("f
 		</div>
 	</section>
 
-	<?php get_template_part("template-parts/breadcrumb"); ?>
-
 	<!-- HEAD -->
 	<section class="eventDetail__head">
+		<?php get_template_part("template-parts/breadcrumb"); ?>
 		<div class="inner">
 			<!-- メイン画像 -->
 			<div class="eventDetail__mainImg">
 				<img src="<?php echo esc_url($event_info["pic"]); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
 			</div>
 
-			<h2 class="eventDetail__title"><?php the_title(); ?></h2>
+			<div class="eventDetail__body">
+				<h2 class="eventDetail__title"><?php the_title(); ?></h2>
 
-			<!-- 説明文 -->
-			<?php if ($event_info["comment"]): ?>
-				<div class="eventDetail__desc">
-					<p><?php echo nl2br(esc_html($event_info["comment"])); ?></p>
-				</div>
-			<?php endif; ?>
+				<!-- 説明文 -->
+				<?php if ($event_info["comment"]): ?>
+					<div class="eventDetail__desc">
+						<p><?php echo nl2br(esc_html($event_info["comment"])); ?></p>
+					</div>
+				<?php endif; ?>
 
-			<!-- イベント情報 -->
-			<div class="eventDetail__info">
-				<dl>
-					<dt>【会場】</dt>
-					<dd><?php echo esc_html($event_info["address"]); ?> ※詳細はご予約いただいた際にお伝えいたします</dd>
-				</dl>
-				<dl>
-					<dt>【開催期間】</dt>
-					<dd>
-						<?php if ($event_info["is_always"]): ?>
-							常時開催
-						<?php else: ?>
-							<?php echo esc_html($event_info["start_date"]); ?>(<?php echo rico_get_day_of_week(
+				<!-- イベント情報 -->
+				<div class="eventDetail__info">
+					<dl>
+						<dt>【会場】</dt>
+						<dd><?php echo esc_html($event_info["address"]); ?> ※詳細はご予約いただいた際にお伝えいたします</dd>
+					</dl>
+					<dl>
+						<dt>【開催期間】</dt>
+						<dd>
+							<?php if ($event_info["is_always"]): ?>
+								常時開催
+							<?php else: ?>
+								<?php echo esc_html($event_info["start_date"]); ?>(<?php echo rico_get_day_of_week(
 	$event_info["start_date"],
 ); ?>)〜<?php echo esc_html($event_info["end_date"]); ?>(<?php echo rico_get_day_of_week($event_info["end_date"]); ?>)
-						<?php endif; ?>
-					</dd>
-				</dl>
-				<dl>
-					<dt>【見学時間】</dt>
-					<dd><?php echo esc_html($event_info["start_time"]); ?>〜<?php echo esc_html($event_info["end_time"]); ?></dd>
-				</dl>
-				<dl>
-					<dt>【定休日】</dt>
-					<dd>水曜日</dd>
-				</dl>
-			</div>
+							<?php endif; ?>
+						</dd>
+					</dl>
+					<dl>
+						<dt>【見学時間】</dt>
+						<dd><?php echo esc_html($event_info["start_time"]); ?>〜<?php echo esc_html($event_info["end_time"]); ?></dd>
+					</dl>
+					<dl>
+						<dt>【定休日】</dt>
+						<dd>水曜日</dd>
+					</dl>
+				</div>
 
-			<!-- 来場予約ボタン -->
-			<div class="btnWrap">
-				<a href="<?php echo rico_home_url("/contact"); ?>" class="greenBtn greenBtn--outline">来場予約はこちら</a>
+				<!-- 来場予約ボタン -->
+				<div class="btnWrap">
+					<a href="<?php echo rico_home_url("/contact"); ?>" class="greenBtn greenBtn--outline">来場予約はこちら</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -272,8 +273,7 @@ $is_open_house = has_term("actual-house-tours", "event-category") || has_term("f
 				</div>
 				<div class="eventDetail__staffBody">
 					<p>
-						Rico Life.　営業部の佐藤と申します。今回のイベントでは、約20帖のLDKを中心に、家事動線や　収納計画にこだわったプランをご見学いただけます。<br><br>
-						平屋ならではの暮らしやすさや、コンパクトでも広がりを感じる空間づくりのポイントを、ぜひ現地でご体感ください。
+						Rico Life 営業部の佐藤と申します。今回ご見学いただける住まいは、これからの暮らしを見据えたコンパクトな平屋です。約20帖のLDKを中心に、家事動線や収納計画など、日々の暮らしやすさを大切に設計しました。コンパクトでも窮屈さを感じない空間の広がりや、暮らしやすさを考えた間取りは、図面だけでは分かりにくい部分も多くあります。実際のサイズ感や動線を、ぜひ現地でご体感ください。
 					</p>
 				</div>
 			</div>
