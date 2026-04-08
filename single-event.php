@@ -11,6 +11,8 @@ $event_info = [
 	"address" => get_field("address"),
 	"comment" => get_field("comment"),
 	"subtitle" => get_field("event_subtitle"),
+	"staff_image" => get_field("staff_image"),
+	"staff_comment" => get_field("staff_comment"),
 ];
 
 $now = new DateTime("now", new DateTimeZone("Asia/Tokyo"));
@@ -260,16 +262,22 @@ $is_open_house = has_term("actual-house-tours", "event-category") || has_term("f
 			<?php the_content(); ?>
 
 			<!-- スタッフコメント -->
+			<?php if ($event_info["staff_image"] || $event_info["staff_comment"]): ?>
 			<div class="eventDetail__staffComment">
+				<?php if ($event_info["staff_image"]): ?>
 				<div class="eventDetail__staffImg">
-					<img src="<?php echo rico_theme_url(); ?>/assets/img/event/staff-sato.jpg" alt="営業部 佐藤">
+					<img src="<?php echo esc_url($event_info["staff_image"]["url"]); ?>" alt="<?php echo esc_attr(
+	$event_info["staff_image"]["alt"],
+); ?>">
 				</div>
+				<?php endif; ?>
+				<?php if ($event_info["staff_comment"]): ?>
 				<div class="eventDetail__staffBody">
-					<p>
-						Rico Life 営業部の佐藤と申します。今回ご見学いただける住まいは、これからの暮らしを見据えたコンパクトな平屋です。約20帖のLDKを中心に、家事動線や収納計画など、日々の暮らしやすさを大切に設計しました。コンパクトでも窮屈さを感じない空間の広がりや、暮らしやすさを考えた間取りは、図面だけでは分かりにくい部分も多くあります。実際のサイズ感や動線を、ぜひ現地でご体感ください。
-					</p>
+					<p><?php echo nl2br(esc_html($event_info["staff_comment"])); ?></p>
 				</div>
+				<?php endif; ?>
 			</div>
+			<?php endif; ?>
 		</div>
 	</section>
 	<?php endif; ?>
