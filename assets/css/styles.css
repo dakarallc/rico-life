@@ -927,6 +927,11 @@ h5 {
 .finalMessage__logo img {
 	width: 200px;
 }
+@media (max-width: 999px) {
+	.finalMessage__logo img {
+		width: 140px;
+	}
+}
 
 /* 下部共通セクション間の余白 */
 .product {
@@ -2121,7 +2126,7 @@ h5 {
 }
 @media (max-width: 999px) {
 	.catch h3 {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 }
 

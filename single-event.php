@@ -94,12 +94,12 @@ $is_open_house = has_term("actual-house-tours", "event-category") || has_term("f
 
 				<!-- イベント情報 -->
 				<div class="eventDetail__info">
-					<dl>
-						<dt>【会場】</dt>
+					<dl style="flex-direction: column;">
+						<dt>会場</dt>
 						<dd><?php echo esc_html($event_info["address"]); ?> ※詳細はご予約いただいた際にお伝えいたします</dd>
 					</dl>
-					<dl>
-						<dt>【開催期間】</dt>
+					<dl style="flex-direction: column;">
+						<dt>開催期間</dt>
 						<dd>
 							<?php if ($event_info["is_always"]): ?>
 								常時開催
@@ -108,15 +108,8 @@ $is_open_house = has_term("actual-house-tours", "event-category") || has_term("f
 	$event_info["start_date"],
 ); ?>)〜<?php echo esc_html($event_info["end_date"]); ?>(<?php echo rico_get_day_of_week($event_info["end_date"]); ?>)
 							<?php endif; ?>
+							<br><?php echo esc_html($event_info["start_time"]); ?>〜<?php echo esc_html($event_info["end_time"]); ?>　定休日：水曜日
 						</dd>
-					</dl>
-					<dl>
-						<dt>【見学時間】</dt>
-						<dd><?php echo esc_html($event_info["start_time"]); ?>〜<?php echo esc_html($event_info["end_time"]); ?></dd>
-					</dl>
-					<dl>
-						<dt>【定休日】</dt>
-						<dd>水曜日</dd>
 					</dl>
 				</div>
 
