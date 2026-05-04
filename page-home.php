@@ -53,18 +53,6 @@ Template Name: TOP
 		</div>
 	</section>
 
-	<!-- movie	 -->
-	<section class="movie">
-		<div class="inner">
-			<p>まずは動画をご覧ください！</p>
-			
-			<div class="movie__inner">
-				<iframe width="100%" src="https://www.youtube.com/embed/x3vwHpVTqHo?si=GwlJZYqfgZMVRc5z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-			</div>
-			<p>Rico Life. のすべてを３分解説します！</p>
-		</div>
-	</section>
-
 	<!-- CONCEPT	 -->
 	<section class="concept">
 		<div class="inner">
@@ -93,6 +81,18 @@ Template Name: TOP
 			<div class="btnWrap">
 				<a href="<?php echo rico_home_url(); ?>concept" class="primaryBtn">初めての方はこちら</a>
 			</div>
+		</div>
+	</section>
+
+	<!-- movie	 -->
+	<section class="movie">
+		<div class="inner">
+			<p>まずは動画をご覧ください！</p>
+
+			<div class="movie__inner">
+				<iframe width="100%" src="https://www.youtube.com/embed/x3vwHpVTqHo?si=GwlJZYqfgZMVRc5z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			<p>Rico Life. のすべてを３分解説します！</p>
 		</div>
 	</section>
 

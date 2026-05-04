@@ -77,15 +77,15 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="https://www.youtube.com/@ricolife-66" target="_blank">
-                  <i class="fab fa-youtube fa-lg"></i>
-                  <p class="_below">YouTube</p>
+                <a href="<?php echo rico_home_url("/event"); ?>">
+                  <i class="fa-solid fa-calendar-days fa-lg"></i>
+                  <p class="_below">イベント</p>
                 </a>
               </li>
               <li class="header__item">
-                <a href="https://www.instagram.com/ricolife_kuki/" target="_blank">
-									<i class="fa-brands fa-instagram fa-lg"></i>
-                  <p class="_below">Instagram</p>
+                <a href="<?php echo rico_home_url("/case"); ?>">
+									<i class="fa-solid fa-image fa-lg"></i>
+                  <p class="_below">施工事例</p>
                 </a>
               </li>
               <li class="header__item">
@@ -142,13 +142,13 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
           </div>
 
           <div class="spMenu__footer">
-            <a href="https://www.youtube.com/@ricolife-66" target="_blank" class="spMenu__footerItem">
-              <i class="fab fa-youtube"></i>
-              <span>YouTube</span>
+            <a href="<?php echo rico_home_url("/event"); ?>" class="spMenu__footerItem">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>イベント</span>
             </a>
-            <a href="https://www.instagram.com/ricolife_kuki/" target="_blank" class="spMenu__footerItem">
-              <i class="fab fa-instagram"></i>
-              <span>Instagram</span>
+            <a href="<?php echo rico_home_url("/case"); ?>" class="spMenu__footerItem">
+              <i class="fa-solid fa-image"></i>
+              <span>施工事例</span>
             </a>
             <a href="<?php echo rico_home_url(); ?>request" class="spMenu__footerItem">
               <i class="fas fa-book-open"></i>

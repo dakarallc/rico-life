@@ -4,15 +4,15 @@
 <div class="floating">
   <div class="floating__inner">
     <div class="floating__item">
-      <a href="https://www.youtube.com/@ricolife-66" target="_blank">
-        <i class="fab fa-youtube fa-xl"></i>
-        <p class="floating__text">YouTube</p>
+      <a href="<?php echo rico_home_url("/event"); ?>">
+        <i class="fa-solid fa-calendar-days fa-xl"></i>
+        <p class="floating__text">イベント</p>
       </a>
     </div>
     <div class="floating__item">
-      <a href="https://www.instagram.com/ricolife_kuki/" target="_blank">
-        <i class="fa-brands fa-instagram fa-xl"></i>
-        <p class="floating__text">Instagram</p>
+      <a href="<?php echo rico_home_url("/case"); ?>">
+        <i class="fa-solid fa-image fa-xl"></i>
+        <p class="floating__text">施工事例</p>
       </a>
     </div>
     <div class="floating__item">
