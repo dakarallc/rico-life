@@ -56,6 +56,13 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPGNXZP3"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <?php if (is_home() || is_front_page()): ?>
+  <div class="loading" id="js-loading">
+    <div class="loading__inner">
+      <img src="<?php echo rico_theme_url(); ?>/assets/img/common/logo-black.svg" alt="rico life" class="loading__logo">
+    </div>
+  </div>
+  <?php endif; ?>
   <div class="wrapper">
 <!-- ===============================================================================================
   header

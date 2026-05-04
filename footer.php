@@ -165,6 +165,29 @@
 <?php get_template_part("template-parts/floatingBanner"); ?>
 </div><!-- /wrapper -->
 <script>
+    // ローディング: フォント読み込み完了で非表示
+    (function() {
+      var loader = document.getElementById("js-loading");
+      if (!loader) return;
+      function hideLoader() {
+        loader.classList.add("is-hidden");
+        setTimeout(function() { loader.remove(); }, 600);
+      }
+      if (document.documentElement.classList.contains("wf-active")) {
+        hideLoader();
+      } else {
+        var observer = new MutationObserver(function() {
+          if (document.documentElement.classList.contains("wf-active")) {
+            observer.disconnect();
+            hideLoader();
+          }
+        });
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+        // フォント読み込みタイムアウト時もローディングを消す
+        setTimeout(hideLoader, 3500);
+      }
+    })();
+
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       autoplay: {

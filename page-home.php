@@ -14,31 +14,41 @@ Template Name: TOP
 				<div class="swiper-slide">
 					<picture>
 						<source srcset="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.webp" type="image/webp">
-						<img class="fv__img1" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.png" alt="Rico Life. 久喜市の注文住宅" fetchpriority="high">
+						<img class="fv__img1" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.png" alt="住むほどに、賢く、豊かになる住まい" fetchpriority="high">
 					</picture>
+					<div class="fv__ttl-wrap">
+						<div class="fv__ttl">
+							<h2>住むほどに、賢く、<br>豊かになる住まい</h2>
+							<p class="fv__ttl-en">A home that grows wiser and richer with time.</p>
+						</div>
+					</div>
 				</div>
 				<div class="swiper-slide">
 					<picture>
 						<source srcset="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.webp" type="image/webp">
-						<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="Rico Life. 埼玉県の新築一戸建て">
+						<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="太陽光・蓄電池・断熱等級6が標準">
 					</picture>
+					<div class="fv__ttl-wrap">
+						<div class="fv__ttl">
+							<h2>太陽光・蓄電池・<br>断熱等級6が「標準」</h2>
+							<p class="fv__ttl-en">Solar power, battery storage,<br>and Grade 6 insulation - all standard.</p>
+						</div>
+					</div>
 				</div>
 				<div class="swiper-slide">
 					<picture>
 						<source srcset="<?php echo rico_theme_url(); ?>/assets/img/top/kv3.webp" type="image/webp">
-						<img src="<?php echo rico_theme_url(); ?>/assets/img/top/kv3.png" alt="Rico Life. コスパで創る豊かな暮らし">
+						<img src="<?php echo rico_theme_url(); ?>/assets/img/top/kv3.png" alt="高性能な家を、手の届く価格で">
 					</picture>
+					<div class="fv__ttl-wrap">
+						<div class="fv__ttl">
+							<h2>高性能な家を、<br>手の届く価格で</h2>
+							<p class="fv__ttl-en">High-performance homes, within reach.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="swiper-pagination"></div>
-		</div>
-		<div class="fv__ttl-wrap">
-			<div class="fv__ttl">
-				<h1>コスパで創る、<br>豊かな暮らし。</h1>
-				<svg xmlns="http://www.w3.org/2000/svg" width="491" height="32" viewBox="0 0 491 32">
-					<text id="Creating_cost-effectively_A_rich_life." data-name="Creating cost-effectively,A rich life." transform="translate(0 25)" fill="#fff" font-size="28" font-family="VDL-PenLetter-Medium, VDL-PenLetter" font-weight="500"><tspan x="0" y="0">Creating cost-effectively,A rich life.</tspan></text>
-				</svg>
-			</div>
 		</div>
 	</section>
 
