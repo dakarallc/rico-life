@@ -5,10 +5,10 @@
   ========================================================================== */
 .spMenu {
 	position: fixed;
-	top: 60px;
+	top: 80px;
 	left: 0;
 	width: 100%;
-	height: calc(100% - 60px);
+	height: calc(100% - 80px);
 	background: #fff;
 	z-index: 998;
 	flex-direction: column;
@@ -18,15 +18,16 @@
 	transition:
 		opacity 0.35s ease-in-out,
 		visibility 0.35s ease-in-out;
-	display: none;
+	display: flex;
+
+	&.is-open {
+		opacity: 1;
+		visibility: visible;
+	}
 
 	@include mixin.sp {
-		display: flex;
-
-		&.is-open {
-			opacity: 1;
-			visibility: visible;
-		}
+		top: 60px;
+		height: calc(100% - 60px);
 	}
 
 	/* Body */
@@ -159,11 +160,15 @@
 		}
 	}
 
-	/* Footer Navigation */
+	/* Footer Navigation - SPのみ表示（PCではヘッダーアイコンメニューがあるため不要） */
 	&__footer {
-		display: flex;
+		display: none;
 		border-top: 1px solid #ddd;
 		background: #fff;
+
+		@include mixin.sp {
+			display: flex;
+		}
 	}
 
 	&__footerItem {

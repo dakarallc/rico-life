@@ -11,11 +11,7 @@
 	z-index: 1000;
 	top: 0;
 	transition: 0.3s;
-	display: none;
-
-	@include mixin.sp() {
-		display: block;
-	}
+	display: block;
 
 	&.active {
 		top: -4px;
@@ -81,12 +77,25 @@
 	flex-direction: column;
 	gap: 0;
 	color: #fff;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	font-weight: normal;
-	transition: color 0.3s ease;
+	transition:
+		color 0.3s ease,
+		background 0.3s ease;
+	justify-content: center;
+	cursor: pointer;
 
+	// PCでは四角い背景でアイコンメニューと差別化
 	@include mixin.pc {
-		display: none;
+		background: #a0b5a7;
+		color: #fff;
+		width: 80px;
+		height: 80px;
+		min-width: 80px;
+		min-height: 80px;
+		flex-shrink: 0;
+		padding: 0;
+		margin: 0;
 	}
 }
 
@@ -95,21 +104,39 @@
 	.toggle {
 		span {
 			border-bottom-color: #000;
+
+			// PC四角背景時は常に白線
+			@include mixin.pc {
+				border-bottom-color: #fff;
+			}
 		}
 	}
 
 	.toggle__line {
 		color: #000;
+
+		// PC四角背景時は常に白文字
+		@include mixin.pc {
+			color: #fff;
+		}
 	}
 }
 
-/* メニューが開いている時は常に黒 */
+/* メニューが開いている時は常に黒（SPのみ。PCは四角背景のため白のまま） */
 .toggle.active {
 	span {
 		border-bottom-color: #000 !important;
+
+		@include mixin.pc {
+			border-bottom-color: #fff !important;
+		}
 	}
 }
 
 .toggle__line.is-open {
 	color: #000;
+
+	@include mixin.pc {
+		color: #fff;
+	}
 }

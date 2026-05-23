@@ -127,7 +127,7 @@
 		display: none;
 	}
 
-	// Safe area for iPhone
+	/* Safe area for iPhone */
 	padding-bottom: env(safe-area-inset-bottom);
 
 	&__inner {
@@ -149,7 +149,7 @@
 			align-items: center;
 			justify-content: center;
 			padding: 8px 4px 6px;
-			color: #8E8E93;
+			color: #8e8e93;
 			text-decoration: none;
 			transition: all 0.2s ease;
 			border-radius: 12px;
@@ -157,7 +157,7 @@
 
 			&:hover,
 			&:active {
-				color: #D49BAA;
+				color: #d49baa;
 				background: rgba(212, 155, 170, 0.1);
 				transform: scale(0.95);
 			}
@@ -167,13 +167,14 @@
 				margin-bottom: 14px;
 				font-size: 20px;
 				transition: all 0.2s ease;
+				-webkit-text-stroke: 0.5px #fff;
 			}
 		}
 
 		// Active state for current page
 		&.active a {
-			color: #D49BAA;
-			
+			color: #d49baa;
+
 			i {
 				transform: translateY(-1px);
 			}

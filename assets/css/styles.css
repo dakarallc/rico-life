@@ -2127,6 +2127,7 @@ h5 {
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
 	border-top: 0.5px solid rgba(0, 0, 0, 0.08);
+	/* Safe area for iPhone */
 	padding-bottom: env(safe-area-inset-bottom);
 }
 @media screen and (min-width: 500px) {
@@ -2169,6 +2170,7 @@ h5 {
 	margin-bottom: 14px;
 	font-size: 20px;
 	transition: all 0.2s ease;
+	-webkit-text-stroke: 0.5px #fff;
 }
 .floating__item.active a {
 	color: #d49baa;
@@ -2642,12 +2644,14 @@ h5 {
 	margin-top: 30px;
 }
 .footer .footer__contents .footerContentsInner .info .footer__sns .icon {
-	font-size: 3rem;
 	color: #fff;
 	transition: color 0.2s;
 }
 .footer .footer__contents .footerContentsInner .info .footer__sns .icon:hover {
 	color: #00796b;
+}
+.footer .footer__contents .footerContentsInner .info .footer__sns .icon i {
+	font-size: 4.8rem;
 }
 
 @media (max-width: 999px) {
@@ -3326,16 +3330,12 @@ h5 {
 }
 @media (min-width: 1000px) {
 	.header__item > a {
-		padding: 0 14px;
-	}
-}
-@media (min-width: 1000px) {
-	.header__item > a {
 		padding: 0 10px;
 	}
 }
 .header__item > a:hover {
-	opacity: 0.8;
+	color: #a0b5a7;
+	opacity: 1;
 }
 @media (max-width: 999px) {
 	.header__item > a {
@@ -3369,7 +3369,11 @@ h5 {
 	color: #000;
 }
 .header._black .header__item > a:hover {
-	opacity: 0.8;
+	color: #a0b5a7;
+	opacity: 1;
+}
+.header._black .header__item i.fa-regular {
+	-webkit-text-stroke: 1px #fff;
 }
 .header._whiteBg {
 	background: #fff;
@@ -3530,7 +3534,7 @@ h5 {
 	color: #000;
 }
 .header._black .header__item > a:hover {
-	color: #f10000;
+	color: #a0b5a7;
 }
 
 .news-page .pageHead {
@@ -3589,12 +3593,7 @@ h5 {
 	z-index: 1000;
 	top: 0;
 	transition: 0.3s;
-	display: none;
-}
-@media (max-width: 999px) {
-	.toggle {
-		display: block;
-	}
+	display: block;
 }
 .toggle.active {
 	top: -4px;
@@ -3649,30 +3648,62 @@ h5 {
 	flex-direction: column;
 	gap: 0;
 	color: #fff;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	font-weight: normal;
-	transition: color 0.3s ease;
+	transition:
+		color 0.3s ease,
+		background 0.3s ease;
+	justify-content: center;
+	cursor: pointer;
 }
 @media (min-width: 1000px) {
 	.toggle__line {
-		display: none;
+		background: #a0b5a7;
+		color: #fff;
+		width: 80px;
+		height: 80px;
+		min-width: 80px;
+		min-height: 80px;
+		flex-shrink: 0;
+		padding: 0;
+		margin: 0;
 	}
 }
 
 .header._black .toggle span {
 	border-bottom-color: #000;
 }
+@media (min-width: 1000px) {
+	.header._black .toggle span {
+		border-bottom-color: #fff;
+	}
+}
 .header._black .toggle__line {
 	color: #000;
 }
+@media (min-width: 1000px) {
+	.header._black .toggle__line {
+		color: #fff;
+	}
+}
 
-/* メニューが開いている時は常に黒 */
+/* メニューが開いている時は常に黒（SPのみ。PCは四角背景のため白のまま） */
 .toggle.active span {
 	border-bottom-color: #000 !important;
+}
+@media (min-width: 1000px) {
+	.toggle.active span {
+		border-bottom-color: #fff !important;
+	}
 }
 
 .toggle__line.is-open {
 	color: #000;
+}
+@media (min-width: 1000px) {
+	.toggle__line.is-open {
+		color: #fff;
+	}
 }
 
 /* ==========================================================================
@@ -3680,10 +3711,10 @@ h5 {
   ========================================================================== */
 .spMenu {
 	position: fixed;
-	top: 60px;
+	top: 80px;
 	left: 0;
 	width: 100%;
-	height: calc(100% - 60px);
+	height: calc(100% - 80px);
 	background: #fff;
 	z-index: 998;
 	flex-direction: column;
@@ -3693,21 +3724,22 @@ h5 {
 	transition:
 		opacity 0.35s ease-in-out,
 		visibility 0.35s ease-in-out;
-	display: none;
+	display: flex;
 	/* Body */
 	/* Navigation List */
 	/* 子メニュー付き項目は1カラム幅 */
 	/* サブメニュー（標準仕様の子ページ等） */
 	/* Contact Section */
-	/* Footer Navigation */
+	/* Footer Navigation - SPのみ表示（PCではヘッダーアイコンメニューがあるため不要） */
+}
+.spMenu.is-open {
+	opacity: 1;
+	visibility: visible;
 }
 @media (max-width: 999px) {
 	.spMenu {
-		display: flex;
-	}
-	.spMenu.is-open {
-		opacity: 1;
-		visibility: visible;
+		top: 60px;
+		height: calc(100% - 60px);
 	}
 }
 .spMenu__body {
@@ -3817,9 +3849,14 @@ h5 {
 	margin-right: 6px;
 }
 .spMenu__footer {
-	display: flex;
+	display: none;
 	border-top: 1px solid #ddd;
 	background: #fff;
+}
+@media (max-width: 999px) {
+	.spMenu__footer {
+		display: flex;
+	}
 }
 .spMenu__footerItem {
 	flex: 1;
@@ -13442,5 +13479,3 @@ html:has(.specStructure) {
 	height: 60px;
 	margin-bottom: 20px;
 }
-
-/*# sourceMappingURL=styles.css.map */

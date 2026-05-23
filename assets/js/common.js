@@ -49,7 +49,7 @@ jQuery(function () {
 	var spOriginalSrc = $spLogoImg.attr("src");
 	var spBlackLogoSrc = spOriginalSrc ? spOriginalSrc.replace("logo.svg", "logo-black.svg") : "";
 
-	jQuery("#js-toggle").click(function () {
+	jQuery(".toggle__line").click(function () {
 		if (jQuery("#js-spMenu").hasClass("is-open")) {
 			// 開いている場合は閉じる
 			jQuery("#js-spMenu").removeClass("is-open");
@@ -91,26 +91,16 @@ jQuery(function () {
 		jQuery(".header").removeClass("menu-open");
 	});
 
-	var mediaQuery = matchMedia("(max-width: 999px)");
-
-	// ページが読み込まれた時に実行
-	handle(mediaQuery);
-
-	// ウィンドウサイズが変更時実行
-	mediaQuery.addListener(handle);
-
-	function handle(mq) {
-		if (!mq.matches) {
-			jQuery("#js-toggle").removeClass("active");
-			jQuery("#js-overlayer").css("display", "none");
+	// リサイズ時にメニューが開いていたら閉じる
+	jQuery(window).on("resize", function () {
+		if (jQuery("#js-spMenu").hasClass("is-open")) {
 			jQuery("#js-spMenu").removeClass("is-open");
 			jQuery("body").css("overflow", "");
-		} else {
 			jQuery("#js-toggle").removeClass("active");
-			jQuery("#js-spMenu").removeClass("is-open");
-			jQuery("body").css("overflow", "");
+			jQuery(".toggle__line").removeClass("is-open");
+			jQuery(".header").removeClass("menu-open");
 		}
-	}
+	});
 
 	var pageTop = jQuery("#js-toTop2");
 	jQuery(window).scroll(function () {

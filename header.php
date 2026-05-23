@@ -85,25 +85,25 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
             <ul class="header__list">
               <li class="header__item">
                 <a href="<?php echo rico_home_url("/event"); ?>">
-                  <i class="fa-solid fa-calendar-days fa-lg"></i>
+                  <i class="fa-regular fa-calendar fa-lg"></i>
                   <p class="_below">イベント</p>
                 </a>
               </li>
               <li class="header__item">
                 <a href="<?php echo rico_home_url("/case"); ?>">
-									<i class="fa-solid fa-image fa-lg"></i>
+									<i class="fa-regular fa-image fa-lg"></i>
                   <p class="_below">施工事例</p>
                 </a>
               </li>
               <li class="header__item">
                 <a href="<?php echo rico_home_url(); ?>request" >
-								<i class="fa-solid fa-book-open fa-lg"></i>
+								<i class="fa-regular fa-envelope fa-lg"></i>
                   <p class="_below">お問い合わせ</p>
                 </a>
               </li>
               <li class="header__item">
                 <a href="<?php echo rico_home_url(); ?>contact">
-									<i class="fa-solid fa-house fa-lg"></i>
+									<i class="fa-regular fa-calendar-check fa-lg"></i>
                   <p class="_below">来場予約</p>
                 </a>
               </li>
@@ -135,6 +135,7 @@ src="https://www.facebook.com/tr?id=1111104016733299&ev=PageView&noscript=1"
                 <li><a href="<?php echo rico_home_url("/staff"); ?>">スタッフ紹介</a></li>
                 <li><a href="<?php echo rico_home_url("/company"); ?>">会社概要</a></li>
                 <li><a href="<?php echo rico_home_url("/news"); ?>">ニュース</a></li>
+                <li><a href="<?php echo rico_home_url("/privacy-policy"); ?>">プライバシーポリシー</a></li>
               </ul>
             </nav>
 

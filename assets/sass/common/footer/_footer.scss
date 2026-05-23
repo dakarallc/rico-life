@@ -277,11 +277,13 @@
 					justify-content: center;
 					margin-top: 30px;
 					.icon {
-						font-size: 3rem;
 						color: #fff;
 						transition: color 0.2s;
 						&:hover {
 							color: #00796b;
+						}
+						i {
+							font-size: 4.8rem;
 						}
 					}
 				}

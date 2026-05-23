@@ -131,6 +131,7 @@
 						<li><a href="<?php echo rico_home_url("/staff"); ?>">スタッフ紹介</a></li>
 						<li><a href="<?php echo rico_home_url("/company"); ?>">会社概要</a></li>
 						<li><a href="<?php echo rico_home_url("/news"); ?>">ニュース</a></li>
+						<li><a href="<?php echo rico_home_url("/privacy-policy"); ?>">プライバシーポリシー</a></li>
 					</ul>
 				</nav>
 			</div>
