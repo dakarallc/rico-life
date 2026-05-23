@@ -23,4 +23,50 @@
 			}
 		}
 	}
+
+	&__inner {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 60px 20px 80px;
+	}
+
+	&__section {
+		margin-bottom: 40px;
+	}
+
+	&__heading {
+		font-size: 2rem;
+		font-weight: bold;
+		margin-bottom: 12px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #ddd;
+	}
+
+	&__list {
+		margin: 10px 0;
+		padding-left: 1em;
+
+		li {
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	&__contact {
+		margin-top: 60px;
+		padding: 30px;
+		background: #f7f7f7;
+		border-radius: 4px;
+	}
+
+	&__dl {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 8px 20px;
+
+		dt {
+			font-weight: bold;
+		}
+	}
 }

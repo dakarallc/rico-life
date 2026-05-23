@@ -3561,6 +3561,10 @@ h5 {
 	background: url(../img/contact/bg.jpg) no-repeat top center/cover;
 }
 
+.privacy-page .pageHead {
+	background: url(../img/contact/bg.jpg) no-repeat top center/cover;
+}
+
 .agency-page .pageHead {
 	background: url(../img/agency/bg.jpg) no-repeat center center/cover;
 }
@@ -8416,6 +8420,43 @@ h5 {
 	}
 }
 
+.access {
+	padding: 80px 0 100px;
+}
+@media (max-width: 999px) {
+	.access {
+		padding: 50px 0 60px;
+	}
+}
+.access__info {
+	margin: 30px 0 30px;
+	line-height: 2;
+}
+.access__name {
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+@media (max-width: 999px) {
+	.access__name {
+		font-size: 1.8rem;
+	}
+}
+.access__brand {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: normal;
+	color: #666;
+	margin-top: 2px;
+}
+.access__map {
+	border-radius: 4px;
+	overflow: hidden;
+}
+.access__map iframe {
+	display: block;
+}
+
 /* ==========================================================================
   contact
   ========================================================================== */
@@ -8775,6 +8816,42 @@ h5 {
 }
 .privacy ul li:not(:last-child) {
 	margin-bottom: 8px;
+}
+.privacy__inner {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 60px 20px 80px;
+}
+.privacy__section {
+	margin-bottom: 40px;
+}
+.privacy__heading {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 12px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #ddd;
+}
+.privacy__list {
+	margin: 10px 0;
+	padding-left: 1em;
+}
+.privacy__list li:not(:last-child) {
+	margin-bottom: 8px;
+}
+.privacy__contact {
+	margin-top: 60px;
+	padding: 30px;
+	background: #f7f7f7;
+	border-radius: 4px;
+}
+.privacy__dl {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 8px 20px;
+}
+.privacy__dl dt {
+	font-weight: bold;
 }
 
 /* ==========================================================================
