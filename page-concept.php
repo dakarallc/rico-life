@@ -9,7 +9,10 @@ Template Name: Concept
 
 	<!-- fv -->
 		<section class="fv">
-			<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv2.png" alt="Rico Life. のコンセプト">
+			<picture>
+				<source srcset="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.webp" type="image/webp">
+				<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.png" alt="Rico Life. のコンセプト">
+			</picture>
 			<div class="inner fv__inner">
 					<div class="fv__ttl">
 						<h1>コスパで創る、<br>豊かな暮らし。</h1>

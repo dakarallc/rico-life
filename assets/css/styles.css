@@ -11270,7 +11270,7 @@ us
 	width: 100%;
 	height: 100dvh;
 	object-fit: cover;
-	object-position: bottom;
+	object-position: center;
 }
 @media (max-width: 999px) {
 	.top .fv img {
@@ -11776,7 +11776,7 @@ us
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: bottom;
+	object-position: center;
 }
 @media (max-width: 999px) {
 	.concept .fv img {
