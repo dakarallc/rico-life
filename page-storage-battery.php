@@ -161,27 +161,23 @@ Template Name: ソーラー&蓄電池
 	</section>
 
 	<!-- Energy -->
-	<section class="specDetail">
-		<div class="inner">
+	<section class="specDetail energySection conceptSection">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/concept/how.jpg" alt="ソーラーパネル">
+		<div class="inner conceptSection__inner">
 			<div class="specDetail__titleWrap">
 				<h2 class="specDetail__title">Energy</h2>
 				<p class="specDetail__subtitle">エネルギーが未来を創る</p>
 			</div>
 
-			<div class="specDetail__hero">
-				<div class="specDetail__mainImg">
-					<img src="<?php echo rico_theme_url(); ?>/assets/img/storage-battery/energyBg.png" alt="エネルギー効率の高い住まい">
-				</div>
-				<div class="specDetail__heroBody">
-					<h3 class="specDetail__catch">
-						電気代は<br>
-						削減できる<br>
-						固定費です。
-					</h3>
-				</div>
+			<div class="catch">
+				<h3>
+					電気代は<br class="show--sp">
+					削減できる<br class="show--sp">
+					固定費です。
+				</h3>
 			</div>
 
-			<div class="specDetail__blocks">
+			<div>
 				<p>
 					未来に優しい、光熱費削減の家。<br class="show--sp">
 					毎年上がり続ける電気代。<br class="show--sp">

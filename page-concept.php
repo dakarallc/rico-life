@@ -10,8 +10,8 @@ Template Name: Concept
 	<!-- fv -->
 		<section class="fv">
 			<picture>
-				<source srcset="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.webp" type="image/webp">
-				<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/top/kv1.png" alt="Rico Life. のコンセプト">
+				<source srcset="<?php echo rico_theme_url(); ?>/assets/img/concept/fv.webp" type="image/webp">
+				<img class="fv__img" src="<?php echo rico_theme_url(); ?>/assets/img/concept/fv.png" alt="Rico Life. のコンセプト">
 			</picture>
 			<div class="inner fv__inner">
 					<div class="fv__ttl">
@@ -69,7 +69,7 @@ Template Name: Concept
 
 	<!-- Why  -->
 	<section class="why conceptSection">
-		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="注文住宅のリビング空間">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/concept/why.png" alt="家族がリビングでくつろぐ様子">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">Way？
@@ -126,7 +126,7 @@ Template Name: Concept
 
 	<!-- How	 -->
 	<section class="how conceptSection">
-		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="注文住宅のリビング空間">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/concept/how.jpg" alt="ソーラーパネル">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">How？
@@ -182,7 +182,7 @@ Template Name: Concept
 
 	<!-- What	 -->
 	<section class="how conceptSection">
-		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="注文住宅のリビング空間">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/concept/what.png" alt="Rico Life.の住まい">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
 				<h2 class="section-ttl">What？
