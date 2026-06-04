@@ -55,49 +55,23 @@
    			"subtitle" => get_field("event_subtitle"),
    		];
 
-   		$now = new DateTime("now", new DateTimeZone("Asia/Tokyo"));
+   		$status = rico_get_event_status(
+   			$event_info["is_always"],
+   			$event_info["start_date"],
+   			$event_info["end_date"],
+   			$event_info["start_time"],
+   			$event_info["end_time"],
+   		);
 
-   		if ($event_info["start_date"] && $event_info["start_time"]) {
-   			$start_datetime = new DateTime(
-   				$event_info["start_date"] . " " . $event_info["start_time"],
-   				new DateTimeZone("Asia/Tokyo"),
-   			);
-   		} else {
-   			$start_datetime = $now;
-   		}
-
-   		if ($event_info["end_date"] && $event_info["end_time"]) {
-   			$end_datetime = new DateTime(
-   				$event_info["end_date"] . " " . $event_info["end_time"],
-   				new DateTimeZone("Asia/Tokyo"),
-   			);
-   		} else {
-   			$end_datetime = $now;
-   		}
-
-   		if ($event_info["is_always"]) {
-   			$event_status = "nowEvent";
-   			$status_class = "_now";
-   			$status_text = "常時開催中";
-   			$sort_priority = 1;
-   		} elseif ($start_datetime <= $now && $end_datetime >= $now) {
-   			$event_status = "nowEvent";
-   			$status_class = "_now";
-   			$interval = $now->diff($end_datetime);
-   			$status_text = "【開催中】<span>終了まであと</span>" . rico_get_remaining_time($interval);
-   			$sort_priority = 1;
-   		} elseif ($start_datetime > $now) {
-   			$event_status = "beforeEvent";
-   			$status_class = "_before";
-   			$interval = $now->diff($start_datetime);
-   			$status_text = "【開催前】<span>開催まであと</span>" . rico_get_remaining_time($interval);
-   			$sort_priority = 2;
-   		} else {
-   			$event_status = "endEvent";
-   			$status_class = "_end";
-   			$status_text = "イベント終了";
-   			$sort_priority = 3;
-   		}
+   		$event_status = match ($status["status"]) {
+   			"now" => "nowEvent",
+   			"before" => "beforeEvent",
+   			"end" => "endEvent",
+   		};
+   		$status_class = $status["status_class"];
+   		$status_text = $status["status_text"];
+   		$sort_priority = $status["sort_priority"];
+   		$start_datetime = $status["start_datetime"];
 
    		if (
    			$sort_order === "all" ||

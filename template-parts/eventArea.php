@@ -10,17 +10,54 @@
 		<?php
   $args = [
   	"post_type" => "event",
-  	"posts_per_page" => 5,
+  	"posts_per_page" => -1,
   	"orderby" => "date",
   	"order" => "DESC",
   ];
   $event_query = new WP_Query($args);
 
+  // 終了イベントを除外して配列に格納
+  $active_events = [];
   if ($event_query->have_posts()):
+  	while ($event_query->have_posts()):
+  		$event_query->the_post();
 
-  	$event_count = $event_query->found_posts;
-  	$use_slider = $event_count > 1;
-  	?>
+  		$is_always = get_field("is_always");
+  		$event_pic = get_field("event-pic");
+  		$start_date = get_field("event_start_date");
+  		$end_date = get_field("event_end_date");
+  		$start_time = get_field("event_start_time");
+  		$end_time = get_field("event_end_time");
+  		$address = get_field("address");
+  		$subtitle = get_field("event_subtitle");
+
+  		// 終了判定（共通関数を使用）
+  		$event_status = rico_get_event_status($is_always, $start_date, $end_date, $start_time, $end_time);
+  		if ($event_status["status"] === "end") {
+  			continue; // 終了イベントはスキップ
+  		}
+
+  		$active_events[] = [
+  			"post" => $post,
+  			"is_always" => $is_always,
+  			"event_pic" => $event_pic,
+  			"start_date" => $start_date,
+  			"end_date" => $end_date,
+  			"start_time" => $start_time,
+  			"end_time" => $end_time,
+  			"address" => $address,
+  			"subtitle" => $subtitle,
+  		];
+  	endwhile;
+  	wp_reset_postdata();
+  endif;
+
+  // 最大5件に制限
+  $active_events = array_slice($active_events, 0, 5);
+  $event_count = count($active_events);
+
+  if ($event_count > 0):
+  	$use_slider = $event_count > 1; ?>
 			<?php if ($use_slider): ?>
 				<div class="event__slider swiper eventSwiper">
 					<div class="swiper-wrapper">
@@ -28,17 +65,19 @@
 				<div class="event__single">
 			<?php endif; ?>
 
-				<?php while ($event_query->have_posts()):
+				<?php
+    foreach ($active_events as $active_event):
 
-    	$event_query->the_post();
-    	$is_always = get_field("is_always");
-    	$event_pic = get_field("event-pic");
-    	$start_date = get_field("event_start_date");
-    	$end_date = get_field("event_end_date");
-    	$start_time = get_field("event_start_time");
-    	$end_time = get_field("event_end_time");
-    	$address = get_field("address");
-    	$subtitle = get_field("event_subtitle");
+    	$post = $active_event["post"];
+    	setup_postdata($post);
+    	$is_always = $active_event["is_always"];
+    	$event_pic = $active_event["event_pic"];
+    	$start_date = $active_event["start_date"];
+    	$end_date = $active_event["end_date"];
+    	$start_time = $active_event["start_time"];
+    	$end_time = $active_event["end_time"];
+    	$address = $active_event["address"];
+    	$subtitle = $active_event["subtitle"];
     	?>
 					<div class="<?php echo $use_slider ? "event__slide swiper-slide" : "event__item"; ?>">
 						<a href="<?php echo esc_url(get_permalink()); ?>" class="event__container">
@@ -85,7 +124,9 @@
 						</a>
 					</div>
 				<?php
-    endwhile; ?>
+    endforeach;
+    wp_reset_postdata();
+    ?>
 
 			<?php if ($use_slider): ?>
 					</div>
@@ -96,7 +137,6 @@
 				</div>
 			<?php endif; ?>
 
-			<?php wp_reset_postdata(); ?>
 		<?php
   else:
   	 ?>

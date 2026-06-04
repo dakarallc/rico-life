@@ -84,6 +84,62 @@ function rico_get_remaining_time($interval) {
 }
 
 /**
+ * イベントステータス判定
+ * @return array ['status' => 'now'|'before'|'end', 'status_class', 'status_text', 'sort_priority']
+ */
+function rico_get_event_status($is_always, $start_date, $end_date, $start_time, $end_time) {
+	$now = new DateTime("now", new DateTimeZone("Asia/Tokyo"));
+
+	if ($start_date && $start_time) {
+		$start_datetime = new DateTime($start_date . " " . $start_time, new DateTimeZone("Asia/Tokyo"));
+	} else {
+		$start_datetime = $now;
+	}
+
+	if ($end_date && $end_time) {
+		$end_datetime = new DateTime($end_date . " " . $end_time, new DateTimeZone("Asia/Tokyo"));
+	} else {
+		$end_datetime = $now;
+	}
+
+	if ($is_always) {
+		return [
+			"status" => "now",
+			"status_class" => "_now",
+			"status_text" => "常時開催中",
+			"sort_priority" => 1,
+			"start_datetime" => $start_datetime,
+		];
+	} elseif ($start_datetime <= $now && $end_datetime >= $now) {
+		$interval = $now->diff($end_datetime);
+		return [
+			"status" => "now",
+			"status_class" => "_now",
+			"status_text" => "【開催中】<span>終了まであと</span>" . rico_get_remaining_time($interval),
+			"sort_priority" => 1,
+			"start_datetime" => $start_datetime,
+		];
+	} elseif ($start_datetime > $now) {
+		$interval = $now->diff($start_datetime);
+		return [
+			"status" => "before",
+			"status_class" => "_before",
+			"status_text" => "【開催前】<span>開催まであと</span>" . rico_get_remaining_time($interval),
+			"sort_priority" => 2,
+			"start_datetime" => $start_datetime,
+		];
+	} else {
+		return [
+			"status" => "end",
+			"status_class" => "_end",
+			"status_text" => "イベント終了",
+			"sort_priority" => 3,
+			"start_datetime" => $start_datetime,
+		];
+	}
+}
+
+/**
  * イベントカテゴリーページをイベント一覧にリダイレクト
  */
 function rico_redirect_event_category() {
