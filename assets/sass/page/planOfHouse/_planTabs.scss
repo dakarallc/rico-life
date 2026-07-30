@@ -1,259 +1,514 @@
 @use "../../foundation/mixin";
 
 /* ==========================================================================
-  planTabs
+  floorPlan
   ========================================================================== */
-.planTabs {
-	margin-top: 40px;
+.floorPlan {
+	padding: 60px 0;
 
-	&__nav {
+	@include mixin.sp {
+		padding: 40px 0;
+	}
+
+	.inner {
 		display: flex;
-		justify-content: center;
-		margin-bottom: 20px;
-		border-radius: 8px;
-		overflow: hidden;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-		@include mixin.sp {
-			margin-bottom: 15px;
-		}
+		flex-direction: column;
+		align-items: center;
 	}
 
-	&__btn {
-		flex: 1;
-		padding: 15px 30px;
-		background: #f8f8f8;
-		border: none;
-		cursor: pointer;
-		font-size: 1.6rem;
-		font-weight: bold;
-		color: #666;
-		transition: all 0.3s ease;
-		position: relative;
-
-		@include mixin.sp {
-			padding: 12px 20px;
-			font-size: 1.4rem;
-		}
-
-		&:not(:last-child) {
-			border-right: 1px solid #ddd;
-		}
-
-		&:hover {
-			background: #e8e8e8;
-		}
-
-		&.active {
-			background: #d49baa;
-			color: #fff;
-
-			&:hover {
-				background: #c28a9a;
-			}
-		}
+	.ttlWrap {
+		width: 100%;
 	}
 
-	&__content {
-		display: none;
-
-		&.active {
-			display: block;
-		}
-	}
-
-	&__subNav {
-		display: flex;
-		justify-content: center;
+	.catch {
 		margin-bottom: 30px;
-		gap: 2px;
 
 		@include mixin.sp {
 			margin-bottom: 20px;
 		}
 	}
 
-	&__subBtn {
-		padding: 10px 20px;
-		background: #fff;
-		border: 2px solid #d49baa;
-		cursor: pointer;
-		font-size: 1.4rem;
-		font-weight: bold;
-		color: #d49baa;
-		transition: all 0.3s ease;
-		border-radius: 25px;
+	&__text {
+		max-width: 500px;
+		margin-bottom: 0;
 
-		@include mixin.sp {
-			padding: 8px 16px;
-			font-size: 1.2rem;
-		}
+		p {
+			font-size: 1.6rem;
+			line-height: 2;
 
-		&:hover {
-			background: #ffe8e8;
-		}
+			@include mixin.sp {
+				font-size: 1.5rem;
+			}
 
-		&.active {
-			background: #d49baa;
-			color: #fff;
-
-			&:hover {
-				background: #c28a9a;
+			& + p {
+				margin-top: 16px;
 			}
 		}
 	}
 
-	&__subContent {
-		display: none;
-
-		&.active {
-			display: block;
-		}
-	}
-}
-
-.planItem {
-	max-width: 800px;
-	margin: 0 auto;
-	background: #fff;
-	border-radius: 12px;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
-
-	&__image {
-		width: 100%;
-		height: 300px;
-		overflow: hidden;
+	&__img {
+		max-width: 300px;
+		margin: 30px auto;
 
 		@include mixin.sp {
-			height: 200px;
-		}
-
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-		}
-	}
-
-	&__floorplan {
-		width: 100%;
-		padding: 20px;
-		background: #f9f9f9;
-		border-bottom: 2px solid #d49baa;
-
-		@include mixin.sp {
-			padding: 15px;
+			max-width: 235px;
+			margin: 20px auto;
 		}
 
 		img {
 			width: 100%;
 			height: auto;
-			border-radius: 8px;
 		}
 	}
+}
 
-	&__price {
-		padding: 30px;
+/* ==========================================================================
+  selectPlan
+  ========================================================================== */
+.selectPlan {
+	padding: 60px 0;
+
+	@include mixin.sp {
+		padding: 40px 0;
+	}
+
+	.catch {
+		margin-bottom: 40px;
 
 		@include mixin.sp {
-			padding: 20px;
+			margin-bottom: 30px;
 		}
 	}
 
-	&__priceItem {
+	&__lead {
+		margin-bottom: 40px;
+
+		@include mixin.sp {
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 1.6rem;
+			line-height: 2.2;
+			letter-spacing: 0.05em;
+
+			@include mixin.sp {
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	&__list {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 15px;
-		padding: 10px 20px;
-		border-bottom: 1px solid #eee;
+		flex-direction: column;
+		gap: 60px;
 
 		@include mixin.sp {
-			margin-bottom: 12px;
-			padding: 8px 15px;
-		}
-
-		&--highlight {
-			background: linear-gradient(135deg, #fff3f3 0%, #ffe8e8 100%);
-			padding: 15px 20px;
-			border-radius: 8px;
-			border: none;
-			margin: 20px 0;
-
-			@include mixin.sp {
-				padding: 12px 15px;
-				margin: 15px 0;
-			}
-		}
-
-		&--final {
-			background: linear-gradient(135deg, #f0fff0 0%, #e8f8e8 100%);
-			padding: 20px;
-			border-radius: 8px;
-			border: 2px solid #4caf50;
-			margin: 20px 0 0;
-
-			@include mixin.sp {
-				padding: 15px;
-				margin: 15px 0 0;
-			}
-
-			.planItem__priceLabel {
-				font-size: 1.8rem;
-				font-weight: bold;
-
-				@include mixin.sp {
-					font-size: 1.5rem;
-				}
-			}
-
-			.planItem__priceValue {
-				font-size: 2.4rem;
-
-				@include mixin.sp {
-					font-size: 2rem;
-				}
-			}
+			gap: 50px;
 		}
 	}
 
-	&__priceLabel {
-		font-size: 1.6rem;
-		color: #333;
-		font-weight: 500;
+	/* ---- card ---- */
+	&__card {
+		background: #fff;
+		border-radius: 12px;
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+		overflow: hidden;
+	}
+
+	/* ---- header ---- */
+	&__header {
+		padding: 24px 24px 16px;
 
 		@include mixin.sp {
-			font-size: 1.3rem;
+			padding: 20px 16px 12px;
 		}
 	}
 
-	&__priceValue {
-		font-size: 2rem;
-		font-weight: bold;
-		color: #333;
-
-		@include mixin.sp {
-			font-size: 1.7rem;
-		}
-
-		&--red {
-			color: #d49baa;
-		}
-
-		&--green {
-			color: #4caf50;
-		}
-	}
-
-	&__priceUnit {
+	&__planNo {
 		font-size: 1.4rem;
-		font-weight: normal;
-		margin-left: 2px;
+		font-weight: bold;
+		color: #a0b5a7;
+		letter-spacing: 0.1em;
+		margin-bottom: 6px;
 
 		@include mixin.sp {
 			font-size: 1.2rem;
+		}
+	}
+
+	&__catch {
+		font-size: 2.2rem;
+		font-weight: bold;
+		line-height: 1.5;
+		margin-bottom: 8px;
+
+		@include mixin.sp {
+			font-size: 1.8rem;
+		}
+	}
+
+	&__desc {
+		font-size: 1.6rem;
+		color: #555;
+		line-height: 1.7;
+
+		@include mixin.sp {
+			font-size: 1.4rem;
+		}
+	}
+
+	/* ---- exterior photo ---- */
+	&__exterior {
+		width: 100%;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+			aspect-ratio: 16 / 10;
+			object-fit: cover;
+		}
+	}
+
+	/* ---- body (PC横並び: 間取り + 価格情報) ---- */
+	&__body {
+		@include mixin.pc {
+			display: flex;
+			align-items: flex-start;
+		}
+	}
+
+	/* ---- floor plan slider ---- */
+	&__slider {
+		background: #fff;
+		padding: 16px;
+
+		@include mixin.pc {
+			flex: 1;
+			min-width: 0;
+		}
+
+		@include mixin.sp {
+			padding: 12px;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.swiper-pagination {
+			position: static;
+			margin-top: 12px;
+			display: flex;
+			justify-content: center;
+			gap: 8px;
+		}
+
+		.swiper-pagination-bullet {
+			width: 10px;
+			height: 10px;
+			background: transparent;
+			border: 2px solid #999;
+			opacity: 1;
+		}
+
+		.swiper-pagination-bullet-active {
+			background: #999;
+		}
+	}
+
+	/* ---- floor plan (single, for 平屋) ---- */
+	&__floorplan {
+		background: #fff;
+		padding: 16px;
+
+		@include mixin.pc {
+			flex: 1;
+			min-width: 0;
+		}
+
+		@include mixin.sp {
+			padding: 12px;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	/* ---- info / price ---- */
+	&__info {
+		padding: 24px;
+
+		@include mixin.pc {
+			flex: 1;
+			min-width: 0;
+		}
+
+		@include mixin.sp {
+			padding: 16px;
+		}
+	}
+
+	&__infoList {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+
+	&__infoRow {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		padding: 8px 0;
+
+		@include mixin.sp {
+			padding: 6px 0;
+		}
+
+		dt {
+			font-size: 1.6rem;
+			color: #333;
+
+			@include mixin.sp {
+				font-size: 1.6rem;
+			}
+
+			small {
+				font-size: 1.2rem;
+				color: #888;
+
+				@include mixin.sp {
+					font-size: 1.1rem;
+				}
+			}
+		}
+
+		dd {
+			font-size: 1.6rem;
+			color: #333;
+			text-align: right;
+
+			@include mixin.sp {
+				font-size: 1.6rem;
+			}
+		}
+
+		&--accent {
+			dt,
+			dd {
+				color: #c4707f;
+			}
+
+			.selectPlan__val {
+				color: #c4707f;
+			}
+		}
+
+		&--result {
+			margin-top: 4px;
+			padding: 10px 12px;
+			background: #f6ffb0;
+			border-radius: 4px;
+
+			@include mixin.sp {
+				padding: 8px 10px;
+			}
+
+			dt {
+				font-weight: bold;
+			}
+
+			.selectPlan__val {
+				color: #333;
+			}
+		}
+	}
+
+	&__val {
+		font-size: 2.2rem;
+		font-weight: bold;
+		margin-right: 4px;
+
+		@include mixin.sp {
+			font-size: 1.8rem;
+		}
+	}
+
+	/* ---- 間取り画像クリック拡大 ---- */
+	&__sliderWrap {
+		position: relative;
+
+		@include mixin.pc {
+			flex: 1;
+			min-width: 0;
+		}
+
+		> .zoom-button {
+			position: absolute;
+			bottom: 50px;
+			right: 10px;
+			z-index: 2;
+		}
+	}
+
+	&__madoriImg {
+		position: relative;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		> .zoom-button {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			z-index: 2;
+		}
+	}
+
+	.zoom-button {
+		width: 36px;
+		height: 36px;
+		min-width: 36px;
+		min-height: 36px;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.5);
+		color: #fff;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.4rem;
+		transition: background 0.3s;
+		flex-shrink: 0;
+
+		&:hover {
+			background: rgba(0, 0, 0, 0.7);
+		}
+	}
+
+	&__floorLabel {
+		text-align: center;
+		font-size: 1.4rem;
+		font-weight: bold;
+		color: #555;
+		margin-top: 8px;
+	}
+}
+
+/* ==========================================================================
+  planNote（補足テキスト）
+  ========================================================================== */
+.planNote {
+	padding: 60px 0;
+
+	@include mixin.sp {
+		padding: 40px 0;
+	}
+
+	.catch {
+		margin-bottom: 30px;
+
+		@include mixin.sp {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		p {
+			font-size: 1.6rem;
+			line-height: 2;
+
+			@include mixin.sp {
+				font-size: 1.5rem;
+			}
+
+			& + p {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+  間取りモーダル（プランページ用）
+  ========================================================================== */
+.planOfHouse-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 9999;
+	justify-content: center;
+	align-items: center;
+
+	&__content {
+		position: relative;
+		max-width: 95vw;
+		max-height: 95vh;
+		width: 90vw;
+		padding: 20px;
+		background: #fff;
+		border-radius: 8px;
+		text-align: center;
+
+		img {
+			width: 100%;
+			height: auto;
+			max-height: calc(90vh - 80px);
+			object-fit: contain;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		top: -12px;
+		right: -12px;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		background: #333;
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.6rem;
+		z-index: 1;
+	}
+
+	&__caption {
+		color: #555;
+		font-size: 1.4rem;
+		margin-top: 8px;
+	}
+
+	&__slider {
+		width: 100%;
+
+		.swiper-slide {
+			text-align: center;
+		}
+
+		.swiper-pagination {
+			position: relative;
+			margin-top: 12px;
 		}
 	}
 }

@@ -14,547 +14,287 @@ Template Name: 間取り
 		<div class="inner fv__inner">
 			<div class="fv__ttl">
 				<h2>自由設計も、
-					<br>規格設計も。
+					<br>選べるプランも。
 					<br>あなたの理想に合わせて、
-					<br>選択可能です。
+					<br>最適な住まいをご提案します。
 				</h2>
 			</div>
 		</div>
-		
 	</section>
 
+	<?php get_template_part("template-parts/breadcrumb"); ?>
 
-	<!-- PRODUCTS	 -->
-	<section class="products">
-		<div class="inner products__inner">
+	<!-- FLOOR PLAN -->
+	<section class="floorPlan">
+		<div class="inner">
 			<div class="ttlWrap">
-				<h2 class="section-ttl">PRODUCTS
-					<span>商品概要</span>
+				<h2 class="section-ttl">FLOOR PLAN
+					<span>間取り</span>
 				</h2>
 			</div>
 
 			<div class="catch">
-				<h3 >
-					新しいカタチの<br class="show--sp">規格プラン方式
+				<h3>
+					あなたに合った進め方で、<br>
+					理想の住まいを考える。
 				</h3>
 			</div>
 
-			<div class="products__img">
-				<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/products.png" alt="新しいカタチの規格プラン方式">
+			<div class="floorPlan__img">
+				<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/products.png" alt="間取りイメージ">
 			</div>
-			<div class="products__text">
+
+			<div class="floorPlan__text">
 				<p>
-					Rico Life.は<br class="show--sp">
-					弊社規格プランに加え、<br>
-					<span class="highlight-yellow">お客様が見つけたプランも</span><br>基準を満たせば、<span class="highlight-yellow">規格プラン価格として建築可能。</span><br>
-					効率的で安心の家づくりを実現します。
+					Rico Life.は、自由設計だけで<br class="show--sp">なく、暮らしやすさを大切にした<br class="show--sp">住まいの選択肢をご用意しています。
+				</p>
+				<p>
+					ライフスタイルに合わせて、<br class="show--sp">自分たちらしく暮らせる住まい<br class="show--sp">の形をご提案します。
 				</p>
 			</div>
 		</div>
 	</section>
 
-	<!-- Standard plan	 -->
-	<section class="standardPlan">
-		<div class="inner">
-			<div class="ttlWrap">
-				<h2 class="section-ttl">Standard plan
-					<span>コンセプト規格設計 例</span>
-				</h2>
-			</div>
 
-			<div class="catch">
-				<h3>
-					価格を抑え、<br class="show--sp">
-					最もコスパよく<br class="show--sp">
-					注文住宅を建てる。
-				</h3>
-			</div>
-
-			<!-- Tab Navigation -->
-			<div class="planTabs">
-				<div class="planTabs__nav">
-					<button class="planTabs__btn active" data-tab="standard-2story">2階建て</button>
-					<button class="planTabs__btn" data-tab="standard-hiraya">平屋</button>
-				</div>
-
-				<!-- 2階建て Content -->
-				<div class="planTabs__content active" id="standard-2story">
-					<div class="planTabs__subNav">
-						<button class="planTabs__subBtn active" data-subtab="standard-2story-28">28坪</button>
-						<button class="planTabs__subBtn" data-subtab="standard-2story-32">32坪</button>
-						<button class="planTabs__subBtn" data-subtab="standard-2story-35">35坪</button>
-					</div>
-
-					<div class="planTabs__subContent active" id="standard-2story-28">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-2story-28.jpg" alt="2階建て 28坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-2story-28.jpg" alt="間取り図 2階建て 28坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">1,650<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">65,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-18,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">47,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="planTabs__subContent" id="standard-2story-32">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-2story-32.jpg" alt="2階建て 32坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-2story-32.jpg" alt="間取り図 2階建て 32坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">1,850<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">72,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-20,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">52,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="planTabs__subContent" id="standard-2story-35">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-2story-35.jpg" alt="2階建て 35坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-2story-35.jpg" alt="間取り図 2階建て 35坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">2,050<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">79,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-22,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">57,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- 平屋 Content -->
-				<div class="planTabs__content" id="standard-hiraya">
-					<div class="planTabs__subNav">
-						<button class="planTabs__subBtn active" data-subtab="standard-hiraya-28">28坪</button>
-						<button class="planTabs__subBtn" data-subtab="standard-hiraya-32">32坪</button>
-						<button class="planTabs__subBtn" data-subtab="standard-hiraya-35">35坪</button>
-					</div>
-
-					<div class="planTabs__subContent active" id="standard-hiraya-28">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-hiraya-28.jpg" alt="平屋 28坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-hiraya-28.jpg" alt="間取り図 平屋 28坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">1,750<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">68,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-18,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">50,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="planTabs__subContent" id="standard-hiraya-32">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-hiraya-32.jpg" alt="平屋 32坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-hiraya-32.jpg" alt="間取り図 平屋 32坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">1,950<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">75,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-20,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">55,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="planTabs__subContent" id="standard-hiraya-35">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/standard-hiraya-35.jpg" alt="平屋 35坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/floorplan-hiraya-35.jpg" alt="間取り図 平屋 35坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">2,150<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">82,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-22,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">60,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Free plan	 -->
-	<section class="freePlan">
-		<div class="inner">
-			<div class="ttlWrap">
-				<h2 class="section-ttl">Free plan
-					<span>自由設計 実例</span>
-				</h2>
-			</div>
-
-			<div class="catch">
-				<h3>
-					注文住宅の<br class="show--sp">
-					夢を詰め込んだ<br class="show--sp">
-					オンリーワン住宅。
-				</h3>
-			</div>
-
-			<!-- Tab Navigation -->
-			<div class="planTabs">
-				<div class="planTabs__nav">
-					<button class="planTabs__btn active" data-tab="free-2story">2階建て</button>
-					<button class="planTabs__btn" data-tab="free-hiraya">平屋</button>
-				</div>
-
-				<!-- 2階建て Content -->
-				<div class="planTabs__content active" id="free-2story">
-					<div class="planTabs__subNav">
-						<button class="planTabs__subBtn active" data-subtab="free-2story-28">28坪</button>
-						<button class="planTabs__subBtn" data-subtab="free-2story-32">32坪</button>
-						<button class="planTabs__subBtn" data-subtab="free-2story-35">35坪</button>
-					</div>
-
-					<div class="planTabs__subContent active" id="free-2story-28">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-2story-28.jpg" alt="自由設計 2階建て 28坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-2story-28.jpg" alt="間取り図 自由設計 2階建て 28坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">2,100<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">82,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-18,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">64,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="planTabs__subContent" id="free-2story-32">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-2story-32.jpg" alt="自由設計 2階建て 32坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-2story-32.jpg" alt="間取り図 自由設計 2階建て 32坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">2,400<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">93,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-20,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">73,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="planTabs__subContent" id="free-2story-35">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-2story-35.jpg" alt="自由設計 2階建て 35坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-2story-35.jpg" alt="間取り図 自由設計 2階建て 35坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">2,700<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">105,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-22,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">83,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- 平屋 Content -->
-				<div class="planTabs__content" id="free-hiraya">
-					<div class="planTabs__subNav">
-						<button class="planTabs__subBtn active" data-subtab="free-hiraya-28">28坪</button>
-						<button class="planTabs__subBtn" data-subtab="free-hiraya-32">32坪</button>
-						<button class="planTabs__subBtn" data-subtab="free-hiraya-35">35坪</button>
-					</div>
-
-					<div class="planTabs__subContent active" id="free-hiraya-28">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-hiraya-28.jpg" alt="自由設計 平屋 28坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-hiraya-28.jpg" alt="間取り図 自由設計 平屋 28坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">2,200<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">86,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-18,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">68,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="planTabs__subContent" id="free-hiraya-32">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-hiraya-32.jpg" alt="自由設計 平屋 32坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-hiraya-32.jpg" alt="間取り図 自由設計 平屋 32坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">2,500<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">98,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-20,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">78,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="planTabs__subContent" id="free-hiraya-35">
-						<div class="planItem">
-							<div class="planItem__image">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-hiraya-35.jpg" alt="自由設計 平屋 35坪">
-							</div>
-							<div class="planItem__floorplan">
-								<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/free-floorplan-hiraya-35.jpg" alt="間取り図 自由設計 平屋 35坪">
-							</div>
-							<div class="planItem__price">
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">本体価格 約</span>
-									<span class="planItem__priceValue">2,800<span class="planItem__priceUnit">万円</span></span>
-								</div>
-								<div class="planItem__priceItem">
-									<span class="planItem__priceLabel">月々返済 約</span>
-									<span class="planItem__priceValue">109,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--highlight">
-									<span class="planItem__priceLabel">経済効果 約</span>
-									<span class="planItem__priceValue planItem__priceValue--red">-22,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-								<div class="planItem__priceItem planItem__priceItem--final">
-									<span class="planItem__priceLabel">実質支払 約</span>
-									<span class="planItem__priceValue planItem__priceValue--green">87,000<span class="planItem__priceUnit">円/月</span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Free plan	 -->
-	<section class="why conceptSection">
-		<img src="<?php echo rico_theme_url(); ?>/assets/img/top/concept.png" alt="テーブルの写真">
+	<!-- Select plan -->
+	<section class="selectPlan conceptSection">
+		<img src="<?php echo rico_theme_url(); ?>/assets/img/plan-of-house/select-plan-bg.jpg" alt="">
 		<div class="inner conceptSection__inner">
 			<div class="ttlWrap">
-				<h2 class="section-ttl">Plan
-					<span>規格設計と自由設計の価格の違い</span>
+				<h2 class="section-ttl">Select plan
+					<span>暮らし方で選べるプラン</span>
 				</h2>
 			</div>
-			
+
 			<div class="catch">
 				<h3>
-					規格設計と<br class="show--sp">
-					自由設計の<br class="show--sp">
-					コストの仕組み。
+					無理なく、賢く、<br class="show--sp">
+					自分たちらしい<br class="show--sp">
+					マイホームを建てる。
 				</h3>
 			</div>
-			
+
 			<div>
 				<div class="conceptSection__block">
-					未来に優しい、<br class="show--sp">
-					光熱費削減の家。
-					毎年上がり続ける電気代。<br class="show--sp">
-					実は、<span class="highlight-yellow">過去12年間で電気代は1.56倍</span>に上昇しています。
-				</div>
-				<div class="conceptSection__block">
-					さらに、今後もその上昇は<br class="show--sp">
-					続くと予測されています。
-					その場合、月々の電気代は、<span class="highlight-yellow">40年累計で1523万円支払う</span>可能性があります。
-				</div>
-				<div class="conceptSection__block">
-					しかし、<br class="show--sp">
-					太陽光発電と蓄電池を搭載すれば、
-					初期費用やメンテナンスを含めても、
-					累計で<span class="highlight-yellow">わずか683万円</span>で済みます。
-				</div>
-				<div class="conceptSection__block">
-					これだけで、<span class="highlight-yellow">最大840万円</span>の差が生まれ、
-					長期的に見て家計の負担が
-					軽くなっていきます。
-				</div>
-				<div class="conceptSection__block">
-					太陽光発電と蓄電池は、<br class="show--sp">
-					ただのエコ設備ではありません。<br>
-					これからの時代に必須となる、<br class="show--sp">
-					経済的にも環境的にも、<br class="show--sp">
-					賢い選択です。
+					家事のしやすさ、収納の多さ、<br>
+					子育てのしやすさ、将来の暮らし方。<br>
+					大切にしたいことは、ご家族によって<br>
+					異なります。<br>
+					ここでは、暮らし方に合わせた4つの<br>
+					プランをご紹介します。
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- finalMessage -->
+	<!-- Plan cards -->
+	<?php
+ $plans = [
+ 	[
+ 		"no" => "01",
+ 		"catch" => "家事ラクに暮らす。",
+ 		"desc" => "生活動線にこだわった、ランドリールームのある住まい。",
+ 		"floors" => ["1F", "2F"],
+ 		"area" => "29.05",
+ 		"madori" => "3LDK＋ランドリールーム",
+ 		"price" => "2,447",
+ 		"monthly" => "61,875",
+ 		"effect" => "17,464",
+ 		"actual" => "44,411",
+ 	],
+ 	[
+ 		"no" => "02",
+ 		"catch" => "必要な広さで、賢く暮らす。",
+ 		"desc" => "必要なものをちょうどよく整えた、無理のない住まい。",
+ 		"floors" => ["1F", "2F"],
+ 		"area" => "28.24",
+ 		"madori" => "3LDK",
+ 		"price" => "2,234",
+ 		"monthly" => "56,487",
+ 		"effect" => "19,498",
+ 		"actual" => "36,989",
+ 	],
+ 	[
+ 		"no" => "03",
+ 		"catch" => "平屋でのびやかに暮らす。",
+ 		"desc" => "ワンフロアに暮らしがつながる、開放感のある住まい。",
+ 		"floors" => [],
+ 		"area" => "27.05",
+ 		"madori" => "3LDK",
+ 		"price" => "2,633",
+ 		"monthly" => "66,569",
+ 		"effect" => "24,162",
+ 		"actual" => "42,407",
+ 	],
+ 	[
+ 		"no" => "04",
+ 		"catch" => "将来まで安心して暮らす。",
+ 		"desc" => "これからの暮らしを見据えたコンパクト平屋の住まい。",
+ 		"floors" => [],
+ 		"area" => "28.24",
+ 		"madori" => "3LDK",
+ 		"price" => "2,295",
+ 		"monthly" => "58,036",
+ 		"effect" => "24,162",
+ 		"actual" => "33,874",
+ 	],
+ ];
+ $img_base = rico_theme_url() . "/assets/img/plan-of-house";
+ ?>
+	<section class="selectPlan">
+		<div class="inner">
+			<div class="selectPlan__list">
+				<?php foreach ($plans as $plan):
+
+    	$no = $plan["no"];
+    	$has_floors = !empty($plan["floors"]);
+    	?>
+				<div class="selectPlan__card" data-plan="<?php echo $no; ?>">
+					<div class="selectPlan__header">
+						<p class="selectPlan__planNo">PLAN <?php echo $no; ?></p>
+						<h3 class="selectPlan__catch"><?php echo $plan["catch"]; ?></h3>
+						<p class="selectPlan__desc"><?php echo $plan["desc"]; ?></p>
+					</div>
+					<div class="selectPlan__exterior">
+						<img src="<?php echo $img_base; ?>/plan<?php echo $no; ?>.jpg" alt="PLAN <?php echo $no; ?> 外観">
+					</div>
+					<div class="selectPlan__body">
+						<?php if ($has_floors): ?>
+						<div class="selectPlan__sliderWrap">
+							<div class="selectPlan__slider swiper js-planSlider">
+								<div class="swiper-wrapper">
+									<?php foreach ($plan["floors"] as $i => $floor): ?>
+									<div class="swiper-slide">
+										<div class="selectPlan__madoriImg">
+											<img src="<?php echo $img_base; ?>/plan<?php echo $no; ?>-<?php echo $i +
+	1; ?>.jpg" alt="PLAN <?php echo $no; ?> <?php echo $floor; ?> 間取り図" class="modal-trigger">
+											<p class="selectPlan__floorLabel"><?php echo $floor; ?></p>
+										</div>
+									</div>
+									<?php endforeach; ?>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<button type="button" class="zoom-button" aria-label="拡大表示"><i class="fas fa-search-plus"></i></button>
+						</div>
+						<?php else: ?>
+						<div class="selectPlan__floorplan selectPlan__madoriImg">
+							<img src="<?php echo $img_base; ?>/plan<?php echo $no; ?>-1.jpg" alt="PLAN <?php echo $no; ?> 間取り図" class="modal-trigger">
+							<button type="button" class="zoom-button" aria-label="拡大表示"><i class="fas fa-search-plus"></i></button>
+						</div>
+						<?php endif; ?>
+						<div class="selectPlan__info">
+							<dl class="selectPlan__infoList">
+								<div class="selectPlan__infoRow">
+									<dt>延床面積</dt>
+									<dd>約 <span class="selectPlan__val"><?php echo $plan["area"]; ?></span> 坪</dd>
+								</div>
+								<div class="selectPlan__infoRow">
+									<dt>間取り</dt>
+									<dd><span class="selectPlan__val"><?php echo $plan["madori"]; ?></span></dd>
+								</div>
+								<div class="selectPlan__infoRow">
+									<dt>本体価格</dt>
+									<dd>約 <span class="selectPlan__val"><?php echo $plan["price"]; ?></span> 万円</dd>
+								</div>
+								<div class="selectPlan__infoRow">
+									<dt>月々返済</dt>
+									<dd>約 <span class="selectPlan__val"><?php echo $plan["monthly"]; ?></span> 円/月</dd>
+								</div>
+								<div class="selectPlan__infoRow selectPlan__infoRow--accent">
+									<dt>経済効果<br><small>（※売電収入＋電気代削減）</small></dt>
+									<dd>約 <span class="selectPlan__val"><?php echo $plan["effect"]; ?></span> 円/月</dd>
+								</div>
+								<div class="selectPlan__infoRow selectPlan__infoRow--result">
+									<dt>実質支払</dt>
+									<dd>約 <span class="selectPlan__val"><?php echo $plan["actual"]; ?></span> 円/月</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<?php
+    endforeach; ?>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- 補足テキスト -->
+	<section class="planNote">
+		<div class="inner">
+			<div class="catch">
+				<h3>掲載プランは、<br>家づくりの一例です。</h3>
+			</div>
+			<div class="planNote__text">
+				<p>
+					土地の形やご家族の暮らし方、<br class="show--sp">ご予算によって、最適な間取りは変わります。<br>
+					注文住宅として一からプランを作成することはもちろん、掲載しているプランをそのまま建てるだけでなく、暮らしに合わせて調整することも可能です。
+				</p>
+				<p>
+					また、Rico Life.では、<br class="show--sp">住まいづくりの参考になるプラン集も<br class="show--sp">ご用意しています。<br>
+					気になる方はぜひ資料請求からご覧ください。
+				</p>
+			</div>
+		</div>
+	</section>
+
+
 	<?php get_template_part("template-parts/toTopButton"); ?>
 
-
-	<!-- finalMessage -->
 	<?php get_template_part("template-parts/message"); ?>
 
-	<!-- PRODUCTS -->
 	<?php get_template_part("template-parts/productArea"); ?>
-
 
 	<?php get_template_part("template-parts/contactArea"); ?>
 
+<!-- 間取りモーダル -->
+<?php foreach ($plans as $plan):
+
+	$no = $plan["no"];
+	$has_floors = !empty($plan["floors"]);
+	?>
+<div class="planOfHouse-modal" id="planModal<?php echo $no; ?>">
+	<div class="planOfHouse-modal__content">
+		<button type="button" class="planOfHouse-modal__close" aria-label="閉じる"><i class="fas fa-times"></i></button>
+		<?php if ($has_floors): ?>
+		<div class="planOfHouse-modal__slider swiper js-modalSlider">
+			<div class="swiper-wrapper">
+				<?php foreach ($plan["floors"] as $i => $floor): ?>
+				<div class="swiper-slide">
+					<img src="<?php echo $img_base; ?>/plan<?php echo $no; ?>-<?php echo $i +
+	1; ?>.jpg" alt="PLAN <?php echo $no; ?> <?php echo $floor; ?> 間取り図">
+					<p class="planOfHouse-modal__caption">PLAN <?php echo $no; ?> - <?php echo $floor; ?></p>
+				</div>
+				<?php endforeach; ?>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<?php else: ?>
+		<img src="<?php echo $img_base; ?>/plan<?php echo $no; ?>-1.jpg" alt="PLAN <?php echo $no; ?> 間取り図">
+		<p class="planOfHouse-modal__caption">PLAN <?php echo $no; ?></p>
+		<?php endif; ?>
+	</div>
+</div>
+<?php
+endforeach; ?>
+
+
+
 
 <?php get_footer(); ?>
+
+
+<script>
+jQuery(function () {
+	document.querySelectorAll(".js-planSlider").forEach(function (el) {
+		new Swiper(el, {
+			loop: false,
+			pagination: {
+				el: el.querySelector(".swiper-pagination"),
+				clickable: true
+			}
+		});
+	});
+});
+</script>

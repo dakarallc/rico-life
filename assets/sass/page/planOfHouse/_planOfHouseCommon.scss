@@ -2,10 +2,25 @@
 .planOfHouse {
 	display: flex;
 	flex-direction: column;
-	gap: 205px !important;
 
-	@include mixin.sp {
-		gap: 154px !important;
+	> section {
+		margin-top: 205px;
+
+		@include mixin.sp {
+			margin-top: 154px;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	> .fv + .breadcrumb + section {
+		margin-top: 0;
+	}
+
+	.breadcrumb {
+		padding-bottom: 0;
 	}
 	.planOfHouse__ttl {
 		margin-bottom: 60px;

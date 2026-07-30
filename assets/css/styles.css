@@ -1964,7 +1964,7 @@ h5 {
 .conceptSection {
 	position: relative;
 }
-.conceptSection img {
+.conceptSection > img {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -11270,7 +11270,7 @@ us
 	width: 100%;
 	height: 100dvh;
 	object-fit: cover;
-	object-position: center;
+	object-position: bottom;
 }
 @media (max-width: 999px) {
 	.top .fv img {
@@ -11776,7 +11776,7 @@ us
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: center;
+	object-position: bottom;
 }
 @media (max-width: 999px) {
 	.concept .fv img {
@@ -11839,12 +11839,23 @@ us
 .planOfHouse {
 	display: flex;
 	flex-direction: column;
-	gap: 205px !important;
+}
+.planOfHouse > section {
+	margin-top: 205px;
 }
 @media (max-width: 999px) {
-	.planOfHouse {
-		gap: 154px !important;
+	.planOfHouse > section {
+		margin-top: 154px;
 	}
+}
+.planOfHouse > section:first-child {
+	margin-top: 0;
+}
+.planOfHouse > .fv + .breadcrumb + section {
+	margin-top: 0;
+}
+.planOfHouse .breadcrumb {
+	padding-bottom: 0;
 }
 .planOfHouse .planOfHouse__ttl {
 	margin-bottom: 60px;
@@ -11885,7 +11896,7 @@ us
 	color: #000000;
 	font-family: "游ゴシック体", YuGothic, "Yu Gothic", sans-serif;
 	font-weight: bold;
-	font-size: 5.7rem;
+	font-size: 3.6rem;
 	font-weight: bold;
 	left: 3%;
 	letter-spacing: 0.14em;
@@ -11911,246 +11922,484 @@ us
 }
 
 /* ==========================================================================
-  planTabs
+  floorPlan
   ========================================================================== */
-.planTabs {
-	margin-top: 40px;
-}
-.planTabs__nav {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 20px;
-	border-radius: 8px;
-	overflow: hidden;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.floorPlan {
+	padding: 60px 0;
 }
 @media (max-width: 999px) {
-	.planTabs__nav {
-		margin-bottom: 15px;
+	.floorPlan {
+		padding: 40px 0;
 	}
 }
-.planTabs__btn {
-	flex: 1;
-	padding: 15px 30px;
-	background: #f8f8f8;
-	border: none;
-	cursor: pointer;
-	font-size: 1.6rem;
-	font-weight: bold;
-	color: #666;
-	transition: all 0.3s ease;
-	position: relative;
-}
-@media (max-width: 999px) {
-	.planTabs__btn {
-		padding: 12px 20px;
-		font-size: 1.4rem;
-	}
-}
-.planTabs__btn:not(:last-child) {
-	border-right: 1px solid #ddd;
-}
-.planTabs__btn:hover {
-	background: #e8e8e8;
-}
-.planTabs__btn.active {
-	background: #d49baa;
-	color: #fff;
-}
-.planTabs__btn.active:hover {
-	background: #c28a9a;
-}
-.planTabs__content {
-	display: none;
-}
-.planTabs__content.active {
-	display: block;
-}
-.planTabs__subNav {
+.floorPlan .inner {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.floorPlan .ttlWrap {
+	width: 100%;
+}
+.floorPlan .catch {
 	margin-bottom: 30px;
-	gap: 2px;
 }
 @media (max-width: 999px) {
-	.planTabs__subNav {
+	.floorPlan .catch {
 		margin-bottom: 20px;
 	}
 }
-.planTabs__subBtn {
-	padding: 10px 20px;
-	background: #fff;
-	border: 2px solid #d49baa;
-	cursor: pointer;
-	font-size: 1.4rem;
-	font-weight: bold;
-	color: #d49baa;
-	transition: all 0.3s ease;
-	border-radius: 25px;
+.floorPlan__text {
+	max-width: 500px;
+	margin-bottom: 0;
+}
+.floorPlan__text p {
+	font-size: 1.6rem;
+	line-height: 2;
 }
 @media (max-width: 999px) {
-	.planTabs__subBtn {
-		padding: 8px 16px;
-		font-size: 1.2rem;
-	}
-}
-.planTabs__subBtn:hover {
-	background: #ffe8e8;
-}
-.planTabs__subBtn.active {
-	background: #d49baa;
-	color: #fff;
-}
-.planTabs__subBtn.active:hover {
-	background: #c28a9a;
-}
-.planTabs__subContent {
-	display: none;
-}
-.planTabs__subContent.active {
-	display: block;
-}
-
-.planItem {
-	max-width: 800px;
-	margin: 0 auto;
-	background: #fff;
-	border-radius: 12px;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
-}
-.planItem__image {
-	width: 100%;
-	height: 300px;
-	overflow: hidden;
-}
-@media (max-width: 999px) {
-	.planItem__image {
-		height: 200px;
-	}
-}
-.planItem__image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
-}
-.planItem__floorplan {
-	width: 100%;
-	padding: 20px;
-	background: #f9f9f9;
-	border-bottom: 2px solid #d49baa;
-}
-@media (max-width: 999px) {
-	.planItem__floorplan {
-		padding: 15px;
-	}
-}
-.planItem__floorplan img {
-	width: 100%;
-	height: auto;
-	border-radius: 8px;
-}
-.planItem__price {
-	padding: 30px;
-}
-@media (max-width: 999px) {
-	.planItem__price {
-		padding: 20px;
-	}
-}
-.planItem__priceItem {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 15px;
-	padding: 10px 20px;
-	border-bottom: 1px solid #eee;
-}
-@media (max-width: 999px) {
-	.planItem__priceItem {
-		margin-bottom: 12px;
-		padding: 8px 15px;
-	}
-}
-.planItem__priceItem--highlight {
-	background: linear-gradient(135deg, #fff3f3 0%, #ffe8e8 100%);
-	padding: 15px 20px;
-	border-radius: 8px;
-	border: none;
-	margin: 20px 0;
-}
-@media (max-width: 999px) {
-	.planItem__priceItem--highlight {
-		padding: 12px 15px;
-		margin: 15px 0;
-	}
-}
-.planItem__priceItem--final {
-	background: linear-gradient(135deg, #f0fff0 0%, #e8f8e8 100%);
-	padding: 20px;
-	border-radius: 8px;
-	border: 2px solid #4caf50;
-	margin: 20px 0 0;
-}
-@media (max-width: 999px) {
-	.planItem__priceItem--final {
-		padding: 15px;
-		margin: 15px 0 0;
-	}
-}
-.planItem__priceItem--final .planItem__priceLabel {
-	font-size: 1.8rem;
-	font-weight: bold;
-}
-@media (max-width: 999px) {
-	.planItem__priceItem--final .planItem__priceLabel {
+	.floorPlan__text p {
 		font-size: 1.5rem;
 	}
 }
-.planItem__priceItem--final .planItem__priceValue {
-	font-size: 2.4rem;
+.floorPlan__text p + p {
+	margin-top: 16px;
+}
+.floorPlan__img {
+	max-width: 300px;
+	margin: 30px auto;
 }
 @media (max-width: 999px) {
-	.planItem__priceItem--final .planItem__priceValue {
-		font-size: 2rem;
+	.floorPlan__img {
+		max-width: 235px;
+		margin: 20px auto;
 	}
 }
-.planItem__priceLabel {
+.floorPlan__img img {
+	width: 100%;
+	height: auto;
+}
+
+/* ==========================================================================
+  selectPlan
+  ========================================================================== */
+.selectPlan {
+	padding: 60px 0;
+	/* ---- card ---- */
+	/* ---- header ---- */
+	/* ---- exterior photo ---- */
+	/* ---- body (PC横並び: 間取り + 価格情報) ---- */
+	/* ---- floor plan slider ---- */
+	/* ---- floor plan (single, for 平屋) ---- */
+	/* ---- info / price ---- */
+	/* ---- 間取り画像クリック拡大 ---- */
+}
+@media (max-width: 999px) {
+	.selectPlan {
+		padding: 40px 0;
+	}
+}
+.selectPlan .catch {
+	margin-bottom: 40px;
+}
+@media (max-width: 999px) {
+	.selectPlan .catch {
+		margin-bottom: 30px;
+	}
+}
+.selectPlan__lead {
+	margin-bottom: 40px;
+}
+@media (max-width: 999px) {
+	.selectPlan__lead {
+		margin-bottom: 30px;
+	}
+}
+.selectPlan__lead p {
 	font-size: 1.6rem;
-	color: #333;
-	font-weight: 500;
+	line-height: 2.2;
+	letter-spacing: 0.05em;
 }
 @media (max-width: 999px) {
-	.planItem__priceLabel {
-		font-size: 1.3rem;
+	.selectPlan__lead p {
+		font-size: 1.4rem;
 	}
 }
-.planItem__priceValue {
-	font-size: 2rem;
-	font-weight: bold;
-	color: #333;
+.selectPlan__list {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
 }
 @media (max-width: 999px) {
-	.planItem__priceValue {
-		font-size: 1.7rem;
+	.selectPlan__list {
+		gap: 50px;
 	}
 }
-.planItem__priceValue--red {
-	color: #d49baa;
+.selectPlan__card {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
 }
-.planItem__priceValue--green {
-	color: #4caf50;
+.selectPlan__header {
+	padding: 24px 24px 16px;
 }
-.planItem__priceUnit {
+@media (max-width: 999px) {
+	.selectPlan__header {
+		padding: 20px 16px 12px;
+	}
+}
+.selectPlan__planNo {
 	font-size: 1.4rem;
-	font-weight: normal;
-	margin-left: 2px;
+	font-weight: bold;
+	color: #a0b5a7;
+	letter-spacing: 0.1em;
+	margin-bottom: 6px;
 }
 @media (max-width: 999px) {
-	.planItem__priceUnit {
+	.selectPlan__planNo {
 		font-size: 1.2rem;
 	}
+}
+.selectPlan__catch {
+	font-size: 2.2rem;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 8px;
+}
+@media (max-width: 999px) {
+	.selectPlan__catch {
+		font-size: 1.8rem;
+	}
+}
+.selectPlan__desc {
+	font-size: 1.6rem;
+	color: #555;
+	line-height: 1.7;
+}
+@media (max-width: 999px) {
+	.selectPlan__desc {
+		font-size: 1.4rem;
+	}
+}
+.selectPlan__exterior {
+	width: 100%;
+	overflow: hidden;
+}
+.selectPlan__exterior img {
+	width: 100%;
+	height: auto;
+	display: block;
+	aspect-ratio: 16/10;
+	object-fit: cover;
+}
+@media (min-width: 1000px) {
+	.selectPlan__body {
+		display: flex;
+		align-items: flex-start;
+	}
+}
+.selectPlan__slider {
+	background: #fff;
+	padding: 16px;
+}
+@media (min-width: 1000px) {
+	.selectPlan__slider {
+		flex: 1;
+		min-width: 0;
+	}
+}
+@media (max-width: 999px) {
+	.selectPlan__slider {
+		padding: 12px;
+	}
+}
+.selectPlan__slider img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.selectPlan__slider .swiper-pagination {
+	position: static;
+	margin-top: 12px;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
+.selectPlan__slider .swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	border: 2px solid #999;
+	opacity: 1;
+}
+.selectPlan__slider .swiper-pagination-bullet-active {
+	background: #999;
+}
+.selectPlan__floorplan {
+	background: #fff;
+	padding: 16px;
+}
+@media (min-width: 1000px) {
+	.selectPlan__floorplan {
+		flex: 1;
+		min-width: 0;
+	}
+}
+@media (max-width: 999px) {
+	.selectPlan__floorplan {
+		padding: 12px;
+	}
+}
+.selectPlan__floorplan img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.selectPlan__info {
+	padding: 24px;
+}
+@media (min-width: 1000px) {
+	.selectPlan__info {
+		flex: 1;
+		min-width: 0;
+	}
+}
+@media (max-width: 999px) {
+	.selectPlan__info {
+		padding: 16px;
+	}
+}
+.selectPlan__infoList {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+.selectPlan__infoRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 8px 0;
+}
+@media (max-width: 999px) {
+	.selectPlan__infoRow {
+		padding: 6px 0;
+	}
+}
+.selectPlan__infoRow dt {
+	font-size: 1.6rem;
+	color: #333;
+}
+@media (max-width: 999px) {
+	.selectPlan__infoRow dt {
+		font-size: 1.6rem;
+	}
+}
+.selectPlan__infoRow dt small {
+	font-size: 1.2rem;
+	color: #888;
+}
+@media (max-width: 999px) {
+	.selectPlan__infoRow dt small {
+		font-size: 1.1rem;
+	}
+}
+.selectPlan__infoRow dd {
+	font-size: 1.6rem;
+	color: #333;
+	text-align: right;
+}
+@media (max-width: 999px) {
+	.selectPlan__infoRow dd {
+		font-size: 1.6rem;
+	}
+}
+.selectPlan__infoRow--accent dt,
+.selectPlan__infoRow--accent dd {
+	color: #c4707f;
+}
+.selectPlan__infoRow--accent .selectPlan__val {
+	color: #c4707f;
+}
+.selectPlan__infoRow--result {
+	margin-top: 4px;
+	padding: 10px 12px;
+	background: #f6ffb0;
+	border-radius: 4px;
+}
+@media (max-width: 999px) {
+	.selectPlan__infoRow--result {
+		padding: 8px 10px;
+	}
+}
+.selectPlan__infoRow--result dt {
+	font-weight: bold;
+}
+.selectPlan__infoRow--result .selectPlan__val {
+	color: #333;
+}
+.selectPlan__val {
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin-right: 4px;
+}
+@media (max-width: 999px) {
+	.selectPlan__val {
+		font-size: 1.8rem;
+	}
+}
+.selectPlan__sliderWrap {
+	position: relative;
+}
+@media (min-width: 1000px) {
+	.selectPlan__sliderWrap {
+		flex: 1;
+		min-width: 0;
+	}
+}
+.selectPlan__sliderWrap > .zoom-button {
+	position: absolute;
+	bottom: 50px;
+	right: 10px;
+	z-index: 2;
+}
+.selectPlan__madoriImg {
+	position: relative;
+	cursor: pointer;
+}
+.selectPlan__madoriImg img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.selectPlan__madoriImg > .zoom-button {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 2;
+}
+.selectPlan .zoom-button {
+	width: 36px;
+	height: 36px;
+	min-width: 36px;
+	min-height: 36px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.4rem;
+	transition: background 0.3s;
+	flex-shrink: 0;
+}
+.selectPlan .zoom-button:hover {
+	background: rgba(0, 0, 0, 0.7);
+}
+.selectPlan__floorLabel {
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #555;
+	margin-top: 8px;
+}
+
+/* ==========================================================================
+  planNote（補足テキスト）
+  ========================================================================== */
+.planNote {
+	padding: 60px 0;
+}
+@media (max-width: 999px) {
+	.planNote {
+		padding: 40px 0;
+	}
+}
+.planNote .catch {
+	margin-bottom: 30px;
+}
+@media (max-width: 999px) {
+	.planNote .catch {
+		margin-bottom: 20px;
+	}
+}
+.planNote__text p {
+	font-size: 1.6rem;
+	line-height: 2;
+}
+@media (max-width: 999px) {
+	.planNote__text p {
+		font-size: 1.5rem;
+	}
+}
+.planNote__text p + p {
+	margin-top: 20px;
+}
+
+/* ==========================================================================
+  間取りモーダル（プランページ用）
+  ========================================================================== */
+.planOfHouse-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 9999;
+	justify-content: center;
+	align-items: center;
+}
+.planOfHouse-modal__content {
+	position: relative;
+	max-width: 95vw;
+	max-height: 95vh;
+	width: 90vw;
+	padding: 20px;
+	background: #fff;
+	border-radius: 8px;
+	text-align: center;
+}
+.planOfHouse-modal__content img {
+	width: 100%;
+	height: auto;
+	max-height: calc(90vh - 80px);
+	object-fit: contain;
+}
+.planOfHouse-modal__close {
+	position: absolute;
+	top: -12px;
+	right: -12px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: #333;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6rem;
+	z-index: 1;
+}
+.planOfHouse-modal__caption {
+	color: #555;
+	font-size: 1.4rem;
+	margin-top: 8px;
+}
+.planOfHouse-modal__slider {
+	width: 100%;
+}
+.planOfHouse-modal__slider .swiper-slide {
+	text-align: center;
+}
+.planOfHouse-modal__slider .swiper-pagination {
+	position: relative;
+	margin-top: 12px;
 }
 
 .storageBattery .planOfHouse__ttl {
@@ -13479,3 +13728,5 @@ html:has(.specStructure) {
 	height: 60px;
 	margin-bottom: 20px;
 }
+
+/*# sourceMappingURL=styles.css.map */

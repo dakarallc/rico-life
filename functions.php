@@ -210,7 +210,7 @@ function my_script_init() {
 
 	// 共通のスクリプトとスタイル
 	wp_enqueue_style("animate", $theme_url . "/assets/css/vendor/animate.css", [], "1.0.21", "all");
-	wp_enqueue_style("styles", $theme_url . "/assets/css/styles.css", [], "1.0.28", "all");
+	wp_enqueue_style("styles", $theme_url . "/assets/css/styles.css", [], "1.0.29", "all");
 
 	// jQuery UI の読み込み
 	wp_enqueue_script("jquery-ui-core");
@@ -234,8 +234,8 @@ function my_script_init() {
 		wp_enqueue_script("plan-filter", $theme_url . "/assets/js/plan-filter.js", [], "1.0", true);
 	}
 
-	// モーダルスクリプト（プラン詳細・イベント詳細）
-	if (is_singular("plan") || is_singular("event")) {
+	// モーダルスクリプト（プラン詳細・イベント詳細・間取りページ）
+	if (is_singular("plan") || is_singular("event") || is_page("plan-of-house")) {
 		wp_enqueue_script("modal-script", $theme_url . "/assets/js/modal.js", [], "1.0", true);
 	}
 }
