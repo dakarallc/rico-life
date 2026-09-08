@@ -180,13 +180,17 @@
 
 		dl {
 			display: flex;
-			gap: 0;
-			margin-bottom: 4px;
+			align-items: baseline;
+			gap: 0 0.5em;
+			margin-bottom: 12px;
 			font-size: 1.5rem;
-			line-height: 2;
+			line-height: 1.8;
 
 			@include mixin.sp {
+				flex-direction: column;
+				gap: 0;
 				font-size: 1.4rem;
+				margin-bottom: 16px;
 			}
 
 			&:last-child {
@@ -197,11 +201,30 @@
 				font-weight: bold;
 				white-space: nowrap;
 				color: #333;
+
+				@include mixin.pc {
+					min-width: 7em;
+				}
 			}
 
 			dd {
 				color: #333;
+				white-space: nowrap;
+
+				@include mixin.sp {
+					white-space: normal;
+				}
 			}
+		}
+	}
+
+	&__infoNote {
+		font-weight: normal;
+		font-size: 1.2rem;
+		color: #666;
+
+		@include mixin.sp {
+			display: block;
 		}
 	}
 
