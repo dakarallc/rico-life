@@ -350,6 +350,18 @@ $is_open_house = has_term("actual-house-tours", "event-category") || has_term("f
     while ($other_events->have_posts()):
 
     	$other_events->the_post();
+
+    	$other_status = rico_get_event_status(
+    		get_field("is_always"),
+    		get_field("event_start_date"),
+    		get_field("event_end_date"),
+    		get_field("event_start_time"),
+    		get_field("event_end_time"),
+    	);
+    	if ($other_status["status"] === "end") {
+    		continue;
+    	}
+
     	$other_pic = get_field("event-pic");
     	?>
 				<a href="<?php echo esc_url(get_permalink()); ?>" class="eventDetail__otherItem">
